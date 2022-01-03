@@ -1,0 +1,37 @@
+package com.olvind.mui.muiMaterial.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Inlined std.Partial<@mui/material.@mui/material/styles/createPalette.TypeText> */
+trait PartialTypeText extends StObject {
+  
+  var disabled: js.UndefOr[String] = js.undefined
+  
+  var primary: js.UndefOr[String] = js.undefined
+  
+  var secondary: js.UndefOr[String] = js.undefined
+}
+object PartialTypeText {
+  
+  inline def apply(): PartialTypeText = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[PartialTypeText]
+  }
+  
+  extension [Self <: PartialTypeText](x: Self) {
+    
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    
+    inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+  }
+}

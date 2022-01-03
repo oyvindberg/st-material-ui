@@ -1,0 +1,120 @@
+package com.olvind.mui.muiMaterial
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object selectClassesMod {
+  
+  @JSImport("@mui/material/Select/selectClasses", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@mui/material/Select/selectClasses", JSImport.Default)
+  @js.native
+  val default: SelectClasses = js.native
+  
+  inline def getSelectUtilityClasses(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectUtilityClasses")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /* Rewritten from type alias, can be one of: 
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.select
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.multiple
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.filled
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.outlined
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.standard
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.disabled
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.icon
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.iconOpen
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.iconFilled
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.iconOutlined
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.iconStandard
+    - `com.olvind.mui`.muiMaterial.muiMaterialStrings.nativeInput
+  */
+  trait SelectClassKey extends StObject
+  
+  trait SelectClasses extends StObject {
+    
+    /** State class applied to the select component `disabled` class. */
+    var disabled: String
+    
+    /** Styles applied to the select component if `variant="filled"`. */
+    var filled: String
+    
+    /** Styles applied to the icon component. */
+    var icon: String
+    
+    /** Styles applied to the icon component if `variant="filled"`. */
+    var iconFilled: String
+    
+    /** Styles applied to the icon component if the popup is open. */
+    var iconOpen: String
+    
+    /** Styles applied to the icon component if `variant="outlined"`. */
+    var iconOutlined: String
+    
+    /** Styles applied to the icon component if `variant="standard"`. */
+    var iconStandard: String
+    
+    /** Styles applied to the select component if `multiple={true}`. */
+    var multiple: String
+    
+    /** Styles applied to the underlying native input component. */
+    var nativeInput: String
+    
+    /** Styles applied to the select component if `variant="outlined"`. */
+    var outlined: String
+    
+    /** Styles applied to the select component `select` class. */
+    var select: String
+    
+    /** Styles applied to the select component if `variant="standard"`. */
+    var standard: String
+  }
+  object SelectClasses {
+    
+    inline def apply(
+      disabled: String,
+      filled: String,
+      icon: String,
+      iconFilled: String,
+      iconOpen: String,
+      iconOutlined: String,
+      iconStandard: String,
+      multiple: String,
+      nativeInput: String,
+      outlined: String,
+      select: String,
+      standard: String
+    ): SelectClasses = {
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], filled = filled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconFilled = iconFilled.asInstanceOf[js.Any], iconOpen = iconOpen.asInstanceOf[js.Any], iconOutlined = iconOutlined.asInstanceOf[js.Any], iconStandard = iconStandard.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], nativeInput = nativeInput.asInstanceOf[js.Any], outlined = outlined.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SelectClasses]
+    }
+    
+    extension [Self <: SelectClasses](x: Self) {
+      
+      inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setFilled(value: String): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
+      
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconFilled(value: String): Self = StObject.set(x, "iconFilled", value.asInstanceOf[js.Any])
+      
+      inline def setIconOpen(value: String): Self = StObject.set(x, "iconOpen", value.asInstanceOf[js.Any])
+      
+      inline def setIconOutlined(value: String): Self = StObject.set(x, "iconOutlined", value.asInstanceOf[js.Any])
+      
+      inline def setIconStandard(value: String): Self = StObject.set(x, "iconStandard", value.asInstanceOf[js.Any])
+      
+      inline def setMultiple(value: String): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      
+      inline def setNativeInput(value: String): Self = StObject.set(x, "nativeInput", value.asInstanceOf[js.Any])
+      
+      inline def setOutlined(value: String): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
+      
+      inline def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      
+      inline def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    }
+  }
+}

@@ -1,0 +1,40 @@
+package com.olvind.mui.csstype.mod.Property
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - `com.olvind.mui`.csstype.csstypeStrings.economy
+  - `com.olvind.mui`.csstype.csstypeStrings.exact
+  - `com.olvind.mui`.csstype.csstypeStrings.`-moz-initial`
+  - `com.olvind.mui`.csstype.csstypeStrings.inherit
+  - `com.olvind.mui`.csstype.csstypeStrings.initial
+  - `com.olvind.mui`.csstype.csstypeStrings.revert
+  - `com.olvind.mui`.csstype.csstypeStrings.unset
+*/
+trait ColorAdjust extends StObject
+object ColorAdjust {
+  
+  @scala.inline
+  def `-moz-initial`: com.olvind.mui.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`-moz-initial`]
+  
+  @scala.inline
+  def economy: com.olvind.mui.csstype.csstypeStrings.economy = "economy".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.economy]
+  
+  @scala.inline
+  def exact: com.olvind.mui.csstype.csstypeStrings.exact = "exact".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.exact]
+  
+  @scala.inline
+  def inherit: com.olvind.mui.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.inherit]
+  
+  @scala.inline
+  def initial: com.olvind.mui.csstype.csstypeStrings.initial = "initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.initial]
+  
+  @scala.inline
+  def revert: com.olvind.mui.csstype.csstypeStrings.revert = "revert".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.revert]
+  
+  @scala.inline
+  def unset: com.olvind.mui.csstype.csstypeStrings.unset = "unset".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.unset]
+}
