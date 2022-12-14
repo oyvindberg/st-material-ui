@@ -17,7 +17,7 @@ object colorsCommonMod {
       */
     @JSImport("@mui/material/colors/common", "default.black")
     @js.native
-    def black: "#000" = js.native
+    def black: String /* "#000" */ = js.native
     inline def black_=(x: "#000"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("black")(x.asInstanceOf[js.Any])
     
     /**
@@ -25,7 +25,7 @@ object colorsCommonMod {
       */
     @JSImport("@mui/material/colors/common", "default.white")
     @js.native
-    def white: "#fff" = js.native
+    def white: String /* "#fff" */ = js.native
     inline def white_=(x: "#fff"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("white")(x.asInstanceOf[js.Any])
   }
 }

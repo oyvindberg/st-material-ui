@@ -17,77 +17,77 @@ object colorsDeepPurpleMod {
       */
     @JSImport("@mui/material/colors/deepPurple", "default.100")
     @js.native
-    val `100`: "#d1c4e9" = js.native
+    val `100`: String /* "#d1c4e9" */ = js.native
     
     /**
       * Preview: ![deepPurple 200](https://mui.com/static/colors-preview/deepPurple-200-24x24.png)
       */
     @JSImport("@mui/material/colors/deepPurple", "default.200")
     @js.native
-    val `200`: "#b39ddb" = js.native
+    val `200`: String /* "#b39ddb" */ = js.native
     
     /**
       * Preview: ![deepPurple 300](https://mui.com/static/colors-preview/deepPurple-300-24x24.png)
       */
     @JSImport("@mui/material/colors/deepPurple", "default.300")
     @js.native
-    val `300`: "#9575cd" = js.native
+    val `300`: String /* "#9575cd" */ = js.native
     
     /**
       * Preview: ![deepPurple 400](https://mui.com/static/colors-preview/deepPurple-400-24x24.png)
       */
     @JSImport("@mui/material/colors/deepPurple", "default.400")
     @js.native
-    val `400`: "#7e57c2" = js.native
+    val `400`: String /* "#7e57c2" */ = js.native
     
     /**
       * Preview: ![deepPurple 50](https://mui.com/static/colors-preview/deepPurple-50-24x24.png)
       */
     @JSImport("@mui/material/colors/deepPurple", "default.50")
     @js.native
-    val `50`: "#ede7f6" = js.native
+    val `50`: String /* "#ede7f6" */ = js.native
     
     /**
       * Preview: ![deepPurple 500](https://mui.com/static/colors-preview/deepPurple-500-24x24.png)
       */
     @JSImport("@mui/material/colors/deepPurple", "default.500")
     @js.native
-    val `500`: "#673ab7" = js.native
+    val `500`: String /* "#673ab7" */ = js.native
     
     /**
       * Preview: ![deepPurple 600](https://mui.com/static/colors-preview/deepPurple-600-24x24.png)
       */
     @JSImport("@mui/material/colors/deepPurple", "default.600")
     @js.native
-    val `600`: "#5e35b1" = js.native
+    val `600`: String /* "#5e35b1" */ = js.native
     
     /**
       * Preview: ![deepPurple 700](https://mui.com/static/colors-preview/deepPurple-700-24x24.png)
       */
     @JSImport("@mui/material/colors/deepPurple", "default.700")
     @js.native
-    val `700`: "#512da8" = js.native
+    val `700`: String /* "#512da8" */ = js.native
     
     /**
       * Preview: ![deepPurple 800](https://mui.com/static/colors-preview/deepPurple-800-24x24.png)
       */
     @JSImport("@mui/material/colors/deepPurple", "default.800")
     @js.native
-    val `800`: "#4527a0" = js.native
+    val `800`: String /* "#4527a0" */ = js.native
     
     /**
       * Preview: ![deepPurple 900](https://mui.com/static/colors-preview/deepPurple-900-24x24.png)
       */
     @JSImport("@mui/material/colors/deepPurple", "default.900")
     @js.native
-    val `900`: "#311b92" = js.native
+    val `900`: String /* "#311b92" */ = js.native
     
     /**
       * Preview: ![deepPurple A100](https://mui.com/static/colors-preview/deepPurple-A100-24x24.png)
       */
     @JSImport("@mui/material/colors/deepPurple", "default.A100")
     @js.native
-    def A100: "#b388ff" = js.native
+    def A100: String /* "#b388ff" */ = js.native
     inline def A100_=(x: "#b388ff"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("A100")(x.asInstanceOf[js.Any])
     
     /**
@@ -95,7 +95,7 @@ object colorsDeepPurpleMod {
       */
     @JSImport("@mui/material/colors/deepPurple", "default.A200")
     @js.native
-    def A200: "#7c4dff" = js.native
+    def A200: String /* "#7c4dff" */ = js.native
     inline def A200_=(x: "#7c4dff"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("A200")(x.asInstanceOf[js.Any])
     
     /**
@@ -103,7 +103,7 @@ object colorsDeepPurpleMod {
       */
     @JSImport("@mui/material/colors/deepPurple", "default.A400")
     @js.native
-    def A400: "#651fff" = js.native
+    def A400: String /* "#651fff" */ = js.native
     inline def A400_=(x: "#651fff"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("A400")(x.asInstanceOf[js.Any])
     
     /**
@@ -111,7 +111,7 @@ object colorsDeepPurpleMod {
       */
     @JSImport("@mui/material/colors/deepPurple", "default.A700")
     @js.native
-    def A700: "#6200ea" = js.native
+    def A700: String /* "#6200ea" */ = js.native
     inline def A700_=(x: "#6200ea"): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("A700")(x.asInstanceOf[js.Any])
   }
 }
