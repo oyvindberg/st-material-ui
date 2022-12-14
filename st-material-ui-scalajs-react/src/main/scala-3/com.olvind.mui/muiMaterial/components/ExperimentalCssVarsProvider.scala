@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ExperimentalCssVarsProvider {
   
-  @JSImport("@mui/material", "ExperimentalCssVarsProvider")
+  @JSImport("@mui/material/styles/CssVarsProvider", "ExperimentalCssVarsProvider")
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Pinterest {
   
-  @JSImport("@mui/icons-material", "Pinterest")
+  @JSImport("@mui/icons-material/Pinterest", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

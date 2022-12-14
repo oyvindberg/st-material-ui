@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ErrorOutlineTwoTone {
   
-  @JSImport("@mui/icons-material", "ErrorOutlineTwoTone")
+  @JSImport("@mui/icons-material/ErrorOutlineTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

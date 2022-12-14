@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DataThresholding {
   
-  @JSImport("@mui/icons-material", "DataThresholding")
+  @JSImport("@mui/icons-material/DataThresholding", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

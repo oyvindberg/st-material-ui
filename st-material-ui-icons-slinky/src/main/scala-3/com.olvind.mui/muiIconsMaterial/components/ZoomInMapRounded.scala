@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ZoomInMapRounded {
   
-  @JSImport("@mui/icons-material", "ZoomInMapRounded")
+  @JSImport("@mui/icons-material/ZoomInMapRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

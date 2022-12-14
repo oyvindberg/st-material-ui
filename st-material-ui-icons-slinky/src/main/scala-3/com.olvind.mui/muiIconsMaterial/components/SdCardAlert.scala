@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SdCardAlert {
   
-  @JSImport("@mui/icons-material", "SdCardAlert")
+  @JSImport("@mui/icons-material/SdCardAlert", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CalendarViewDayTwoTone {
   
-  @JSImport("@mui/icons-material", "CalendarViewDayTwoTone")
+  @JSImport("@mui/icons-material/CalendarViewDayTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

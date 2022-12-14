@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AlignHorizontalCenterTwoTone {
   
-  @JSImport("@mui/icons-material", "AlignHorizontalCenterTwoTone")
+  @JSImport("@mui/icons-material/AlignHorizontalCenterTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

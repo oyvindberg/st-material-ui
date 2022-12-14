@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Fullscreen {
   
-  @JSImport("@mui/icons-material", "Fullscreen")
+  @JSImport("@mui/icons-material/Fullscreen", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

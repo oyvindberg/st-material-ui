@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object NetworkWifi2BarSharp {
   
-  @JSImport("@mui/icons-material", "NetworkWifi2BarSharp")
+  @JSImport("@mui/icons-material/NetworkWifi2BarSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

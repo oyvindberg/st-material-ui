@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ArrowDropUpRounded {
   
-  @JSImport("@mui/icons-material", "ArrowDropUpRounded")
+  @JSImport("@mui/icons-material/ArrowDropUpRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

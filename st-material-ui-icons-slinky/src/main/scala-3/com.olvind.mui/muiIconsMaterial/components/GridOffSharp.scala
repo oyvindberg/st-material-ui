@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GridOffSharp {
   
-  @JSImport("@mui/icons-material", "GridOffSharp")
+  @JSImport("@mui/icons-material/GridOffSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

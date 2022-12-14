@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object KeyboardArrowRightRounded {
   
-  @JSImport("@mui/icons-material", "KeyboardArrowRightRounded")
+  @JSImport("@mui/icons-material/KeyboardArrowRightRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

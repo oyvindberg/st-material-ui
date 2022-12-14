@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PersonPinCircleSharp {
   
-  @JSImport("@mui/icons-material", "PersonPinCircleSharp")
+  @JSImport("@mui/icons-material/PersonPinCircleSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

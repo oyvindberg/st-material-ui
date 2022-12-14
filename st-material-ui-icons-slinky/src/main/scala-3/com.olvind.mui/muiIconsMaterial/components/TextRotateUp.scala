@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TextRotateUp {
   
-  @JSImport("@mui/icons-material", "TextRotateUp")
+  @JSImport("@mui/icons-material/TextRotateUp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FormatTextdirectionLToRRounded {
   
-  @JSImport("@mui/icons-material", "FormatTextdirectionLToRRounded")
+  @JSImport("@mui/icons-material/FormatTextdirectionLToRRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

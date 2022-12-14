@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SortSharp {
   
-  @JSImport("@mui/icons-material", "SortSharp")
+  @JSImport("@mui/icons-material/SortSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

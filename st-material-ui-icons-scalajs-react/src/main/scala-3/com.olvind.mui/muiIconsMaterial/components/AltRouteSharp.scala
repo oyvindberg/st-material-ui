@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AltRouteSharp {
   
-  @JSImport("@mui/icons-material", "AltRouteSharp")
+  @JSImport("@mui/icons-material/AltRouteSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

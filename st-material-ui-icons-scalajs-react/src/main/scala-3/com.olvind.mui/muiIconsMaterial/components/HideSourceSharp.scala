@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object HideSourceSharp {
   
-  @JSImport("@mui/icons-material", "HideSourceSharp")
+  @JSImport("@mui/icons-material/HideSourceSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FindInPageSharp {
   
-  @JSImport("@mui/icons-material", "FindInPageSharp")
+  @JSImport("@mui/icons-material/FindInPageSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

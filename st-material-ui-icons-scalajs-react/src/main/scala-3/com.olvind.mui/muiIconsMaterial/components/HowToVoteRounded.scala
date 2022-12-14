@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object HowToVoteRounded {
   
-  @JSImport("@mui/icons-material", "HowToVoteRounded")
+  @JSImport("@mui/icons-material/HowToVoteRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

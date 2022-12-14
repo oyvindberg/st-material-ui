@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BluetoothAudioRounded {
   
-  @JSImport("@mui/icons-material", "BluetoothAudioRounded")
+  @JSImport("@mui/icons-material/BluetoothAudioRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

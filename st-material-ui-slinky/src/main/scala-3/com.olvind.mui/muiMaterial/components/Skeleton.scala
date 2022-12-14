@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Skeleton {
   
-  @JSImport("@mui/material", "Skeleton")
+  @JSImport("@mui/material/Skeleton/Skeleton", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

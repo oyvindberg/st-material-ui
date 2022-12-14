@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AddToQueueRounded {
   
-  @JSImport("@mui/icons-material", "AddToQueueRounded")
+  @JSImport("@mui/icons-material/AddToQueueRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

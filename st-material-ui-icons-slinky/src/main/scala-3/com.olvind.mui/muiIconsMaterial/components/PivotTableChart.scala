@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PivotTableChart {
   
-  @JSImport("@mui/icons-material", "PivotTableChart")
+  @JSImport("@mui/icons-material/PivotTableChart", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

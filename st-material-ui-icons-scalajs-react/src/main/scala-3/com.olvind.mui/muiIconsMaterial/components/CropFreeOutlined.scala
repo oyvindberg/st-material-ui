@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CropFreeOutlined {
   
-  @JSImport("@mui/icons-material", "CropFreeOutlined")
+  @JSImport("@mui/icons-material/CropFreeOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

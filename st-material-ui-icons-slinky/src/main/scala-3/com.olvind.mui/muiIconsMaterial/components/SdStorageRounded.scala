@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SdStorageRounded {
   
-  @JSImport("@mui/icons-material", "SdStorageRounded")
+  @JSImport("@mui/icons-material/SdStorageRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

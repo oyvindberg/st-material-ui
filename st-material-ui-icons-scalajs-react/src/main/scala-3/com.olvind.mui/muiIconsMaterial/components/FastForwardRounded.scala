@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FastForwardRounded {
   
-  @JSImport("@mui/icons-material", "FastForwardRounded")
+  @JSImport("@mui/icons-material/FastForwardRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

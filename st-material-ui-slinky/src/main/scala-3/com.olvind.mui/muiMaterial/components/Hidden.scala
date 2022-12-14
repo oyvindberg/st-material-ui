@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Hidden {
   
-  @JSImport("@mui/material", "Hidden")
+  @JSImport("@mui/material/Hidden/Hidden", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

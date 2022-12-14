@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object VerticalSplitSharp {
   
-  @JSImport("@mui/icons-material", "VerticalSplitSharp")
+  @JSImport("@mui/icons-material/VerticalSplitSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

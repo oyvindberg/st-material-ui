@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PestControlRodentSharp {
   
-  @JSImport("@mui/icons-material", "PestControlRodentSharp")
+  @JSImport("@mui/icons-material/PestControlRodentSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

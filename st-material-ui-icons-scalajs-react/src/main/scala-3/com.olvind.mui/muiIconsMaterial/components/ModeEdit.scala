@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ModeEdit {
   
-  @JSImport("@mui/icons-material", "ModeEdit")
+  @JSImport("@mui/icons-material/ModeEdit", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

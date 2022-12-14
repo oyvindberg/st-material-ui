@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ClosedCaptionOffOutlined {
   
-  @JSImport("@mui/icons-material", "ClosedCaptionOffOutlined")
+  @JSImport("@mui/icons-material/ClosedCaptionOffOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

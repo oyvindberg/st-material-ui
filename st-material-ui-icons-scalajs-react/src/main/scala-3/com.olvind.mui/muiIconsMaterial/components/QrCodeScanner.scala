@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object QrCodeScanner {
   
-  @JSImport("@mui/icons-material", "QrCodeScanner")
+  @JSImport("@mui/icons-material/QrCodeScanner", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

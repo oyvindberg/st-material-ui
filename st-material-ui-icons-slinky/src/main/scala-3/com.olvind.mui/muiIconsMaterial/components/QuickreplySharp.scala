@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object QuickreplySharp {
   
-  @JSImport("@mui/icons-material", "QuickreplySharp")
+  @JSImport("@mui/icons-material/QuickreplySharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PermContactCalendarOutlined {
   
-  @JSImport("@mui/icons-material", "PermContactCalendarOutlined")
+  @JSImport("@mui/icons-material/PermContactCalendarOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

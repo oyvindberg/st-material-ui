@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FlipToFrontTwoTone {
   
-  @JSImport("@mui/icons-material", "FlipToFrontTwoTone")
+  @JSImport("@mui/icons-material/FlipToFrontTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

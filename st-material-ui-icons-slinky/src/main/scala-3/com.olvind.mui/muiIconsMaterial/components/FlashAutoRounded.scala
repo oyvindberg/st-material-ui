@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FlashAutoRounded {
   
-  @JSImport("@mui/icons-material", "FlashAutoRounded")
+  @JSImport("@mui/icons-material/FlashAutoRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

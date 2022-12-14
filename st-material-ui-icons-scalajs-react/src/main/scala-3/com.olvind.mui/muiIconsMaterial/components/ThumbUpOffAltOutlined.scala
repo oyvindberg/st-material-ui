@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ThumbUpOffAltOutlined {
   
-  @JSImport("@mui/icons-material", "ThumbUpOffAltOutlined")
+  @JSImport("@mui/icons-material/ThumbUpOffAltOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object VoiceChatSharp {
   
-  @JSImport("@mui/icons-material", "VoiceChatSharp")
+  @JSImport("@mui/icons-material/VoiceChatSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

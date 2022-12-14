@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Checkroom {
   
-  @JSImport("@mui/icons-material", "Checkroom")
+  @JSImport("@mui/icons-material/Checkroom", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

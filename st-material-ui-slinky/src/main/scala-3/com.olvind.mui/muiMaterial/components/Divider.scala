@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Divider {
   
-  @JSImport("@mui/material", "Divider")
+  @JSImport("@mui/material/Divider/Divider", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

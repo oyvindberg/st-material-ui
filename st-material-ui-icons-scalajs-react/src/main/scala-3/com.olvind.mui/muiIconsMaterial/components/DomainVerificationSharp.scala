@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DomainVerificationSharp {
   
-  @JSImport("@mui/icons-material", "DomainVerificationSharp")
+  @JSImport("@mui/icons-material/DomainVerificationSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

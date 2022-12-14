@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object MultilineChartRounded {
   
-  @JSImport("@mui/icons-material", "MultilineChartRounded")
+  @JSImport("@mui/icons-material/MultilineChartRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

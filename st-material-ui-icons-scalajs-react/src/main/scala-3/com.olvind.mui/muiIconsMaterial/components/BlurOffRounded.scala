@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BlurOffRounded {
   
-  @JSImport("@mui/icons-material", "BlurOffRounded")
+  @JSImport("@mui/icons-material/BlurOffRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

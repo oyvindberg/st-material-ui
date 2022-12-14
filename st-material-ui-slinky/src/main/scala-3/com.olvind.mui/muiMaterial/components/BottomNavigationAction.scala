@@ -51,7 +51,7 @@ object BottomNavigationAction {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapBott]))
     }
     
-    @JSImport("@mui/material", "BottomNavigationAction")
+    @JSImport("@mui/material/BottomNavigationAction/BottomNavigationAction", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -486,7 +486,7 @@ object BottomNavigationAction {
   
   object normal {
     
-    @JSImport("@mui/material", "BottomNavigationAction")
+    @JSImport("@mui/material/BottomNavigationAction/BottomNavigationAction", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

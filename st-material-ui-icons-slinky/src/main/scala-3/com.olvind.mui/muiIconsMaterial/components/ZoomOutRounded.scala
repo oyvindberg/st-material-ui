@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ZoomOutRounded {
   
-  @JSImport("@mui/icons-material", "ZoomOutRounded")
+  @JSImport("@mui/icons-material/ZoomOutRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

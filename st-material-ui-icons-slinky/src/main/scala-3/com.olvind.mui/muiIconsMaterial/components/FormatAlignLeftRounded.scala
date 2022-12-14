@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FormatAlignLeftRounded {
   
-  @JSImport("@mui/icons-material", "FormatAlignLeftRounded")
+  @JSImport("@mui/icons-material/FormatAlignLeftRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

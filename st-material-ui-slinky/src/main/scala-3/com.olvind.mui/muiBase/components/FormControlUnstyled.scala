@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FormControlUnstyled {
   
-  @JSImport("@mui/base", "FormControlUnstyled")
+  @JSImport("@mui/base/FormControlUnstyled/FormControlUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

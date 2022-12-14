@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DragHandleOutlined {
   
-  @JSImport("@mui/icons-material", "DragHandleOutlined")
+  @JSImport("@mui/icons-material/DragHandleOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

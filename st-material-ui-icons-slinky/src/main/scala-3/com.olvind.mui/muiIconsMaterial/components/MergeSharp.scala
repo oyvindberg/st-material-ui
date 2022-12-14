@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object MergeSharp {
   
-  @JSImport("@mui/icons-material", "MergeSharp")
+  @JSImport("@mui/icons-material/MergeSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

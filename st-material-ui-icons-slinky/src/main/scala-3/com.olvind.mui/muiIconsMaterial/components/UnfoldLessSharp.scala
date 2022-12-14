@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object UnfoldLessSharp {
   
-  @JSImport("@mui/icons-material", "UnfoldLessSharp")
+  @JSImport("@mui/icons-material/UnfoldLessSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

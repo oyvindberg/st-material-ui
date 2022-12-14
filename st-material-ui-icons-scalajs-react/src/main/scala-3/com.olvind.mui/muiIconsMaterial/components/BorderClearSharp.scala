@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BorderClearSharp {
   
-  @JSImport("@mui/icons-material", "BorderClearSharp")
+  @JSImport("@mui/icons-material/BorderClearSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

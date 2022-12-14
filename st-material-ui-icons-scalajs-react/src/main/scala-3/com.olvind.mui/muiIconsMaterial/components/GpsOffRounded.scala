@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GpsOffRounded {
   
-  @JSImport("@mui/icons-material", "GpsOffRounded")
+  @JSImport("@mui/icons-material/GpsOffRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

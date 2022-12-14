@@ -38,7 +38,7 @@ object ModalUnstyled {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsModalUnstyledTypeMa]))
   }
   
-  @JSImport("@mui/base", "ModalUnstyled")
+  @JSImport("@mui/base/ModalUnstyled/ModalUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

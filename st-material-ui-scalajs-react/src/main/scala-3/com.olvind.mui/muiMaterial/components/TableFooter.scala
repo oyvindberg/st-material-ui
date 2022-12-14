@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TableFooter {
   
-  @JSImport("@mui/material", "TableFooter")
+  @JSImport("@mui/material/TableFooter/TableFooter", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

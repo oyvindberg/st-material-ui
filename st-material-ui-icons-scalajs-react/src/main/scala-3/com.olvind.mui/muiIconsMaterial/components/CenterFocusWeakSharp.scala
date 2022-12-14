@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CenterFocusWeakSharp {
   
-  @JSImport("@mui/icons-material", "CenterFocusWeakSharp")
+  @JSImport("@mui/icons-material/CenterFocusWeakSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

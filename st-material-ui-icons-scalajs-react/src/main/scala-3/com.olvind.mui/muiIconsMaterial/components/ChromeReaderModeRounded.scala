@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ChromeReaderModeRounded {
   
-  @JSImport("@mui/icons-material", "ChromeReaderModeRounded")
+  @JSImport("@mui/icons-material/ChromeReaderModeRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

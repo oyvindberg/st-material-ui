@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SettingsOverscanRounded {
   
-  @JSImport("@mui/icons-material", "SettingsOverscanRounded")
+  @JSImport("@mui/icons-material/SettingsOverscanRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object UnstableGrid2 {
   
-  @JSImport("@mui/material", "UnstableGrid2")
+  @JSImport("@mui/material/Unstable_Grid2", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

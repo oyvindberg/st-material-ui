@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CloseFullscreenTwoTone {
   
-  @JSImport("@mui/icons-material", "CloseFullscreenTwoTone")
+  @JSImport("@mui/icons-material/CloseFullscreenTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

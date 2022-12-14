@@ -105,7 +105,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DialogContentText {
   
-  @JSImport("@mui/material", "DialogContentText")
+  @JSImport("@mui/material/DialogContentText/DialogContentText", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

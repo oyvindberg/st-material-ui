@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object InsertDriveFileTwoTone {
   
-  @JSImport("@mui/icons-material", "InsertDriveFileTwoTone")
+  @JSImport("@mui/icons-material/InsertDriveFileTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

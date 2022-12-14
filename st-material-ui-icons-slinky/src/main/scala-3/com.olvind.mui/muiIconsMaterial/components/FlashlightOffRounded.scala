@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FlashlightOffRounded {
   
-  @JSImport("@mui/icons-material", "FlashlightOffRounded")
+  @JSImport("@mui/icons-material/FlashlightOffRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

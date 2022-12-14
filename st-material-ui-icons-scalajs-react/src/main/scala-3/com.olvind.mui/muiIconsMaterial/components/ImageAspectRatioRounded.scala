@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ImageAspectRatioRounded {
   
-  @JSImport("@mui/icons-material", "ImageAspectRatioRounded")
+  @JSImport("@mui/icons-material/ImageAspectRatioRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

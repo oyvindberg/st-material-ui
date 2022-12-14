@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object MenuItemUnstyled {
   
-  @JSImport("@mui/base", "MenuItemUnstyled")
+  @JSImport("@mui/base/MenuItemUnstyled/MenuItemUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

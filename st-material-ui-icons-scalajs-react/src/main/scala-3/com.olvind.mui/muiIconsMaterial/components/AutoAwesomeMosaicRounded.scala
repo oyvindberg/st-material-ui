@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AutoAwesomeMosaicRounded {
   
-  @JSImport("@mui/icons-material", "AutoAwesomeMosaicRounded")
+  @JSImport("@mui/icons-material/AutoAwesomeMosaicRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

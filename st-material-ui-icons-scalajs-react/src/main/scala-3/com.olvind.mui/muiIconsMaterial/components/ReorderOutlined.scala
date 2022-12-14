@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ReorderOutlined {
   
-  @JSImport("@mui/icons-material", "ReorderOutlined")
+  @JSImport("@mui/icons-material/ReorderOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

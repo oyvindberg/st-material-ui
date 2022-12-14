@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object HorizontalRule {
   
-  @JSImport("@mui/icons-material", "HorizontalRule")
+  @JSImport("@mui/icons-material/HorizontalRule", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

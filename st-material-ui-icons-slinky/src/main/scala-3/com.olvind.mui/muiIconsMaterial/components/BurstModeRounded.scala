@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BurstModeRounded {
   
-  @JSImport("@mui/icons-material", "BurstModeRounded")
+  @JSImport("@mui/icons-material/BurstModeRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

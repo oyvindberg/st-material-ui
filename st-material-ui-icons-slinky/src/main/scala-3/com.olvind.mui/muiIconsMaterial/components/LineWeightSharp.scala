@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object LineWeightSharp {
   
-  @JSImport("@mui/icons-material", "LineWeightSharp")
+  @JSImport("@mui/icons-material/LineWeightSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

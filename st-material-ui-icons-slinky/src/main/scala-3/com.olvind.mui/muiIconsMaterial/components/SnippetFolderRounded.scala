@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SnippetFolderRounded {
   
-  @JSImport("@mui/icons-material", "SnippetFolderRounded")
+  @JSImport("@mui/icons-material/SnippetFolderRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

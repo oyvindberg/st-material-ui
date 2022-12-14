@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ControlPointDuplicateRounded {
   
-  @JSImport("@mui/icons-material", "ControlPointDuplicateRounded")
+  @JSImport("@mui/icons-material/ControlPointDuplicateRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

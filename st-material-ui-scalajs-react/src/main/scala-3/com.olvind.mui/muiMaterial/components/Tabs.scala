@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Tabs {
   
-  @JSImport("@mui/material", "Tabs")
+  @JSImport("@mui/material/Tabs/Tabs", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

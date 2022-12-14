@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object KeyboardHideRounded {
   
-  @JSImport("@mui/icons-material", "KeyboardHideRounded")
+  @JSImport("@mui/icons-material/KeyboardHideRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

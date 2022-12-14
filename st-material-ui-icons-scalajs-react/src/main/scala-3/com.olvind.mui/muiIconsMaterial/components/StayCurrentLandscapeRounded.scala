@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object StayCurrentLandscapeRounded {
   
-  @JSImport("@mui/icons-material", "StayCurrentLandscapeRounded")
+  @JSImport("@mui/icons-material/StayCurrentLandscapeRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

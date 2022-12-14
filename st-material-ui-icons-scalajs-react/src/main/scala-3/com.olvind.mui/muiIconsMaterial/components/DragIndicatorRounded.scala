@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DragIndicatorRounded {
   
-  @JSImport("@mui/icons-material", "DragIndicatorRounded")
+  @JSImport("@mui/icons-material/DragIndicatorRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

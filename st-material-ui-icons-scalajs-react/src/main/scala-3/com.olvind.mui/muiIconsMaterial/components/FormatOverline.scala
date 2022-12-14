@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FormatOverline {
   
-  @JSImport("@mui/icons-material", "FormatOverline")
+  @JSImport("@mui/icons-material/FormatOverline", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

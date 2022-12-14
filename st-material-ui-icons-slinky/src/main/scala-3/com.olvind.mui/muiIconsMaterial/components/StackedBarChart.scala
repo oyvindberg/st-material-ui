@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object StackedBarChart {
   
-  @JSImport("@mui/icons-material", "StackedBarChart")
+  @JSImport("@mui/icons-material/StackedBarChart", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

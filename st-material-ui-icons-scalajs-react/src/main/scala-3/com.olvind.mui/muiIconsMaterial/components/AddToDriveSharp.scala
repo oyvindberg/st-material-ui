@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AddToDriveSharp {
   
-  @JSImport("@mui/icons-material", "AddToDriveSharp")
+  @JSImport("@mui/icons-material/AddToDriveSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

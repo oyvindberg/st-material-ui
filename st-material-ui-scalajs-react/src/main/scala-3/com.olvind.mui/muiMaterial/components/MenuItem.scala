@@ -49,7 +49,7 @@ object MenuItem {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapMenu]))
     }
     
-    @JSImport("@mui/material", "MenuItem")
+    @JSImport("@mui/material/MenuItem/MenuItem", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -482,7 +482,7 @@ object MenuItem {
   
   object normal {
     
-    @JSImport("@mui/material", "MenuItem")
+    @JSImport("@mui/material/MenuItem/MenuItem", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

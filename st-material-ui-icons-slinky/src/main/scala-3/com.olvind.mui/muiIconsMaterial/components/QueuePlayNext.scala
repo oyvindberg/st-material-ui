@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object QueuePlayNext {
   
-  @JSImport("@mui/icons-material", "QueuePlayNext")
+  @JSImport("@mui/icons-material/QueuePlayNext", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BackspaceTwoTone {
   
-  @JSImport("@mui/icons-material", "BackspaceTwoTone")
+  @JSImport("@mui/icons-material/BackspaceTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

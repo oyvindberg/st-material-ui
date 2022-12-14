@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object HistoryToggleOffTwoTone {
   
-  @JSImport("@mui/icons-material", "HistoryToggleOffTwoTone")
+  @JSImport("@mui/icons-material/HistoryToggleOffTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SettingsOverscan {
   
-  @JSImport("@mui/icons-material", "SettingsOverscan")
+  @JSImport("@mui/icons-material/SettingsOverscan", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object InsertPageBreak {
   
-  @JSImport("@mui/icons-material", "InsertPageBreak")
+  @JSImport("@mui/icons-material/InsertPageBreak", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

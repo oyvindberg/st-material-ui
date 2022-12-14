@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object WifiTetheringOffOutlined {
   
-  @JSImport("@mui/icons-material", "WifiTetheringOffOutlined")
+  @JSImport("@mui/icons-material/WifiTetheringOffOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

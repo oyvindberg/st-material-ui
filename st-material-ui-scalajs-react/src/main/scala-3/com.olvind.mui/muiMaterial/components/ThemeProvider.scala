@@ -14,7 +14,7 @@ object ThemeProvider {
     new Builder[T](js.Array(this.component, __props.asInstanceOf[ThemeProviderProps[T]]))
   }
   
-  @JSImport("@mui/material", "ThemeProvider")
+  @JSImport("@mui/material/styles", "ThemeProvider")
   @js.native
   val component: js.Object = js.native
   

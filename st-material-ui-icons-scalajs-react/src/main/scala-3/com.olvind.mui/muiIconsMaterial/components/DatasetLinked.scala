@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DatasetLinked {
   
-  @JSImport("@mui/icons-material", "DatasetLinked")
+  @JSImport("@mui/icons-material/DatasetLinked", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AspectRatioOutlined {
   
-  @JSImport("@mui/icons-material", "AspectRatioOutlined")
+  @JSImport("@mui/icons-material/AspectRatioOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

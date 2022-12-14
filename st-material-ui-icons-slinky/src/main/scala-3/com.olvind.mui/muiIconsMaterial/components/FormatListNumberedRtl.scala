@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FormatListNumberedRtl {
   
-  @JSImport("@mui/icons-material", "FormatListNumberedRtl")
+  @JSImport("@mui/icons-material/FormatListNumberedRtl", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

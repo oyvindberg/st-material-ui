@@ -45,7 +45,7 @@ object Fab {
   
   object DefaultComponentPropsExtendButtonBaseTypAriaatomic {
     
-    @JSImport("@mui/material", "Fab")
+    @JSImport("@mui/material/Fab/Fab", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -493,7 +493,7 @@ object Fab {
       new Builder(js.Array(this.component, __props.asInstanceOf[com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapFabT]))
     }
     
-    @JSImport("@mui/material", "Fab")
+    @JSImport("@mui/material/Fab/Fab", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

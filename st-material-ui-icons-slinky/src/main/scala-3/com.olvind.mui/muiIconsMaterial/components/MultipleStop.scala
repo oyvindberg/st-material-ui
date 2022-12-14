@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object MultipleStop {
   
-  @JSImport("@mui/icons-material", "MultipleStop")
+  @JSImport("@mui/icons-material/MultipleStop", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BlurCircularTwoTone {
   
-  @JSImport("@mui/icons-material", "BlurCircularTwoTone")
+  @JSImport("@mui/icons-material/BlurCircularTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

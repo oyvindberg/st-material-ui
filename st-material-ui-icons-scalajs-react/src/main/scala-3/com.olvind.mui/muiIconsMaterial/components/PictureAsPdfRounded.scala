@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PictureAsPdfRounded {
   
-  @JSImport("@mui/icons-material", "PictureAsPdfRounded")
+  @JSImport("@mui/icons-material/PictureAsPdfRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object WebhookRounded {
   
-  @JSImport("@mui/icons-material", "WebhookRounded")
+  @JSImport("@mui/icons-material/WebhookRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

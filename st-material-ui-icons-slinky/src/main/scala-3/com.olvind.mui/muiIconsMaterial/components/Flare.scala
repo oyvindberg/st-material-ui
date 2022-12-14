@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Flare {
   
-  @JSImport("@mui/icons-material", "Flare")
+  @JSImport("@mui/icons-material/Flare", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SwitchUnstyled {
   
-  @JSImport("@mui/base", "SwitchUnstyled")
+  @JSImport("@mui/base/SwitchUnstyled/SwitchUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

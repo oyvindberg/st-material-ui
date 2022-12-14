@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Blender {
   
-  @JSImport("@mui/icons-material", "Blender")
+  @JSImport("@mui/icons-material/Blender", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

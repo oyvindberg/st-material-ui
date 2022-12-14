@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BookmarkRemoveRounded {
   
-  @JSImport("@mui/icons-material", "BookmarkRemoveRounded")
+  @JSImport("@mui/icons-material/BookmarkRemoveRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

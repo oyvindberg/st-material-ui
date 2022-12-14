@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ConnectWithoutContactRounded {
   
-  @JSImport("@mui/icons-material", "ConnectWithoutContactRounded")
+  @JSImport("@mui/icons-material/ConnectWithoutContactRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

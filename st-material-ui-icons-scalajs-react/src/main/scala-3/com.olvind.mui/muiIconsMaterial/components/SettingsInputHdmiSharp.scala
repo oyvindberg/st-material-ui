@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SettingsInputHdmiSharp {
   
-  @JSImport("@mui/icons-material", "SettingsInputHdmiSharp")
+  @JSImport("@mui/icons-material/SettingsInputHdmiSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

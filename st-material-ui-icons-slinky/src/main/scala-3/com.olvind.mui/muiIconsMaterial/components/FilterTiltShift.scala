@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FilterTiltShift {
   
-  @JSImport("@mui/icons-material", "FilterTiltShift")
+  @JSImport("@mui/icons-material/FilterTiltShift", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

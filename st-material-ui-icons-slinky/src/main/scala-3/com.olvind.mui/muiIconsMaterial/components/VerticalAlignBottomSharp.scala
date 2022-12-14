@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object VerticalAlignBottomSharp {
   
-  @JSImport("@mui/icons-material", "VerticalAlignBottomSharp")
+  @JSImport("@mui/icons-material/VerticalAlignBottomSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

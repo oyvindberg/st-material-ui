@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FaceRetouchingOffSharp {
   
-  @JSImport("@mui/icons-material", "FaceRetouchingOffSharp")
+  @JSImport("@mui/icons-material/FaceRetouchingOffSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

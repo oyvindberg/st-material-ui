@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object WbTwilightRounded {
   
-  @JSImport("@mui/icons-material", "WbTwilightRounded")
+  @JSImport("@mui/icons-material/WbTwilightRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

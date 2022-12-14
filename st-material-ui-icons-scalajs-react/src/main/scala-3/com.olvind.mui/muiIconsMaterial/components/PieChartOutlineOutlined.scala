@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PieChartOutlineOutlined {
   
-  @JSImport("@mui/icons-material", "PieChartOutlineOutlined")
+  @JSImport("@mui/icons-material/PieChartOutlineOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

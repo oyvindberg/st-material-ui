@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object WifiOffRounded {
   
-  @JSImport("@mui/icons-material", "WifiOffRounded")
+  @JSImport("@mui/icons-material/WifiOffRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

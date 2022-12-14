@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object WrapTextSharp {
   
-  @JSImport("@mui/icons-material", "WrapTextSharp")
+  @JSImport("@mui/icons-material/WrapTextSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

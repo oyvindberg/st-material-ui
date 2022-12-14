@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SpatialTrackingTwoTone {
   
-  @JSImport("@mui/icons-material", "SpatialTrackingTwoTone")
+  @JSImport("@mui/icons-material/SpatialTrackingTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

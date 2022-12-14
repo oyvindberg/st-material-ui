@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PanoramaHorizontalOutlined {
   
-  @JSImport("@mui/icons-material", "PanoramaHorizontalOutlined")
+  @JSImport("@mui/icons-material/PanoramaHorizontalOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

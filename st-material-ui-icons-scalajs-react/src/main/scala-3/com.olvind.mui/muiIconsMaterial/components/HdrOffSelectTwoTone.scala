@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object HdrOffSelectTwoTone {
   
-  @JSImport("@mui/icons-material", "HdrOffSelectTwoTone")
+  @JSImport("@mui/icons-material/HdrOffSelectTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

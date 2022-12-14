@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object RMobiledataTwoTone {
   
-  @JSImport("@mui/icons-material", "RMobiledataTwoTone")
+  @JSImport("@mui/icons-material/RMobiledataTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FlutterDash {
   
-  @JSImport("@mui/icons-material", "FlutterDash")
+  @JSImport("@mui/icons-material/FlutterDash", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

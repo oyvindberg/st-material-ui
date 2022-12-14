@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PlagiarismRounded {
   
-  @JSImport("@mui/icons-material", "PlagiarismRounded")
+  @JSImport("@mui/icons-material/PlagiarismRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

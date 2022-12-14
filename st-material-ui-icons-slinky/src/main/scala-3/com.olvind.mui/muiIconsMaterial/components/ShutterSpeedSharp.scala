@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ShutterSpeedSharp {
   
-  @JSImport("@mui/icons-material", "ShutterSpeedSharp")
+  @JSImport("@mui/icons-material/ShutterSpeedSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

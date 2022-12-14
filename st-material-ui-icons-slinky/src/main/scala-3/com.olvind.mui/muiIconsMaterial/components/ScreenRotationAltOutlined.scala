@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ScreenRotationAltOutlined {
   
-  @JSImport("@mui/icons-material", "ScreenRotationAltOutlined")
+  @JSImport("@mui/icons-material/ScreenRotationAltOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

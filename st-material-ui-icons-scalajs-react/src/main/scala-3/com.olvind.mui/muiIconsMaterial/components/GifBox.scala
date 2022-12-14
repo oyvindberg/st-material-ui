@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GifBox {
   
-  @JSImport("@mui/icons-material", "GifBox")
+  @JSImport("@mui/icons-material/GifBox", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AirplaySharp {
   
-  @JSImport("@mui/icons-material", "AirplaySharp")
+  @JSImport("@mui/icons-material/AirplaySharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

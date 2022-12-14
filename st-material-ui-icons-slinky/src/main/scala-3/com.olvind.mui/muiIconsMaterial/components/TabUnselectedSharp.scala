@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TabUnselectedSharp {
   
-  @JSImport("@mui/icons-material", "TabUnselectedSharp")
+  @JSImport("@mui/icons-material/TabUnselectedSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

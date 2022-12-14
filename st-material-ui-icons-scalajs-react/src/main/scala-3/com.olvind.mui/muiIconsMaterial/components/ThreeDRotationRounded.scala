@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ThreeDRotationRounded {
   
-  @JSImport("@mui/icons-material", "ThreeDRotationRounded")
+  @JSImport("@mui/icons-material/ThreeDRotationRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

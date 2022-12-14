@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BrowserNotSupported {
   
-  @JSImport("@mui/icons-material", "BrowserNotSupported")
+  @JSImport("@mui/icons-material/BrowserNotSupported", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

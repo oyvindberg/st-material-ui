@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Timer10SelectRounded {
   
-  @JSImport("@mui/icons-material", "Timer10SelectRounded")
+  @JSImport("@mui/icons-material/Timer10SelectRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AdminPanelSettingsRounded {
   
-  @JSImport("@mui/icons-material", "AdminPanelSettingsRounded")
+  @JSImport("@mui/icons-material/AdminPanelSettingsRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

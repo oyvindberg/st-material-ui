@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object HdrEnhancedSelectTwoTone {
   
-  @JSImport("@mui/icons-material", "HdrEnhancedSelectTwoTone")
+  @JSImport("@mui/icons-material/HdrEnhancedSelectTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

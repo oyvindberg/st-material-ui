@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object RotateLeftTwoTone {
   
-  @JSImport("@mui/icons-material", "RotateLeftTwoTone")
+  @JSImport("@mui/icons-material/RotateLeftTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ChatBubble {
   
-  @JSImport("@mui/icons-material", "ChatBubble")
+  @JSImport("@mui/icons-material/ChatBubble", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

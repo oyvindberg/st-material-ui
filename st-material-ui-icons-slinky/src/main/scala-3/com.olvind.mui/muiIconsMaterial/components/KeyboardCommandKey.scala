@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object KeyboardCommandKey {
   
-  @JSImport("@mui/icons-material", "KeyboardCommandKey")
+  @JSImport("@mui/icons-material/KeyboardCommandKey", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

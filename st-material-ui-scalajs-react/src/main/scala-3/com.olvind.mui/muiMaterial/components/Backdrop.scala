@@ -40,7 +40,7 @@ object Backdrop {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsBackdropTypeMapdiv]))
   }
   
-  @JSImport("@mui/material", "Backdrop")
+  @JSImport("@mui/material/Backdrop/Backdrop", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

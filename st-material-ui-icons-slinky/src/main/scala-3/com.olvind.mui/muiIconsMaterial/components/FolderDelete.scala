@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FolderDelete {
   
-  @JSImport("@mui/icons-material", "FolderDelete")
+  @JSImport("@mui/icons-material/FolderDelete", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

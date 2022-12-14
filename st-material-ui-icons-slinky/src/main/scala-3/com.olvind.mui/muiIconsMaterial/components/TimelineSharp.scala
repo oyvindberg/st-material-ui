@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TimelineSharp {
   
-  @JSImport("@mui/icons-material", "TimelineSharp")
+  @JSImport("@mui/icons-material/TimelineSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

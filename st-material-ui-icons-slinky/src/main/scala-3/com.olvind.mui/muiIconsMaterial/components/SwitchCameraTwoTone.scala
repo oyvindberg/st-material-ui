@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SwitchCameraTwoTone {
   
-  @JSImport("@mui/icons-material", "SwitchCameraTwoTone")
+  @JSImport("@mui/icons-material/SwitchCameraTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

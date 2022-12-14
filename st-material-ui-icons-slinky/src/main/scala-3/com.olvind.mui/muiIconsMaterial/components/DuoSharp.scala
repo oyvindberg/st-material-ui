@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DuoSharp {
   
-  @JSImport("@mui/icons-material", "DuoSharp")
+  @JSImport("@mui/icons-material/DuoSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

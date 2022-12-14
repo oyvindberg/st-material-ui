@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object NetworkCellOutlined {
   
-  @JSImport("@mui/icons-material", "NetworkCellOutlined")
+  @JSImport("@mui/icons-material/NetworkCellOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

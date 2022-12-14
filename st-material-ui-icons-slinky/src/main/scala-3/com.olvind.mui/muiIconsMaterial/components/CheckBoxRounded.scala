@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CheckBoxRounded {
   
-  @JSImport("@mui/icons-material", "CheckBoxRounded")
+  @JSImport("@mui/icons-material/CheckBoxRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

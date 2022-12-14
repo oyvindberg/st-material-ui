@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object KeyboardCapslockOutlined {
   
-  @JSImport("@mui/icons-material", "KeyboardCapslockOutlined")
+  @JSImport("@mui/icons-material/KeyboardCapslockOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

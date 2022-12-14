@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Radio {
   
-  @JSImport("@mui/icons-material", "Radio")
+  @JSImport("@mui/icons-material/Radio", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

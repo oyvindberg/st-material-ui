@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SnackbarUnstyled {
   
-  @JSImport("@mui/base", "SnackbarUnstyled")
+  @JSImport("@mui/base/SnackbarUnstyled/SnackbarUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

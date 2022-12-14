@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BatchPredictionRounded {
   
-  @JSImport("@mui/icons-material", "BatchPredictionRounded")
+  @JSImport("@mui/icons-material/BatchPredictionRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

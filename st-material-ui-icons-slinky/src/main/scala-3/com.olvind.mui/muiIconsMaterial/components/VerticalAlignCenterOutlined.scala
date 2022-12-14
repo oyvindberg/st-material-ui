@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object VerticalAlignCenterOutlined {
   
-  @JSImport("@mui/icons-material", "VerticalAlignCenterOutlined")
+  @JSImport("@mui/icons-material/VerticalAlignCenterOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

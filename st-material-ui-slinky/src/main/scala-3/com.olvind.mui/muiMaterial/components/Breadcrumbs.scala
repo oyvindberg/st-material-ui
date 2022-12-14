@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Breadcrumbs {
   
-  @JSImport("@mui/material", "Breadcrumbs")
+  @JSImport("@mui/material/Breadcrumbs/Breadcrumbs", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

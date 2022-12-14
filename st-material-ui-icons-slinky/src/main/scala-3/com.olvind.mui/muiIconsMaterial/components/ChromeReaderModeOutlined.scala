@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ChromeReaderModeOutlined {
   
-  @JSImport("@mui/icons-material", "ChromeReaderModeOutlined")
+  @JSImport("@mui/icons-material/ChromeReaderModeOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

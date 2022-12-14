@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object MaximizeRounded {
   
-  @JSImport("@mui/icons-material", "MaximizeRounded")
+  @JSImport("@mui/icons-material/MaximizeRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

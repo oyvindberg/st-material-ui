@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FastRewindOutlined {
   
-  @JSImport("@mui/icons-material", "FastRewindOutlined")
+  @JSImport("@mui/icons-material/FastRewindOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

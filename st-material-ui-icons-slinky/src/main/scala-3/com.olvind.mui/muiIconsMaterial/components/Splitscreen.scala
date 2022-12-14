@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Splitscreen {
   
-  @JSImport("@mui/icons-material", "Splitscreen")
+  @JSImport("@mui/icons-material/Splitscreen", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

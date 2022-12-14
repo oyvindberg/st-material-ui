@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ShapeLineTwoTone {
   
-  @JSImport("@mui/icons-material", "ShapeLineTwoTone")
+  @JSImport("@mui/icons-material/ShapeLineTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

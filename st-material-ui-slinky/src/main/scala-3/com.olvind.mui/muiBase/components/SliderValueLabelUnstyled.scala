@@ -15,7 +15,7 @@ object SliderValueLabelUnstyled {
     new Builder(js.Array(this.component, __props.asInstanceOf[SliderValueLabelUnstyledProps]))
   }
   
-  @JSImport("@mui/base", "SliderValueLabelUnstyled")
+  @JSImport("@mui/base/SliderUnstyled", "SliderValueLabelUnstyled")
   @js.native
   val component: js.Object = js.native
   

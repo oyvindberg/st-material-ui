@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SpatialTrackingOutlined {
   
-  @JSImport("@mui/icons-material", "SpatialTrackingOutlined")
+  @JSImport("@mui/icons-material/SpatialTrackingOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

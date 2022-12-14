@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object RingVolume {
   
-  @JSImport("@mui/icons-material", "RingVolume")
+  @JSImport("@mui/icons-material/RingVolume", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

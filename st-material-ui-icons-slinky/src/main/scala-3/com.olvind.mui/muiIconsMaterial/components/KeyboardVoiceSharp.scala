@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object KeyboardVoiceSharp {
   
-  @JSImport("@mui/icons-material", "KeyboardVoiceSharp")
+  @JSImport("@mui/icons-material/KeyboardVoiceSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

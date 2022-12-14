@@ -38,7 +38,7 @@ object ImageList {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsImageListTypeMapul]))
   }
   
-  @JSImport("@mui/material", "ImageList")
+  @JSImport("@mui/material/ImageList/ImageList", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

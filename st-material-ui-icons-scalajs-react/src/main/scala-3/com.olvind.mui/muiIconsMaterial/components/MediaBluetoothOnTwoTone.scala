@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object MediaBluetoothOnTwoTone {
   
-  @JSImport("@mui/icons-material", "MediaBluetoothOnTwoTone")
+  @JSImport("@mui/icons-material/MediaBluetoothOnTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

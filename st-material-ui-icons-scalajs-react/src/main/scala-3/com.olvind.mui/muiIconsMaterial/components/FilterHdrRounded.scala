@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FilterHdrRounded {
   
-  @JSImport("@mui/icons-material", "FilterHdrRounded")
+  @JSImport("@mui/icons-material/FilterHdrRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

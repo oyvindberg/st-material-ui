@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object VideoCameraBackOutlined {
   
-  @JSImport("@mui/icons-material", "VideoCameraBackOutlined")
+  @JSImport("@mui/icons-material/VideoCameraBackOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

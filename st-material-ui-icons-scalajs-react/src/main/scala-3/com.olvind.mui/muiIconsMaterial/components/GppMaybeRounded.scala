@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GppMaybeRounded {
   
-  @JSImport("@mui/icons-material", "GppMaybeRounded")
+  @JSImport("@mui/icons-material/GppMaybeRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

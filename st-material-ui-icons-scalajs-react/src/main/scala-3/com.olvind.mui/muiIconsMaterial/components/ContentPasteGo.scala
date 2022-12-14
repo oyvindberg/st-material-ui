@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ContentPasteGo {
   
-  @JSImport("@mui/icons-material", "ContentPasteGo")
+  @JSImport("@mui/icons-material/ContentPasteGo", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

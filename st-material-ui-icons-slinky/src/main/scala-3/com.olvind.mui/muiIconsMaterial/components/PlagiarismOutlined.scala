@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PlagiarismOutlined {
   
-  @JSImport("@mui/icons-material", "PlagiarismOutlined")
+  @JSImport("@mui/icons-material/PlagiarismOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

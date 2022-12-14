@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FullscreenExitRounded {
   
-  @JSImport("@mui/icons-material", "FullscreenExitRounded")
+  @JSImport("@mui/icons-material/FullscreenExitRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

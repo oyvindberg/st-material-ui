@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CameraEnhance {
   
-  @JSImport("@mui/icons-material", "CameraEnhance")
+  @JSImport("@mui/icons-material/CameraEnhance", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FormatIndentIncreaseOutlined {
   
-  @JSImport("@mui/icons-material", "FormatIndentIncreaseOutlined")
+  @JSImport("@mui/icons-material/FormatIndentIncreaseOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

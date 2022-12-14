@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AutofpsSelectTwoTone {
   
-  @JSImport("@mui/icons-material", "AutofpsSelectTwoTone")
+  @JSImport("@mui/icons-material/AutofpsSelectTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

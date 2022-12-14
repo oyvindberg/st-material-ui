@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SpaceBarOutlined {
   
-  @JSImport("@mui/icons-material", "SpaceBarOutlined")
+  @JSImport("@mui/icons-material/SpaceBarOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

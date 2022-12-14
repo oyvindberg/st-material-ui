@@ -33,7 +33,7 @@ object SliderValueLabel {
     new Builder(js.Array(this.component, __props.asInstanceOf[SliderValueLabelProps]))
   }
   
-  @JSImport("@mui/material", "SliderValueLabel")
+  @JSImport("@mui/material/Slider/Slider", "SliderValueLabel")
   @js.native
   val component: js.Object = js.native
   

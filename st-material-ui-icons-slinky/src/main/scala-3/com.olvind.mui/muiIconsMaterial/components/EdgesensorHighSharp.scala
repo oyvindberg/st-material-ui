@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object EdgesensorHighSharp {
   
-  @JSImport("@mui/icons-material", "EdgesensorHighSharp")
+  @JSImport("@mui/icons-material/EdgesensorHighSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

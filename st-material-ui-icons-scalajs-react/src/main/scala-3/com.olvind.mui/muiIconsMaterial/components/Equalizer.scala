@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Equalizer {
   
-  @JSImport("@mui/icons-material", "Equalizer")
+  @JSImport("@mui/icons-material/Equalizer", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FormatStrikethrough {
   
-  @JSImport("@mui/icons-material", "FormatStrikethrough")
+  @JSImport("@mui/icons-material/FormatStrikethrough", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

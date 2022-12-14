@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object InsertPageBreakSharp {
   
-  @JSImport("@mui/icons-material", "InsertPageBreakSharp")
+  @JSImport("@mui/icons-material/InsertPageBreakSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

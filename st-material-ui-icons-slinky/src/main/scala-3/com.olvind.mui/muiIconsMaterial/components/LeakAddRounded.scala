@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object LeakAddRounded {
   
-  @JSImport("@mui/icons-material", "LeakAddRounded")
+  @JSImport("@mui/icons-material/LeakAddRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TransitEnterexit {
   
-  @JSImport("@mui/icons-material", "TransitEnterexit")
+  @JSImport("@mui/icons-material/TransitEnterexit", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

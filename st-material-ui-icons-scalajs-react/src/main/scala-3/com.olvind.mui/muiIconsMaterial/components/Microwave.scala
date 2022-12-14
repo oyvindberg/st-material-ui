@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Microwave {
   
-  @JSImport("@mui/icons-material", "Microwave")
+  @JSImport("@mui/icons-material/Microwave", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

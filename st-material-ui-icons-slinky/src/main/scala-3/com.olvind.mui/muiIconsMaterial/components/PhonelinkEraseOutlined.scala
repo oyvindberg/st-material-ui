@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PhonelinkEraseOutlined {
   
-  @JSImport("@mui/icons-material", "PhonelinkEraseOutlined")
+  @JSImport("@mui/icons-material/PhonelinkEraseOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

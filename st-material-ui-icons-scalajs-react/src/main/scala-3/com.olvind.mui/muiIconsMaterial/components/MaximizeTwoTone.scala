@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object MaximizeTwoTone {
   
-  @JSImport("@mui/icons-material", "MaximizeTwoTone")
+  @JSImport("@mui/icons-material/MaximizeTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

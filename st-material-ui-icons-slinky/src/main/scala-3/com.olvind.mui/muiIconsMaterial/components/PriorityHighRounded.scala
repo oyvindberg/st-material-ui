@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PriorityHighRounded {
   
-  @JSImport("@mui/icons-material", "PriorityHighRounded")
+  @JSImport("@mui/icons-material/PriorityHighRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

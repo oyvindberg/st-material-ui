@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object HorizontalSplitOutlined {
   
-  @JSImport("@mui/icons-material", "HorizontalSplitOutlined")
+  @JSImport("@mui/icons-material/HorizontalSplitOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

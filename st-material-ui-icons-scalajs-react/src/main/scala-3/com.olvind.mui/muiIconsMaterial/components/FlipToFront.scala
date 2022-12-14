@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FlipToFront {
   
-  @JSImport("@mui/icons-material", "FlipToFront")
+  @JSImport("@mui/icons-material/FlipToFront", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SettingsInputHdmiOutlined {
   
-  @JSImport("@mui/icons-material", "SettingsInputHdmiOutlined")
+  @JSImport("@mui/icons-material/SettingsInputHdmiOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

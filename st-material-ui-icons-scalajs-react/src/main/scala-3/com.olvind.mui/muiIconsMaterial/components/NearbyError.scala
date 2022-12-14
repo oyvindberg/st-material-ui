@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object NearbyError {
   
-  @JSImport("@mui/icons-material", "NearbyError")
+  @JSImport("@mui/icons-material/NearbyError", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

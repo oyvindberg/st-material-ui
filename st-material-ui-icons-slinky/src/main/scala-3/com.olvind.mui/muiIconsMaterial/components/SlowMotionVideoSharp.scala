@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SlowMotionVideoSharp {
   
-  @JSImport("@mui/icons-material", "SlowMotionVideoSharp")
+  @JSImport("@mui/icons-material/SlowMotionVideoSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

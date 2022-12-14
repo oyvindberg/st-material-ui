@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object OpenInBrowserRounded {
   
-  @JSImport("@mui/icons-material", "OpenInBrowserRounded")
+  @JSImport("@mui/icons-material/OpenInBrowserRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

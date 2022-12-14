@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BottomNavigation {
   
-  @JSImport("@mui/material", "BottomNavigation")
+  @JSImport("@mui/material/BottomNavigation/BottomNavigation", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

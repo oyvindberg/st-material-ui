@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CheckBoxOutlineBlank {
   
-  @JSImport("@mui/icons-material", "CheckBoxOutlineBlank")
+  @JSImport("@mui/icons-material/CheckBoxOutlineBlank", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

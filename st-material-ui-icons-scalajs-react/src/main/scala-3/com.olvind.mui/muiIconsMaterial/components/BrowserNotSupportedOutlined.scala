@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BrowserNotSupportedOutlined {
   
-  @JSImport("@mui/icons-material", "BrowserNotSupportedOutlined")
+  @JSImport("@mui/icons-material/BrowserNotSupportedOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

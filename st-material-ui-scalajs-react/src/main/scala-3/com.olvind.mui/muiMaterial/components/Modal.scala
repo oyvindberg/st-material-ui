@@ -40,7 +40,7 @@ object Modal {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsExtendModalUnstyled]))
   }
   
-  @JSImport("@mui/material", "Modal")
+  @JSImport("@mui/material/Modal/Modal", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

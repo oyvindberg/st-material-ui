@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object HourglassFullOutlined {
   
-  @JSImport("@mui/icons-material", "HourglassFullOutlined")
+  @JSImport("@mui/icons-material/HourglassFullOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

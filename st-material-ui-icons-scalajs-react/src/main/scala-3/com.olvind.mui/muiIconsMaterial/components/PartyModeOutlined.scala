@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PartyModeOutlined {
   
-  @JSImport("@mui/icons-material", "PartyModeOutlined")
+  @JSImport("@mui/icons-material/PartyModeOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

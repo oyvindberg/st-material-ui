@@ -50,7 +50,7 @@ object TableSortLabel {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapTabl]))
     }
     
-    @JSImport("@mui/material", "TableSortLabel")
+    @JSImport("@mui/material/TableSortLabel/TableSortLabel", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -481,7 +481,7 @@ object TableSortLabel {
   
   object normal {
     
-    @JSImport("@mui/material", "TableSortLabel")
+    @JSImport("@mui/material/TableSortLabel/TableSortLabel", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

@@ -52,7 +52,7 @@ object ToggleButton {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapTogg]))
     }
     
-    @JSImport("@mui/material", "ToggleButton")
+    @JSImport("@mui/material/ToggleButton/ToggleButton", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -492,7 +492,7 @@ object ToggleButton {
       new Builder(js.Array(this.component, __props.asInstanceOf[DefaultComponentPropsExtendButtonBaseTypAriacolspan]))
     }
     
-    @JSImport("@mui/material", "ToggleButton")
+    @JSImport("@mui/material/ToggleButton/ToggleButton", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Component {
   
-  @JSImport("@mui/base/InputUnstyled", JSImport.Default)
+  @JSImport("@mui/base/InputUnstyled/InputUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Chip {
   
-  @JSImport("@mui/material", "Chip")
+  @JSImport("@mui/material/Chip/Chip", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TextRotateUpOutlined {
   
-  @JSImport("@mui/icons-material", "TextRotateUpOutlined")
+  @JSImport("@mui/icons-material/TextRotateUpOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

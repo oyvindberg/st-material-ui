@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PhotoSizeSelectActual {
   
-  @JSImport("@mui/icons-material", "PhotoSizeSelectActual")
+  @JSImport("@mui/icons-material/PhotoSizeSelectActual", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

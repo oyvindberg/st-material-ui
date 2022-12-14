@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object IndeterminateCheckBoxTwoTone {
   
-  @JSImport("@mui/icons-material", "IndeterminateCheckBoxTwoTone")
+  @JSImport("@mui/icons-material/IndeterminateCheckBoxTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

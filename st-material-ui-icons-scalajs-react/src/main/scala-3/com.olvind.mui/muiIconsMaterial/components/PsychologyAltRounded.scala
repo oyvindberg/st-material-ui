@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PsychologyAltRounded {
   
-  @JSImport("@mui/icons-material", "PsychologyAltRounded")
+  @JSImport("@mui/icons-material/PsychologyAltRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

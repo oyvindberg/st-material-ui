@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DoDisturbOffTwoTone {
   
-  @JSImport("@mui/icons-material", "DoDisturbOffTwoTone")
+  @JSImport("@mui/icons-material/DoDisturbOffTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

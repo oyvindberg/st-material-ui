@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FormatLineSpacingRounded {
   
-  @JSImport("@mui/icons-material", "FormatLineSpacingRounded")
+  @JSImport("@mui/icons-material/FormatLineSpacingRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

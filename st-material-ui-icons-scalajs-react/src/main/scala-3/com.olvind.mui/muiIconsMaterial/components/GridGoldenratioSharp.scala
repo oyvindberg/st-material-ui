@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GridGoldenratioSharp {
   
-  @JSImport("@mui/icons-material", "GridGoldenratioSharp")
+  @JSImport("@mui/icons-material/GridGoldenratioSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

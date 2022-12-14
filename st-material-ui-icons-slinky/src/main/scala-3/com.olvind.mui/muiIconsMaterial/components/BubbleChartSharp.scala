@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BubbleChartSharp {
   
-  @JSImport("@mui/icons-material", "BubbleChartSharp")
+  @JSImport("@mui/icons-material/BubbleChartSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

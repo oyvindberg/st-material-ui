@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GridOffRounded {
   
-  @JSImport("@mui/icons-material", "GridOffRounded")
+  @JSImport("@mui/icons-material/GridOffRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

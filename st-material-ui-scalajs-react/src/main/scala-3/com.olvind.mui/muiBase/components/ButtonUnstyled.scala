@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ButtonUnstyled {
   
-  @JSImport("@mui/base", "ButtonUnstyled")
+  @JSImport("@mui/base/ButtonUnstyled/ButtonUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

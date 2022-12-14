@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Sync {
   
-  @JSImport("@mui/icons-material", "Sync")
+  @JSImport("@mui/icons-material/Sync", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

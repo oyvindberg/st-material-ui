@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object LeakRemoveTwoTone {
   
-  @JSImport("@mui/icons-material", "LeakRemoveTwoTone")
+  @JSImport("@mui/icons-material/LeakRemoveTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

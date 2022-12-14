@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GpsNotFixedSharp {
   
-  @JSImport("@mui/icons-material", "GpsNotFixedSharp")
+  @JSImport("@mui/icons-material/GpsNotFixedSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

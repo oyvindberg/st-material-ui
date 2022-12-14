@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FolderZipOutlined {
   
-  @JSImport("@mui/icons-material", "FolderZipOutlined")
+  @JSImport("@mui/icons-material/FolderZipOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

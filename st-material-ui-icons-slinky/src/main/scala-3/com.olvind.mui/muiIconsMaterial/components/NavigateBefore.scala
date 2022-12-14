@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object NavigateBefore {
   
-  @JSImport("@mui/icons-material", "NavigateBefore")
+  @JSImport("@mui/icons-material/NavigateBefore", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -53,7 +53,7 @@ object TablePagination {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsTablePaginationType]))
   }
   
-  @JSImport("@mui/material", "TablePagination")
+  @JSImport("@mui/material/TablePagination/TablePagination", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

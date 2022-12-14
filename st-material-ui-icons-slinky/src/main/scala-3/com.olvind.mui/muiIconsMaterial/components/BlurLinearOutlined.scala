@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BlurLinearOutlined {
   
-  @JSImport("@mui/icons-material", "BlurLinearOutlined")
+  @JSImport("@mui/icons-material/BlurLinearOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

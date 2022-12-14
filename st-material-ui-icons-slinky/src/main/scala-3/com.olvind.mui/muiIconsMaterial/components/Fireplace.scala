@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Fireplace {
   
-  @JSImport("@mui/icons-material", "Fireplace")
+  @JSImport("@mui/icons-material/Fireplace", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

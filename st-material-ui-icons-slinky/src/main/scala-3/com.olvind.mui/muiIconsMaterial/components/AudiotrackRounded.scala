@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AudiotrackRounded {
   
-  @JSImport("@mui/icons-material", "AudiotrackRounded")
+  @JSImport("@mui/icons-material/AudiotrackRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

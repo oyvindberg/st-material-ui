@@ -18,7 +18,7 @@ object ClickAwayListener {
     new Builder(js.Array(this.component, __props.asInstanceOf[ClickAwayListenerProps]))
   }
   
-  @JSImport("@mui/material", "ClickAwayListener")
+  @JSImport("@mui/material/ClickAwayListener", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

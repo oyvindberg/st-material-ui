@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object RadioButtonUncheckedOutlined {
   
-  @JSImport("@mui/icons-material", "RadioButtonUncheckedOutlined")
+  @JSImport("@mui/icons-material/RadioButtonUncheckedOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

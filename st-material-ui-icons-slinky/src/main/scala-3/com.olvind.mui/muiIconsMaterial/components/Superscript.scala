@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Superscript {
   
-  @JSImport("@mui/icons-material", "Superscript")
+  @JSImport("@mui/icons-material/Superscript", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

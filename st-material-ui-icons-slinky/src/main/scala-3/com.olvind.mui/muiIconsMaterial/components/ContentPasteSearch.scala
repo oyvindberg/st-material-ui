@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ContentPasteSearch {
   
-  @JSImport("@mui/icons-material", "ContentPasteSearch")
+  @JSImport("@mui/icons-material/ContentPasteSearch", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

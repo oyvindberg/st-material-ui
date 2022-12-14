@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object StyledEngineProvider {
   
-  @JSImport("@mui/material", "StyledEngineProvider")
+  @JSImport("@mui/material/styles", "StyledEngineProvider")
   @js.native
   val component: js.Object = js.native
   

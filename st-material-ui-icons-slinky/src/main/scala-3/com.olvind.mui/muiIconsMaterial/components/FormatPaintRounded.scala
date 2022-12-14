@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FormatPaintRounded {
   
-  @JSImport("@mui/icons-material", "FormatPaintRounded")
+  @JSImport("@mui/icons-material/FormatPaintRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

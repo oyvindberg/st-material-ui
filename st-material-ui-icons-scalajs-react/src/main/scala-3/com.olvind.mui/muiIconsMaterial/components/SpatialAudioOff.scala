@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SpatialAudioOff {
   
-  @JSImport("@mui/icons-material", "SpatialAudioOff")
+  @JSImport("@mui/icons-material/SpatialAudioOff", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

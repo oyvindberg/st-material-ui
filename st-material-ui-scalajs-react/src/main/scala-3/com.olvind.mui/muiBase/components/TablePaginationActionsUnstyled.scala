@@ -43,7 +43,7 @@ object TablePaginationActionsUnstyled {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsTablePaginationActi]))
   }
   
-  @JSImport("@mui/base", "TablePaginationActionsUnstyled")
+  @JSImport("@mui/base/TablePaginationUnstyled/TablePaginationActionsUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

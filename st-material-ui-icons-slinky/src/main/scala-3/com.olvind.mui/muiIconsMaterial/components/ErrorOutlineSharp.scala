@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ErrorOutlineSharp {
   
-  @JSImport("@mui/icons-material", "ErrorOutlineSharp")
+  @JSImport("@mui/icons-material/ErrorOutlineSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

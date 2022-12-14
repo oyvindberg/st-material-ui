@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ViewAgendaRounded {
   
-  @JSImport("@mui/icons-material", "ViewAgendaRounded")
+  @JSImport("@mui/icons-material/ViewAgendaRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GridViewRounded {
   
-  @JSImport("@mui/icons-material", "GridViewRounded")
+  @JSImport("@mui/icons-material/GridViewRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

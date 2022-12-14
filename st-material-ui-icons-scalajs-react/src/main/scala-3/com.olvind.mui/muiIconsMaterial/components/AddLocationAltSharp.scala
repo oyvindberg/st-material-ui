@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AddLocationAltSharp {
   
-  @JSImport("@mui/icons-material", "AddLocationAltSharp")
+  @JSImport("@mui/icons-material/AddLocationAltSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

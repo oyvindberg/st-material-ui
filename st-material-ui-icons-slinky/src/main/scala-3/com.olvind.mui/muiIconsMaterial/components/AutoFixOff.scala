@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AutoFixOff {
   
-  @JSImport("@mui/icons-material", "AutoFixOff")
+  @JSImport("@mui/icons-material/AutoFixOff", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

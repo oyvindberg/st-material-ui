@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BorderStyleOutlined {
   
-  @JSImport("@mui/icons-material", "BorderStyleOutlined")
+  @JSImport("@mui/icons-material/BorderStyleOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

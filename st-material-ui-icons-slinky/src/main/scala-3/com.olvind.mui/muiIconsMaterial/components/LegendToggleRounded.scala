@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object LegendToggleRounded {
   
-  @JSImport("@mui/icons-material", "LegendToggleRounded")
+  @JSImport("@mui/icons-material/LegendToggleRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

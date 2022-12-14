@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PauseCircleOutline {
   
-  @JSImport("@mui/icons-material", "PauseCircleOutline")
+  @JSImport("@mui/icons-material/PauseCircleOutline", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

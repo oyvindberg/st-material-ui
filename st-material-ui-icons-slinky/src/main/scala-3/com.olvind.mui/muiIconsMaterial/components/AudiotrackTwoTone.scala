@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AudiotrackTwoTone {
   
-  @JSImport("@mui/icons-material", "AudiotrackTwoTone")
+  @JSImport("@mui/icons-material/AudiotrackTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

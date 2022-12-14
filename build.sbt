@@ -22,7 +22,7 @@ val common: Project => Project = _.enablePlugins(ScalaJSPlugin)
     /* disabled because it somehow triggers many warnings */
     scalaJSLinkerConfig ~= (_.withSourceMap(false)),
     /* disable scaladoc */
-    Compile / doc / sources := Nil,
+    Compile / doc / sources := Nil
   )
 
 val setupST: Project => Project = _.enablePlugins(ScalablyTypedConverterGenSourcePlugin).settings(
@@ -42,7 +42,8 @@ val setupST: Project => Project = _.enablePlugins(ScalablyTypedConverterGenSourc
   stOutputPackage := "com.olvind.mui",
   stSourceGenMode := SourceGenMode.Manual(baseDirectory.value / s"src/main/scala-3"),
   // focus only on these libraries
-  stMinimize := Selection.AllExcept("@mui/material", "@mui/icons-material"),
+  stMinimize := Selection.AllExcept("@mui/material"),
+  stReactEnableTreeShaking := Selection.All,
   // because npm is slow
   useYarn := true
 )
@@ -56,8 +57,25 @@ lazy val `st-material-ui-scalajs-react`: Project = project
       val from = (baseDirectory.value / s"src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
       val to =
         ((ThisBuild / baseDirectory).value / s"st-material-ui-icons-scalajs-react/src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
-      java.nio.file.Files.createDirectories(to.getParent)
-      java.nio.file.Files.move(from, to, java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+
+      if (java.nio.file.Files.exists(from)) {
+        def deleteDirectory(directoryToBeDeleted: File): Unit = {
+          val allContents = directoryToBeDeleted.listFiles
+          if (allContents != null)
+            for (file <- allContents)
+              deleteDirectory(file)
+          directoryToBeDeleted.delete
+        }
+
+        if (java.nio.file.Files.exists(to)) {
+          deleteDirectory(to.toFile)
+        } else {
+          java.nio.file.Files.createDirectories(to.getParent)
+        }
+
+        java.nio.file.Files.move(from, to)
+      }
+
       old
     }
   )
@@ -75,8 +93,24 @@ lazy val `st-material-ui-slinky`: Project = project
       val from = (baseDirectory.value / s"src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
       val to =
         ((ThisBuild / baseDirectory).value / s"st-material-ui-icons-slinky/src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
-      java.nio.file.Files.createDirectories(to.getParent)
-      java.nio.file.Files.move(from, to, java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+
+      if (java.nio.file.Files.exists(from)) {
+        def deleteDirectory(directoryToBeDeleted: File): Unit = {
+          val allContents = directoryToBeDeleted.listFiles
+          if (allContents != null)
+            for (file <- allContents)
+              deleteDirectory(file)
+          directoryToBeDeleted.delete
+        }
+
+        if (java.nio.file.Files.exists(to)) {
+          deleteDirectory(to.toFile)
+        } else {
+          java.nio.file.Files.createDirectories(to.getParent)
+        }
+
+        java.nio.file.Files.move(from, to)
+      }
       old
     }
   )

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object HdrAutoOutlined {
   
-  @JSImport("@mui/icons-material", "HdrAutoOutlined")
+  @JSImport("@mui/icons-material/HdrAutoOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

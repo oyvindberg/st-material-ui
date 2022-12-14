@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CleaningServicesRounded {
   
-  @JSImport("@mui/icons-material", "CleaningServicesRounded")
+  @JSImport("@mui/icons-material/CleaningServicesRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FindInPageRounded {
   
-  @JSImport("@mui/icons-material", "FindInPageRounded")
+  @JSImport("@mui/icons-material/FindInPageRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

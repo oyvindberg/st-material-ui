@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Sledding {
   
-  @JSImport("@mui/icons-material", "Sledding")
+  @JSImport("@mui/icons-material/Sledding", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

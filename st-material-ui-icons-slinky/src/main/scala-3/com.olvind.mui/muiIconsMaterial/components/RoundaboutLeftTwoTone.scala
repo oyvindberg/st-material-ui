@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object RoundaboutLeftTwoTone {
   
-  @JSImport("@mui/icons-material", "RoundaboutLeftTwoTone")
+  @JSImport("@mui/icons-material/RoundaboutLeftTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

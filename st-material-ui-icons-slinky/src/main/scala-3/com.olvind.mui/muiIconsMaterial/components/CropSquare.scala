@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CropSquare {
   
-  @JSImport("@mui/icons-material", "CropSquare")
+  @JSImport("@mui/icons-material/CropSquare", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

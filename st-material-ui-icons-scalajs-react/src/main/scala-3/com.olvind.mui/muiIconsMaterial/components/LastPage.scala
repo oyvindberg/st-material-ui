@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object LastPage {
   
-  @JSImport("@mui/icons-material", "LastPage")
+  @JSImport("@mui/icons-material/LastPage", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

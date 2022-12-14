@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AddCircleOutlineSharp {
   
-  @JSImport("@mui/icons-material", "AddCircleOutlineSharp")
+  @JSImport("@mui/icons-material/AddCircleOutlineSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

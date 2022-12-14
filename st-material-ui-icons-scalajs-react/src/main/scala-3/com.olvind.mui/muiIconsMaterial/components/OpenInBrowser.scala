@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object OpenInBrowser {
   
-  @JSImport("@mui/icons-material", "OpenInBrowser")
+  @JSImport("@mui/icons-material/OpenInBrowser", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

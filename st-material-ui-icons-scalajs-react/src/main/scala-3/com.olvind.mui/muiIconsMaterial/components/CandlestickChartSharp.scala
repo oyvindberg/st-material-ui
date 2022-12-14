@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CandlestickChartSharp {
   
-  @JSImport("@mui/icons-material", "CandlestickChartSharp")
+  @JSImport("@mui/icons-material/CandlestickChartSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

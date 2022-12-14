@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SocialDistanceSharp {
   
-  @JSImport("@mui/icons-material", "SocialDistanceSharp")
+  @JSImport("@mui/icons-material/SocialDistanceSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

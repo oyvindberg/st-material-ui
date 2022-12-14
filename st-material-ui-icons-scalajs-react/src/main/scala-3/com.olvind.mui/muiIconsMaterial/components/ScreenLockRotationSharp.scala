@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ScreenLockRotationSharp {
   
-  @JSImport("@mui/icons-material", "ScreenLockRotationSharp")
+  @JSImport("@mui/icons-material/ScreenLockRotationSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

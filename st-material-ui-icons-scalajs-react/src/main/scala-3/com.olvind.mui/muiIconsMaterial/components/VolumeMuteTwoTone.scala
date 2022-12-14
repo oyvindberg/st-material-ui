@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object VolumeMuteTwoTone {
   
-  @JSImport("@mui/icons-material", "VolumeMuteTwoTone")
+  @JSImport("@mui/icons-material/VolumeMuteTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

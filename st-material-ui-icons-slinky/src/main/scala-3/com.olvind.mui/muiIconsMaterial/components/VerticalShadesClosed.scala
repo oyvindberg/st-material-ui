@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object VerticalShadesClosed {
   
-  @JSImport("@mui/icons-material", "VerticalShadesClosed")
+  @JSImport("@mui/icons-material/VerticalShadesClosed", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

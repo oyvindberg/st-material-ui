@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FindReplaceOutlined {
   
-  @JSImport("@mui/icons-material", "FindReplaceOutlined")
+  @JSImport("@mui/icons-material/FindReplaceOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

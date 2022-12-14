@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ScreenLockPortraitOutlined {
   
-  @JSImport("@mui/icons-material", "ScreenLockPortraitOutlined")
+  @JSImport("@mui/icons-material/ScreenLockPortraitOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

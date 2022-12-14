@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SignalWifi4BarLockTwoTone {
   
-  @JSImport("@mui/icons-material", "SignalWifi4BarLockTwoTone")
+  @JSImport("@mui/icons-material/SignalWifi4BarLockTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

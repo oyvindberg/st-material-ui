@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ScreenLockLandscapeTwoTone {
   
-  @JSImport("@mui/icons-material", "ScreenLockLandscapeTwoTone")
+  @JSImport("@mui/icons-material/ScreenLockLandscapeTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

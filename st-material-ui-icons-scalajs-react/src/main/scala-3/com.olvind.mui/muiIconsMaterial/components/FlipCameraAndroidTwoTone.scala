@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object FlipCameraAndroidTwoTone {
   
-  @JSImport("@mui/icons-material", "FlipCameraAndroidTwoTone")
+  @JSImport("@mui/icons-material/FlipCameraAndroidTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ToggleOff {
   
-  @JSImport("@mui/icons-material", "ToggleOff")
+  @JSImport("@mui/icons-material/ToggleOff", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

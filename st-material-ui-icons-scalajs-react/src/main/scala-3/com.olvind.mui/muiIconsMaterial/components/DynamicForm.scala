@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DynamicForm {
   
-  @JSImport("@mui/icons-material", "DynamicForm")
+  @JSImport("@mui/icons-material/DynamicForm", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

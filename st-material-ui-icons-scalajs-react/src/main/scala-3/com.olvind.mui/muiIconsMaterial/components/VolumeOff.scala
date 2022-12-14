@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object VolumeOff {
   
-  @JSImport("@mui/icons-material", "VolumeOff")
+  @JSImport("@mui/icons-material/VolumeOff", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object NoiseControlOffOutlined {
   
-  @JSImport("@mui/icons-material", "NoiseControlOffOutlined")
+  @JSImport("@mui/icons-material/NoiseControlOffOutlined", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

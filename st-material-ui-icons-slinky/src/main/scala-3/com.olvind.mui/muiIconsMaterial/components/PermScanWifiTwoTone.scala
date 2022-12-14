@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PermScanWifiTwoTone {
   
-  @JSImport("@mui/icons-material", "PermScanWifiTwoTone")
+  @JSImport("@mui/icons-material/PermScanWifiTwoTone", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

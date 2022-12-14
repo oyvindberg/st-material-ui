@@ -44,7 +44,7 @@ object Button {
   
   object DefaultComponentPropsExtendButtonBaseTypAccessKey {
     
-    @JSImport("@mui/material", "Button")
+    @JSImport("@mui/material/Button/Button", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -500,7 +500,7 @@ object Button {
       new Builder(js.Array(this.component, __props.asInstanceOf[com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapButt]))
     }
     
-    @JSImport("@mui/material", "Button")
+    @JSImport("@mui/material/Button/Button", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

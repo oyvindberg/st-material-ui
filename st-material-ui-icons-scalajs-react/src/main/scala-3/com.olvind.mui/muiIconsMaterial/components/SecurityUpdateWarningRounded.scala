@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SecurityUpdateWarningRounded {
   
-  @JSImport("@mui/icons-material", "SecurityUpdateWarningRounded")
+  @JSImport("@mui/icons-material/SecurityUpdateWarningRounded", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

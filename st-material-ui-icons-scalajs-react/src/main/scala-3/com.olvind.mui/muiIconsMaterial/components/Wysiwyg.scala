@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Wysiwyg {
   
-  @JSImport("@mui/icons-material", "Wysiwyg")
+  @JSImport("@mui/icons-material/Wysiwyg", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

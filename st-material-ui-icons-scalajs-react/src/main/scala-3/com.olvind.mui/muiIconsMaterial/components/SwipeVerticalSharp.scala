@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SwipeVerticalSharp {
   
-  @JSImport("@mui/icons-material", "SwipeVerticalSharp")
+  @JSImport("@mui/icons-material/SwipeVerticalSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

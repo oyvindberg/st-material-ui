@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ViewCarouselSharp {
   
-  @JSImport("@mui/icons-material", "ViewCarouselSharp")
+  @JSImport("@mui/icons-material/ViewCarouselSharp", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -11,7 +11,7 @@ object Identity {
   
   def apply(p: Any): Default[tag.type, js.Object] = new Default[tag.type, js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
   
-  @JSImport("@mui/base", "Identity")
+  @JSImport("@mui/base/SliderUnstyled/useSlider", "Identity")
   @js.native
   val component: js.Object = js.native
   
