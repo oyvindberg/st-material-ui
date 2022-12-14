@@ -1,14 +1,5 @@
 package com.olvind.mui.react.mod
 
-import com.olvind.mui.react.reactStrings.done
-import com.olvind.mui.react.reactStrings.enter
-import com.olvind.mui.react.reactStrings.environment
-import com.olvind.mui.react.reactStrings.go
-import com.olvind.mui.react.reactStrings.next
-import com.olvind.mui.react.reactStrings.previous
-import com.olvind.mui.react.reactStrings.search
-import com.olvind.mui.react.reactStrings.send
-import com.olvind.mui.react.reactStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +16,7 @@ trait InputHTMLAttributes[T]
   
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var capture: js.UndefOr[Boolean | user | environment] = js.undefined
+  var capture: js.UndefOr[Boolean | "user" | "environment"] = js.undefined
   
   // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
   var checked: js.UndefOr[Boolean] = js.undefined
@@ -34,7 +25,7 @@ trait InputHTMLAttributes[T]
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
+  var enterKeyHint: js.UndefOr["enter" | "done" | "go" | "next" | "previous" | "search" | "send"] = js.undefined
   
   var form: js.UndefOr[String] = js.undefined
   
@@ -110,7 +101,7 @@ object InputHTMLAttributes {
     
     inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
-    inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean | "user" | "environment"): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
@@ -126,7 +117,7 @@ object InputHTMLAttributes {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setEnterKeyHint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
+    inline def setEnterKeyHint(value: "enter" | "done" | "go" | "next" | "previous" | "search" | "send"): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
     
     inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
     

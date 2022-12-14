@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTableBodyTypeMaptbo
-import com.olvind.mui.muiMaterial.tableBodyClassesMod.TableBodyClasses
+import com.olvind.mui.muiMaterial.tableBodyTableBodyClassesMod.TableBodyClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object tableBodyMod {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TableBody API](https://mui.com/api/table-body/)
+    * - [TableBody API](https://mui.com/material-ui/api/table-body/)
     */
   @JSImport("@mui/material/TableBody", JSImport.Default)
   @js.native

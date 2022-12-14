@@ -7,71 +7,8 @@ import com.olvind.mui.muiMaterial.anon.PartialInputProps
 import com.olvind.mui.muiMaterial.anon.PartialOutlinedInputProps
 import com.olvind.mui.muiMaterial.anon.PartialSelectPropsunknown
 import com.olvind.mui.muiMaterial.anon.PartialTextFieldClasses
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
 import com.olvind.mui.muiMaterial.inputBaseInputBaseMod.InputBaseComponentProps
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`inline`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.additions
-import com.olvind.mui.muiMaterial.muiMaterialStrings.all
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ascending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.assertive
-import com.olvind.mui.muiMaterial.muiMaterialStrings.both
-import com.olvind.mui.muiMaterial.muiMaterialStrings.copy
-import com.olvind.mui.muiMaterial.muiMaterialStrings.date
-import com.olvind.mui.muiMaterial.muiMaterialStrings.decimal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dense
-import com.olvind.mui.muiMaterial.muiMaterialStrings.descending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dialog
-import com.olvind.mui.muiMaterial.muiMaterialStrings.email
-import com.olvind.mui.muiMaterial.muiMaterialStrings.error
-import com.olvind.mui.muiMaterial.muiMaterialStrings.execute
-import com.olvind.mui.muiMaterial.muiMaterialStrings.filled
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grammar
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grid
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.info
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.link
-import com.olvind.mui.muiMaterial.muiMaterialStrings.list
-import com.olvind.mui.muiMaterial.muiMaterialStrings.listbox
-import com.olvind.mui.muiMaterial.muiMaterialStrings.location
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mixed
-import com.olvind.mui.muiMaterial.muiMaterialStrings.move
-import com.olvind.mui.muiMaterial.muiMaterialStrings.no
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.normal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.numeric
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.on
-import com.olvind.mui.muiMaterial.muiMaterialStrings.other
-import com.olvind.mui.muiMaterial.muiMaterialStrings.outlined
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.polite
-import com.olvind.mui.muiMaterial.muiMaterialStrings.popup
-import com.olvind.mui.muiMaterial.muiMaterialStrings.primary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.removals
-import com.olvind.mui.muiMaterial.muiMaterialStrings.search
-import com.olvind.mui.muiMaterial.muiMaterialStrings.secondary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.spelling
-import com.olvind.mui.muiMaterial.muiMaterialStrings.standard
-import com.olvind.mui.muiMaterial.muiMaterialStrings.step
-import com.olvind.mui.muiMaterial.muiMaterialStrings.success
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tel
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
-import com.olvind.mui.muiMaterial.muiMaterialStrings.time
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tree
-import com.olvind.mui.muiMaterial.muiMaterialStrings.url
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.warning
-import com.olvind.mui.muiMaterial.muiMaterialStrings.yes
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.anon.Html
@@ -136,17 +73,18 @@ object textFieldTextFieldMod {
   trait BaseTextFieldProps extends StObject {
     
     /**
-      * Props applied to the [`FormHelperText`](/api/form-helper-text/) element.
+      * Props applied to the [`FormHelperText`](/material-ui/api/form-helper-text/) element.
       */
     var FormHelperTextProps: js.UndefOr[PartialFormHelperTextPropsFormHelperText] = js.undefined
     
     /**
-      * Props applied to the [`InputLabel`](/api/input-label/) element.
+      * Props applied to the [`InputLabel`](/material-ui/api/input-label/) element.
+      * Pointer events like `onClick` are enabled if and only if `shrink` is `true`.
       */
     var InputLabelProps: js.UndefOr[PartialInputLabelProps] = js.undefined
     
     /**
-      * Props applied to the [`Select`](/api/select/) element.
+      * Props applied to the [`Select`](/material-ui/api/select/) element.
       */
     var SelectProps: js.UndefOr[PartialSelectPropsunknown] = js.undefined
     
@@ -158,11 +96,11 @@ object textFieldTextFieldMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -172,7 +110,7 @@ object textFieldTextFieldMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -180,7 +118,7 @@ object textFieldTextFieldMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -190,11 +128,11 @@ object textFieldTextFieldMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -204,7 +142,7 @@ object textFieldTextFieldMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -212,7 +150,7 @@ object textFieldTextFieldMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -220,12 +158,12 @@ object textFieldTextFieldMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -242,7 +180,7 @@ object textFieldTextFieldMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -285,12 +223,14 @@ object textFieldTextFieldMod {
     var classes: js.UndefOr[PartialTextFieldClasses] = js.undefined
     
     /**
-      * The color of the component. It supports those theme colors that make sense for this component.
+      * The color of the component.
+      * It supports both default and custom theme colors, which can be added as shown in the
+      * [palette customization guide](https://mui.com/material-ui/customization/palette/#adding-new-colors).
       * @default 'primary'
       */
-    var color: js.UndefOr[primary | secondary | error | info | success | warning] = js.undefined
+    var color: js.UndefOr["primary" | "secondary" | "error" | "info" | "success" | "warning"] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -346,7 +286,7 @@ object textFieldTextFieldMod {
     
     var inlist: js.UndefOr[Any] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     /**
       * [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes) applied to the `input` element.
@@ -379,7 +319,7 @@ object textFieldTextFieldMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var margin: js.UndefOr[dense | normal | none] = js.undefined
+    var margin: js.UndefOr["dense" | "normal" | "none"] = js.undefined
     
     /**
       * Maximum number of rows to display when multiline option is set to true.
@@ -401,6 +341,8 @@ object textFieldTextFieldMod {
       * Name attribute of the `input` element.
       */
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -526,6 +468,8 @@ object textFieldTextFieldMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -591,7 +535,7 @@ object textFieldTextFieldMod {
     var security: js.UndefOr[String] = js.undefined
     
     /**
-      * Render a [`Select`](/api/select/) element while passing the Input element to `Select` as `input` parameter.
+      * Render a [`Select`](/material-ui/api/select/) element while passing the Input element to `Select` as `input` parameter.
       * If this option is set you must pass the options of the select as children.
       * @default false
       */
@@ -600,7 +544,7 @@ object textFieldTextFieldMod {
     /**
       * The size of the component.
       */
-    var size: js.UndefOr[small | medium] = js.undefined
+    var size: js.UndefOr["small" | "medium"] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -621,7 +565,7 @@ object textFieldTextFieldMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     /**
       * Type of the `input` element. It should be [a valid HTML5 input type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types).
@@ -630,14 +574,14 @@ object textFieldTextFieldMod {
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     /**
       * The value of the `input` element, required for a controlled component.
       */
     var value: js.UndefOr[Any] = js.undefined
     
-    var variant: js.UndefOr[standard | outlined | filled] = js.undefined
+    var variant: js.UndefOr["standard" | "outlined" | "filled"] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
   }
@@ -666,7 +610,7 @@ object textFieldTextFieldMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -674,7 +618,7 @@ object textFieldTextFieldMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -694,7 +638,7 @@ object textFieldTextFieldMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -710,7 +654,7 @@ object textFieldTextFieldMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -730,7 +674,7 @@ object textFieldTextFieldMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -738,7 +682,7 @@ object textFieldTextFieldMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -758,7 +702,7 @@ object textFieldTextFieldMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -774,7 +718,7 @@ object textFieldTextFieldMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -790,7 +734,7 @@ object textFieldTextFieldMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -799,7 +743,7 @@ object textFieldTextFieldMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -832,7 +776,7 @@ object textFieldTextFieldMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -890,11 +834,11 @@ object textFieldTextFieldMod {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setColor(value: primary | secondary | error | info | success | warning): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: "primary" | "secondary" | "error" | "info" | "success" | "warning"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -976,7 +920,7 @@ object textFieldTextFieldMod {
       
       inline def setInputLabelPropsUndefined: Self = StObject.set(x, "InputLabelProps", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1036,7 +980,7 @@ object textFieldTextFieldMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setMargin(value: dense | normal | none): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: "dense" | "normal" | "none"): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -1055,6 +999,10 @@ object textFieldTextFieldMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
       
@@ -1308,6 +1256,10 @@ object textFieldTextFieldMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: ReactUIEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1428,7 +1380,7 @@ object textFieldTextFieldMod {
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "small" | "medium"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -1470,7 +1422,7 @@ object textFieldTextFieldMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1482,7 +1434,7 @@ object textFieldTextFieldMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
@@ -1490,7 +1442,7 @@ object textFieldTextFieldMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setVariant(value: standard | outlined | filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "standard" | "outlined" | "filled"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
@@ -1502,13 +1454,12 @@ object textFieldTextFieldMod {
   
   trait FilledTextFieldProps
     extends StObject
-       with BaseTextFieldProps
-       with TextFieldProps {
+       with BaseTextFieldProps {
     
     /**
       * Props applied to the Input element.
-      * It will be a [`FilledInput`](/api/filled-input/),
-      * [`OutlinedInput`](/api/outlined-input/) or [`Input`](/api/input/)
+      * It will be a [`FilledInput`](/material-ui/api/filled-input/),
+      * [`OutlinedInput`](/material-ui/api/outlined-input/) or [`Input`](/material-ui/api/input/)
       * component depending on the `variant` prop value.
       */
     var InputProps: js.UndefOr[PartialFilledInputProps] = js.undefined
@@ -1526,7 +1477,7 @@ object textFieldTextFieldMod {
       * @default 'outlined'
       */
     @JSName("variant")
-    var variant_FilledTextFieldProps: filled
+    var variant_FilledTextFieldProps: "filled"
   }
   object FilledTextFieldProps {
     
@@ -1547,19 +1498,18 @@ object textFieldTextFieldMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setVariant(value: filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "filled"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     }
   }
   
   trait OutlinedTextFieldProps
     extends StObject
-       with BaseTextFieldProps
-       with TextFieldProps {
+       with BaseTextFieldProps {
     
     /**
       * Props applied to the Input element.
-      * It will be a [`FilledInput`](/api/filled-input/),
-      * [`OutlinedInput`](/api/outlined-input/) or [`Input`](/api/input/)
+      * It will be a [`FilledInput`](/material-ui/api/filled-input/),
+      * [`OutlinedInput`](/material-ui/api/outlined-input/) or [`Input`](/material-ui/api/input/)
       * component depending on the `variant` prop value.
       */
     var InputProps: js.UndefOr[PartialOutlinedInputProps] = js.undefined
@@ -1577,7 +1527,7 @@ object textFieldTextFieldMod {
       * @default 'outlined'
       */
     @JSName("variant")
-    var variant_OutlinedTextFieldProps: outlined
+    var variant_OutlinedTextFieldProps: "outlined"
   }
   object OutlinedTextFieldProps {
     
@@ -1598,19 +1548,18 @@ object textFieldTextFieldMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setVariant(value: outlined): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "outlined"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     }
   }
   
   trait StandardTextFieldProps
     extends StObject
-       with BaseTextFieldProps
-       with TextFieldProps {
+       with BaseTextFieldProps {
     
     /**
       * Props applied to the Input element.
-      * It will be a [`FilledInput`](/api/filled-input/),
-      * [`OutlinedInput`](/api/outlined-input/) or [`Input`](/api/input/)
+      * It will be a [`FilledInput`](/material-ui/api/filled-input/),
+      * [`OutlinedInput`](/material-ui/api/outlined-input/) or [`Input`](/material-ui/api/input/)
       * component depending on the `variant` prop value.
       */
     var InputProps: js.UndefOr[PartialInputProps] = js.undefined
@@ -1628,7 +1577,7 @@ object textFieldTextFieldMod {
       * @default 'outlined'
       */
     @JSName("variant")
-    var variant_StandardTextFieldProps: js.UndefOr[standard] = js.undefined
+    var variant_StandardTextFieldProps: js.UndefOr["standard"] = js.undefined
   }
   object StandardTextFieldProps {
     
@@ -1649,35 +1598,13 @@ object textFieldTextFieldMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setVariant(value: standard): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: "standard"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
       inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - `com.olvind.mui`.muiMaterial.textFieldTextFieldMod.StandardTextFieldProps
-    - `com.olvind.mui`.muiMaterial.textFieldTextFieldMod.FilledTextFieldProps
-    - `com.olvind.mui`.muiMaterial.textFieldTextFieldMod.OutlinedTextFieldProps
-  */
-  trait TextFieldProps extends StObject
-  object TextFieldProps {
-    
-    inline def FilledTextFieldProps(): com.olvind.mui.muiMaterial.textFieldTextFieldMod.FilledTextFieldProps = {
-      val __obj = js.Dynamic.literal(variant = "filled")
-      __obj.asInstanceOf[com.olvind.mui.muiMaterial.textFieldTextFieldMod.FilledTextFieldProps]
-    }
-    
-    inline def OutlinedTextFieldProps(): com.olvind.mui.muiMaterial.textFieldTextFieldMod.OutlinedTextFieldProps = {
-      val __obj = js.Dynamic.literal(variant = "outlined")
-      __obj.asInstanceOf[com.olvind.mui.muiMaterial.textFieldTextFieldMod.OutlinedTextFieldProps]
-    }
-    
-    inline def StandardTextFieldProps(): com.olvind.mui.muiMaterial.textFieldTextFieldMod.StandardTextFieldProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[com.olvind.mui.muiMaterial.textFieldTextFieldMod.StandardTextFieldProps]
-    }
-  }
+  type TextFieldProps = StandardTextFieldProps | FilledTextFieldProps | OutlinedTextFieldProps
   
   trait TextFieldPropsColorOverrides extends StObject
   

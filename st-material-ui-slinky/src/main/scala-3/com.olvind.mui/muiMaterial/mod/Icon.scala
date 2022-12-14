@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Demos:
   *
-  * - [Icons](https://mui.com/components/icons/)
-  * - [Material Icons](https://mui.com/components/material-icons/)
+  * - [Icons](https://mui.com/material-ui/icons/)
+  * - [Material Icons](https://mui.com/material-ui/material-icons/)
   *
   * API:
   *
-  * - [Icon API](https://mui.com/api/icon/)
+  * - [Icon API](https://mui.com/material-ui/api/icon/)
   */
 /* Inlined (props : DefaultComponentProps<IconTypeMap<{}, 'span'>> & {}): react.react.<global>.JSX.Element & {  muiName :string} */
 object Icon {

@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.outlinedInputClassesMod.OutlinedInputClasses
+import com.olvind.mui.muiMaterial.outlinedInputOutlinedInputClassesMod.OutlinedInputClasses
 import com.olvind.mui.muiMaterial.outlinedInputOutlinedInputMod.OutlinedInputProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -17,12 +17,12 @@ object outlinedInputMod {
     *
     * Demos:
     *
-    * - [Text Fields](https://mui.com/components/text-fields/)
+    * - [Text Field](https://mui.com/material-ui/react-text-field/)
     *
     * API:
     *
-    * - [OutlinedInput API](https://mui.com/api/outlined-input/)
-    * - inherits [InputBase API](https://mui.com/api/input-base/)
+    * - [OutlinedInput API](https://mui.com/material-ui/api/outlined-input/)
+    * - inherits [InputBase API](https://mui.com/material-ui/api/input-base/)
     */
   /* Inlined (props : @mui/material.@mui/material/OutlinedInput/OutlinedInput.OutlinedInputProps): react.react.<global>.JSX.Element & {  muiName :string} */
   object default {

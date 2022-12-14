@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriaatomic
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapFabT
-import com.olvind.mui.muiMaterial.fabClassesMod.FabClasses
+import com.olvind.mui.muiMaterial.fabFabClassesMod.FabClasses
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,12 +18,12 @@ object fabMod {
     *
     * Demos:
     *
-    * - [Floating Action Button](https://mui.com/components/floating-action-button/)
+    * - [Floating Action Button](https://mui.com/material-ui/react-floating-action-button/)
     *
     * API:
     *
-    * - [Fab API](https://mui.com/api/fab/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [Fab API](https://mui.com/material-ui/api/fab/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/Fab", JSImport.Default)
   @js.native

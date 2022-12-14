@@ -70,57 +70,6 @@ import com.olvind.mui.csstype.mod.Property.Visibility
 import com.olvind.mui.csstype.mod.Property.Width
 import com.olvind.mui.csstype.mod.Property.ZIndex
 import com.olvind.mui.muiSystem.createThemeCreateThemeMod.Theme
-import com.olvind.mui.muiSystem.muiSystemNumbers.`0`
-import com.olvind.mui.muiSystem.muiSystemStrings.`additions removals`
-import com.olvind.mui.muiSystem.muiSystemStrings.`additions text`
-import com.olvind.mui.muiSystem.muiSystemStrings.`inline`
-import com.olvind.mui.muiSystem.muiSystemStrings.`removals additions`
-import com.olvind.mui.muiSystem.muiSystemStrings.`removals text`
-import com.olvind.mui.muiSystem.muiSystemStrings.`text additions`
-import com.olvind.mui.muiSystem.muiSystemStrings.`text removals`
-import com.olvind.mui.muiSystem.muiSystemStrings.additions
-import com.olvind.mui.muiSystem.muiSystemStrings.all
-import com.olvind.mui.muiSystem.muiSystemStrings.ascending
-import com.olvind.mui.muiSystem.muiSystemStrings.assertive
-import com.olvind.mui.muiSystem.muiSystemStrings.both
-import com.olvind.mui.muiSystem.muiSystemStrings.copy
-import com.olvind.mui.muiSystem.muiSystemStrings.date
-import com.olvind.mui.muiSystem.muiSystemStrings.decimal
-import com.olvind.mui.muiSystem.muiSystemStrings.descending
-import com.olvind.mui.muiSystem.muiSystemStrings.dialog
-import com.olvind.mui.muiSystem.muiSystemStrings.email
-import com.olvind.mui.muiSystem.muiSystemStrings.execute
-import com.olvind.mui.muiSystem.muiSystemStrings.grammar
-import com.olvind.mui.muiSystem.muiSystemStrings.grid
-import com.olvind.mui.muiSystem.muiSystemStrings.horizontal
-import com.olvind.mui.muiSystem.muiSystemStrings.inherit
-import com.olvind.mui.muiSystem.muiSystemStrings.link
-import com.olvind.mui.muiSystem.muiSystemStrings.list
-import com.olvind.mui.muiSystem.muiSystemStrings.listbox
-import com.olvind.mui.muiSystem.muiSystemStrings.location
-import com.olvind.mui.muiSystem.muiSystemStrings.menu
-import com.olvind.mui.muiSystem.muiSystemStrings.mixed
-import com.olvind.mui.muiSystem.muiSystemStrings.move
-import com.olvind.mui.muiSystem.muiSystemStrings.no
-import com.olvind.mui.muiSystem.muiSystemStrings.none
-import com.olvind.mui.muiSystem.muiSystemStrings.numeric
-import com.olvind.mui.muiSystem.muiSystemStrings.off
-import com.olvind.mui.muiSystem.muiSystemStrings.on
-import com.olvind.mui.muiSystem.muiSystemStrings.other
-import com.olvind.mui.muiSystem.muiSystemStrings.page
-import com.olvind.mui.muiSystem.muiSystemStrings.polite
-import com.olvind.mui.muiSystem.muiSystemStrings.popup
-import com.olvind.mui.muiSystem.muiSystemStrings.removals
-import com.olvind.mui.muiSystem.muiSystemStrings.search
-import com.olvind.mui.muiSystem.muiSystemStrings.spelling
-import com.olvind.mui.muiSystem.muiSystemStrings.step
-import com.olvind.mui.muiSystem.muiSystemStrings.tel
-import com.olvind.mui.muiSystem.muiSystemStrings.text
-import com.olvind.mui.muiSystem.muiSystemStrings.time
-import com.olvind.mui.muiSystem.muiSystemStrings.tree
-import com.olvind.mui.muiSystem.muiSystemStrings.url
-import com.olvind.mui.muiSystem.muiSystemStrings.vertical
-import com.olvind.mui.muiSystem.muiSystemStrings.yes
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
@@ -203,11 +152,11 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   
   var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
   
   var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+  var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
   
   var `aria-colcount`: js.UndefOr[Double] = js.undefined
   
@@ -217,7 +166,7 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   
   var `aria-controls`: js.UndefOr[String] = js.undefined
   
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+  var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
   
   var `aria-describedby`: js.UndefOr[String] = js.undefined
   
@@ -225,7 +174,7 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   
   var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+  var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
@@ -235,11 +184,11 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   
   var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+  var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
   
   var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+  var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
   
   var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
   
@@ -249,7 +198,7 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   
   var `aria-level`: js.UndefOr[Double] = js.undefined
   
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+  var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
   
   var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
   
@@ -257,7 +206,7 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   
   var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+  var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   var `aria-owns`: js.UndefOr[String] = js.undefined
   
@@ -265,12 +214,12 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   
   var `aria-posinset`: js.UndefOr[Double] = js.undefined
   
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+  var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
   
   var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
-    additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+    "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
   ] = js.undefined
   
   var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -287,7 +236,7 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   
   var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+  var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
   
   var `aria-valuemax`: js.UndefOr[Double] = js.undefined
   
@@ -311,10 +260,7 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   ] = js.undefined
   
   var border: js.UndefOr[
-    (ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]) | (js.Function1[
-      /* theme */ Theme, 
-      ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]
-    ])
+    (ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]])
   ] = js.undefined
   
   var borderBottom: js.UndefOr[
@@ -451,9 +397,13 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
     ])
   ] = js.undefined
   
+  /**
+    * The component used for the root node.
+    * Either a string to use a HTML element or a component.
+    */
   var component: js.UndefOr[ElementType] = js.undefined
   
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
@@ -709,7 +659,7 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   
   var inlist: js.UndefOr[Any] = js.undefined
   
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
   
   var is: js.UndefOr[String] = js.undefined
   
@@ -1063,6 +1013,8 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
     ])
   ] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -1188,6 +1140,8 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
   var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+  
+  var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
   var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
   
@@ -1510,6 +1464,9 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
   
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The system prop that allows defining system overrides as well as additional CSS styles.
+    */
   var sx: js.UndefOr[SxProps[Theme]] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
@@ -1545,7 +1502,7 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
     ])
   ] = js.undefined
   
-  var translate: js.UndefOr[yes | no] = js.undefined
+  var translate: js.UndefOr["yes" | "no"] = js.undefined
   
   var typeof: js.UndefOr[String] = js.undefined
   
@@ -1553,7 +1510,7 @@ trait DefaultComponentPropsBoxTypeMapdiv extends StObject {
     ResponsiveStyleValue[js.UndefOr[String]] | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[String]]])
   ] = js.undefined
   
-  var unselectable: js.UndefOr[on | off] = js.undefined
+  var unselectable: js.UndefOr["on" | "off"] = js.undefined
   
   var visibility: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]) | (js.Function1[
@@ -1665,7 +1622,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
-    inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
@@ -1673,7 +1630,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
-    inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+    inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
     
     inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
     
@@ -1693,7 +1650,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
     
-    inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+    inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
     
     inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
     
@@ -1709,7 +1666,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
-    inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
     
@@ -1729,7 +1686,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
-    inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
@@ -1737,7 +1694,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
-    inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+    inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
     
     inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
     
@@ -1757,7 +1714,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
     
-    inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+    inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
@@ -1773,7 +1730,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
-    inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+    inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
     
     inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
     
@@ -1789,7 +1746,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
     
-    inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+    inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
@@ -1798,7 +1755,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
     inline def `setAria-relevant`(
-      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
     ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -1831,7 +1788,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
     
-    inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+    inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
     
     inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
     
@@ -1883,10 +1840,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     ): Self = StObject.set(x, "bgcolor", js.Array(value*))
     
     inline def setBorder(
-      value: (ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]) | (js.Function1[
-          /* theme */ Theme, 
-          ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]
-        ])
+      value: (ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]])
     ): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderBottom(
@@ -1939,7 +1893,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
         ])*
     ): Self = StObject.set(x, "borderColor", js.Array(value*))
     
-    inline def setBorderFunction1(value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]): Self = StObject.set(x, "border", js.Any.fromFunction1(value))
+    inline def setBorderFunction1(value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]): Self = StObject.set(x, "border", js.Any.fromFunction1(value))
     
     inline def setBorderLeft(
       value: (ResponsiveStyleValue[
@@ -2067,7 +2021,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setBorderVarargs(value: ((js.UndefOr[(Border[String | `0`]) | Double]) | Null)*): Self = StObject.set(x, "border", js.Array(value*))
+    inline def setBorderVarargs(value: ((js.UndefOr[(Border[String | 0]) | Double]) | Null)*): Self = StObject.set(x, "border", js.Array(value*))
     
     inline def setBottom(
       value: (ResponsiveStyleValue[
@@ -2197,7 +2151,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+    inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
     
@@ -2785,7 +2739,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
-    inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+    inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
     
     inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
     
@@ -3531,6 +3485,10 @@ object DefaultComponentPropsBoxTypeMapdiv {
         ])*
     ): Self = StObject.set(x, "my", js.Array(value*))
     
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    
     inline def setOnAbort(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
@@ -3782,6 +3740,10 @@ object DefaultComponentPropsBoxTypeMapdiv {
     inline def setOnReset(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: ReactUIEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
@@ -4547,7 +4509,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
         ])*
     ): Self = StObject.set(x, "top", js.Array(value*))
     
-    inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
@@ -4565,7 +4527,7 @@ object DefaultComponentPropsBoxTypeMapdiv {
     
     inline def setTypographyVarargs(value: (js.UndefOr[String] | Null)*): Self = StObject.set(x, "typography", js.Array(value*))
     
-    inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+    inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
     
     inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     

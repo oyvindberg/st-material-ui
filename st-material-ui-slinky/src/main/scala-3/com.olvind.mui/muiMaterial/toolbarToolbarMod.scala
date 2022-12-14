@@ -16,11 +16,11 @@ object toolbarToolbarMod extends Shortcut {
     *
     * Demos:
     *
-    * - [App Bar](https://mui.com/components/app-bar/)
+    * - [App Bar](https://mui.com/material-ui/react-app-bar/)
     *
     * API:
     *
-    * - [Toolbar API](https://mui.com/api/toolbar/)
+    * - [Toolbar API](https://mui.com/material-ui/api/toolbar/)
     */
   @JSImport("@mui/material/Toolbar/Toolbar", JSImport.Default)
   @js.native

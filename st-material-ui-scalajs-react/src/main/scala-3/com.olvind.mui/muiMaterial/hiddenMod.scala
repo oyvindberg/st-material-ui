@@ -14,11 +14,11 @@ object hiddenMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Hidden](https://mui.com/components/hidden/)
+    * - [Hidden](https://mui.com/material-ui/react-hidden/)
     *
     * API:
     *
-    * - [Hidden API](https://mui.com/api/hidden/)
+    * - [Hidden API](https://mui.com/material-ui/api/hidden/)
     */
   @JSImport("@mui/material/Hidden", JSImport.Default)
   @js.native

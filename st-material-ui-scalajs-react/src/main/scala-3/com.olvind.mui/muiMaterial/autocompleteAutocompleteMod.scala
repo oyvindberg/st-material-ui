@@ -1,80 +1,22 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiBase.useAutocompleteMod.AutocompleteChangeDetails
-import com.olvind.mui.muiBase.useAutocompleteMod.AutocompleteChangeReason
-import com.olvind.mui.muiBase.useAutocompleteMod.AutocompleteCloseReason
-import com.olvind.mui.muiBase.useAutocompleteMod.AutocompleteFreeSoloValueMapping
-import com.olvind.mui.muiBase.useAutocompleteMod.AutocompleteHighlightChangeReason
-import com.olvind.mui.muiBase.useAutocompleteMod.AutocompleteInputChangeReason
-import com.olvind.mui.muiBase.useAutocompleteMod.AutocompleteValue
-import com.olvind.mui.muiBase.useAutocompleteMod.CreateFilterOptionsConfig
-import com.olvind.mui.muiBase.useAutocompleteMod.FilterOptionsState
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteChangeDetails
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteChangeReason
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteCloseReason
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteFreeSoloValueMapping
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteHighlightChangeReason
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteInputChangeReason
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteValue
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.CreateFilterOptionsConfig
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.FilterOptionsState
 import com.olvind.mui.muiMaterial.anon.ClassName
 import com.olvind.mui.muiMaterial.anon.ClearIndicator
 import com.olvind.mui.muiMaterial.anon.EndAdornment
 import com.olvind.mui.muiMaterial.anon.Index
 import com.olvind.mui.muiMaterial.anon.PartialAutocompleteClasses
 import com.olvind.mui.muiMaterial.chipChipMod.ChipProps
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
-import com.olvind.mui.muiMaterial.muiMaterialBooleans.`false`
-import com.olvind.mui.muiMaterial.muiMaterialBooleans.`true`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`inline`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.additions
-import com.olvind.mui.muiMaterial.muiMaterialStrings.all
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ascending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.assertive
-import com.olvind.mui.muiMaterial.muiMaterialStrings.auto
-import com.olvind.mui.muiMaterial.muiMaterialStrings.both
-import com.olvind.mui.muiMaterial.muiMaterialStrings.copy
-import com.olvind.mui.muiMaterial.muiMaterialStrings.date
-import com.olvind.mui.muiMaterial.muiMaterialStrings.decimal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.descending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dialog
-import com.olvind.mui.muiMaterial.muiMaterialStrings.div
-import com.olvind.mui.muiMaterial.muiMaterialStrings.email
-import com.olvind.mui.muiMaterial.muiMaterialStrings.execute
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grammar
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grid
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.link
-import com.olvind.mui.muiMaterial.muiMaterialStrings.list
-import com.olvind.mui.muiMaterial.muiMaterialStrings.listbox
-import com.olvind.mui.muiMaterial.muiMaterialStrings.location
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mixed
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mouse
-import com.olvind.mui.muiMaterial.muiMaterialStrings.move
-import com.olvind.mui.muiMaterial.muiMaterialStrings.no
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.numeric
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.on
-import com.olvind.mui.muiMaterial.muiMaterialStrings.other
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.polite
-import com.olvind.mui.muiMaterial.muiMaterialStrings.popup
-import com.olvind.mui.muiMaterial.muiMaterialStrings.removals
-import com.olvind.mui.muiMaterial.muiMaterialStrings.search
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.spelling
-import com.olvind.mui.muiMaterial.muiMaterialStrings.step
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tel
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
-import com.olvind.mui.muiMaterial.muiMaterialStrings.time
-import com.olvind.mui.muiMaterial.muiMaterialStrings.touch
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tree
-import com.olvind.mui.muiMaterial.muiMaterialStrings.url
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.yes
 import com.olvind.mui.muiMaterial.popperPopperMod.PopperProps
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.anon.Html
@@ -93,7 +35,6 @@ import com.olvind.mui.react.mod.KeyboardEventHandler
 import com.olvind.mui.react.mod.MouseEventHandler
 import com.olvind.mui.react.mod.PointerEventHandler
 import com.olvind.mui.react.mod.ReactEventHandler
-import com.olvind.mui.react.mod.Ref
 import com.olvind.mui.react.mod.TouchEventHandler
 import com.olvind.mui.react.mod.TransitionEventHandler
 import com.olvind.mui.react.mod.UIEventHandler
@@ -118,6 +59,7 @@ import japgolly.scalajs.react.facade.Empty
 import japgolly.scalajs.react.facade.JsNumber
 import japgolly.scalajs.react.facade.React.ElementType
 import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.facade.React.RefHandle
 import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalajs.dom.HTMLDivElement
@@ -133,17 +75,79 @@ object autocompleteAutocompleteMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @scala.annotation.targetName("default_div")
+  inline def default[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](props: AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, "div"]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   inline def createFilterOptions[T](): js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilterOptions")().asInstanceOf[js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]]]
   inline def createFilterOptions[T](config: CreateFilterOptionsConfig[T]): js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilterOptions")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* options */ js.Array[T], /* state */ FilterOptionsState[T], js.Array[T]]]
   
-  inline def default_div[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](props: AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, div]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  trait AutocompleteOwnerState[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */, ChipComponent /* <: ElementType */]
+    extends StObject
+       with AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, ChipComponent] {
+    
+    @JSName("disablePortal")
+    var disablePortal_AutocompleteOwnerState: Boolean
+    
+    var focused: Boolean
+    
+    @JSName("fullWidth")
+    var fullWidth_AutocompleteOwnerState: Boolean
+    
+    var hasClearIcon: Boolean
+    
+    var hasPopupIcon: Boolean
+    
+    var inputFocused: Boolean
+    
+    var popupOpen: Boolean
+    
+    @JSName("size")
+    var size_AutocompleteOwnerState: "small" | "medium"
+  }
+  object AutocompleteOwnerState {
+    
+    inline def apply[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */, ChipComponent /* <: ElementType */](
+      disablePortal: Boolean,
+      focused: Boolean,
+      fullWidth: Boolean,
+      hasClearIcon: Boolean,
+      hasPopupIcon: Boolean,
+      inputFocused: Boolean,
+      options: js.Array[T],
+      popupOpen: Boolean,
+      renderInput: AutocompleteRenderInputParams => Node,
+      size: "small" | "medium"
+    ): AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent] = {
+      val __obj = js.Dynamic.literal(disablePortal = disablePortal.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], fullWidth = fullWidth.asInstanceOf[js.Any], hasClearIcon = hasClearIcon.asInstanceOf[js.Any], hasPopupIcon = hasPopupIcon.asInstanceOf[js.Any], inputFocused = inputFocused.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], popupOpen = popupOpen.asInstanceOf[js.Any], renderInput = js.Any.fromFunction1(renderInput), size = size.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent]]
+    }
+    
+    extension [Self <: AutocompleteOwnerState[?, ?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */, ChipComponent /* <: ElementType */](x: Self & (AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent])) {
+      
+      inline def setDisablePortal(value: Boolean): Self = StObject.set(x, "disablePortal", value.asInstanceOf[js.Any])
+      
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      
+      inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+      
+      inline def setHasClearIcon(value: Boolean): Self = StObject.set(x, "hasClearIcon", value.asInstanceOf[js.Any])
+      
+      inline def setHasPopupIcon(value: Boolean): Self = StObject.set(x, "hasPopupIcon", value.asInstanceOf[js.Any])
+      
+      inline def setInputFocused(value: Boolean): Self = StObject.set(x, "inputFocused", value.asInstanceOf[js.Any])
+      
+      inline def setPopupOpen(value: Boolean): Self = StObject.set(x, "popupOpen", value.asInstanceOf[js.Any])
+      
+      inline def setSize(value: "small" | "medium"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    }
+  }
   
   /* Inlined parent @mui/base.@mui/base.UseAutocompleteProps<T, Multiple, DisableClearable, FreeSolo> */
   /* Inlined parent @mui/material.@mui/material.InternalStandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, 'defaultValue' | 'onChange' | 'children'> */
   trait AutocompleteProps[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */, ChipComponent /* <: ElementType */] extends StObject {
     
     /**
-      * Props applied to the [`Chip`](/api/chip/) element.
+      * Props applied to the [`Chip`](/material-ui/api/chip/) element.
       */
     var ChipProps: js.UndefOr[com.olvind.mui.muiMaterial.chipChipMod.ChipProps[ChipComponent, js.Object]] = js.undefined
     
@@ -182,11 +186,11 @@ object autocompleteAutocompleteMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -196,7 +200,7 @@ object autocompleteAutocompleteMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -204,7 +208,7 @@ object autocompleteAutocompleteMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -214,11 +218,11 @@ object autocompleteAutocompleteMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -228,7 +232,7 @@ object autocompleteAutocompleteMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -236,7 +240,7 @@ object autocompleteAutocompleteMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -244,12 +248,12 @@ object autocompleteAutocompleteMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -266,7 +270,7 @@ object autocompleteAutocompleteMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -313,7 +317,7 @@ object autocompleteAutocompleteMod {
       * - `mouse` the input is blurred after a mouse event.
       * @default false
       */
-    var blurOnSelect: js.UndefOr[touch | mouse | `true` | `false`] = js.undefined
+    var blurOnSelect: js.UndefOr["touch" | "mouse" | true | false] = js.undefined
     
     // TODO: Remove implicit props. Up to each component.
     var className: js.UndefOr[String] = js.undefined
@@ -333,7 +337,7 @@ object autocompleteAutocompleteMod {
       * If `true`, the input's text is cleared on blur if no value is selected.
       *
       * Set to `true` if you want to help the user enter a new value.
-      * Set to `false` if you want to help the user resume his search.
+      * Set to `false` if you want to help the user resume their search.
       * @default !props.freeSolo
       */
     var clearOnBlur: js.UndefOr[Boolean] = js.undefined
@@ -347,7 +351,7 @@ object autocompleteAutocompleteMod {
     /**
       * Override the default text for the *clear* icon button.
       *
-      * For localization purposes, you can use the provided [translations](/guides/localization/).
+      * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
       * @default 'Clear'
       */
     var clearText: js.UndefOr[String] = js.undefined
@@ -355,7 +359,7 @@ object autocompleteAutocompleteMod {
     /**
       * Override the default text for the *close popup* icon button.
       *
-      * For localization purposes, you can use the provided [translations](/guides/localization/).
+      * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
       * @default 'Close'
       */
     var closeText: js.UndefOr[String] = js.undefined
@@ -373,7 +377,7 @@ object autocompleteAutocompleteMod {
       */
     var componentsProps: js.UndefOr[ClearIndicator] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -430,7 +434,7 @@ object autocompleteAutocompleteMod {
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
     /**
-      * A filter function that determines the options that are eligible.
+      * A function that determines the filtered options to be rendered on search.
       *
       * @param {T[]} options The options to render.
       * @param {object} state The state of the component.
@@ -450,7 +454,7 @@ object autocompleteAutocompleteMod {
       * Force the visibility display of the popup icon.
       * @default 'auto'
       */
-    var forcePopupIcon: js.UndefOr[`true` | `false` | auto] = js.undefined
+    var forcePopupIcon: js.UndefOr[true | false | "auto"] = js.undefined
     
     /**
       * If `true`, the Autocomplete is free solo, meaning that the user input is not bound to provided options.
@@ -485,11 +489,15 @@ object autocompleteAutocompleteMod {
       * Used to determine the string value for a given option.
       * It's used to fill the input (and the list box options if `renderOption` is not provided).
       *
+      * If used in free solo mode, it must accept both the type of the options and a string.
+      *
       * @param {T} option
       * @returns {string}
       * @default (option) => option.label ?? option
       */
-    var getOptionLabel: js.UndefOr[js.Function1[/* option */ T, String]] = js.undefined
+    var getOptionLabel: js.UndefOr[
+        js.Function1[/* option */ T | AutocompleteFreeSoloValueMapping[FreeSolo], String]
+      ] = js.undefined
     
     /**
       * If provided, the options will be grouped under the returned string.
@@ -523,7 +531,7 @@ object autocompleteAutocompleteMod {
     
     var inlist: js.UndefOr[Any] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     /**
       * The input value.
@@ -572,7 +580,7 @@ object autocompleteAutocompleteMod {
     /**
       * Text to display when in a loading state.
       *
-      * For localization purposes, you can use the provided [translations](/guides/localization/).
+      * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
       * @default 'Loading…'
       */
     var loadingText: js.UndefOr[Node] = js.undefined
@@ -586,10 +594,12 @@ object autocompleteAutocompleteMod {
     /**
       * Text to display when there are no options.
       *
-      * For localization purposes, you can use the provided [translations](/guides/localization/).
+      * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
       * @default 'No options'
       */
     var noOptionsText: js.UndefOr[Node] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -788,6 +798,8 @@ object autocompleteAutocompleteMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -834,7 +846,7 @@ object autocompleteAutocompleteMod {
     /**
       * Override the default text for the *open popup* icon button.
       *
-      * For localization purposes, you can use the provided [translations](/guides/localization/).
+      * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
       * @default 'Open'
       */
     var openText: js.UndefOr[String] = js.undefined
@@ -858,7 +870,15 @@ object autocompleteAutocompleteMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    /**
+      * If `true`, the component becomes readonly. It is also supported for multiple tags where the tag cannot be deleted.
+      * @default false
+      */
+    var readOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var ref: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ] = js.undefined
     
     /**
       * Render the group.
@@ -898,10 +918,16 @@ object autocompleteAutocompleteMod {
       *
       * @param {T[]} value The `value` provided to the component.
       * @param {function} getTagProps A tag props getter.
+      * @param {object} ownerState The state of the Autocomplete component.
       * @returns {ReactNode}
       */
     var renderTags: js.UndefOr[
-        js.Function2[/* value */ js.Array[T], /* getTagProps */ AutocompleteRenderGetTagProps, Node]
+        js.Function3[
+          /* value */ js.Array[T], 
+          /* getTagProps */ AutocompleteRenderGetTagProps, 
+          /* ownerState */ AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent], 
+          Node
+        ]
       ] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
@@ -923,9 +949,15 @@ object autocompleteAutocompleteMod {
       * The size of the component.
       * @default 'medium'
       */
-    var size: js.UndefOr[small | medium] = js.undefined
+    var size: js.UndefOr["small" | "medium"] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The props used for each slot inside.
+      * @default {}
+      */
+    var slotProps: js.UndefOr[ClearIndicator] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
@@ -944,11 +976,24 @@ object autocompleteAutocompleteMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
+    
+    /**
+      * @internal The prefix of the state class name, temporary for Joy UI
+      * @default 'Mui'
+      */
+    var unstable_classNamePrefix: js.UndefOr[String] = js.undefined
+    
+    /**
+      * @internal
+      * Temporary for Joy UI because the parent listbox is the document object
+      * TODO v6: Normalize the logic and remove this param.
+      */
+    var unstable_isActiveElementInListbox: js.UndefOr[js.Function1[/* listbox */ RefHandle[HTMLElement], Boolean]] = js.undefined
     
     /**
       * The value of the autocomplete.
@@ -985,7 +1030,7 @@ object autocompleteAutocompleteMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -993,7 +1038,7 @@ object autocompleteAutocompleteMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -1013,7 +1058,7 @@ object autocompleteAutocompleteMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -1029,7 +1074,7 @@ object autocompleteAutocompleteMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -1049,7 +1094,7 @@ object autocompleteAutocompleteMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -1057,7 +1102,7 @@ object autocompleteAutocompleteMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -1077,7 +1122,7 @@ object autocompleteAutocompleteMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -1093,7 +1138,7 @@ object autocompleteAutocompleteMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -1109,7 +1154,7 @@ object autocompleteAutocompleteMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -1118,7 +1163,7 @@ object autocompleteAutocompleteMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -1151,7 +1196,7 @@ object autocompleteAutocompleteMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -1195,7 +1240,7 @@ object autocompleteAutocompleteMod {
       
       inline def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
       
-      inline def setBlurOnSelect(value: touch | mouse | `true` | `false`): Self = StObject.set(x, "blurOnSelect", value.asInstanceOf[js.Any])
+      inline def setBlurOnSelect(value: "touch" | "mouse" | true | false): Self = StObject.set(x, "blurOnSelect", value.asInstanceOf[js.Any])
       
       inline def setBlurOnSelectUndefined: Self = StObject.set(x, "blurOnSelect", js.undefined)
       
@@ -1249,7 +1294,7 @@ object autocompleteAutocompleteMod {
       
       inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -1270,8 +1315,6 @@ object autocompleteAutocompleteMod {
       inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
       
       inline def setDefaultValue(value: AutocompleteValue[T, Multiple, DisableClearable, FreeSolo]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -1317,7 +1360,7 @@ object autocompleteAutocompleteMod {
       
       inline def setFilterSelectedOptionsUndefined: Self = StObject.set(x, "filterSelectedOptions", js.undefined)
       
-      inline def setForcePopupIcon(value: `true` | `false` | auto): Self = StObject.set(x, "forcePopupIcon", value.asInstanceOf[js.Any])
+      inline def setForcePopupIcon(value: true | false | "auto"): Self = StObject.set(x, "forcePopupIcon", value.asInstanceOf[js.Any])
       
       inline def setForcePopupIconUndefined: Self = StObject.set(x, "forcePopupIcon", js.undefined)
       
@@ -1337,7 +1380,7 @@ object autocompleteAutocompleteMod {
       
       inline def setGetOptionDisabledUndefined: Self = StObject.set(x, "getOptionDisabled", js.undefined)
       
-      inline def setGetOptionLabel(value: /* option */ T => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
+      inline def setGetOptionLabel(value: /* option */ T | AutocompleteFreeSoloValueMapping[FreeSolo] => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
       
       inline def setGetOptionLabelUndefined: Self = StObject.set(x, "getOptionLabel", js.undefined)
       
@@ -1365,7 +1408,7 @@ object autocompleteAutocompleteMod {
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1448,6 +1491,10 @@ object autocompleteAutocompleteMod {
       inline def setNoOptionsTextVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): Self = StObject.set(x, "noOptionsText", js.Array(value*))
       
       inline def setNoOptionsTextVdomElement(value: VdomElement): Self = StObject.set(x, "noOptionsText", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
       
@@ -1725,6 +1772,10 @@ object autocompleteAutocompleteMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: ReactUIEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1839,11 +1890,13 @@ object autocompleteAutocompleteMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: Any | Null => Callback): Self = StObject.set(x, "ref", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRef(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
@@ -1859,7 +1912,9 @@ object autocompleteAutocompleteMod {
       
       inline def setRenderOptionUndefined: Self = StObject.set(x, "renderOption", js.undefined)
       
-      inline def setRenderTags(value: (/* value */ js.Array[T], /* getTagProps */ AutocompleteRenderGetTagProps) => Node): Self = StObject.set(x, "renderTags", js.Any.fromFunction2(value))
+      inline def setRenderTags(
+        value: (/* value */ js.Array[T], /* getTagProps */ AutocompleteRenderGetTagProps, /* ownerState */ AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent]) => Node
+      ): Self = StObject.set(x, "renderTags", js.Any.fromFunction3(value))
       
       inline def setRenderTagsUndefined: Self = StObject.set(x, "renderTags", js.undefined)
       
@@ -1883,11 +1938,15 @@ object autocompleteAutocompleteMod {
       
       inline def setSelectOnFocusUndefined: Self = StObject.set(x, "selectOnFocus", js.undefined)
       
-      inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "small" | "medium"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+      
+      inline def setSlotProps(value: ClearIndicator): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      
+      inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
       inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
@@ -1925,7 +1984,7 @@ object autocompleteAutocompleteMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1933,13 +1992,19 @@ object autocompleteAutocompleteMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      inline def setValue(value: AutocompleteValue[T, Multiple, DisableClearable, FreeSolo]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setUnstable_classNamePrefix(value: String): Self = StObject.set(x, "unstable_classNamePrefix", value.asInstanceOf[js.Any])
       
-      inline def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setUnstable_classNamePrefixUndefined: Self = StObject.set(x, "unstable_classNamePrefix", js.undefined)
+      
+      inline def setUnstable_isActiveElementInListbox(value: /* listbox */ RefHandle[HTMLElement] => Boolean): Self = StObject.set(x, "unstable_isActiveElementInListbox", js.Any.fromFunction1(value))
+      
+      inline def setUnstable_isActiveElementInListboxUndefined: Self = StObject.set(x, "unstable_isActiveElementInListbox", js.undefined)
+      
+      inline def setValue(value: AutocompleteValue[T, Multiple, DisableClearable, FreeSolo]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
@@ -1953,7 +2018,7 @@ object autocompleteAutocompleteMod {
   
   trait AutocompletePropsSizeOverrides extends StObject
   
-  type AutocompleteRenderGetTagProps = js.Function1[/* hasIndex */ Index, ClassName]
+  type AutocompleteRenderGetTagProps = js.Function1[/* param0 */ Index, ClassName]
   
   trait AutocompleteRenderGroupParams extends StObject {
     
@@ -2006,7 +2071,7 @@ object autocompleteAutocompleteMod {
         /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<@mui/material.anon.FnCall>['getInputProps'] */ js.Any
       ]
     
-    var size: js.UndefOr[small] = js.undefined
+    var size: js.UndefOr["small"] = js.undefined
   }
   object AutocompleteRenderInputParams {
     
@@ -2042,7 +2107,7 @@ object autocompleteAutocompleteMod {
       
       inline def setInputProps(value: EndAdornment): Self = StObject.set(x, "InputProps", value.asInstanceOf[js.Any])
       
-      inline def setSize(value: small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "small"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }

@@ -64,61 +64,6 @@ import com.olvind.mui.csstype.mod.Property.Top
 import com.olvind.mui.csstype.mod.Property.Visibility
 import com.olvind.mui.csstype.mod.Property.Width
 import com.olvind.mui.csstype.mod.Property.ZIndex
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`inline`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.additions
-import com.olvind.mui.muiMaterial.muiMaterialStrings.all
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ascending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.assertive
-import com.olvind.mui.muiMaterial.muiMaterialStrings.both
-import com.olvind.mui.muiMaterial.muiMaterialStrings.center
-import com.olvind.mui.muiMaterial.muiMaterialStrings.copy
-import com.olvind.mui.muiMaterial.muiMaterialStrings.date
-import com.olvind.mui.muiMaterial.muiMaterialStrings.decimal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.descending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dialog
-import com.olvind.mui.muiMaterial.muiMaterialStrings.email
-import com.olvind.mui.muiMaterial.muiMaterialStrings.execute
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grammar
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grid
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.justify
-import com.olvind.mui.muiMaterial.muiMaterialStrings.left
-import com.olvind.mui.muiMaterial.muiMaterialStrings.link
-import com.olvind.mui.muiMaterial.muiMaterialStrings.list
-import com.olvind.mui.muiMaterial.muiMaterialStrings.listbox
-import com.olvind.mui.muiMaterial.muiMaterialStrings.location
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mixed
-import com.olvind.mui.muiMaterial.muiMaterialStrings.move
-import com.olvind.mui.muiMaterial.muiMaterialStrings.no
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.numeric
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.on
-import com.olvind.mui.muiMaterial.muiMaterialStrings.other
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.polite
-import com.olvind.mui.muiMaterial.muiMaterialStrings.popup
-import com.olvind.mui.muiMaterial.muiMaterialStrings.removals
-import com.olvind.mui.muiMaterial.muiMaterialStrings.right
-import com.olvind.mui.muiMaterial.muiMaterialStrings.search
-import com.olvind.mui.muiMaterial.muiMaterialStrings.span
-import com.olvind.mui.muiMaterial.muiMaterialStrings.spelling
-import com.olvind.mui.muiMaterial.muiMaterialStrings.step
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tel
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
-import com.olvind.mui.muiMaterial.muiMaterialStrings.time
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tree
-import com.olvind.mui.muiMaterial.muiMaterialStrings.url
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.yes
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
@@ -176,25 +121,25 @@ trait TypographyPropsspan extends StObject {
     * Set the text-align on the component.
     * @default 'inherit'
     */
-  var align: js.UndefOr[inherit | left | center | right | justify] = js.undefined
+  var align: js.UndefOr["inherit" | "left" | "center" | "right" | "justify"] = js.undefined
   
   var alignContent: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]
     ])
   ] = js.undefined
   
   var alignItems: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]
     ])
   ] = js.undefined
   
   var alignSelf: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]
     ])
   ] = js.undefined
@@ -203,11 +148,11 @@ trait TypographyPropsspan extends StObject {
   
   var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
   
   var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+  var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
   
   var `aria-colcount`: js.UndefOr[Double] = js.undefined
   
@@ -217,7 +162,7 @@ trait TypographyPropsspan extends StObject {
   
   var `aria-controls`: js.UndefOr[String] = js.undefined
   
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+  var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
   
   var `aria-describedby`: js.UndefOr[String] = js.undefined
   
@@ -225,7 +170,7 @@ trait TypographyPropsspan extends StObject {
   
   var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+  var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
@@ -235,11 +180,11 @@ trait TypographyPropsspan extends StObject {
   
   var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+  var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
   
   var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+  var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
   
   var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
   
@@ -249,7 +194,7 @@ trait TypographyPropsspan extends StObject {
   
   var `aria-level`: js.UndefOr[Double] = js.undefined
   
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+  var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
   
   var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
   
@@ -257,7 +202,7 @@ trait TypographyPropsspan extends StObject {
   
   var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+  var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   var `aria-owns`: js.UndefOr[String] = js.undefined
   
@@ -265,12 +210,12 @@ trait TypographyPropsspan extends StObject {
   
   var `aria-posinset`: js.UndefOr[Double] = js.undefined
   
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+  var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
   
   var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
-    additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+    "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
   ] = js.undefined
   
   var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -287,7 +232,7 @@ trait TypographyPropsspan extends StObject {
   
   var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+  var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
   
   var `aria-valuemax`: js.UndefOr[Double] = js.undefined
   
@@ -309,7 +254,7 @@ trait TypographyPropsspan extends StObject {
         com.olvind.mui.csstype.mod.Property.BackgroundColor | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.BackgroundColor]]]
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           com.olvind.mui.csstype.mod.Property.BackgroundColor | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.BackgroundColor]]]
@@ -319,17 +264,9 @@ trait TypographyPropsspan extends StObject {
   ] = js.undefined
   
   var border: js.UndefOr[
-    (ResponsiveStyleValue[
-      js.UndefOr[
-        (com.olvind.mui.csstype.mod.Property.Border[String | com.olvind.mui.muiMaterial.muiMaterialNumbers.`0`]) | Double
-      ]
-    ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-      ResponsiveStyleValue[
-        js.UndefOr[
-          (com.olvind.mui.csstype.mod.Property.Border[String | com.olvind.mui.muiMaterial.muiMaterialNumbers.`0`]) | Double
-        ]
-      ]
+    (ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]) | (js.Function1[
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]
     ])
   ] = js.undefined
   
@@ -339,7 +276,7 @@ trait TypographyPropsspan extends StObject {
         (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
@@ -350,7 +287,7 @@ trait TypographyPropsspan extends StObject {
   
   var borderColor: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]
     ])
   ] = js.undefined
@@ -361,7 +298,7 @@ trait TypographyPropsspan extends StObject {
         (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
@@ -376,7 +313,7 @@ trait TypographyPropsspan extends StObject {
         (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
@@ -391,7 +328,7 @@ trait TypographyPropsspan extends StObject {
         (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
@@ -406,7 +343,7 @@ trait TypographyPropsspan extends StObject {
         (BorderTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (BorderTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTop[Double | String]]]])
@@ -421,7 +358,7 @@ trait TypographyPropsspan extends StObject {
         (Bottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Bottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]])
@@ -432,14 +369,14 @@ trait TypographyPropsspan extends StObject {
   
   var boxShadow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]
     ])
   ] = js.undefined
   
   var boxSizing: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]
     ])
   ] = js.undefined
@@ -465,7 +402,7 @@ trait TypographyPropsspan extends StObject {
         com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
@@ -480,7 +417,7 @@ trait TypographyPropsspan extends StObject {
         (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
@@ -489,9 +426,9 @@ trait TypographyPropsspan extends StObject {
     ])
   ] = js.undefined
   
-  var component: js.UndefOr[span] = js.undefined
+  var component: js.UndefOr["span"] = js.undefined
   
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
@@ -507,14 +444,14 @@ trait TypographyPropsspan extends StObject {
   
   var display: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
     ])
   ] = js.undefined
   
   var displayPrint: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
     ])
   ] = js.undefined
@@ -527,7 +464,7 @@ trait TypographyPropsspan extends StObject {
         (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
@@ -542,7 +479,7 @@ trait TypographyPropsspan extends StObject {
         (FlexBasis[Double | String]) | (js.Array[NonNullable[js.UndefOr[FlexBasis[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (FlexBasis[Double | String]) | (js.Array[NonNullable[js.UndefOr[FlexBasis[Double | String]]]])
@@ -553,35 +490,35 @@ trait TypographyPropsspan extends StObject {
   
   var flexDirection: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]
     ])
   ] = js.undefined
   
   var flexGrow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]
     ])
   ] = js.undefined
   
   var flexShrink: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]
     ])
   ] = js.undefined
   
   var flexWrap: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]
     ])
   ] = js.undefined
   
   var fontFamily: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]
     ])
   ] = js.undefined
@@ -594,7 +531,7 @@ trait TypographyPropsspan extends StObject {
         ])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (com.olvind.mui.csstype.mod.Property.FontSize[Double | String]) | (js.Array[
@@ -607,14 +544,14 @@ trait TypographyPropsspan extends StObject {
   
   var fontStyle: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]
     ])
   ] = js.undefined
   
   var fontWeight: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FontWeight | String]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[FontWeight | String]]
     ])
   ] = js.undefined
@@ -625,7 +562,7 @@ trait TypographyPropsspan extends StObject {
         (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
@@ -636,7 +573,7 @@ trait TypographyPropsspan extends StObject {
   
   var gridArea: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]
     ])
   ] = js.undefined
@@ -647,7 +584,7 @@ trait TypographyPropsspan extends StObject {
         (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
@@ -658,7 +595,7 @@ trait TypographyPropsspan extends StObject {
   
   var gridAutoFlow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]
     ])
   ] = js.undefined
@@ -669,7 +606,7 @@ trait TypographyPropsspan extends StObject {
         (GridAutoRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoRows[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (GridAutoRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoRows[Double | String]]]])
@@ -680,14 +617,14 @@ trait TypographyPropsspan extends StObject {
   
   var gridColumn: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]
     ])
   ] = js.undefined
   
   var gridRow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]
     ])
   ] = js.undefined
@@ -696,7 +633,7 @@ trait TypographyPropsspan extends StObject {
     (ResponsiveStyleValue[
       js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]]
       ]
@@ -709,7 +646,7 @@ trait TypographyPropsspan extends StObject {
         (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
@@ -724,7 +661,7 @@ trait TypographyPropsspan extends StObject {
         (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
@@ -745,7 +682,7 @@ trait TypographyPropsspan extends StObject {
         (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
@@ -760,7 +697,7 @@ trait TypographyPropsspan extends StObject {
   
   var inlist: js.UndefOr[Any] = js.undefined
   
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
   
   var is: js.UndefOr[String] = js.undefined
   
@@ -776,21 +713,21 @@ trait TypographyPropsspan extends StObject {
   
   var justifyContent: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]
     ])
   ] = js.undefined
   
   var justifyItems: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]
     ])
   ] = js.undefined
   
   var justifySelf: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]
     ])
   ] = js.undefined
@@ -805,7 +742,7 @@ trait TypographyPropsspan extends StObject {
         (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
@@ -820,7 +757,7 @@ trait TypographyPropsspan extends StObject {
         (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
@@ -835,7 +772,7 @@ trait TypographyPropsspan extends StObject {
         (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
@@ -850,7 +787,7 @@ trait TypographyPropsspan extends StObject {
         (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
@@ -865,7 +802,7 @@ trait TypographyPropsspan extends StObject {
         (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
@@ -880,7 +817,7 @@ trait TypographyPropsspan extends StObject {
         (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
@@ -895,7 +832,7 @@ trait TypographyPropsspan extends StObject {
         (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -910,7 +847,7 @@ trait TypographyPropsspan extends StObject {
         (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
@@ -925,7 +862,7 @@ trait TypographyPropsspan extends StObject {
         (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -940,7 +877,7 @@ trait TypographyPropsspan extends StObject {
         (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -955,7 +892,7 @@ trait TypographyPropsspan extends StObject {
         (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -970,7 +907,7 @@ trait TypographyPropsspan extends StObject {
         (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
@@ -985,7 +922,7 @@ trait TypographyPropsspan extends StObject {
         (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
@@ -1000,7 +937,7 @@ trait TypographyPropsspan extends StObject {
         (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
@@ -1015,7 +952,7 @@ trait TypographyPropsspan extends StObject {
         (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
@@ -1030,7 +967,7 @@ trait TypographyPropsspan extends StObject {
         (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
@@ -1045,7 +982,7 @@ trait TypographyPropsspan extends StObject {
         (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -1060,7 +997,7 @@ trait TypographyPropsspan extends StObject {
         (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
@@ -1075,7 +1012,7 @@ trait TypographyPropsspan extends StObject {
         (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -1090,7 +1027,7 @@ trait TypographyPropsspan extends StObject {
         (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -1105,7 +1042,7 @@ trait TypographyPropsspan extends StObject {
         (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -1122,6 +1059,8 @@ trait TypographyPropsspan extends StObject {
     * @default false
     */
   var noWrap: js.UndefOr[Boolean] = js.undefined
+  
+  var nonce: js.UndefOr[String] = js.undefined
   
   var onAbort: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
@@ -1249,6 +1188,8 @@ trait TypographyPropsspan extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
+  
   var onScroll: js.UndefOr[UIEventHandler[HTMLSpanElement]] = js.undefined
   
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
@@ -1283,14 +1224,14 @@ trait TypographyPropsspan extends StObject {
   
   var order: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]
     ])
   ] = js.undefined
   
   var overflow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]
     ])
   ] = js.undefined
@@ -1303,7 +1244,7 @@ trait TypographyPropsspan extends StObject {
         ])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
@@ -1322,7 +1263,7 @@ trait TypographyPropsspan extends StObject {
         ])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
@@ -1339,7 +1280,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
@@ -1354,7 +1295,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -1369,7 +1310,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
@@ -1384,7 +1325,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -1399,7 +1340,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -1414,7 +1355,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -1435,7 +1376,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
@@ -1450,7 +1391,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -1463,7 +1404,7 @@ trait TypographyPropsspan extends StObject {
   
   var position: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]
     ])
   ] = js.undefined
@@ -1474,7 +1415,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
@@ -1493,7 +1434,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -1508,7 +1449,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -1523,7 +1464,7 @@ trait TypographyPropsspan extends StObject {
         (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -1546,7 +1487,7 @@ trait TypographyPropsspan extends StObject {
         (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
@@ -1563,7 +1504,7 @@ trait TypographyPropsspan extends StObject {
         (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
@@ -1587,20 +1528,20 @@ trait TypographyPropsspan extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
   var textAlign: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]
     ])
   ] = js.undefined
   
   var textOverflow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]
     ])
   ] = js.undefined
@@ -1613,7 +1554,7 @@ trait TypographyPropsspan extends StObject {
         (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
@@ -1622,24 +1563,24 @@ trait TypographyPropsspan extends StObject {
     ])
   ] = js.undefined
   
-  var translate: js.UndefOr[yes | no] = js.undefined
+  var translate: js.UndefOr["yes" | "no"] = js.undefined
   
   var typeof: js.UndefOr[String] = js.undefined
   
   var typography: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[String]] | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[String]]
     ])
   ] = js.undefined
   
-  var unselectable: js.UndefOr[on | off] = js.undefined
+  var unselectable: js.UndefOr["on" | "off"] = js.undefined
   
   /**
     * Applies the theme typography styles.
     * @default 'body1'
     */
-  var variant: js.UndefOr[com.olvind.mui.muiMaterial.createTypographyMod.Variant | inherit] = js.undefined
+  var variant: js.UndefOr[com.olvind.mui.muiMaterial.stylesCreateTypographyMod.Variant | "inherit"] = js.undefined
   
   /**
     * The component maps the variant prop to a range of different HTML element types.
@@ -1664,7 +1605,7 @@ trait TypographyPropsspan extends StObject {
   
   var visibility: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]
     ])
   ] = js.undefined
@@ -1677,7 +1618,7 @@ trait TypographyPropsspan extends StObject {
         (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
@@ -1688,7 +1629,7 @@ trait TypographyPropsspan extends StObject {
   
   var zIndex: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ZIndex | String]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[js.UndefOr[ZIndex | String]]
     ])
   ] = js.undefined
@@ -1710,17 +1651,17 @@ object TypographyPropsspan {
     
     inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
     
-    inline def setAlign(value: inherit | left | center | right | justify): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: "inherit" | "left" | "center" | "right" | "justify"): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignContent(
       value: (ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]
         ])
     ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
     inline def setAlignContentFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]
     ): Self = StObject.set(x, "alignContent", js.Any.fromFunction1(value))
     
     inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
@@ -1733,13 +1674,13 @@ object TypographyPropsspan {
     
     inline def setAlignItems(
       value: (ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]
         ])
     ): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
     inline def setAlignItemsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]
     ): Self = StObject.set(x, "alignItems", js.Any.fromFunction1(value))
     
     inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
@@ -1752,13 +1693,13 @@ object TypographyPropsspan {
     
     inline def setAlignSelf(
       value: (ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]
         ])
     ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     
     inline def setAlignSelfFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]
     ): Self = StObject.set(x, "alignSelf", js.Any.fromFunction1(value))
     
     inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
@@ -1779,7 +1720,7 @@ object TypographyPropsspan {
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
-    inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
@@ -1787,7 +1728,7 @@ object TypographyPropsspan {
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
-    inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+    inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
     
     inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
     
@@ -1807,7 +1748,7 @@ object TypographyPropsspan {
     
     inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
     
-    inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+    inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
     
     inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
     
@@ -1823,7 +1764,7 @@ object TypographyPropsspan {
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
-    inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
     
@@ -1843,7 +1784,7 @@ object TypographyPropsspan {
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
-    inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
@@ -1851,7 +1792,7 @@ object TypographyPropsspan {
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
-    inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+    inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
     
     inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
     
@@ -1871,7 +1812,7 @@ object TypographyPropsspan {
     
     inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
     
-    inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+    inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
@@ -1887,7 +1828,7 @@ object TypographyPropsspan {
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
-    inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+    inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
     
     inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
     
@@ -1903,7 +1844,7 @@ object TypographyPropsspan {
     
     inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
     
-    inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+    inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
@@ -1912,7 +1853,7 @@ object TypographyPropsspan {
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
     inline def `setAria-relevant`(
-      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
     ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -1945,7 +1886,7 @@ object TypographyPropsspan {
     
     inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
     
-    inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+    inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
     
     inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
     
@@ -1983,7 +1924,7 @@ object TypographyPropsspan {
             com.olvind.mui.csstype.mod.Property.BackgroundColor | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.BackgroundColor]]]
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               com.olvind.mui.csstype.mod.Property.BackgroundColor | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.BackgroundColor]]]
@@ -1993,7 +1934,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
     inline def setBgcolorFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             com.olvind.mui.csstype.mod.Property.BackgroundColor | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.BackgroundColor]]]
           ]
@@ -2009,17 +1950,9 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "bgcolor", js.Array(value*))
     
     inline def setBorder(
-      value: (ResponsiveStyleValue[
-          js.UndefOr[
-            (com.olvind.mui.csstype.mod.Property.Border[String | com.olvind.mui.muiMaterial.muiMaterialNumbers.`0`]) | Double
-          ]
-        ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          ResponsiveStyleValue[
-            js.UndefOr[
-              (com.olvind.mui.csstype.mod.Property.Border[String | com.olvind.mui.muiMaterial.muiMaterialNumbers.`0`]) | Double
-            ]
-          ]
+      value: (ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]) | (js.Function1[
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]
         ])
     ): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
@@ -2029,7 +1962,7 @@ object TypographyPropsspan {
             (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
@@ -2039,7 +1972,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
     inline def setBorderBottomFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
           ]
@@ -2056,13 +1989,13 @@ object TypographyPropsspan {
     
     inline def setBorderColor(
       value: (ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]
         ])
     ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction1(value))
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
@@ -2074,11 +2007,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "borderColor", js.Array(value*))
     
     inline def setBorderFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
-          js.UndefOr[
-            (com.olvind.mui.csstype.mod.Property.Border[String | com.olvind.mui.muiMaterial.muiMaterialNumbers.`0`]) | Double
-          ]
-        ]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]
     ): Self = StObject.set(x, "border", js.Any.fromFunction1(value))
     
     inline def setBorderLeft(
@@ -2087,7 +2016,7 @@ object TypographyPropsspan {
             (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
@@ -2097,7 +2026,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
     inline def setBorderLeftFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
           ]
@@ -2118,7 +2047,7 @@ object TypographyPropsspan {
             (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
@@ -2128,7 +2057,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderRadiusFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
           ]
@@ -2149,7 +2078,7 @@ object TypographyPropsspan {
             (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
@@ -2159,7 +2088,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
     inline def setBorderRightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
           ]
@@ -2180,7 +2109,7 @@ object TypographyPropsspan {
             (BorderTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (BorderTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTop[Double | String]]]])
@@ -2190,7 +2119,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
     inline def setBorderTopFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (BorderTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTop[Double | String]]]])
           ]
@@ -2207,11 +2136,7 @@ object TypographyPropsspan {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setBorderVarargs(
-      value: ((js.UndefOr[
-          (com.olvind.mui.csstype.mod.Property.Border[String | com.olvind.mui.muiMaterial.muiMaterialNumbers.`0`]) | Double
-        ]) | Null)*
-    ): Self = StObject.set(x, "border", js.Array(value*))
+    inline def setBorderVarargs(value: ((js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]) | Null)*): Self = StObject.set(x, "border", js.Array(value*))
     
     inline def setBottom(
       value: (ResponsiveStyleValue[
@@ -2219,7 +2144,7 @@ object TypographyPropsspan {
             (Bottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Bottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]])
@@ -2229,7 +2154,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     inline def setBottomFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Bottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]])
           ]
@@ -2246,13 +2171,13 @@ object TypographyPropsspan {
     
     inline def setBoxShadow(
       value: (ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]
         ])
     ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
     inline def setBoxShadowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]
     ): Self = StObject.set(x, "boxShadow", js.Any.fromFunction1(value))
     
     inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
@@ -2261,13 +2186,13 @@ object TypographyPropsspan {
     
     inline def setBoxSizing(
       value: (ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]
         ])
     ): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
     
     inline def setBoxSizingFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]
     ): Self = StObject.set(x, "boxSizing", js.Any.fromFunction1(value))
     
     inline def setBoxSizingUndefined: Self = StObject.set(x, "boxSizing", js.undefined)
@@ -2296,7 +2221,7 @@ object TypographyPropsspan {
             com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
@@ -2306,7 +2231,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
           ]
@@ -2327,7 +2252,7 @@ object TypographyPropsspan {
             (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
@@ -2337,7 +2262,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
     inline def setColumnGapFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
           ]
@@ -2352,11 +2277,11 @@ object TypographyPropsspan {
         ])*
     ): Self = StObject.set(x, "columnGap", js.Array(value*))
     
-    inline def setComponent(value: span): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: "span"): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+    inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
     
@@ -2388,24 +2313,24 @@ object TypographyPropsspan {
     
     inline def setDisplay(
       value: (ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
         ])
     ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setDisplayFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
     ): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
     
     inline def setDisplayPrint(
       value: (ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
         ])
     ): Self = StObject.set(x, "displayPrint", value.asInstanceOf[js.Any])
     
     inline def setDisplayPrintFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
     ): Self = StObject.set(x, "displayPrint", js.Any.fromFunction1(value))
     
     inline def setDisplayPrintUndefined: Self = StObject.set(x, "displayPrint", js.undefined)
@@ -2434,7 +2359,7 @@ object TypographyPropsspan {
             (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
@@ -2449,7 +2374,7 @@ object TypographyPropsspan {
             (FlexBasis[Double | String]) | (js.Array[NonNullable[js.UndefOr[FlexBasis[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (FlexBasis[Double | String]) | (js.Array[NonNullable[js.UndefOr[FlexBasis[Double | String]]]])
@@ -2459,7 +2384,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
     inline def setFlexBasisFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (FlexBasis[Double | String]) | (js.Array[NonNullable[js.UndefOr[FlexBasis[Double | String]]]])
           ]
@@ -2476,13 +2401,13 @@ object TypographyPropsspan {
     
     inline def setFlexDirection(
       value: (ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]
         ])
     ): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
     inline def setFlexDirectionFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]
     ): Self = StObject.set(x, "flexDirection", js.Any.fromFunction1(value))
     
     inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
@@ -2494,7 +2419,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "flexDirection", js.Array(value*))
     
     inline def setFlexFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
           ]
@@ -2503,13 +2428,13 @@ object TypographyPropsspan {
     
     inline def setFlexGrow(
       value: (ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]
         ])
     ): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
     inline def setFlexGrowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]
     ): Self = StObject.set(x, "flexGrow", js.Any.fromFunction1(value))
     
     inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
@@ -2522,13 +2447,13 @@ object TypographyPropsspan {
     
     inline def setFlexShrink(
       value: (ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]
         ])
     ): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
     inline def setFlexShrinkFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]
     ): Self = StObject.set(x, "flexShrink", js.Any.fromFunction1(value))
     
     inline def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
@@ -2549,13 +2474,13 @@ object TypographyPropsspan {
     
     inline def setFlexWrap(
       value: (ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]
         ])
     ): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
     inline def setFlexWrapFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]
     ): Self = StObject.set(x, "flexWrap", js.Any.fromFunction1(value))
     
     inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
@@ -2568,13 +2493,13 @@ object TypographyPropsspan {
     
     inline def setFontFamily(
       value: (ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]
         ])
     ): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     inline def setFontFamilyFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]
     ): Self = StObject.set(x, "fontFamily", js.Any.fromFunction1(value))
     
     inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
@@ -2593,7 +2518,7 @@ object TypographyPropsspan {
             ])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (com.olvind.mui.csstype.mod.Property.FontSize[Double | String]) | (js.Array[
@@ -2605,7 +2530,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (com.olvind.mui.csstype.mod.Property.FontSize[Double | String]) | (js.Array[
               NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.FontSize[Double | String]]]
@@ -2626,13 +2551,13 @@ object TypographyPropsspan {
     
     inline def setFontStyle(
       value: (ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]
         ])
     ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     inline def setFontStyleFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]
     ): Self = StObject.set(x, "fontStyle", js.Any.fromFunction1(value))
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
@@ -2645,13 +2570,13 @@ object TypographyPropsspan {
     
     inline def setFontWeight(
       value: (ResponsiveStyleValue[js.UndefOr[FontWeight | String]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[FontWeight | String]]
         ])
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FontWeight | String]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FontWeight | String]]
     ): Self = StObject.set(x, "fontWeight", js.Any.fromFunction1(value))
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
@@ -2664,7 +2589,7 @@ object TypographyPropsspan {
             (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
@@ -2674,7 +2599,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     inline def setGapFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
           ]
@@ -2691,13 +2616,13 @@ object TypographyPropsspan {
     
     inline def setGridArea(
       value: (ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]
         ])
     ): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
     inline def setGridAreaFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]
     ): Self = StObject.set(x, "gridArea", js.Any.fromFunction1(value))
     
     inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
@@ -2714,7 +2639,7 @@ object TypographyPropsspan {
             (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
@@ -2724,7 +2649,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
     
     inline def setGridAutoColumnsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
           ]
@@ -2741,13 +2666,13 @@ object TypographyPropsspan {
     
     inline def setGridAutoFlow(
       value: (ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]
         ])
     ): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
     inline def setGridAutoFlowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]
     ): Self = StObject.set(x, "gridAutoFlow", js.Any.fromFunction1(value))
     
     inline def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
@@ -2764,7 +2689,7 @@ object TypographyPropsspan {
             (GridAutoRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoRows[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (GridAutoRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoRows[Double | String]]]])
@@ -2774,7 +2699,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
     
     inline def setGridAutoRowsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (GridAutoRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoRows[Double | String]]]])
           ]
@@ -2791,13 +2716,13 @@ object TypographyPropsspan {
     
     inline def setGridColumn(
       value: (ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]
         ])
     ): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
     inline def setGridColumnFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]
     ): Self = StObject.set(x, "gridColumn", js.Any.fromFunction1(value))
     
     inline def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
@@ -2810,13 +2735,13 @@ object TypographyPropsspan {
     
     inline def setGridRow(
       value: (ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]
         ])
     ): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
     inline def setGridRowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]
     ): Self = StObject.set(x, "gridRow", js.Any.fromFunction1(value))
     
     inline def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
@@ -2831,7 +2756,7 @@ object TypographyPropsspan {
       value: (ResponsiveStyleValue[
           js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]]
           ]
@@ -2839,7 +2764,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateAreasFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]]
         ]
     ): Self = StObject.set(x, "gridTemplateAreas", js.Any.fromFunction1(value))
@@ -2858,7 +2783,7 @@ object TypographyPropsspan {
             (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
@@ -2868,7 +2793,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateColumnsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
           ]
@@ -2889,7 +2814,7 @@ object TypographyPropsspan {
             (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
@@ -2899,7 +2824,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateRowsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
           ]
@@ -2924,7 +2849,7 @@ object TypographyPropsspan {
             (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
@@ -2934,7 +2859,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
           ]
@@ -2961,7 +2886,7 @@ object TypographyPropsspan {
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
-    inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+    inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
     
     inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
     
@@ -2991,13 +2916,13 @@ object TypographyPropsspan {
     
     inline def setJustifyContent(
       value: (ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]
         ])
     ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
     inline def setJustifyContentFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]
     ): Self = StObject.set(x, "justifyContent", js.Any.fromFunction1(value))
     
     inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
@@ -3010,13 +2935,13 @@ object TypographyPropsspan {
     
     inline def setJustifyItems(
       value: (ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]
         ])
     ): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
     
     inline def setJustifyItemsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]
     ): Self = StObject.set(x, "justifyItems", js.Any.fromFunction1(value))
     
     inline def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
@@ -3029,13 +2954,13 @@ object TypographyPropsspan {
     
     inline def setJustifySelf(
       value: (ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]
         ])
     ): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
     
     inline def setJustifySelfFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]
     ): Self = StObject.set(x, "justifySelf", js.Any.fromFunction1(value))
     
     inline def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
@@ -3062,7 +2987,7 @@ object TypographyPropsspan {
             (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
@@ -3072,7 +2997,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setLeftFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
           ]
@@ -3093,7 +3018,7 @@ object TypographyPropsspan {
             (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
@@ -3103,7 +3028,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     inline def setLetterSpacingFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
           ]
@@ -3124,7 +3049,7 @@ object TypographyPropsspan {
             (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
@@ -3134,7 +3059,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     inline def setLineHeightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
           ]
@@ -3155,7 +3080,7 @@ object TypographyPropsspan {
             (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
@@ -3165,7 +3090,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     inline def setMFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
           ]
@@ -3186,7 +3111,7 @@ object TypographyPropsspan {
             (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
@@ -3201,7 +3126,7 @@ object TypographyPropsspan {
             (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
@@ -3211,7 +3136,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     inline def setMarginBottomFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
           ]
@@ -3227,7 +3152,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "marginBottom", js.Array(value*))
     
     inline def setMarginFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
           ]
@@ -3240,7 +3165,7 @@ object TypographyPropsspan {
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -3250,7 +3175,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     inline def setMarginLeftFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
@@ -3271,7 +3196,7 @@ object TypographyPropsspan {
             (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
@@ -3281,7 +3206,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     inline def setMarginRightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
           ]
@@ -3302,7 +3227,7 @@ object TypographyPropsspan {
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -3312,7 +3237,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     inline def setMarginTopFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
@@ -3341,7 +3266,7 @@ object TypographyPropsspan {
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -3351,7 +3276,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
     
     inline def setMarginXFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
@@ -3372,7 +3297,7 @@ object TypographyPropsspan {
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -3382,7 +3307,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
     
     inline def setMarginYFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
@@ -3403,7 +3328,7 @@ object TypographyPropsspan {
             (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
@@ -3413,7 +3338,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     inline def setMaxHeightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
           ]
@@ -3434,7 +3359,7 @@ object TypographyPropsspan {
             (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
@@ -3444,7 +3369,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMaxWidthFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
           ]
@@ -3465,7 +3390,7 @@ object TypographyPropsspan {
             (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
@@ -3475,7 +3400,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
     inline def setMbFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
           ]
@@ -3496,7 +3421,7 @@ object TypographyPropsspan {
             (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
@@ -3506,7 +3431,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     inline def setMinHeightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
           ]
@@ -3527,7 +3452,7 @@ object TypographyPropsspan {
             (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
@@ -3537,7 +3462,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     inline def setMinWidthFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
           ]
@@ -3558,7 +3483,7 @@ object TypographyPropsspan {
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -3568,7 +3493,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
     inline def setMlFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
@@ -3589,7 +3514,7 @@ object TypographyPropsspan {
             (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
@@ -3599,7 +3524,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
     inline def setMrFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
           ]
@@ -3620,7 +3545,7 @@ object TypographyPropsspan {
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -3630,7 +3555,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
     inline def setMtFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
@@ -3651,7 +3576,7 @@ object TypographyPropsspan {
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -3661,7 +3586,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
     inline def setMxFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
@@ -3682,7 +3607,7 @@ object TypographyPropsspan {
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -3692,7 +3617,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     inline def setMyFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
@@ -3710,6 +3635,10 @@ object TypographyPropsspan {
     inline def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
     
     inline def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[Event, HTMLSpanElement] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     
@@ -3963,6 +3892,10 @@ object TypographyPropsspan {
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
+    inline def setOnResize(value: SyntheticEvent[Event, HTMLSpanElement] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+    
     inline def setOnScroll(value: SyntheticUIEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -4029,13 +3962,13 @@ object TypographyPropsspan {
     
     inline def setOrder(
       value: (ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]
         ])
     ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     inline def setOrderFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]
     ): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
@@ -4048,13 +3981,13 @@ object TypographyPropsspan {
     
     inline def setOverflow(
       value: (ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]
         ])
     ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]
     ): Self = StObject.set(x, "overflow", js.Any.fromFunction1(value))
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
@@ -4073,7 +4006,7 @@ object TypographyPropsspan {
             ])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
@@ -4085,7 +4018,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     inline def setPFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
               NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Padding[Double | String]]]
@@ -4112,7 +4045,7 @@ object TypographyPropsspan {
             ])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
@@ -4129,7 +4062,7 @@ object TypographyPropsspan {
             (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
@@ -4139,7 +4072,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
     inline def setPaddingBottomFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
           ]
@@ -4155,7 +4088,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "paddingBottom", js.Array(value*))
     
     inline def setPaddingFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
               NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Padding[Double | String]]]
@@ -4170,7 +4103,7 @@ object TypographyPropsspan {
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -4180,7 +4113,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
     inline def setPaddingLeftFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
@@ -4201,7 +4134,7 @@ object TypographyPropsspan {
             (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
@@ -4211,7 +4144,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
     inline def setPaddingRightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
           ]
@@ -4232,7 +4165,7 @@ object TypographyPropsspan {
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -4242,7 +4175,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
     inline def setPaddingTopFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
@@ -4273,7 +4206,7 @@ object TypographyPropsspan {
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -4283,7 +4216,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
     inline def setPaddingXFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
@@ -4304,7 +4237,7 @@ object TypographyPropsspan {
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -4314,7 +4247,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
     inline def setPaddingYFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
@@ -4339,7 +4272,7 @@ object TypographyPropsspan {
             (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
@@ -4349,7 +4282,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
     inline def setPbFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
           ]
@@ -4370,7 +4303,7 @@ object TypographyPropsspan {
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -4380,7 +4313,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     inline def setPlFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
@@ -4401,13 +4334,13 @@ object TypographyPropsspan {
     
     inline def setPosition(
       value: (ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]
         ])
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]
     ): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
@@ -4424,7 +4357,7 @@ object TypographyPropsspan {
             (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
@@ -4434,7 +4367,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
     inline def setPrFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
           ]
@@ -4463,7 +4396,7 @@ object TypographyPropsspan {
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -4473,7 +4406,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     inline def setPtFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
@@ -4494,7 +4427,7 @@ object TypographyPropsspan {
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -4504,7 +4437,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
     inline def setPxFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
@@ -4525,7 +4458,7 @@ object TypographyPropsspan {
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -4535,7 +4468,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
     
     inline def setPyFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
@@ -4578,7 +4511,7 @@ object TypographyPropsspan {
             (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
@@ -4588,7 +4521,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     inline def setRightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
           ]
@@ -4613,7 +4546,7 @@ object TypographyPropsspan {
             (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
@@ -4623,7 +4556,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
     
     inline def setRowGapFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
           ]
@@ -4662,10 +4595,10 @@ object TypographyPropsspan {
     
     inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -4673,9 +4606,9 @@ object TypographyPropsspan {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
@@ -4685,13 +4618,13 @@ object TypographyPropsspan {
     
     inline def setTextAlign(
       value: (ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]
         ])
     ): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     inline def setTextAlignFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]
     ): Self = StObject.set(x, "textAlign", js.Any.fromFunction1(value))
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
@@ -4704,13 +4637,13 @@ object TypographyPropsspan {
     
     inline def setTextOverflow(
       value: (ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]
         ])
     ): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
     inline def setTextOverflowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]
     ): Self = StObject.set(x, "textOverflow", js.Any.fromFunction1(value))
     
     inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
@@ -4731,7 +4664,7 @@ object TypographyPropsspan {
             (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
@@ -4741,7 +4674,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     inline def setTopFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
           ]
@@ -4756,7 +4689,7 @@ object TypographyPropsspan {
         ])*
     ): Self = StObject.set(x, "top", js.Array(value*))
     
-    inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
@@ -4766,24 +4699,24 @@ object TypographyPropsspan {
     
     inline def setTypography(
       value: ResponsiveStyleValue[js.UndefOr[String]] | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[String]]
         ])
     ): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
     
     inline def setTypographyFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[String]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[String]]
     ): Self = StObject.set(x, "typography", js.Any.fromFunction1(value))
     
     inline def setTypographyUndefined: Self = StObject.set(x, "typography", js.undefined)
     
     inline def setTypographyVarargs(value: (js.UndefOr[String] | Null)*): Self = StObject.set(x, "typography", js.Array(value*))
     
-    inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+    inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
     
     inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     
-    inline def setVariant(value: com.olvind.mui.muiMaterial.createTypographyMod.Variant | inherit): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: com.olvind.mui.muiMaterial.stylesCreateTypographyMod.Variant | "inherit"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantMapping(value: PartialRecordVariantinheritstring): Self = StObject.set(x, "variantMapping", value.asInstanceOf[js.Any])
     
@@ -4793,13 +4726,13 @@ object TypographyPropsspan {
     
     inline def setVisibility(
       value: (ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]
         ])
     ): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setVisibilityFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]
     ): Self = StObject.set(x, "visibility", js.Any.fromFunction1(value))
     
     inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
@@ -4820,7 +4753,7 @@ object TypographyPropsspan {
             (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
@@ -4830,7 +4763,7 @@ object TypographyPropsspan {
     ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
           ]
@@ -4847,13 +4780,13 @@ object TypographyPropsspan {
     
     inline def setZIndex(
       value: (ResponsiveStyleValue[js.UndefOr[ZIndex | String]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[js.UndefOr[ZIndex | String]]
         ])
     ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     inline def setZIndexFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[ZIndex | String]]
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[ZIndex | String]]
     ): Self = StObject.set(x, "zIndex", js.Any.fromFunction1(value))
     
     inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)

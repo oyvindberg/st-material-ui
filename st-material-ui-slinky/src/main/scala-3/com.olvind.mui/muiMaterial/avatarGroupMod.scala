@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
+import com.olvind.mui.muiMaterial.avatarGroupAvatarGroupClassesMod.AvatarGroupClasses
 import com.olvind.mui.muiMaterial.avatarGroupAvatarGroupMod.AvatarGroupProps
-import com.olvind.mui.muiMaterial.avatarGroupClassesMod.AvatarGroupClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

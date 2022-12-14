@@ -16,11 +16,11 @@ object cardMediaCardMediaMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Cards](https://mui.com/components/cards/)
+    * - [Card](https://mui.com/material-ui/react-card/)
     *
     * API:
     *
-    * - [CardMedia API](https://mui.com/api/card-media/)
+    * - [CardMedia API](https://mui.com/material-ui/api/card-media/)
     */
   @JSImport("@mui/material/CardMedia/CardMedia", JSImport.Default)
   @js.native

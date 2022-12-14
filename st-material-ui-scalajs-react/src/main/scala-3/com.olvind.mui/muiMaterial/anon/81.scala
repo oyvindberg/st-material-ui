@@ -1,38 +1,41 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.gridGridClassesMod.GridClassKey
+import com.olvind.mui.muiMaterial.gridGridMod.GridProps
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `81` extends StObject {
+trait `81`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialImageListItemPropsli] = js.undefined
+  var defaultProps: js.UndefOr[com.olvind.mui.std.Partial[GridProps["div", js.Object]]] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesImageListItemC] = js.undefined
+  var styleOverrides: js.UndefOr[com.olvind.mui.std.Partial[OverridesStyleRules[GridClassKey, "MuiGrid", Theme]]] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialImageListItemPropsli]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartial]] = js.undefined
 }
 object `81` {
   
-  inline def apply(): `81` = {
+  inline def apply[Theme](): `81`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`81`]
+    __obj.asInstanceOf[`81`[Theme]]
   }
   
-  extension [Self <: `81`](x: Self) {
+  extension [Self <: `81`[?], Theme](x: Self & `81`[Theme]) {
     
-    inline def setDefaultProps(value: PartialImageListItemPropsli): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: com.olvind.mui.std.Partial[GridProps["div", js.Object]]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesImageListItemC): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(value: com.olvind.mui.std.Partial[OverridesStyleRules[GridClassKey, "MuiGrid", Theme]]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialImageListItemPropsli]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartial]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialImageListItemPropsli*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartial*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsCardTypeMapdiv
-import com.olvind.mui.muiMaterial.cardClassesMod.CardClasses
+import com.olvind.mui.muiMaterial.cardCardClassesMod.CardClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +17,12 @@ object cardMod {
     *
     * Demos:
     *
-    * - [Cards](https://mui.com/components/cards/)
+    * - [Card](https://mui.com/material-ui/react-card/)
     *
     * API:
     *
-    * - [Card API](https://mui.com/api/card/)
-    * - inherits [Paper API](https://mui.com/api/paper/)
+    * - [Card API](https://mui.com/material-ui/api/card/)
+    * - inherits [Paper API](https://mui.com/material-ui/api/paper/)
     */
   @JSImport("@mui/material/Card", JSImport.Default)
   @js.native

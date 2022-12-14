@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.switchClassesMod.SwitchClasses
+import com.olvind.mui.muiMaterial.switchSwitchClassesMod.SwitchClasses
 import com.olvind.mui.muiMaterial.switchSwitchMod.SwitchProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

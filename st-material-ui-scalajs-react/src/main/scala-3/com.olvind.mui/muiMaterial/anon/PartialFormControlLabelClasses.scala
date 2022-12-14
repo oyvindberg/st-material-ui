@@ -9,6 +9,8 @@ trait PartialFormControlLabelClasses extends StObject {
   
   var disabled: js.UndefOr[String] = js.undefined
   
+  var error: js.UndefOr[String] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
   
   var labelPlacementBottom: js.UndefOr[String] = js.undefined
@@ -31,6 +33,10 @@ object PartialFormControlLabelClasses {
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

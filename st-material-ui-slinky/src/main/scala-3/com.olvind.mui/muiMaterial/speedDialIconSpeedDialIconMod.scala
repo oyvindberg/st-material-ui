@@ -1,57 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.PartialSpeedDialIconClasses
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`inline`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.additions
-import com.olvind.mui.muiMaterial.muiMaterialStrings.all
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ascending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.assertive
-import com.olvind.mui.muiMaterial.muiMaterialStrings.both
-import com.olvind.mui.muiMaterial.muiMaterialStrings.copy
-import com.olvind.mui.muiMaterial.muiMaterialStrings.date
-import com.olvind.mui.muiMaterial.muiMaterialStrings.decimal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.descending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dialog
-import com.olvind.mui.muiMaterial.muiMaterialStrings.email
-import com.olvind.mui.muiMaterial.muiMaterialStrings.execute
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grammar
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grid
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.link
-import com.olvind.mui.muiMaterial.muiMaterialStrings.list
-import com.olvind.mui.muiMaterial.muiMaterialStrings.listbox
-import com.olvind.mui.muiMaterial.muiMaterialStrings.location
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mixed
-import com.olvind.mui.muiMaterial.muiMaterialStrings.move
-import com.olvind.mui.muiMaterial.muiMaterialStrings.no
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.numeric
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.on
-import com.olvind.mui.muiMaterial.muiMaterialStrings.other
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.polite
-import com.olvind.mui.muiMaterial.muiMaterialStrings.popup
-import com.olvind.mui.muiMaterial.muiMaterialStrings.removals
-import com.olvind.mui.muiMaterial.muiMaterialStrings.search
-import com.olvind.mui.muiMaterial.muiMaterialStrings.spelling
-import com.olvind.mui.muiMaterial.muiMaterialStrings.step
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tel
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
-import com.olvind.mui.muiMaterial.muiMaterialStrings.time
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tree
-import com.olvind.mui.muiMaterial.muiMaterialStrings.url
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.yes
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.anon.Html
@@ -69,7 +19,6 @@ import com.olvind.mui.react.mod.KeyboardEventHandler
 import com.olvind.mui.react.mod.MouseEventHandler
 import com.olvind.mui.react.mod.PointerEventHandler
 import com.olvind.mui.react.mod.ReactEventHandler
-import com.olvind.mui.react.mod.Ref
 import com.olvind.mui.react.mod.TouchEventHandler
 import com.olvind.mui.react.mod.TransitionEventHandler
 import com.olvind.mui.react.mod.UIEventHandler
@@ -80,7 +29,6 @@ import org.scalajs.dom.EventTarget
 import org.scalajs.dom.HTMLSpanElement
 import slinky.core.SyntheticEvent
 import slinky.core.facade.ReactElement
-import slinky.core.facade.ReactRef
 import slinky.web.SyntheticAnimationEvent
 import slinky.web.SyntheticClipboardEvent
 import slinky.web.SyntheticCompositionEvent
@@ -102,11 +50,11 @@ object speedDialIconSpeedDialIconMod {
     *
     * Demos:
     *
-    * - [Speed Dial](https://mui.com/components/speed-dial/)
+    * - [Speed Dial](https://mui.com/material-ui/react-speed-dial/)
     *
     * API:
     *
-    * - [SpeedDialIcon API](https://mui.com/api/speed-dial-icon/)
+    * - [SpeedDialIcon API](https://mui.com/material-ui/api/speed-dial-icon/)
     */
   /* Inlined (props : @mui/material.@mui/material/SpeedDialIcon/SpeedDialIcon.SpeedDialIconProps): react.react.<global>.JSX.Element & {  muiName :string} */
   object default {
@@ -134,11 +82,11 @@ object speedDialIconSpeedDialIconMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -148,7 +96,7 @@ object speedDialIconSpeedDialIconMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -156,7 +104,7 @@ object speedDialIconSpeedDialIconMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -166,11 +114,11 @@ object speedDialIconSpeedDialIconMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -180,7 +128,7 @@ object speedDialIconSpeedDialIconMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -188,7 +136,7 @@ object speedDialIconSpeedDialIconMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -196,12 +144,12 @@ object speedDialIconSpeedDialIconMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -218,7 +166,7 @@ object speedDialIconSpeedDialIconMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -244,7 +192,7 @@ object speedDialIconSpeedDialIconMod {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -271,7 +219,7 @@ object speedDialIconSpeedDialIconMod {
     
     var inlist: js.UndefOr[Any] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -286,6 +234,8 @@ object speedDialIconSpeedDialIconMod {
     var itemType: js.UndefOr[String] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
@@ -413,6 +363,8 @@ object speedDialIconSpeedDialIconMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLSpanElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
@@ -464,7 +416,9 @@ object speedDialIconSpeedDialIconMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    var ref: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLSpanElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
@@ -493,11 +447,11 @@ object speedDialIconSpeedDialIconMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
   }
@@ -526,7 +480,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -534,7 +488,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -554,7 +508,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -570,7 +524,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -590,7 +544,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -598,7 +552,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -618,7 +572,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -634,7 +588,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -650,7 +604,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -659,7 +613,7 @@ object speedDialIconSpeedDialIconMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -692,7 +646,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -736,7 +690,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -786,7 +740,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -817,6 +771,10 @@ object speedDialIconSpeedDialIconMod {
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[Event, HTMLSpanElement] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -1070,6 +1028,10 @@ object speedDialIconSpeedDialIconMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[Event, HTMLSpanElement] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: SyntheticUIEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1158,13 +1120,9 @@ object speedDialIconSpeedDialIconMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-      
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
-      
-      inline def setRefReactRef(value: ReactRef[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLSpanElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
@@ -1222,7 +1180,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1230,7 +1188,7 @@ object speedDialIconSpeedDialIconMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       

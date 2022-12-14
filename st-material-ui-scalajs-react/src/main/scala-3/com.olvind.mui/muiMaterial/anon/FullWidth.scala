@@ -1,23 +1,16 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.error
-import com.olvind.mui.muiMaterial.muiMaterialStrings.info
-import com.olvind.mui.muiMaterial.muiMaterialStrings.large
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.primary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.secondary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.standard
-import com.olvind.mui.muiMaterial.muiMaterialStrings.success
-import com.olvind.mui.muiMaterial.muiMaterialStrings.warning
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.std.NonNullable
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.ReactMouseEventFrom
 import japgolly.scalajs.react.facade.Empty
 import japgolly.scalajs.react.facade.JsNumber
 import japgolly.scalajs.react.facade.React.Element
 import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
+import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +29,11 @@ trait FullWidth extends StObject {
   
   /**
     * The color of the button when it is in an active state.
+    * It supports both default and custom theme colors, which can be added as shown in the
+    * [palette customization guide](https://mui.com/material-ui/customization/palette/#adding-new-colors).
     * @default 'standard'
     */
-  var color: js.UndefOr[standard | primary | secondary | error | info | success | warning] = js.undefined
+  var color: js.UndefOr["standard" | "primary" | "secondary" | "error" | "info" | "success" | "warning"] = js.undefined
   
   /**
     * If `true`, the  keyboard focus ripple is disabled.
@@ -59,6 +54,26 @@ trait FullWidth extends StObject {
   var fullWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Callback fired when the state changes.
+    *
+    * @param {React.MouseEvent<HTMLElement>} event The event source of the callback.
+    * @param {any} value of the selected button.
+    */
+  var onChange: js.UndefOr[
+    js.Function2[/* event */ ReactMouseEventFrom[HTMLElement], /* value */ Any, Unit]
+  ] = js.undefined
+  
+  /**
+    * Callback fired when the button is clicked.
+    *
+    * @param {React.MouseEvent<HTMLElement>} event The event source of the callback.
+    * @param {any} value of the selected button.
+    */
+  var onClick: js.UndefOr[
+    js.Function2[/* event */ ReactMouseEventFrom[HTMLElement], /* value */ Any, Unit]
+  ] = js.undefined
+  
+  /**
     * If `true`, the button is rendered in an active state.
     */
   var selected: js.UndefOr[Boolean] = js.undefined
@@ -68,12 +83,12 @@ trait FullWidth extends StObject {
     * The prop defaults to the value inherited from the parent ToggleButtonGroup component.
     * @default 'medium'
     */
-  var size: js.UndefOr[small | medium | large] = js.undefined
+  var size: js.UndefOr["small" | "medium" | "large"] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * The value to associate with the button when selected in a
@@ -104,7 +119,7 @@ object FullWidth {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setColor(value: standard | primary | secondary | error | info | success | warning): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: "standard" | "primary" | "secondary" | "error" | "info" | "success" | "warning"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -120,18 +135,26 @@ object FullWidth {
     
     inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
+    inline def setOnChange(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* value */ Any) => Callback): Self = StObject.set(x, "onChange", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* value */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    
+    inline def setOnClick(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* value */ Any) => Callback): Self = StObject.set(x, "onClick", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* value */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "medium" | "large"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -139,9 +162,9 @@ object FullWidth {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     

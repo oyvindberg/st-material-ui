@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBottomNavigationTyp
-import com.olvind.mui.muiMaterial.bottomNavigationClassesMod.BottomNavigationClasses
+import com.olvind.mui.muiMaterial.bottomNavigationBottomNavigationClassesMod.BottomNavigationClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object bottomNavigationMod {
     *
     * Demos:
     *
-    * - [Bottom Navigation](https://mui.com/components/bottom-navigation/)
+    * - [Bottom Navigation](https://mui.com/material-ui/react-bottom-navigation/)
     *
     * API:
     *
-    * - [BottomNavigation API](https://mui.com/api/bottom-navigation/)
+    * - [BottomNavigation API](https://mui.com/material-ui/api/bottom-navigation/)
     */
   @JSImport("@mui/material/BottomNavigation", JSImport.Default)
   @js.native

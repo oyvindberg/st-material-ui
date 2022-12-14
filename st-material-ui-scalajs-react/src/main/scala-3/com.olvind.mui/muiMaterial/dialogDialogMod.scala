@@ -1,70 +1,15 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiBase.anon.Root
-import com.olvind.mui.muiBase.anon.`4`
+import com.olvind.mui.muiBase.anon.BackdropRoot
+import com.olvind.mui.muiMaterial.anon.Backdrop
 import com.olvind.mui.muiMaterial.anon.PaperPropsPaperTypeMapdivdefaultComponen
-import com.olvind.mui.muiMaterial.anon.PartialBackdropPropsdefaultComponent
+import com.olvind.mui.muiMaterial.anon.PartialBackdropPropsdiv
 import com.olvind.mui.muiMaterial.anon.PartialDialogClasses
 import com.olvind.mui.muiMaterial.anon.PartialPaperPropsPaperTypeMapdivdefaultC
 import com.olvind.mui.muiMaterial.anon.TransitionPropsAbout
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
-import com.olvind.mui.muiMaterial.muiMaterialBooleans.`false`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`inline`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.additions
-import com.olvind.mui.muiMaterial.muiMaterialStrings.all
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ascending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.assertive
-import com.olvind.mui.muiMaterial.muiMaterialStrings.backdropClick
-import com.olvind.mui.muiMaterial.muiMaterialStrings.body
-import com.olvind.mui.muiMaterial.muiMaterialStrings.both
-import com.olvind.mui.muiMaterial.muiMaterialStrings.copy
-import com.olvind.mui.muiMaterial.muiMaterialStrings.date
-import com.olvind.mui.muiMaterial.muiMaterialStrings.decimal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.descending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dialog
-import com.olvind.mui.muiMaterial.muiMaterialStrings.email
-import com.olvind.mui.muiMaterial.muiMaterialStrings.escapeKeyDown
-import com.olvind.mui.muiMaterial.muiMaterialStrings.execute
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grammar
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grid
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.link
-import com.olvind.mui.muiMaterial.muiMaterialStrings.list
-import com.olvind.mui.muiMaterial.muiMaterialStrings.listbox
-import com.olvind.mui.muiMaterial.muiMaterialStrings.location
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mixed
-import com.olvind.mui.muiMaterial.muiMaterialStrings.move
-import com.olvind.mui.muiMaterial.muiMaterialStrings.no
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.numeric
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.on
-import com.olvind.mui.muiMaterial.muiMaterialStrings.other
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.paper
-import com.olvind.mui.muiMaterial.muiMaterialStrings.polite
-import com.olvind.mui.muiMaterial.muiMaterialStrings.popup
-import com.olvind.mui.muiMaterial.muiMaterialStrings.removals
-import com.olvind.mui.muiMaterial.muiMaterialStrings.search
-import com.olvind.mui.muiMaterial.muiMaterialStrings.spelling
-import com.olvind.mui.muiMaterial.muiMaterialStrings.step
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tel
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
-import com.olvind.mui.muiMaterial.muiMaterialStrings.time
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tree
-import com.olvind.mui.muiMaterial.muiMaterialStrings.url
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.yes
-import com.olvind.mui.muiMaterial.transitionMod.TransitionProps
-import com.olvind.mui.muiSystem.createBreakpointsMod.Breakpoint
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
+import com.olvind.mui.muiMaterial.transitionsTransitionMod.TransitionProps
+import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.Breakpoint
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.anon.Html
@@ -128,7 +73,7 @@ object dialogDialogMod {
     
     var BackdropComponent: js.UndefOr[ElementType] = js.undefined
     
-    var BackdropProps: js.UndefOr[PartialBackdropPropsdefaultComponent] = js.undefined
+    var BackdropProps: js.UndefOr[PartialBackdropPropsdiv] = js.undefined
     
     /**
       * The component used to render the body of the dialog.
@@ -137,14 +82,14 @@ object dialogDialogMod {
     var PaperComponent: js.UndefOr[JSXElementConstructor[PaperPropsPaperTypeMapdivdefaultComponen]] = js.undefined
     
     /**
-      * Props applied to the [`Paper`](/api/paper/) element.
+      * Props applied to the [`Paper`](/material-ui/api/paper/) element.
       * @default {}
       */
     var PaperProps: js.UndefOr[PartialPaperPropsPaperTypeMapdivdefaultC] = js.undefined
     
     /**
       * The component used for the transition.
-      * [Follow this guide](/components/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.
+      * [Follow this guide](/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.
       * @default Fade
       */
     var TransitionComponent: js.UndefOr[JSXElementConstructor[TransitionPropsAbout]] = js.undefined
@@ -153,7 +98,7 @@ object dialogDialogMod {
       * Props applied to the transition element.
       * By default, the element is based on this [`Transition`](http://reactcommunity.org/react-transition-group/transition/) component.
       */
-    var TransitionProps: js.UndefOr[com.olvind.mui.muiMaterial.transitionMod.TransitionProps] = js.undefined
+    var TransitionProps: js.UndefOr[com.olvind.mui.muiMaterial.transitionsTransitionMod.TransitionProps] = js.undefined
     
     var about: js.UndefOr[String] = js.undefined
     
@@ -163,11 +108,11 @@ object dialogDialogMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -177,7 +122,7 @@ object dialogDialogMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     /**
       * The id(s) of the element(s) that describe the dialog.
@@ -188,7 +133,7 @@ object dialogDialogMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -198,11 +143,11 @@ object dialogDialogMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -215,7 +160,7 @@ object dialogDialogMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -223,7 +168,7 @@ object dialogDialogMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -231,12 +176,12 @@ object dialogDialogMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -253,7 +198,7 @@ object dialogDialogMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -286,13 +231,13 @@ object dialogDialogMod {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var components: js.UndefOr[Root] = js.undefined
+    var components: js.UndefOr[Backdrop] = js.undefined
     
-    var componentsProps: js.UndefOr[`4`] = js.undefined
+    var componentsProps: js.UndefOr[com.olvind.mui.muiBase.anon.Backdrop] = js.undefined
     
     var container: js.UndefOr[org.scalajs.dom.Element | (js.Function0[org.scalajs.dom.Element | Null]) | Null] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -346,7 +291,7 @@ object dialogDialogMod {
     
     var inlist: js.UndefOr[Any] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -372,7 +317,9 @@ object dialogDialogMod {
       * Set to `false` to disable `maxWidth`.
       * @default 'sm'
       */
-    var maxWidth: js.UndefOr[Breakpoint | `false`] = js.undefined
+    var maxWidth: js.UndefOr[Breakpoint | false] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -386,6 +333,7 @@ object dialogDialogMod {
     
     /**
       * Callback fired when the backdrop is clicked.
+      * @deprecated Use the `onClose` prop with the `reason` argument to handle the `backdropClick` events.
       */
     var onBackdropClick: js.UndefOr[ReactEventHandler[js.Object]] = js.undefined
     
@@ -408,7 +356,7 @@ object dialogDialogMod {
       * @param {string} reason Can be: `"escapeKeyDown"`, `"backdropClick"`.
       */
     var onClose: js.UndefOr[
-        js.Function2[/* event */ js.Object, /* reason */ backdropClick | escapeKeyDown, Unit]
+        js.Function2[/* event */ js.Object, /* reason */ "backdropClick" | "escapeKeyDown", Unit]
       ] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -515,6 +463,8 @@ object dialogDialogMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -572,11 +522,15 @@ object dialogDialogMod {
       * Determine the container for scrolling the dialog.
       * @default 'paper'
       */
-    var scroll: js.UndefOr[body | paper] = js.undefined
+    var scroll: js.UndefOr["body" | "paper"] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
+    
+    var slotProps: js.UndefOr[com.olvind.mui.muiBase.anon.Backdrop] = js.undefined
+    
+    var slots: js.UndefOr[BackdropRoot] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
@@ -598,15 +552,18 @@ object dialogDialogMod {
     /**
       * The duration for the transition, in milliseconds.
       * You may specify a single timeout for all transitions, or individually with an object.
-      * @default { enter: duration.enteringScreen, exit: duration.leavingScreen }
+      * @default {
+      *   enter: theme.transitions.duration.enteringScreen,
+      *   exit: theme.transitions.duration.leavingScreen,
+      * }
       */
     var transitionDuration: js.UndefOr[Any] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
   }
@@ -635,7 +592,7 @@ object dialogDialogMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -643,7 +600,7 @@ object dialogDialogMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -663,7 +620,7 @@ object dialogDialogMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -679,7 +636,7 @@ object dialogDialogMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -699,7 +656,7 @@ object dialogDialogMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -707,7 +664,7 @@ object dialogDialogMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -727,7 +684,7 @@ object dialogDialogMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -743,7 +700,7 @@ object dialogDialogMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -759,7 +716,7 @@ object dialogDialogMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -768,7 +725,7 @@ object dialogDialogMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -801,7 +758,7 @@ object dialogDialogMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -837,7 +794,7 @@ object dialogDialogMod {
       
       inline def setBackdropComponentUndefined: Self = StObject.set(x, "BackdropComponent", js.undefined)
       
-      inline def setBackdropProps(value: PartialBackdropPropsdefaultComponent): Self = StObject.set(x, "BackdropProps", value.asInstanceOf[js.Any])
+      inline def setBackdropProps(value: PartialBackdropPropsdiv): Self = StObject.set(x, "BackdropProps", value.asInstanceOf[js.Any])
       
       inline def setBackdropPropsUndefined: Self = StObject.set(x, "BackdropProps", js.undefined)
       
@@ -867,9 +824,9 @@ object dialogDialogMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setComponents(value: Root): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: Backdrop): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      inline def setComponentsProps(value: `4`): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
+      inline def setComponentsProps(value: com.olvind.mui.muiBase.anon.Backdrop): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
       
       inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
       
@@ -883,7 +840,7 @@ object dialogDialogMod {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -965,7 +922,7 @@ object dialogDialogMod {
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1007,9 +964,13 @@ object dialogDialogMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setMaxWidth(value: Breakpoint | `false`): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Breakpoint | false): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
       
@@ -1059,7 +1020,7 @@ object dialogDialogMod {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnClose(value: (/* event */ js.Object, /* reason */ backdropClick | escapeKeyDown) => Callback): Self = StObject.set(x, "onClose", js.Any.fromFunction2((t0: /* event */ js.Object, t1: /* reason */ backdropClick | escapeKeyDown) => (value(t0, t1)).runNow()))
+      inline def setOnClose(value: (/* event */ js.Object, /* reason */ "backdropClick" | "escapeKeyDown") => Callback): Self = StObject.set(x, "onClose", js.Any.fromFunction2((t0: /* event */ js.Object, t1: /* reason */ "backdropClick" | "escapeKeyDown") => (value(t0, t1)).runNow()))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
@@ -1271,6 +1232,10 @@ object dialogDialogMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: ReactUIEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1383,7 +1348,7 @@ object dialogDialogMod {
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      inline def setScroll(value: body | paper): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: "body" | "paper"): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
       inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
@@ -1393,7 +1358,15 @@ object dialogDialogMod {
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
+      inline def setSlotProps(value: com.olvind.mui.muiBase.anon.Backdrop): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      
+      inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
+      
       inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+      
+      inline def setSlots(value: BackdropRoot): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      
+      inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
       inline def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
       
@@ -1441,7 +1414,7 @@ object dialogDialogMod {
       
       inline def setTransitionPropsUndefined: Self = StObject.set(x, "TransitionProps", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1449,7 +1422,7 @@ object dialogDialogMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       

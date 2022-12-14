@@ -1,97 +1,91 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.Enter
-import com.olvind.mui.muiMaterial.anon.Exit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.enter
-import com.olvind.mui.muiMaterial.muiMaterialStrings.exit
-import com.olvind.mui.react.mod.CSSProperties
-import org.scalajs.dom.Element
+import com.olvind.mui.muiMaterial.anon.OverridableComponentSvgIconTypeMapsvg
+import com.olvind.mui.muiUtils.debounceMod.Cancelable
+import com.olvind.mui.muiUtils.useControlledMod.UseControlledProps
+import com.olvind.mui.muiUtils.useIsFocusVisibleMod.UseIsFocusVisibleResult
+import com.olvind.mui.react.mod.DependencyList
+import com.olvind.mui.react.mod.EffectCallback
+import com.olvind.mui.react.mod.JSXElementConstructor
+import com.olvind.mui.react.mod.MutableRefObject
+import com.olvind.mui.react.mod.Ref
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.facade.React.RefFn
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.Document
+import org.scalajs.dom.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("@mui/material/transitions/utils", JSImport.Namespace)
+  @JSImport("@mui/material/utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getTransitionProps(props: ComponentProps, options: Options): TransitionProps = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionProps")(props.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransitionProps]
+  inline def capitalize(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def reflow(node: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("reflow")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def createChainedFunction[Args /* <: js.Array[Any] */, This](funcs: (js.ThisFunction1[/* this */ This, /* args */ Args, Any])*): js.ThisFunction1[/* this */ This, /* args */ Args, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChainedFunction")(funcs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.ThisFunction1[/* this */ This, /* args */ Args, Unit]]
   
-  trait ComponentProps extends StObject {
-    
-    var easing: js.UndefOr[String | Enter] = js.undefined
-    
-    var style: js.UndefOr[CSSProperties] = js.undefined
-    
-    var timeout: Double | Exit
-  }
-  object ComponentProps {
-    
-    inline def apply(timeout: Double | Exit): ComponentProps = {
-      val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ComponentProps]
-    }
-    
-    extension [Self <: ComponentProps](x: Self) {
-      
-      inline def setEasing(value: String | Enter): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
-      
-      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
-      
-      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-      
-      inline def setTimeout(value: Double | Exit): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-    }
-  }
+  inline def createSvgIcon(path: Node, displayName: String): OverridableComponentSvgIconTypeMapsvg = (^.asInstanceOf[js.Dynamic].applyDynamic("createSvgIcon")(path.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[OverridableComponentSvgIconTypeMapsvg]
   
-  trait Options extends StObject {
+  inline def debounce[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T): T & Cancelable = ^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any]).asInstanceOf[T & Cancelable]
+  inline def debounce[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double): T & Cancelable = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[T & Cancelable]
+  
+  inline def deprecatedPropType[T](validator: T, reason: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecatedPropType")(validator.asInstanceOf[js.Any], reason.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def isMuiElement(element: Any, muiNames: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMuiElement")(element.asInstanceOf[js.Any], muiNames.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def ownerDocument(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("ownerDocument")().asInstanceOf[Document]
+  inline def ownerDocument(node: org.scalajs.dom.Node): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("ownerDocument")(node.asInstanceOf[js.Any]).asInstanceOf[Document]
+  
+  inline def ownerWindow(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("ownerWindow")().asInstanceOf[Window]
+  inline def ownerWindow(node: org.scalajs.dom.Node): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("ownerWindow")(node.asInstanceOf[js.Any]).asInstanceOf[Window]
+  
+  inline def requirePropFactory(componentNameInError: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requirePropFactory")(componentNameInError.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def requirePropFactory(componentNameInError: String, Component: JSXElementConstructor[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requirePropFactory")(componentNameInError.asInstanceOf[js.Any], Component.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def setRef[T](): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")().asInstanceOf[Unit]
+  inline def setRef[T](ref: MutableRefObject[T | Null]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRef[T](ref: MutableRefObject[T | Null], value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setRef[T](ref: js.Function1[/* instance */ T | Null, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRef[T](ref: js.Function1[/* instance */ T | Null, Unit], value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setRef[T](ref: Null, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setRef[T](ref: Unit, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  object unstableClassNameGenerator {
     
-    var mode: enter | exit
-  }
-  object Options {
+    @JSImport("@mui/material/utils", "unstable_ClassNameGenerator")
+    @js.native
+    val ^ : js.Any = js.native
     
-    inline def apply(mode: enter | exit): Options = {
-      val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Options]
-    }
+    inline def configure(generator: js.Function1[/* componentName */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(generator.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    extension [Self <: Options](x: Self) {
-      
-      inline def setMode(value: enter | exit): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-    }
+    inline def generate(componentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(componentName.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   }
   
-  trait TransitionProps extends StObject {
-    
-    var delay: js.UndefOr[String] = js.undefined
-    
-    var duration: String | Double
-    
-    var easing: js.UndefOr[String] = js.undefined
-  }
-  object TransitionProps {
-    
-    inline def apply(duration: String | Double): TransitionProps = {
-      val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TransitionProps]
-    }
-    
-    extension [Self <: TransitionProps](x: Self) {
-      
-      inline def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
-      
-      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
-      
-      inline def setDuration(value: String | Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
-      
-      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
-      
-      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
-    }
-  }
+  inline def unstableUseEnhancedEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useEnhancedEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unstableUseEnhancedEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useEnhancedEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def unstableUseId(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useId")().asInstanceOf[js.UndefOr[String]]
+  inline def unstableUseId(idOverride: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useId")(idOverride.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  inline def unsupportedProp(
+    props: StringDictionary[Any],
+    propName: String,
+    componentName: String,
+    location: String,
+    propFullName: String
+  ): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedProp")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any], location.asInstanceOf[js.Any], propFullName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
+  
+  inline def useControlled[T](props: UseControlledProps[T]): js.Tuple2[T, js.Function1[/* newValue */ T | (js.Function1[/* prevValue */ T, T]), Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useControlled")(props.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, js.Function1[/* newValue */ T | (js.Function1[/* prevValue */ T, T]), Unit]]]
+  
+  inline def useEventCallback[Args /* <: js.Array[Any] */, Return](fn: js.Function1[/* args */ Args, Return]): js.Function1[/* args */ Args, Return] = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, Return]]
+  
+  inline def useForkRef[Instance](refs: js.UndefOr[Ref[Instance]]*): RefFn[Instance] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useForkRef")(refs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[RefFn[Instance] | Null]
+  
+  inline def useIsFocusVisible(): UseIsFocusVisibleResult = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsFocusVisible")().asInstanceOf[UseIsFocusVisibleResult]
 }

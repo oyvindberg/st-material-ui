@@ -6,11 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `76` extends StObject {
   
-  var defaultProps: js.UndefOr[PartialFormGroupProps] = js.undefined
-  
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesFormGroupClass] = js.undefined
-  
-  var variants: js.UndefOr[js.Array[PropsPartialFormGroupProps]] = js.undefined
+  /**
+    * Props applied to the Typography wrapper of the passed label.
+    * This is unused if disableTypography is true.
+    * @default {}
+    */
+  var typography: js.UndefOr[TypographyPropsspanAbout] = js.undefined
 }
 object `76` {
   
@@ -21,18 +22,8 @@ object `76` {
   
   extension [Self <: `76`](x: Self) {
     
-    inline def setDefaultProps(value: PartialFormGroupProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setTypography(value: TypographyPropsspanAbout): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
     
-    inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
-    
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesFormGroupClass): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
-    
-    inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
-    
-    inline def setVariants(value: js.Array[PropsPartialFormGroupProps]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
-    
-    inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
-    
-    inline def setVariantsVarargs(value: PropsPartialFormGroupProps*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setTypographyUndefined: Self = StObject.set(x, "typography", js.undefined)
   }
 }

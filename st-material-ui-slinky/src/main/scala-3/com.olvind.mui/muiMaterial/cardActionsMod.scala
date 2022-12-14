@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
+import com.olvind.mui.muiMaterial.cardActionsCardActionsClassesMod.CardActionsClasses
 import com.olvind.mui.muiMaterial.cardActionsCardActionsMod.CardActionsProps
-import com.olvind.mui.muiMaterial.cardActionsClassesMod.CardActionsClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

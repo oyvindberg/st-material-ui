@@ -2,9 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.Avatar
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsCardHeaderTypeMapdi
-import com.olvind.mui.muiMaterial.anon.`8`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.div
-import com.olvind.mui.muiMaterial.muiMaterialStrings.span
+import com.olvind.mui.muiMaterial.anon.`7`
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverridableComponent
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import com.olvind.mui.react.mod.global.JSX.Element
@@ -20,11 +18,11 @@ object cardHeaderCardHeaderMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Cards](https://mui.com/components/cards/)
+    * - [Card](https://mui.com/material-ui/react-card/)
     *
     * API:
     *
-    * - [CardHeader API](https://mui.com/api/card-header/)
+    * - [CardHeader API](https://mui.com/material-ui/api/card-header/)
     */
   @JSImport("@mui/material/CardHeader/CardHeader", JSImport.Default)
   @js.native
@@ -35,7 +33,7 @@ object cardHeaderCardHeaderMod extends Shortcut {
     DefaultComponent
   ]
   
-  type CardHeaderPropsWithComponent[DefaultComponent /* <: ReactElement */, Props, TitleTypographyComponent /* <: ReactElement */, SubheaderTypographyComponent /* <: ReactElement */] = `8`[DefaultComponent] & (CardHeaderProps[DefaultComponent, Props, TitleTypographyComponent, SubheaderTypographyComponent])
+  type CardHeaderPropsWithComponent[DefaultComponent /* <: ReactElement */, Props, TitleTypographyComponent /* <: ReactElement */, SubheaderTypographyComponent /* <: ReactElement */] = `7`[DefaultComponent] & (CardHeaderProps[DefaultComponent, Props, TitleTypographyComponent, SubheaderTypographyComponent])
   
   trait CardHeaderTypeMap[Props, DefaultComponent /* <: ReactElement */, TitleTypographyComponent /* <: ReactElement */, SubheaderTypographyComponent /* <: ReactElement */] extends StObject {
     
@@ -63,7 +61,7 @@ object cardHeaderCardHeaderMod extends Shortcut {
   
   @js.native
   trait OverridableCardHeader
-    extends OverridableComponent[CardHeaderTypeMap[js.Object, div, span, span]] {
+    extends OverridableComponent[CardHeaderTypeMap[js.Object, "div", "span", "span"]] {
     
     def apply[DefaultComponent /* <: ReactElement */, Props, TitleTypographyComponent /* <: ReactElement */, SubheaderTypographyComponent /* <: ReactElement */](
       props: CardHeaderPropsWithComponent[DefaultComponent, Props, TitleTypographyComponent, SubheaderTypographyComponent]

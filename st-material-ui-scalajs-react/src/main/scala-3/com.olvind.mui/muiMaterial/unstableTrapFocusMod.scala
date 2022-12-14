@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiBase.unstableTrapFocusUnstableTrapFocusMod.TrapFocusProps
+import com.olvind.mui.muiBase.focusTrapFocusTrapMod.FocusTrapProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,5 +12,5 @@ object unstableTrapFocusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: TrapFocusProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: FocusTrapProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

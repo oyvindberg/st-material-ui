@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBreadcrumbsTypeMapn
-import com.olvind.mui.muiMaterial.breadcrumbsClassesMod.BreadcrumbsClasses
+import com.olvind.mui.muiMaterial.breadcrumbsBreadcrumbsClassesMod.BreadcrumbsClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object breadcrumbsMod {
     *
     * Demos:
     *
-    * - [Breadcrumbs](https://mui.com/components/breadcrumbs/)
+    * - [Breadcrumbs](https://mui.com/material-ui/react-breadcrumbs/)
     *
     * API:
     *
-    * - [Breadcrumbs API](https://mui.com/api/breadcrumbs/)
+    * - [Breadcrumbs API](https://mui.com/material-ui/api/breadcrumbs/)
     */
   @JSImport("@mui/material/Breadcrumbs", JSImport.Default)
   @js.native

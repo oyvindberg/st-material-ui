@@ -1,17 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.action
-import com.olvind.mui.muiMaterial.muiMaterialStrings.disabled
-import com.olvind.mui.muiMaterial.muiMaterialStrings.error
-import com.olvind.mui.muiMaterial.muiMaterialStrings.info
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.large
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.primary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.secondary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.success
-import com.olvind.mui.muiMaterial.muiMaterialStrings.warning
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import slinky.core.facade.ReactElement
@@ -32,24 +20,35 @@ trait FontSize extends StObject {
   var classes: js.UndefOr[PartialSvgIconClasses] = js.undefined
   
   /**
-    * The color of the component. It supports those theme colors that make sense for this component.
+    * The color of the component.
+    * It supports both default and custom theme colors, which can be added as shown in the
+    * [palette customization guide](https://mui.com/material-ui/customization/palette/#adding-new-colors).
     * You can use the `htmlColor` prop to apply a color attribute to the SVG element.
     * @default 'inherit'
     */
   var color: js.UndefOr[
-    inherit | action | disabled | primary | secondary | error | info | success | warning
+    "inherit" | "action" | "disabled" | "primary" | "secondary" | "error" | "info" | "success" | "warning"
   ] = js.undefined
   
   /**
     * The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size.
     * @default 'medium'
     */
-  var fontSize: js.UndefOr[inherit | large | medium | small] = js.undefined
+  var fontSize: js.UndefOr["inherit" | "large" | "medium" | "small"] = js.undefined
   
   /**
     * Applies a color attribute to the SVG element.
     */
   var htmlColor: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If `true`, the root node will inherit the custom `component`'s viewBox and the `viewBox`
+    * prop will be ignored.
+    * Useful when you want to reference a custom `component` and have `SvgIcon` pass that
+    * `component`'s viewBox to the root node.
+    * @default false
+    */
+  var inheritViewBox: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The shape-rendering attribute. The behavior of the different options is described on the
@@ -61,7 +60,7 @@ trait FontSize extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * Provides a human-readable title for the element that contains it.
@@ -96,11 +95,13 @@ object FontSize {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setColor(value: inherit | action | disabled | primary | secondary | error | info | success | warning): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(
+      value: "inherit" | "action" | "disabled" | "primary" | "secondary" | "error" | "info" | "success" | "warning"
+    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setFontSize(value: inherit | large | medium | small): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: "inherit" | "large" | "medium" | "small"): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
@@ -108,14 +109,18 @@ object FontSize {
     
     inline def setHtmlColorUndefined: Self = StObject.set(x, "htmlColor", js.undefined)
     
+    inline def setInheritViewBox(value: Boolean): Self = StObject.set(x, "inheritViewBox", value.asInstanceOf[js.Any])
+    
+    inline def setInheritViewBoxUndefined: Self = StObject.set(x, "inheritViewBox", js.undefined)
+    
     inline def setShapeRendering(value: String): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
     
     inline def setShapeRenderingUndefined: Self = StObject.set(x, "shapeRendering", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -123,9 +128,9 @@ object FontSize {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     

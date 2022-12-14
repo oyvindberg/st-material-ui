@@ -3,12 +3,9 @@ package com.olvind.mui.muiMaterial.components
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiMaterial.anon.Node
 import com.olvind.mui.muiMaterial.anon.PartialMenuProps
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
-import com.olvind.mui.muiMaterial.muiMaterialStrings.filled
-import com.olvind.mui.muiMaterial.muiMaterialStrings.outlined
-import com.olvind.mui.muiMaterial.muiMaterialStrings.standard
-import com.olvind.mui.muiMaterial.selectInputMod.SelectChangeEvent
-import com.olvind.mui.muiMaterial.selectInputMod.SelectInputProps
+import com.olvind.mui.muiMaterial.selectSelectInputMod.SelectChangeEvent
+import com.olvind.mui.muiMaterial.selectSelectInputMod.SelectInputProps
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.mod.HTMLAttributes
@@ -48,6 +45,8 @@ object SelectInput {
     
     inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
     
+    inline def defaultOpen(value: Boolean): this.type = set("defaultOpen", value.asInstanceOf[js.Any])
+    
     inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
     
     inline def inputRef(value: /* ref */ HTMLSelectElement | Node[Any] => Unit): this.type = set("inputRef", js.Any.fromFunction1(value))
@@ -82,7 +81,7 @@ object SelectInput {
     
     inline def value(value: Any): this.type = set("value", value.asInstanceOf[js.Any])
     
-    inline def variant(value: standard | outlined | filled): this.type = set("variant", value.asInstanceOf[js.Any])
+    inline def variant(value: "standard" | "outlined" | "filled"): this.type = set("variant", value.asInstanceOf[js.Any])
   }
   
   def withProps(p: SelectInputProps[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

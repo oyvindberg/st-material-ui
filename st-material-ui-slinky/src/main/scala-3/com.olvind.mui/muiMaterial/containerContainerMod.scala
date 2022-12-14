@@ -16,11 +16,11 @@ object containerContainerMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Container](https://mui.com/components/container/)
+    * - [Container](https://mui.com/material-ui/react-container/)
     *
     * API:
     *
-    * - [Container API](https://mui.com/api/container/)
+    * - [Container API](https://mui.com/material-ui/api/container/)
     */
   @JSImport("@mui/material/Container/Container", JSImport.Default)
   @js.native

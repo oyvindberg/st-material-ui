@@ -1,7 +1,6 @@
 package com.olvind.mui.muiMaterial.anon
 
 import com.olvind.mui.muiMaterial.gridGridMod.GridDirection
-import com.olvind.mui.muiMaterial.gridGridMod.GridSize
 import com.olvind.mui.muiMaterial.gridGridMod.GridSpacing
 import com.olvind.mui.muiMaterial.gridGridMod.GridWrap
 import com.olvind.mui.muiSystem.mod.ResponsiveStyleValue
@@ -62,43 +61,10 @@ trait ColumnSpacing extends StObject {
   var item: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If a number, it sets the number of columns the grid item uses.
-    * It can't be greater than the total number of columns of the container (12 by default).
-    * If 'auto', the grid item's width matches its content.
-    * If false, the prop is ignored.
-    * If true, the grid item's width grows to use the space available in the grid container.
-    * The value is applied for the `lg` breakpoint and wider screens if not overridden.
-    * @default false
-    */
-  var lg: js.UndefOr[Boolean | GridSize] = js.undefined
-  
-  /**
-    * If a number, it sets the number of columns the grid item uses.
-    * It can't be greater than the total number of columns of the container (12 by default).
-    * If 'auto', the grid item's width matches its content.
-    * If false, the prop is ignored.
-    * If true, the grid item's width grows to use the space available in the grid container.
-    * The value is applied for the `md` breakpoint and wider screens if not overridden.
-    * @default false
-    */
-  var md: js.UndefOr[Boolean | GridSize] = js.undefined
-  
-  /**
     * Defines the vertical space between the type `item` components.
     * It overrides the value of the `spacing` prop.
     */
   var rowSpacing: js.UndefOr[ResponsiveStyleValue[GridSpacing]] = js.undefined
-  
-  /**
-    * If a number, it sets the number of columns the grid item uses.
-    * It can't be greater than the total number of columns of the container (12 by default).
-    * If 'auto', the grid item's width matches its content.
-    * If false, the prop is ignored.
-    * If true, the grid item's width grows to use the space available in the grid container.
-    * The value is applied for the `sm` breakpoint and wider screens if not overridden.
-    * @default false
-    */
-  var sm: js.UndefOr[Boolean | GridSize] = js.undefined
   
   /**
     * Defines the space between the type `item` components.
@@ -110,7 +76,7 @@ trait ColumnSpacing extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * Defines the `flex-wrap` style property.
@@ -118,28 +84,6 @@ trait ColumnSpacing extends StObject {
     * @default 'wrap'
     */
   var wrap: js.UndefOr[GridWrap] = js.undefined
-  
-  /**
-    * If a number, it sets the number of columns the grid item uses.
-    * It can't be greater than the total number of columns of the container (12 by default).
-    * If 'auto', the grid item's width matches its content.
-    * If false, the prop is ignored.
-    * If true, the grid item's width grows to use the space available in the grid container.
-    * The value is applied for the `xl` breakpoint and wider screens if not overridden.
-    * @default false
-    */
-  var xl: js.UndefOr[Boolean | GridSize] = js.undefined
-  
-  /**
-    * If a number, it sets the number of columns the grid item uses.
-    * It can't be greater than the total number of columns of the container (12 by default).
-    * If 'auto', the grid item's width matches its content.
-    * If false, the prop is ignored.
-    * If true, the grid item's width grows to use the space available in the grid container.
-    * The value is applied for all the screen sizes with the lowest priority.
-    * @default false
-    */
-  var xs: js.UndefOr[Boolean | GridSize] = js.undefined
   
   /**
     * If `true`, it sets `min-width: 0` on the item.
@@ -197,23 +141,11 @@ object ColumnSpacing {
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setLg(value: Boolean | GridSize): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
-    
-    inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
-    
-    inline def setMd(value: Boolean | GridSize): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
-    
-    inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
-    
     inline def setRowSpacing(value: ResponsiveStyleValue[GridSpacing]): Self = StObject.set(x, "rowSpacing", value.asInstanceOf[js.Any])
     
     inline def setRowSpacingUndefined: Self = StObject.set(x, "rowSpacing", js.undefined)
     
     inline def setRowSpacingVarargs(value: (GridSpacing | Null)*): Self = StObject.set(x, "rowSpacing", js.Array(value*))
-    
-    inline def setSm(value: Boolean | GridSize): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
-    
-    inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
     
     inline def setSpacing(value: ResponsiveStyleValue[GridSpacing]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
@@ -221,10 +153,10 @@ object ColumnSpacing {
     
     inline def setSpacingVarargs(value: (GridSpacing | Null)*): Self = StObject.set(x, "spacing", js.Array(value*))
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -232,23 +164,15 @@ object ColumnSpacing {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
     inline def setWrap(value: GridWrap): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
     inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
-    
-    inline def setXl(value: Boolean | GridSize): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
-    
-    inline def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
-    
-    inline def setXs(value: Boolean | GridSize): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
-    
-    inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
     
     inline def setZeroMinWidth(value: Boolean): Self = StObject.set(x, "zeroMinWidth", value.asInstanceOf[js.Any])
     

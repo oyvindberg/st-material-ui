@@ -4,14 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - `com.olvind.mui`.std.stdStrings.auto
-  - `com.olvind.mui`.std.stdStrings.smooth
-*/
-trait ScrollBehavior extends StObject
 object ScrollBehavior {
   
-  inline def auto: com.olvind.mui.std.stdStrings.auto = "auto".asInstanceOf[com.olvind.mui.std.stdStrings.auto]
+  inline def auto: "auto" = "auto".asInstanceOf["auto"]
   
-  inline def smooth: com.olvind.mui.std.stdStrings.smooth = "smooth".asInstanceOf[com.olvind.mui.std.stdStrings.smooth]
+  inline def smooth: "smooth" = "smooth".asInstanceOf["smooth"]
 }

@@ -1,6 +1,5 @@
 package com.olvind.mui.react
 
-import com.olvind.mui.std.Exclude
 import japgolly.scalajs.react.facade.Empty
 import japgolly.scalajs.react.facade.JsNumber
 import japgolly.scalajs.react.facade.React.Element
@@ -12,25 +11,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `1` extends StObject {
-    
-    var ref: js.UndefOr[Exclude[Any, String]] = js.undefined
-  }
-  object `1` {
-    
-    inline def apply(): `1` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`1`]
-    }
-    
-    extension [Self <: `1`](x: Self) {
-      
-      inline def setRef(value: Exclude[Any, String]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
-    }
-  }
   
   trait Children extends StObject {
     

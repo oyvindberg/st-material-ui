@@ -1,38 +1,44 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.listItemButtonListItemButtonClassesMod.ListItemButtonClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `96` extends StObject {
+trait `96`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialListItemSecondaryActionProps] = js.undefined
+  var defaultProps: js.UndefOr[PartialListItemButtonPropsdefaultCompone] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesListItemSecond] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[ListItemButtonClassKey, "MuiListItemButton", Theme]]
+  ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialListItemSecondaryActionProps]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialListItemButtonPropsdefaultCompone]] = js.undefined
 }
 object `96` {
   
-  inline def apply(): `96` = {
+  inline def apply[Theme](): `96`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`96`]
+    __obj.asInstanceOf[`96`[Theme]]
   }
   
-  extension [Self <: `96`](x: Self) {
+  extension [Self <: `96`[?], Theme](x: Self & `96`[Theme]) {
     
-    inline def setDefaultProps(value: PartialListItemSecondaryActionProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialListItemButtonPropsdefaultCompone): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesListItemSecond): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(
+      value: com.olvind.mui.std.Partial[OverridesStyleRules[ListItemButtonClassKey, "MuiListItemButton", Theme]]
+    ): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialListItemSecondaryActionProps]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialListItemButtonPropsdefaultCompone]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialListItemSecondaryActionProps*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialListItemButtonPropsdefaultCompone*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

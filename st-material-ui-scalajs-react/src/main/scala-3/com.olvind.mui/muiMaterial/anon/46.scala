@@ -1,38 +1,44 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.breadcrumbsBreadcrumbsClassesMod.BreadcrumbsClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `46` extends StObject {
+trait `46`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialButtonBasePropsbutton] = js.undefined
+  var defaultProps: js.UndefOr[PartialBreadcrumbsPropsnav] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesButtonBaseClas] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[BreadcrumbsClassKey, "MuiBreadcrumbs", Theme]]
+  ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialButtonBasePropsbutton]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialBreadcrumbsPropsnav]] = js.undefined
 }
 object `46` {
   
-  inline def apply(): `46` = {
+  inline def apply[Theme](): `46`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`46`]
+    __obj.asInstanceOf[`46`[Theme]]
   }
   
-  extension [Self <: `46`](x: Self) {
+  extension [Self <: `46`[?], Theme](x: Self & `46`[Theme]) {
     
-    inline def setDefaultProps(value: PartialButtonBasePropsbutton): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialBreadcrumbsPropsnav): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesButtonBaseClas): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(
+      value: com.olvind.mui.std.Partial[OverridesStyleRules[BreadcrumbsClassKey, "MuiBreadcrumbs", Theme]]
+    ): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialButtonBasePropsbutton]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialBreadcrumbsPropsnav]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialButtonBasePropsbutton*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialBreadcrumbsPropsnav*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

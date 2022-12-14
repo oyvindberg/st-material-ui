@@ -5,7 +5,6 @@ import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypA
 import com.olvind.mui.muiMaterial.anon.Href
 import com.olvind.mui.muiMaterial.anon.OmitButtonBaseTypeMapbuttonpropsclasses
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapButtAbout
-import com.olvind.mui.muiMaterial.muiMaterialStrings.a
 import com.olvind.mui.muiMaterial.overridableComponentMod.DefaultComponentProps
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverridableTypeMap
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
@@ -27,11 +26,11 @@ object buttonBaseButtonBaseMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Buttons](https://mui.com/components/buttons/)
+    * - [Button](https://mui.com/material-ui/react-button/)
     *
     * API:
     *
-    * - [ButtonBase API](https://mui.com/api/button-base/)
+    * - [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/ButtonBase/ButtonBase", JSImport.Default)
   @js.native
@@ -81,7 +80,7 @@ object buttonBaseButtonBaseMod extends Shortcut {
   }
   
   type ExtendButtonBase[M /* <: OverridableTypeMap */] = ExoticComponent[
-    (Href & (OverrideProps[ExtendButtonBaseTypeMap[M], a])) | DefaultComponentProps[ExtendButtonBaseTypeMap[M]]
+    (Href & (OverrideProps[ExtendButtonBaseTypeMap[M], "a"])) | DefaultComponentProps[ExtendButtonBaseTypeMap[M]]
   ]
   
   trait ExtendButtonBaseTypeMap[M /* <: OverridableTypeMap */] extends StObject {

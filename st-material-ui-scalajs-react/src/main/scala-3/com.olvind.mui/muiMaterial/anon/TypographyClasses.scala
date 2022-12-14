@@ -1,9 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.always
-import com.olvind.mui.muiMaterial.muiMaterialStrings.hover
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
 import com.olvind.mui.muiMaterial.stylesMod.ClassNameMap
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
@@ -21,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypographyClasses extends StObject {
   
   /**
-    * `classes` prop applied to the [`Typography`](/api/typography/) element.
+    * `classes` prop applied to the [`Typography`](/material-ui/api/typography/) element.
     */
   var TypographyClasses: js.UndefOr[
     js.UndefOr[PartialTypographyClasses] & js.UndefOr[com.olvind.mui.std.Partial[ClassNameMap[scala.Nothing]]]
@@ -47,7 +43,7 @@ trait TypographyClasses extends StObject {
         com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
@@ -59,19 +55,19 @@ trait TypographyClasses extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * Controls when the link should have an underline.
     * @default 'always'
     */
-  var underline: js.UndefOr[none | hover | always] = js.undefined
+  var underline: js.UndefOr["none" | "hover" | "always"] = js.undefined
   
   /**
     * Applies the theme typography styles.
     * @default 'inherit'
     */
-  var variant: js.UndefOr[com.olvind.mui.muiMaterial.createTypographyMod.Variant | inherit] = js.undefined
+  var variant: js.UndefOr[com.olvind.mui.muiMaterial.stylesCreateTypographyMod.Variant | "inherit"] = js.undefined
 }
 object TypographyClasses {
   
@@ -102,7 +98,7 @@ object TypographyClasses {
             com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme, 
+          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
@@ -112,7 +108,7 @@ object TypographyClasses {
     ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.createThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
           js.UndefOr[
             com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
           ]
@@ -127,10 +123,10 @@ object TypographyClasses {
         ])*
     ): Self = StObject.set(x, "color", js.Array(value*))
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -138,9 +134,9 @@ object TypographyClasses {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
@@ -150,11 +146,11 @@ object TypographyClasses {
     
     inline def setTypographyClassesUndefined: Self = StObject.set(x, "TypographyClasses", js.undefined)
     
-    inline def setUnderline(value: none | hover | always): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: "none" | "hover" | "always"): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     
-    inline def setVariant(value: com.olvind.mui.muiMaterial.createTypographyMod.Variant | inherit): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: com.olvind.mui.muiMaterial.stylesCreateTypographyMod.Variant | "inherit"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

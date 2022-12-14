@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriachecked
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapMenu
-import com.olvind.mui.muiMaterial.menuItemClassesMod.MenuItemClasses
+import com.olvind.mui.muiMaterial.menuItemMenuItemClassesMod.MenuItemClasses
 import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,12 +18,12 @@ object menuItemMod {
     *
     * Demos:
     *
-    * - [Menus](https://mui.com/components/menus/)
+    * - [Menu](https://mui.com/material-ui/react-menu/)
     *
     * API:
     *
-    * - [MenuItem API](https://mui.com/api/menu-item/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [MenuItem API](https://mui.com/material-ui/api/menu-item/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/MenuItem", JSImport.Default)
   @js.native

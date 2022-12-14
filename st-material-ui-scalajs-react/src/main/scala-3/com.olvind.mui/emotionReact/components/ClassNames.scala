@@ -1,8 +1,8 @@
 package com.olvind.mui.emotionReact.components
 
 import com.olvind.mui.StBuildingComponent.Default
-import com.olvind.mui.emotionReact.emotionReactMod.ClassNamesContent
-import com.olvind.mui.emotionReact.emotionReactMod.ClassNamesProps
+import com.olvind.mui.emotionReact.mod.ClassNamesContent
+import com.olvind.mui.emotionReact.mod.ClassNamesProps
 import japgolly.scalajs.react.facade.React.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

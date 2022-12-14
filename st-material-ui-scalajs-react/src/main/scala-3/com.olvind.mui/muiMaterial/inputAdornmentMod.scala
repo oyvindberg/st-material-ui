@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsInputAdornmentTypeM
-import com.olvind.mui.muiMaterial.inputAdornmentClassesMod.InputAdornmentClasses
+import com.olvind.mui.muiMaterial.inputAdornmentInputAdornmentClassesMod.InputAdornmentClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object inputAdornmentMod {
     *
     * Demos:
     *
-    * - [Text Fields](https://mui.com/components/text-fields/)
+    * - [Text Field](https://mui.com/material-ui/react-text-field/)
     *
     * API:
     *
-    * - [InputAdornment API](https://mui.com/api/input-adornment/)
+    * - [InputAdornment API](https://mui.com/material-ui/api/input-adornment/)
     */
   @JSImport("@mui/material/InputAdornment", JSImport.Default)
   @js.native

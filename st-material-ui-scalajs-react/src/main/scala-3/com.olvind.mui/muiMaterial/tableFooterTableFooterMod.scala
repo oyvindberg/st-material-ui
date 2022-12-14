@@ -16,11 +16,11 @@ object tableFooterTableFooterMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TableFooter API](https://mui.com/api/table-footer/)
+    * - [TableFooter API](https://mui.com/material-ui/api/table-footer/)
     */
   @JSImport("@mui/material/TableFooter/TableFooter", JSImport.Default)
   @js.native

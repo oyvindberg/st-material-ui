@@ -1,9 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`column-reverse`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`row-reverse`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.column
-import com.olvind.mui.muiMaterial.muiMaterialStrings.row
 import com.olvind.mui.muiSystem.mod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
@@ -25,7 +21,7 @@ trait Direction extends StObject {
     * It is applied for all screen sizes.
     * @default 'column'
     */
-  var direction: js.UndefOr[ResponsiveStyleValue[row | `row-reverse` | column | `column-reverse`]] = js.undefined
+  var direction: js.UndefOr[ResponsiveStyleValue["row" | "row-reverse" | "column" | "column-reverse"]] = js.undefined
   
   /**
     * Add an element between each child.
@@ -43,7 +39,7 @@ trait Direction extends StObject {
   /**
     * The system prop, which allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
 }
 object Direction {
   
@@ -58,11 +54,11 @@ object Direction {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setDirection(value: ResponsiveStyleValue[row | `row-reverse` | column | `column-reverse`]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: ResponsiveStyleValue["row" | "row-reverse" | "column" | "column-reverse"]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setDirectionVarargs(value: ((row | `row-reverse` | column | `column-reverse`) | Null)*): Self = StObject.set(x, "direction", js.Array(value*))
+    inline def setDirectionVarargs(value: (("row" | "row-reverse" | "column" | "column-reverse") | Null)*): Self = StObject.set(x, "direction", js.Array(value*))
     
     inline def setDivider(value: ReactElement): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
@@ -84,10 +80,10 @@ object Direction {
     
     inline def setSpacingVarargs(value: ((Double | String) | Null)*): Self = StObject.set(x, "spacing", js.Array(value*))
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -95,9 +91,9 @@ object Direction {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
   }

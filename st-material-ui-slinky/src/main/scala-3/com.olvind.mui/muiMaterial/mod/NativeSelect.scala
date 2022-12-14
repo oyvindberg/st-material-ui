@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Demos:
   *
-  * - [Selects](https://mui.com/components/selects/)
+  * - [Select](https://mui.com/material-ui/react-select/)
   *
   * API:
   *
-  * - [NativeSelect API](https://mui.com/api/native-select/)
-  * - inherits [Input API](https://mui.com/api/input/)
+  * - [NativeSelect API](https://mui.com/material-ui/api/native-select/)
+  * - inherits [Input API](https://mui.com/material-ui/api/input/)
   */
 /* Inlined (props : @mui/material.@mui/material/NativeSelect/NativeSelect.NativeSelectProps): react.react.<global>.JSX.Element & {  muiName :string} */
 object NativeSelect {

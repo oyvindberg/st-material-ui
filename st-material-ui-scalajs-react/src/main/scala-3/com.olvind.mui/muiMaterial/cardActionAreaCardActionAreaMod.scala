@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriaactivedescendant
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapCard
-import com.olvind.mui.muiMaterial.anon.`5`
+import com.olvind.mui.muiMaterial.anon.`4`
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import japgolly.scalajs.react.facade.React.Element
@@ -18,12 +18,12 @@ object cardActionAreaCardActionAreaMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Cards](https://mui.com/components/cards/)
+    * - [Card](https://mui.com/material-ui/react-card/)
     *
     * API:
     *
-    * - [CardActionArea API](https://mui.com/api/card-action-area/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [CardActionArea API](https://mui.com/material-ui/api/card-action-area/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/CardActionArea/CardActionArea", JSImport.Default)
   @js.native
@@ -34,7 +34,7 @@ object cardActionAreaCardActionAreaMod extends Shortcut {
   
   type CardActionAreaProps[D /* <: ElementType */, P] = OverrideProps[CardActionAreaTypeMap[P, D], D]
   
-  type CardActionAreaTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[`5`[P, D]]
+  type CardActionAreaTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[`4`[P, D]]
   
   type _To = js.Function1[
     /* props */ OverridePropsExtendButtonBaseTypeMapCard | DefaultComponentPropsExtendButtonBaseTypAriaactivedescendant, 

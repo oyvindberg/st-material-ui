@@ -1,61 +1,11 @@
 package com.olvind.mui.muiBase.components
 
 import com.olvind.mui.StBuildingComponent
+import com.olvind.mui.muiBase.anon.DefaultComponentPropsPopperUnstyledTypeM
 import com.olvind.mui.muiBase.anon.Placement
-import com.olvind.mui.muiBase.muiBaseStrings.`additions removals`
-import com.olvind.mui.muiBase.muiBaseStrings.`additions text`
-import com.olvind.mui.muiBase.muiBaseStrings.`inline`
-import com.olvind.mui.muiBase.muiBaseStrings.`removals additions`
-import com.olvind.mui.muiBase.muiBaseStrings.`removals text`
-import com.olvind.mui.muiBase.muiBaseStrings.`text additions`
-import com.olvind.mui.muiBase.muiBaseStrings.`text removals`
-import com.olvind.mui.muiBase.muiBaseStrings.additions
-import com.olvind.mui.muiBase.muiBaseStrings.all
-import com.olvind.mui.muiBase.muiBaseStrings.ascending
-import com.olvind.mui.muiBase.muiBaseStrings.assertive
-import com.olvind.mui.muiBase.muiBaseStrings.both
-import com.olvind.mui.muiBase.muiBaseStrings.copy
-import com.olvind.mui.muiBase.muiBaseStrings.date
-import com.olvind.mui.muiBase.muiBaseStrings.decimal
-import com.olvind.mui.muiBase.muiBaseStrings.descending
-import com.olvind.mui.muiBase.muiBaseStrings.dialog
-import com.olvind.mui.muiBase.muiBaseStrings.email
-import com.olvind.mui.muiBase.muiBaseStrings.execute
-import com.olvind.mui.muiBase.muiBaseStrings.grammar
-import com.olvind.mui.muiBase.muiBaseStrings.grid
-import com.olvind.mui.muiBase.muiBaseStrings.horizontal
-import com.olvind.mui.muiBase.muiBaseStrings.inherit
-import com.olvind.mui.muiBase.muiBaseStrings.link
-import com.olvind.mui.muiBase.muiBaseStrings.list
-import com.olvind.mui.muiBase.muiBaseStrings.listbox
-import com.olvind.mui.muiBase.muiBaseStrings.location
-import com.olvind.mui.muiBase.muiBaseStrings.ltr
-import com.olvind.mui.muiBase.muiBaseStrings.menu
-import com.olvind.mui.muiBase.muiBaseStrings.mixed
-import com.olvind.mui.muiBase.muiBaseStrings.move
-import com.olvind.mui.muiBase.muiBaseStrings.no
-import com.olvind.mui.muiBase.muiBaseStrings.none
-import com.olvind.mui.muiBase.muiBaseStrings.numeric
-import com.olvind.mui.muiBase.muiBaseStrings.off
-import com.olvind.mui.muiBase.muiBaseStrings.on
-import com.olvind.mui.muiBase.muiBaseStrings.other
-import com.olvind.mui.muiBase.muiBaseStrings.page
-import com.olvind.mui.muiBase.muiBaseStrings.polite
-import com.olvind.mui.muiBase.muiBaseStrings.popup
-import com.olvind.mui.muiBase.muiBaseStrings.removals
-import com.olvind.mui.muiBase.muiBaseStrings.rtl
-import com.olvind.mui.muiBase.muiBaseStrings.search
-import com.olvind.mui.muiBase.muiBaseStrings.spelling
-import com.olvind.mui.muiBase.muiBaseStrings.step
-import com.olvind.mui.muiBase.muiBaseStrings.tel
-import com.olvind.mui.muiBase.muiBaseStrings.text
-import com.olvind.mui.muiBase.muiBaseStrings.time
-import com.olvind.mui.muiBase.muiBaseStrings.tree
-import com.olvind.mui.muiBase.muiBaseStrings.url
-import com.olvind.mui.muiBase.muiBaseStrings.vertical
-import com.olvind.mui.muiBase.muiBaseStrings.yes
+import com.olvind.mui.muiBase.anon.`1`
+import com.olvind.mui.muiBase.anon.`7`
 import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledMod.PopperPlacementType
-import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledMod.PopperUnstyledProps
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AriaRole
 import com.olvind.mui.react.mod.Booleanish
@@ -89,7 +39,7 @@ object PopperUnstyled {
   
   inline def apply(open: Boolean): Builder = {
     val __props = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
-    new Builder(js.Array(this.component, __props.asInstanceOf[PopperUnstyledProps]))
+    new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsPopperUnstyledTypeM]))
   }
   
   @JSImport("@mui/base", "PopperUnstyled")
@@ -121,11 +71,11 @@ object PopperUnstyled {
     
     inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
     
-    inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `aria-autocomplete`(value: "none" | "inline" | "list" | "both"): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
     
-    inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+    inline def `aria-checked`(value: Boolean | "mixed"): this.type = set("aria-checked", value.asInstanceOf[js.Any])
     
     inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
     
@@ -135,7 +85,7 @@ object PopperUnstyled {
     
     inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
     
-    inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+    inline def `aria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): this.type = set("aria-current", value.asInstanceOf[js.Any])
     
     inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
     
@@ -143,7 +93,7 @@ object PopperUnstyled {
     
     inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
     
-    inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `aria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
     
@@ -153,11 +103,11 @@ object PopperUnstyled {
     
     inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
     
-    inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `aria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
     
-    inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+    inline def `aria-invalid`(value: Boolean | "grammar" | "spelling"): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
     
     inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
     
@@ -167,7 +117,7 @@ object PopperUnstyled {
     
     inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
     
-    inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+    inline def `aria-live`(value: "off" | "assertive" | "polite"): this.type = set("aria-live", value.asInstanceOf[js.Any])
     
     inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
     
@@ -175,7 +125,7 @@ object PopperUnstyled {
     
     inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
     
-    inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+    inline def `aria-orientation`(value: "horizontal" | "vertical"): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
     
     inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
     
@@ -183,12 +133,12 @@ object PopperUnstyled {
     
     inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
     
-    inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+    inline def `aria-pressed`(value: Boolean | "mixed"): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
     
     inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `aria-relevant`(
-      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
     ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
@@ -205,7 +155,7 @@ object PopperUnstyled {
     
     inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
     
-    inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+    inline def `aria-sort`(value: "none" | "ascending" | "descending" | "other"): this.type = set("aria-sort", value.asInstanceOf[js.Any])
     
     inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
     
@@ -237,7 +187,7 @@ object PopperUnstyled {
     
     inline def containerNull: this.type = set("container", null)
     
-    inline def contentEditable(value: Booleanish | inherit): this.type = set("contentEditable", value.asInstanceOf[js.Any])
+    inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
     inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
     
@@ -253,7 +203,7 @@ object PopperUnstyled {
     
     inline def dir(value: String): this.type = set("dir", value.asInstanceOf[js.Any])
     
-    inline def direction(value: ltr | rtl): this.type = set("direction", value.asInstanceOf[js.Any])
+    inline def direction(value: "ltr" | "rtl"): this.type = set("direction", value.asInstanceOf[js.Any])
     
     inline def disablePortal(value: Boolean): this.type = set("disablePortal", value.asInstanceOf[js.Any])
     
@@ -265,7 +215,7 @@ object PopperUnstyled {
     
     inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
     
-    inline def inputMode(value: none | text | tel | url | email | numeric | decimal | search): this.type = set("inputMode", value.asInstanceOf[js.Any])
+    inline def inputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): this.type = set("inputMode", value.asInstanceOf[js.Any])
     
     inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
     
@@ -286,6 +236,8 @@ object PopperUnstyled {
     inline def modifiers(
       value: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options * / any['modifiers'] */ js.Any
     ): this.type = set("modifiers", value.asInstanceOf[js.Any])
+    
+    inline def nonce(value: String): this.type = set("nonce", value.asInstanceOf[js.Any])
     
     inline def onAbort(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onAbort", js.Any.fromFunction1(value))
     
@@ -413,6 +365,8 @@ object PopperUnstyled {
     
     inline def onReset(value: SyntheticEvent[EventTarget & HTMLDivElement, Event] => Unit): this.type = set("onReset", js.Any.fromFunction1(value))
     
+    inline def onResize(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onResize", js.Any.fromFunction1(value))
+    
     inline def onScroll(value: SyntheticUIEvent[HTMLDivElement] => Unit): this.type = set("onScroll", js.Any.fromFunction1(value))
     
     inline def onSeeked(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onSeeked", js.Any.fromFunction1(value))
@@ -485,6 +439,10 @@ object PopperUnstyled {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
+    inline def slotProps(value: `7`): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    
+    inline def slots(value: `1`): this.type = set("slots", value.asInstanceOf[js.Any])
+    
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     
     inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
@@ -499,14 +457,14 @@ object PopperUnstyled {
     
     inline def transition(value: Boolean): this.type = set("transition", value.asInstanceOf[js.Any])
     
-    inline def translate(value: yes | no): this.type = set("translate", value.asInstanceOf[js.Any])
+    inline def translate(value: "yes" | "no"): this.type = set("translate", value.asInstanceOf[js.Any])
     
     inline def typeof(value: String): this.type = set("typeof", value.asInstanceOf[js.Any])
     
-    inline def unselectable(value: on | off): this.type = set("unselectable", value.asInstanceOf[js.Any])
+    inline def unselectable(value: "on" | "off"): this.type = set("unselectable", value.asInstanceOf[js.Any])
     
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
-  def withProps(p: PopperUnstyledProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps(p: /* props */ DefaultComponentPropsPopperUnstyledTypeM): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

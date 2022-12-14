@@ -72,6 +72,10 @@ object useMediaQueryUseMediaQueryMod {
         /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.matchMedia */ Any
       ] = js.undefined
     
+    /**
+      * This option is kept for backwards compatibility and has no longer any effect.
+      * It's previous behavior is now handled automatically.
+      */
     var noSsr: js.UndefOr[Boolean] = js.undefined
     
     var ssrMatchMedia: js.UndefOr[js.Function1[/* query */ String, Matches]] = js.undefined

@@ -1,10 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.first
-import com.olvind.mui.muiMaterial.muiMaterialStrings.last
-import com.olvind.mui.muiMaterial.muiMaterialStrings.next
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.previous
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +11,7 @@ trait PickComponentsPropsListMuiPaginationaria extends StObject {
   
   var getItemAriaLabel: js.UndefOr[
     js.Function3[
-      /* type */ page | first | last | next | previous, 
+      /* type */ "page" | "first" | "last" | "next" | "previous", 
       /* page */ Double, 
       /* selected */ Boolean, 
       String
@@ -37,7 +32,7 @@ object PickComponentsPropsListMuiPaginationaria {
     inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
     
     inline def setGetItemAriaLabel(
-      value: (/* type */ page | first | last | next | previous, /* page */ Double, /* selected */ Boolean) => String
+      value: (/* type */ "page" | "first" | "last" | "next" | "previous", /* page */ Double, /* selected */ Boolean) => String
     ): Self = StObject.set(x, "getItemAriaLabel", js.Any.fromFunction3(value))
     
     inline def setGetItemAriaLabelUndefined: Self = StObject.set(x, "getItemAriaLabel", js.undefined)

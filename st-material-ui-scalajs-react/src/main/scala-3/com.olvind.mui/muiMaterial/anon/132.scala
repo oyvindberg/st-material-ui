@@ -6,11 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `132` extends StObject {
   
-  var defaultProps: js.UndefOr[PartialTableCellProps] = js.undefined
-  
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesTableCellClass] = js.undefined
-  
-  var variants: js.UndefOr[js.Array[PropsPartialTableCellProps]] = js.undefined
+  var defaultProps: js.UndefOr[PartialSwipeableDrawerProps] = js.undefined
 }
 object `132` {
   
@@ -21,18 +17,8 @@ object `132` {
   
   extension [Self <: `132`](x: Self) {
     
-    inline def setDefaultProps(value: PartialTableCellProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialSwipeableDrawerProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
-    
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesTableCellClass): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
-    
-    inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
-    
-    inline def setVariants(value: js.Array[PropsPartialTableCellProps]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
-    
-    inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
-    
-    inline def setVariantsVarargs(value: PropsPartialTableCellProps*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

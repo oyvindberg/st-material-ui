@@ -2,93 +2,8 @@ package com.olvind.mui.muiIconsMaterial.components
 
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiMaterial.anon.PartialSvgIconClasses
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
-import com.olvind.mui.muiMaterial.muiMaterialStrings._empty
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`after-edge`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`before-edge`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`inline`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text-after-edge`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text-before-edge`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`use-credentials`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.action
-import com.olvind.mui.muiMaterial.muiMaterialStrings.additions
-import com.olvind.mui.muiMaterial.muiMaterialStrings.all
-import com.olvind.mui.muiMaterial.muiMaterialStrings.alphabetic
-import com.olvind.mui.muiMaterial.muiMaterialStrings.anonymous
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ascending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.assertive
-import com.olvind.mui.muiMaterial.muiMaterialStrings.auto
-import com.olvind.mui.muiMaterial.muiMaterialStrings.baseline
-import com.olvind.mui.muiMaterial.muiMaterialStrings.bevel
-import com.olvind.mui.muiMaterial.muiMaterialStrings.both
-import com.olvind.mui.muiMaterial.muiMaterialStrings.butt
-import com.olvind.mui.muiMaterial.muiMaterialStrings.central
-import com.olvind.mui.muiMaterial.muiMaterialStrings.copy
-import com.olvind.mui.muiMaterial.muiMaterialStrings.date
-import com.olvind.mui.muiMaterial.muiMaterialStrings.descending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dialog
-import com.olvind.mui.muiMaterial.muiMaterialStrings.disabled
-import com.olvind.mui.muiMaterial.muiMaterialStrings.error
-import com.olvind.mui.muiMaterial.muiMaterialStrings.evenodd
-import com.olvind.mui.muiMaterial.muiMaterialStrings.execute
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grammar
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grid
-import com.olvind.mui.muiMaterial.muiMaterialStrings.hanging
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ideographic
-import com.olvind.mui.muiMaterial.muiMaterialStrings.info
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.initial
-import com.olvind.mui.muiMaterial.muiMaterialStrings.isolated
-import com.olvind.mui.muiMaterial.muiMaterialStrings.large
-import com.olvind.mui.muiMaterial.muiMaterialStrings.linearRGB
-import com.olvind.mui.muiMaterial.muiMaterialStrings.link
-import com.olvind.mui.muiMaterial.muiMaterialStrings.list
-import com.olvind.mui.muiMaterial.muiMaterialStrings.listbox
-import com.olvind.mui.muiMaterial.muiMaterialStrings.location
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mathematical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medial
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.middle
-import com.olvind.mui.muiMaterial.muiMaterialStrings.miter
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mixed
-import com.olvind.mui.muiMaterial.muiMaterialStrings.move
-import com.olvind.mui.muiMaterial.muiMaterialStrings.no
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.nonzero
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.other
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.polite
-import com.olvind.mui.muiMaterial.muiMaterialStrings.popup
-import com.olvind.mui.muiMaterial.muiMaterialStrings.primary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.removals
-import com.olvind.mui.muiMaterial.muiMaterialStrings.replace
-import com.olvind.mui.muiMaterial.muiMaterialStrings.round
-import com.olvind.mui.muiMaterial.muiMaterialStrings.sRGB
-import com.olvind.mui.muiMaterial.muiMaterialStrings.secondary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.spelling
-import com.olvind.mui.muiMaterial.muiMaterialStrings.square
-import com.olvind.mui.muiMaterial.muiMaterialStrings.step
-import com.olvind.mui.muiMaterial.muiMaterialStrings.success
-import com.olvind.mui.muiMaterial.muiMaterialStrings.sum
-import com.olvind.mui.muiMaterial.muiMaterialStrings.terminal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
-import com.olvind.mui.muiMaterial.muiMaterialStrings.time
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tree
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.warning
-import com.olvind.mui.muiMaterial.muiMaterialStrings.yes
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
-import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.mod.AriaRole
 import com.olvind.mui.react.mod.Booleanish
 import com.olvind.mui.react.mod.CSSProperties
@@ -119,31 +34,31 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def accentHeight(value: Double | String): this.type = set("accentHeight", value.asInstanceOf[js.Any])
   
-  inline def accumulate(value: none | sum): this.type = set("accumulate", value.asInstanceOf[js.Any])
+  inline def accumulate(value: "none" | "sum"): this.type = set("accumulate", value.asInstanceOf[js.Any])
   
-  inline def additive(value: replace | sum): this.type = set("additive", value.asInstanceOf[js.Any])
+  inline def additive(value: "replace" | "sum"): this.type = set("additive", value.asInstanceOf[js.Any])
   
   inline def alignmentBaseline(
-    value: auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+    value: "auto" | "baseline" | "before-edge" | "text-before-edge" | "middle" | "central" | "after-edge" | "text-after-edge" | "ideographic" | "alphabetic" | "hanging" | "mathematical" | "inherit"
   ): this.type = set("alignmentBaseline", value.asInstanceOf[js.Any])
   
-  inline def allowReorder(value: no | yes): this.type = set("allowReorder", value.asInstanceOf[js.Any])
+  inline def allowReorder(value: "no" | "yes"): this.type = set("allowReorder", value.asInstanceOf[js.Any])
   
   inline def alphabetic(value: Double | String): this.type = set("alphabetic", value.asInstanceOf[js.Any])
   
   inline def amplitude(value: Double | String): this.type = set("amplitude", value.asInstanceOf[js.Any])
   
-  inline def arabicForm(value: initial | medial | terminal | isolated): this.type = set("arabicForm", value.asInstanceOf[js.Any])
+  inline def arabicForm(value: "initial" | "medial" | "terminal" | "isolated"): this.type = set("arabicForm", value.asInstanceOf[js.Any])
   
   inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
   
   inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
   
-  inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+  inline def `aria-autocomplete`(value: "none" | "inline" | "list" | "both"): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
   
   inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
   
-  inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+  inline def `aria-checked`(value: Boolean | "mixed"): this.type = set("aria-checked", value.asInstanceOf[js.Any])
   
   inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
   
@@ -153,7 +68,7 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
   
-  inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+  inline def `aria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): this.type = set("aria-current", value.asInstanceOf[js.Any])
   
   inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
   
@@ -161,7 +76,7 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
   
-  inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+  inline def `aria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
   
   inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
   
@@ -171,11 +86,11 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
   
-  inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+  inline def `aria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
   
   inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
   
-  inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+  inline def `aria-invalid`(value: Boolean | "grammar" | "spelling"): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
   
   inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
   
@@ -185,7 +100,7 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
   
-  inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+  inline def `aria-live`(value: "off" | "assertive" | "polite"): this.type = set("aria-live", value.asInstanceOf[js.Any])
   
   inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
   
@@ -193,7 +108,7 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
   
-  inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+  inline def `aria-orientation`(value: "horizontal" | "vertical"): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
   
   inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
   
@@ -201,12 +116,12 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
   
-  inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+  inline def `aria-pressed`(value: Boolean | "mixed"): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
   
   inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
   
   inline def `aria-relevant`(
-    value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+    value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
   ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
   
   inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
@@ -223,7 +138,7 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
   
-  inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+  inline def `aria-sort`(value: "none" | "ascending" | "descending" | "other"): this.type = set("aria-sort", value.asInstanceOf[js.Any])
   
   inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
   
@@ -273,11 +188,13 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def clipRule(value: Double | String): this.type = set("clipRule", value.asInstanceOf[js.Any])
   
-  inline def color(value: inherit | action | disabled | primary | secondary | error | info | success | warning): this.type = set("color", value.asInstanceOf[js.Any])
+  inline def color(
+    value: "inherit" | "action" | "disabled" | "primary" | "secondary" | "error" | "info" | "success" | "warning"
+  ): this.type = set("color", value.asInstanceOf[js.Any])
   
   inline def colorInterpolation(value: Double | String): this.type = set("colorInterpolation", value.asInstanceOf[js.Any])
   
-  inline def colorInterpolationFilters(value: auto | sRGB | linearRGB | inherit): this.type = set("colorInterpolationFilters", value.asInstanceOf[js.Any])
+  inline def colorInterpolationFilters(value: "auto" | "sRGB" | "linearRGB" | "inherit"): this.type = set("colorInterpolationFilters", value.asInstanceOf[js.Any])
   
   inline def colorProfile(value: Double | String): this.type = set("colorProfile", value.asInstanceOf[js.Any])
   
@@ -289,7 +206,7 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def contentStyleType(value: Double | String): this.type = set("contentStyleType", value.asInstanceOf[js.Any])
   
-  inline def crossOrigin(value: anonymous | `use-credentials` | _empty): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
+  inline def crossOrigin(value: "anonymous" | "use-credentials" | ""): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
   
   inline def cursor(value: Double | String): this.type = set("cursor", value.asInstanceOf[js.Any])
   
@@ -337,7 +254,7 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def fillOpacity(value: Double | String): this.type = set("fillOpacity", value.asInstanceOf[js.Any])
   
-  inline def fillRule(value: nonzero | evenodd | inherit): this.type = set("fillRule", value.asInstanceOf[js.Any])
+  inline def fillRule(value: "nonzero" | "evenodd" | "inherit"): this.type = set("fillRule", value.asInstanceOf[js.Any])
   
   inline def filter(value: String): this.type = set("filter", value.asInstanceOf[js.Any])
   
@@ -349,11 +266,11 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def floodOpacity(value: Double | String): this.type = set("floodOpacity", value.asInstanceOf[js.Any])
   
-  inline def focusable(value: Booleanish | auto): this.type = set("focusable", value.asInstanceOf[js.Any])
+  inline def focusable(value: Booleanish | "auto"): this.type = set("focusable", value.asInstanceOf[js.Any])
   
   inline def fontFamily(value: String): this.type = set("fontFamily", value.asInstanceOf[js.Any])
   
-  inline def fontSize(value: inherit | large | medium | small): this.type = set("fontSize", value.asInstanceOf[js.Any])
+  inline def fontSize(value: "inherit" | "large" | "medium" | "small"): this.type = set("fontSize", value.asInstanceOf[js.Any])
   
   inline def fontSizeAdjust(value: Double | String): this.type = set("fontSizeAdjust", value.asInstanceOf[js.Any])
   
@@ -412,6 +329,8 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   inline def in(value: String): this.type = set("in", value.asInstanceOf[js.Any])
   
   inline def in2(value: Double | String): this.type = set("in2", value.asInstanceOf[js.Any])
+  
+  inline def inheritViewBox(value: Boolean): this.type = set("inheritViewBox", value.asInstanceOf[js.Any])
   
   inline def intercept(value: Double | String): this.type = set("intercept", value.asInstanceOf[js.Any])
   
@@ -611,6 +530,8 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def onReset(value: SyntheticEvent[EventTarget & SVGSVGElement, org.scalajs.dom.Event] => Unit): this.type = set("onReset", js.Any.fromFunction1(value))
   
+  inline def onResize(value: SyntheticEvent[org.scalajs.dom.Event, SVGSVGElement] => Unit): this.type = set("onResize", js.Any.fromFunction1(value))
+  
   inline def onScroll(value: SyntheticUIEvent[SVGSVGElement] => Unit): this.type = set("onScroll", js.Any.fromFunction1(value))
   
   inline def onSeeked(value: SyntheticEvent[org.scalajs.dom.Event, SVGSVGElement] => Unit): this.type = set("onSeeked", js.Any.fromFunction1(value))
@@ -765,9 +686,9 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   
   inline def strokeDashoffset(value: String | Double): this.type = set("strokeDashoffset", value.asInstanceOf[js.Any])
   
-  inline def strokeLinecap(value: butt | round | square | inherit): this.type = set("strokeLinecap", value.asInstanceOf[js.Any])
+  inline def strokeLinecap(value: "butt" | "round" | "square" | "inherit"): this.type = set("strokeLinecap", value.asInstanceOf[js.Any])
   
-  inline def strokeLinejoin(value: miter | round | bevel | inherit): this.type = set("strokeLinejoin", value.asInstanceOf[js.Any])
+  inline def strokeLinejoin(value: "miter" | "round" | "bevel" | "inherit"): this.type = set("strokeLinejoin", value.asInstanceOf[js.Any])
   
   inline def strokeMiterlimit(value: Double | String): this.type = set("strokeMiterlimit", value.asInstanceOf[js.Any])
   
@@ -780,12 +701,6 @@ open class SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[R <: j
   inline def surfaceScale(value: Double | String): this.type = set("surfaceScale", value.asInstanceOf[js.Any])
   
   inline def sx(value: SxProps[Theme]): this.type = set("sx", value.asInstanceOf[js.Any])
-  
-  inline def sxFunction1(value: Theme => SystemStyleObject[Theme]): this.type = set("sx", js.Any.fromFunction1(value))
-  
-  inline def sxNull: this.type = set("sx", null)
-  
-  inline def sxVarargs(value: (Boolean | SystemStyleObject[Theme] | (js.Function1[Theme, SystemStyleObject[Theme]]))*): this.type = set("sx", js.Array(value*))
   
   inline def systemLanguage(value: Double | String): this.type = set("systemLanguage", value.asInstanceOf[js.Any])
   

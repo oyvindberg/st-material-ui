@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.filledInputClassesMod.FilledInputClasses
+import com.olvind.mui.muiMaterial.filledInputFilledInputClassesMod.FilledInputClasses
 import com.olvind.mui.muiMaterial.filledInputFilledInputMod.FilledInputProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -17,12 +17,12 @@ object filledInputMod {
     *
     * Demos:
     *
-    * - [Text Fields](https://mui.com/components/text-fields/)
+    * - [Text Field](https://mui.com/material-ui/react-text-field/)
     *
     * API:
     *
-    * - [FilledInput API](https://mui.com/api/filled-input/)
-    * - inherits [InputBase API](https://mui.com/api/input-base/)
+    * - [FilledInput API](https://mui.com/material-ui/api/filled-input/)
+    * - inherits [InputBase API](https://mui.com/material-ui/api/input-base/)
     */
   /* Inlined (props : @mui/material.@mui/material/FilledInput/FilledInput.FilledInputProps): react.react.<global>.JSX.Element & {  muiName :string} */
   object default {

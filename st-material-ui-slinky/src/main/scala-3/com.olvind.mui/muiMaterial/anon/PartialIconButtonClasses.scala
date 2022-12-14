@@ -7,11 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@mui/material.@mui/material/IconButton/iconButtonClasses.IconButtonClasses> */
 trait PartialIconButtonClasses extends StObject {
   
+  var colorError: js.UndefOr[String] = js.undefined
+  
+  var colorInfo: js.UndefOr[String] = js.undefined
+  
   var colorInherit: js.UndefOr[String] = js.undefined
   
   var colorPrimary: js.UndefOr[String] = js.undefined
   
   var colorSecondary: js.UndefOr[String] = js.undefined
+  
+  var colorSuccess: js.UndefOr[String] = js.undefined
+  
+  var colorWarning: js.UndefOr[String] = js.undefined
   
   var disabled: js.UndefOr[String] = js.undefined
   
@@ -36,6 +44,14 @@ object PartialIconButtonClasses {
   
   extension [Self <: PartialIconButtonClasses](x: Self) {
     
+    inline def setColorError(value: String): Self = StObject.set(x, "colorError", value.asInstanceOf[js.Any])
+    
+    inline def setColorErrorUndefined: Self = StObject.set(x, "colorError", js.undefined)
+    
+    inline def setColorInfo(value: String): Self = StObject.set(x, "colorInfo", value.asInstanceOf[js.Any])
+    
+    inline def setColorInfoUndefined: Self = StObject.set(x, "colorInfo", js.undefined)
+    
     inline def setColorInherit(value: String): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
     
     inline def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
@@ -47,6 +63,14 @@ object PartialIconButtonClasses {
     inline def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
     inline def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
+    
+    inline def setColorSuccess(value: String): Self = StObject.set(x, "colorSuccess", value.asInstanceOf[js.Any])
+    
+    inline def setColorSuccessUndefined: Self = StObject.set(x, "colorSuccess", js.undefined)
+    
+    inline def setColorWarning(value: String): Self = StObject.set(x, "colorWarning", value.asInstanceOf[js.Any])
+    
+    inline def setColorWarningUndefined: Self = StObject.set(x, "colorWarning", js.undefined)
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

@@ -1,19 +1,29 @@
 package com.olvind.mui.muiMaterial.anon
 
-import japgolly.scalajs.react.facade.React.ElementType
+import com.olvind.mui.muiMaterial.tooltipTooltipMod.TooltipComponentsPropsOverrides
+import com.olvind.mui.muiSystem.createStyledMod.MUIStyledCommonProps
+import com.olvind.mui.react.mod.HTMLProps
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Popper extends StObject {
   
-  var Arrow: js.UndefOr[ElementType] = js.undefined
+  var arrow: js.UndefOr[
+    HTMLProps[HTMLSpanElement] & MUIStyledCommonProps[com.olvind.mui.muiSystem.createThemeCreateThemeMod.Theme] & TooltipComponentsPropsOverrides
+  ] = js.undefined
   
-  var Popper: js.UndefOr[ElementType] = js.undefined
+  var popper: js.UndefOr[PartialPopperPropsTooltipComponentsProps] = js.undefined
   
-  var Tooltip: js.UndefOr[ElementType] = js.undefined
+  var tooltip: js.UndefOr[
+    HTMLProps[HTMLDivElement] & MUIStyledCommonProps[com.olvind.mui.muiSystem.createThemeCreateThemeMod.Theme] & TooltipComponentsPropsOverrides
+  ] = js.undefined
   
-  var Transition: js.UndefOr[ElementType] = js.undefined
+  var transition: js.UndefOr[
+    com.olvind.mui.muiMaterial.transitionsTransitionMod.TransitionProps & TooltipComponentsPropsOverrides
+  ] = js.undefined
 }
 object Popper {
   
@@ -24,20 +34,26 @@ object Popper {
   
   extension [Self <: Popper](x: Self) {
     
-    inline def setArrow(value: ElementType): Self = StObject.set(x, "Arrow", value.asInstanceOf[js.Any])
+    inline def setArrow(
+      value: HTMLProps[HTMLSpanElement] & MUIStyledCommonProps[com.olvind.mui.muiSystem.createThemeCreateThemeMod.Theme] & TooltipComponentsPropsOverrides
+    ): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
-    inline def setArrowUndefined: Self = StObject.set(x, "Arrow", js.undefined)
+    inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
     
-    inline def setPopper(value: ElementType): Self = StObject.set(x, "Popper", value.asInstanceOf[js.Any])
+    inline def setPopper(value: PartialPopperPropsTooltipComponentsProps): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
-    inline def setPopperUndefined: Self = StObject.set(x, "Popper", js.undefined)
+    inline def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
     
-    inline def setTooltip(value: ElementType): Self = StObject.set(x, "Tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(
+      value: HTMLProps[HTMLDivElement] & MUIStyledCommonProps[com.olvind.mui.muiSystem.createThemeCreateThemeMod.Theme] & TooltipComponentsPropsOverrides
+    ): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    inline def setTooltipUndefined: Self = StObject.set(x, "Tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    inline def setTransition(value: ElementType): Self = StObject.set(x, "Transition", value.asInstanceOf[js.Any])
+    inline def setTransition(
+      value: com.olvind.mui.muiMaterial.transitionsTransitionMod.TransitionProps & TooltipComponentsPropsOverrides
+    ): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    inline def setTransitionUndefined: Self = StObject.set(x, "Transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

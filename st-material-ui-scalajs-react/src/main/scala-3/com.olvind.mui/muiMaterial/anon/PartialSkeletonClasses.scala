@@ -19,6 +19,8 @@ trait PartialSkeletonClasses extends StObject {
   
   var root: js.UndefOr[String] = js.undefined
   
+  var rounded: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
   
   var wave: js.UndefOr[String] = js.undefined
@@ -57,6 +59,10 @@ object PartialSkeletonClasses {
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

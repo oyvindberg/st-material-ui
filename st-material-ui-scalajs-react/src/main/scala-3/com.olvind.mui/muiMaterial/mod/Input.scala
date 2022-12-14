@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Demos:
   *
-  * - [Text Fields](https://mui.com/components/text-fields/)
+  * - [Text Field](https://mui.com/material-ui/react-text-field/)
   *
   * API:
   *
-  * - [Input API](https://mui.com/api/input/)
-  * - inherits [InputBase API](https://mui.com/api/input-base/)
+  * - [Input API](https://mui.com/material-ui/api/input/)
+  * - inherits [InputBase API](https://mui.com/material-ui/api/input-base/)
   */
 /* Inlined (props : @mui/material.@mui/material/Input/Input.InputProps): react.react.<global>.JSX.Element & {  muiName :string} */
 object Input {

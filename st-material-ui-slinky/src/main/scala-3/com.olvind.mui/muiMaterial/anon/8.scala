@@ -5,24 +5,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `8`[DefaultComponent /* <: ReactElement */] extends StObject {
+trait `8` extends StObject {
   
-  /**
-    * The component used for the root node.
-    * Either a string to use a HTML element or a component.
-    */
-  var component: js.UndefOr[DefaultComponent] = js.undefined
+  var component: js.UndefOr[ReactElement] = js.undefined
 }
 object `8` {
   
-  inline def apply[DefaultComponent /* <: ReactElement */](): `8`[DefaultComponent] = {
+  inline def apply(): `8` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`8`[DefaultComponent]]
+    __obj.asInstanceOf[`8`]
   }
   
-  extension [Self <: `8`[?], DefaultComponent /* <: ReactElement */](x: Self & `8`[DefaultComponent]) {
+  extension [Self <: `8`](x: Self) {
     
-    inline def setComponent(value: DefaultComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ReactElement): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
   }

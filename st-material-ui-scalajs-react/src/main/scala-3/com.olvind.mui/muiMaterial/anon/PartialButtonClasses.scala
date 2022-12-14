@@ -11,6 +11,10 @@ trait PartialButtonClasses extends StObject {
   
   var contained: js.UndefOr[String] = js.undefined
   
+  var containedError: js.UndefOr[String] = js.undefined
+  
+  var containedInfo: js.UndefOr[String] = js.undefined
+  
   var containedInherit: js.UndefOr[String] = js.undefined
   
   var containedPrimary: js.UndefOr[String] = js.undefined
@@ -22,6 +26,10 @@ trait PartialButtonClasses extends StObject {
   var containedSizeMedium: js.UndefOr[String] = js.undefined
   
   var containedSizeSmall: js.UndefOr[String] = js.undefined
+  
+  var containedSuccess: js.UndefOr[String] = js.undefined
+  
+  var containedWarning: js.UndefOr[String] = js.undefined
   
   var disableElevation: js.UndefOr[String] = js.undefined
   
@@ -41,6 +49,10 @@ trait PartialButtonClasses extends StObject {
   
   var outlined: js.UndefOr[String] = js.undefined
   
+  var outlinedError: js.UndefOr[String] = js.undefined
+  
+  var outlinedInfo: js.UndefOr[String] = js.undefined
+  
   var outlinedInherit: js.UndefOr[String] = js.undefined
   
   var outlinedPrimary: js.UndefOr[String] = js.undefined
@@ -52,6 +64,10 @@ trait PartialButtonClasses extends StObject {
   var outlinedSizeMedium: js.UndefOr[String] = js.undefined
   
   var outlinedSizeSmall: js.UndefOr[String] = js.undefined
+  
+  var outlinedSuccess: js.UndefOr[String] = js.undefined
+  
+  var outlinedWarning: js.UndefOr[String] = js.undefined
   
   var root: js.UndefOr[String] = js.undefined
   
@@ -65,6 +81,10 @@ trait PartialButtonClasses extends StObject {
   
   var text: js.UndefOr[String] = js.undefined
   
+  var textError: js.UndefOr[String] = js.undefined
+  
+  var textInfo: js.UndefOr[String] = js.undefined
+  
   var textInherit: js.UndefOr[String] = js.undefined
   
   var textPrimary: js.UndefOr[String] = js.undefined
@@ -76,6 +96,10 @@ trait PartialButtonClasses extends StObject {
   var textSizeMedium: js.UndefOr[String] = js.undefined
   
   var textSizeSmall: js.UndefOr[String] = js.undefined
+  
+  var textSuccess: js.UndefOr[String] = js.undefined
+  
+  var textWarning: js.UndefOr[String] = js.undefined
 }
 object PartialButtonClasses {
   
@@ -91,6 +115,14 @@ object PartialButtonClasses {
     inline def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
     
     inline def setContained(value: String): Self = StObject.set(x, "contained", value.asInstanceOf[js.Any])
+    
+    inline def setContainedError(value: String): Self = StObject.set(x, "containedError", value.asInstanceOf[js.Any])
+    
+    inline def setContainedErrorUndefined: Self = StObject.set(x, "containedError", js.undefined)
+    
+    inline def setContainedInfo(value: String): Self = StObject.set(x, "containedInfo", value.asInstanceOf[js.Any])
+    
+    inline def setContainedInfoUndefined: Self = StObject.set(x, "containedInfo", js.undefined)
     
     inline def setContainedInherit(value: String): Self = StObject.set(x, "containedInherit", value.asInstanceOf[js.Any])
     
@@ -116,7 +148,15 @@ object PartialButtonClasses {
     
     inline def setContainedSizeSmallUndefined: Self = StObject.set(x, "containedSizeSmall", js.undefined)
     
+    inline def setContainedSuccess(value: String): Self = StObject.set(x, "containedSuccess", value.asInstanceOf[js.Any])
+    
+    inline def setContainedSuccessUndefined: Self = StObject.set(x, "containedSuccess", js.undefined)
+    
     inline def setContainedUndefined: Self = StObject.set(x, "contained", js.undefined)
+    
+    inline def setContainedWarning(value: String): Self = StObject.set(x, "containedWarning", value.asInstanceOf[js.Any])
+    
+    inline def setContainedWarningUndefined: Self = StObject.set(x, "containedWarning", js.undefined)
     
     inline def setDisableElevation(value: String): Self = StObject.set(x, "disableElevation", value.asInstanceOf[js.Any])
     
@@ -152,6 +192,14 @@ object PartialButtonClasses {
     
     inline def setOutlined(value: String): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
     
+    inline def setOutlinedError(value: String): Self = StObject.set(x, "outlinedError", value.asInstanceOf[js.Any])
+    
+    inline def setOutlinedErrorUndefined: Self = StObject.set(x, "outlinedError", js.undefined)
+    
+    inline def setOutlinedInfo(value: String): Self = StObject.set(x, "outlinedInfo", value.asInstanceOf[js.Any])
+    
+    inline def setOutlinedInfoUndefined: Self = StObject.set(x, "outlinedInfo", js.undefined)
+    
     inline def setOutlinedInherit(value: String): Self = StObject.set(x, "outlinedInherit", value.asInstanceOf[js.Any])
     
     inline def setOutlinedInheritUndefined: Self = StObject.set(x, "outlinedInherit", js.undefined)
@@ -176,7 +224,15 @@ object PartialButtonClasses {
     
     inline def setOutlinedSizeSmallUndefined: Self = StObject.set(x, "outlinedSizeSmall", js.undefined)
     
+    inline def setOutlinedSuccess(value: String): Self = StObject.set(x, "outlinedSuccess", value.asInstanceOf[js.Any])
+    
+    inline def setOutlinedSuccessUndefined: Self = StObject.set(x, "outlinedSuccess", js.undefined)
+    
     inline def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
+    
+    inline def setOutlinedWarning(value: String): Self = StObject.set(x, "outlinedWarning", value.asInstanceOf[js.Any])
+    
+    inline def setOutlinedWarningUndefined: Self = StObject.set(x, "outlinedWarning", js.undefined)
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
@@ -199,6 +255,14 @@ object PartialButtonClasses {
     inline def setStartIconUndefined: Self = StObject.set(x, "startIcon", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextError(value: String): Self = StObject.set(x, "textError", value.asInstanceOf[js.Any])
+    
+    inline def setTextErrorUndefined: Self = StObject.set(x, "textError", js.undefined)
+    
+    inline def setTextInfo(value: String): Self = StObject.set(x, "textInfo", value.asInstanceOf[js.Any])
+    
+    inline def setTextInfoUndefined: Self = StObject.set(x, "textInfo", js.undefined)
     
     inline def setTextInherit(value: String): Self = StObject.set(x, "textInherit", value.asInstanceOf[js.Any])
     
@@ -224,6 +288,14 @@ object PartialButtonClasses {
     
     inline def setTextSizeSmallUndefined: Self = StObject.set(x, "textSizeSmall", js.undefined)
     
+    inline def setTextSuccess(value: String): Self = StObject.set(x, "textSuccess", value.asInstanceOf[js.Any])
+    
+    inline def setTextSuccessUndefined: Self = StObject.set(x, "textSuccess", js.undefined)
+    
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTextWarning(value: String): Self = StObject.set(x, "textWarning", value.asInstanceOf[js.Any])
+    
+    inline def setTextWarningUndefined: Self = StObject.set(x, "textWarning", js.undefined)
   }
 }

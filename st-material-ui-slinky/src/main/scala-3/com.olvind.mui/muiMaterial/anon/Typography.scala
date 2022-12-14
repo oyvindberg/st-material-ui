@@ -8,7 +8,7 @@ trait Typography extends StObject {
   
   /**
     * Props applied to the Typography wrapper of the passed label.
-    * This is unused if disableTpography is true.
+    * This is unused if disableTypography is true.
     * @default {}
     */
   var typography: js.UndefOr[TypographyPropsTypographyTypeMapspandefa] = js.undefined

@@ -1,22 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`end-ellipsis`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`start-ellipsis`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.circular
-import com.olvind.mui.muiMaterial.muiMaterialStrings.first
-import com.olvind.mui.muiMaterial.muiMaterialStrings.large
-import com.olvind.mui.muiMaterial.muiMaterialStrings.last
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.next
-import com.olvind.mui.muiMaterial.muiMaterialStrings.outlined
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.previous
-import com.olvind.mui.muiMaterial.muiMaterialStrings.primary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.rounded
-import com.olvind.mui.muiMaterial.muiMaterialStrings.secondary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.standard
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import japgolly.scalajs.react.facade.Empty
@@ -37,18 +20,19 @@ trait Page extends StObject {
   
   /**
     * The active color.
+    * It supports both default and custom theme colors, which can be added as shown in the
+    * [palette customization guide](https://mui.com/material-ui/customization/palette/#adding-new-colors).
     * @default 'standard'
     */
-  var color: js.UndefOr[standard | primary | secondary] = js.undefined
+  var color: js.UndefOr["standard" | "primary" | "secondary"] = js.undefined
   
   /**
-    * The components used for first, last, next & previous item type
-    * @default {
-    *   first: FirstPageIcon,
-    *   last: LastPageIcon,
-    *   next: NavigateNextIcon,
-    *   previous: NavigateBeforeIcon,
-    * }
+    * The components used for each slot inside.
+    *
+    * This prop is an alias for the `slots` prop.
+    * It's recommended to use the `slots` prop instead.
+    *
+    * @default {}
     */
   var components: js.UndefOr[First] = js.undefined
   
@@ -73,30 +57,41 @@ trait Page extends StObject {
     * The shape of the pagination item.
     * @default 'circular'
     */
-  var shape: js.UndefOr[circular | rounded] = js.undefined
+  var shape: js.UndefOr["circular" | "rounded"] = js.undefined
   
   /**
     * The size of the component.
     * @default 'medium'
     */
-  var size: js.UndefOr[small | medium | large] = js.undefined
+  var size: js.UndefOr["small" | "medium" | "large"] = js.undefined
+  
+  /**
+    * The components used for each slot inside.
+    *
+    * This prop is an alias for the `components` prop, which will be deprecated in the future.
+    *
+    * @default {}
+    */
+  var slots: js.UndefOr[First] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * The type of pagination item.
     * @default 'page'
     */
-  var `type`: js.UndefOr[page | first | last | next | previous | `start-ellipsis` | `end-ellipsis`] = js.undefined
+  var `type`: js.UndefOr[
+    "page" | "first" | "last" | "next" | "previous" | "start-ellipsis" | "end-ellipsis"
+  ] = js.undefined
   
   /**
     * The variant to use.
     * @default 'text'
     */
-  var variant: js.UndefOr[text | outlined] = js.undefined
+  var variant: js.UndefOr["text" | "outlined"] = js.undefined
 }
 object Page {
   
@@ -111,7 +106,7 @@ object Page {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setColor(value: standard | primary | secondary): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: "standard" | "primary" | "secondary"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -137,18 +132,22 @@ object Page {
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setShape(value: circular | rounded): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: "circular" | "rounded"): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    inline def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "medium" | "large"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSlots(value: First): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+    
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -156,17 +155,17 @@ object Page {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
-    inline def setType(value: page | first | last | next | previous | `start-ellipsis` | `end-ellipsis`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: "page" | "first" | "last" | "next" | "previous" | "start-ellipsis" | "end-ellipsis"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setVariant(value: text | outlined): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "text" | "outlined"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

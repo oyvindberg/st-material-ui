@@ -1,27 +1,27 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.span
+import com.olvind.mui.muiMaterial.backdropBackdropMod.BackdropComponentsPropsOverrides
+import com.olvind.mui.react.mod.HTMLAttributes
+import org.scalajs.dom.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `0` extends StObject {
   
-  var defaultComponent: span
-  
-  var props: js.Object & PartialOmitFadePropschildren & Sx
+  var root: js.UndefOr[HTMLAttributes[HTMLDivElement] & BackdropComponentsPropsOverrides] = js.undefined
 }
 object `0` {
   
-  inline def apply(props: js.Object & PartialOmitFadePropschildren & Sx): `0` = {
-    val __obj = js.Dynamic.literal(defaultComponent = "span", props = props.asInstanceOf[js.Any])
+  inline def apply(): `0` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`0`]
   }
   
   extension [Self <: `0`](x: Self) {
     
-    inline def setDefaultComponent(value: span): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+    inline def setRoot(value: HTMLAttributes[HTMLDivElement] & BackdropComponentsPropsOverrides): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & PartialOmitFadePropschildren & Sx): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

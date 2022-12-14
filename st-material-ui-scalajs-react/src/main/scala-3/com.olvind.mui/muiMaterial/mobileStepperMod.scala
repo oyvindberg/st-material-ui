@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.mobileStepperClassesMod.MobileStepperClasses
+import com.olvind.mui.muiMaterial.mobileStepperMobileStepperClassesMod.MobileStepperClasses
 import com.olvind.mui.muiMaterial.mobileStepperMobileStepperMod.MobileStepperProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

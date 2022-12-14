@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsListSubheaderTypeMa
-import com.olvind.mui.muiMaterial.listSubheaderClassesMod.ListSubheaderClasses
+import com.olvind.mui.muiMaterial.listSubheaderListSubheaderClassesMod.ListSubheaderClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object listSubheaderMod {
     *
     * Demos:
     *
-    * - [Lists](https://mui.com/components/lists/)
+    * - [Lists](https://mui.com/material-ui/react-list/)
     *
     * API:
     *
-    * - [ListSubheader API](https://mui.com/api/list-subheader/)
+    * - [ListSubheader API](https://mui.com/material-ui/api/list-subheader/)
     */
   @JSImport("@mui/material/ListSubheader", JSImport.Default)
   @js.native

@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsDividerTypeMaphr
-import com.olvind.mui.muiMaterial.dividerClassesMod.DividerClasses
+import com.olvind.mui.muiMaterial.dividerDividerClassesMod.DividerClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +17,12 @@ object dividerMod {
     *
     * Demos:
     *
-    * - [Dividers](https://mui.com/components/dividers/)
-    * - [Lists](https://mui.com/components/lists/)
+    * - [Divider](https://mui.com/material-ui/react-divider/)
+    * - [Lists](https://mui.com/material-ui/react-list/)
     *
     * API:
     *
-    * - [Divider API](https://mui.com/api/divider/)
+    * - [Divider API](https://mui.com/material-ui/api/divider/)
     */
   @JSImport("@mui/material/Divider", JSImport.Default)
   @js.native

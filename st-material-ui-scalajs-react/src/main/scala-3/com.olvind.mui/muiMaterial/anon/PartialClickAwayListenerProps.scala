@@ -2,7 +2,6 @@ package com.olvind.mui.muiMaterial.anon
 
 import com.olvind.mui.muiBase.clickAwayListenerClickAwayListenerMod.ClickAwayMouseEventHandler
 import com.olvind.mui.muiBase.clickAwayListenerClickAwayListenerMod.ClickAwayTouchEventHandler
-import com.olvind.mui.muiMaterial.muiMaterialBooleans.`false`
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.facade.React.Element
 import japgolly.scalajs.react.vdom.VdomElement
@@ -18,11 +17,11 @@ trait PartialClickAwayListenerProps extends StObject {
   
   var disableReactTree: js.UndefOr[Boolean] = js.undefined
   
-  var mouseEvent: js.UndefOr[ClickAwayMouseEventHandler | `false`] = js.undefined
+  var mouseEvent: js.UndefOr[ClickAwayMouseEventHandler | false] = js.undefined
   
   var onClickAway: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
-  var touchEvent: js.UndefOr[ClickAwayTouchEventHandler | `false`] = js.undefined
+  var touchEvent: js.UndefOr[ClickAwayTouchEventHandler | false] = js.undefined
 }
 object PartialClickAwayListenerProps {
   
@@ -41,7 +40,7 @@ object PartialClickAwayListenerProps {
     
     inline def setDisableReactTreeUndefined: Self = StObject.set(x, "disableReactTree", js.undefined)
     
-    inline def setMouseEvent(value: ClickAwayMouseEventHandler | `false`): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
+    inline def setMouseEvent(value: ClickAwayMouseEventHandler | false): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
     
     inline def setMouseEventUndefined: Self = StObject.set(x, "mouseEvent", js.undefined)
     
@@ -49,7 +48,7 @@ object PartialClickAwayListenerProps {
     
     inline def setOnClickAwayUndefined: Self = StObject.set(x, "onClickAway", js.undefined)
     
-    inline def setTouchEvent(value: ClickAwayTouchEventHandler | `false`): Self = StObject.set(x, "touchEvent", value.asInstanceOf[js.Any])
+    inline def setTouchEvent(value: ClickAwayTouchEventHandler | false): Self = StObject.set(x, "touchEvent", value.asInstanceOf[js.Any])
     
     inline def setTouchEventUndefined: Self = StObject.set(x, "touchEvent", js.undefined)
   }

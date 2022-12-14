@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.EnableTouchRipple
-import com.olvind.mui.muiMaterial.touchRippleMod.TouchRippleActions
+import com.olvind.mui.muiMaterial.buttonBaseTouchRippleMod.TouchRippleActions
 import com.olvind.mui.react.mod.DragEventHandler
 import com.olvind.mui.react.mod.FocusEventHandler
 import com.olvind.mui.react.mod.KeyboardEventHandler

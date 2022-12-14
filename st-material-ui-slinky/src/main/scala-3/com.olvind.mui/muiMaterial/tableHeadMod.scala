@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTableHeadTypeMapthe
-import com.olvind.mui.muiMaterial.tableHeadClassesMod.TableHeadClasses
+import com.olvind.mui.muiMaterial.tableHeadTableHeadClassesMod.TableHeadClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object tableHeadMod {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TableHead API](https://mui.com/api/table-head/)
+    * - [TableHead API](https://mui.com/material-ui/api/table-head/)
     */
   @JSImport("@mui/material/TableHead", JSImport.Default)
   @js.native

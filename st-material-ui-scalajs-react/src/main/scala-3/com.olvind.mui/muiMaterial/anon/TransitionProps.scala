@@ -1,55 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`inline`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.additions
-import com.olvind.mui.muiMaterial.muiMaterialStrings.all
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ascending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.assertive
-import com.olvind.mui.muiMaterial.muiMaterialStrings.both
-import com.olvind.mui.muiMaterial.muiMaterialStrings.copy
-import com.olvind.mui.muiMaterial.muiMaterialStrings.date
-import com.olvind.mui.muiMaterial.muiMaterialStrings.decimal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.descending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dialog
-import com.olvind.mui.muiMaterial.muiMaterialStrings.email
-import com.olvind.mui.muiMaterial.muiMaterialStrings.execute
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grammar
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grid
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.link
-import com.olvind.mui.muiMaterial.muiMaterialStrings.list
-import com.olvind.mui.muiMaterial.muiMaterialStrings.listbox
-import com.olvind.mui.muiMaterial.muiMaterialStrings.location
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mixed
-import com.olvind.mui.muiMaterial.muiMaterialStrings.move
-import com.olvind.mui.muiMaterial.muiMaterialStrings.no
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.numeric
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.on
-import com.olvind.mui.muiMaterial.muiMaterialStrings.other
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.polite
-import com.olvind.mui.muiMaterial.muiMaterialStrings.popup
-import com.olvind.mui.muiMaterial.muiMaterialStrings.removals
-import com.olvind.mui.muiMaterial.muiMaterialStrings.search
-import com.olvind.mui.muiMaterial.muiMaterialStrings.spelling
-import com.olvind.mui.muiMaterial.muiMaterialStrings.step
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tel
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
-import com.olvind.mui.muiMaterial.muiMaterialStrings.time
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tree
-import com.olvind.mui.muiMaterial.muiMaterialStrings.url
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.yes
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -122,7 +72,7 @@ trait TransitionProps extends StObject {
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
   
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
@@ -131,7 +81,7 @@ trait TransitionProps extends StObject {
     * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
     * @see aria-pressed @see aria-selected.
     */
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+  var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
   
   /**
     * Defines the total number of columns in a table, grid, or treegrid.
@@ -158,7 +108,7 @@ trait TransitionProps extends StObject {
   var `aria-controls`: js.UndefOr[String] = js.undefined
   
   /** Indicates the element that represents the current item within a container or set of related elements. */
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+  var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
   
   /**
     * Identifies the element (or elements) that describes the object.
@@ -182,7 +132,7 @@ trait TransitionProps extends StObject {
     * Indicates what functions can be performed when a dragged object is released on the drop target.
     * @deprecated in ARIA 1.1
     */
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+  var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
   
   /**
     * Identifies the element that provides an error message for the object.
@@ -206,7 +156,7 @@ trait TransitionProps extends StObject {
   var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
   
   /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+  var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
   
   /**
     * Indicates whether the element is exposed to an accessibility API.
@@ -218,7 +168,7 @@ trait TransitionProps extends StObject {
     * Indicates the entered value does not conform to the format expected by the application.
     * @see aria-errormessage.
     */
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+  var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
   
   /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
   var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
@@ -239,7 +189,7 @@ trait TransitionProps extends StObject {
   var `aria-level`: js.UndefOr[Double] = js.undefined
   
   /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+  var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
   
   /** Indicates whether an element is modal when displayed. */
   var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
@@ -251,7 +201,7 @@ trait TransitionProps extends StObject {
   var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
   
   /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+  var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   /**
     * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
@@ -276,7 +226,7 @@ trait TransitionProps extends StObject {
     * Indicates the current "pressed" state of toggle buttons.
     * @see aria-checked @see aria-selected.
     */
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+  var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
   
   /**
     * Indicates that the element is not editable, but is otherwise operable.
@@ -289,7 +239,7 @@ trait TransitionProps extends StObject {
     * @see aria-atomic.
     */
   var `aria-relevant`: js.UndefOr[
-    additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+    "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
   ] = js.undefined
   
   /** Indicates that user input is required on the element before a form may be submitted. */
@@ -329,7 +279,7 @@ trait TransitionProps extends StObject {
   var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
   /** Indicates if items in a table or grid are sorted in ascending or descending order. */
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+  var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
   
   /** Defines the maximum allowed value for a range widget. */
   var `aria-valuemax`: js.UndefOr[Double] = js.undefined
@@ -359,7 +309,7 @@ trait TransitionProps extends StObject {
   
   var color: js.UndefOr[String] = js.undefined
   
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
@@ -401,7 +351,7 @@ trait TransitionProps extends StObject {
     * Hints at the type of data that might be entered by the user while editing the element or its contents
     * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
     */
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
   
   /**
     * Specify that a standard HTML element should behave like a defined custom built-in element
@@ -422,6 +372,8 @@ trait TransitionProps extends StObject {
   var lang: js.UndefOr[String] = js.undefined
   
   var mountOnEnter: js.UndefOr[Any] = js.undefined
+  
+  var nonce: js.UndefOr[String] = js.undefined
   
   // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
@@ -514,6 +466,7 @@ trait TransitionProps extends StObject {
   // Keyboard Events
   var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
   
+  /** @deprecated */
   var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
   
   var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
@@ -571,6 +524,8 @@ trait TransitionProps extends StObject {
   var onRateChange: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
   var onReset: js.UndefOr[FormEventHandler[HTMLElement]] = js.undefined
+  
+  var onResize: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLElement]] = js.undefined
@@ -644,13 +599,13 @@ trait TransitionProps extends StObject {
   
   var title: js.UndefOr[String] = js.undefined
   
-  var translate: js.UndefOr[yes | no] = js.undefined
+  var translate: js.UndefOr["yes" | "no"] = js.undefined
   
   var typeof: js.UndefOr[String] = js.undefined
   
   var unmountOnExit: js.UndefOr[Any] = js.undefined
   
-  var unselectable: js.UndefOr[on | off] = js.undefined
+  var unselectable: js.UndefOr["on" | "off"] = js.undefined
   
   var vocab: js.UndefOr[String] = js.undefined
 }
@@ -687,7 +642,7 @@ object TransitionProps {
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
-    inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
@@ -695,7 +650,7 @@ object TransitionProps {
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
-    inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+    inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
     
     inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
     
@@ -715,7 +670,7 @@ object TransitionProps {
     
     inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
     
-    inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+    inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
     
     inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
     
@@ -731,7 +686,7 @@ object TransitionProps {
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
-    inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
     
@@ -751,7 +706,7 @@ object TransitionProps {
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
-    inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
@@ -759,7 +714,7 @@ object TransitionProps {
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
-    inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+    inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
     
     inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
     
@@ -779,7 +734,7 @@ object TransitionProps {
     
     inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
     
-    inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+    inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
@@ -795,7 +750,7 @@ object TransitionProps {
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
-    inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+    inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
     
     inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
     
@@ -811,7 +766,7 @@ object TransitionProps {
     
     inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
     
-    inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+    inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
@@ -820,7 +775,7 @@ object TransitionProps {
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
     inline def `setAria-relevant`(
-      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
     ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -853,7 +808,7 @@ object TransitionProps {
     
     inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
     
-    inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+    inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
     
     inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
     
@@ -903,7 +858,7 @@ object TransitionProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+    inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
     
@@ -965,7 +920,7 @@ object TransitionProps {
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
-    inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+    inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
     
     inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
     
@@ -1000,6 +955,10 @@ object TransitionProps {
     inline def setMountOnEnter(value: Any): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
     
     inline def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
@@ -1277,6 +1236,10 @@ object TransitionProps {
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
+    inline def setOnResize(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+    
     inline def setOnScroll(value: ReactUIEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1405,7 +1368,7 @@ object TransitionProps {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
@@ -1417,7 +1380,7 @@ object TransitionProps {
     
     inline def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
     
-    inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+    inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
     
     inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     

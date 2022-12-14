@@ -16,11 +16,11 @@ object buttonGroupButtonGroupMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Button Group](https://mui.com/components/button-group/)
+    * - [Button Group](https://mui.com/material-ui/react-button-group/)
     *
     * API:
     *
-    * - [ButtonGroup API](https://mui.com/api/button-group/)
+    * - [ButtonGroup API](https://mui.com/material-ui/api/button-group/)
     */
   @JSImport("@mui/material/ButtonGroup/ButtonGroup", JSImport.Default)
   @js.native

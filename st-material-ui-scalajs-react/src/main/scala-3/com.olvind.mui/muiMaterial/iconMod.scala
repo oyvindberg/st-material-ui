@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsIconTypeMapspan
-import com.olvind.mui.muiMaterial.iconClassesMod.IconClasses
+import com.olvind.mui.muiMaterial.iconIconClassesMod.IconClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +17,12 @@ object iconMod {
     *
     * Demos:
     *
-    * - [Icons](https://mui.com/components/icons/)
-    * - [Material Icons](https://mui.com/components/material-icons/)
+    * - [Icons](https://mui.com/material-ui/icons/)
+    * - [Material Icons](https://mui.com/material-ui/material-icons/)
     *
     * API:
     *
-    * - [Icon API](https://mui.com/api/icon/)
+    * - [Icon API](https://mui.com/material-ui/api/icon/)
     */
   /* Inlined (props : DefaultComponentProps<IconTypeMap<{}, 'span'>> & {}): react.react.<global>.JSX.Element & {  muiName :string} */
   object default {

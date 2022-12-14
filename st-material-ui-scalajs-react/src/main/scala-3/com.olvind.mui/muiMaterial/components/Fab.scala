@@ -4,66 +4,9 @@ import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiMaterial.anon.PartialFabClasses
 import com.olvind.mui.muiMaterial.anon.PartialTouchRippleProps
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ButtonBaseActions
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
+import com.olvind.mui.muiMaterial.buttonBaseTouchRippleMod.TouchRippleActions
 import com.olvind.mui.muiMaterial.mod.PropTypes.Color
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`inline`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.additions
-import com.olvind.mui.muiMaterial.muiMaterialStrings.all
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ascending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.assertive
-import com.olvind.mui.muiMaterial.muiMaterialStrings.both
-import com.olvind.mui.muiMaterial.muiMaterialStrings.button
-import com.olvind.mui.muiMaterial.muiMaterialStrings.circular
-import com.olvind.mui.muiMaterial.muiMaterialStrings.copy
-import com.olvind.mui.muiMaterial.muiMaterialStrings.date
-import com.olvind.mui.muiMaterial.muiMaterialStrings.decimal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.descending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dialog
-import com.olvind.mui.muiMaterial.muiMaterialStrings.email
-import com.olvind.mui.muiMaterial.muiMaterialStrings.execute
-import com.olvind.mui.muiMaterial.muiMaterialStrings.extended
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grammar
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grid
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.large
-import com.olvind.mui.muiMaterial.muiMaterialStrings.link
-import com.olvind.mui.muiMaterial.muiMaterialStrings.list
-import com.olvind.mui.muiMaterial.muiMaterialStrings.listbox
-import com.olvind.mui.muiMaterial.muiMaterialStrings.location
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mixed
-import com.olvind.mui.muiMaterial.muiMaterialStrings.move
-import com.olvind.mui.muiMaterial.muiMaterialStrings.no
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.numeric
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.on
-import com.olvind.mui.muiMaterial.muiMaterialStrings.other
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.polite
-import com.olvind.mui.muiMaterial.muiMaterialStrings.popup
-import com.olvind.mui.muiMaterial.muiMaterialStrings.removals
-import com.olvind.mui.muiMaterial.muiMaterialStrings.reset
-import com.olvind.mui.muiMaterial.muiMaterialStrings.search
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.spelling
-import com.olvind.mui.muiMaterial.muiMaterialStrings.step
-import com.olvind.mui.muiMaterial.muiMaterialStrings.submit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tel
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
-import com.olvind.mui.muiMaterial.muiMaterialStrings.time
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tree
-import com.olvind.mui.muiMaterial.muiMaterialStrings.url
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.yes
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.anon.Html
@@ -127,11 +70,11 @@ object Fab {
       
       inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
       
-      inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `aria-autocomplete`(value: "none" | "inline" | "list" | "both"): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
       
-      inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+      inline def `aria-checked`(value: Boolean | "mixed"): this.type = set("aria-checked", value.asInstanceOf[js.Any])
       
       inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
       
@@ -141,7 +84,7 @@ object Fab {
       
       inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
       
-      inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+      inline def `aria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): this.type = set("aria-current", value.asInstanceOf[js.Any])
       
       inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
       
@@ -149,7 +92,7 @@ object Fab {
       
       inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
       
-      inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `aria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
       
@@ -159,11 +102,11 @@ object Fab {
       
       inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
       
-      inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `aria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
       
-      inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+      inline def `aria-invalid`(value: Boolean | "grammar" | "spelling"): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
       
@@ -173,7 +116,7 @@ object Fab {
       
       inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
       
-      inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+      inline def `aria-live`(value: "off" | "assertive" | "polite"): this.type = set("aria-live", value.asInstanceOf[js.Any])
       
       inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
       
@@ -181,7 +124,7 @@ object Fab {
       
       inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
       
-      inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+      inline def `aria-orientation`(value: "horizontal" | "vertical"): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
       
@@ -189,12 +132,12 @@ object Fab {
       
       inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
       
-      inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+      inline def `aria-pressed`(value: Boolean | "mixed"): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `aria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
@@ -211,7 +154,7 @@ object Fab {
       
       inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
       
-      inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+      inline def `aria-sort`(value: "none" | "ascending" | "descending" | "other"): this.type = set("aria-sort", value.asInstanceOf[js.Any])
       
       inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
       
@@ -235,9 +178,9 @@ object Fab {
       
       inline def classes(value: PartialFabClasses): this.type = set("classes", value.asInstanceOf[js.Any])
       
-      inline def color(value: Color): this.type = set("color", value.asInstanceOf[js.Any])
+      inline def color(value: Color | "success" | "error" | "info" | "warning"): this.type = set("color", value.asInstanceOf[js.Any])
       
-      inline def contentEditable(value: Booleanish | inherit): this.type = set("contentEditable", value.asInstanceOf[js.Any])
+      inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
       
       inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
       
@@ -287,7 +230,7 @@ object Fab {
       
       inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
       
-      inline def inputMode(value: none | text | tel | url | email | numeric | decimal | search): this.type = set("inputMode", value.asInstanceOf[js.Any])
+      inline def inputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): this.type = set("inputMode", value.asInstanceOf[js.Any])
       
       inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
       
@@ -304,6 +247,8 @@ object Fab {
       inline def lang(value: String): this.type = set("lang", value.asInstanceOf[js.Any])
       
       inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+      
+      inline def nonce(value: String): this.type = set("nonce", value.asInstanceOf[js.Any])
       
       inline def onAbort(value: ReactEventFrom[HTMLButtonElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLButtonElement & Element]) => value(t0).runNow()))
       
@@ -433,6 +378,8 @@ object Fab {
       
       inline def onReset(value: ReactEventFrom[HTMLButtonElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLButtonElement & Element]) => value(t0).runNow()))
       
+      inline def onResize(value: ReactEventFrom[HTMLButtonElement & Element] => Callback): this.type = set("onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLButtonElement & Element]) => value(t0).runNow()))
+      
       inline def onScroll(value: ReactUIEventFrom[HTMLButtonElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLButtonElement & Element]) => value(t0).runNow()))
       
       inline def onSeeked(value: ReactEventFrom[HTMLButtonElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLButtonElement & Element]) => value(t0).runNow()))
@@ -481,7 +428,7 @@ object Fab {
       
       inline def security(value: String): this.type = set("security", value.asInstanceOf[js.Any])
       
-      inline def size(value: small | medium | large): this.type = set("size", value.asInstanceOf[js.Any])
+      inline def size(value: "small" | "medium" | "large"): this.type = set("size", value.asInstanceOf[js.Any])
       
       inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
       
@@ -505,19 +452,25 @@ object Fab {
       
       inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
       
-      inline def translate(value: yes | no): this.type = set("translate", value.asInstanceOf[js.Any])
+      inline def touchRippleRef(value: Ref[TouchRippleActions]): this.type = set("touchRippleRef", value.asInstanceOf[js.Any])
       
-      inline def `type`(value: submit | reset | button): this.type = set("type", value.asInstanceOf[js.Any])
+      inline def touchRippleRefFunction1(value: TouchRippleActions | Null => Callback): this.type = set("touchRippleRef", js.Any.fromFunction1((t0: TouchRippleActions | Null) => value(t0).runNow()))
+      
+      inline def touchRippleRefNull: this.type = set("touchRippleRef", null)
+      
+      inline def translate(value: "yes" | "no"): this.type = set("translate", value.asInstanceOf[js.Any])
+      
+      inline def `type`(value: "submit" | "reset" | "button"): this.type = set("type", value.asInstanceOf[js.Any])
       
       inline def typeof(value: String): this.type = set("typeof", value.asInstanceOf[js.Any])
       
-      inline def unselectable(value: on | off): this.type = set("unselectable", value.asInstanceOf[js.Any])
+      inline def unselectable(value: "on" | "off"): this.type = set("unselectable", value.asInstanceOf[js.Any])
       
       inline def value(value: String | js.Array[String] | Double): this.type = set("value", value.asInstanceOf[js.Any])
       
       inline def valueVarargs(value: String*): this.type = set("value", js.Array(value*))
       
-      inline def variant(value: circular | extended): this.type = set("variant", value.asInstanceOf[js.Any])
+      inline def variant(value: "circular" | "extended"): this.type = set("variant", value.asInstanceOf[js.Any])
       
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
@@ -561,11 +514,11 @@ object Fab {
       
       inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
       
-      inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `aria-autocomplete`(value: "none" | "inline" | "list" | "both"): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
       
-      inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+      inline def `aria-checked`(value: Boolean | "mixed"): this.type = set("aria-checked", value.asInstanceOf[js.Any])
       
       inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
       
@@ -575,7 +528,7 @@ object Fab {
       
       inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
       
-      inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+      inline def `aria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): this.type = set("aria-current", value.asInstanceOf[js.Any])
       
       inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
       
@@ -583,7 +536,7 @@ object Fab {
       
       inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
       
-      inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `aria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
       
@@ -593,11 +546,11 @@ object Fab {
       
       inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
       
-      inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `aria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
       
-      inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+      inline def `aria-invalid`(value: Boolean | "grammar" | "spelling"): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
       
@@ -607,7 +560,7 @@ object Fab {
       
       inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
       
-      inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+      inline def `aria-live`(value: "off" | "assertive" | "polite"): this.type = set("aria-live", value.asInstanceOf[js.Any])
       
       inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
       
@@ -615,7 +568,7 @@ object Fab {
       
       inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
       
-      inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+      inline def `aria-orientation`(value: "horizontal" | "vertical"): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
       
@@ -623,12 +576,12 @@ object Fab {
       
       inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
       
-      inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+      inline def `aria-pressed`(value: Boolean | "mixed"): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `aria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
@@ -645,7 +598,7 @@ object Fab {
       
       inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
       
-      inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+      inline def `aria-sort`(value: "none" | "ascending" | "descending" | "other"): this.type = set("aria-sort", value.asInstanceOf[js.Any])
       
       inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
       
@@ -667,9 +620,9 @@ object Fab {
       
       inline def classes(value: PartialFabClasses): this.type = set("classes", value.asInstanceOf[js.Any])
       
-      inline def color(value: Color): this.type = set("color", value.asInstanceOf[js.Any])
+      inline def color(value: Color | "success" | "error" | "info" | "warning"): this.type = set("color", value.asInstanceOf[js.Any])
       
-      inline def contentEditable(value: Booleanish | inherit): this.type = set("contentEditable", value.asInstanceOf[js.Any])
+      inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
       
       inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
       
@@ -709,7 +662,7 @@ object Fab {
       
       inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
       
-      inline def inputMode(value: none | text | tel | url | email | numeric | decimal | search): this.type = set("inputMode", value.asInstanceOf[js.Any])
+      inline def inputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): this.type = set("inputMode", value.asInstanceOf[js.Any])
       
       inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
       
@@ -726,6 +679,8 @@ object Fab {
       inline def lang(value: String): this.type = set("lang", value.asInstanceOf[js.Any])
       
       inline def media(value: String): this.type = set("media", value.asInstanceOf[js.Any])
+      
+      inline def nonce(value: String): this.type = set("nonce", value.asInstanceOf[js.Any])
       
       inline def onAbort(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
       
@@ -855,6 +810,8 @@ object Fab {
       
       inline def onReset(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
       
+      inline def onResize(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+      
       inline def onScroll(value: ReactUIEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
       
       inline def onSeeked(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
@@ -909,7 +866,7 @@ object Fab {
       
       inline def security(value: String): this.type = set("security", value.asInstanceOf[js.Any])
       
-      inline def size(value: small | medium | large): this.type = set("size", value.asInstanceOf[js.Any])
+      inline def size(value: "small" | "medium" | "large"): this.type = set("size", value.asInstanceOf[js.Any])
       
       inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
       
@@ -935,15 +892,21 @@ object Fab {
       
       inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
       
-      inline def translate(value: yes | no): this.type = set("translate", value.asInstanceOf[js.Any])
+      inline def touchRippleRef(value: Ref[TouchRippleActions]): this.type = set("touchRippleRef", value.asInstanceOf[js.Any])
+      
+      inline def touchRippleRefFunction1(value: TouchRippleActions | Null => Callback): this.type = set("touchRippleRef", js.Any.fromFunction1((t0: TouchRippleActions | Null) => value(t0).runNow()))
+      
+      inline def touchRippleRefNull: this.type = set("touchRippleRef", null)
+      
+      inline def translate(value: "yes" | "no"): this.type = set("translate", value.asInstanceOf[js.Any])
       
       inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
       
       inline def typeof(value: String): this.type = set("typeof", value.asInstanceOf[js.Any])
       
-      inline def unselectable(value: on | off): this.type = set("unselectable", value.asInstanceOf[js.Any])
+      inline def unselectable(value: "on" | "off"): this.type = set("unselectable", value.asInstanceOf[js.Any])
       
-      inline def variant(value: circular | extended): this.type = set("variant", value.asInstanceOf[js.Any])
+      inline def variant(value: "circular" | "extended"): this.type = set("variant", value.asInstanceOf[js.Any])
       
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }

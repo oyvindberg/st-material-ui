@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.tabScrollButtonClassesMod.TabScrollButtonClasses
+import com.olvind.mui.muiMaterial.tabScrollButtonTabScrollButtonClassesMod.TabScrollButtonClasses
 import com.olvind.mui.muiMaterial.tabScrollButtonTabScrollButtonMod.TabScrollButtonProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

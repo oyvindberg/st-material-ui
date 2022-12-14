@@ -1,9 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.first
-import com.olvind.mui.muiMaterial.muiMaterialStrings.last
-import com.olvind.mui.muiMaterial.muiMaterialStrings.next
-import com.olvind.mui.muiMaterial.muiMaterialStrings.previous
 import com.olvind.mui.muiMaterial.tablePaginationTablePaginationMod.LabelDisplayedRowsArgs
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
@@ -13,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<ComponentsPropsList['MuiTablePagination'], 'labelRowsPerPage' | 'labelDisplayedRows' | 'getItemAriaLabel'> */
 trait PickComponentsPropsListMuiTablePaginatio extends StObject {
   
-  var getItemAriaLabel: js.UndefOr[js.Function1[/* type */ first | last | next | previous, String]] = js.undefined
+  var getItemAriaLabel: js.UndefOr[js.Function1[/* type */ "first" | "last" | "next" | "previous", String]] = js.undefined
   
   var labelDisplayedRows: js.UndefOr[js.Function1[/* paginationInfo */ LabelDisplayedRowsArgs, ReactElement]] = js.undefined
   
@@ -28,7 +24,7 @@ object PickComponentsPropsListMuiTablePaginatio {
   
   extension [Self <: PickComponentsPropsListMuiTablePaginatio](x: Self) {
     
-    inline def setGetItemAriaLabel(value: /* type */ first | last | next | previous => String): Self = StObject.set(x, "getItemAriaLabel", js.Any.fromFunction1(value))
+    inline def setGetItemAriaLabel(value: /* type */ "first" | "last" | "next" | "previous" => String): Self = StObject.set(x, "getItemAriaLabel", js.Any.fromFunction1(value))
     
     inline def setGetItemAriaLabelUndefined: Self = StObject.set(x, "getItemAriaLabel", js.undefined)
     

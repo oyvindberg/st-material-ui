@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.dialogActionsClassesMod.DialogActionsClasses
+import com.olvind.mui.muiMaterial.dialogActionsDialogActionsClassesMod.DialogActionsClasses
 import com.olvind.mui.muiMaterial.dialogActionsDialogActionsMod.DialogActionsProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

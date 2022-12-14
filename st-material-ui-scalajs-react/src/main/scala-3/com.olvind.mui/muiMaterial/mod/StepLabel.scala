@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Demos:
   *
-  * - [Steppers](https://mui.com/components/steppers/)
+  * - [Stepper](https://mui.com/material-ui/react-stepper/)
   *
   * API:
   *
-  * - [StepLabel API](https://mui.com/api/step-label/)
+  * - [StepLabel API](https://mui.com/material-ui/api/step-label/)
   */
 /* Inlined (props : @mui/material.@mui/material/StepLabel/StepLabel.StepLabelProps): react.react.<global>.JSX.Element & {  muiName :string} */
 object StepLabel {

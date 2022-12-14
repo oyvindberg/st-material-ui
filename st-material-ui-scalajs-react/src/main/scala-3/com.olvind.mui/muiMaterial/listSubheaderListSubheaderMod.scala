@@ -16,11 +16,11 @@ object listSubheaderListSubheaderMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Lists](https://mui.com/components/lists/)
+    * - [Lists](https://mui.com/material-ui/react-list/)
     *
     * API:
     *
-    * - [ListSubheader API](https://mui.com/api/list-subheader/)
+    * - [ListSubheader API](https://mui.com/material-ui/api/list-subheader/)
     */
   @JSImport("@mui/material/ListSubheader/ListSubheader", JSImport.Default)
   @js.native

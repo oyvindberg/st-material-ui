@@ -268,6 +268,26 @@ inline def AddCommentSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].select
 
 inline def AddCommentTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddCommentTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def AddHome: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddHome").asInstanceOf[SvgIconComponent]
+
+inline def AddHomeOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddHomeOutlined").asInstanceOf[SvgIconComponent]
+
+inline def AddHomeRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddHomeRounded").asInstanceOf[SvgIconComponent]
+
+inline def AddHomeSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddHomeSharp").asInstanceOf[SvgIconComponent]
+
+inline def AddHomeTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddHomeTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def AddHomeWork: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddHomeWork").asInstanceOf[SvgIconComponent]
+
+inline def AddHomeWorkOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddHomeWorkOutlined").asInstanceOf[SvgIconComponent]
+
+inline def AddHomeWorkRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddHomeWorkRounded").asInstanceOf[SvgIconComponent]
+
+inline def AddHomeWorkSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddHomeWorkSharp").asInstanceOf[SvgIconComponent]
+
+inline def AddHomeWorkTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddHomeWorkTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def AddIcCall: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddIcCall").asInstanceOf[SvgIconComponent]
 
 inline def AddIcCallOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AddIcCallOutlined").asInstanceOf[SvgIconComponent]
@@ -1098,6 +1118,16 @@ inline def ArrowLeftSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectD
 
 inline def ArrowLeftTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ArrowLeftTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def ArrowOutward: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ArrowOutward").asInstanceOf[SvgIconComponent]
+
+inline def ArrowOutwardOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ArrowOutwardOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ArrowOutwardRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ArrowOutwardRounded").asInstanceOf[SvgIconComponent]
+
+inline def ArrowOutwardSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ArrowOutwardSharp").asInstanceOf[SvgIconComponent]
+
+inline def ArrowOutwardTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ArrowOutwardTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def ArrowRight: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ArrowRight").asInstanceOf[SvgIconComponent]
 
 inline def ArrowRightAlt: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ArrowRightAlt").asInstanceOf[SvgIconComponent]
@@ -1227,6 +1257,16 @@ inline def AssignmentTurnedInSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic
 inline def AssignmentTurnedInTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AssignmentTurnedInTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def AssignmentTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AssignmentTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def AssistWalker: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AssistWalker").asInstanceOf[SvgIconComponent]
+
+inline def AssistWalkerOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AssistWalkerOutlined").asInstanceOf[SvgIconComponent]
+
+inline def AssistWalkerRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AssistWalkerRounded").asInstanceOf[SvgIconComponent]
+
+inline def AssistWalkerSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AssistWalkerSharp").asInstanceOf[SvgIconComponent]
+
+inline def AssistWalkerTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AssistWalkerTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Assistant: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Assistant").asInstanceOf[SvgIconComponent]
 
@@ -1438,6 +1478,16 @@ inline def AutoGraphSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectD
 
 inline def AutoGraphTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoGraphTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def AutoMode: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoMode").asInstanceOf[SvgIconComponent]
+
+inline def AutoModeOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoModeOutlined").asInstanceOf[SvgIconComponent]
+
+inline def AutoModeRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoModeRounded").asInstanceOf[SvgIconComponent]
+
+inline def AutoModeSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoModeSharp").asInstanceOf[SvgIconComponent]
+
+inline def AutoModeTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoModeTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def AutoStories: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoStories").asInstanceOf[SvgIconComponent]
 
 inline def AutoStoriesOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoStoriesOutlined").asInstanceOf[SvgIconComponent]
@@ -1618,6 +1668,26 @@ inline def BathtubSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyn
 
 inline def BathtubTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BathtubTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Battery0Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery0Bar").asInstanceOf[SvgIconComponent]
+
+inline def Battery0BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery0BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def Battery0BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery0BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def Battery0BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery0BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def Battery0BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery0BarTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Battery1Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery1Bar").asInstanceOf[SvgIconComponent]
+
+inline def Battery1BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery1BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def Battery1BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery1BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def Battery1BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery1BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def Battery1BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery1BarTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Battery20: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery20").asInstanceOf[SvgIconComponent]
 
 inline def Battery20Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery20Outlined").asInstanceOf[SvgIconComponent]
@@ -1627,6 +1697,16 @@ inline def Battery20Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selec
 inline def Battery20Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery20Sharp").asInstanceOf[SvgIconComponent]
 
 inline def Battery20TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery20TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Battery2Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery2Bar").asInstanceOf[SvgIconComponent]
+
+inline def Battery2BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery2BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def Battery2BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery2BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def Battery2BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery2BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def Battery2BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery2BarTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Battery30: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery30").asInstanceOf[SvgIconComponent]
 
@@ -1638,6 +1718,26 @@ inline def Battery30Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectD
 
 inline def Battery30TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery30TwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Battery3Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery3Bar").asInstanceOf[SvgIconComponent]
+
+inline def Battery3BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery3BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def Battery3BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery3BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def Battery3BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery3BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def Battery3BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery3BarTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Battery4Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery4Bar").asInstanceOf[SvgIconComponent]
+
+inline def Battery4BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery4BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def Battery4BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery4BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def Battery4BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery4BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def Battery4BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery4BarTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Battery50: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery50").asInstanceOf[SvgIconComponent]
 
 inline def Battery50Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery50Outlined").asInstanceOf[SvgIconComponent]
@@ -1648,6 +1748,16 @@ inline def Battery50Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectD
 
 inline def Battery50TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery50TwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Battery5Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery5Bar").asInstanceOf[SvgIconComponent]
+
+inline def Battery5BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery5BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def Battery5BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery5BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def Battery5BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery5BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def Battery5BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery5BarTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Battery60: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery60").asInstanceOf[SvgIconComponent]
 
 inline def Battery60Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery60Outlined").asInstanceOf[SvgIconComponent]
@@ -1657,6 +1767,16 @@ inline def Battery60Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selec
 inline def Battery60Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery60Sharp").asInstanceOf[SvgIconComponent]
 
 inline def Battery60TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery60TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Battery6Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery6Bar").asInstanceOf[SvgIconComponent]
+
+inline def Battery6BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery6BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def Battery6BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery6BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def Battery6BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery6BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def Battery6BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery6BarTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Battery80: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Battery80").asInstanceOf[SvgIconComponent]
 
@@ -1917,6 +2037,36 @@ inline def BlenderRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectD
 inline def BlenderSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlenderSharp").asInstanceOf[SvgIconComponent]
 
 inline def BlenderTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlenderTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Blind: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Blind").asInstanceOf[SvgIconComponent]
+
+inline def BlindOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindOutlined").asInstanceOf[SvgIconComponent]
+
+inline def BlindRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindRounded").asInstanceOf[SvgIconComponent]
+
+inline def BlindSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindSharp").asInstanceOf[SvgIconComponent]
+
+inline def BlindTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Blinds: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Blinds").asInstanceOf[SvgIconComponent]
+
+inline def BlindsClosed: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindsClosed").asInstanceOf[SvgIconComponent]
+
+inline def BlindsClosedOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindsClosedOutlined").asInstanceOf[SvgIconComponent]
+
+inline def BlindsClosedRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindsClosedRounded").asInstanceOf[SvgIconComponent]
+
+inline def BlindsClosedSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindsClosedSharp").asInstanceOf[SvgIconComponent]
+
+inline def BlindsClosedTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindsClosedTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def BlindsOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindsOutlined").asInstanceOf[SvgIconComponent]
+
+inline def BlindsRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindsRounded").asInstanceOf[SvgIconComponent]
+
+inline def BlindsSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindsSharp").asInstanceOf[SvgIconComponent]
+
+inline def BlindsTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BlindsTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Block: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Block").asInstanceOf[SvgIconComponent]
 
@@ -2388,6 +2538,26 @@ inline def BrightnessMediumSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].
 
 inline def BrightnessMediumTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrightnessMediumTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def BroadcastOnHome: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastOnHome").asInstanceOf[SvgIconComponent]
+
+inline def BroadcastOnHomeOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastOnHomeOutlined").asInstanceOf[SvgIconComponent]
+
+inline def BroadcastOnHomeRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastOnHomeRounded").asInstanceOf[SvgIconComponent]
+
+inline def BroadcastOnHomeSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastOnHomeSharp").asInstanceOf[SvgIconComponent]
+
+inline def BroadcastOnHomeTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastOnHomeTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def BroadcastOnPersonal: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastOnPersonal").asInstanceOf[SvgIconComponent]
+
+inline def BroadcastOnPersonalOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastOnPersonalOutlined").asInstanceOf[SvgIconComponent]
+
+inline def BroadcastOnPersonalRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastOnPersonalRounded").asInstanceOf[SvgIconComponent]
+
+inline def BroadcastOnPersonalSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastOnPersonalSharp").asInstanceOf[SvgIconComponent]
+
+inline def BroadcastOnPersonalTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastOnPersonalTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def BrokenImage: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrokenImage").asInstanceOf[SvgIconComponent]
 
 inline def BrokenImageOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrokenImageOutlined").asInstanceOf[SvgIconComponent]
@@ -2397,6 +2567,16 @@ inline def BrokenImageRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sel
 inline def BrokenImageSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrokenImageSharp").asInstanceOf[SvgIconComponent]
 
 inline def BrokenImageTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrokenImageTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def BrowseGallery: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrowseGallery").asInstanceOf[SvgIconComponent]
+
+inline def BrowseGalleryOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrowseGalleryOutlined").asInstanceOf[SvgIconComponent]
+
+inline def BrowseGalleryRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrowseGalleryRounded").asInstanceOf[SvgIconComponent]
+
+inline def BrowseGallerySharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrowseGallerySharp").asInstanceOf[SvgIconComponent]
+
+inline def BrowseGalleryTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrowseGalleryTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def BrowserNotSupported: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("BrowserNotSupported").asInstanceOf[SvgIconComponent]
 
@@ -2577,6 +2757,16 @@ inline def CalculateRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selec
 inline def CalculateSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CalculateSharp").asInstanceOf[SvgIconComponent]
 
 inline def CalculateTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CalculateTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def CalendarMonth: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CalendarMonth").asInstanceOf[SvgIconComponent]
+
+inline def CalendarMonthOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CalendarMonthOutlined").asInstanceOf[SvgIconComponent]
+
+inline def CalendarMonthRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CalendarMonthRounded").asInstanceOf[SvgIconComponent]
+
+inline def CalendarMonthSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CalendarMonthSharp").asInstanceOf[SvgIconComponent]
+
+inline def CalendarMonthTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CalendarMonthTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def CalendarToday: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CalendarToday").asInstanceOf[SvgIconComponent]
 
@@ -2847,6 +3037,16 @@ inline def CandlestickChartRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic
 inline def CandlestickChartSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CandlestickChartSharp").asInstanceOf[SvgIconComponent]
 
 inline def CandlestickChartTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CandlestickChartTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def CarCrash: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CarCrash").asInstanceOf[SvgIconComponent]
+
+inline def CarCrashOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CarCrashOutlined").asInstanceOf[SvgIconComponent]
+
+inline def CarCrashRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CarCrashRounded").asInstanceOf[SvgIconComponent]
+
+inline def CarCrashSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CarCrashSharp").asInstanceOf[SvgIconComponent]
+
+inline def CarCrashTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CarCrashTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def CarRental: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CarRental").asInstanceOf[SvgIconComponent]
 
@@ -3698,6 +3898,16 @@ inline def ConstructionSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sele
 
 inline def ConstructionTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ConstructionTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def ContactEmergency: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ContactEmergency").asInstanceOf[SvgIconComponent]
+
+inline def ContactEmergencyOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ContactEmergencyOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ContactEmergencyRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ContactEmergencyRounded").asInstanceOf[SvgIconComponent]
+
+inline def ContactEmergencySharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ContactEmergencySharp").asInstanceOf[SvgIconComponent]
+
+inline def ContactEmergencyTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ContactEmergencyTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def ContactMail: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ContactMail").asInstanceOf[SvgIconComponent]
 
 inline def ContactMailOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ContactMailOutlined").asInstanceOf[SvgIconComponent]
@@ -3988,6 +4198,16 @@ inline def CribSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynami
 
 inline def CribTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CribTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def CrisisAlert: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CrisisAlert").asInstanceOf[SvgIconComponent]
+
+inline def CrisisAlertOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CrisisAlertOutlined").asInstanceOf[SvgIconComponent]
+
+inline def CrisisAlertRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CrisisAlertRounded").asInstanceOf[SvgIconComponent]
+
+inline def CrisisAlertSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CrisisAlertSharp").asInstanceOf[SvgIconComponent]
+
+inline def CrisisAlertTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CrisisAlertTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Crop: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Crop").asInstanceOf[SvgIconComponent]
 
 inline def Crop169: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Crop169").asInstanceOf[SvgIconComponent]
@@ -4118,6 +4338,16 @@ inline def CssSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic
 
 inline def CssTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CssTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def CurrencyBitcoin: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurrencyBitcoin").asInstanceOf[SvgIconComponent]
+
+inline def CurrencyBitcoinOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurrencyBitcoinOutlined").asInstanceOf[SvgIconComponent]
+
+inline def CurrencyBitcoinRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurrencyBitcoinRounded").asInstanceOf[SvgIconComponent]
+
+inline def CurrencyBitcoinSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurrencyBitcoinSharp").asInstanceOf[SvgIconComponent]
+
+inline def CurrencyBitcoinTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurrencyBitcoinTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def CurrencyExchange: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurrencyExchange").asInstanceOf[SvgIconComponent]
 
 inline def CurrencyExchangeOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurrencyExchangeOutlined").asInstanceOf[SvgIconComponent]
@@ -4197,6 +4427,36 @@ inline def CurrencyYuanRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].se
 inline def CurrencyYuanSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurrencyYuanSharp").asInstanceOf[SvgIconComponent]
 
 inline def CurrencyYuanTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurrencyYuanTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Curtains: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Curtains").asInstanceOf[SvgIconComponent]
+
+inline def CurtainsClosed: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurtainsClosed").asInstanceOf[SvgIconComponent]
+
+inline def CurtainsClosedOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurtainsClosedOutlined").asInstanceOf[SvgIconComponent]
+
+inline def CurtainsClosedRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurtainsClosedRounded").asInstanceOf[SvgIconComponent]
+
+inline def CurtainsClosedSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurtainsClosedSharp").asInstanceOf[SvgIconComponent]
+
+inline def CurtainsClosedTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurtainsClosedTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def CurtainsOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurtainsOutlined").asInstanceOf[SvgIconComponent]
+
+inline def CurtainsRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurtainsRounded").asInstanceOf[SvgIconComponent]
+
+inline def CurtainsSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurtainsSharp").asInstanceOf[SvgIconComponent]
+
+inline def CurtainsTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CurtainsTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Cyclone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Cyclone").asInstanceOf[SvgIconComponent]
+
+inline def CycloneOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CycloneOutlined").asInstanceOf[SvgIconComponent]
+
+inline def CycloneRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CycloneRounded").asInstanceOf[SvgIconComponent]
+
+inline def CycloneSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CycloneSharp").asInstanceOf[SvgIconComponent]
+
+inline def CycloneTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("CycloneTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Dangerous: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Dangerous").asInstanceOf[SvgIconComponent]
 
@@ -4297,6 +4557,26 @@ inline def DataUsageRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selec
 inline def DataUsageSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DataUsageSharp").asInstanceOf[SvgIconComponent]
 
 inline def DataUsageTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DataUsageTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Dataset: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Dataset").asInstanceOf[SvgIconComponent]
+
+inline def DatasetLinked: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DatasetLinked").asInstanceOf[SvgIconComponent]
+
+inline def DatasetLinkedOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DatasetLinkedOutlined").asInstanceOf[SvgIconComponent]
+
+inline def DatasetLinkedRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DatasetLinkedRounded").asInstanceOf[SvgIconComponent]
+
+inline def DatasetLinkedSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DatasetLinkedSharp").asInstanceOf[SvgIconComponent]
+
+inline def DatasetLinkedTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DatasetLinkedTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def DatasetOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DatasetOutlined").asInstanceOf[SvgIconComponent]
+
+inline def DatasetRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DatasetRounded").asInstanceOf[SvgIconComponent]
+
+inline def DatasetSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DatasetSharp").asInstanceOf[SvgIconComponent]
+
+inline def DatasetTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DatasetTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def DateRange: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DateRange").asInstanceOf[SvgIconComponent]
 
@@ -4458,6 +4738,16 @@ inline def DesignServicesSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].se
 
 inline def DesignServicesTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DesignServicesTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Desk: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Desk").asInstanceOf[SvgIconComponent]
+
+inline def DeskOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DeskOutlined").asInstanceOf[SvgIconComponent]
+
+inline def DeskRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DeskRounded").asInstanceOf[SvgIconComponent]
+
+inline def DeskSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DeskSharp").asInstanceOf[SvgIconComponent]
+
+inline def DeskTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DeskTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def DesktopAccessDisabled: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DesktopAccessDisabled").asInstanceOf[SvgIconComponent]
 
 inline def DesktopAccessDisabledOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DesktopAccessDisabledOutlined").asInstanceOf[SvgIconComponent]
@@ -4559,6 +4849,16 @@ inline def DeviceUnknownSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sel
 inline def DeviceUnknownTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DeviceUnknownTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Devices: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Devices").asInstanceOf[SvgIconComponent]
+
+inline def DevicesFold: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DevicesFold").asInstanceOf[SvgIconComponent]
+
+inline def DevicesFoldOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DevicesFoldOutlined").asInstanceOf[SvgIconComponent]
+
+inline def DevicesFoldRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DevicesFoldRounded").asInstanceOf[SvgIconComponent]
+
+inline def DevicesFoldSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DevicesFoldSharp").asInstanceOf[SvgIconComponent]
+
+inline def DevicesFoldTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DevicesFoldTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def DevicesOther: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DevicesOther").asInstanceOf[SvgIconComponent]
 
@@ -4838,6 +5138,16 @@ inline def DiscFullSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDy
 
 inline def DiscFullTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DiscFullTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Discount: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Discount").asInstanceOf[SvgIconComponent]
+
+inline def DiscountOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DiscountOutlined").asInstanceOf[SvgIconComponent]
+
+inline def DiscountRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DiscountRounded").asInstanceOf[SvgIconComponent]
+
+inline def DiscountSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DiscountSharp").asInstanceOf[SvgIconComponent]
+
+inline def DiscountTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DiscountTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def DisplaySettings: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DisplaySettings").asInstanceOf[SvgIconComponent]
 
 inline def DisplaySettingsOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DisplaySettingsOutlined").asInstanceOf[SvgIconComponent]
@@ -4847,6 +5157,36 @@ inline def DisplaySettingsRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic]
 inline def DisplaySettingsSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DisplaySettingsSharp").asInstanceOf[SvgIconComponent]
 
 inline def DisplaySettingsTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("DisplaySettingsTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Diversity1: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity1").asInstanceOf[SvgIconComponent]
+
+inline def Diversity1Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity1Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Diversity1Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity1Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Diversity1Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity1Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Diversity1TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity1TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Diversity2: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity2").asInstanceOf[SvgIconComponent]
+
+inline def Diversity2Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity2Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Diversity2Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity2Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Diversity2Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity2Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Diversity2TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity2TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Diversity3: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity3").asInstanceOf[SvgIconComponent]
+
+inline def Diversity3Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity3Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Diversity3Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity3Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Diversity3Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity3Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Diversity3TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Diversity3TwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Dns: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Dns").asInstanceOf[SvgIconComponent]
 
@@ -5488,6 +5828,26 @@ inline def EightMpSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyn
 
 inline def EightMpTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EightMpTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def EighteenMp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EighteenMp").asInstanceOf[SvgIconComponent]
+
+inline def EighteenMpOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EighteenMpOutlined").asInstanceOf[SvgIconComponent]
+
+inline def EighteenMpRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EighteenMpRounded").asInstanceOf[SvgIconComponent]
+
+inline def EighteenMpSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EighteenMpSharp").asInstanceOf[SvgIconComponent]
+
+inline def EighteenMpTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EighteenMpTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def EighteenUpRating: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EighteenUpRating").asInstanceOf[SvgIconComponent]
+
+inline def EighteenUpRatingOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EighteenUpRatingOutlined").asInstanceOf[SvgIconComponent]
+
+inline def EighteenUpRatingRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EighteenUpRatingRounded").asInstanceOf[SvgIconComponent]
+
+inline def EighteenUpRatingSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EighteenUpRatingSharp").asInstanceOf[SvgIconComponent]
+
+inline def EighteenUpRatingTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EighteenUpRatingTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def EightteenMp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EightteenMp").asInstanceOf[SvgIconComponent]
 
 inline def EightteenMpOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EightteenMpOutlined").asInstanceOf[SvgIconComponent]
@@ -5538,6 +5898,16 @@ inline def ElectricBikeSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sele
 
 inline def ElectricBikeTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricBikeTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def ElectricBolt: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricBolt").asInstanceOf[SvgIconComponent]
+
+inline def ElectricBoltOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricBoltOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ElectricBoltRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricBoltRounded").asInstanceOf[SvgIconComponent]
+
+inline def ElectricBoltSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricBoltSharp").asInstanceOf[SvgIconComponent]
+
+inline def ElectricBoltTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricBoltTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def ElectricCar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricCar").asInstanceOf[SvgIconComponent]
 
 inline def ElectricCarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricCarOutlined").asInstanceOf[SvgIconComponent]
@@ -5547,6 +5917,16 @@ inline def ElectricCarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sel
 inline def ElectricCarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricCarSharp").asInstanceOf[SvgIconComponent]
 
 inline def ElectricCarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricCarTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def ElectricMeter: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricMeter").asInstanceOf[SvgIconComponent]
+
+inline def ElectricMeterOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricMeterOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ElectricMeterRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricMeterRounded").asInstanceOf[SvgIconComponent]
+
+inline def ElectricMeterSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricMeterSharp").asInstanceOf[SvgIconComponent]
+
+inline def ElectricMeterTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricMeterTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def ElectricMoped: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ElectricMoped").asInstanceOf[SvgIconComponent]
 
@@ -5617,6 +5997,26 @@ inline def EmailRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyn
 inline def EmailSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmailSharp").asInstanceOf[SvgIconComponent]
 
 inline def EmailTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmailTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def EmergencyRecording: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmergencyRecording").asInstanceOf[SvgIconComponent]
+
+inline def EmergencyRecordingOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmergencyRecordingOutlined").asInstanceOf[SvgIconComponent]
+
+inline def EmergencyRecordingRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmergencyRecordingRounded").asInstanceOf[SvgIconComponent]
+
+inline def EmergencyRecordingSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmergencyRecordingSharp").asInstanceOf[SvgIconComponent]
+
+inline def EmergencyRecordingTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmergencyRecordingTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def EmergencyShare: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmergencyShare").asInstanceOf[SvgIconComponent]
+
+inline def EmergencyShareOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmergencyShareOutlined").asInstanceOf[SvgIconComponent]
+
+inline def EmergencyShareRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmergencyShareRounded").asInstanceOf[SvgIconComponent]
+
+inline def EmergencyShareSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmergencyShareSharp").asInstanceOf[SvgIconComponent]
+
+inline def EmergencyShareTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmergencyShareTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def EmojiEmotions: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmojiEmotions").asInstanceOf[SvgIconComponent]
 
@@ -5707,6 +6107,16 @@ inline def EmojiTransportationRounded: SvgIconComponent = ^.asInstanceOf[js.Dyna
 inline def EmojiTransportationSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmojiTransportationSharp").asInstanceOf[SvgIconComponent]
 
 inline def EmojiTransportationTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EmojiTransportationTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def EnergySavingsLeaf: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EnergySavingsLeaf").asInstanceOf[SvgIconComponent]
+
+inline def EnergySavingsLeafOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EnergySavingsLeafOutlined").asInstanceOf[SvgIconComponent]
+
+inline def EnergySavingsLeafRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EnergySavingsLeafRounded").asInstanceOf[SvgIconComponent]
+
+inline def EnergySavingsLeafSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EnergySavingsLeafSharp").asInstanceOf[SvgIconComponent]
+
+inline def EnergySavingsLeafTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("EnergySavingsLeafTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Engineering: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Engineering").asInstanceOf[SvgIconComponent]
 
@@ -5980,6 +6390,56 @@ inline def ExtensionTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selec
 
 inline def Face: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face").asInstanceOf[SvgIconComponent]
 
+inline def Face2: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face2").asInstanceOf[SvgIconComponent]
+
+inline def Face2Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face2Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Face2Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face2Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Face2Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face2Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Face2TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face2TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Face3: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face3").asInstanceOf[SvgIconComponent]
+
+inline def Face3Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face3Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Face3Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face3Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Face3Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face3Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Face3TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face3TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Face4: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face4").asInstanceOf[SvgIconComponent]
+
+inline def Face4Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face4Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Face4Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face4Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Face4Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face4Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Face4TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face4TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Face5: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face5").asInstanceOf[SvgIconComponent]
+
+inline def Face5Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face5Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Face5Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face5Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Face5Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face5Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Face5TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face5TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Face6: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face6").asInstanceOf[SvgIconComponent]
+
+inline def Face6Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face6Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Face6Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face6Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Face6Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face6Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Face6TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Face6TwoTone").asInstanceOf[SvgIconComponent]
+
 inline def FaceOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FaceOutlined").asInstanceOf[SvgIconComponent]
 
 inline def FaceRetouchingNatural: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FaceRetouchingNatural").asInstanceOf[SvgIconComponent]
@@ -6227,6 +6687,16 @@ inline def FiberSmartRecordRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic
 inline def FiberSmartRecordSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FiberSmartRecordSharp").asInstanceOf[SvgIconComponent]
 
 inline def FiberSmartRecordTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FiberSmartRecordTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def FifteenMp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FifteenMp").asInstanceOf[SvgIconComponent]
+
+inline def FifteenMpOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FifteenMpOutlined").asInstanceOf[SvgIconComponent]
+
+inline def FifteenMpRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FifteenMpRounded").asInstanceOf[SvgIconComponent]
+
+inline def FifteenMpSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FifteenMpSharp").asInstanceOf[SvgIconComponent]
+
+inline def FifteenMpTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FifteenMpTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def FileCopy: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FileCopy").asInstanceOf[SvgIconComponent]
 
@@ -6568,6 +7038,26 @@ inline def FireExtinguisherSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].
 
 inline def FireExtinguisherTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireExtinguisherTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def FireHydrantAlt: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireHydrantAlt").asInstanceOf[SvgIconComponent]
+
+inline def FireHydrantAltOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireHydrantAltOutlined").asInstanceOf[SvgIconComponent]
+
+inline def FireHydrantAltRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireHydrantAltRounded").asInstanceOf[SvgIconComponent]
+
+inline def FireHydrantAltSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireHydrantAltSharp").asInstanceOf[SvgIconComponent]
+
+inline def FireHydrantAltTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireHydrantAltTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def FireTruck: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireTruck").asInstanceOf[SvgIconComponent]
+
+inline def FireTruckOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireTruckOutlined").asInstanceOf[SvgIconComponent]
+
+inline def FireTruckRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireTruckRounded").asInstanceOf[SvgIconComponent]
+
+inline def FireTruckSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireTruckSharp").asInstanceOf[SvgIconComponent]
+
+inline def FireTruckTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireTruckTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Fireplace: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Fireplace").asInstanceOf[SvgIconComponent]
 
 inline def FireplaceOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FireplaceOutlined").asInstanceOf[SvgIconComponent]
@@ -6858,15 +7348,25 @@ inline def FlipToFrontTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sel
 
 inline def FlipTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FlipTwoTone").asInstanceOf[SvgIconComponent]
 
-inline def Flourescent: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Flourescent").asInstanceOf[SvgIconComponent]
+inline def Flood: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Flood").asInstanceOf[SvgIconComponent]
 
-inline def FlourescentOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FlourescentOutlined").asInstanceOf[SvgIconComponent]
+inline def FloodOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FloodOutlined").asInstanceOf[SvgIconComponent]
 
-inline def FlourescentRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FlourescentRounded").asInstanceOf[SvgIconComponent]
+inline def FloodRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FloodRounded").asInstanceOf[SvgIconComponent]
 
-inline def FlourescentSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FlourescentSharp").asInstanceOf[SvgIconComponent]
+inline def FloodSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FloodSharp").asInstanceOf[SvgIconComponent]
 
-inline def FlourescentTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FlourescentTwoTone").asInstanceOf[SvgIconComponent]
+inline def FloodTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FloodTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Fluorescent: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Fluorescent").asInstanceOf[SvgIconComponent]
+
+inline def FluorescentOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FluorescentOutlined").asInstanceOf[SvgIconComponent]
+
+inline def FluorescentRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FluorescentRounded").asInstanceOf[SvgIconComponent]
+
+inline def FluorescentSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FluorescentSharp").asInstanceOf[SvgIconComponent]
+
+inline def FluorescentTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FluorescentTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def FlutterDash: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FlutterDash").asInstanceOf[SvgIconComponent]
 
@@ -6899,6 +7399,16 @@ inline def FmdGoodSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyn
 inline def FmdGoodTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FmdGoodTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Folder: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Folder").asInstanceOf[SvgIconComponent]
+
+inline def FolderCopy: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FolderCopy").asInstanceOf[SvgIconComponent]
+
+inline def FolderCopyOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FolderCopyOutlined").asInstanceOf[SvgIconComponent]
+
+inline def FolderCopyRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FolderCopyRounded").asInstanceOf[SvgIconComponent]
+
+inline def FolderCopySharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FolderCopySharp").asInstanceOf[SvgIconComponent]
+
+inline def FolderCopyTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FolderCopyTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def FolderDelete: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("FolderDelete").asInstanceOf[SvgIconComponent]
 
@@ -7518,6 +8028,16 @@ inline def GarageSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyna
 
 inline def GarageTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("GarageTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def GasMeter: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("GasMeter").asInstanceOf[SvgIconComponent]
+
+inline def GasMeterOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("GasMeterOutlined").asInstanceOf[SvgIconComponent]
+
+inline def GasMeterRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("GasMeterRounded").asInstanceOf[SvgIconComponent]
+
+inline def GasMeterSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("GasMeterSharp").asInstanceOf[SvgIconComponent]
+
+inline def GasMeterTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("GasMeterTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Gavel: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Gavel").asInstanceOf[SvgIconComponent]
 
 inline def GavelOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("GavelOutlined").asInstanceOf[SvgIconComponent]
@@ -7824,6 +8344,26 @@ inline def GroupWorkTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selec
 
 inline def Groups: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups").asInstanceOf[SvgIconComponent]
 
+inline def Groups2: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups2").asInstanceOf[SvgIconComponent]
+
+inline def Groups2Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups2Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Groups2Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups2Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Groups2Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups2Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Groups2TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups2TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Groups3: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups3").asInstanceOf[SvgIconComponent]
+
+inline def Groups3Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups3Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Groups3Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups3Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Groups3Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups3Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Groups3TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Groups3TwoTone").asInstanceOf[SvgIconComponent]
+
 inline def GroupsOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupsOutlined").asInstanceOf[SvgIconComponent]
 
 inline def GroupsRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupsRounded").asInstanceOf[SvgIconComponent]
@@ -7861,6 +8401,16 @@ inline def HailRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyna
 inline def HailSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HailSharp").asInstanceOf[SvgIconComponent]
 
 inline def HailTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HailTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Handshake: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Handshake").asInstanceOf[SvgIconComponent]
+
+inline def HandshakeOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HandshakeOutlined").asInstanceOf[SvgIconComponent]
+
+inline def HandshakeRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HandshakeRounded").asInstanceOf[SvgIconComponent]
+
+inline def HandshakeSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HandshakeSharp").asInstanceOf[SvgIconComponent]
+
+inline def HandshakeTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HandshakeTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Handyman: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Handyman").asInstanceOf[SvgIconComponent]
 
@@ -8091,6 +8641,16 @@ inline def HeartBrokenRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sel
 inline def HeartBrokenSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HeartBrokenSharp").asInstanceOf[SvgIconComponent]
 
 inline def HeartBrokenTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HeartBrokenTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def HeatPump: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HeatPump").asInstanceOf[SvgIconComponent]
+
+inline def HeatPumpOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HeatPumpOutlined").asInstanceOf[SvgIconComponent]
+
+inline def HeatPumpRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HeatPumpRounded").asInstanceOf[SvgIconComponent]
+
+inline def HeatPumpSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HeatPumpSharp").asInstanceOf[SvgIconComponent]
+
+inline def HeatPumpTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("HeatPumpTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Height: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Height").asInstanceOf[SvgIconComponent]
 
@@ -9252,6 +9812,16 @@ inline def LandscapeSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectD
 
 inline def LandscapeTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LandscapeTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Landslide: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Landslide").asInstanceOf[SvgIconComponent]
+
+inline def LandslideOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LandslideOutlined").asInstanceOf[SvgIconComponent]
+
+inline def LandslideRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LandslideRounded").asInstanceOf[SvgIconComponent]
+
+inline def LandslideSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LandslideSharp").asInstanceOf[SvgIconComponent]
+
+inline def LandslideTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LandslideTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Language: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Language").asInstanceOf[SvgIconComponent]
 
 inline def LanguageOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LanguageOutlined").asInstanceOf[SvgIconComponent]
@@ -9463,6 +10033,16 @@ inline def LightSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynam
 inline def LightTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LightTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Lightbulb: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Lightbulb").asInstanceOf[SvgIconComponent]
+
+inline def LightbulbCircle: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LightbulbCircle").asInstanceOf[SvgIconComponent]
+
+inline def LightbulbCircleOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LightbulbCircleOutlined").asInstanceOf[SvgIconComponent]
+
+inline def LightbulbCircleRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LightbulbCircleRounded").asInstanceOf[SvgIconComponent]
+
+inline def LightbulbCircleSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LightbulbCircleSharp").asInstanceOf[SvgIconComponent]
+
+inline def LightbulbCircleTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LightbulbCircleTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def LightbulbOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LightbulbOutlined").asInstanceOf[SvgIconComponent]
 
@@ -9988,6 +10568,16 @@ inline def LockOpenTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].select
 
 inline def LockOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LockOutlined").asInstanceOf[SvgIconComponent]
 
+inline def LockPerson: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LockPerson").asInstanceOf[SvgIconComponent]
+
+inline def LockPersonOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LockPersonOutlined").asInstanceOf[SvgIconComponent]
+
+inline def LockPersonRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LockPersonRounded").asInstanceOf[SvgIconComponent]
+
+inline def LockPersonSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LockPersonSharp").asInstanceOf[SvgIconComponent]
+
+inline def LockPersonTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LockPersonTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def LockReset: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LockReset").asInstanceOf[SvgIconComponent]
 
 inline def LockResetOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LockResetOutlined").asInstanceOf[SvgIconComponent]
@@ -10184,7 +10774,37 @@ inline def LunchDiningSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selec
 
 inline def LunchDiningTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LunchDiningTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Lyrics: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Lyrics").asInstanceOf[SvgIconComponent]
+
+inline def LyricsOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LyricsOutlined").asInstanceOf[SvgIconComponent]
+
+inline def LyricsRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LyricsRounded").asInstanceOf[SvgIconComponent]
+
+inline def LyricsSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LyricsSharp").asInstanceOf[SvgIconComponent]
+
+inline def LyricsTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("LyricsTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def MacroOff: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MacroOff").asInstanceOf[SvgIconComponent]
+
+inline def MacroOffOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MacroOffOutlined").asInstanceOf[SvgIconComponent]
+
+inline def MacroOffRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MacroOffRounded").asInstanceOf[SvgIconComponent]
+
+inline def MacroOffSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MacroOffSharp").asInstanceOf[SvgIconComponent]
+
+inline def MacroOffTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MacroOffTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Mail: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Mail").asInstanceOf[SvgIconComponent]
+
+inline def MailLock: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MailLock").asInstanceOf[SvgIconComponent]
+
+inline def MailLockOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MailLockOutlined").asInstanceOf[SvgIconComponent]
+
+inline def MailLockRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MailLockRounded").asInstanceOf[SvgIconComponent]
+
+inline def MailLockSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MailLockSharp").asInstanceOf[SvgIconComponent]
+
+inline def MailLockTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MailLockTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def MailOutline: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MailOutline").asInstanceOf[SvgIconComponent]
 
@@ -10216,6 +10836,36 @@ inline def MaleTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyna
 
 inline def Man: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man").asInstanceOf[SvgIconComponent]
 
+inline def Man2: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man2").asInstanceOf[SvgIconComponent]
+
+inline def Man2Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man2Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Man2Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man2Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Man2Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man2Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Man2TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man2TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Man3: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man3").asInstanceOf[SvgIconComponent]
+
+inline def Man3Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man3Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Man3Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man3Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Man3Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man3Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Man3TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man3TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Man4: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man4").asInstanceOf[SvgIconComponent]
+
+inline def Man4Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man4Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Man4Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man4Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Man4Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man4Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Man4TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Man4TwoTone").asInstanceOf[SvgIconComponent]
+
 inline def ManOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ManOutlined").asInstanceOf[SvgIconComponent]
 
 inline def ManRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ManRounded").asInstanceOf[SvgIconComponent]
@@ -10233,6 +10883,16 @@ inline def ManageAccountsRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].
 inline def ManageAccountsSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ManageAccountsSharp").asInstanceOf[SvgIconComponent]
 
 inline def ManageAccountsTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ManageAccountsTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def ManageHistory: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ManageHistory").asInstanceOf[SvgIconComponent]
+
+inline def ManageHistoryOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ManageHistoryOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ManageHistoryRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ManageHistoryRounded").asInstanceOf[SvgIconComponent]
+
+inline def ManageHistorySharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ManageHistorySharp").asInstanceOf[SvgIconComponent]
+
+inline def ManageHistoryTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ManageHistoryTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def ManageSearch: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ManageSearch").asInstanceOf[SvgIconComponent]
 
@@ -10413,6 +11073,16 @@ inline def MediationRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selec
 inline def MediationSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MediationSharp").asInstanceOf[SvgIconComponent]
 
 inline def MediationTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MediationTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def MedicalInformation: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MedicalInformation").asInstanceOf[SvgIconComponent]
+
+inline def MedicalInformationOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MedicalInformationOutlined").asInstanceOf[SvgIconComponent]
+
+inline def MedicalInformationRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MedicalInformationRounded").asInstanceOf[SvgIconComponent]
+
+inline def MedicalInformationSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MedicalInformationSharp").asInstanceOf[SvgIconComponent]
+
+inline def MedicalInformationTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MedicalInformationTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def MedicalServices: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MedicalServices").asInstanceOf[SvgIconComponent]
 
@@ -10604,6 +11274,16 @@ inline def MinimizeSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDy
 
 inline def MinimizeTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MinimizeTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def MinorCrash: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MinorCrash").asInstanceOf[SvgIconComponent]
+
+inline def MinorCrashOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MinorCrashOutlined").asInstanceOf[SvgIconComponent]
+
+inline def MinorCrashRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MinorCrashRounded").asInstanceOf[SvgIconComponent]
+
+inline def MinorCrashSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MinorCrashSharp").asInstanceOf[SvgIconComponent]
+
+inline def MinorCrashTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MinorCrashTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def MiscellaneousServices: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MiscellaneousServices").asInstanceOf[SvgIconComponent]
 
 inline def MiscellaneousServicesOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("MiscellaneousServicesOutlined").asInstanceOf[SvgIconComponent]
@@ -10705,6 +11385,16 @@ inline def ModeEditRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].select
 inline def ModeEditSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ModeEditSharp").asInstanceOf[SvgIconComponent]
 
 inline def ModeEditTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ModeEditTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def ModeFanOff: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ModeFanOff").asInstanceOf[SvgIconComponent]
+
+inline def ModeFanOffOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ModeFanOffOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ModeFanOffRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ModeFanOffRounded").asInstanceOf[SvgIconComponent]
+
+inline def ModeFanOffSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ModeFanOffSharp").asInstanceOf[SvgIconComponent]
+
+inline def ModeFanOffTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ModeFanOffTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def ModeNight: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ModeNight").asInstanceOf[SvgIconComponent]
 
@@ -11194,6 +11884,16 @@ inline def NearbyOffSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectD
 
 inline def NearbyOffTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NearbyOffTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def NestCamWiredStand: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NestCamWiredStand").asInstanceOf[SvgIconComponent]
+
+inline def NestCamWiredStandOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NestCamWiredStandOutlined").asInstanceOf[SvgIconComponent]
+
+inline def NestCamWiredStandRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NestCamWiredStandRounded").asInstanceOf[SvgIconComponent]
+
+inline def NestCamWiredStandSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NestCamWiredStandSharp").asInstanceOf[SvgIconComponent]
+
+inline def NestCamWiredStandTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NestCamWiredStandTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def NetworkCell: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkCell").asInstanceOf[SvgIconComponent]
 
 inline def NetworkCellOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkCellOutlined").asInstanceOf[SvgIconComponent]
@@ -11224,7 +11924,47 @@ inline def NetworkLockedSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sel
 
 inline def NetworkLockedTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkLockedTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def NetworkPing: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkPing").asInstanceOf[SvgIconComponent]
+
+inline def NetworkPingOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkPingOutlined").asInstanceOf[SvgIconComponent]
+
+inline def NetworkPingRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkPingRounded").asInstanceOf[SvgIconComponent]
+
+inline def NetworkPingSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkPingSharp").asInstanceOf[SvgIconComponent]
+
+inline def NetworkPingTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkPingTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def NetworkWifi: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi1Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi1Bar").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi1BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi1BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi1BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi1BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi1BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi1BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi1BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi1BarTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi2Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi2Bar").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi2BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi2BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi2BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi2BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi2BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi2BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi2BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi2BarTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi3Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi3Bar").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi3BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi3BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi3BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi3BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi3BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi3BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def NetworkWifi3BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifi3BarTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def NetworkWifiOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NetworkWifiOutlined").asInstanceOf[SvgIconComponent]
 
@@ -11384,6 +12124,16 @@ inline def NoAccountsSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].select
 
 inline def NoAccountsTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoAccountsTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def NoAdultContent: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoAdultContent").asInstanceOf[SvgIconComponent]
+
+inline def NoAdultContentOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoAdultContentOutlined").asInstanceOf[SvgIconComponent]
+
+inline def NoAdultContentRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoAdultContentRounded").asInstanceOf[SvgIconComponent]
+
+inline def NoAdultContentSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoAdultContentSharp").asInstanceOf[SvgIconComponent]
+
+inline def NoAdultContentTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoAdultContentTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def NoBackpack: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoBackpack").asInstanceOf[SvgIconComponent]
 
 inline def NoBackpackOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoBackpackOutlined").asInstanceOf[SvgIconComponent]
@@ -11403,6 +12153,16 @@ inline def NoCellRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDy
 inline def NoCellSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoCellSharp").asInstanceOf[SvgIconComponent]
 
 inline def NoCellTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoCellTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def NoCrash: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoCrash").asInstanceOf[SvgIconComponent]
+
+inline def NoCrashOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoCrashOutlined").asInstanceOf[SvgIconComponent]
+
+inline def NoCrashRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoCrashRounded").asInstanceOf[SvgIconComponent]
+
+inline def NoCrashSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoCrashSharp").asInstanceOf[SvgIconComponent]
+
+inline def NoCrashTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoCrashTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def NoDrinks: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoDrinks").asInstanceOf[SvgIconComponent]
 
@@ -11523,6 +12283,26 @@ inline def NoTransferRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sele
 inline def NoTransferSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoTransferSharp").asInstanceOf[SvgIconComponent]
 
 inline def NoTransferTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoTransferTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def NoiseAware: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoiseAware").asInstanceOf[SvgIconComponent]
+
+inline def NoiseAwareOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoiseAwareOutlined").asInstanceOf[SvgIconComponent]
+
+inline def NoiseAwareRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoiseAwareRounded").asInstanceOf[SvgIconComponent]
+
+inline def NoiseAwareSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoiseAwareSharp").asInstanceOf[SvgIconComponent]
+
+inline def NoiseAwareTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoiseAwareTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def NoiseControlOff: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoiseControlOff").asInstanceOf[SvgIconComponent]
+
+inline def NoiseControlOffOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoiseControlOffOutlined").asInstanceOf[SvgIconComponent]
+
+inline def NoiseControlOffRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoiseControlOffRounded").asInstanceOf[SvgIconComponent]
+
+inline def NoiseControlOffSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoiseControlOffSharp").asInstanceOf[SvgIconComponent]
+
+inline def NoiseControlOffTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NoiseControlOffTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def NordicWalking: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("NordicWalking").asInstanceOf[SvgIconComponent]
 
@@ -11754,6 +12534,26 @@ inline def OfflineShareSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sele
 
 inline def OfflineShareTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OfflineShareTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def OilBarrel: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OilBarrel").asInstanceOf[SvgIconComponent]
+
+inline def OilBarrelOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OilBarrelOutlined").asInstanceOf[SvgIconComponent]
+
+inline def OilBarrelRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OilBarrelRounded").asInstanceOf[SvgIconComponent]
+
+inline def OilBarrelSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OilBarrelSharp").asInstanceOf[SvgIconComponent]
+
+inline def OilBarrelTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OilBarrelTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def OnDeviceTraining: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OnDeviceTraining").asInstanceOf[SvgIconComponent]
+
+inline def OnDeviceTrainingOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OnDeviceTrainingOutlined").asInstanceOf[SvgIconComponent]
+
+inline def OnDeviceTrainingRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OnDeviceTrainingRounded").asInstanceOf[SvgIconComponent]
+
+inline def OnDeviceTrainingSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OnDeviceTrainingSharp").asInstanceOf[SvgIconComponent]
+
+inline def OnDeviceTrainingTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OnDeviceTrainingTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def OndemandVideo: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OndemandVideo").asInstanceOf[SvgIconComponent]
 
 inline def OndemandVideoOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OndemandVideoOutlined").asInstanceOf[SvgIconComponent]
@@ -11923,6 +12723,16 @@ inline def OutlinedFlagRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].se
 inline def OutlinedFlagSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OutlinedFlagSharp").asInstanceOf[SvgIconComponent]
 
 inline def OutlinedFlagTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OutlinedFlagTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Output: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Output").asInstanceOf[SvgIconComponent]
+
+inline def OutputOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OutputOutlined").asInstanceOf[SvgIconComponent]
+
+inline def OutputRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OutputRounded").asInstanceOf[SvgIconComponent]
+
+inline def OutputSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OutputSharp").asInstanceOf[SvgIconComponent]
+
+inline def OutputTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("OutputTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Padding: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Padding").asInstanceOf[SvgIconComponent]
 
@@ -12375,6 +13185,36 @@ inline def PermScanWifiSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sele
 inline def PermScanWifiTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PermScanWifiTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Person: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person").asInstanceOf[SvgIconComponent]
+
+inline def Person2: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person2").asInstanceOf[SvgIconComponent]
+
+inline def Person2Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person2Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Person2Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person2Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Person2Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person2Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Person2TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person2TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Person3: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person3").asInstanceOf[SvgIconComponent]
+
+inline def Person3Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person3Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Person3Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person3Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Person3Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person3Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Person3TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person3TwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Person4: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person4").asInstanceOf[SvgIconComponent]
+
+inline def Person4Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person4Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Person4Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person4Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Person4Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person4Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Person4TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Person4TwoTone").asInstanceOf[SvgIconComponent]
 
 inline def PersonAdd: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PersonAdd").asInstanceOf[SvgIconComponent]
 
@@ -13376,7 +14216,37 @@ inline def ProductionQuantityLimitsSharp: SvgIconComponent = ^.asInstanceOf[js.D
 
 inline def ProductionQuantityLimitsTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ProductionQuantityLimitsTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Propane: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Propane").asInstanceOf[SvgIconComponent]
+
+inline def PropaneOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PropaneOutlined").asInstanceOf[SvgIconComponent]
+
+inline def PropaneRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PropaneRounded").asInstanceOf[SvgIconComponent]
+
+inline def PropaneSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PropaneSharp").asInstanceOf[SvgIconComponent]
+
+inline def PropaneTank: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PropaneTank").asInstanceOf[SvgIconComponent]
+
+inline def PropaneTankOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PropaneTankOutlined").asInstanceOf[SvgIconComponent]
+
+inline def PropaneTankRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PropaneTankRounded").asInstanceOf[SvgIconComponent]
+
+inline def PropaneTankSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PropaneTankSharp").asInstanceOf[SvgIconComponent]
+
+inline def PropaneTankTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PropaneTankTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def PropaneTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PropaneTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Psychology: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Psychology").asInstanceOf[SvgIconComponent]
+
+inline def PsychologyAlt: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PsychologyAlt").asInstanceOf[SvgIconComponent]
+
+inline def PsychologyAltOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PsychologyAltOutlined").asInstanceOf[SvgIconComponent]
+
+inline def PsychologyAltRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PsychologyAltRounded").asInstanceOf[SvgIconComponent]
+
+inline def PsychologyAltSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PsychologyAltSharp").asInstanceOf[SvgIconComponent]
+
+inline def PsychologyAltTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PsychologyAltTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def PsychologyOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("PsychologyOutlined").asInstanceOf[SvgIconComponent]
 
@@ -13872,6 +14742,16 @@ inline def RemoveRedEyeSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sele
 
 inline def RemoveRedEyeTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RemoveRedEyeTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def RemoveRoad: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RemoveRoad").asInstanceOf[SvgIconComponent]
+
+inline def RemoveRoadOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RemoveRoadOutlined").asInstanceOf[SvgIconComponent]
+
+inline def RemoveRoadRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RemoveRoadRounded").asInstanceOf[SvgIconComponent]
+
+inline def RemoveRoadSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RemoveRoadSharp").asInstanceOf[SvgIconComponent]
+
+inline def RemoveRoadTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RemoveRoadTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def RemoveRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RemoveRounded").asInstanceOf[SvgIconComponent]
 
 inline def RemoveSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RemoveSharp").asInstanceOf[SvgIconComponent]
@@ -13897,6 +14777,16 @@ inline def ReorderRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectD
 inline def ReorderSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ReorderSharp").asInstanceOf[SvgIconComponent]
 
 inline def ReorderTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ReorderTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Repartition: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Repartition").asInstanceOf[SvgIconComponent]
+
+inline def RepartitionOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RepartitionOutlined").asInstanceOf[SvgIconComponent]
+
+inline def RepartitionRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RepartitionRounded").asInstanceOf[SvgIconComponent]
+
+inline def RepartitionSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RepartitionSharp").asInstanceOf[SvgIconComponent]
+
+inline def RepartitionTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RepartitionTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Repeat: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Repeat").asInstanceOf[SvgIconComponent]
 
@@ -14188,6 +15078,36 @@ inline def RocketSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyna
 
 inline def RocketTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RocketTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def RollerShades: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerShades").asInstanceOf[SvgIconComponent]
+
+inline def RollerShadesClosed: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerShadesClosed").asInstanceOf[SvgIconComponent]
+
+inline def RollerShadesClosedOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerShadesClosedOutlined").asInstanceOf[SvgIconComponent]
+
+inline def RollerShadesClosedRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerShadesClosedRounded").asInstanceOf[SvgIconComponent]
+
+inline def RollerShadesClosedSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerShadesClosedSharp").asInstanceOf[SvgIconComponent]
+
+inline def RollerShadesClosedTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerShadesClosedTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def RollerShadesOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerShadesOutlined").asInstanceOf[SvgIconComponent]
+
+inline def RollerShadesRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerShadesRounded").asInstanceOf[SvgIconComponent]
+
+inline def RollerShadesSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerShadesSharp").asInstanceOf[SvgIconComponent]
+
+inline def RollerShadesTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerShadesTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def RollerSkating: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerSkating").asInstanceOf[SvgIconComponent]
+
+inline def RollerSkatingOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerSkatingOutlined").asInstanceOf[SvgIconComponent]
+
+inline def RollerSkatingRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerSkatingRounded").asInstanceOf[SvgIconComponent]
+
+inline def RollerSkatingSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerSkatingSharp").asInstanceOf[SvgIconComponent]
+
+inline def RollerSkatingTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RollerSkatingTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Roofing: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Roofing").asInstanceOf[SvgIconComponent]
 
 inline def RoofingOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RoofingOutlined").asInstanceOf[SvgIconComponent]
@@ -14408,6 +15328,16 @@ inline def RvHookupSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDy
 
 inline def RvHookupTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("RvHookupTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def SafetyCheck: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SafetyCheck").asInstanceOf[SvgIconComponent]
+
+inline def SafetyCheckOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SafetyCheckOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SafetyCheckRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SafetyCheckRounded").asInstanceOf[SvgIconComponent]
+
+inline def SafetyCheckSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SafetyCheckSharp").asInstanceOf[SvgIconComponent]
+
+inline def SafetyCheckTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SafetyCheckTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def SafetyDivider: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SafetyDivider").asInstanceOf[SvgIconComponent]
 
 inline def SafetyDividerOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SafetyDividerOutlined").asInstanceOf[SvgIconComponent]
@@ -14598,6 +15528,16 @@ inline def ScoreSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynam
 
 inline def ScoreTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScoreTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Scoreboard: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Scoreboard").asInstanceOf[SvgIconComponent]
+
+inline def ScoreboardOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScoreboardOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ScoreboardRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScoreboardRounded").asInstanceOf[SvgIconComponent]
+
+inline def ScoreboardSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScoreboardSharp").asInstanceOf[SvgIconComponent]
+
+inline def ScoreboardTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScoreboardTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def ScreenLockLandscape: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenLockLandscape").asInstanceOf[SvgIconComponent]
 
 inline def ScreenLockLandscapeOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenLockLandscapeOutlined").asInstanceOf[SvgIconComponent]
@@ -14630,6 +15570,16 @@ inline def ScreenLockRotationTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynam
 
 inline def ScreenRotation: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenRotation").asInstanceOf[SvgIconComponent]
 
+inline def ScreenRotationAlt: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenRotationAlt").asInstanceOf[SvgIconComponent]
+
+inline def ScreenRotationAltOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenRotationAltOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ScreenRotationAltRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenRotationAltRounded").asInstanceOf[SvgIconComponent]
+
+inline def ScreenRotationAltSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenRotationAltSharp").asInstanceOf[SvgIconComponent]
+
+inline def ScreenRotationAltTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenRotationAltTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def ScreenRotationOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenRotationOutlined").asInstanceOf[SvgIconComponent]
 
 inline def ScreenRotationRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenRotationRounded").asInstanceOf[SvgIconComponent]
@@ -14660,6 +15610,16 @@ inline def ScreenShareTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sel
 
 inline def Screenshot: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Screenshot").asInstanceOf[SvgIconComponent]
 
+inline def ScreenshotMonitor: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenshotMonitor").asInstanceOf[SvgIconComponent]
+
+inline def ScreenshotMonitorOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenshotMonitorOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ScreenshotMonitorRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenshotMonitorRounded").asInstanceOf[SvgIconComponent]
+
+inline def ScreenshotMonitorSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenshotMonitorSharp").asInstanceOf[SvgIconComponent]
+
+inline def ScreenshotMonitorTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenshotMonitorTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def ScreenshotOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenshotOutlined").asInstanceOf[SvgIconComponent]
 
 inline def ScreenshotRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenshotRounded").asInstanceOf[SvgIconComponent]
@@ -14667,6 +15627,16 @@ inline def ScreenshotRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sele
 inline def ScreenshotSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenshotSharp").asInstanceOf[SvgIconComponent]
 
 inline def ScreenshotTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenshotTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def ScubaDiving: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScubaDiving").asInstanceOf[SvgIconComponent]
+
+inline def ScubaDivingOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScubaDivingOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ScubaDivingRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScubaDivingRounded").asInstanceOf[SvgIconComponent]
+
+inline def ScubaDivingSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScubaDivingSharp").asInstanceOf[SvgIconComponent]
+
+inline def ScubaDivingTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ScubaDivingTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Sd: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Sd").asInstanceOf[SvgIconComponent]
 
@@ -14857,6 +15827,16 @@ inline def SensorDoorRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sele
 inline def SensorDoorSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SensorDoorSharp").asInstanceOf[SvgIconComponent]
 
 inline def SensorDoorTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SensorDoorTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def SensorOccupied: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SensorOccupied").asInstanceOf[SvgIconComponent]
+
+inline def SensorOccupiedOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SensorOccupiedOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SensorOccupiedRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SensorOccupiedRounded").asInstanceOf[SvgIconComponent]
+
+inline def SensorOccupiedSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SensorOccupiedSharp").asInstanceOf[SvgIconComponent]
+
+inline def SensorOccupiedTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SensorOccupiedTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def SensorWindow: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SensorWindow").asInstanceOf[SvgIconComponent]
 
@@ -15198,6 +16178,26 @@ inline def SeventeenMpSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selec
 
 inline def SeventeenMpTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SeventeenMpTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def SevereCold: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SevereCold").asInstanceOf[SvgIconComponent]
+
+inline def SevereColdOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SevereColdOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SevereColdRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SevereColdRounded").asInstanceOf[SvgIconComponent]
+
+inline def SevereColdSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SevereColdSharp").asInstanceOf[SvgIconComponent]
+
+inline def SevereColdTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SevereColdTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def ShapeLine: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ShapeLine").asInstanceOf[SvgIconComponent]
+
+inline def ShapeLineOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ShapeLineOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ShapeLineRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ShapeLineRounded").asInstanceOf[SvgIconComponent]
+
+inline def ShapeLineSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ShapeLineSharp").asInstanceOf[SvgIconComponent]
+
+inline def ShapeLineTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ShapeLineTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Share: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Share").asInstanceOf[SvgIconComponent]
 
 inline def ShareLocation: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ShareLocation").asInstanceOf[SvgIconComponent]
@@ -15388,6 +16388,16 @@ inline def SickSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynami
 
 inline def SickTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SickTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def SignLanguage: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignLanguage").asInstanceOf[SvgIconComponent]
+
+inline def SignLanguageOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignLanguageOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SignLanguageRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignLanguageRounded").asInstanceOf[SvgIconComponent]
+
+inline def SignLanguageSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignLanguageSharp").asInstanceOf[SvgIconComponent]
+
+inline def SignLanguageTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignLanguageTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def SignalCellular0Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellular0Bar").asInstanceOf[SvgIconComponent]
 
 inline def SignalCellular0BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellular0BarOutlined").asInstanceOf[SvgIconComponent]
@@ -15439,6 +16449,26 @@ inline def SignalCellular4BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic
 inline def SignalCellular4BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellular4BarTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def SignalCellularAlt: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt").asInstanceOf[SvgIconComponent]
+
+inline def SignalCellularAlt1Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt1Bar").asInstanceOf[SvgIconComponent]
+
+inline def SignalCellularAlt1BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt1BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SignalCellularAlt1BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt1BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def SignalCellularAlt1BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt1BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def SignalCellularAlt1BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt1BarTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def SignalCellularAlt2Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt2Bar").asInstanceOf[SvgIconComponent]
+
+inline def SignalCellularAlt2BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt2BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SignalCellularAlt2BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt2BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def SignalCellularAlt2BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt2BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def SignalCellularAlt2BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAlt2BarTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def SignalCellularAltOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SignalCellularAltOutlined").asInstanceOf[SvgIconComponent]
 
@@ -16028,6 +17058,16 @@ inline def SocialDistanceSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].se
 
 inline def SocialDistanceTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SocialDistanceTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def SolarPower: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SolarPower").asInstanceOf[SvgIconComponent]
+
+inline def SolarPowerOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SolarPowerOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SolarPowerRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SolarPowerRounded").asInstanceOf[SvgIconComponent]
+
+inline def SolarPowerSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SolarPowerSharp").asInstanceOf[SvgIconComponent]
+
+inline def SolarPowerTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SolarPowerTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Sort: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Sort").asInstanceOf[SvgIconComponent]
 
 inline def SortByAlpha: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SortByAlpha").asInstanceOf[SvgIconComponent]
@@ -16047,6 +17087,16 @@ inline def SortRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyna
 inline def SortSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SortSharp").asInstanceOf[SvgIconComponent]
 
 inline def SortTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SortTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Sos: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Sos").asInstanceOf[SvgIconComponent]
+
+inline def SosOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SosOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SosRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SosRounded").asInstanceOf[SvgIconComponent]
+
+inline def SosSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SosSharp").asInstanceOf[SvgIconComponent]
+
+inline def SosTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SosTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def SoupKitchen: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SoupKitchen").asInstanceOf[SvgIconComponent]
 
@@ -16127,6 +17177,36 @@ inline def SpaceBarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].select
 inline def SpaceBarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpaceBarSharp").asInstanceOf[SvgIconComponent]
 
 inline def SpaceBarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpaceBarTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def SpatialAudio: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialAudio").asInstanceOf[SvgIconComponent]
+
+inline def SpatialAudioOff: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialAudioOff").asInstanceOf[SvgIconComponent]
+
+inline def SpatialAudioOffOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialAudioOffOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SpatialAudioOffRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialAudioOffRounded").asInstanceOf[SvgIconComponent]
+
+inline def SpatialAudioOffSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialAudioOffSharp").asInstanceOf[SvgIconComponent]
+
+inline def SpatialAudioOffTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialAudioOffTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def SpatialAudioOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialAudioOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SpatialAudioRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialAudioRounded").asInstanceOf[SvgIconComponent]
+
+inline def SpatialAudioSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialAudioSharp").asInstanceOf[SvgIconComponent]
+
+inline def SpatialAudioTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialAudioTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def SpatialTracking: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialTracking").asInstanceOf[SvgIconComponent]
+
+inline def SpatialTrackingOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialTrackingOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SpatialTrackingRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialTrackingRounded").asInstanceOf[SvgIconComponent]
+
+inline def SpatialTrackingSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialTrackingSharp").asInstanceOf[SvgIconComponent]
+
+inline def SpatialTrackingTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SpatialTrackingTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Speaker: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Speaker").asInstanceOf[SvgIconComponent]
 
@@ -16289,6 +17369,16 @@ inline def SportsGolfRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sele
 inline def SportsGolfSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SportsGolfSharp").asInstanceOf[SvgIconComponent]
 
 inline def SportsGolfTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SportsGolfTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def SportsGymnastics: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SportsGymnastics").asInstanceOf[SvgIconComponent]
+
+inline def SportsGymnasticsOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SportsGymnasticsOutlined").asInstanceOf[SvgIconComponent]
+
+inline def SportsGymnasticsRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SportsGymnasticsRounded").asInstanceOf[SvgIconComponent]
+
+inline def SportsGymnasticsSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SportsGymnasticsSharp").asInstanceOf[SvgIconComponent]
+
+inline def SportsGymnasticsTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SportsGymnasticsTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def SportsHandball: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("SportsHandball").asInstanceOf[SvgIconComponent]
 
@@ -17830,6 +18920,16 @@ inline def ThumbsUpDownSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].sele
 
 inline def ThumbsUpDownTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ThumbsUpDownTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Thunderstorm: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Thunderstorm").asInstanceOf[SvgIconComponent]
+
+inline def ThunderstormOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ThunderstormOutlined").asInstanceOf[SvgIconComponent]
+
+inline def ThunderstormRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ThunderstormRounded").asInstanceOf[SvgIconComponent]
+
+inline def ThunderstormSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ThunderstormSharp").asInstanceOf[SvgIconComponent]
+
+inline def ThunderstormTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("ThunderstormTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def TimeToLeave: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TimeToLeave").asInstanceOf[SvgIconComponent]
 
 inline def TimeToLeaveOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TimeToLeaveOutlined").asInstanceOf[SvgIconComponent]
@@ -17940,6 +19040,16 @@ inline def TipsAndUpdatesSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].se
 
 inline def TipsAndUpdatesTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TipsAndUpdatesTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def TireRepair: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TireRepair").asInstanceOf[SvgIconComponent]
+
+inline def TireRepairOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TireRepairOutlined").asInstanceOf[SvgIconComponent]
+
+inline def TireRepairRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TireRepairRounded").asInstanceOf[SvgIconComponent]
+
+inline def TireRepairSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TireRepairSharp").asInstanceOf[SvgIconComponent]
+
+inline def TireRepairTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TireRepairTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Title: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Title").asInstanceOf[SvgIconComponent]
 
 inline def TitleOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TitleOutlined").asInstanceOf[SvgIconComponent]
@@ -18030,6 +19140,16 @@ inline def TopicSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynam
 
 inline def TopicTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TopicTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Tornado: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Tornado").asInstanceOf[SvgIconComponent]
+
+inline def TornadoOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TornadoOutlined").asInstanceOf[SvgIconComponent]
+
+inline def TornadoRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TornadoRounded").asInstanceOf[SvgIconComponent]
+
+inline def TornadoSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TornadoSharp").asInstanceOf[SvgIconComponent]
+
+inline def TornadoTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TornadoTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def TouchApp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TouchApp").asInstanceOf[SvgIconComponent]
 
 inline def TouchAppOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TouchAppOutlined").asInstanceOf[SvgIconComponent]
@@ -18099,6 +19219,16 @@ inline def TramRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyna
 inline def TramSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TramSharp").asInstanceOf[SvgIconComponent]
 
 inline def TramTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TramTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Transcribe: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Transcribe").asInstanceOf[SvgIconComponent]
+
+inline def TranscribeOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TranscribeOutlined").asInstanceOf[SvgIconComponent]
+
+inline def TranscribeRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TranscribeRounded").asInstanceOf[SvgIconComponent]
+
+inline def TranscribeSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TranscribeSharp").asInstanceOf[SvgIconComponent]
+
+inline def TranscribeTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TranscribeTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def TransferWithinAStation: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TransferWithinAStation").asInstanceOf[SvgIconComponent]
 
@@ -18200,6 +19330,16 @@ inline def TripOriginSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].select
 
 inline def TripOriginTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TripOriginTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Troubleshoot: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Troubleshoot").asInstanceOf[SvgIconComponent]
+
+inline def TroubleshootOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TroubleshootOutlined").asInstanceOf[SvgIconComponent]
+
+inline def TroubleshootRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TroubleshootRounded").asInstanceOf[SvgIconComponent]
+
+inline def TroubleshootSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TroubleshootSharp").asInstanceOf[SvgIconComponent]
+
+inline def TroubleshootTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TroubleshootTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Try: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Try").asInstanceOf[SvgIconComponent]
 
 inline def TryOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TryOutlined").asInstanceOf[SvgIconComponent]
@@ -18209,6 +19349,16 @@ inline def TryRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynam
 inline def TrySharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TrySharp").asInstanceOf[SvgIconComponent]
 
 inline def TryTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TryTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Tsunami: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Tsunami").asInstanceOf[SvgIconComponent]
+
+inline def TsunamiOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TsunamiOutlined").asInstanceOf[SvgIconComponent]
+
+inline def TsunamiRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TsunamiRounded").asInstanceOf[SvgIconComponent]
+
+inline def TsunamiSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TsunamiSharp").asInstanceOf[SvgIconComponent]
+
+inline def TsunamiTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TsunamiTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Tty: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Tty").asInstanceOf[SvgIconComponent]
 
@@ -18442,6 +19592,16 @@ inline def TwoWheelerSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].select
 
 inline def TwoWheelerTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TwoWheelerTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def TypeSpecimen: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TypeSpecimen").asInstanceOf[SvgIconComponent]
+
+inline def TypeSpecimenOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TypeSpecimenOutlined").asInstanceOf[SvgIconComponent]
+
+inline def TypeSpecimenRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TypeSpecimenRounded").asInstanceOf[SvgIconComponent]
+
+inline def TypeSpecimenSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TypeSpecimenSharp").asInstanceOf[SvgIconComponent]
+
+inline def TypeSpecimenTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("TypeSpecimenTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def UTurnLeft: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UTurnLeft").asInstanceOf[SvgIconComponent]
 
 inline def UTurnLeftOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UTurnLeftOutlined").asInstanceOf[SvgIconComponent]
@@ -18494,6 +19654,16 @@ inline def UndoTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyna
 
 inline def UnfoldLess: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldLess").asInstanceOf[SvgIconComponent]
 
+inline def UnfoldLessDouble: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldLessDouble").asInstanceOf[SvgIconComponent]
+
+inline def UnfoldLessDoubleOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldLessDoubleOutlined").asInstanceOf[SvgIconComponent]
+
+inline def UnfoldLessDoubleRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldLessDoubleRounded").asInstanceOf[SvgIconComponent]
+
+inline def UnfoldLessDoubleSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldLessDoubleSharp").asInstanceOf[SvgIconComponent]
+
+inline def UnfoldLessDoubleTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldLessDoubleTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def UnfoldLessOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldLessOutlined").asInstanceOf[SvgIconComponent]
 
 inline def UnfoldLessRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldLessRounded").asInstanceOf[SvgIconComponent]
@@ -18503,6 +19673,16 @@ inline def UnfoldLessSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].select
 inline def UnfoldLessTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldLessTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def UnfoldMore: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldMore").asInstanceOf[SvgIconComponent]
+
+inline def UnfoldMoreDouble: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldMoreDouble").asInstanceOf[SvgIconComponent]
+
+inline def UnfoldMoreDoubleOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldMoreDoubleOutlined").asInstanceOf[SvgIconComponent]
+
+inline def UnfoldMoreDoubleRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldMoreDoubleRounded").asInstanceOf[SvgIconComponent]
+
+inline def UnfoldMoreDoubleSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldMoreDoubleSharp").asInstanceOf[SvgIconComponent]
+
+inline def UnfoldMoreDoubleTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldMoreDoubleTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def UnfoldMoreOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("UnfoldMoreOutlined").asInstanceOf[SvgIconComponent]
 
@@ -18622,6 +19802,26 @@ inline def VaccinesSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDy
 
 inline def VaccinesTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VaccinesTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def VapeFree: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VapeFree").asInstanceOf[SvgIconComponent]
+
+inline def VapeFreeOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VapeFreeOutlined").asInstanceOf[SvgIconComponent]
+
+inline def VapeFreeRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VapeFreeRounded").asInstanceOf[SvgIconComponent]
+
+inline def VapeFreeSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VapeFreeSharp").asInstanceOf[SvgIconComponent]
+
+inline def VapeFreeTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VapeFreeTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def VapingRooms: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VapingRooms").asInstanceOf[SvgIconComponent]
+
+inline def VapingRoomsOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VapingRoomsOutlined").asInstanceOf[SvgIconComponent]
+
+inline def VapingRoomsRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VapingRoomsRounded").asInstanceOf[SvgIconComponent]
+
+inline def VapingRoomsSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VapingRoomsSharp").asInstanceOf[SvgIconComponent]
+
+inline def VapingRoomsTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VapingRoomsTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Verified: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Verified").asInstanceOf[SvgIconComponent]
 
 inline def VerifiedOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerifiedOutlined").asInstanceOf[SvgIconComponent]
@@ -18672,6 +19872,26 @@ inline def VerticalAlignTopSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].
 
 inline def VerticalAlignTopTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalAlignTopTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def VerticalShades: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalShades").asInstanceOf[SvgIconComponent]
+
+inline def VerticalShadesClosed: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalShadesClosed").asInstanceOf[SvgIconComponent]
+
+inline def VerticalShadesClosedOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalShadesClosedOutlined").asInstanceOf[SvgIconComponent]
+
+inline def VerticalShadesClosedRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalShadesClosedRounded").asInstanceOf[SvgIconComponent]
+
+inline def VerticalShadesClosedSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalShadesClosedSharp").asInstanceOf[SvgIconComponent]
+
+inline def VerticalShadesClosedTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalShadesClosedTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def VerticalShadesOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalShadesOutlined").asInstanceOf[SvgIconComponent]
+
+inline def VerticalShadesRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalShadesRounded").asInstanceOf[SvgIconComponent]
+
+inline def VerticalShadesSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalShadesSharp").asInstanceOf[SvgIconComponent]
+
+inline def VerticalShadesTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalShadesTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def VerticalSplit: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalSplit").asInstanceOf[SvgIconComponent]
 
 inline def VerticalSplitOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalSplitOutlined").asInstanceOf[SvgIconComponent]
@@ -18721,6 +19941,16 @@ inline def VideoCameraFrontRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic
 inline def VideoCameraFrontSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VideoCameraFrontSharp").asInstanceOf[SvgIconComponent]
 
 inline def VideoCameraFrontTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VideoCameraFrontTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def VideoChat: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VideoChat").asInstanceOf[SvgIconComponent]
+
+inline def VideoChatOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VideoChatOutlined").asInstanceOf[SvgIconComponent]
+
+inline def VideoChatRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VideoChatRounded").asInstanceOf[SvgIconComponent]
+
+inline def VideoChatSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VideoChatSharp").asInstanceOf[SvgIconComponent]
+
+inline def VideoChatTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VideoChatTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def VideoFile: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VideoFile").asInstanceOf[SvgIconComponent]
 
@@ -19082,6 +20312,16 @@ inline def VoicemailSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectD
 
 inline def VoicemailTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VoicemailTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def Volcano: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Volcano").asInstanceOf[SvgIconComponent]
+
+inline def VolcanoOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VolcanoOutlined").asInstanceOf[SvgIconComponent]
+
+inline def VolcanoRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VolcanoRounded").asInstanceOf[SvgIconComponent]
+
+inline def VolcanoSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VolcanoSharp").asInstanceOf[SvgIconComponent]
+
+inline def VolcanoTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VolcanoTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def VolumeDown: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VolumeDown").asInstanceOf[SvgIconComponent]
 
 inline def VolumeDownOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VolumeDownOutlined").asInstanceOf[SvgIconComponent]
@@ -19171,6 +20411,16 @@ inline def VrpanoRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDy
 inline def VrpanoSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VrpanoSharp").asInstanceOf[SvgIconComponent]
 
 inline def VrpanoTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("VrpanoTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Wallet: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wallet").asInstanceOf[SvgIconComponent]
+
+inline def WalletOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WalletOutlined").asInstanceOf[SvgIconComponent]
+
+inline def WalletRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WalletRounded").asInstanceOf[SvgIconComponent]
+
+inline def WalletSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WalletSharp").asInstanceOf[SvgIconComponent]
+
+inline def WalletTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WalletTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Wallpaper: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wallpaper").asInstanceOf[SvgIconComponent]
 
@@ -19400,6 +20650,16 @@ inline def WebRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynam
 
 inline def WebSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WebSharp").asInstanceOf[SvgIconComponent]
 
+inline def WebStories: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WebStories").asInstanceOf[SvgIconComponent]
+
+inline def WebStoriesOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WebStoriesOutlined").asInstanceOf[SvgIconComponent]
+
+inline def WebStoriesRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WebStoriesRounded").asInstanceOf[SvgIconComponent]
+
+inline def WebStoriesSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WebStoriesSharp").asInstanceOf[SvgIconComponent]
+
+inline def WebStoriesTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WebStoriesTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def WebTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WebTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Webhook: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Webhook").asInstanceOf[SvgIconComponent]
@@ -19433,14 +20693,6 @@ inline def WestSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynami
 inline def WestTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WestTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def WhatsApp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WhatsApp").asInstanceOf[SvgIconComponent]
-
-inline def WhatsappOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WhatsappOutlined").asInstanceOf[SvgIconComponent]
-
-inline def WhatsappRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WhatsappRounded").asInstanceOf[SvgIconComponent]
-
-inline def WhatsappSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WhatsappSharp").asInstanceOf[SvgIconComponent]
-
-inline def WhatsappTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WhatsappTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Whatshot: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Whatshot").asInstanceOf[SvgIconComponent]
 
@@ -19482,7 +20734,57 @@ inline def WidgetsSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDyn
 
 inline def WidgetsTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidgetsTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def WidthFull: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthFull").asInstanceOf[SvgIconComponent]
+
+inline def WidthFullOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthFullOutlined").asInstanceOf[SvgIconComponent]
+
+inline def WidthFullRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthFullRounded").asInstanceOf[SvgIconComponent]
+
+inline def WidthFullSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthFullSharp").asInstanceOf[SvgIconComponent]
+
+inline def WidthFullTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthFullTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def WidthNormal: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthNormal").asInstanceOf[SvgIconComponent]
+
+inline def WidthNormalOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthNormalOutlined").asInstanceOf[SvgIconComponent]
+
+inline def WidthNormalRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthNormalRounded").asInstanceOf[SvgIconComponent]
+
+inline def WidthNormalSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthNormalSharp").asInstanceOf[SvgIconComponent]
+
+inline def WidthNormalTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthNormalTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def WidthWide: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthWide").asInstanceOf[SvgIconComponent]
+
+inline def WidthWideOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthWideOutlined").asInstanceOf[SvgIconComponent]
+
+inline def WidthWideRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthWideRounded").asInstanceOf[SvgIconComponent]
+
+inline def WidthWideSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthWideSharp").asInstanceOf[SvgIconComponent]
+
+inline def WidthWideTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WidthWideTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Wifi: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi").asInstanceOf[SvgIconComponent]
+
+inline def Wifi1Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi1Bar").asInstanceOf[SvgIconComponent]
+
+inline def Wifi1BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi1BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def Wifi1BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi1BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def Wifi1BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi1BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def Wifi1BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi1BarTwoTone").asInstanceOf[SvgIconComponent]
+
+inline def Wifi2Bar: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi2Bar").asInstanceOf[SvgIconComponent]
+
+inline def Wifi2BarOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi2BarOutlined").asInstanceOf[SvgIconComponent]
+
+inline def Wifi2BarRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi2BarRounded").asInstanceOf[SvgIconComponent]
+
+inline def Wifi2BarSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi2BarSharp").asInstanceOf[SvgIconComponent]
+
+inline def Wifi2BarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Wifi2BarTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def WifiCalling: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WifiCalling").asInstanceOf[SvgIconComponent]
 
@@ -19610,6 +20912,16 @@ inline def WifiTetheringTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].s
 
 inline def WifiTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WifiTwoTone").asInstanceOf[SvgIconComponent]
 
+inline def WindPower: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WindPower").asInstanceOf[SvgIconComponent]
+
+inline def WindPowerOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WindPowerOutlined").asInstanceOf[SvgIconComponent]
+
+inline def WindPowerRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WindPowerRounded").asInstanceOf[SvgIconComponent]
+
+inline def WindPowerSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WindPowerSharp").asInstanceOf[SvgIconComponent]
+
+inline def WindPowerTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WindPowerTwoTone").asInstanceOf[SvgIconComponent]
+
 inline def Window: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Window").asInstanceOf[SvgIconComponent]
 
 inline def WindowOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WindowOutlined").asInstanceOf[SvgIconComponent]
@@ -19632,6 +20944,16 @@ inline def WineBarTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectD
 
 inline def Woman: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Woman").asInstanceOf[SvgIconComponent]
 
+inline def Woman2: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Woman2").asInstanceOf[SvgIconComponent]
+
+inline def Woman2Outlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Woman2Outlined").asInstanceOf[SvgIconComponent]
+
+inline def Woman2Rounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Woman2Rounded").asInstanceOf[SvgIconComponent]
+
+inline def Woman2Sharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Woman2Sharp").asInstanceOf[SvgIconComponent]
+
+inline def Woman2TwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Woman2TwoTone").asInstanceOf[SvgIconComponent]
+
 inline def WomanOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WomanOutlined").asInstanceOf[SvgIconComponent]
 
 inline def WomanRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WomanRounded").asInstanceOf[SvgIconComponent]
@@ -19641,6 +20963,16 @@ inline def WomanSharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynam
 inline def WomanTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WomanTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def Work: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Work").asInstanceOf[SvgIconComponent]
+
+inline def WorkHistory: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WorkHistory").asInstanceOf[SvgIconComponent]
+
+inline def WorkHistoryOutlined: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WorkHistoryOutlined").asInstanceOf[SvgIconComponent]
+
+inline def WorkHistoryRounded: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WorkHistoryRounded").asInstanceOf[SvgIconComponent]
+
+inline def WorkHistorySharp: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WorkHistorySharp").asInstanceOf[SvgIconComponent]
+
+inline def WorkHistoryTwoTone: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WorkHistoryTwoTone").asInstanceOf[SvgIconComponent]
 
 inline def WorkOff: SvgIconComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("WorkOff").asInstanceOf[SvgIconComponent]
 

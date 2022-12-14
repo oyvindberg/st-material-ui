@@ -1,17 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.action
-import com.olvind.mui.muiMaterial.muiMaterialStrings.disabled
-import com.olvind.mui.muiMaterial.muiMaterialStrings.error
-import com.olvind.mui.muiMaterial.muiMaterialStrings.info
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.large
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.primary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.secondary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.success
-import com.olvind.mui.muiMaterial.muiMaterialStrings.warning
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import japgolly.scalajs.react.facade.Empty
@@ -43,23 +31,25 @@ trait BaseClassName extends StObject {
   var classes: js.UndefOr[PartialIconClasses] = js.undefined
   
   /**
-    * The color of the component. It supports those theme colors that make sense for this component.
+    * The color of the component.
+    * It supports both default and custom theme colors, which can be added as shown in the
+    * [palette customization guide](https://mui.com/material-ui/customization/palette/#adding-new-colors).
     * @default 'inherit'
     */
   var color: js.UndefOr[
-    inherit | action | disabled | primary | secondary | error | info | success | warning
+    "inherit" | "action" | "disabled" | "primary" | "secondary" | "error" | "info" | "success" | "warning"
   ] = js.undefined
   
   /**
     * The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size.
     * @default 'medium'
     */
-  var fontSize: js.UndefOr[inherit | large | medium | small] = js.undefined
+  var fontSize: js.UndefOr["inherit" | "large" | "medium" | "small"] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
 }
 object BaseClassName {
   
@@ -88,18 +78,20 @@ object BaseClassName {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setColor(value: inherit | action | disabled | primary | secondary | error | info | success | warning): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(
+      value: "inherit" | "action" | "disabled" | "primary" | "secondary" | "error" | "info" | "success" | "warning"
+    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setFontSize(value: inherit | large | medium | small): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: "inherit" | "large" | "medium" | "small"): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -107,9 +99,9 @@ object BaseClassName {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
   }

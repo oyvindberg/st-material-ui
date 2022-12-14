@@ -6,19 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `13` extends StObject {
   
-  var dense: js.UndefOr[Boolean] = js.undefined
+  var defaultComponent: "button"
+  
+  var props: js.Object & Edge
 }
 object `13` {
   
-  inline def apply(): `13` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(props: js.Object & Edge): `13` = {
+    val __obj = js.Dynamic.literal(defaultComponent = "button", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`13`]
   }
   
   extension [Self <: `13`](x: Self) {
     
-    inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+    inline def setDefaultComponent(value: "button"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+    inline def setProps(value: js.Object & Edge): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

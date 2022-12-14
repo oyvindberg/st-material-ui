@@ -23,9 +23,17 @@ trait PartialChipClasses extends StObject {
   
   var clickableColorSecondary: js.UndefOr[String] = js.undefined
   
+  var colorError: js.UndefOr[String] = js.undefined
+  
+  var colorInfo: js.UndefOr[String] = js.undefined
+  
   var colorPrimary: js.UndefOr[String] = js.undefined
   
   var colorSecondary: js.UndefOr[String] = js.undefined
+  
+  var colorSuccess: js.UndefOr[String] = js.undefined
+  
+  var colorWarning: js.UndefOr[String] = js.undefined
   
   var deletable: js.UndefOr[String] = js.undefined
   
@@ -39,6 +47,10 @@ trait PartialChipClasses extends StObject {
   
   var deleteIconColorSecondary: js.UndefOr[String] = js.undefined
   
+  var deleteIconFilledColorPrimary: js.UndefOr[String] = js.undefined
+  
+  var deleteIconFilledColorSecondary: js.UndefOr[String] = js.undefined
+  
   var deleteIconMedium: js.UndefOr[String] = js.undefined
   
   var deleteIconOutlinedColorPrimary: js.UndefOr[String] = js.undefined
@@ -50,6 +62,10 @@ trait PartialChipClasses extends StObject {
   var disabled: js.UndefOr[String] = js.undefined
   
   var filled: js.UndefOr[String] = js.undefined
+  
+  var filledPrimary: js.UndefOr[String] = js.undefined
+  
+  var filledSecondary: js.UndefOr[String] = js.undefined
   
   var focusVisible: js.UndefOr[String] = js.undefined
   
@@ -122,6 +138,14 @@ object PartialChipClasses {
     
     inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
+    inline def setColorError(value: String): Self = StObject.set(x, "colorError", value.asInstanceOf[js.Any])
+    
+    inline def setColorErrorUndefined: Self = StObject.set(x, "colorError", js.undefined)
+    
+    inline def setColorInfo(value: String): Self = StObject.set(x, "colorInfo", value.asInstanceOf[js.Any])
+    
+    inline def setColorInfoUndefined: Self = StObject.set(x, "colorInfo", js.undefined)
+    
     inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
     inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
@@ -129,6 +153,14 @@ object PartialChipClasses {
     inline def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
     inline def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
+    
+    inline def setColorSuccess(value: String): Self = StObject.set(x, "colorSuccess", value.asInstanceOf[js.Any])
+    
+    inline def setColorSuccessUndefined: Self = StObject.set(x, "colorSuccess", js.undefined)
+    
+    inline def setColorWarning(value: String): Self = StObject.set(x, "colorWarning", value.asInstanceOf[js.Any])
+    
+    inline def setColorWarningUndefined: Self = StObject.set(x, "colorWarning", js.undefined)
     
     inline def setDeletable(value: String): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
     
@@ -151,6 +183,14 @@ object PartialChipClasses {
     inline def setDeleteIconColorSecondary(value: String): Self = StObject.set(x, "deleteIconColorSecondary", value.asInstanceOf[js.Any])
     
     inline def setDeleteIconColorSecondaryUndefined: Self = StObject.set(x, "deleteIconColorSecondary", js.undefined)
+    
+    inline def setDeleteIconFilledColorPrimary(value: String): Self = StObject.set(x, "deleteIconFilledColorPrimary", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteIconFilledColorPrimaryUndefined: Self = StObject.set(x, "deleteIconFilledColorPrimary", js.undefined)
+    
+    inline def setDeleteIconFilledColorSecondary(value: String): Self = StObject.set(x, "deleteIconFilledColorSecondary", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteIconFilledColorSecondaryUndefined: Self = StObject.set(x, "deleteIconFilledColorSecondary", js.undefined)
     
     inline def setDeleteIconMedium(value: String): Self = StObject.set(x, "deleteIconMedium", value.asInstanceOf[js.Any])
     
@@ -175,6 +215,14 @@ object PartialChipClasses {
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setFilled(value: String): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
+    
+    inline def setFilledPrimary(value: String): Self = StObject.set(x, "filledPrimary", value.asInstanceOf[js.Any])
+    
+    inline def setFilledPrimaryUndefined: Self = StObject.set(x, "filledPrimary", js.undefined)
+    
+    inline def setFilledSecondary(value: String): Self = StObject.set(x, "filledSecondary", value.asInstanceOf[js.Any])
+    
+    inline def setFilledSecondaryUndefined: Self = StObject.set(x, "filledSecondary", js.undefined)
     
     inline def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     

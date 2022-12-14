@@ -104,6 +104,7 @@ trait DOMAttributes[T] extends StObject {
   // Keyboard Events
   var onKeyDown: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
   
+  /** @deprecated */
   var onKeyPress: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
   
   var onKeyUp: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
@@ -161,6 +162,8 @@ trait DOMAttributes[T] extends StObject {
   var onRateChange: js.UndefOr[ReactEventHandler[T]] = js.undefined
   
   var onReset: js.UndefOr[FormEventHandler[T]] = js.undefined
+  
+  var onResize: js.UndefOr[ReactEventHandler[T]] = js.undefined
   
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[T]] = js.undefined
@@ -467,6 +470,10 @@ object DOMAttributes {
     inline def setOnReset(value: SyntheticEvent[EventTarget & T, Event] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[Event, T] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: SyntheticUIEvent[T] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

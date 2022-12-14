@@ -1,31 +1,35 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.avatarAvatarClassesMod.AvatarClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DefaultPropsStyleOverridesVariants extends StObject {
+trait DefaultPropsStyleOverridesVariants[Theme] extends StObject {
   
   var defaultProps: js.UndefOr[PartialAvatarPropsdiv] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesAvatarClassKey] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[AvatarClassKey, "MuiAvatar", Theme]]
+  ] = js.undefined
   
   var variants: js.UndefOr[js.Array[PropsPartialAvatarPropsdiv]] = js.undefined
 }
 object DefaultPropsStyleOverridesVariants {
   
-  inline def apply(): DefaultPropsStyleOverridesVariants = {
+  inline def apply[Theme](): DefaultPropsStyleOverridesVariants[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[DefaultPropsStyleOverridesVariants]
+    __obj.asInstanceOf[DefaultPropsStyleOverridesVariants[Theme]]
   }
   
-  extension [Self <: DefaultPropsStyleOverridesVariants](x: Self) {
+  extension [Self <: DefaultPropsStyleOverridesVariants[?], Theme](x: Self & DefaultPropsStyleOverridesVariants[Theme]) {
     
     inline def setDefaultProps(value: PartialAvatarPropsdiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesAvatarClassKey): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(value: com.olvind.mui.std.Partial[OverridesStyleRules[AvatarClassKey, "MuiAvatar", Theme]]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     

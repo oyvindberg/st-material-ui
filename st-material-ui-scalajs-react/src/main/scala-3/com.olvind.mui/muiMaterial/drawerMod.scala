@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.drawerClassesMod.DrawerClasses
+import com.olvind.mui.muiMaterial.drawerDrawerClassesMod.DrawerClasses
 import com.olvind.mui.muiMaterial.drawerDrawerMod.DrawerProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

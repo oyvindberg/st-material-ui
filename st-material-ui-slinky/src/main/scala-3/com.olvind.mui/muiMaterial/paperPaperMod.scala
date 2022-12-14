@@ -16,12 +16,12 @@ object paperPaperMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Cards](https://mui.com/components/cards/)
-    * - [Paper](https://mui.com/components/paper/)
+    * - [Card](https://mui.com/material-ui/react-card/)
+    * - [Paper](https://mui.com/material-ui/react-paper/)
     *
     * API:
     *
-    * - [Paper API](https://mui.com/api/paper/)
+    * - [Paper API](https://mui.com/material-ui/api/paper/)
     */
   @JSImport("@mui/material/Paper/Paper", JSImport.Default)
   @js.native

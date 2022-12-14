@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@mui/material.@mui/material/FormGroup/formGroupClasses.FormGroupClasses> */
 trait PartialFormGroupClasses extends StObject {
   
+  var error: js.UndefOr[String] = js.undefined
+  
   var root: js.UndefOr[String] = js.undefined
   
   var row: js.UndefOr[String] = js.undefined
@@ -19,6 +21,10 @@ object PartialFormGroupClasses {
   }
   
   extension [Self <: PartialFormGroupClasses](x: Self) {
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsFormLabelTypeMaplab
-import com.olvind.mui.muiMaterial.formLabelClassesMod.FormLabelClasses
+import com.olvind.mui.muiMaterial.formLabelFormLabelClassesMod.FormLabelClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,13 +17,13 @@ object formLabelMod {
     *
     * Demos:
     *
-    * - [Checkboxes](https://mui.com/components/checkboxes/)
-    * - [Radio Buttons](https://mui.com/components/radio-buttons/)
-    * - [Switches](https://mui.com/components/switches/)
+    * - [Checkbox](https://mui.com/material-ui/react-checkbox/)
+    * - [Radio Group](https://mui.com/material-ui/react-radio-button/)
+    * - [Switch](https://mui.com/material-ui/react-switch/)
     *
     * API:
     *
-    * - [FormLabel API](https://mui.com/api/form-label/)
+    * - [FormLabel API](https://mui.com/material-ui/api/form-label/)
     */
   @JSImport("@mui/material/FormLabel", JSImport.Default)
   @js.native

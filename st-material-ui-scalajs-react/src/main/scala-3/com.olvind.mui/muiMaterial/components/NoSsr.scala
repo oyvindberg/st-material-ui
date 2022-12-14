@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.noSsrNoSsrMod.NoSsrProps
+import com.olvind.mui.muiBase.noSsrNoSsrDottypesMod.NoSsrProps
 import japgolly.scalajs.react.facade.Empty
 import japgolly.scalajs.react.facade.JsNumber
 import japgolly.scalajs.react.facade.React.Element

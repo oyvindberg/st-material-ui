@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.listItemSecondaryActionClassesMod.ListItemSecondaryActionClasses
+import com.olvind.mui.muiMaterial.listItemSecondaryActionListItemSecondaryActionClassesMod.ListItemSecondaryActionClasses
 import com.olvind.mui.muiMaterial.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -18,11 +18,11 @@ object listItemSecondaryActionMod {
     *
     * Demos:
     *
-    * - [Lists](https://mui.com/components/lists/)
+    * - [Lists](https://mui.com/material-ui/react-list/)
     *
     * API:
     *
-    * - [ListItemSecondaryAction API](https://mui.com/api/list-item-secondary-action/)
+    * - [ListItemSecondaryAction API](https://mui.com/material-ui/api/list-item-secondary-action/)
     */
   /* Inlined (props : @mui/material.@mui/material/ListItemSecondaryAction/ListItemSecondaryAction.ListItemSecondaryActionProps): react.react.<global>.JSX.Element & {  muiName :string} */
   object default {

@@ -16,11 +16,11 @@ object breadcrumbsBreadcrumbsMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Breadcrumbs](https://mui.com/components/breadcrumbs/)
+    * - [Breadcrumbs](https://mui.com/material-ui/react-breadcrumbs/)
     *
     * API:
     *
-    * - [Breadcrumbs API](https://mui.com/api/breadcrumbs/)
+    * - [Breadcrumbs API](https://mui.com/material-ui/api/breadcrumbs/)
     */
   @JSImport("@mui/material/Breadcrumbs/Breadcrumbs", JSImport.Default)
   @js.native

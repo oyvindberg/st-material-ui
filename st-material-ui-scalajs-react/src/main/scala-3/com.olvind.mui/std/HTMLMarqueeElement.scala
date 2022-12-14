@@ -1,8 +1,5 @@
 package com.olvind.mui.std
 
-import com.olvind.mui.std.stdStrings.bounce
-import com.olvind.mui.std.stdStrings.finish
-import com.olvind.mui.std.stdStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +10,67 @@ trait HTMLMarqueeElement
   extends StObject
      with HTMLElement {
   
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_finish")
+  def addEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  /* standard dom */
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_bounce")
+  def addEventListener(
+    `type`: "bounce",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_start")
+  def addEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_finish")
+  def addEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_bounce")
+  def addEventListener(
+    `type`: "bounce",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_start")
+  def addEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_bounce")
+  def addEventListener(
+    `type`: "bounce",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_start")
+  def addEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  @scala.annotation.targetName("addEventListener_finish")
+  def addEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: Boolean
+  ): Unit = js.native
   /* standard dom */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
@@ -24,58 +82,6 @@ trait HTMLMarqueeElement
   ): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
-  /* standard dom */
-  @JSName("addEventListener")
-  def addEventListener_bounce(
-    `type`: bounce,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_bounce(
-    `type`: bounce,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_bounce(
-    `type`: bounce,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_start(
-    `type`: start,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_start(
-    `type`: start,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_start(
-    `type`: start,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: Boolean
-  ): Unit = js.native
   
   /** @deprecated */
   /* standard dom */
@@ -114,6 +120,67 @@ trait HTMLMarqueeElement
   var onstart: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
   
   /* standard dom */
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_bounce")
+  def removeEventListener(
+    `type`: "bounce",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_finish")
+  def removeEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_start")
+  def removeEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_start")
+  def removeEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_finish")
+  def removeEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_bounce")
+  def removeEventListener(
+    `type`: "bounce",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_bounce")
+  def removeEventListener(
+    `type`: "bounce",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_start")
+  def removeEventListener(
+    `type`: "start",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  @scala.annotation.targetName("removeEventListener_finish")
+  def removeEventListener(
+    `type`: "finish",
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  /* standard dom */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -124,58 +191,6 @@ trait HTMLMarqueeElement
   ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
-  /* standard dom */
-  @JSName("removeEventListener")
-  def removeEventListener_bounce(
-    `type`: bounce,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_bounce(
-    `type`: bounce,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: org.scalajs.dom.EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_bounce(
-    `type`: bounce,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: org.scalajs.dom.EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_finish(
-    `type`: finish,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_start(
-    `type`: start,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_start(
-    `type`: start,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: org.scalajs.dom.EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_start(
-    `type`: start,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
-    options: Boolean
-  ): Unit = js.native
   
   /** @deprecated */
   /* standard dom */

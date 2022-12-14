@@ -6,23 +6,22 @@ def p(flavour: Flavour): Project = {
       organization := "com.olvind.st-material-ui",
       name := s"st-material-ui-${flavour.id}",
       version := "0.1",
-//      crossScalaVersions := List("2.13.7", "3.1.0"),
-      scalaVersion := "3.1.0",
+      scalaVersion := "3.2.1",
       /* javascript / typescript deps */
       Compile / npmDependencies ++= Seq(
-        "@emotion/react" -> "11.7.1",
-        "@emotion/styled" -> "11.6.0",
-        "@mui/material" -> "5.2.6",
-        "@mui/icons-material" -> "5.2.5",
-        "@types/react" -> "17.0.38",
-        "@types/react-dom" -> "17.0.11",
+        "@emotion/react" -> "11.10.5",
+        "@emotion/styled" -> "11.10.5",
+        "@mui/material" -> "5.11.0",
+        "@mui/icons-material" -> "5.11.0",
+        "@types/react" -> "18.0.26",
+        "@types/react-dom" -> "18.0.9",
         "@types/stylis" -> "4.0.2",
-        "react" -> "17.0.2",
-        "react-dom" -> "17.0.2",
+        "react" -> "18.2.0",
+        "react-dom" -> "18.2.0"
       ),
       // shade into another package
       stOutputPackage := "com.olvind.mui",
-      stSourceGenMode := SourceGenMode.Manual(baseDirectory.value / s"src/main/scala-${scalaVersion.value.takeWhile(_ != '.')}"),
+      stSourceGenMode := SourceGenMode.Manual(baseDirectory.value / s"src/main/scala-3"),
       // focus only on these libraries
       stMinimize := Selection.AllExcept("@mui/material", "@mui/icons-material"),
       /* disabled because it somehow triggers many warnings */

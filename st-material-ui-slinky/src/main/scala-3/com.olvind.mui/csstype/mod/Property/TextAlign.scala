@@ -4,44 +4,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - `com.olvind.mui`.csstype.csstypeStrings.center
-  - `com.olvind.mui`.csstype.csstypeStrings.end
-  - `com.olvind.mui`.csstype.csstypeStrings.justify
-  - `com.olvind.mui`.csstype.csstypeStrings.left
-  - `com.olvind.mui`.csstype.csstypeStrings.`match-parent`
-  - `com.olvind.mui`.csstype.csstypeStrings.right
-  - `com.olvind.mui`.csstype.csstypeStrings.start
-  - `com.olvind.mui`.csstype.csstypeStrings.`-moz-initial`
-  - `com.olvind.mui`.csstype.csstypeStrings.inherit
-  - `com.olvind.mui`.csstype.csstypeStrings.initial
-  - `com.olvind.mui`.csstype.csstypeStrings.revert
-  - `com.olvind.mui`.csstype.csstypeStrings.unset
-*/
-trait TextAlign extends StObject
 object TextAlign {
   
-  inline def `-moz-initial`: com.olvind.mui.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def center: com.olvind.mui.csstype.csstypeStrings.center = "center".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.center]
+  inline def center: "center" = "center".asInstanceOf["center"]
   
-  inline def end: com.olvind.mui.csstype.csstypeStrings.end = "end".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.end]
+  inline def end: "end" = "end".asInstanceOf["end"]
   
-  inline def inherit: com.olvind.mui.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: com.olvind.mui.csstype.csstypeStrings.initial = "initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def justify: com.olvind.mui.csstype.csstypeStrings.justify = "justify".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.justify]
+  inline def justify: "justify" = "justify".asInstanceOf["justify"]
   
-  inline def left: com.olvind.mui.csstype.csstypeStrings.left = "left".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.left]
+  inline def left: "left" = "left".asInstanceOf["left"]
   
-  inline def `match-parent`: com.olvind.mui.csstype.csstypeStrings.`match-parent` = "match-parent".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`match-parent`]
+  inline def `match-parent`: "match-parent" = "match-parent".asInstanceOf["match-parent"]
   
-  inline def revert: com.olvind.mui.csstype.csstypeStrings.revert = "revert".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def right: com.olvind.mui.csstype.csstypeStrings.right = "right".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.right]
+  inline def right: "right" = "right".asInstanceOf["right"]
   
-  inline def start: com.olvind.mui.csstype.csstypeStrings.start = "start".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.start]
+  inline def start: "start" = "start".asInstanceOf["start"]
   
-  inline def unset: com.olvind.mui.csstype.csstypeStrings.unset = "unset".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
 }

@@ -7,51 +7,7 @@ import com.olvind.mui.react.mod.Booleanish
 import com.olvind.mui.react.mod.CSSProperties
 import com.olvind.mui.react.mod.DetailedHTMLProps
 import com.olvind.mui.react.mod.MeterHTMLAttributes
-import com.olvind.mui.react.reactStrings.`additions removals`
-import com.olvind.mui.react.reactStrings.`additions text`
-import com.olvind.mui.react.reactStrings.`inline`
-import com.olvind.mui.react.reactStrings.`removals additions`
-import com.olvind.mui.react.reactStrings.`removals text`
-import com.olvind.mui.react.reactStrings.`text additions`
-import com.olvind.mui.react.reactStrings.`text removals`
-import com.olvind.mui.react.reactStrings.additions
-import com.olvind.mui.react.reactStrings.all
-import com.olvind.mui.react.reactStrings.ascending
-import com.olvind.mui.react.reactStrings.assertive
-import com.olvind.mui.react.reactStrings.both
-import com.olvind.mui.react.reactStrings.copy
-import com.olvind.mui.react.reactStrings.date
-import com.olvind.mui.react.reactStrings.decimal
-import com.olvind.mui.react.reactStrings.descending
-import com.olvind.mui.react.reactStrings.email
-import com.olvind.mui.react.reactStrings.execute
-import com.olvind.mui.react.reactStrings.grammar
-import com.olvind.mui.react.reactStrings.grid
-import com.olvind.mui.react.reactStrings.horizontal
-import com.olvind.mui.react.reactStrings.inherit
-import com.olvind.mui.react.reactStrings.list
-import com.olvind.mui.react.reactStrings.listbox
-import com.olvind.mui.react.reactStrings.location
-import com.olvind.mui.react.reactStrings.mixed
-import com.olvind.mui.react.reactStrings.move
-import com.olvind.mui.react.reactStrings.no
-import com.olvind.mui.react.reactStrings.none
-import com.olvind.mui.react.reactStrings.numeric
-import com.olvind.mui.react.reactStrings.off
-import com.olvind.mui.react.reactStrings.on
-import com.olvind.mui.react.reactStrings.other
-import com.olvind.mui.react.reactStrings.page
-import com.olvind.mui.react.reactStrings.polite
-import com.olvind.mui.react.reactStrings.popup
-import com.olvind.mui.react.reactStrings.removals
-import com.olvind.mui.react.reactStrings.search
-import com.olvind.mui.react.reactStrings.spelling
-import com.olvind.mui.react.reactStrings.step
-import com.olvind.mui.react.reactStrings.tel
-import com.olvind.mui.react.reactStrings.tree
-import com.olvind.mui.react.reactStrings.url
-import com.olvind.mui.react.reactStrings.vertical
-import com.olvind.mui.react.reactStrings.yes
+import com.olvind.mui.std.HTMLMeterElement
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactAnimationEventFrom
 import japgolly.scalajs.react.ReactClipboardEventFrom
@@ -67,7 +23,6 @@ import japgolly.scalajs.react.ReactTransitionEventFrom
 import japgolly.scalajs.react.ReactUIEventFrom
 import japgolly.scalajs.react.ReactWheelEventFrom
 import org.scalajs.dom.Element
-import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,7 +32,7 @@ object meter {
   @scala.inline
   open class Builder (val args: js.Array[Any])
     extends AnyVal
-       with StBuildingComponent[HTMLElement] {
+       with StBuildingComponent[HTMLMeterElement] {
     
     inline def about(value: String): this.type = set("about", value.asInstanceOf[js.Any])
     
@@ -87,11 +42,11 @@ object meter {
     
     inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
     
-    inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `aria-autocomplete`(value: "none" | "inline" | "list" | "both"): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
     
-    inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+    inline def `aria-checked`(value: Boolean | "mixed"): this.type = set("aria-checked", value.asInstanceOf[js.Any])
     
     inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
     
@@ -101,7 +56,7 @@ object meter {
     
     inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
     
-    inline def `aria-current`(value: Boolean | page | step | location | date | com.olvind.mui.react.reactStrings.time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+    inline def `aria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): this.type = set("aria-current", value.asInstanceOf[js.Any])
     
     inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
     
@@ -109,7 +64,7 @@ object meter {
     
     inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
     
-    inline def `aria-dropeffect`(value: none | copy | execute | com.olvind.mui.react.reactStrings.link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `aria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
     
@@ -119,13 +74,11 @@ object meter {
     
     inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
     
-    inline def `aria-haspopup`(
-      value: Boolean | com.olvind.mui.react.reactStrings.menu | listbox | tree | grid | com.olvind.mui.react.reactStrings.dialog
-    ): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `aria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
     
-    inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+    inline def `aria-invalid`(value: Boolean | "grammar" | "spelling"): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
     
     inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
     
@@ -135,7 +88,7 @@ object meter {
     
     inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
     
-    inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+    inline def `aria-live`(value: "off" | "assertive" | "polite"): this.type = set("aria-live", value.asInstanceOf[js.Any])
     
     inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
     
@@ -143,7 +96,7 @@ object meter {
     
     inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
     
-    inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+    inline def `aria-orientation`(value: "horizontal" | "vertical"): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
     
     inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
     
@@ -151,12 +104,12 @@ object meter {
     
     inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
     
-    inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+    inline def `aria-pressed`(value: Boolean | "mixed"): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
     
     inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `aria-relevant`(
-      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | com.olvind.mui.react.reactStrings.text | (`text additions`) | (`text removals`)
+      value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
     ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
@@ -173,7 +126,7 @@ object meter {
     
     inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
     
-    inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+    inline def `aria-sort`(value: "none" | "ascending" | "descending" | "other"): this.type = set("aria-sort", value.asInstanceOf[js.Any])
     
     inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
     
@@ -193,7 +146,7 @@ object meter {
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
     
-    inline def contentEditable(value: Booleanish | inherit): this.type = set("contentEditable", value.asInstanceOf[js.Any])
+    inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
     inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
     
@@ -221,9 +174,7 @@ object meter {
     
     inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
     
-    inline def inputMode(
-      value: none | com.olvind.mui.react.reactStrings.text | tel | url | email | numeric | decimal | search
-    ): this.type = set("inputMode", value.asInstanceOf[js.Any])
+    inline def inputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): this.type = set("inputMode", value.asInstanceOf[js.Any])
     
     inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
     
@@ -245,163 +196,167 @@ object meter {
     
     inline def min(value: Double | String): this.type = set("min", value.asInstanceOf[js.Any])
     
-    inline def onAbort(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def nonce(value: String): this.type = set("nonce", value.asInstanceOf[js.Any])
     
-    inline def onAnimationEnd(value: ReactAnimationEventFrom[HTMLElement & Element] => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onAbort(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onAnimationIteration(value: ReactAnimationEventFrom[HTMLElement & Element] => Callback): this.type = set("onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onAnimationEnd(value: ReactAnimationEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onAnimationStart(value: ReactAnimationEventFrom[HTMLElement & Element] => Callback): this.type = set("onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onAnimationIteration(value: ReactAnimationEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onAuxClick(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onAnimationStart(value: ReactAnimationEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onBeforeInput(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onAuxClick(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onBlur(value: ReactFocusEventFrom[HTMLElement & Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onBeforeInput(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onCanPlay(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onBlur(value: ReactFocusEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onCanPlayThrough(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCanPlay(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onChange(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCanPlayThrough(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onClick(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onChange(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onCompositionEnd(value: ReactCompositionEventFrom[HTMLElement & Element] => Callback): this.type = set("onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onClick(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onCompositionStart(value: ReactCompositionEventFrom[HTMLElement & Element] => Callback): this.type = set("onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCompositionEnd(value: ReactCompositionEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onCompositionUpdate(value: ReactCompositionEventFrom[HTMLElement & Element] => Callback): this.type = set("onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCompositionStart(value: ReactCompositionEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onContextMenu(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCompositionUpdate(value: ReactCompositionEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onCopy(value: ReactClipboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onContextMenu(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onCut(value: ReactClipboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCopy(value: ReactClipboardEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onDoubleClick(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCut(value: ReactClipboardEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onDrag(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDoubleClick(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onDragEnd(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDrag(value: ReactDragEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onDragEnter(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragEnd(value: ReactDragEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onDragExit(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragEnter(value: ReactDragEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onDragLeave(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragExit(value: ReactDragEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onDragOver(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragLeave(value: ReactDragEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onDragStart(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragOver(value: ReactDragEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onDrop(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragStart(value: ReactDragEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onDurationChange(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDrop(value: ReactDragEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onEmptied(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDurationChange(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onEncrypted(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onEmptied(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onEnded(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onEnded", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onEncrypted(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onError(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onError", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onEnded(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onEnded", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onFocus(value: ReactFocusEventFrom[HTMLElement & Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onError(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onError", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onInput(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onFocus(value: ReactFocusEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onInvalid(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onInput(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onKeyDown(value: ReactKeyboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onInvalid(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onKeyPress(value: ReactKeyboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onKeyDown(value: ReactKeyboardEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onKeyUp(value: ReactKeyboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onKeyPress(value: ReactKeyboardEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onLoad(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onLoad", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onKeyUp(value: ReactKeyboardEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onLoadStart(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onLoad(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onLoad", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onLoadedData(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onLoadStart(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onLoadedMetadata(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onLoadedData(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onMouseDown(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onLoadedMetadata(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onMouseEnter(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseDown(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onMouseLeave(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseEnter(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onMouseMove(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseLeave(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onMouseOut(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseMove(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onMouseOver(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseOut(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onMouseUp(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseOver(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPaste(value: ReactClipboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseUp(value: ReactMouseEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPause(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onPause", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPaste(value: ReactClipboardEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPlay(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPause(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPause", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPlaying(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPlay(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPointerCancel(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPlaying(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPointerDown(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerCancel(value: ReactPointerEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPointerEnter(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerDown(value: ReactPointerEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPointerLeave(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerEnter(value: ReactPointerEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPointerMove(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerLeave(value: ReactPointerEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPointerOut(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerMove(value: ReactPointerEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPointerOver(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerOut(value: ReactPointerEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onPointerUp(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerOver(value: ReactPointerEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onProgress(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onProgress", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerUp(value: ReactPointerEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onRateChange(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onProgress(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onProgress", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onReset(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onRateChange(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onScroll(value: ReactUIEventFrom[HTMLElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onReset(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onSeeked(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onResize(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onSeeking(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onScroll(value: ReactUIEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onSelect(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onSeeked(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onStalled(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onStalled", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onSeeking(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onSubmit(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onSelect(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onSuspend(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onStalled(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onStalled", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onTimeUpdate(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onSubmit(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onTouchCancel(value: ReactTouchEventFrom[HTMLElement & Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onSuspend(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onTouchEnd(value: ReactTouchEventFrom[HTMLElement & Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTimeUpdate(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onTouchMove(value: ReactTouchEventFrom[HTMLElement & Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTouchCancel(value: ReactTouchEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onTouchStart(value: ReactTouchEventFrom[HTMLElement & Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTouchEnd(value: ReactTouchEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onTransitionEnd(value: ReactTransitionEventFrom[HTMLElement & Element] => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTouchMove(value: ReactTouchEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onVolumeChange(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTouchStart(value: ReactTouchEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onWaiting(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTransitionEnd(value: ReactTransitionEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
-    inline def onWheel(value: ReactWheelEventFrom[HTMLElement & Element] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onVolumeChange(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
+    
+    inline def onWaiting(value: ReactEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
+    
+    inline def onWheel(value: ReactWheelEventFrom[HTMLMeterElement & Element] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLMeterElement & Element]) => value(t0).runNow()))
     
     inline def optimum(value: Double): this.type = set("optimum", value.asInstanceOf[js.Any])
     
@@ -435,11 +390,11 @@ object meter {
     
     inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
     
-    inline def translate(value: yes | no): this.type = set("translate", value.asInstanceOf[js.Any])
+    inline def translate(value: "yes" | "no"): this.type = set("translate", value.asInstanceOf[js.Any])
     
     inline def typeof(value: String): this.type = set("typeof", value.asInstanceOf[js.Any])
     
-    inline def unselectable(value: on | off): this.type = set("unselectable", value.asInstanceOf[js.Any])
+    inline def unselectable(value: "on" | "off"): this.type = set("unselectable", value.asInstanceOf[js.Any])
     
     inline def value(value: String | js.Array[String] | Double): this.type = set("value", value.asInstanceOf[js.Any])
     
@@ -452,5 +407,5 @@ object meter {
   
   implicit def make(companion: meter.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
-  def withProps(p: DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps(p: DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

@@ -13,12 +13,12 @@ object swipeableDrawerMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Drawers](https://mui.com/components/drawers/)
+    * - [Drawer](https://mui.com/material-ui/react-drawer/)
     *
     * API:
     *
-    * - [SwipeableDrawer API](https://mui.com/api/swipeable-drawer/)
-    * - inherits [Drawer API](https://mui.com/api/drawer/)
+    * - [SwipeableDrawer API](https://mui.com/material-ui/api/swipeable-drawer/)
+    * - inherits [Drawer API](https://mui.com/material-ui/api/drawer/)
     */
   @JSImport("@mui/material/SwipeableDrawer", JSImport.Default)
   @js.native

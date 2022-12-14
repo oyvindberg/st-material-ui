@@ -1,66 +1,7 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.muiBaseStrings.`additions removals`
-import com.olvind.mui.muiBase.muiBaseStrings.`additions text`
-import com.olvind.mui.muiBase.muiBaseStrings.`inline`
-import com.olvind.mui.muiBase.muiBaseStrings.`removals additions`
-import com.olvind.mui.muiBase.muiBaseStrings.`removals text`
-import com.olvind.mui.muiBase.muiBaseStrings.`text additions`
-import com.olvind.mui.muiBase.muiBaseStrings.`text removals`
-import com.olvind.mui.muiBase.muiBaseStrings.additions
-import com.olvind.mui.muiBase.muiBaseStrings.all
-import com.olvind.mui.muiBase.muiBaseStrings.ascending
-import com.olvind.mui.muiBase.muiBaseStrings.assertive
-import com.olvind.mui.muiBase.muiBaseStrings.baseline
-import com.olvind.mui.muiBase.muiBaseStrings.both
-import com.olvind.mui.muiBase.muiBaseStrings.bottom
-import com.olvind.mui.muiBase.muiBaseStrings.center
-import com.olvind.mui.muiBase.muiBaseStrings.char
-import com.olvind.mui.muiBase.muiBaseStrings.copy
-import com.olvind.mui.muiBase.muiBaseStrings.date
-import com.olvind.mui.muiBase.muiBaseStrings.decimal
-import com.olvind.mui.muiBase.muiBaseStrings.descending
-import com.olvind.mui.muiBase.muiBaseStrings.dialog
-import com.olvind.mui.muiBase.muiBaseStrings.email
-import com.olvind.mui.muiBase.muiBaseStrings.execute
-import com.olvind.mui.muiBase.muiBaseStrings.grammar
-import com.olvind.mui.muiBase.muiBaseStrings.grid
-import com.olvind.mui.muiBase.muiBaseStrings.horizontal
-import com.olvind.mui.muiBase.muiBaseStrings.inherit
-import com.olvind.mui.muiBase.muiBaseStrings.justify
-import com.olvind.mui.muiBase.muiBaseStrings.left
-import com.olvind.mui.muiBase.muiBaseStrings.link
-import com.olvind.mui.muiBase.muiBaseStrings.list
-import com.olvind.mui.muiBase.muiBaseStrings.listbox
-import com.olvind.mui.muiBase.muiBaseStrings.location
-import com.olvind.mui.muiBase.muiBaseStrings.menu
-import com.olvind.mui.muiBase.muiBaseStrings.middle
-import com.olvind.mui.muiBase.muiBaseStrings.mixed
-import com.olvind.mui.muiBase.muiBaseStrings.move
-import com.olvind.mui.muiBase.muiBaseStrings.no
-import com.olvind.mui.muiBase.muiBaseStrings.none
-import com.olvind.mui.muiBase.muiBaseStrings.numeric
-import com.olvind.mui.muiBase.muiBaseStrings.off
-import com.olvind.mui.muiBase.muiBaseStrings.on
-import com.olvind.mui.muiBase.muiBaseStrings.other
-import com.olvind.mui.muiBase.muiBaseStrings.page
-import com.olvind.mui.muiBase.muiBaseStrings.polite
-import com.olvind.mui.muiBase.muiBaseStrings.popup
-import com.olvind.mui.muiBase.muiBaseStrings.removals
-import com.olvind.mui.muiBase.muiBaseStrings.right
-import com.olvind.mui.muiBase.muiBaseStrings.search
-import com.olvind.mui.muiBase.muiBaseStrings.spelling
-import com.olvind.mui.muiBase.muiBaseStrings.step
-import com.olvind.mui.muiBase.muiBaseStrings.tel
-import com.olvind.mui.muiBase.muiBaseStrings.text
-import com.olvind.mui.muiBase.muiBaseStrings.time
-import com.olvind.mui.muiBase.muiBaseStrings.top
-import com.olvind.mui.muiBase.muiBaseStrings.tree
-import com.olvind.mui.muiBase.muiBaseStrings.url
-import com.olvind.mui.muiBase.muiBaseStrings.vertical
-import com.olvind.mui.muiBase.muiBaseStrings.yes
-import com.olvind.mui.muiBase.tablePaginationUnstyledPropsMod.ItemAriaLabelType
-import com.olvind.mui.muiBase.tablePaginationUnstyledPropsMod.LabelDisplayedRowsArgs
+import com.olvind.mui.muiBase.tablePaginationUnstyledTablePaginationUnstyledDottypesMod.ItemAriaLabelType
+import com.olvind.mui.muiBase.tablePaginationUnstyledTablePaginationUnstyledDottypesMod.LabelDisplayedRowsArgs
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -92,7 +33,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @mui/types.@mui/types.DefaultComponentProps<@mui/base.@mui/base/TablePaginationUnstyled/TablePaginationUnstyledProps.TablePaginationUnstyledTypeMap<{}, 'td'>> */
+/* Inlined @mui/types.@mui/types.DefaultComponentProps<@mui/base.@mui/base/TablePaginationUnstyled/TablePaginationUnstyled.types.TablePaginationUnstyledTypeMap<{}, 'td'>> */
 @js.native
 trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
@@ -102,17 +43,17 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var accessKey: js.UndefOr[String] = js.native
   
-  var align: js.UndefOr[left | center | right | justify | char] = js.native
+  var align: js.UndefOr["left" | "center" | "right" | "justify" | "char"] = js.native
   
   var `aria-activedescendant`: js.UndefOr[String] = js.native
   
   var `aria-atomic`: js.UndefOr[Booleanish] = js.native
   
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.native
   
   var `aria-busy`: js.UndefOr[Booleanish] = js.native
   
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.native
   
   var `aria-colcount`: js.UndefOr[Double] = js.native
   
@@ -122,7 +63,7 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var `aria-controls`: js.UndefOr[String] = js.native
   
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+  var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.native
   
   var `aria-describedby`: js.UndefOr[String] = js.native
   
@@ -130,7 +71,7 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var `aria-disabled`: js.UndefOr[Booleanish] = js.native
   
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+  var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.native
   
   var `aria-errormessage`: js.UndefOr[String] = js.native
   
@@ -140,11 +81,11 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var `aria-grabbed`: js.UndefOr[Booleanish] = js.native
   
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.native
   
   var `aria-hidden`: js.UndefOr[Booleanish] = js.native
   
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+  var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.native
   
   var `aria-keyshortcuts`: js.UndefOr[String] = js.native
   
@@ -154,7 +95,7 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var `aria-level`: js.UndefOr[Double] = js.native
   
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+  var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.native
   
   var `aria-modal`: js.UndefOr[Booleanish] = js.native
   
@@ -162,7 +103,7 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var `aria-multiselectable`: js.UndefOr[Booleanish] = js.native
   
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+  var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.native
   
   var `aria-owns`: js.UndefOr[String] = js.native
   
@@ -170,12 +111,12 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var `aria-posinset`: js.UndefOr[Double] = js.native
   
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.native
   
   var `aria-readonly`: js.UndefOr[Booleanish] = js.native
   
   var `aria-relevant`: js.UndefOr[
-    additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+    "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
   ] = js.native
   
   var `aria-required`: js.UndefOr[Booleanish] = js.native
@@ -192,7 +133,7 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var `aria-setsize`: js.UndefOr[Double] = js.native
   
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+  var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.native
   
   var `aria-valuemax`: js.UndefOr[Double] = js.native
   
@@ -224,20 +165,7 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
-  /**
-    * The components used for each slot inside the TablePagination.
-    * Either a string to use a HTML element or a component.
-    * @default {}
-    */
-  var components: js.UndefOr[Actions] = js.native
-  
-  /**
-    * The props used for each slot inside the TablePagination.
-    * @default {}
-    */
-  var componentsProps: js.UndefOr[DisplayedRows] = js.native
-  
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+  var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.native
   
   var contextMenu: js.UndefOr[String] = js.native
   
@@ -264,7 +192,7 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
     * Accepts a function which returns a string value that provides a user-friendly name for the current page.
     * This is important for screen reader users.
     *
-    * For localization purposes, you can use the provided [translations](/guides/localization/).
+    * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
     * @param {string} type The link or button type to format ('first' | 'last' | 'next' | 'previous').
     * @returns {string}
     * @default function defaultGetAriaLabel(type: ItemAriaLabelType) {
@@ -283,7 +211,7 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var inlist: js.UndefOr[Any] = js.native
   
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.native
   
   var is: js.UndefOr[String] = js.native
   
@@ -303,7 +231,7 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
     * Customize the displayed rows label. Invoked with a `{ from, to, count, page }`
     * object.
     *
-    * For localization purposes, you can use the provided [translations](/guides/localization/).
+    * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
     * @default function defaultLabelDisplayedRows({ from, to, count }: LabelDisplayedRowsArgs) {
     *   return `${from}–${to} of ${count !== -1 ? count : `more than ${to}`}`;
     * }
@@ -311,14 +239,21 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   var labelDisplayedRows: js.UndefOr[js.Function1[/* paginationInfo */ LabelDisplayedRowsArgs, ReactElement]] = js.native
   
   /**
+    * Id of the label element within the pagination.
+    */
+  var labelId: js.UndefOr[String] = js.native
+  
+  /**
     * Customize the rows per page label.
     *
-    * For localization purposes, you can use the provided [translations](/guides/localization/).
+    * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
     * @default 'Rows per page:'
     */
   var labelRowsPerPage: js.UndefOr[ReactElement] = js.native
   
   var lang: js.UndefOr[String] = js.native
+  
+  var nonce: js.UndefOr[String] = js.native
   
   var onAbort: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
   
@@ -455,6 +390,8 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLTableDataCellElement]] = js.native
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement]] = js.native
+  
   /**
     * Callback fired when the number of rows per page is changed.
     *
@@ -530,13 +467,31 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
     * Use -1 for the value with a custom label to show all the rows.
     * @default [10, 25, 50, 100]
     */
-  var rowsPerPageOptions: js.UndefOr[js.Array[Double | Label]] = js.native
+  var rowsPerPageOptions: js.UndefOr[js.Array[Double | Value]] = js.native
   
   var scope: js.UndefOr[String] = js.native
   
   var security: js.UndefOr[String] = js.native
   
+  /**
+    * Id of the select element within the pagination.
+    */
+  var selectId: js.UndefOr[String] = js.native
+  
   var slot: js.UndefOr[String] = js.native
+  
+  /**
+    * The props used for each slot inside the TablePagination.
+    * @default {}
+    */
+  var slotProps: js.UndefOr[DisplayedRows] = js.native
+  
+  /**
+    * The components used for each slot inside the TablePagination.
+    * Either a string to use a HTML element or a component.
+    * @default {}
+    */
+  var slots: js.UndefOr[Actions] = js.native
   
   var spellCheck: js.UndefOr[Booleanish] = js.native
   
@@ -550,13 +505,13 @@ trait DefaultComponentPropsTablePaginationUnst extends StObject {
   
   var title: js.UndefOr[String] = js.native
   
-  var translate: js.UndefOr[yes | no] = js.native
+  var translate: js.UndefOr["yes" | "no"] = js.native
   
   var typeof: js.UndefOr[String] = js.native
   
-  var unselectable: js.UndefOr[on | off] = js.native
+  var unselectable: js.UndefOr["on" | "off"] = js.native
   
-  var valign: js.UndefOr[top | middle | bottom | baseline] = js.native
+  var valign: js.UndefOr["top" | "middle" | "bottom" | "baseline"] = js.native
   
   var vocab: js.UndefOr[String] = js.native
   

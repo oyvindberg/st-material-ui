@@ -41,6 +41,8 @@ trait PartialInputBaseClasses extends StObject {
   
   var multiline: js.UndefOr[String] = js.undefined
   
+  var readOnly: js.UndefOr[String] = js.undefined
+  
   var root: js.UndefOr[String] = js.undefined
   
   var sizeSmall: js.UndefOr[String] = js.undefined
@@ -121,6 +123,10 @@ object PartialInputBaseClasses {
     inline def setMultiline(value: String): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
     inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+    
+    inline def setReadOnly(value: String): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

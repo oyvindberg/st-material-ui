@@ -1,38 +1,42 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.stepperStepperMod.StepperClasskey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `130` extends StObject {
+trait `130`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialTablePropstable] = js.undefined
+  var defaultProps: js.UndefOr[PartialStepperPropsdiv] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesTableClassKey] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[StepperClasskey, "MuiStepper", Theme]]
+  ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialTablePropstable]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialStepperPropsdiv]] = js.undefined
 }
 object `130` {
   
-  inline def apply(): `130` = {
+  inline def apply[Theme](): `130`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`130`]
+    __obj.asInstanceOf[`130`[Theme]]
   }
   
-  extension [Self <: `130`](x: Self) {
+  extension [Self <: `130`[?], Theme](x: Self & `130`[Theme]) {
     
-    inline def setDefaultProps(value: PartialTablePropstable): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialStepperPropsdiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesTableClassKey): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(value: com.olvind.mui.std.Partial[OverridesStyleRules[StepperClasskey, "MuiStepper", Theme]]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialTablePropstable]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialStepperPropsdiv]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialTablePropstable*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialStepperPropsdiv*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

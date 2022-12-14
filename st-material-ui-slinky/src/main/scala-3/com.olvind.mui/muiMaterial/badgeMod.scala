@@ -1,29 +1,32 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBadgeTypeMapspan
+import com.olvind.mui.muiMaterial.badgeBadgeClassesMod.BadgeClasses
 import com.olvind.mui.muiMaterial.badgeBadgeMod.BadgeBadgeProps
-import com.olvind.mui.muiMaterial.badgeBadgeMod.BadgeClasses_
 import com.olvind.mui.muiMaterial.badgeBadgeMod.BadgeRootProps
 import com.olvind.mui.react.mod.global.JSX.Element
-import org.scalablytyped.runtime.Shortcut
 import slinky.core.ReactComponentClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object badgeMod extends Shortcut {
+object badgeMod {
+  
+  @JSImport("@mui/material/Badge", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     *
     * Demos:
     *
-    * - [Avatars](https://mui.com/components/avatars/)
-    * - [Badges](https://mui.com/components/badges/)
+    * - [Avatar](https://mui.com/material-ui/react-avatar/)
+    * - [Badge](https://mui.com/material-ui/react-badge/)
     *
     * API:
     *
-    * - [Badge API](https://mui.com/api/badge/)
-    * - inherits [BadgeUnstyled API](https://mui.com/api/badge-unstyled/)
+    * - [Badge API](https://mui.com/material-ui/api/badge/)
+    * - inherits [BadgeUnstyled API](https://mui.com/base/api/badge-unstyled/)
     */
   @JSImport("@mui/material/Badge", JSImport.Default)
   @js.native
@@ -39,10 +42,7 @@ object badgeMod extends Shortcut {
   
   @JSImport("@mui/material/Badge", "badgeClasses")
   @js.native
-  val badgeClasses: BadgeClasses_ = js.native
+  val badgeClasses: BadgeClasses = js.native
   
-  type _To = js.Function1[/* props */ DefaultComponentPropsBadgeTypeMapspan, Element]
-  
-  /* This means you don't have to write `default`, but can instead just say `badgeMod.foo` */
-  override def _to: js.Function1[/* props */ DefaultComponentPropsBadgeTypeMapspan, Element] = default
+  inline def getBadgeUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBadgeUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
 }

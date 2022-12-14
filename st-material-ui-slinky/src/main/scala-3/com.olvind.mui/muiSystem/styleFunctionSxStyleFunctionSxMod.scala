@@ -537,7 +537,6 @@ import com.olvind.mui.csstype.mod.Property.WordWrap
 import com.olvind.mui.csstype.mod.Property.WritingMode
 import com.olvind.mui.csstype.mod.Property.ZIndex
 import com.olvind.mui.csstype.mod.Property.Zoom
-import com.olvind.mui.muiSystem.muiSystemNumbers.`0`
 import com.olvind.mui.std.NonNullable
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
@@ -547,9 +546,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object styleFunctionSxStyleFunctionSxMod {
   
   /* Inlined {[ K in csstype.csstype.Pseudos ]:? (theme : Theme): @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.SystemStyleObject<Theme> | @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.SystemStyleObject<Theme>} */
-  trait CSSPseudoSelectorProps[Theme /* <: js.Object */]
-    extends StObject
-       with _SystemStyleObject[Theme] {
+  trait CSSPseudoSelectorProps[Theme /* <: js.Object */] extends StObject {
     
     @JSName(":-khtml-any-link")
     var `Colon-khtml-any-link`: js.UndefOr[
@@ -2187,19 +2184,31 @@ object styleFunctionSxStyleFunctionSxMod {
     }
   }
   
-  trait CSSSelectorObject[Theme /* <: js.Object */]
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CSSSelectorObjectOrCssVariables = {[cssSelectorOrVariable: string] : (theme : Theme): @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.SystemStyleObject<Theme> | string | number | @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.SystemStyleObject<Theme> | @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.CssVariableType}
+  }}}
+  to avoid circular code involving: 
+  - @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.CSSSelectorObject
+  - @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.CSSSelectorObjectOrCssVariables
+  - @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.SxProps
+  - @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.SystemStyleObject
+  */
+  trait CSSSelectorObjectOrCssVariables[Theme /* <: js.Object */]
     extends StObject
-       with /* cssSelector */ StringDictionary[
-          (js.Function1[/* theme */ Theme, SystemStyleObject[Theme]]) | SystemStyleObject[Theme]
+       with /* cssSelectorOrVariable */ StringDictionary[
+          (js.Function1[/* theme */ Theme, SystemStyleObject[Theme] | String | Double]) | SystemStyleObject[Theme] | CssVariableType
         ]
-       with _SystemStyleObject[Theme]
-  object CSSSelectorObject {
+  object CSSSelectorObjectOrCssVariables {
     
-    inline def apply[Theme /* <: js.Object */](): CSSSelectorObject[Theme] = {
+    inline def apply[Theme /* <: js.Object */](): CSSSelectorObjectOrCssVariables[Theme] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CSSSelectorObject[Theme]]
+      __obj.asInstanceOf[CSSSelectorObjectOrCssVariables[Theme]]
     }
   }
+  
+  type CssVariableType = String | Double
   
   type ResponsiveStyleValue[T] = T | (js.Array[T | Null]) | (StringDictionary[T | Null])
   
@@ -2208,9 +2217,7 @@ object styleFunctionSxStyleFunctionSxMod {
   ])
   
   /* Inlined {[ K in keyof @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.AllSystemCSSProperties ]: @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.ResponsiveStyleValue<@mui/system.@mui/system/styleFunctionSx/styleFunctionSx.AllSystemCSSProperties[K]> | (theme : Theme): @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.ResponsiveStyleValue<@mui/system.@mui/system/styleFunctionSx/styleFunctionSx.AllSystemCSSProperties[K]> | @mui/system.@mui/system/styleFunctionSx/styleFunctionSx.SystemStyleObject<Theme>} */
-  trait SystemCssProperties[Theme /* <: js.Object */]
-    extends StObject
-       with _SystemStyleObject[Theme] {
+  trait SystemCssProperties[Theme /* <: js.Object */] extends StObject {
     
     var KhtmlBoxAlign: js.UndefOr[
         (ResponsiveStyleValue[js.UndefOr[BoxAlign | js.Array[NonNullable[js.UndefOr[BoxAlign]]]]]) | (js.Function1[
@@ -5761,10 +5768,7 @@ object styleFunctionSxStyleFunctionSxMod {
       ] = js.undefined
     
     var border: js.UndefOr[
-        (ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]) | (js.Function1[
-          /* theme */ Theme, 
-          ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]
-        ]) | SystemStyleObject[Theme]
+        (ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]]) | SystemStyleObject[Theme]
       ] = js.undefined
     
     var borderBlock: js.UndefOr[
@@ -12292,10 +12296,7 @@ object styleFunctionSxStyleFunctionSxMod {
       ): Self = StObject.set(x, "blockSize", js.Array(value*))
       
       inline def setBorder(
-        value: (ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]) | (js.Function1[
-              /* theme */ Theme, 
-              ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]
-            ]) | SystemStyleObject[Theme]
+        value: (ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]]) | SystemStyleObject[Theme]
       ): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
       inline def setBorderBlock(
@@ -12952,7 +12953,7 @@ object styleFunctionSxStyleFunctionSxMod {
             ])*
       ): Self = StObject.set(x, "borderEndStartRadius", js.Array(value*))
       
-      inline def setBorderFunction1(value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]): Self = StObject.set(x, "border", js.Any.fromFunction1(value))
+      inline def setBorderFunction1(value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]): Self = StObject.set(x, "border", js.Any.fromFunction1(value))
       
       inline def setBorderImage(
         value: (ResponsiveStyleValue[js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]]]) | (js.Function1[
@@ -14053,7 +14054,7 @@ object styleFunctionSxStyleFunctionSxMod {
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      inline def setBorderVarargs(value: ((js.UndefOr[(Border[String | `0`]) | Double]) | Null)*): Self = StObject.set(x, "border", js.Array(value*))
+      inline def setBorderVarargs(value: ((js.UndefOr[(Border[String | 0]) | Double]) | Null)*): Self = StObject.set(x, "border", js.Array(value*))
       
       inline def setBorderWidth(
         value: (ResponsiveStyleValue[
@@ -32927,30 +32928,5 @@ object styleFunctionSxStyleFunctionSxMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - `com.olvind.mui`.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemCssProperties[Theme]
-    - `com.olvind.mui`.muiSystem.styleFunctionSxStyleFunctionSxMod.CSSPseudoSelectorProps[Theme]
-    - `com.olvind.mui`.muiSystem.styleFunctionSxStyleFunctionSxMod.CSSSelectorObject[Theme]
-    - scala.Null
-  */
-  type SystemStyleObject[Theme /* <: js.Object */] = _SystemStyleObject[Theme] | Null
-  
-  trait _SystemStyleObject[Theme /* <: js.Object */] extends StObject
-  object _SystemStyleObject {
-    
-    inline def CSSPseudoSelectorProps[Theme /* <: js.Object */](): com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.CSSPseudoSelectorProps[Theme] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.CSSPseudoSelectorProps[Theme]]
-    }
-    
-    inline def CSSSelectorObject[Theme /* <: js.Object */](): com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.CSSSelectorObject[Theme] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.CSSSelectorObject[Theme]]
-    }
-    
-    inline def SystemCssProperties[Theme /* <: js.Object */](): com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemCssProperties[Theme] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemCssProperties[Theme]]
-    }
-  }
+  type SystemStyleObject[Theme /* <: js.Object */] = SystemCssProperties[Theme] | CSSPseudoSelectorProps[Theme] | CSSSelectorObjectOrCssVariables[Theme] | Null
 }

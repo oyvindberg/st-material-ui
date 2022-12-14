@@ -1,13 +1,12 @@
 package com.olvind.mui.muiMaterial
 
+import com.olvind.mui.muiMaterial.anon.Ref
 import com.olvind.mui.muiMaterial.anon.`26`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.className
-import com.olvind.mui.muiMaterial.muiMaterialStrings.classes
-import com.olvind.mui.muiMaterial.muiMaterialStrings.style
 import com.olvind.mui.muiMaterial.stylesMod.StyledComponentProps
 import com.olvind.mui.muiTypes.mod.DistributiveOmit
 import com.olvind.mui.react.mod.CSSProperties
 import com.olvind.mui.react.mod.ComponentPropsWithRef
+import com.olvind.mui.react.mod.ComponentPropsWithoutRef
 import com.olvind.mui.react.mod.global.JSX.Element
 import japgolly.scalajs.react.facade.React.ElementType
 import org.scalablytyped.runtime.StObject
@@ -49,8 +48,18 @@ object overridableComponentMod {
     ComponentPropsWithRef[
       /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any
     ], 
-    /* keyof @mui/material.@mui/material/OverridableComponent.BaseProps<M> */ className | style | classes
+    /* keyof @mui/material.@mui/material/OverridableComponent.BaseProps<M> */ "className" | "style" | "classes"
   ])
+  
+  /**
+    * Props if `component={Component}` is NOT used.
+    */
+  type DefaultComponentPropsVer2[M /* <: OverridableTypeMap */] = BaseProps[M] & (DistributiveOmit[
+    ComponentPropsWithoutRef[
+      /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any
+    ], 
+    /* keyof @mui/material.@mui/material/OverridableComponent.BaseProps<M> */ "className" | "style" | "classes"
+  ]) & Ref
   
   type OverridableComponent[M /* <: OverridableTypeMap */] = js.Function1[/* props */ DefaultComponentProps[M] & `26`, Element]
   
@@ -73,6 +82,14 @@ object overridableComponentMod {
   
   type OverrideProps[M /* <: OverridableTypeMap */, C /* <: ElementType */] = BaseProps[M] & (DistributiveOmit[
     ComponentPropsWithRef[C], 
-    /* keyof @mui/material.@mui/material/OverridableComponent.BaseProps<M> */ className | style | classes
+    /* keyof @mui/material.@mui/material/OverridableComponent.BaseProps<M> */ "className" | "style" | "classes"
   ])
+  
+  /**
+    * Props of the component if `component={Component}` is used.
+    */
+  type OverridePropsVer2[M /* <: OverridableTypeMap */, C /* <: ElementType */] = BaseProps[M] & (DistributiveOmit[
+    ComponentPropsWithoutRef[C], 
+    /* keyof @mui/material.@mui/material/OverridableComponent.BaseProps<M> */ "className" | "style" | "classes"
+  ]) & Ref
 }

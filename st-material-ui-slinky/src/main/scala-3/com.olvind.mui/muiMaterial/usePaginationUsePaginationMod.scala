@@ -1,12 +1,5 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`end-ellipsis`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`start-ellipsis`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.first
-import com.olvind.mui.muiMaterial.muiMaterialStrings.last
-import com.olvind.mui.muiMaterial.muiMaterialStrings.next
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.previous
 import com.olvind.mui.react.mod.ChangeEvent
 import com.olvind.mui.react.mod.ReactEventHandler
 import org.scalajs.dom.Element
@@ -30,22 +23,21 @@ object usePaginationUsePaginationMod {
     
     var onClick: ReactEventHandler[Element]
     
-    var page: Double
+    var page: Double | Null
     
     var selected: Boolean
     
-    var `type`: page | first | last | next | previous | `start-ellipsis` | `end-ellipsis`
+    var `type`: "page" | "first" | "last" | "next" | "previous" | "start-ellipsis" | "end-ellipsis"
   }
   object UsePaginationItem {
     
     inline def apply(
       disabled: Boolean,
       onClick: SyntheticEvent[Event, Element] => Unit,
-      page: Double,
       selected: Boolean,
-      `type`: page | first | last | next | previous | `start-ellipsis` | `end-ellipsis`
+      `type`: "page" | "first" | "last" | "next" | "previous" | "start-ellipsis" | "end-ellipsis"
     ): UsePaginationItem = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), page = page.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), selected = selected.asInstanceOf[js.Any], page = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[UsePaginationItem]
     }
@@ -58,9 +50,11 @@ object usePaginationUsePaginationMod {
       
       inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
+      inline def setPageNull: Self = StObject.set(x, "page", null)
+      
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      inline def setType(value: page | first | last | next | previous | `start-ellipsis` | `end-ellipsis`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: "page" | "first" | "last" | "next" | "previous" | "start-ellipsis" | "end-ellipsis"): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

@@ -4,38 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - `com.olvind.mui`.csstype.csstypeStrings.dashed
-  - `com.olvind.mui`.csstype.csstypeStrings.dotted
-  - `com.olvind.mui`.csstype.csstypeStrings.double
-  - `com.olvind.mui`.csstype.csstypeStrings.solid
-  - `com.olvind.mui`.csstype.csstypeStrings.wavy
-  - `com.olvind.mui`.csstype.csstypeStrings.`-moz-initial`
-  - `com.olvind.mui`.csstype.csstypeStrings.inherit
-  - `com.olvind.mui`.csstype.csstypeStrings.initial
-  - `com.olvind.mui`.csstype.csstypeStrings.revert
-  - `com.olvind.mui`.csstype.csstypeStrings.unset
-*/
-trait TextDecorationStyle extends StObject
 object TextDecorationStyle {
   
-  inline def `-moz-initial`: com.olvind.mui.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def dashed: com.olvind.mui.csstype.csstypeStrings.dashed = "dashed".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.dashed]
+  inline def dashed: "dashed" = "dashed".asInstanceOf["dashed"]
   
-  inline def dotted: com.olvind.mui.csstype.csstypeStrings.dotted = "dotted".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.dotted]
+  inline def dotted: "dotted" = "dotted".asInstanceOf["dotted"]
   
-  inline def double: com.olvind.mui.csstype.csstypeStrings.double = "double".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.double]
+  inline def double: "double" = "double".asInstanceOf["double"]
   
-  inline def inherit: com.olvind.mui.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: com.olvind.mui.csstype.csstypeStrings.initial = "initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def revert: com.olvind.mui.csstype.csstypeStrings.revert = "revert".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def solid: com.olvind.mui.csstype.csstypeStrings.solid = "solid".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.solid]
+  inline def solid: "solid" = "solid".asInstanceOf["solid"]
   
-  inline def unset: com.olvind.mui.csstype.csstypeStrings.unset = "unset".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
   
-  inline def wavy: com.olvind.mui.csstype.csstypeStrings.wavy = "wavy".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.wavy]
+  inline def wavy: "wavy" = "wavy".asInstanceOf["wavy"]
 }

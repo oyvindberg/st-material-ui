@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriaautocomplete
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapIcon
-import com.olvind.mui.muiMaterial.anon.`11`
+import com.olvind.mui.muiMaterial.anon.`12`
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import org.scalablytyped.runtime.Shortcut
@@ -14,17 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object iconButtonIconButtonMod extends Shortcut {
   
   /**
-    * Refer to the [Icons](https://mui.com/components/icons/) section of the documentation
+    * Refer to the [Icons](https://mui.com/material-ui/icons/) section of the documentation
     * regarding the available icon options.
     *
     * Demos:
     *
-    * - [Buttons](https://mui.com/components/buttons/)
+    * - [Button](https://mui.com/material-ui/react-button/)
     *
     * API:
     *
-    * - [IconButton API](https://mui.com/api/icon-button/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [IconButton API](https://mui.com/material-ui/api/icon-button/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/IconButton/IconButton", JSImport.Default)
   @js.native
@@ -39,7 +39,7 @@ object iconButtonIconButtonMod extends Shortcut {
   
   trait IconButtonPropsSizeOverrides extends StObject
   
-  type IconButtonTypeMap[P, D /* <: ReactElement */] = ExtendButtonBaseTypeMap[`11`[P, D]]
+  type IconButtonTypeMap[P, D /* <: ReactElement */] = ExtendButtonBaseTypeMap[`12`[P, D]]
   
   type _To = js.Function1[
     /* props */ OverridePropsExtendButtonBaseTypeMapIcon | DefaultComponentPropsExtendButtonBaseTypAriaautocomplete, 

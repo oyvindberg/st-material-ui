@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.menuClassesMod.MenuClasses
+import com.olvind.mui.muiMaterial.menuMenuClassesMod.MenuClasses
 import com.olvind.mui.muiMaterial.menuMenuMod.MenuProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

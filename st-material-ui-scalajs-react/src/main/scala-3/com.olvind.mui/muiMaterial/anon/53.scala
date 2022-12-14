@@ -1,38 +1,44 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.cardContentCardContentClassesMod.CardContentClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `53` extends StObject {
+trait `53`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialCardMediaPropsdiv] = js.undefined
+  var defaultProps: js.UndefOr[PartialCardContentPropsdiv] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesCardMediaClass] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[CardContentClassKey, "MuiCardContent", Theme]]
+  ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialCardMediaPropsdiv]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialCardContentPropsdiv]] = js.undefined
 }
 object `53` {
   
-  inline def apply(): `53` = {
+  inline def apply[Theme](): `53`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`53`]
+    __obj.asInstanceOf[`53`[Theme]]
   }
   
-  extension [Self <: `53`](x: Self) {
+  extension [Self <: `53`[?], Theme](x: Self & `53`[Theme]) {
     
-    inline def setDefaultProps(value: PartialCardMediaPropsdiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialCardContentPropsdiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesCardMediaClass): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(
+      value: com.olvind.mui.std.Partial[OverridesStyleRules[CardContentClassKey, "MuiCardContent", Theme]]
+    ): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialCardMediaPropsdiv]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialCardContentPropsdiv]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialCardMediaPropsdiv*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialCardContentPropsdiv*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

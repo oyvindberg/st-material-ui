@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.inputBaseClassesMod.InputBaseClasses
+import com.olvind.mui.muiMaterial.inputBaseInputBaseClassesMod.InputBaseClasses
 import com.olvind.mui.muiMaterial.inputBaseInputBaseMod.InputBaseProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

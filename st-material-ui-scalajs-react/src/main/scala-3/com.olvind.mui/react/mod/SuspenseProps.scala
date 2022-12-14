@@ -14,9 +14,8 @@ trait SuspenseProps extends StObject {
   
   var children: js.UndefOr[Node] = js.undefined
   
-  // TODO(react18): `fallback?: ReactNode;`
   /** A fallback react tree to show when a Suspense child (like React.lazy) suspends */
-  var fallback: Element | String | Double | js.Object | js.Iterable[Node] | ReactPortal | Boolean | Null
+  var fallback: js.UndefOr[Node] = js.undefined
   
   /**
     * The presence of this prop indicates that the content is computationally expensive to render.
@@ -28,7 +27,7 @@ trait SuspenseProps extends StObject {
 object SuspenseProps {
   
   inline def apply(): SuspenseProps = {
-    val __obj = js.Dynamic.literal(fallback = null)
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuspenseProps]
   }
   
@@ -44,9 +43,13 @@ object SuspenseProps {
     
     inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
     
-    inline def setFallback(value: Element | String | Double | js.Object | js.Iterable[Node] | ReactPortal | Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    inline def setFallback(value: VdomNode): Self = StObject.set(x, "fallback", value.rawNode.asInstanceOf[js.Any])
     
     inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
+    
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+    
+    inline def setFallbackVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "fallback", js.Array(value*))
     
     inline def setFallbackVdomElement(value: VdomElement): Self = StObject.set(x, "fallback", value.rawElement.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.unstableTrapFocusUnstableTrapFocusMod.TrapFocusProps
+import com.olvind.mui.muiBase.focusTrapFocusTrapMod.FocusTrapProps
 import org.scalajs.dom.HTMLElement
 import slinky.web.html.`*`.tag
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ object UnstableTrapFocus {
   
   inline def apply(open: Boolean): Builder = {
     val __props = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
-    new Builder(js.Array(this.component, __props.asInstanceOf[TrapFocusProps]))
+    new Builder(js.Array(this.component, __props.asInstanceOf[FocusTrapProps]))
   }
   
   @JSImport("@mui/material", "UnstableTrapFocus")
@@ -35,5 +35,5 @@ object UnstableTrapFocus {
     inline def isEnabled(value: () => Boolean): this.type = set("isEnabled", js.Any.fromFunction0(value))
   }
   
-  def withProps(p: TrapFocusProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps(p: FocusTrapProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

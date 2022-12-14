@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionComponent[P] extends StObject {
   
-  def apply(props: PropsWithChildren[P]): Element | Null = js.native
-  def apply(props: PropsWithChildren[P], context: Any): Element | Null = js.native
+  def apply(props: P): Element | Null = js.native
+  def apply(props: P, context: Any): Element | Null = js.native
   
   var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   

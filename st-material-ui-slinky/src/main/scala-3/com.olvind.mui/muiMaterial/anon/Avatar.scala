@@ -43,12 +43,12 @@ trait Avatar[SubheaderTypographyComponent /* <: ReactElement */, TitleTypography
     * These props will be forwarded to the subheader
     * (as long as disableTypography is not `true`).
     */
-  var subheaderTypographyProps: js.UndefOr[TypographyProps[SubheaderTypographyComponent, `6`[SubheaderTypographyComponent]]] = js.undefined
+  var subheaderTypographyProps: js.UndefOr[TypographyProps[SubheaderTypographyComponent, `5`[SubheaderTypographyComponent]]] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * The content of the component.
@@ -59,7 +59,7 @@ trait Avatar[SubheaderTypographyComponent /* <: ReactElement */, TitleTypography
     * These props will be forwarded to the title
     * (as long as disableTypography is not `true`).
     */
-  var titleTypographyProps: js.UndefOr[TypographyProps[TitleTypographyComponent, `7`[TitleTypographyComponent]]] = js.undefined
+  var titleTypographyProps: js.UndefOr[TypographyProps[TitleTypographyComponent, `6`[TitleTypographyComponent]]] = js.undefined
 }
 object Avatar {
   
@@ -88,16 +88,16 @@ object Avatar {
     
     inline def setSubheader(value: ReactElement): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
     
-    inline def setSubheaderTypographyProps(value: TypographyProps[SubheaderTypographyComponent, `6`[SubheaderTypographyComponent]]): Self = StObject.set(x, "subheaderTypographyProps", value.asInstanceOf[js.Any])
+    inline def setSubheaderTypographyProps(value: TypographyProps[SubheaderTypographyComponent, `5`[SubheaderTypographyComponent]]): Self = StObject.set(x, "subheaderTypographyProps", value.asInstanceOf[js.Any])
     
     inline def setSubheaderTypographyPropsUndefined: Self = StObject.set(x, "subheaderTypographyProps", js.undefined)
     
     inline def setSubheaderUndefined: Self = StObject.set(x, "subheader", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -105,15 +105,15 @@ object Avatar {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
     inline def setTitle(value: ReactElement): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setTitleTypographyProps(value: TypographyProps[TitleTypographyComponent, `7`[TitleTypographyComponent]]): Self = StObject.set(x, "titleTypographyProps", value.asInstanceOf[js.Any])
+    inline def setTitleTypographyProps(value: TypographyProps[TitleTypographyComponent, `6`[TitleTypographyComponent]]): Self = StObject.set(x, "titleTypographyProps", value.asInstanceOf[js.Any])
     
     inline def setTitleTypographyPropsUndefined: Self = StObject.set(x, "titleTypographyProps", js.undefined)
     

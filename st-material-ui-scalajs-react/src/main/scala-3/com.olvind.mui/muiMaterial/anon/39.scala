@@ -6,11 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `39` extends StObject {
   
-  var defaultProps: js.UndefOr[PartialAvatarGroupProps] = js.undefined
+  var closeButton: js.UndefOr[IconButtonPropsdefaultComponent] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesAvatarGroupCla] = js.undefined
-  
-  var variants: js.UndefOr[js.Array[PropsPartialAvatarGroupProps]] = js.undefined
+  var closeIcon: js.UndefOr[SvgIconPropssvg] = js.undefined
 }
 object `39` {
   
@@ -21,18 +19,12 @@ object `39` {
   
   extension [Self <: `39`](x: Self) {
     
-    inline def setDefaultProps(value: PartialAvatarGroupProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setCloseButton(value: IconButtonPropsdefaultComponent): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
-    inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesAvatarGroupCla): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setCloseIcon(value: SvgIconPropssvg): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
     
-    inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
-    
-    inline def setVariants(value: js.Array[PropsPartialAvatarGroupProps]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
-    
-    inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
-    
-    inline def setVariantsVarargs(value: PropsPartialAvatarGroupProps*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
   }
 }

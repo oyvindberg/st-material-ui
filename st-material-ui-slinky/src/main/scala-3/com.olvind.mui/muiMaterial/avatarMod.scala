@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsAvatarTypeMapdiv
-import com.olvind.mui.muiMaterial.avatarClassesMod.AvatarClasses
+import com.olvind.mui.muiMaterial.avatarAvatarClassesMod.AvatarClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object avatarMod {
     *
     * Demos:
     *
-    * - [Avatars](https://mui.com/components/avatars/)
+    * - [Avatar](https://mui.com/material-ui/react-avatar/)
     *
     * API:
     *
-    * - [Avatar API](https://mui.com/api/avatar/)
+    * - [Avatar API](https://mui.com/material-ui/api/avatar/)
     */
   @JSImport("@mui/material/Avatar", JSImport.Default)
   @js.native

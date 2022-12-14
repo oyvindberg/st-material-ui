@@ -1,9 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.first
-import com.olvind.mui.muiMaterial.muiMaterialStrings.last
-import com.olvind.mui.muiMaterial.muiMaterialStrings.next
-import com.olvind.mui.muiMaterial.muiMaterialStrings.previous
 import com.olvind.mui.muiMaterial.tablePaginationTablePaginationMod.LabelDisplayedRowsArgs
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.react.mod.ChangeEventHandler
@@ -27,13 +23,13 @@ trait ActionsComponent extends StObject {
   var ActionsComponent: js.UndefOr[ReactElement] = js.native
   
   /**
-    * Props applied to the rows per page [`Select`](/api/select/) element.
+    * Props applied to the rows per page [`Select`](/material-ui/api/select/) element.
     * @default {}
     */
   var SelectProps: js.UndefOr[PartialSelectPropsunknown] = js.native
   
   /**
-    * Props applied to the back arrow [`IconButton`](/api/icon-button/) component.
+    * Props applied to the back arrow [`IconButton`](/material-ui/api/icon-button/) component.
     */
   var backIconButtonProps: js.UndefOr[PartialIconButtonPropsIconButtonTypeMapb] = js.native
   
@@ -53,20 +49,20 @@ trait ActionsComponent extends StObject {
     * Accepts a function which returns a string value that provides a user-friendly name for the current page.
     * This is important for screen reader users.
     *
-    * For localization purposes, you can use the provided [translations](/guides/localization/).
+    * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
     * @param {string} type The link or button type to format ('first' | 'last' | 'next' | 'previous').
     * @returns {string}
     * @default function defaultGetAriaLabel(type) {
     *   return `Go to ${type} page`;
     * }
     */
-  var getItemAriaLabel: js.UndefOr[js.Function1[/* type */ first | last | next | previous, String]] = js.native
+  var getItemAriaLabel: js.UndefOr[js.Function1[/* type */ "first" | "last" | "next" | "previous", String]] = js.native
   
   /**
     * Customize the displayed rows label. Invoked with a `{ from, to, count, page }`
     * object.
     *
-    * For localization purposes, you can use the provided [translations](/guides/localization/).
+    * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
     * @default function defaultLabelDisplayedRows({ from, to, count }) {
     *   return `${from}–${to} of ${count !== -1 ? count : `more than ${to}`}`;
     * }
@@ -76,13 +72,13 @@ trait ActionsComponent extends StObject {
   /**
     * Customize the rows per page label.
     *
-    * For localization purposes, you can use the provided [translations](/guides/localization/).
+    * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
     * @default 'Rows per page:'
     */
   var labelRowsPerPage: js.UndefOr[ReactElement] = js.native
   
   /**
-    * Props applied to the next arrow [`IconButton`](/api/icon-button/) element.
+    * Props applied to the next arrow [`IconButton`](/material-ui/api/icon-button/) element.
     */
   var nextIconButtonProps: js.UndefOr[PartialIconButtonPropsIconButtonTypeMapb] = js.native
   
@@ -137,5 +133,5 @@ trait ActionsComponent extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.native
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.native
 }

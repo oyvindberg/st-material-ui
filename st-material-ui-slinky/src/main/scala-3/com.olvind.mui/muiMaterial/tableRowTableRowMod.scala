@@ -18,11 +18,11 @@ object tableRowTableRowMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TableRow API](https://mui.com/api/table-row/)
+    * - [TableRow API](https://mui.com/material-ui/api/table-row/)
     */
   @JSImport("@mui/material/TableRow/TableRow", JSImport.Default)
   @js.native

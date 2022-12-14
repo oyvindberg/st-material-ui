@@ -1,38 +1,44 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.accordionDetailsAccordionDetailsClassesMod.AccordionDetailsClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `71` extends StObject {
+trait `71`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialFabPropsdefaultComponent] = js.undefined
+  var defaultProps: js.UndefOr[PartialAccordionDetailsProps] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesFabClassKey] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[AccordionDetailsClassKey, "MuiAccordionDetails", Theme]]
+  ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialFabPropsdefaultComponent]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialAccordionDetailsProps]] = js.undefined
 }
 object `71` {
   
-  inline def apply(): `71` = {
+  inline def apply[Theme](): `71`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`71`]
+    __obj.asInstanceOf[`71`[Theme]]
   }
   
-  extension [Self <: `71`](x: Self) {
+  extension [Self <: `71`[?], Theme](x: Self & `71`[Theme]) {
     
-    inline def setDefaultProps(value: PartialFabPropsdefaultComponent): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialAccordionDetailsProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesFabClassKey): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(
+      value: com.olvind.mui.std.Partial[OverridesStyleRules[AccordionDetailsClassKey, "MuiAccordionDetails", Theme]]
+    ): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialFabPropsdefaultComponent]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialAccordionDetailsProps]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialFabPropsdefaultComponent*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialAccordionDetailsProps*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

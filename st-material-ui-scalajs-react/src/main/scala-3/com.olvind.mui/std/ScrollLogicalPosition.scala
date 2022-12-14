@@ -4,20 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - `com.olvind.mui`.std.stdStrings.center
-  - `com.olvind.mui`.std.stdStrings.end
-  - `com.olvind.mui`.std.stdStrings.nearest
-  - `com.olvind.mui`.std.stdStrings.start
-*/
-trait ScrollLogicalPosition extends StObject
 object ScrollLogicalPosition {
   
-  inline def center: com.olvind.mui.std.stdStrings.center = "center".asInstanceOf[com.olvind.mui.std.stdStrings.center]
+  inline def center: "center" = "center".asInstanceOf["center"]
   
-  inline def end: com.olvind.mui.std.stdStrings.end = "end".asInstanceOf[com.olvind.mui.std.stdStrings.end]
+  inline def end: "end" = "end".asInstanceOf["end"]
   
-  inline def nearest: com.olvind.mui.std.stdStrings.nearest = "nearest".asInstanceOf[com.olvind.mui.std.stdStrings.nearest]
+  inline def nearest: "nearest" = "nearest".asInstanceOf["nearest"]
   
-  inline def start: com.olvind.mui.std.stdStrings.start = "start".asInstanceOf[com.olvind.mui.std.stdStrings.start]
+  inline def start: "start" = "start".asInstanceOf["start"]
 }

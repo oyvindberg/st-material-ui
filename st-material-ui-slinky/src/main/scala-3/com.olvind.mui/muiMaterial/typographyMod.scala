@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTypographyTypeMapsp
-import com.olvind.mui.muiMaterial.typographyClassesMod.TypographyClasses
+import com.olvind.mui.muiMaterial.typographyTypographyClassesMod.TypographyClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +17,12 @@ object typographyMod {
     *
     * Demos:
     *
-    * - [Breadcrumbs](https://mui.com/components/breadcrumbs/)
-    * - [Typography](https://mui.com/components/typography/)
+    * - [Breadcrumbs](https://mui.com/material-ui/react-breadcrumbs/)
+    * - [Typography](https://mui.com/material-ui/react-typography/)
     *
     * API:
     *
-    * - [Typography API](https://mui.com/api/typography/)
+    * - [Typography API](https://mui.com/material-ui/api/typography/)
     */
   @JSImport("@mui/material/Typography", JSImport.Default)
   @js.native

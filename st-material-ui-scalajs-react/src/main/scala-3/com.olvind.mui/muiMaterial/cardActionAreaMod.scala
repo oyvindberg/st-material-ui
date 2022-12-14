@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriaactivedescendant
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapCard
-import com.olvind.mui.muiMaterial.cardActionAreaClassesMod.CardActionAreaClasses
+import com.olvind.mui.muiMaterial.cardActionAreaCardActionAreaClassesMod.CardActionAreaClasses
 import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,12 +18,12 @@ object cardActionAreaMod {
     *
     * Demos:
     *
-    * - [Cards](https://mui.com/components/cards/)
+    * - [Card](https://mui.com/material-ui/react-card/)
     *
     * API:
     *
-    * - [CardActionArea API](https://mui.com/api/card-action-area/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [CardActionArea API](https://mui.com/material-ui/api/card-action-area/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/CardActionArea", JSImport.Default)
   @js.native

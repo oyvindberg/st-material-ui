@@ -1,6 +1,7 @@
 package com.olvind.mui.muiMaterial.anon
 
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ButtonBaseActions
+import com.olvind.mui.muiMaterial.buttonBaseTouchRippleMod.TouchRippleActions
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.mod.FocusEventHandler
@@ -94,12 +95,17 @@ trait Action extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * @default 0
     */
   var tabIndex: js.UndefOr[NonNullable[js.UndefOr[Double]]] = js.undefined
+  
+  /**
+    * A ref that points to the `TouchRipple` element.
+    */
+  var touchRippleRef: js.UndefOr[com.olvind.mui.react.mod.Ref[TouchRippleActions]] = js.undefined
 }
 object Action {
   
@@ -160,10 +166,10 @@ object Action {
     
     inline def setOnFocusVisibleUndefined: Self = StObject.set(x, "onFocusVisible", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -171,9 +177,9 @@ object Action {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
@@ -184,5 +190,15 @@ object Action {
     inline def setTouchRippleProps(value: PartialTouchRippleProps): Self = StObject.set(x, "TouchRippleProps", value.asInstanceOf[js.Any])
     
     inline def setTouchRipplePropsUndefined: Self = StObject.set(x, "TouchRippleProps", js.undefined)
+    
+    inline def setTouchRippleRef(value: com.olvind.mui.react.mod.Ref[TouchRippleActions]): Self = StObject.set(x, "touchRippleRef", value.asInstanceOf[js.Any])
+    
+    inline def setTouchRippleRefFunction1(value: /* instance */ TouchRippleActions | Null => Unit): Self = StObject.set(x, "touchRippleRef", js.Any.fromFunction1(value))
+    
+    inline def setTouchRippleRefNull: Self = StObject.set(x, "touchRippleRef", null)
+    
+    inline def setTouchRippleRefReactRef(value: ReactRef[TouchRippleActions]): Self = StObject.set(x, "touchRippleRef", value.asInstanceOf[js.Any])
+    
+    inline def setTouchRippleRefUndefined: Self = StObject.set(x, "touchRippleRef", js.undefined)
   }
 }

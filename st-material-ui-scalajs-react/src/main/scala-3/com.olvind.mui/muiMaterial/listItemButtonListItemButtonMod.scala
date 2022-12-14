@@ -5,10 +5,8 @@ import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapListA
 import com.olvind.mui.muiMaterial.anon.PartialListItemButtonClasses
 import com.olvind.mui.muiMaterial.anon.`16`
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`flex-start`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.center
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import japgolly.scalajs.react.facade.Empty
@@ -29,12 +27,12 @@ object listItemButtonListItemButtonMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Lists](https://mui.com/components/lists/)
+    * - [Lists](https://mui.com/material-ui/react-list/)
     *
     * API:
     *
-    * - [ListItemButton API](https://mui.com/api/list-item-button/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [ListItemButton API](https://mui.com/material-ui/api/list-item-button/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/ListItemButton/ListItemButton", JSImport.Default)
   @js.native
@@ -49,7 +47,7 @@ object listItemButtonListItemButtonMod extends Shortcut {
       * Defines the `align-items` style property.
       * @default 'center'
       */
-    var alignItems: js.UndefOr[`flex-start` | center] = js.undefined
+    var alignItems: js.UndefOr["flex-start" | "center"] = js.undefined
     
     /**
       * If `true`, the list item is focused during the first mount.
@@ -114,7 +112,7 @@ object listItemButtonListItemButtonMod extends Shortcut {
     
     extension [Self <: ListItemButtonBaseProps](x: Self) {
       
-      inline def setAlignItems(value: `flex-start` | center): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+      inline def setAlignItems(value: "flex-start" | "center"): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       
       inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
       

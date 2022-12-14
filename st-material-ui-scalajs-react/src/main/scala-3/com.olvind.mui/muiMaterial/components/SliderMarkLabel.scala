@@ -14,6 +14,6 @@ object SliderMarkLabel {
   implicit def make(companion: SliderMarkLabel.type): Default[js.Object] = new Default[js.Object](js.Array(this.component, js.Dictionary.empty))()
   
   def withProps(
-    p: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.MarkLabel | undefined>['markLabel'] */ js.Any
+    p: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Mark | undefined>['markLabel'] */ js.Any
   ): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

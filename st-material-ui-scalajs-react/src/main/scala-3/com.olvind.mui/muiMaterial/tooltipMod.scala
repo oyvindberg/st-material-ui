@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.tooltipClassesMod.TooltipClasses
+import com.olvind.mui.muiMaterial.tooltipTooltipClassesMod.TooltipClasses
 import com.olvind.mui.muiMaterial.tooltipTooltipMod.TooltipProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

@@ -1,17 +1,23 @@
 package com.olvind.mui.muiBase.anon
 
-import japgolly.scalajs.react.facade.React.ElementType
+import com.olvind.mui.muiBase.inputUnstyledInputUnstyledDottypesMod.InputUnstyledComponentsPropsOverrides
+import com.olvind.mui.muiBase.inputUnstyledInputUnstyledDottypesMod.InputUnstyledOwnerState
+import com.olvind.mui.muiBase.utilsTypesMod.SlotComponentProps
+import com.olvind.mui.react.mod.ComponentPropsWithRef
+import com.olvind.mui.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Input extends StObject {
   
-  var Input: js.UndefOr[ElementType] = js.undefined
+  var input: js.UndefOr[
+    SlotComponentProps["input", InputUnstyledComponentsPropsOverrides, InputUnstyledOwnerState]
+  ] = js.undefined
   
-  var Root: js.UndefOr[ElementType] = js.undefined
-  
-  var Textarea: js.UndefOr[ElementType] = js.undefined
+  var root: js.UndefOr[
+    SlotComponentProps["div", InputUnstyledComponentsPropsOverrides, InputUnstyledOwnerState]
+  ] = js.undefined
 }
 object Input {
   
@@ -22,16 +28,20 @@ object Input {
   
   extension [Self <: Input](x: Self) {
     
-    inline def setInput(value: ElementType): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: SlotComponentProps["input", InputUnstyledComponentsPropsOverrides, InputUnstyledOwnerState]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
+    inline def setInputFunction1(
+      value: InputUnstyledOwnerState => Partial[ComponentPropsWithRef["input"]] & InputUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
     
-    inline def setRoot(value: ElementType): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+    inline def setRoot(value: SlotComponentProps["div", InputUnstyledComponentsPropsOverrides, InputUnstyledOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    inline def setTextarea(value: ElementType): Self = StObject.set(x, "Textarea", value.asInstanceOf[js.Any])
+    inline def setRootFunction1(
+      value: InputUnstyledOwnerState => Partial[ComponentPropsWithRef["div"]] & InputUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
-    inline def setTextareaUndefined: Self = StObject.set(x, "Textarea", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

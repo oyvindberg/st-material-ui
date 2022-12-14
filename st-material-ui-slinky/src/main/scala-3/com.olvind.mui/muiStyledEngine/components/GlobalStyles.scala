@@ -10,23 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GlobalStyles {
   
+  inline def apply[Theme](): Builder[Theme] = {
+    val __props = js.Dynamic.literal()
+    new Builder[Theme](js.Array(this.component, __props.asInstanceOf[GlobalStylesProps[Theme]]))
+  }
+  
   @JSImport("@mui/styled-engine", "GlobalStyles")
   @js.native
   val component: js.Object = js.native
   
   @scala.inline
-  open class Builder (val args: js.Array[Any])
+  open class Builder[Theme] (val args: js.Array[Any])
     extends AnyVal
        with StBuildingComponent[tag.type, js.Object] {
     
     inline def defaultTheme(value: js.Object): this.type = set("defaultTheme", value.asInstanceOf[js.Any])
     
-    inline def styles(value: Interpolation[js.Object]): this.type = set("styles", value.asInstanceOf[js.Any])
+    inline def styles(value: Interpolation[Theme]): this.type = set("styles", value.asInstanceOf[js.Any])
     
     inline def stylesNull: this.type = set("styles", null)
   }
   
-  implicit def make(companion: GlobalStyles.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  implicit def make[Theme](companion: GlobalStyles.type): Builder[Theme] = new Builder[Theme](js.Array(this.component, js.Dictionary.empty))()
   
-  def withProps(p: GlobalStylesProps[js.Object]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps[Theme](p: GlobalStylesProps[Theme]): Builder[Theme] = new Builder[Theme](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

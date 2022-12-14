@@ -1,8 +1,8 @@
 package com.olvind.mui.emotionReact.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.emotionReact.emotionReactMod.GlobalProps
-import com.olvind.mui.emotionReact.emotionReactMod.Theme
+import com.olvind.mui.emotionReact.mod.GlobalProps
+import com.olvind.mui.emotionReact.mod.Theme
 import com.olvind.mui.emotionSerialize.mod.Interpolation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

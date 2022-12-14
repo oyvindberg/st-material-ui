@@ -16,11 +16,11 @@ object avatarAvatarMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Avatars](https://mui.com/components/avatars/)
+    * - [Avatar](https://mui.com/material-ui/react-avatar/)
     *
     * API:
     *
-    * - [Avatar API](https://mui.com/api/avatar/)
+    * - [Avatar API](https://mui.com/material-ui/api/avatar/)
     */
   @JSImport("@mui/material/Avatar/Avatar", JSImport.Default)
   @js.native

@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsContainerTypeMapdiv
-import com.olvind.mui.muiMaterial.containerClassesMod.ContainerClasses
+import com.olvind.mui.muiSystem.containerContainerClassesMod.ContainerClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object containerMod {
     *
     * Demos:
     *
-    * - [Container](https://mui.com/components/container/)
+    * - [Container](https://mui.com/material-ui/react-container/)
     *
     * API:
     *
-    * - [Container API](https://mui.com/api/container/)
+    * - [Container API](https://mui.com/material-ui/api/container/)
     */
   @JSImport("@mui/material/Container", JSImport.Default)
   @js.native

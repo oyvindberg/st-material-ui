@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.imageListItemBarClassesMod.ImageListItemBarClasses
+import com.olvind.mui.muiMaterial.imageListItemBarImageListItemBarClassesMod.ImageListItemBarClasses
 import com.olvind.mui.muiMaterial.imageListItemBarImageListItemBarMod.ImageListItemBarProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

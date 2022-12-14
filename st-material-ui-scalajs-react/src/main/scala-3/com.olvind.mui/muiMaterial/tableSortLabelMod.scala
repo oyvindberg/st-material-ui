@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypActive
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapTabl
-import com.olvind.mui.muiMaterial.tableSortLabelClassesMod.TableSortLabelClasses
+import com.olvind.mui.muiMaterial.tableSortLabelTableSortLabelClassesMod.TableSortLabelClasses
 import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,12 +19,12 @@ object tableSortLabelMod {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TableSortLabel API](https://mui.com/api/table-sort-label/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [TableSortLabel API](https://mui.com/material-ui/api/table-sort-label/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/TableSortLabel", JSImport.Default)
   @js.native

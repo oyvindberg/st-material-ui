@@ -4,32 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - `com.olvind.mui`.csstype.csstypeStrings.nowrap
-  - `com.olvind.mui`.csstype.csstypeStrings.wrap
-  - `com.olvind.mui`.csstype.csstypeStrings.`wrap-reverse`
-  - `com.olvind.mui`.csstype.csstypeStrings.`-moz-initial`
-  - `com.olvind.mui`.csstype.csstypeStrings.inherit
-  - `com.olvind.mui`.csstype.csstypeStrings.initial
-  - `com.olvind.mui`.csstype.csstypeStrings.revert
-  - `com.olvind.mui`.csstype.csstypeStrings.unset
-*/
-trait FlexWrap extends StObject
 object FlexWrap {
   
-  inline def `-moz-initial`: com.olvind.mui.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def inherit: com.olvind.mui.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: com.olvind.mui.csstype.csstypeStrings.initial = "initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def nowrap: com.olvind.mui.csstype.csstypeStrings.nowrap = "nowrap".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.nowrap]
+  inline def nowrap: "nowrap" = "nowrap".asInstanceOf["nowrap"]
   
-  inline def revert: com.olvind.mui.csstype.csstypeStrings.revert = "revert".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def unset: com.olvind.mui.csstype.csstypeStrings.unset = "unset".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
   
-  inline def wrap: com.olvind.mui.csstype.csstypeStrings.wrap = "wrap".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.wrap]
+  inline def wrap: "wrap" = "wrap".asInstanceOf["wrap"]
   
-  inline def `wrap-reverse`: com.olvind.mui.csstype.csstypeStrings.`wrap-reverse` = "wrap-reverse".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`wrap-reverse`]
+  inline def `wrap-reverse`: "wrap-reverse" = "wrap-reverse".asInstanceOf["wrap-reverse"]
 }

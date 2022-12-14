@@ -16,11 +16,11 @@ object tableHeadTableHeadMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TableHead API](https://mui.com/api/table-head/)
+    * - [TableHead API](https://mui.com/material-ui/api/table-head/)
     */
   @JSImport("@mui/material/TableHead/TableHead", JSImport.Default)
   @js.native

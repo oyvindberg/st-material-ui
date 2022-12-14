@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.inputLabelClassesMod.InputLabelClasses
+import com.olvind.mui.muiMaterial.inputLabelInputLabelClassesMod.InputLabelClasses
 import com.olvind.mui.muiMaterial.inputLabelInputLabelMod.InputLabelProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

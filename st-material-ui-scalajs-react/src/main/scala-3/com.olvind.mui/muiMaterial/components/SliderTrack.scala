@@ -14,6 +14,6 @@ object SliderTrack {
   implicit def make(companion: SliderTrack.type): Default[js.Object] = new Default[js.Object](js.Array(this.component, js.Dictionary.empty))()
   
   def withProps(
-    p: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.MarkLabel | undefined>['track'] */ js.Any
+    p: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Mark | undefined>['track'] */ js.Any
   ): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

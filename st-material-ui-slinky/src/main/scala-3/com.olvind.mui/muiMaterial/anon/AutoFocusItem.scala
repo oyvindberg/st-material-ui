@@ -1,7 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.selectedMenu
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +42,7 @@ trait AutoFocusItem extends StObject {
     * and the vertical alignment relative to the anchor element.
     * @default 'selectedMenu'
     */
-  var variant: js.UndefOr[menu | selectedMenu] = js.undefined
+  var variant: js.UndefOr["menu" | "selectedMenu"] = js.undefined
 }
 object AutoFocusItem {
   
@@ -75,7 +73,7 @@ object AutoFocusItem {
     
     inline def setDisabledItemsFocusableUndefined: Self = StObject.set(x, "disabledItemsFocusable", js.undefined)
     
-    inline def setVariant(value: menu | selectedMenu): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "menu" | "selectedMenu"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

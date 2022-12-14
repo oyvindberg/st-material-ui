@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.accordionSummaryClassesMod.AccordionSummaryClasses
+import com.olvind.mui.muiMaterial.accordionSummaryAccordionSummaryClassesMod.AccordionSummaryClasses
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTyp
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapAcco
 import japgolly.scalajs.react.facade.React.Element
@@ -18,12 +18,12 @@ object accordionSummaryMod {
     *
     * Demos:
     *
-    * - [Accordion](https://mui.com/components/accordion/)
+    * - [Accordion](https://mui.com/material-ui/react-accordion/)
     *
     * API:
     *
-    * - [AccordionSummary API](https://mui.com/api/accordion-summary/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [AccordionSummary API](https://mui.com/material-ui/api/accordion-summary/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/AccordionSummary", JSImport.Default)
   @js.native

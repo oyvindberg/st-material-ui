@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.ChildrenClasses
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsCardContentTypeMapd
+import com.olvind.mui.muiMaterial.anon.Sx
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.Shortcut
@@ -16,11 +16,11 @@ object cardContentCardContentMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Cards](https://mui.com/components/cards/)
+    * - [Card](https://mui.com/material-ui/react-card/)
     *
     * API:
     *
-    * - [CardContent API](https://mui.com/api/card-content/)
+    * - [CardContent API](https://mui.com/material-ui/api/card-content/)
     */
   @JSImport("@mui/material/CardContent/CardContent", JSImport.Default)
   @js.native
@@ -32,11 +32,11 @@ object cardContentCardContentMod extends Shortcut {
     
     var defaultComponent: D
     
-    var props: P & ChildrenClasses
+    var props: P & Sx
   }
   object CardContentTypeMap {
     
-    inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & ChildrenClasses): CardContentTypeMap[P, D] = {
+    inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & Sx): CardContentTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardContentTypeMap[P, D]]
     }
@@ -45,7 +45,7 @@ object cardContentCardContentMod extends Shortcut {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: P & ChildrenClasses): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P & Sx): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   

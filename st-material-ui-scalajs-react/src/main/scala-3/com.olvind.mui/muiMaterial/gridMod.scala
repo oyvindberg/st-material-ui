@@ -1,8 +1,8 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsGridTypeMapdiv
-import com.olvind.mui.muiMaterial.gridClassesMod.GridClasses
-import com.olvind.mui.react.mod.global.JSX.Element
+import com.olvind.mui.muiMaterial.gridGridClassesMod.GridClasses
+import com.olvind.mui.muiMaterial.gridGridMod.GridTypeMap
+import com.olvind.mui.muiMaterial.overridableComponentMod.OverridableComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,15 +17,15 @@ object gridMod {
     *
     * Demos:
     *
-    * - [Grid](https://mui.com/components/grid/)
+    * - [Grid](https://mui.com/material-ui/react-grid/)
     *
     * API:
     *
-    * - [Grid API](https://mui.com/api/grid/)
+    * - [Grid API](https://mui.com/material-ui/api/grid/)
     */
   @JSImport("@mui/material/Grid", JSImport.Default)
   @js.native
-  val default: js.Function1[/* props */ DefaultComponentPropsGridTypeMapdiv, Element] = js.native
+  val default: OverridableComponent[GridTypeMap[js.Object, "div"]] = js.native
   
   inline def getGridUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGridUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   

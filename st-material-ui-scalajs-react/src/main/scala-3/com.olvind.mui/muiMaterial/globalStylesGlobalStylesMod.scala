@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.emotionSerialize.mod.Interpolation
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

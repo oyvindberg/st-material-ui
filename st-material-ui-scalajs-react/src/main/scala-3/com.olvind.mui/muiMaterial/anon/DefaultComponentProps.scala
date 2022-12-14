@@ -9,11 +9,11 @@ trait DefaultComponentProps[P, D /* <: ElementType */] extends StObject {
   
   var defaultComponent: D
   
-  var props: P & PartialOmitFadePropschildren & Open
+  var props: P & AnchorOrigin
 }
 object DefaultComponentProps {
   
-  inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & PartialOmitFadePropschildren & Open): DefaultComponentProps[P, D] = {
+  inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & AnchorOrigin): DefaultComponentProps[P, D] = {
     val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultComponentProps[P, D]]
   }
@@ -22,6 +22,6 @@ object DefaultComponentProps {
     
     inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & PartialOmitFadePropschildren & Open): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: P & AnchorOrigin): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

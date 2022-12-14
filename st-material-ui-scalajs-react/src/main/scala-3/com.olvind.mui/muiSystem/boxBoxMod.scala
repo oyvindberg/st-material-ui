@@ -70,7 +70,6 @@ import com.olvind.mui.csstype.mod.Property.Visibility
 import com.olvind.mui.csstype.mod.Property.Width
 import com.olvind.mui.csstype.mod.Property.ZIndex
 import com.olvind.mui.muiSystem.anon.DefaultComponentPropsBoxTypeMapdiv
-import com.olvind.mui.muiSystem.muiSystemNumbers.`0`
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.react.mod.global.JSX.Element
 import com.olvind.mui.std.NonNullable
@@ -81,9 +80,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object boxBoxMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Box (Material UI)](https://mui.com/material-ui/react-box/)
+    * - [Box (MUI System)](https://mui.com/system/react-box/)
+    *
+    * API:
+    *
+    * - [Box API](https://mui.com/system/api/box/)
+    */
   @JSImport("@mui/system/Box/Box", JSImport.Default)
   @js.native
-  val default: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element] = js.native
+  val default: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element | Null] = js.native
+  
+  type StyleFunction[Props] = js.Function1[/* props */ Props, Any]
   
   /* Inlined {[ K in @mui/system.@mui/system/Box/Box.StandardSystemKeys ]:? @mui/system.@mui/system/styleFunctionSx.ResponsiveStyleValue<@mui/system.@mui/system/styleFunctionSx.AllSystemCSSProperties[K]> | (theme : Theme): @mui/system.@mui/system/styleFunctionSx.ResponsiveStyleValue<@mui/system.@mui/system/styleFunctionSx.AllSystemCSSProperties[K]>} */
   trait SystemProps[Theme /* <: js.Object */] extends StObject {
@@ -117,10 +129,7 @@ object boxBoxMod extends Shortcut {
       ] = js.undefined
     
     var border: js.UndefOr[
-        (ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]) | (js.Function1[
-          /* theme */ Theme, 
-          ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]
-        ])
+        (ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]])
       ] = js.undefined
     
     var borderBottom: js.UndefOr[
@@ -1229,10 +1238,7 @@ object boxBoxMod extends Shortcut {
       ): Self = StObject.set(x, "bgcolor", js.Array(value*))
       
       inline def setBorder(
-        value: (ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]) | (js.Function1[
-              /* theme */ Theme, 
-              ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]
-            ])
+        value: (ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]])
       ): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
       inline def setBorderBottom(
@@ -1285,7 +1291,7 @@ object boxBoxMod extends Shortcut {
             ])*
       ): Self = StObject.set(x, "borderColor", js.Array(value*))
       
-      inline def setBorderFunction1(value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[(Border[String | `0`]) | Double]]): Self = StObject.set(x, "border", js.Any.fromFunction1(value))
+      inline def setBorderFunction1(value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[(Border[String | 0]) | Double]]): Self = StObject.set(x, "border", js.Any.fromFunction1(value))
       
       inline def setBorderLeft(
         value: (ResponsiveStyleValue[
@@ -1413,7 +1419,7 @@ object boxBoxMod extends Shortcut {
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      inline def setBorderVarargs(value: ((js.UndefOr[(Border[String | `0`]) | Double]) | Null)*): Self = StObject.set(x, "border", js.Array(value*))
+      inline def setBorderVarargs(value: ((js.UndefOr[(Border[String | 0]) | Double]) | Null)*): Self = StObject.set(x, "border", js.Array(value*))
       
       inline def setBottom(
         value: (ResponsiveStyleValue[
@@ -3469,8 +3475,8 @@ object boxBoxMod extends Shortcut {
     }
   }
   
-  type _To = js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element]
+  type _To = js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element | Null]
   
   /* This means you don't have to write `default`, but can instead just say `boxBoxMod.foo` */
-  override def _to: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element] = default
+  override def _to: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element | Null] = default
 }

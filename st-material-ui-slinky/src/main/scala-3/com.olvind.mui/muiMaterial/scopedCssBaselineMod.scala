@@ -16,11 +16,11 @@ object scopedCssBaselineMod {
     *
     * Demos:
     *
-    * - [Css Baseline](https://mui.com/components/css-baseline/)
+    * - [CSS Baseline](https://mui.com/material-ui/react-css-baseline/)
     *
     * API:
     *
-    * - [ScopedCssBaseline API](https://mui.com/api/scoped-css-baseline/)
+    * - [ScopedCssBaseline API](https://mui.com/material-ui/api/scoped-css-baseline/)
     */
   @JSImport("@mui/material/ScopedCssBaseline", JSImport.Default)
   @js.native

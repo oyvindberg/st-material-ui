@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTableContainerTypeM
-import com.olvind.mui.muiMaterial.tableContainerClassesMod.TableContainerClasses
+import com.olvind.mui.muiMaterial.tableContainerTableContainerClassesMod.TableContainerClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object tableContainerMod {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TableContainer API](https://mui.com/api/table-container/)
+    * - [TableContainer API](https://mui.com/material-ui/api/table-container/)
     */
   @JSImport("@mui/material/TableContainer", JSImport.Default)
   @js.native

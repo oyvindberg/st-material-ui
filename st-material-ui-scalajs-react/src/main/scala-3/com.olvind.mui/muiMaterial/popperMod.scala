@@ -13,13 +13,13 @@ object popperMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Autocomplete](https://mui.com/components/autocomplete/)
-    * - [Menus](https://mui.com/components/menus/)
-    * - [Popper](https://mui.com/components/popper/)
+    * - [Autocomplete](https://mui.com/material-ui/react-autocomplete/)
+    * - [Menu](https://mui.com/material-ui/react-menu/)
+    * - [Popper](https://mui.com/material-ui/react-popper/)
     *
     * API:
     *
-    * - [Popper API](https://mui.com/api/popper/)
+    * - [Popper API](https://mui.com/material-ui/api/popper/)
     */
   @JSImport("@mui/material/Popper", JSImport.Default)
   @js.native

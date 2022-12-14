@@ -16,11 +16,11 @@ object skeletonSkeletonMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Skeleton](https://mui.com/components/skeleton/)
+    * - [Skeleton](https://mui.com/material-ui/react-skeleton/)
     *
     * API:
     *
-    * - [Skeleton API](https://mui.com/api/skeleton/)
+    * - [Skeleton API](https://mui.com/material-ui/api/skeleton/)
     */
   @JSImport("@mui/material/Skeleton/Skeleton", JSImport.Default)
   @js.native

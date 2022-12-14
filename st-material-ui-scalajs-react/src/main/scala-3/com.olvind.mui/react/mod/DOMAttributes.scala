@@ -110,6 +110,7 @@ trait DOMAttributes[T] extends StObject {
   // Keyboard Events
   var onKeyDown: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
   
+  /** @deprecated */
   var onKeyPress: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
   
   var onKeyUp: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
@@ -167,6 +168,8 @@ trait DOMAttributes[T] extends StObject {
   var onRateChange: js.UndefOr[ReactEventHandler[T]] = js.undefined
   
   var onReset: js.UndefOr[FormEventHandler[T]] = js.undefined
+  
+  var onResize: js.UndefOr[ReactEventHandler[T]] = js.undefined
   
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[T]] = js.undefined
@@ -479,6 +482,10 @@ object DOMAttributes {
     inline def setOnReset(value: ReactEventFrom[T & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onReset", js.Any.fromFunction1((t0: ReactEventFrom[T & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: ReactEventFrom[T & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onResize", js.Any.fromFunction1((t0: ReactEventFrom[T & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: ReactUIEventFrom[T & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[T & org.scalajs.dom.Element]) => value(t0).runNow()))
     

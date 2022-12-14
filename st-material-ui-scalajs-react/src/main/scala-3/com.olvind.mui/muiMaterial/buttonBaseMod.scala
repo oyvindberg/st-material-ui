@@ -2,8 +2,8 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAction
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapButtAbout
-import com.olvind.mui.muiMaterial.buttonBaseClassesMod.ButtonBaseClasses
-import com.olvind.mui.muiMaterial.touchRippleClassesMod.TouchRippleClasses
+import com.olvind.mui.muiMaterial.buttonBaseButtonBaseClassesMod.ButtonBaseClasses
+import com.olvind.mui.muiMaterial.buttonBaseTouchRippleClassesMod.TouchRippleClasses
 import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,11 +22,11 @@ object buttonBaseMod {
     *
     * Demos:
     *
-    * - [Buttons](https://mui.com/components/buttons/)
+    * - [Button](https://mui.com/material-ui/react-button/)
     *
     * API:
     *
-    * - [ButtonBase API](https://mui.com/api/button-base/)
+    * - [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/ButtonBase", JSImport.Default)
   @js.native

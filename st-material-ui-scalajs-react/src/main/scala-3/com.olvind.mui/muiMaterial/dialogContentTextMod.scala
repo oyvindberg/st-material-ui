@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsDialogContentTextTy
-import com.olvind.mui.muiMaterial.dialogContentTextClassesMod.DialogContentTextClasses
+import com.olvind.mui.muiMaterial.dialogContentTextDialogContentTextClassesMod.DialogContentTextClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +17,12 @@ object dialogContentTextMod {
     *
     * Demos:
     *
-    * - [Dialogs](https://mui.com/components/dialogs/)
+    * - [Dialog](https://mui.com/material-ui/react-dialog/)
     *
     * API:
     *
-    * - [DialogContentText API](https://mui.com/api/dialog-content-text/)
-    * - inherits [Typography API](https://mui.com/api/typography/)
+    * - [DialogContentText API](https://mui.com/material-ui/api/dialog-content-text/)
+    * - inherits [Typography API](https://mui.com/material-ui/api/typography/)
     */
   @JSImport("@mui/material/DialogContentText", JSImport.Default)
   @js.native

@@ -14,12 +14,11 @@ object ClickAwayListener {
     *
     * Demos:
     *
-    * - [Click Away Listener](https://mui.com/components/click-away-listener/)
-    * - [Menus](https://mui.com/components/menus/)
+    * - [Click-Away Listener](https://mui.com/base/react-click-away-listener/)
     *
     * API:
     *
-    * - [ClickAwayListener API](https://mui.com/api/click-away-listener/)
+    * - [ClickAwayListener API](https://mui.com/base/api/click-away-listener/)
     */
   inline def apply(props: ClickAwayListenerProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   

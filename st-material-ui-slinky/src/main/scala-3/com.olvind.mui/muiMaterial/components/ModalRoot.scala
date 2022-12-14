@@ -15,6 +15,6 @@ object ModalRoot {
   implicit def make(companion: ModalRoot.type): Default[tag.type, js.Object] = new Default[tag.type, js.Object](js.Array(this.component, js.Dictionary.empty))()
   
   def withProps(
-    p: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.4 | undefined>['root'] */ js.Any
+    p: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Backdrop | undefined>['root'] */ js.Any
   ): Default[tag.type, js.Object] = new Default[tag.type, js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

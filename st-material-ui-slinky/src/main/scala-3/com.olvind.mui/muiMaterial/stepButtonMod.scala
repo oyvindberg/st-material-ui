@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriacolcount
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapStep
-import com.olvind.mui.muiMaterial.stepButtonClassesMod.StepButtonClasses
+import com.olvind.mui.muiMaterial.stepButtonStepButtonClassesMod.StepButtonClasses
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,12 +18,12 @@ object stepButtonMod {
     *
     * Demos:
     *
-    * - [Steppers](https://mui.com/components/steppers/)
+    * - [Stepper](https://mui.com/material-ui/react-stepper/)
     *
     * API:
     *
-    * - [StepButton API](https://mui.com/api/step-button/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [StepButton API](https://mui.com/material-ui/api/step-button/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/StepButton", JSImport.Default)
   @js.native

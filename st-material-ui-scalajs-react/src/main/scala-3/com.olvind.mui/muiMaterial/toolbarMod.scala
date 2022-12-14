@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsToolbarTypeMapdiv
-import com.olvind.mui.muiMaterial.toolbarClassesMod.ToolbarClasses
+import com.olvind.mui.muiMaterial.toolbarToolbarClassesMod.ToolbarClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object toolbarMod {
     *
     * Demos:
     *
-    * - [App Bar](https://mui.com/components/app-bar/)
+    * - [App Bar](https://mui.com/material-ui/react-app-bar/)
     *
     * API:
     *
-    * - [Toolbar API](https://mui.com/api/toolbar/)
+    * - [Toolbar API](https://mui.com/material-ui/api/toolbar/)
     */
   @JSImport("@mui/material/Toolbar", JSImport.Default)
   @js.native

@@ -6,10 +6,6 @@ import com.olvind.mui.std.anon.Replace
 import com.olvind.mui.std.anon.Search
 import com.olvind.mui.std.anon.Split
 import com.olvind.mui.std.anon.`0`
-import com.olvind.mui.std.stdStrings.NFC
-import com.olvind.mui.std.stdStrings.NFD
-import com.olvind.mui.std.stdStrings.NFKC
-import com.olvind.mui.std.stdStrings.NFKD
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -183,7 +179,9 @@ trait String
     * is "NFC"
     */
   /* standard es2015.core */
-  def normalize(form: NFC | NFD | NFKC | NFKD): java.lang.String = js.native
+  @JSName("normalize")
+  @scala.annotation.targetName("normalize_NFC_NFD_NFKC_NFKD")
+  def normalize(form: "NFC" | "NFD" | "NFKC" | "NFKD"): java.lang.String = js.native
   def normalize(form: java.lang.String): java.lang.String = js.native
   
   /**

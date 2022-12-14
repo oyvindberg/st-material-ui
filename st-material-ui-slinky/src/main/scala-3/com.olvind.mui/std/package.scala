@@ -1,12 +1,16 @@
 package com.olvind.mui.std
 
-import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+
+type AnimationPlayState = "finished" | "idle" | "paused" | "running"
+
+type CompositeOperation = "accumulate" | "add" | "replace"
+
+type CompositeOperationOrAuto = "accumulate" | "add" | "auto" | "replace"
 
 /** Used by the dataset HTML attribute to represent data for custom attributes added to elements. */
 type DOMStringMap = /* standard dom */
@@ -19,20 +23,46 @@ type EventListenerOrEventListenerObject = EventListener | EventListenerObject
 /**
   * Exclude from T those types that are assignable to U
   */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends U ? never : T
+  }}}
+  */
 type Exclude[T, U] = T
 
 /**
   * Extract from T those types that are assignable to U
   */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends U ? T : never
+  }}}
+  */
 type Extract[T, U] = T
 
-/**
-  * Obtain the return type of a constructor function type
-  */
-type InstanceType[T /* <: Instantiable1[/* args */ Any, Any] */] = Any
+type FillMode = "auto" | "backwards" | "both" | "forwards" | "none"
+
+type FullscreenNavigationUI = "auto" | "hide" | "show"
+
+type InsertPosition = "beforebegin" | "afterbegin" | "beforeend" | "afterend"
+
+type IterationCompositeOperation = "accumulate" | "replace"
+
+type IteratorResult[T, TReturn] = IteratorYieldResult[T] | IteratorReturnResult[TReturn]
 
 /**
   * Exclude null and undefined from T
+  */
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  T extends null | undefined ? never : T
+  }}}
   */
 type NonNullable[T] = T
 
@@ -54,25 +84,43 @@ Any]
 /**
   * Make all properties in T optional
   */
-type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? T[P]}
-  */ com.olvind.mui.std.stdStrings.Partial & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in keyof T ]:? T[P]}
+  }}}
+  */
+type Partial[T] = T
 
 /**
   * From T, pick a set of properties whose keys are in the union K
   */
-type Pick[T, K /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in K ]: T[P]}
-  */ com.olvind.mui.std.stdStrings.Pick & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in K ]: T[P]}
+  }}}
+  */
+type Pick[T, K /* <: /* keyof T */ java.lang.String */] = T
 
-type PropertyKey = java.lang.String | Double | js.Symbol
+type PlaybackDirection = "alternate" | "alternate-reverse" | "normal" | "reverse"
 
 /**
   * Construct a type with a set of properties K of type T
   */
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation throws away the known field names. 
+  * TS definition: {{{
+  {[ P in K ]: T}
+  }}}
+  */
 type Record[K /* <: /* keyof any */ java.lang.String */, T] = StringDictionary[T]
 
-/**
-  * Obtain the return type of a function type
-  */
-type ReturnType[T /* <: js.Function1[/* args */ Any, Any] */] = Any
+type ScrollBehavior = "auto" | "smooth"
+
+type ScrollLogicalPosition = "center" | "end" | "nearest" | "start"
+
+type ShadowRootMode = "closed" | "open"

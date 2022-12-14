@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsButtonGroupTypeMapd
-import com.olvind.mui.muiMaterial.buttonGroupClassesMod.ButtonGroupClasses
+import com.olvind.mui.muiMaterial.buttonGroupButtonGroupClassesMod.ButtonGroupClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object buttonGroupMod {
     *
     * Demos:
     *
-    * - [Button Group](https://mui.com/components/button-group/)
+    * - [Button Group](https://mui.com/material-ui/react-button-group/)
     *
     * API:
     *
-    * - [ButtonGroup API](https://mui.com/api/button-group/)
+    * - [ButtonGroup API](https://mui.com/material-ui/api/button-group/)
     */
   @JSImport("@mui/material/ButtonGroup", JSImport.Default)
   @js.native

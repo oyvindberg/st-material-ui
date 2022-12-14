@@ -1,38 +1,44 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.listItemTextListItemTextClassesMod.ListItemTextClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `100` extends StObject {
+trait `100`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialMenuItemPropsdefaultComponent] = js.undefined
+  var defaultProps: js.UndefOr[PartialListItemTextPropsspanp] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesMenuItemClassK] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[ListItemTextClassKey, "MuiListItemText", Theme]]
+  ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialMenuItemPropsdefaultComponent]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialListItemTextPropsspanp]] = js.undefined
 }
 object `100` {
   
-  inline def apply(): `100` = {
+  inline def apply[Theme](): `100`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`100`]
+    __obj.asInstanceOf[`100`[Theme]]
   }
   
-  extension [Self <: `100`](x: Self) {
+  extension [Self <: `100`[?], Theme](x: Self & `100`[Theme]) {
     
-    inline def setDefaultProps(value: PartialMenuItemPropsdefaultComponent): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialListItemTextPropsspanp): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesMenuItemClassK): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(
+      value: com.olvind.mui.std.Partial[OverridesStyleRules[ListItemTextClassKey, "MuiListItemText", Theme]]
+    ): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialMenuItemPropsdefaultComponent]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialListItemTextPropsspanp]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialMenuItemPropsdefaultComponent*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialListItemTextPropsspanp*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

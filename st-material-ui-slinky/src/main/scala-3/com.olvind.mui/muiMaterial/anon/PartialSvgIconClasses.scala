@@ -21,6 +21,8 @@ trait PartialSvgIconClasses extends StObject {
   
   var fontSizeLarge: js.UndefOr[String] = js.undefined
   
+  var fontSizeMedium: js.UndefOr[String] = js.undefined
+  
   var fontSizeSmall: js.UndefOr[String] = js.undefined
   
   var root: js.UndefOr[String] = js.undefined
@@ -61,6 +63,10 @@ object PartialSvgIconClasses {
     inline def setFontSizeLarge(value: String): Self = StObject.set(x, "fontSizeLarge", value.asInstanceOf[js.Any])
     
     inline def setFontSizeLargeUndefined: Self = StObject.set(x, "fontSizeLarge", js.undefined)
+    
+    inline def setFontSizeMedium(value: String): Self = StObject.set(x, "fontSizeMedium", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeMediumUndefined: Self = StObject.set(x, "fontSizeMedium", js.undefined)
     
     inline def setFontSizeSmall(value: String): Self = StObject.set(x, "fontSizeSmall", value.asInstanceOf[js.Any])
     

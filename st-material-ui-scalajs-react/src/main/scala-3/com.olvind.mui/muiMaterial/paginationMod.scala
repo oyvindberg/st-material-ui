@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.paginationClassesMod.PaginationClasses
+import com.olvind.mui.muiMaterial.paginationPaginationClassesMod.PaginationClasses
 import com.olvind.mui.muiMaterial.paginationPaginationMod.PaginationProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

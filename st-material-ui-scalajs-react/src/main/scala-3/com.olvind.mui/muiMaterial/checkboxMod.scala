@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
+import com.olvind.mui.muiMaterial.checkboxCheckboxClassesMod.CheckboxClasses
 import com.olvind.mui.muiMaterial.checkboxCheckboxMod.CheckboxProps
-import com.olvind.mui.muiMaterial.checkboxClassesMod.CheckboxClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

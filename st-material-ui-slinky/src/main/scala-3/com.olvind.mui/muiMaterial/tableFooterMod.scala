@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTableFooterTypeMapt
-import com.olvind.mui.muiMaterial.tableFooterClassesMod.TableFooterClasses
+import com.olvind.mui.muiMaterial.tableFooterTableFooterClassesMod.TableFooterClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object tableFooterMod {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TableFooter API](https://mui.com/api/table-footer/)
+    * - [TableFooter API](https://mui.com/material-ui/api/table-footer/)
     */
   @JSImport("@mui/material/TableFooter", JSImport.Default)
   @js.native

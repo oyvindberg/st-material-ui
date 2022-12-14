@@ -1,19 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dense
-import com.olvind.mui.muiMaterial.muiMaterialStrings.error
-import com.olvind.mui.muiMaterial.muiMaterialStrings.filled
-import com.olvind.mui.muiMaterial.muiMaterialStrings.info
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.normal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.outlined
-import com.olvind.mui.muiMaterial.muiMaterialStrings.primary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.secondary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.standard
-import com.olvind.mui.muiMaterial.muiMaterialStrings.success
-import com.olvind.mui.muiMaterial.muiMaterialStrings.warning
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import slinky.core.facade.ReactElement
@@ -34,10 +20,12 @@ trait Error extends StObject {
   var classes: js.UndefOr[PartialFormControlClasses] = js.undefined
   
   /**
-    * The color of the component. It supports those theme colors that make sense for this component.
+    * The color of the component.
+    * It supports both default and custom theme colors, which can be added as shown in the
+    * [palette customization guide](https://mui.com/material-ui/customization/palette/#adding-new-colors).
     * @default 'primary'
     */
-  var color: js.UndefOr[primary | secondary | error | info | success | warning] = js.undefined
+  var color: js.UndefOr["primary" | "secondary" | "error" | "info" | "success" | "warning"] = js.undefined
   
   /**
     * If `true`, the label, input and helper text should be displayed in a disabled state.
@@ -74,7 +62,7 @@ trait Error extends StObject {
     * If `dense` or `normal`, will adjust vertical spacing of this and contained components.
     * @default 'none'
     */
-  var margin: js.UndefOr[dense | normal | none] = js.undefined
+  var margin: js.UndefOr["dense" | "normal" | "none"] = js.undefined
   
   /**
     * If `true`, the label will indicate that the `input` is required.
@@ -86,18 +74,18 @@ trait Error extends StObject {
     * The size of the component.
     * @default 'medium'
     */
-  var size: js.UndefOr[small | medium] = js.undefined
+  var size: js.UndefOr["small" | "medium"] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * The variant to use.
     * @default 'outlined'
     */
-  var variant: js.UndefOr[standard | outlined | filled] = js.undefined
+  var variant: js.UndefOr["standard" | "outlined" | "filled"] = js.undefined
 }
 object Error {
   
@@ -116,7 +104,7 @@ object Error {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setColor(value: primary | secondary | error | info | success | warning): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: "primary" | "secondary" | "error" | "info" | "success" | "warning"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -140,7 +128,7 @@ object Error {
     
     inline def setHiddenLabelUndefined: Self = StObject.set(x, "hiddenLabel", js.undefined)
     
-    inline def setMargin(value: dense | normal | none): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: "dense" | "normal" | "none"): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -148,14 +136,14 @@ object Error {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "medium"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -163,13 +151,13 @@ object Error {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
-    inline def setVariant(value: standard | outlined | filled): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "standard" | "outlined" | "filled"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

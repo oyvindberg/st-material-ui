@@ -1,6 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialNumbers.`-1`
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +17,7 @@ trait ClassName extends StObject {
   
   def onDelete(event: Any): Unit
   
-  var tabIndex: `-1`
+  var tabIndex: -1
 }
 object ClassName {
   
@@ -46,6 +45,6 @@ object ClassName {
     
     inline def setOnDelete(value: Any => Callback): Self = StObject.set(x, "onDelete", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
     
-    inline def setTabIndex(value: `-1`): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: -1): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
   }
 }

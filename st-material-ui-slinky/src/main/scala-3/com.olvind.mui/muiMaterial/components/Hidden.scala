@@ -2,9 +2,7 @@ package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiMaterial.hiddenHiddenMod.HiddenProps
-import com.olvind.mui.muiMaterial.muiMaterialStrings.css
-import com.olvind.mui.muiMaterial.muiMaterialStrings.js_
-import com.olvind.mui.muiSystem.createBreakpointsMod.Breakpoint
+import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.Breakpoint
 import slinky.web.html.`*`.tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +19,7 @@ object Hidden {
     extends AnyVal
        with StBuildingComponent[tag.type, js.Object] {
     
-    inline def implementation(value: js_ | css): this.type = set("implementation", value.asInstanceOf[js.Any])
+    inline def implementation(value: "js" | "css"): this.type = set("implementation", value.asInstanceOf[js.Any])
     
     inline def initialWidth(value: Breakpoint): this.type = set("initialWidth", value.asInstanceOf[js.Any])
     

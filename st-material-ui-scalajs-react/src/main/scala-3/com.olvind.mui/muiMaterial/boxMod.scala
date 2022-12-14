@@ -13,19 +13,11 @@ object boxMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Box](https://mui.com/components/box/)
+    * - [Box](https://mui.com/material-ui/react-box/)
     *
     * API:
     *
-    * - [Box API](https://mui.com/components/box/#api)
-    * NOTE - As a CSS utility component, Box also supports all system props.
-    * You can use them as props directly on the component.
-    * Props use same syntax as `sx`. Not all props are listed in the API section.
-    *
-    * Example:
-    *
-    * // For instance, a Box with margin-top:
-    * <Box mt={2}>
+    * - [Box API](https://mui.com/material-ui/api/box/)
     */
   @JSImport("@mui/material/Box", JSImport.Default)
   @js.native

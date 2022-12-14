@@ -1,9 +1,12 @@
 package com.olvind.mui.muiSystem
 
+import com.olvind.mui.muiStyledEngine.mod.CSSObject
 import com.olvind.mui.muiSystem.anon.Mode
-import com.olvind.mui.muiSystem.createBreakpointsMod.Breakpoints
-import com.olvind.mui.muiSystem.createSpacingMod.Spacing
-import com.olvind.mui.muiSystem.shapeMod.Shape
+import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.Breakpoints
+import com.olvind.mui.muiSystem.createThemeCreateSpacingMod.Spacing
+import com.olvind.mui.muiSystem.createThemeShapeMod.Shape
+import com.olvind.mui.muiSystem.styleFunctionSxDefaultSxConfigMod.SxConfig
+import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,17 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object createThemeCreateThemeMod {
   
-  /* Rewritten from type alias, can be one of: 
-    - `com.olvind.mui`.muiSystem.muiSystemStrings.ltr
-    - `com.olvind.mui`.muiSystem.muiSystemStrings.rtl
-  */
-  trait Direction extends StObject
   object Direction {
     
-    inline def ltr: com.olvind.mui.muiSystem.muiSystemStrings.ltr = "ltr".asInstanceOf[com.olvind.mui.muiSystem.muiSystemStrings.ltr]
+    inline def ltr: "ltr" = "ltr".asInstanceOf["ltr"]
     
-    inline def rtl: com.olvind.mui.muiSystem.muiSystemStrings.rtl = "rtl".asInstanceOf[com.olvind.mui.muiSystem.muiSystemStrings.rtl]
+    inline def rtl: "rtl" = "rtl".asInstanceOf["rtl"]
   }
+  type Direction = "ltr" | "rtl"
   
   trait Theme extends StObject {
     
@@ -45,6 +44,10 @@ object createThemeCreateThemeMod {
     
     var typography: js.UndefOr[Any] = js.undefined
     
+    def unstable_sx(props: SxProps[Theme]): CSSObject
+    
+    var unstable_sxConfig: SxConfig
+    
     var zIndex: js.UndefOr[Any] = js.undefined
   }
   object Theme {
@@ -54,9 +57,11 @@ object createThemeCreateThemeMod {
       direction: Direction,
       palette: (Record[String, Any]) & Mode,
       shape: Shape,
-      spacing: Spacing
+      spacing: Spacing,
+      unstable_sx: SxProps[Theme] => CSSObject,
+      unstable_sxConfig: SxConfig
     ): Theme = {
-      val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], unstable_sx = js.Any.fromFunction1(unstable_sx), unstable_sxConfig = unstable_sxConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[Theme]
     }
     
@@ -91,6 +96,10 @@ object createThemeCreateThemeMod {
       inline def setTypography(value: Any): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
       
       inline def setTypographyUndefined: Self = StObject.set(x, "typography", js.undefined)
+      
+      inline def setUnstable_sx(value: SxProps[Theme] => CSSObject): Self = StObject.set(x, "unstable_sx", js.Any.fromFunction1(value))
+      
+      inline def setUnstable_sxConfig(value: SxConfig): Self = StObject.set(x, "unstable_sxConfig", value.asInstanceOf[js.Any])
       
       inline def setZIndex(value: Any): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       

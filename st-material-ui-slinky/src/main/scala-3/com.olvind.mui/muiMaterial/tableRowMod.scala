@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTableRowTypeMaptr
-import com.olvind.mui.muiMaterial.tableRowClassesMod.TableRowClasses
+import com.olvind.mui.muiMaterial.tableRowTableRowClassesMod.TableRowClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,11 +19,11 @@ object tableRowMod {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TableRow API](https://mui.com/api/table-row/)
+    * - [TableRow API](https://mui.com/material-ui/api/table-row/)
     */
   @JSImport("@mui/material/TableRow", JSImport.Default)
   @js.native

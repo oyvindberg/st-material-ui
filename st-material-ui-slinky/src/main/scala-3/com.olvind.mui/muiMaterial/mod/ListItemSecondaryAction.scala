@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Demos:
   *
-  * - [Lists](https://mui.com/components/lists/)
+  * - [Lists](https://mui.com/material-ui/react-list/)
   *
   * API:
   *
-  * - [ListItemSecondaryAction API](https://mui.com/api/list-item-secondary-action/)
+  * - [ListItemSecondaryAction API](https://mui.com/material-ui/api/list-item-secondary-action/)
   */
 /* Inlined (props : @mui/material.@mui/material/ListItemSecondaryAction/ListItemSecondaryAction.ListItemSecondaryActionProps): react.react.<global>.JSX.Element & {  muiName :string} */
 object ListItemSecondaryAction {

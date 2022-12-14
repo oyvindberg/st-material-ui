@@ -2,8 +2,8 @@ package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.emotionSerialize.mod.Interpolation
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
 import com.olvind.mui.muiMaterial.globalStylesGlobalStylesMod.GlobalStylesProps
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

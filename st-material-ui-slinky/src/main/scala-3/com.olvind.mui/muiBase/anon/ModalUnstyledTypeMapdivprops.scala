@@ -1,7 +1,5 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.muiBaseStrings.backdropClick
-import com.olvind.mui.muiBase.muiBaseStrings.escapeKeyDown
 import com.olvind.mui.react.mod.ReactEventHandler
 import org.scalajs.dom.Element
 import org.scalajs.dom.Event
@@ -11,18 +9,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @mui/base.@mui/base/ModalUnstyled/ModalUnstyled.ModalUnstyledTypeMap<{}, 'div'>['props'] */
+/* Inlined @mui/base.@mui/base/ModalUnstyled/ModalUnstyled.types.ModalUnstyledTypeMap<{}, 'div'>['props'] */
 trait ModalUnstyledTypeMapdivprops extends StObject {
-  
-  /**
-    * A backdrop component. This prop enables custom backdrop rendering.
-    */
-  var BackdropComponent: js.UndefOr[ReactElement] = js.undefined
-  
-  /**
-    * Props applied to the [`BackdropUnstyled`](/api/backdrop-unstyled/) element.
-    */
-  var BackdropProps: js.UndefOr[PartialBackdropUnstyledPropsBackdropUnst] = js.undefined
   
   /**
     * A single child content element.
@@ -39,19 +27,6 @@ trait ModalUnstyledTypeMapdivprops extends StObject {
     * @default false
     */
   var closeAfterTransition: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * The components used for each slot inside the Modal.
-    * Either a string to use a HTML element or a component.
-    * @default {}
-    */
-  var components: js.UndefOr[Root] = js.undefined
-  
-  /**
-    * The props used for each slot inside the Modal.
-    * @default {}
-    */
-  var componentsProps: js.UndefOr[`4`] = js.undefined
   
   /**
     * An HTML element or function that returns one.
@@ -96,7 +71,7 @@ trait ModalUnstyledTypeMapdivprops extends StObject {
   
   /**
     * If `true`, the modal will not restore focus to previously focused element once
-    * modal is hidden.
+    * modal is hidden or unmounted.
     * @default false
     */
   var disableRestoreFocus: js.UndefOr[Boolean] = js.undefined
@@ -123,6 +98,7 @@ trait ModalUnstyledTypeMapdivprops extends StObject {
   
   /**
     * Callback fired when the backdrop is clicked.
+    * @deprecated Use the `onClose` prop with the `reason` argument to handle the `backdropClick` events.
     */
   var onBackdropClick: js.UndefOr[ReactEventHandler[js.Object]] = js.undefined
   
@@ -134,13 +110,26 @@ trait ModalUnstyledTypeMapdivprops extends StObject {
     * @param {string} reason Can be: `"escapeKeyDown"`, `"backdropClick"`.
     */
   var onClose: js.UndefOr[
-    js.Function2[/* event */ js.Object, /* reason */ backdropClick | escapeKeyDown, Unit]
+    js.Function2[/* event */ js.Object, /* reason */ "backdropClick" | "escapeKeyDown", Unit]
   ] = js.undefined
   
   /**
     * If `true`, the component is shown.
     */
   var open: Boolean
+  
+  /**
+    * The props used for each slot inside the Modal.
+    * @default {}
+    */
+  var slotProps: js.UndefOr[Backdrop] = js.undefined
+  
+  /**
+    * The components used for each slot inside the Modal.
+    * Either a string to use a HTML element or a component.
+    * @default {}
+    */
+  var slots: js.UndefOr[BackdropRoot] = js.undefined
 }
 object ModalUnstyledTypeMapdivprops {
   
@@ -151,14 +140,6 @@ object ModalUnstyledTypeMapdivprops {
   
   extension [Self <: ModalUnstyledTypeMapdivprops](x: Self) {
     
-    inline def setBackdropComponent(value: ReactElement): Self = StObject.set(x, "BackdropComponent", value.asInstanceOf[js.Any])
-    
-    inline def setBackdropComponentUndefined: Self = StObject.set(x, "BackdropComponent", js.undefined)
-    
-    inline def setBackdropProps(value: PartialBackdropUnstyledPropsBackdropUnst): Self = StObject.set(x, "BackdropProps", value.asInstanceOf[js.Any])
-    
-    inline def setBackdropPropsUndefined: Self = StObject.set(x, "BackdropProps", js.undefined)
-    
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setClasses(value: PartialModalUnstyledClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
@@ -168,14 +149,6 @@ object ModalUnstyledTypeMapdivprops {
     inline def setCloseAfterTransition(value: Boolean): Self = StObject.set(x, "closeAfterTransition", value.asInstanceOf[js.Any])
     
     inline def setCloseAfterTransitionUndefined: Self = StObject.set(x, "closeAfterTransition", js.undefined)
-    
-    inline def setComponents(value: Root): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
-    
-    inline def setComponentsProps(value: `4`): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
-    
-    inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
-    
-    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     inline def setContainer(value: Element | (js.Function0[Element | Null])): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
@@ -221,10 +194,18 @@ object ModalUnstyledTypeMapdivprops {
     
     inline def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
     
-    inline def setOnClose(value: (/* event */ js.Object, /* reason */ backdropClick | escapeKeyDown) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+    inline def setOnClose(value: (/* event */ js.Object, /* reason */ "backdropClick" | "escapeKeyDown") => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
     
     inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    
+    inline def setSlotProps(value: Backdrop): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    
+    inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
+    
+    inline def setSlots(value: BackdropRoot): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }
 }

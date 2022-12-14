@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
+import com.olvind.mui.muiMaterial.accordionDetailsAccordionDetailsClassesMod.AccordionDetailsClasses
 import com.olvind.mui.muiMaterial.accordionDetailsAccordionDetailsMod.AccordionDetailsProps
-import com.olvind.mui.muiMaterial.accordionDetailsClassesMod.AccordionDetailsClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

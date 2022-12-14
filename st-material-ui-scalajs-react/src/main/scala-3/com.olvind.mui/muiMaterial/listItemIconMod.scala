@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.listItemIconClassesMod.ListItemIconClasses
+import com.olvind.mui.muiMaterial.listItemIconListItemIconClassesMod.ListItemIconClasses
 import com.olvind.mui.muiMaterial.listItemIconListItemIconMod.ListItemIconProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

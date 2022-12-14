@@ -1,7 +1,5 @@
 package com.olvind.mui.react.mod
 
-import com.olvind.mui.react.reactStrings.environment
-import com.olvind.mui.react.reactStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +33,7 @@ trait AllHTMLAttributes[T]
   
   var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var capture: js.UndefOr[Boolean | user | environment] = js.undefined
+  var capture: js.UndefOr[Boolean | "user" | "environment"] = js.undefined
   
   var cellPadding: js.UndefOr[Double | String] = js.undefined
   
@@ -146,8 +144,6 @@ trait AllHTMLAttributes[T]
   var name: js.UndefOr[String] = js.undefined
   
   var noValidate: js.UndefOr[Boolean] = js.undefined
-  
-  var nonce: js.UndefOr[String] = js.undefined
   
   var open: js.UndefOr[Boolean] = js.undefined
   
@@ -274,7 +270,7 @@ object AllHTMLAttributes {
     
     inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
-    inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean | "user" | "environment"): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
@@ -501,10 +497,6 @@ object AllHTMLAttributes {
     inline def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
     
     inline def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
-    
-    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
-    
-    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.selectClassesMod.SelectClasses
+import com.olvind.mui.muiMaterial.selectSelectClassesMod.SelectClasses
 import com.olvind.mui.muiMaterial.selectSelectMod.SelectProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -17,12 +17,12 @@ object selectMod {
     *
     * Demos:
     *
-    * - [Selects](https://mui.com/components/selects/)
+    * - [Select](https://mui.com/material-ui/react-select/)
     *
     * API:
     *
-    * - [Select API](https://mui.com/api/select/)
-    * - inherits [OutlinedInput API](https://mui.com/api/outlined-input/)
+    * - [Select API](https://mui.com/material-ui/api/select/)
+    * - inherits [OutlinedInput API](https://mui.com/material-ui/api/outlined-input/)
     */
   /* Inlined <T>(props : @mui/material.@mui/material/Select/Select.SelectProps<T>): react.react.<global>.JSX.Element & {  muiName :string} */
   object default {

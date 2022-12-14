@@ -5,23 +5,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `5`[P, D /* <: ReactElement */] extends StObject {
+trait `5`[SubheaderTypographyComponent /* <: ReactElement */] extends StObject {
   
-  var defaultComponent: D
-  
-  var props: P & FocusVisibleClassName
+  var component: js.UndefOr[SubheaderTypographyComponent] = js.undefined
 }
 object `5` {
   
-  inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & FocusVisibleClassName): `5`[P, D] = {
-    val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`5`[P, D]]
+  inline def apply[SubheaderTypographyComponent /* <: ReactElement */](): `5`[SubheaderTypographyComponent] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`5`[SubheaderTypographyComponent]]
   }
   
-  extension [Self <: `5`[?, ?], P, D /* <: ReactElement */](x: Self & (`5`[P, D])) {
+  extension [Self <: `5`[?], SubheaderTypographyComponent /* <: ReactElement */](x: Self & `5`[SubheaderTypographyComponent]) {
     
-    inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+    inline def setComponent(value: SubheaderTypographyComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & FocusVisibleClassName): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
   }
 }

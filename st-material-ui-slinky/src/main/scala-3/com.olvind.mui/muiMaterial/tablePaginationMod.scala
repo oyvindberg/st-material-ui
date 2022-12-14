@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTablePaginationType
-import com.olvind.mui.muiMaterial.tablePaginationClassesMod.TablePaginationClasses
+import com.olvind.mui.muiMaterial.tablePaginationTablePaginationClassesMod.TablePaginationClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,12 +18,12 @@ object tablePaginationMod {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TablePagination API](https://mui.com/api/table-pagination/)
-    * - inherits [TableCell API](https://mui.com/api/table-cell/)
+    * - [TablePagination API](https://mui.com/material-ui/api/table-pagination/)
+    * - inherits [TableCell API](https://mui.com/material-ui/api/table-cell/)
     */
   @JSImport("@mui/material/TablePagination", JSImport.Default)
   @js.native

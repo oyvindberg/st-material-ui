@@ -1,15 +1,13 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.buttonUnstyledPropsMod.ButtonUnstyledComponentsPropsOverrides
-import com.olvind.mui.react.mod.ButtonHTMLAttributes
-import org.scalajs.dom.HTMLButtonElement
+import japgolly.scalajs.react.facade.React.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `1` extends StObject {
   
-  var root: js.UndefOr[ButtonHTMLAttributes[HTMLButtonElement] & ButtonUnstyledComponentsPropsOverrides] = js.undefined
+  var root: js.UndefOr[ElementType] = js.undefined
 }
 object `1` {
   
@@ -20,7 +18,7 @@ object `1` {
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setRoot(value: ButtonHTMLAttributes[HTMLButtonElement] & ButtonUnstyledComponentsPropsOverrides): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: ElementType): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }

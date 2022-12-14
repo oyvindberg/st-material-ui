@@ -10,8 +10,14 @@ object themeProviderThemeProviderMod {
   
   trait ThemeProviderProps[Theme] extends StObject {
     
+    /**
+      * Your component tree.
+      */
     var children: js.UndefOr[ReactElement] = js.undefined
     
+    /**
+      * A theme object. You can provide a function to extend the outer theme.
+      */
     var theme: Partial[Theme] | (js.Function1[/* outerTheme */ Theme, Theme])
   }
   object ThemeProviderProps {

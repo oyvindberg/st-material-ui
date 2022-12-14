@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsPaginationItemTypeM
-import com.olvind.mui.muiMaterial.paginationItemClassesMod.PaginationItemClasses
+import com.olvind.mui.muiMaterial.paginationItemPaginationItemClassesMod.PaginationItemClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object paginationItemMod {
     *
     * Demos:
     *
-    * - [Pagination](https://mui.com/components/pagination/)
+    * - [Pagination](https://mui.com/material-ui/react-pagination/)
     *
     * API:
     *
-    * - [PaginationItem API](https://mui.com/api/pagination-item/)
+    * - [PaginationItem API](https://mui.com/material-ui/api/pagination-item/)
     */
   @JSImport("@mui/material/PaginationItem", JSImport.Default)
   @js.native

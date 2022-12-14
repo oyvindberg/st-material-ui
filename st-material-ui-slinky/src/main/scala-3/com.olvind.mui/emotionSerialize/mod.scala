@@ -546,6 +546,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CSSInterpolation = @emotion/serialize.@emotion/serialize.InterpolationPrimitive | @emotion/serialize.@emotion/serialize.ArrayCSSInterpolation
+  }}}
+  to avoid circular code involving: 
+  - @emotion/serialize.@emotion/serialize.ArrayCSSInterpolation
+  - @emotion/serialize.@emotion/serialize.CSSInterpolation
+  */
   type CSSInterpolation = InterpolationPrimitive | Any
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -563,7 +572,6 @@ object mod {
     extends StObject
        with CSSPropertiesWithMultiValues
        with CSSPseudos
-       with _InterpolationPrimitive
   object CSSObject {
     
     inline def apply(): CSSObject = {
@@ -22564,9 +22572,7 @@ object mod {
     }
   }
   
-  trait ComponentSelector
-    extends StObject
-       with _InterpolationPrimitive {
+  trait ComponentSelector extends StObject {
     
     var __emotion_styles: Any
   }
@@ -22583,41 +22589,41 @@ object mod {
     }
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FunctionInterpolation = (props : Props): @emotion/serialize.@emotion/serialize.Interpolation<Props>
+  }}}
+  to avoid circular code involving: 
+  - @emotion/serialize.@emotion/serialize.ArrayInterpolation
+  - @emotion/serialize.@emotion/serialize.FunctionInterpolation
+  - @emotion/serialize.@emotion/serialize.Interpolation
+  */
   @js.native
-  trait FunctionInterpolation[Props]
-    extends StObject
-       with _Interpolation[Props] {
+  trait FunctionInterpolation[Props] extends StObject {
     
     def apply(props: Props): Interpolation[Props] = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - `com.olvind.mui`.emotionSerialize.mod.InterpolationPrimitive
-    - scala.Any
-    - `com.olvind.mui`.emotionSerialize.mod.FunctionInterpolation[Props]
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Interpolation = @emotion/serialize.@emotion/serialize.InterpolationPrimitive | @emotion/serialize.@emotion/serialize.ArrayInterpolation<Props> | @emotion/serialize.@emotion/serialize.FunctionInterpolation<Props>
+  }}}
+  to avoid circular code involving: 
+  - @emotion/serialize.@emotion/serialize.ArrayInterpolation
+  - @emotion/serialize.@emotion/serialize.Interpolation
   */
-  type Interpolation[Props] = js.UndefOr[
-    _Interpolation[Props] | Any | Null | Boolean | Double | String | SerializedStyles
-  ]
+  type Interpolation[Props] = InterpolationPrimitive | Any | FunctionInterpolation[Props]
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Null
-    - scala.Unit
-    - scala.Boolean
-    - scala.Double
-    - java.lang.String
-    - `com.olvind.mui`.emotionSerialize.mod.ComponentSelector
-    - `com.olvind.mui`.emotionSerialize.mod.Keyframes
-    - `com.olvind.mui`.emotionUtils.mod.SerializedStyles
-    - `com.olvind.mui`.emotionSerialize.mod.CSSObject
-  */
-  type InterpolationPrimitive = js.UndefOr[_InterpolationPrimitive | Null | Boolean | Double | String | SerializedStyles]
+  type InterpolationPrimitive = js.UndefOr[
+    Null | Boolean | Double | String | ComponentSelector | Keyframes | SerializedStyles | CSSObject
+  ]
   
   @js.native
   trait Keyframes
     extends StObject
-       with com.olvind.mui.std.String
-       with _InterpolationPrimitive {
+       with com.olvind.mui.std.String {
     
     var anim: Double = js.native
     
@@ -22625,10 +22631,4 @@ object mod {
     
     var styles: String = js.native
   }
-  
-  trait _Interpolation[Props] extends StObject
-  
-  trait _InterpolationPrimitive
-    extends StObject
-       with _Interpolation[Any]
 }

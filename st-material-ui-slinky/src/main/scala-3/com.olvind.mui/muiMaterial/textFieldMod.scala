@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.textFieldClassesMod.TextFieldClasses
+import com.olvind.mui.muiMaterial.textFieldTextFieldClassesMod.TextFieldClasses
 import com.olvind.mui.muiMaterial.textFieldTextFieldMod.TextFieldProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

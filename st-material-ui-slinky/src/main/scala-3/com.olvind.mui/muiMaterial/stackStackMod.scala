@@ -2,8 +2,8 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsStackTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.Direction
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.boxBoxMod.SystemProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.Shortcut
@@ -18,11 +18,11 @@ object stackStackMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Stack](https://mui.com/components/stack/)
+    * - [Stack](https://mui.com/material-ui/react-stack/)
     *
     * API:
     *
-    * - [Stack API](https://mui.com/api/stack/)
+    * - [Stack API](https://mui.com/material-ui/api/stack/)
     */
   @JSImport("@mui/material/Stack/Stack", JSImport.Default)
   @js.native

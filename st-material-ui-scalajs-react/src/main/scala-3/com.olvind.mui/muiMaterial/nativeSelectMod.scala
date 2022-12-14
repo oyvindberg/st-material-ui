@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.nativeSelectClassesMod.NativeSelectClasses
+import com.olvind.mui.muiMaterial.nativeSelectNativeSelectClassesMod.NativeSelectClasses
 import com.olvind.mui.muiMaterial.nativeSelectNativeSelectMod.NativeSelectProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -18,12 +18,12 @@ object nativeSelectMod {
     *
     * Demos:
     *
-    * - [Selects](https://mui.com/components/selects/)
+    * - [Select](https://mui.com/material-ui/react-select/)
     *
     * API:
     *
-    * - [NativeSelect API](https://mui.com/api/native-select/)
-    * - inherits [Input API](https://mui.com/api/input/)
+    * - [NativeSelect API](https://mui.com/material-ui/api/native-select/)
+    * - inherits [Input API](https://mui.com/material-ui/api/input/)
     */
   /* Inlined (props : @mui/material.@mui/material/NativeSelect/NativeSelect.NativeSelectProps): react.react.<global>.JSX.Element & {  muiName :string} */
   object default {

@@ -8,9 +8,8 @@ trait SuspenseProps extends StObject {
   
   var children: js.UndefOr[slinky.core.facade.ReactElement] = js.undefined
   
-  // TODO(react18): `fallback?: ReactNode;`
   /** A fallback react tree to show when a Suspense child (like React.lazy) suspends */
-  var fallback: slinky.core.facade.ReactElement | String | Double | js.Object | js.Iterable[slinky.core.facade.ReactElement] | ReactPortal | Boolean | Null
+  var fallback: js.UndefOr[slinky.core.facade.ReactElement] = js.undefined
   
   /**
     * The presence of this prop indicates that the content is computationally expensive to render.
@@ -22,7 +21,7 @@ trait SuspenseProps extends StObject {
 object SuspenseProps {
   
   inline def apply(): SuspenseProps = {
-    val __obj = js.Dynamic.literal(fallback = null)
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuspenseProps]
   }
   
@@ -32,13 +31,9 @@ object SuspenseProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setFallback(
-      value: slinky.core.facade.ReactElement | String | Double | js.Object | js.Iterable[slinky.core.facade.ReactElement] | ReactPortal | Boolean
-    ): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    inline def setFallback(value: slinky.core.facade.ReactElement): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
-    inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
-    
-    inline def setFallbackReactElement(value: slinky.core.facade.ReactElement): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
     inline def setUnstable_expectedLoadTime(value: Double): Self = StObject.set(x, "unstable_expectedLoadTime", value.asInstanceOf[js.Any])
     

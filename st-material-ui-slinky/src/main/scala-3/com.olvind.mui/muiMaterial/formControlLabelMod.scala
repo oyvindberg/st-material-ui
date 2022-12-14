@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.formControlLabelClassesMod.FormControlLabelClasses
+import com.olvind.mui.muiMaterial.formControlLabelFormControlLabelClassesMod.FormControlLabelClasses
 import com.olvind.mui.muiMaterial.formControlLabelFormControlLabelMod.FormControlLabelProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

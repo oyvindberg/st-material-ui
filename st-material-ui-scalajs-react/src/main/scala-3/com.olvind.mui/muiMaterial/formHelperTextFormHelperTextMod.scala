@@ -16,17 +16,19 @@ object formHelperTextFormHelperTextMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Text Fields](https://mui.com/components/text-fields/)
+    * - [Text Field](https://mui.com/material-ui/react-text-field/)
     *
     * API:
     *
-    * - [FormHelperText API](https://mui.com/api/form-helper-text/)
+    * - [FormHelperText API](https://mui.com/material-ui/api/form-helper-text/)
     */
   @JSImport("@mui/material/FormHelperText/FormHelperText", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsFormHelperTextTypeM, Element] = js.native
   
   type FormHelperTextProps[D /* <: ElementType */, P] = OverrideProps[FormHelperTextTypeMap[P, D], D]
+  
+  trait FormHelperTextPropsVariantOverrides extends StObject
   
   trait FormHelperTextTypeMap[P, D /* <: ElementType */] extends StObject {
     

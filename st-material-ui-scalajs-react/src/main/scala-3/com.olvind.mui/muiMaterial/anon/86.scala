@@ -1,38 +1,40 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.iconIconClassesMod.IconClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `86` extends StObject {
+trait `86`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialInputAdornmentPropsdiv] = js.undefined
+  var defaultProps: js.UndefOr[PartialIconPropsspan] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesInputAdornment] = js.undefined
+  var styleOverrides: js.UndefOr[com.olvind.mui.std.Partial[OverridesStyleRules[IconClassKey, "MuiIcon", Theme]]] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialInputAdornmentPropsdiv]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialIconPropsspan]] = js.undefined
 }
 object `86` {
   
-  inline def apply(): `86` = {
+  inline def apply[Theme](): `86`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`86`]
+    __obj.asInstanceOf[`86`[Theme]]
   }
   
-  extension [Self <: `86`](x: Self) {
+  extension [Self <: `86`[?], Theme](x: Self & `86`[Theme]) {
     
-    inline def setDefaultProps(value: PartialInputAdornmentPropsdiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialIconPropsspan): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesInputAdornment): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(value: com.olvind.mui.std.Partial[OverridesStyleRules[IconClassKey, "MuiIcon", Theme]]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialInputAdornmentPropsdiv]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialIconPropsspan]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialInputAdornmentPropsdiv*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialIconPropsspan*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

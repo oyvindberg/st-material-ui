@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsCardHeaderTypeMapdi
-import com.olvind.mui.muiMaterial.cardHeaderClassesMod.CardHeaderClasses
+import com.olvind.mui.muiMaterial.cardHeaderCardHeaderClassesMod.CardHeaderClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object cardHeaderMod {
     *
     * Demos:
     *
-    * - [Cards](https://mui.com/components/cards/)
+    * - [Card](https://mui.com/material-ui/react-card/)
     *
     * API:
     *
-    * - [CardHeader API](https://mui.com/api/card-header/)
+    * - [CardHeader API](https://mui.com/material-ui/api/card-header/)
     */
   @JSImport("@mui/material/CardHeader", JSImport.Default)
   @js.native

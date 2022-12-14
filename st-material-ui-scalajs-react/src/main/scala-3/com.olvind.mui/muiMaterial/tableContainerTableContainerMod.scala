@@ -16,11 +16,11 @@ object tableContainerTableContainerMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [TableContainer API](https://mui.com/api/table-container/)
+    * - [TableContainer API](https://mui.com/material-ui/api/table-container/)
     */
   @JSImport("@mui/material/TableContainer/TableContainer", JSImport.Default)
   @js.native

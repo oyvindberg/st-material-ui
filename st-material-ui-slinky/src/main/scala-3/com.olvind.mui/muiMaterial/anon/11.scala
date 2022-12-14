@@ -5,23 +5,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `11`[P, D /* <: ReactElement */] extends StObject {
+trait `11` extends StObject {
   
-  var defaultComponent: D
+  var Input: js.UndefOr[ReactElement] = js.undefined
   
-  var props: P & Edge
+  var Root: js.UndefOr[ReactElement] = js.undefined
 }
 object `11` {
   
-  inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & Edge): `11`[P, D] = {
-    val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`11`[P, D]]
+  inline def apply(): `11` = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`11`]
   }
   
-  extension [Self <: `11`[?, ?], P, D /* <: ReactElement */](x: Self & (`11`[P, D])) {
+  extension [Self <: `11`](x: Self) {
     
-    inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+    inline def setInput(value: ReactElement): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & Edge): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
+    
+    inline def setRoot(value: ReactElement): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
   }
 }

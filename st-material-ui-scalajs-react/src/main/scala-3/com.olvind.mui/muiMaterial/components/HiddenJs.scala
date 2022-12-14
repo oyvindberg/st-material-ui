@@ -1,8 +1,8 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiMaterial.hiddenJsMod.HiddenJsProps
-import com.olvind.mui.muiSystem.createBreakpointsMod.Breakpoint
+import com.olvind.mui.muiMaterial.hiddenHiddenJsMod.HiddenJsProps
+import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.Breakpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,8 +17,6 @@ object HiddenJs {
   open class Builder (val args: js.Array[Any])
     extends AnyVal
        with StBuildingComponent[js.Object] {
-    
-    inline def initialWidth(value: Breakpoint): this.type = set("initialWidth", value.asInstanceOf[js.Any])
     
     inline def lgDown(value: Boolean): this.type = set("lgDown", value.asInstanceOf[js.Any])
     
@@ -35,6 +33,8 @@ object HiddenJs {
     inline def smDown(value: Boolean): this.type = set("smDown", value.asInstanceOf[js.Any])
     
     inline def smUp(value: Boolean): this.type = set("smUp", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Breakpoint): this.type = set("width", value.asInstanceOf[js.Any])
     
     inline def xlDown(value: Boolean): this.type = set("xlDown", value.asInstanceOf[js.Any])
     

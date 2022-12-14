@@ -14,6 +14,6 @@ object BadgeMark {
   implicit def make(companion: BadgeMark.type): Default[js.Object] = new Default[js.Object](js.Array(this.component, js.Dictionary.empty))()
   
   def withProps(
-    p: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.BadgeRoot | undefined>['badge'] */ js.Any
+    p: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Badge | undefined>['badge'] */ js.Any
   ): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

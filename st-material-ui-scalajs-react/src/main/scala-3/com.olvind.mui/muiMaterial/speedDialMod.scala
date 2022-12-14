@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.speedDialClassesMod.SpeedDialClasses
+import com.olvind.mui.muiMaterial.speedDialSpeedDialClassesMod.SpeedDialClasses
 import com.olvind.mui.muiMaterial.speedDialSpeedDialMod.SpeedDialProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

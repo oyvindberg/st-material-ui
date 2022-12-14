@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriabusy
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapListAbout
-import com.olvind.mui.muiMaterial.listItemButtonClassesMod.ListItemButtonClasses
+import com.olvind.mui.muiMaterial.listItemButtonListItemButtonClassesMod.ListItemButtonClasses
 import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,12 +18,12 @@ object listItemButtonMod {
     *
     * Demos:
     *
-    * - [Lists](https://mui.com/components/lists/)
+    * - [Lists](https://mui.com/material-ui/react-list/)
     *
     * API:
     *
-    * - [ListItemButton API](https://mui.com/api/list-item-button/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [ListItemButton API](https://mui.com/material-ui/api/list-item-button/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/ListItemButton", JSImport.Default)
   @js.native

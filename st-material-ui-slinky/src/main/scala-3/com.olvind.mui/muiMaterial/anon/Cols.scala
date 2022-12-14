@@ -1,10 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.auto
-import com.olvind.mui.muiMaterial.muiMaterialStrings.masonry
-import com.olvind.mui.muiMaterial.muiMaterialStrings.quilted
-import com.olvind.mui.muiMaterial.muiMaterialStrings.standard
-import com.olvind.mui.muiMaterial.muiMaterialStrings.woven
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.mod.ReactPortal
@@ -41,18 +36,18 @@ trait Cols extends StObject {
     * The height of one row in px.
     * @default 'auto'
     */
-  var rowHeight: js.UndefOr[Double | auto] = js.undefined
+  var rowHeight: js.UndefOr[Double | "auto"] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * The variant to use.
     * @default 'standard'
     */
-  var variant: js.UndefOr[masonry | quilted | standard | woven] = js.undefined
+  var variant: js.UndefOr["masonry" | "quilted" | "standard" | "woven"] = js.undefined
 }
 object Cols {
   
@@ -79,14 +74,14 @@ object Cols {
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setRowHeight(value: Double | auto): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Double | "auto"): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -94,13 +89,13 @@ object Cols {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
-    inline def setVariant(value: masonry | quilted | standard | woven): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "masonry" | "quilted" | "standard" | "woven"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

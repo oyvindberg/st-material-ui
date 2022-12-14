@@ -1,25 +1,53 @@
 package com.olvind.mui.muiBase.anon
 
-import japgolly.scalajs.react.facade.React.ElementType
+import com.olvind.mui.muiBase.sliderUnstyledSliderUnstyledDottypesMod.SliderUnstyledComponentsPropsOverrides
+import com.olvind.mui.muiBase.sliderUnstyledSliderUnstyledDottypesMod.SliderUnstyledOwnerState
+import com.olvind.mui.muiBase.sliderUnstyledSliderValueLabelUnstyledMod.SliderValueLabelUnstyledProps
+import com.olvind.mui.muiBase.utilsTypesMod.SlotComponentProps
+import com.olvind.mui.react.mod.ComponentPropsWithRef
+import com.olvind.mui.react.mod.global.JSX.Element
+import com.olvind.mui.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Mark extends StObject {
   
-  var Mark: js.UndefOr[ElementType] = js.undefined
+  var input: js.UndefOr[
+    SlotComponentProps["input", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+  ] = js.undefined
   
-  var MarkLabel: js.UndefOr[ElementType] = js.undefined
+  var mark: js.UndefOr[
+    SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+  ] = js.undefined
   
-  var Rail: js.UndefOr[ElementType] = js.undefined
+  var markLabel: js.UndefOr[
+    SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+  ] = js.undefined
   
-  var Root: js.UndefOr[ElementType] = js.undefined
+  var rail: js.UndefOr[
+    SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+  ] = js.undefined
   
-  var Thumb: js.UndefOr[ElementType] = js.undefined
+  var root: js.UndefOr[
+    SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+  ] = js.undefined
   
-  var Track: js.UndefOr[ElementType] = js.undefined
+  var thumb: js.UndefOr[
+    SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+  ] = js.undefined
   
-  var ValueLabel: js.UndefOr[ElementType] = js.undefined
+  var track: js.UndefOr[
+    SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+  ] = js.undefined
+  
+  var valueLabel: js.UndefOr[
+    SlotComponentProps[
+      js.Function1[/* props */ SliderValueLabelUnstyledProps, Element], 
+      SliderUnstyledComponentsPropsOverrides, 
+      SliderUnstyledOwnerState
+    ]
+  ] = js.undefined
 }
 object Mark {
   
@@ -30,32 +58,90 @@ object Mark {
   
   extension [Self <: Mark](x: Self) {
     
-    inline def setMark(value: ElementType): Self = StObject.set(x, "Mark", value.asInstanceOf[js.Any])
+    inline def setInput(
+      value: SlotComponentProps["input", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+    ): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    inline def setMarkLabel(value: ElementType): Self = StObject.set(x, "MarkLabel", value.asInstanceOf[js.Any])
+    inline def setInputFunction1(
+      value: SliderUnstyledOwnerState => Partial[ComponentPropsWithRef["input"]] & SliderUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
     
-    inline def setMarkLabelUndefined: Self = StObject.set(x, "MarkLabel", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setMarkUndefined: Self = StObject.set(x, "Mark", js.undefined)
+    inline def setMark(
+      value: SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+    ): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
-    inline def setRail(value: ElementType): Self = StObject.set(x, "Rail", value.asInstanceOf[js.Any])
+    inline def setMarkFunction1(
+      value: SliderUnstyledOwnerState => Partial[ComponentPropsWithRef["span"]] & SliderUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "mark", js.Any.fromFunction1(value))
     
-    inline def setRailUndefined: Self = StObject.set(x, "Rail", js.undefined)
+    inline def setMarkLabel(
+      value: SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+    ): Self = StObject.set(x, "markLabel", value.asInstanceOf[js.Any])
     
-    inline def setRoot(value: ElementType): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
+    inline def setMarkLabelFunction1(
+      value: SliderUnstyledOwnerState => Partial[ComponentPropsWithRef["span"]] & SliderUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "markLabel", js.Any.fromFunction1(value))
     
-    inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+    inline def setMarkLabelUndefined: Self = StObject.set(x, "markLabel", js.undefined)
     
-    inline def setThumb(value: ElementType): Self = StObject.set(x, "Thumb", value.asInstanceOf[js.Any])
+    inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
     
-    inline def setThumbUndefined: Self = StObject.set(x, "Thumb", js.undefined)
+    inline def setRail(
+      value: SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+    ): Self = StObject.set(x, "rail", value.asInstanceOf[js.Any])
     
-    inline def setTrack(value: ElementType): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
+    inline def setRailFunction1(
+      value: SliderUnstyledOwnerState => Partial[ComponentPropsWithRef["span"]] & SliderUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "rail", js.Any.fromFunction1(value))
     
-    inline def setTrackUndefined: Self = StObject.set(x, "Track", js.undefined)
+    inline def setRailUndefined: Self = StObject.set(x, "rail", js.undefined)
     
-    inline def setValueLabel(value: ElementType): Self = StObject.set(x, "ValueLabel", value.asInstanceOf[js.Any])
+    inline def setRoot(
+      value: SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+    ): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    inline def setValueLabelUndefined: Self = StObject.set(x, "ValueLabel", js.undefined)
+    inline def setRootFunction1(
+      value: SliderUnstyledOwnerState => Partial[ComponentPropsWithRef["span"]] & SliderUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    
+    inline def setThumb(
+      value: SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+    ): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    
+    inline def setThumbFunction1(
+      value: SliderUnstyledOwnerState => Partial[ComponentPropsWithRef["span"]] & SliderUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "thumb", js.Any.fromFunction1(value))
+    
+    inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
+    
+    inline def setTrack(
+      value: SlotComponentProps["span", SliderUnstyledComponentsPropsOverrides, SliderUnstyledOwnerState]
+    ): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    
+    inline def setTrackFunction1(
+      value: SliderUnstyledOwnerState => Partial[ComponentPropsWithRef["span"]] & SliderUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "track", js.Any.fromFunction1(value))
+    
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    
+    inline def setValueLabel(
+      value: SlotComponentProps[
+          js.Function1[/* props */ SliderValueLabelUnstyledProps, Element], 
+          SliderUnstyledComponentsPropsOverrides, 
+          SliderUnstyledOwnerState
+        ]
+    ): Self = StObject.set(x, "valueLabel", value.asInstanceOf[js.Any])
+    
+    inline def setValueLabelFunction1(
+      value: SliderUnstyledOwnerState => (Partial[
+          ComponentPropsWithRef[js.Function1[/* props */ SliderValueLabelUnstyledProps, Element]]
+        ]) & SliderUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "valueLabel", js.Any.fromFunction1(value))
+    
+    inline def setValueLabelUndefined: Self = StObject.set(x, "valueLabel", js.undefined)
   }
 }

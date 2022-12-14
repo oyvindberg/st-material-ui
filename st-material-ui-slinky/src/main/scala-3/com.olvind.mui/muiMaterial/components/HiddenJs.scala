@@ -1,8 +1,8 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiMaterial.hiddenJsMod.HiddenJsProps
-import com.olvind.mui.muiSystem.createBreakpointsMod.Breakpoint
+import com.olvind.mui.muiMaterial.hiddenHiddenJsMod.HiddenJsProps
+import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.Breakpoint
 import slinky.web.html.`*`.tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,8 +19,6 @@ object HiddenJs {
     extends AnyVal
        with StBuildingComponent[tag.type, js.Object] {
     
-    inline def initialWidth(value: Breakpoint): this.type = set("initialWidth", value.asInstanceOf[js.Any])
-    
     inline def lgDown(value: Boolean): this.type = set("lgDown", value.asInstanceOf[js.Any])
     
     inline def lgUp(value: Boolean): this.type = set("lgUp", value.asInstanceOf[js.Any])
@@ -36,6 +34,8 @@ object HiddenJs {
     inline def smDown(value: Boolean): this.type = set("smDown", value.asInstanceOf[js.Any])
     
     inline def smUp(value: Boolean): this.type = set("smUp", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Breakpoint): this.type = set("width", value.asInstanceOf[js.Any])
     
     inline def xlDown(value: Boolean): this.type = set("xlDown", value.asInstanceOf[js.Any])
     

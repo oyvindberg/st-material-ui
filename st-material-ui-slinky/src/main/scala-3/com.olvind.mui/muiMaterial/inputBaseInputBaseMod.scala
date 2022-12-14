@@ -2,68 +2,10 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.Disabled
 import com.olvind.mui.muiMaterial.anon.Input
+import com.olvind.mui.muiMaterial.anon.InputRoot
 import com.olvind.mui.muiMaterial.anon.PartialInputBaseClasses
-import com.olvind.mui.muiMaterial.anon.Root
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`inline`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.additions
-import com.olvind.mui.muiMaterial.muiMaterialStrings.all
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ascending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.assertive
-import com.olvind.mui.muiMaterial.muiMaterialStrings.both
-import com.olvind.mui.muiMaterial.muiMaterialStrings.copy
-import com.olvind.mui.muiMaterial.muiMaterialStrings.date
-import com.olvind.mui.muiMaterial.muiMaterialStrings.decimal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dense
-import com.olvind.mui.muiMaterial.muiMaterialStrings.descending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dialog
-import com.olvind.mui.muiMaterial.muiMaterialStrings.email
-import com.olvind.mui.muiMaterial.muiMaterialStrings.error
-import com.olvind.mui.muiMaterial.muiMaterialStrings.execute
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grammar
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grid
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.info
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.link
-import com.olvind.mui.muiMaterial.muiMaterialStrings.list
-import com.olvind.mui.muiMaterial.muiMaterialStrings.listbox
-import com.olvind.mui.muiMaterial.muiMaterialStrings.location
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mixed
-import com.olvind.mui.muiMaterial.muiMaterialStrings.move
-import com.olvind.mui.muiMaterial.muiMaterialStrings.no
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.numeric
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.on
-import com.olvind.mui.muiMaterial.muiMaterialStrings.other
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.polite
-import com.olvind.mui.muiMaterial.muiMaterialStrings.popup
-import com.olvind.mui.muiMaterial.muiMaterialStrings.primary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.removals
-import com.olvind.mui.muiMaterial.muiMaterialStrings.search
-import com.olvind.mui.muiMaterial.muiMaterialStrings.secondary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.spelling
-import com.olvind.mui.muiMaterial.muiMaterialStrings.step
-import com.olvind.mui.muiMaterial.muiMaterialStrings.success
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tel
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
-import com.olvind.mui.muiMaterial.muiMaterialStrings.time
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tree
-import com.olvind.mui.muiMaterial.muiMaterialStrings.url
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.warning
-import com.olvind.mui.muiMaterial.muiMaterialStrings.yes
+import com.olvind.mui.muiMaterial.anon.`11`
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.anon.Html
@@ -137,7 +79,7 @@ object inputBaseInputBaseMod {
   
   trait InputBaseComponentsPropsOverrides extends StObject
   
-  /* Inlined parent @mui/material.@mui/material.InternalStandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, 'children' | 'onChange' | 'onKeyUp' | 'onKeyDown' | 'onBlur' | 'onFocus' | 'defaultValue'> */
+  /* Inlined parent @mui/material.@mui/material.InternalStandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, 'children' | 'defaultValue' | 'onBlur' | 'onChange' | 'onFocus' | 'onInvalid' | 'onKeyDown' | 'onKeyUp'> */
   trait InputBaseProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -148,11 +90,11 @@ object inputBaseInputBaseMod {
     
     var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
     
     var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
@@ -162,7 +104,7 @@ object inputBaseInputBaseMod {
     
     var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
@@ -170,7 +112,7 @@ object inputBaseInputBaseMod {
     
     var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
@@ -180,11 +122,11 @@ object inputBaseInputBaseMod {
     
     var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
     
     var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
     
     var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
@@ -194,7 +136,7 @@ object inputBaseInputBaseMod {
     
     var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
     
     var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
@@ -202,7 +144,7 @@ object inputBaseInputBaseMod {
     
     var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
     
     var `aria-owns`: js.UndefOr[String] = js.undefined
     
@@ -210,12 +152,12 @@ object inputBaseInputBaseMod {
     
     var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
     
     var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ] = js.undefined
     
     var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -232,7 +174,7 @@ object inputBaseInputBaseMod {
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
     
     var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
@@ -269,25 +211,35 @@ object inputBaseInputBaseMod {
     var classes: js.UndefOr[PartialInputBaseClasses] = js.undefined
     
     /**
-      * The color of the component. It supports those theme colors that make sense for this component.
+      * The color of the component.
+      * It supports both default and custom theme colors, which can be added as shown in the
+      * [palette customization guide](https://mui.com/material-ui/customization/palette/#adding-new-colors).
       * The prop defaults to the value (`'primary'`) inherited from the parent FormControl component.
       */
-    var color: js.UndefOr[primary | secondary | error | info | success | warning] = js.undefined
+    var color: js.UndefOr["primary" | "secondary" | "error" | "info" | "success" | "warning"] = js.undefined
     
     /**
-      * The components used for each slot inside the InputBase.
-      * Either a string to use a HTML element or a component.
+      * The components used for each slot inside.
+      *
+      * This prop is an alias for the `slots` prop.
+      * It's recommended to use the `slots` prop instead.
+      *
       * @default {}
       */
-    var components: js.UndefOr[Root] = js.undefined
+    var components: js.UndefOr[`11`] = js.undefined
     
     /**
-      * The props used for each slot inside the Input.
+      * The extra props for the slot components.
+      * You can override the existing props or add new ones.
+      *
+      * This prop is an alias for the `slotProps` prop.
+      * It's recommended to use the `slotProps` prop instead, as `componentsProps` will be deprecated in the future.
+      *
       * @default {}
       */
-    var componentsProps: js.UndefOr[Input] = js.undefined
+    var componentsProps: js.UndefOr[InputRoot] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -352,7 +304,7 @@ object inputBaseInputBaseMod {
       */
     var inputComponent: js.UndefOr[ReactElement] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+    var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
     
     /**
       * [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes) applied to the `input` element.
@@ -384,7 +336,7 @@ object inputBaseInputBaseMod {
       * FormControl.
       * The prop defaults to the value (`'none'`) inherited from the parent FormControl component.
       */
-    var margin: js.UndefOr[dense | none] = js.undefined
+    var margin: js.UndefOr["dense" | "none"] = js.undefined
     
     /**
       * Maximum number of rows to display when multiline option is set to true.
@@ -397,7 +349,7 @@ object inputBaseInputBaseMod {
     var minRows: js.UndefOr[String | Double] = js.undefined
     
     /**
-      * If `true`, a `textarea` element is rendered.
+      * If `true`, a [TextareaAutosize](/material-ui/react-textarea-autosize/) element is rendered.
       * @default false
       */
     var multiline: js.UndefOr[Boolean] = js.undefined
@@ -406,6 +358,8 @@ object inputBaseInputBaseMod {
       * Name attribute of the `input` element.
       */
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -484,7 +438,10 @@ object inputBaseInputBaseMod {
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+    /**
+      * Callback fired when the `input` doesn't satisfy its constraints.
+      */
+    var onInvalid: js.UndefOr[FormEventHandler[HTMLInputElement | HTMLTextAreaElement]] = js.undefined
     
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement | HTMLInputElement]] = js.undefined
     
@@ -544,6 +501,8 @@ object inputBaseInputBaseMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -593,7 +552,9 @@ object inputBaseInputBaseMod {
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    var ref: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ] = js.undefined
     
     var renderSuffix: js.UndefOr[js.Function1[/* state */ Disabled, ReactElement]] = js.undefined
     
@@ -619,9 +580,28 @@ object inputBaseInputBaseMod {
     /**
       * The size of the component.
       */
-    var size: js.UndefOr[small | medium] = js.undefined
+    var size: js.UndefOr["small" | "medium"] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The extra props for the slot components.
+      * You can override the existing props or add new ones.
+      *
+      * This prop is an alias for the `componentsProps` prop, which will be deprecated in the future.
+      *
+      * @default {}
+      */
+    var slotProps: js.UndefOr[InputRoot] = js.undefined
+    
+    /**
+      * The components used for each slot inside.
+      *
+      * This prop is an alias for the `components` prop, which will be deprecated in the future.
+      *
+      * @default {}
+      */
+    var slots: js.UndefOr[Input] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
@@ -645,7 +625,7 @@ object inputBaseInputBaseMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.undefined
+    var translate: js.UndefOr["yes" | "no"] = js.undefined
     
     /**
       * Type of the `input` element. It should be [a valid HTML5 input type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types).
@@ -655,7 +635,7 @@ object inputBaseInputBaseMod {
     
     var typeof: js.UndefOr[String] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.undefined
+    var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
     /**
       * The value of the `input` element, required for a controlled component.
@@ -689,7 +669,7 @@ object inputBaseInputBaseMod {
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
@@ -697,7 +677,7 @@ object inputBaseInputBaseMod {
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
       inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
@@ -717,7 +697,7 @@ object inputBaseInputBaseMod {
       
       inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
       inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
@@ -733,7 +713,7 @@ object inputBaseInputBaseMod {
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
       inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
@@ -753,7 +733,7 @@ object inputBaseInputBaseMod {
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
@@ -761,7 +741,7 @@ object inputBaseInputBaseMod {
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
       inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
@@ -781,7 +761,7 @@ object inputBaseInputBaseMod {
       
       inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
@@ -797,7 +777,7 @@ object inputBaseInputBaseMod {
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
       inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
@@ -813,7 +793,7 @@ object inputBaseInputBaseMod {
       
       inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
@@ -822,7 +802,7 @@ object inputBaseInputBaseMod {
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
       inline def `setAria-relevant`(
-        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+        value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -855,7 +835,7 @@ object inputBaseInputBaseMod {
       
       inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
       inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
@@ -903,19 +883,19 @@ object inputBaseInputBaseMod {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setColor(value: primary | secondary | error | info | success | warning): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: "primary" | "secondary" | "error" | "info" | "success" | "warning"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setComponents(value: Root): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: `11`): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      inline def setComponentsProps(value: Input): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
+      inline def setComponentsProps(value: InputRoot): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
       
       inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
@@ -983,7 +963,7 @@ object inputBaseInputBaseMod {
       
       inline def setInputComponentUndefined: Self = StObject.set(x, "inputComponent", js.undefined)
       
-      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1029,7 +1009,7 @@ object inputBaseInputBaseMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setMargin(value: dense | none): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: "dense" | "none"): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -1048,6 +1028,10 @@ object inputBaseInputBaseMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[Event, HTMLDivElement] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -1181,7 +1165,7 @@ object inputBaseInputBaseMod {
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      inline def setOnInvalid(value: SyntheticEvent[EventTarget & HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: SyntheticEvent[EventTarget & (HTMLInputElement | HTMLTextAreaElement), Event] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
@@ -1301,6 +1285,10 @@ object inputBaseInputBaseMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[Event, HTMLDivElement] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: SyntheticUIEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1385,13 +1373,9 @@ object inputBaseInputBaseMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-      
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
-      
-      inline def setRefReactRef(value: ReactRef[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
@@ -1423,13 +1407,21 @@ object inputBaseInputBaseMod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: "small" | "medium"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
+      inline def setSlotProps(value: InputRoot): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      
+      inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
+      
       inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+      
+      inline def setSlots(value: Input): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      
+      inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
       inline def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
       
@@ -1469,7 +1461,7 @@ object inputBaseInputBaseMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
@@ -1481,7 +1473,7 @@ object inputBaseInputBaseMod {
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       

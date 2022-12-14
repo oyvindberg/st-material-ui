@@ -15,6 +15,10 @@ object localeMod {
   @js.native
   val arEG: Localization = js.native
   
+  @JSImport("@mui/material/locale", "arSA")
+  @js.native
+  val arSA: Localization = js.native
+  
   @JSImport("@mui/material/locale", "arSD")
   @js.native
   val arSD: Localization = js.native
@@ -83,6 +87,10 @@ object localeMod {
   @js.native
   val hiIN: Localization = js.native
   
+  @JSImport("@mui/material/locale", "hrHR")
+  @js.native
+  val hrHR: Localization = js.native
+  
   @JSImport("@mui/material/locale", "huHU")
   @js.native
   val huHU: Localization = js.native
@@ -118,6 +126,10 @@ object localeMod {
   @JSImport("@mui/material/locale", "kzKZ")
   @js.native
   val kzKZ: Localization = js.native
+  
+  @JSImport("@mui/material/locale", "mkMK")
+  @js.native
+  val mkMK: Localization = js.native
   
   @JSImport("@mui/material/locale", "nbNO")
   @js.native
@@ -155,6 +167,10 @@ object localeMod {
   @js.native
   val skSK: Localization = js.native
   
+  @JSImport("@mui/material/locale", "srRS")
+  @js.native
+  val srRS: Localization = js.native
+  
   @JSImport("@mui/material/locale", "svSE")
   @js.native
   val svSE: Localization = js.native
@@ -170,6 +186,10 @@ object localeMod {
   @JSImport("@mui/material/locale", "ukUA")
   @js.native
   val ukUA: Localization = js.native
+  
+  @JSImport("@mui/material/locale", "urPK")
+  @js.native
+  val urPK: Localization = js.native
   
   @JSImport("@mui/material/locale", "viVN")
   @js.native

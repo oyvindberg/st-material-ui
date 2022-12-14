@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiBase.modalUnstyledClassesMod.ModalUnstyledClasses
+import com.olvind.mui.muiBase.modalUnstyledModalUnstyledClassesMod.ModalUnstyledClasses
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendModalUnstyled
 import com.olvind.mui.muiMaterial.modalModalMod.ModalClasses_
 import com.olvind.mui.muiMaterial.modalModalMod.ModalRootProps
@@ -19,27 +19,27 @@ object modalMod {
   /**
     * Modal is a lower-level construct that is leveraged by the following components:
     *
-    * *   [Dialog](https://mui.com/api/dialog/)
-    * *   [Drawer](https://mui.com/api/drawer/)
-    * *   [Menu](https://mui.com/api/menu/)
-    * *   [Popover](https://mui.com/api/popover/)
+    * *   [Dialog](https://mui.com/material-ui/api/dialog/)
+    * *   [Drawer](https://mui.com/material-ui/api/drawer/)
+    * *   [Menu](https://mui.com/material-ui/api/menu/)
+    * *   [Popover](https://mui.com/material-ui/api/popover/)
     *
-    * If you are creating a modal dialog, you probably want to use the [Dialog](https://mui.com/api/dialog/) component
+    * If you are creating a modal dialog, you probably want to use the [Dialog](https://mui.com/material-ui/api/dialog/) component
     * rather than directly using Modal.
     *
     * This component shares many concepts with [react-overlays](https://react-bootstrap.github.io/react-overlays/#modals).
     *
     * Demos:
     *
-    * - [Modal](https://mui.com/components/modal/)
+    * - [Modal](https://mui.com/material-ui/react-modal/)
     *
     * API:
     *
-    * - [Modal API](https://mui.com/api/modal/)
+    * - [Modal API](https://mui.com/material-ui/api/modal/)
     */
   @JSImport("@mui/material/Modal", JSImport.Default)
   @js.native
-  val default: js.Function1[/* props */ DefaultComponentPropsExtendModalUnstyled, Element] = js.native
+  val default: js.Function1[/* props */ DefaultComponentPropsExtendModalUnstyled, Element | Null] = js.native
   
   @JSImport("@mui/material/Modal", "ModalManager")
   @js.native

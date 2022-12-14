@@ -63,11 +63,11 @@ trait Array[T]
     */
   /* standard es5 */
   @JSName("every")
-  def every_S_T[S /* <: T */](
+  def every_S[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ Boolean]
   ): /* is std.Array<S> */ Boolean = js.native
   @JSName("every")
-  def every_S_T[S /* <: T */](
+  def every_S[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ Boolean],
     thisArg: Any
   ): /* is std.Array<S> */ Boolean = js.native
@@ -104,11 +104,11 @@ trait Array[T]
     */
   /* standard es5 */
   @JSName("filter")
-  def filter_S_T[S /* <: T */](
+  def filter_S[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ Boolean]
   ): js.Array[S] = js.native
   @JSName("filter")
-  def filter_S_T[S /* <: T */](
+  def filter_S[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ Boolean],
     thisArg: Any
   ): js.Array[S] = js.native

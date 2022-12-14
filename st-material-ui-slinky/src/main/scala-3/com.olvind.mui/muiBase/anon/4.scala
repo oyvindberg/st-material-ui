@@ -1,27 +1,25 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.modalUnstyledModalUnstyledMod.ModalUnstyledComponentsPropsOverrides
-import com.olvind.mui.react.mod.HTMLAttributes
-import org.scalajs.dom.HTMLDivElement
+import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `4` extends StObject {
+trait `4`[D /* <: ReactElement */] extends StObject {
   
-  var root: js.UndefOr[HTMLAttributes[HTMLDivElement] & ModalUnstyledComponentsPropsOverrides] = js.undefined
+  var component: js.UndefOr[D] = js.undefined
 }
 object `4` {
   
-  inline def apply(): `4` = {
+  inline def apply[D /* <: ReactElement */](): `4`[D] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`4`]
+    __obj.asInstanceOf[`4`[D]]
   }
   
-  extension [Self <: `4`](x: Self) {
+  extension [Self <: `4`[?], D /* <: ReactElement */](x: Self & `4`[D]) {
     
-    inline def setRoot(value: HTMLAttributes[HTMLDivElement] & ModalUnstyledComponentsPropsOverrides): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setComponent(value: D): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
   }
 }

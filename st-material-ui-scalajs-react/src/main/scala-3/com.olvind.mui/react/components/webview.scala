@@ -7,51 +7,6 @@ import com.olvind.mui.react.mod.Booleanish
 import com.olvind.mui.react.mod.CSSProperties
 import com.olvind.mui.react.mod.DetailedHTMLProps
 import com.olvind.mui.react.mod.WebViewHTMLAttributes
-import com.olvind.mui.react.reactStrings.`additions removals`
-import com.olvind.mui.react.reactStrings.`additions text`
-import com.olvind.mui.react.reactStrings.`inline`
-import com.olvind.mui.react.reactStrings.`removals additions`
-import com.olvind.mui.react.reactStrings.`removals text`
-import com.olvind.mui.react.reactStrings.`text additions`
-import com.olvind.mui.react.reactStrings.`text removals`
-import com.olvind.mui.react.reactStrings.additions
-import com.olvind.mui.react.reactStrings.all
-import com.olvind.mui.react.reactStrings.ascending
-import com.olvind.mui.react.reactStrings.assertive
-import com.olvind.mui.react.reactStrings.both
-import com.olvind.mui.react.reactStrings.copy
-import com.olvind.mui.react.reactStrings.date
-import com.olvind.mui.react.reactStrings.decimal
-import com.olvind.mui.react.reactStrings.descending
-import com.olvind.mui.react.reactStrings.email
-import com.olvind.mui.react.reactStrings.execute
-import com.olvind.mui.react.reactStrings.grammar
-import com.olvind.mui.react.reactStrings.grid
-import com.olvind.mui.react.reactStrings.horizontal
-import com.olvind.mui.react.reactStrings.inherit
-import com.olvind.mui.react.reactStrings.list
-import com.olvind.mui.react.reactStrings.listbox
-import com.olvind.mui.react.reactStrings.location
-import com.olvind.mui.react.reactStrings.mixed
-import com.olvind.mui.react.reactStrings.move
-import com.olvind.mui.react.reactStrings.no
-import com.olvind.mui.react.reactStrings.none
-import com.olvind.mui.react.reactStrings.numeric
-import com.olvind.mui.react.reactStrings.off
-import com.olvind.mui.react.reactStrings.on
-import com.olvind.mui.react.reactStrings.other
-import com.olvind.mui.react.reactStrings.page
-import com.olvind.mui.react.reactStrings.polite
-import com.olvind.mui.react.reactStrings.popup
-import com.olvind.mui.react.reactStrings.removals
-import com.olvind.mui.react.reactStrings.search
-import com.olvind.mui.react.reactStrings.spelling
-import com.olvind.mui.react.reactStrings.step
-import com.olvind.mui.react.reactStrings.tel
-import com.olvind.mui.react.reactStrings.tree
-import com.olvind.mui.react.reactStrings.url
-import com.olvind.mui.react.reactStrings.vertical
-import com.olvind.mui.react.reactStrings.yes
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactAnimationEventFrom
 import japgolly.scalajs.react.ReactClipboardEventFrom
@@ -91,11 +46,11 @@ object webview {
     
     inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
     
-    inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `aria-autocomplete`(value: "none" | "inline" | "list" | "both"): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
     
-    inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+    inline def `aria-checked`(value: Boolean | "mixed"): this.type = set("aria-checked", value.asInstanceOf[js.Any])
     
     inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
     
@@ -105,7 +60,7 @@ object webview {
     
     inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
     
-    inline def `aria-current`(value: Boolean | page | step | location | date | com.olvind.mui.react.reactStrings.time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+    inline def `aria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): this.type = set("aria-current", value.asInstanceOf[js.Any])
     
     inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
     
@@ -113,7 +68,7 @@ object webview {
     
     inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
     
-    inline def `aria-dropeffect`(value: none | copy | execute | com.olvind.mui.react.reactStrings.link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `aria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
     
@@ -123,13 +78,11 @@ object webview {
     
     inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
     
-    inline def `aria-haspopup`(
-      value: Boolean | com.olvind.mui.react.reactStrings.menu | listbox | tree | grid | com.olvind.mui.react.reactStrings.dialog
-    ): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `aria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
     
-    inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+    inline def `aria-invalid`(value: Boolean | "grammar" | "spelling"): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
     
     inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
     
@@ -139,7 +92,7 @@ object webview {
     
     inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
     
-    inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+    inline def `aria-live`(value: "off" | "assertive" | "polite"): this.type = set("aria-live", value.asInstanceOf[js.Any])
     
     inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
     
@@ -147,7 +100,7 @@ object webview {
     
     inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
     
-    inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+    inline def `aria-orientation`(value: "horizontal" | "vertical"): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
     
     inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
     
@@ -155,12 +108,12 @@ object webview {
     
     inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
     
-    inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+    inline def `aria-pressed`(value: Boolean | "mixed"): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
     
     inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `aria-relevant`(
-      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | com.olvind.mui.react.reactStrings.text | (`text additions`) | (`text removals`)
+      value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
     ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
@@ -177,7 +130,7 @@ object webview {
     
     inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
     
-    inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+    inline def `aria-sort`(value: "none" | "ascending" | "descending" | "other"): this.type = set("aria-sort", value.asInstanceOf[js.Any])
     
     inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
     
@@ -203,7 +156,7 @@ object webview {
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
     
-    inline def contentEditable(value: Booleanish | inherit): this.type = set("contentEditable", value.asInstanceOf[js.Any])
+    inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
     inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
     
@@ -237,9 +190,7 @@ object webview {
     
     inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
     
-    inline def inputMode(
-      value: none | com.olvind.mui.react.reactStrings.text | tel | url | email | numeric | decimal | search
-    ): this.type = set("inputMode", value.asInstanceOf[js.Any])
+    inline def inputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): this.type = set("inputMode", value.asInstanceOf[js.Any])
     
     inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
     
@@ -256,6 +207,8 @@ object webview {
     inline def lang(value: String): this.type = set("lang", value.asInstanceOf[js.Any])
     
     inline def nodeintegration(value: Boolean): this.type = set("nodeintegration", value.asInstanceOf[js.Any])
+    
+    inline def nonce(value: String): this.type = set("nonce", value.asInstanceOf[js.Any])
     
     inline def onAbort(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
     
@@ -383,6 +336,8 @@ object webview {
     
     inline def onReset(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
     
+    inline def onResize(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    
     inline def onScroll(value: ReactUIEventFrom[HTMLElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLElement & Element]) => value(t0).runNow()))
     
     inline def onSeeked(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
@@ -453,11 +408,11 @@ object webview {
     
     inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
     
-    inline def translate(value: yes | no): this.type = set("translate", value.asInstanceOf[js.Any])
+    inline def translate(value: "yes" | "no"): this.type = set("translate", value.asInstanceOf[js.Any])
     
     inline def typeof(value: String): this.type = set("typeof", value.asInstanceOf[js.Any])
     
-    inline def unselectable(value: on | off): this.type = set("unselectable", value.asInstanceOf[js.Any])
+    inline def unselectable(value: "on" | "off"): this.type = set("unselectable", value.asInstanceOf[js.Any])
     
     inline def useragent(value: String): this.type = set("useragent", value.asInstanceOf[js.Any])
     

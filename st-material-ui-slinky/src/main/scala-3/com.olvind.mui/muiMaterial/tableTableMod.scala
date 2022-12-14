@@ -16,11 +16,11 @@ object tableTableMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [Table API](https://mui.com/api/table/)
+    * - [Table API](https://mui.com/material-ui/api/table/)
     */
   @JSImport("@mui/material/Table/Table", JSImport.Default)
   @js.native

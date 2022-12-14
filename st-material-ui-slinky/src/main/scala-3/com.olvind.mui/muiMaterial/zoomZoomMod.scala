@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.transitionMod.TransitionProps
+import com.olvind.mui.muiMaterial.transitionsTransitionMod.TransitionProps
 import com.olvind.mui.react.mod.Ref
 import com.olvind.mui.react.mod.global.JSX.Element
 import slinky.core.facade.ReactElement

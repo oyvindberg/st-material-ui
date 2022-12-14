@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.linearProgressClassesMod.LinearProgressClasses
+import com.olvind.mui.muiMaterial.linearProgressLinearProgressClassesMod.LinearProgressClasses
 import com.olvind.mui.muiMaterial.linearProgressLinearProgressMod.LinearProgressProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

@@ -1,6 +1,5 @@
 package com.olvind.mui.emotionUtils
 
-import com.olvind.mui.emotionUtils.emotionUtilsBooleans.`true`
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.HTMLElement
@@ -13,11 +12,11 @@ object mod {
   
   trait EmotionCache extends StObject {
     
-    var compat: js.UndefOr[`true`] = js.undefined
+    var compat: js.UndefOr[true] = js.undefined
     
     def insert(selector: String, serialized: SerializedStyles, sheet: StyleSheet, shouldCache: Boolean): String | Unit
     
-    var inserted: StringDictionary[String | `true`]
+    var inserted: StringDictionary[String | true]
     
     var key: String
     
@@ -31,7 +30,7 @@ object mod {
     
     inline def apply(
       insert: (String, SerializedStyles, StyleSheet, Boolean) => String | Unit,
-      inserted: StringDictionary[String | `true`],
+      inserted: StringDictionary[String | true],
       key: String,
       registered: RegisteredCache,
       sheet: StyleSheet
@@ -42,13 +41,13 @@ object mod {
     
     extension [Self <: EmotionCache](x: Self) {
       
-      inline def setCompat(value: `true`): Self = StObject.set(x, "compat", value.asInstanceOf[js.Any])
+      inline def setCompat(value: true): Self = StObject.set(x, "compat", value.asInstanceOf[js.Any])
       
       inline def setCompatUndefined: Self = StObject.set(x, "compat", js.undefined)
       
       inline def setInsert(value: (String, SerializedStyles, StyleSheet, Boolean) => String | Unit): Self = StObject.set(x, "insert", js.Any.fromFunction4(value))
       
-      inline def setInserted(value: StringDictionary[String | `true`]): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
+      inline def setInserted(value: StringDictionary[String | true]): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

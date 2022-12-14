@@ -2,8 +2,8 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.Component
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBoxTypeMapdiv
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.boxBoxMod.SystemProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.Shortcut
@@ -18,19 +18,11 @@ object boxBoxMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Box](https://mui.com/components/box/)
+    * - [Box](https://mui.com/material-ui/react-box/)
     *
     * API:
     *
-    * - [Box API](https://mui.com/components/box/#api)
-    * NOTE - As a CSS utility component, Box also supports all system props.
-    * You can use them as props directly on the component.
-    * Props use same syntax as `sx`. Not all props are listed in the API section.
-    *
-    * Example:
-    *
-    * // For instance, a Box with margin-top:
-    * <Box mt={2}>
+    * - [Box API](https://mui.com/material-ui/api/box/)
     */
   @JSImport("@mui/material/Box/Box", JSImport.Default)
   @js.native

@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTableTypeMaptable
-import com.olvind.mui.muiMaterial.tableClassesMod.TableClasses
+import com.olvind.mui.muiMaterial.tableTableClassesMod.TableClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object tableMod {
     *
     * Demos:
     *
-    * - [Tables](https://mui.com/components/tables/)
+    * - [Table](https://mui.com/material-ui/react-table/)
     *
     * API:
     *
-    * - [Table API](https://mui.com/api/table/)
+    * - [Table API](https://mui.com/material-ui/api/table/)
     */
   @JSImport("@mui/material/Table", JSImport.Default)
   @js.native

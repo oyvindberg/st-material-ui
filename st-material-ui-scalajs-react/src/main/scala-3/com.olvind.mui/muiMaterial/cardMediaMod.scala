@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsCardMediaTypeMapdiv
-import com.olvind.mui.muiMaterial.cardMediaClassesMod.CardMediaClasses
+import com.olvind.mui.muiMaterial.cardMediaCardMediaClassesMod.CardMediaClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object cardMediaMod {
     *
     * Demos:
     *
-    * - [Cards](https://mui.com/components/cards/)
+    * - [Card](https://mui.com/material-ui/react-card/)
     *
     * API:
     *
-    * - [CardMedia API](https://mui.com/api/card-media/)
+    * - [CardMedia API](https://mui.com/material-ui/api/card-media/)
     */
   @JSImport("@mui/material/CardMedia", JSImport.Default)
   @js.native

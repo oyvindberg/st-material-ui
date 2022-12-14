@@ -1,32 +1,27 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.sliderUnstyledSliderUnstyledMod.SliderUnstyledComponentsPropsOverrides
-import com.olvind.mui.muiBase.sliderValueLabelUnstyledMod.ValueLabelUnstyledProps
-import com.olvind.mui.react.mod.ComponentPropsWithRef
-import com.olvind.mui.react.mod.HTMLAttributes
-import com.olvind.mui.react.mod.global.JSX.Element
-import org.scalajs.dom.HTMLSpanElement
+import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MarkLabel extends StObject {
   
-  var mark: js.UndefOr[HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides] = js.undefined
+  var input: js.UndefOr[ReactElement] = js.undefined
   
-  var markLabel: js.UndefOr[HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides] = js.undefined
+  var mark: js.UndefOr[ReactElement] = js.undefined
   
-  var rail: js.UndefOr[HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides] = js.undefined
+  var markLabel: js.UndefOr[ReactElement] = js.undefined
   
-  var root: js.UndefOr[HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides] = js.undefined
+  var rail: js.UndefOr[ReactElement] = js.undefined
   
-  var thumb: js.UndefOr[HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides] = js.undefined
+  var root: js.UndefOr[ReactElement] = js.undefined
   
-  var track: js.UndefOr[HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides] = js.undefined
+  var thumb: js.UndefOr[ReactElement] = js.undefined
   
-  var valueLabel: js.UndefOr[
-    (ComponentPropsWithRef[js.Function1[/* props */ ValueLabelUnstyledProps, Element]]) & SliderUnstyledComponentsPropsOverrides
-  ] = js.undefined
+  var track: js.UndefOr[ReactElement] = js.undefined
+  
+  var valueLabel: js.UndefOr[ReactElement] = js.undefined
 }
 object MarkLabel {
   
@@ -37,33 +32,35 @@ object MarkLabel {
   
   extension [Self <: MarkLabel](x: Self) {
     
-    inline def setMark(value: HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+    inline def setInput(value: ReactElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    inline def setMarkLabel(value: HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides): Self = StObject.set(x, "markLabel", value.asInstanceOf[js.Any])
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    
+    inline def setMark(value: ReactElement): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+    
+    inline def setMarkLabel(value: ReactElement): Self = StObject.set(x, "markLabel", value.asInstanceOf[js.Any])
     
     inline def setMarkLabelUndefined: Self = StObject.set(x, "markLabel", js.undefined)
     
     inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
     
-    inline def setRail(value: HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides): Self = StObject.set(x, "rail", value.asInstanceOf[js.Any])
+    inline def setRail(value: ReactElement): Self = StObject.set(x, "rail", value.asInstanceOf[js.Any])
     
     inline def setRailUndefined: Self = StObject.set(x, "rail", js.undefined)
     
-    inline def setRoot(value: HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: ReactElement): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    inline def setThumb(value: HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: ReactElement): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
     inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
     
-    inline def setTrack(value: HTMLAttributes[HTMLSpanElement] & SliderUnstyledComponentsPropsOverrides): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: ReactElement): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
-    inline def setValueLabel(
-      value: (ComponentPropsWithRef[js.Function1[/* props */ ValueLabelUnstyledProps, Element]]) & SliderUnstyledComponentsPropsOverrides
-    ): Self = StObject.set(x, "valueLabel", value.asInstanceOf[js.Any])
+    inline def setValueLabel(value: ReactElement): Self = StObject.set(x, "valueLabel", value.asInstanceOf[js.Any])
     
     inline def setValueLabelUndefined: Self = StObject.set(x, "valueLabel", js.undefined)
   }

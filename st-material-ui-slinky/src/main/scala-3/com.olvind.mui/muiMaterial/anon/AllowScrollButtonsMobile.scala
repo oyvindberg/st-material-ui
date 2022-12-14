@@ -1,23 +1,10 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialBooleans.`false`
-import com.olvind.mui.muiMaterial.muiMaterialBooleans.`true`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.auto
-import com.olvind.mui.muiMaterial.muiMaterialStrings.fullWidth
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.primary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.scrollable
-import com.olvind.mui.muiMaterial.muiMaterialStrings.secondary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.standard
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
 import com.olvind.mui.muiMaterial.tabsTabsMod.TabsActions
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
-import com.olvind.mui.react.mod.HTMLAttributes
 import org.scalajs.dom.Element
 import org.scalajs.dom.Event
-import org.scalajs.dom.HTMLDivElement
 import slinky.core.SyntheticEvent
 import slinky.core.facade.ReactElement
 import slinky.core.facade.ReactRef
@@ -37,10 +24,10 @@ trait AllowScrollButtonsMobile extends StObject {
     * Props applied to the tab indicator element.
     * @default  {}
     */
-  var TabIndicatorProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
+  var TabIndicatorProps: js.UndefOr[HTMLAttributesHTMLDivElement] = js.undefined
   
   /**
-    * Props applied to the [`TabScrollButton`](/api/tab-scroll-button/) element.
+    * Props applied to the [`TabScrollButton`](/material-ui/api/tab-scroll-button/) element.
     * @default {}
     */
   var TabScrollButtonProps: js.UndefOr[PartialTabScrollButtonProps] = js.undefined
@@ -93,7 +80,7 @@ trait AllowScrollButtonsMobile extends StObject {
     * Determines the color of the indicator.
     * @default 'primary'
     */
-  var indicatorColor: js.UndefOr[secondary | primary] = js.undefined
+  var indicatorColor: js.UndefOr["secondary" | "primary"] = js.undefined
   
   /**
     * Callback fired when the value changes.
@@ -107,7 +94,7 @@ trait AllowScrollButtonsMobile extends StObject {
     * The component orientation (layout flow direction).
     * @default 'horizontal'
     */
-  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
+  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   /**
     * Determine behavior of scroll buttons when tabs are set to scroll:
@@ -120,7 +107,7 @@ trait AllowScrollButtonsMobile extends StObject {
     * This behavior can be disabled with `allowScrollButtonsMobile`.
     * @default 'auto'
     */
-  var scrollButtons: js.UndefOr[auto | `true` | `false`] = js.undefined
+  var scrollButtons: js.UndefOr["auto" | true | false] = js.undefined
   
   /**
     * If `true` the selected tab changes on focus. Otherwise it only
@@ -131,13 +118,13 @@ trait AllowScrollButtonsMobile extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * Determines the color of the `Tab`.
     * @default 'primary'
     */
-  var textColor: js.UndefOr[secondary | primary | inherit] = js.undefined
+  var textColor: js.UndefOr["secondary" | "primary" | "inherit"] = js.undefined
   
   /**
     * The value of the currently selected `Tab`.
@@ -155,7 +142,7 @@ trait AllowScrollButtonsMobile extends StObject {
     *  - `standard` will render the default state.
     * @default 'standard'
     */
-  var variant: js.UndefOr[standard | scrollable | fullWidth] = js.undefined
+  var variant: js.UndefOr["standard" | "scrollable" | "fullWidth"] = js.undefined
   
   /**
     * If `true`, the scrollbar is visible. It can be useful when displaying
@@ -207,7 +194,7 @@ object AllowScrollButtonsMobile {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setIndicatorColor(value: secondary | primary): Self = StObject.set(x, "indicatorColor", value.asInstanceOf[js.Any])
+    inline def setIndicatorColor(value: "secondary" | "primary"): Self = StObject.set(x, "indicatorColor", value.asInstanceOf[js.Any])
     
     inline def setIndicatorColorUndefined: Self = StObject.set(x, "indicatorColor", js.undefined)
     
@@ -215,7 +202,7 @@ object AllowScrollButtonsMobile {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
@@ -223,7 +210,7 @@ object AllowScrollButtonsMobile {
     
     inline def setScrollButtonComponentUndefined: Self = StObject.set(x, "ScrollButtonComponent", js.undefined)
     
-    inline def setScrollButtons(value: auto | `true` | `false`): Self = StObject.set(x, "scrollButtons", value.asInstanceOf[js.Any])
+    inline def setScrollButtons(value: "auto" | true | false): Self = StObject.set(x, "scrollButtons", value.asInstanceOf[js.Any])
     
     inline def setScrollButtonsUndefined: Self = StObject.set(x, "scrollButtons", js.undefined)
     
@@ -231,10 +218,10 @@ object AllowScrollButtonsMobile {
     
     inline def setSelectionFollowsFocusUndefined: Self = StObject.set(x, "selectionFollowsFocus", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -242,13 +229,13 @@ object AllowScrollButtonsMobile {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
-    inline def setTabIndicatorProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "TabIndicatorProps", value.asInstanceOf[js.Any])
+    inline def setTabIndicatorProps(value: HTMLAttributesHTMLDivElement): Self = StObject.set(x, "TabIndicatorProps", value.asInstanceOf[js.Any])
     
     inline def setTabIndicatorPropsUndefined: Self = StObject.set(x, "TabIndicatorProps", js.undefined)
     
@@ -256,7 +243,7 @@ object AllowScrollButtonsMobile {
     
     inline def setTabScrollButtonPropsUndefined: Self = StObject.set(x, "TabScrollButtonProps", js.undefined)
     
-    inline def setTextColor(value: secondary | primary | inherit): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: "secondary" | "primary" | "inherit"): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
@@ -264,7 +251,7 @@ object AllowScrollButtonsMobile {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setVariant(value: standard | scrollable | fullWidth): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "standard" | "scrollable" | "fullWidth"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     

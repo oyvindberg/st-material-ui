@@ -16,11 +16,11 @@ object paginationItemPaginationItemMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Pagination](https://mui.com/components/pagination/)
+    * - [Pagination](https://mui.com/material-ui/react-pagination/)
     *
     * API:
     *
-    * - [PaginationItem API](https://mui.com/api/pagination-item/)
+    * - [PaginationItem API](https://mui.com/material-ui/api/pagination-item/)
     */
   @JSImport("@mui/material/PaginationItem/PaginationItem", JSImport.Default)
   @js.native

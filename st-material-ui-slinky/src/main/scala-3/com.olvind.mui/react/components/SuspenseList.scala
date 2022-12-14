@@ -3,8 +3,6 @@ package com.olvind.mui.react.components
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder
 import com.olvind.mui.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode
-import com.olvind.mui.react.reactStrings.backwards
-import com.olvind.mui.react.reactStrings.forwards
 import com.olvind.mui.std.Exclude
 import slinky.core.facade.ReactElement
 import slinky.web.html.`*`.tag
@@ -16,7 +14,7 @@ object SuspenseList {
   
   object DirectionalSuspenseListProps {
     
-    inline def apply(children: ReactElement | js.Iterable[ReactElement], revealOrder: forwards | backwards): Builder = {
+    inline def apply(children: ReactElement | js.Iterable[ReactElement], revealOrder: "forwards" | "backwards"): Builder = {
       val __props = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
       new Builder(js.Array(this.component, __props.asInstanceOf[com.olvind.mui.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps]))
     }
@@ -52,7 +50,7 @@ object SuspenseList {
       extends AnyVal
          with StBuildingComponent[tag.type, js.Object] {
       
-      inline def revealOrder(value: Exclude[SuspenseListRevealOrder, forwards | backwards]): this.type = set("revealOrder", value.asInstanceOf[js.Any])
+      inline def revealOrder(value: Exclude[SuspenseListRevealOrder, "forwards" | "backwards"]): this.type = set("revealOrder", value.asInstanceOf[js.Any])
     }
     
     def withProps(p: com.olvind.mui.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

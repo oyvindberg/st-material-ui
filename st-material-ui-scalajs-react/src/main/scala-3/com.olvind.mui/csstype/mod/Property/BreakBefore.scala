@@ -4,65 +4,43 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - `com.olvind.mui`.csstype.csstypeStrings.all
-  - `com.olvind.mui`.csstype.csstypeStrings.always
-  - `com.olvind.mui`.csstype.csstypeStrings.auto
-  - `com.olvind.mui`.csstype.csstypeStrings.avoid
-  - `com.olvind.mui`.csstype.csstypeStrings.`avoid-column`
-  - `com.olvind.mui`.csstype.csstypeStrings.`avoid-page`
-  - `com.olvind.mui`.csstype.csstypeStrings.`avoid-region`
-  - `com.olvind.mui`.csstype.csstypeStrings.column
-  - `com.olvind.mui`.csstype.csstypeStrings.left
-  - `com.olvind.mui`.csstype.csstypeStrings.page
-  - `com.olvind.mui`.csstype.csstypeStrings.recto
-  - `com.olvind.mui`.csstype.csstypeStrings.region
-  - `com.olvind.mui`.csstype.csstypeStrings.right
-  - `com.olvind.mui`.csstype.csstypeStrings.verso
-  - `com.olvind.mui`.csstype.csstypeStrings.`-moz-initial`
-  - `com.olvind.mui`.csstype.csstypeStrings.inherit
-  - `com.olvind.mui`.csstype.csstypeStrings.initial
-  - `com.olvind.mui`.csstype.csstypeStrings.revert
-  - `com.olvind.mui`.csstype.csstypeStrings.unset
-*/
-trait BreakBefore extends StObject
 object BreakBefore {
   
-  inline def `-moz-initial`: com.olvind.mui.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def all: com.olvind.mui.csstype.csstypeStrings.all = "all".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.all]
+  inline def all: "all" = "all".asInstanceOf["all"]
   
-  inline def always: com.olvind.mui.csstype.csstypeStrings.always = "always".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.always]
+  inline def always: "always" = "always".asInstanceOf["always"]
   
-  inline def auto: com.olvind.mui.csstype.csstypeStrings.auto = "auto".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.auto]
+  inline def auto: "auto" = "auto".asInstanceOf["auto"]
   
-  inline def avoid: com.olvind.mui.csstype.csstypeStrings.avoid = "avoid".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.avoid]
+  inline def avoid: "avoid" = "avoid".asInstanceOf["avoid"]
   
-  inline def `avoid-column`: com.olvind.mui.csstype.csstypeStrings.`avoid-column` = "avoid-column".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`avoid-column`]
+  inline def `avoid-column`: "avoid-column" = "avoid-column".asInstanceOf["avoid-column"]
   
-  inline def `avoid-page`: com.olvind.mui.csstype.csstypeStrings.`avoid-page` = "avoid-page".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`avoid-page`]
+  inline def `avoid-page`: "avoid-page" = "avoid-page".asInstanceOf["avoid-page"]
   
-  inline def `avoid-region`: com.olvind.mui.csstype.csstypeStrings.`avoid-region` = "avoid-region".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`avoid-region`]
+  inline def `avoid-region`: "avoid-region" = "avoid-region".asInstanceOf["avoid-region"]
   
-  inline def column: com.olvind.mui.csstype.csstypeStrings.column = "column".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.column]
+  inline def column: "column" = "column".asInstanceOf["column"]
   
-  inline def inherit: com.olvind.mui.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: com.olvind.mui.csstype.csstypeStrings.initial = "initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def left: com.olvind.mui.csstype.csstypeStrings.left = "left".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.left]
+  inline def left: "left" = "left".asInstanceOf["left"]
   
-  inline def page: com.olvind.mui.csstype.csstypeStrings.page = "page".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.page]
+  inline def page: "page" = "page".asInstanceOf["page"]
   
-  inline def recto: com.olvind.mui.csstype.csstypeStrings.recto = "recto".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.recto]
+  inline def recto: "recto" = "recto".asInstanceOf["recto"]
   
-  inline def region: com.olvind.mui.csstype.csstypeStrings.region = "region".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.region]
+  inline def region: "region" = "region".asInstanceOf["region"]
   
-  inline def revert: com.olvind.mui.csstype.csstypeStrings.revert = "revert".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def right: com.olvind.mui.csstype.csstypeStrings.right = "right".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.right]
+  inline def right: "right" = "right".asInstanceOf["right"]
   
-  inline def unset: com.olvind.mui.csstype.csstypeStrings.unset = "unset".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
   
-  inline def verso: com.olvind.mui.csstype.csstypeStrings.verso = "verso".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.verso]
+  inline def verso: "verso" = "verso".asInstanceOf["verso"]
 }

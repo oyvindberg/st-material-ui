@@ -1,5 +1,7 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
+import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,6 +25,11 @@ trait EnableColorScheme extends StObject {
     * For browser support, check out https://caniuse.com/?search=color-scheme
     */
   var enableColorScheme: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The system prop that allows defining system overrides as well as additional CSS styles.
+    */
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
 }
 object EnableColorScheme {
   
@@ -44,5 +51,22 @@ object EnableColorScheme {
     inline def setEnableColorScheme(value: Boolean): Self = StObject.set(x, "enableColorScheme", value.asInstanceOf[js.Any])
     
     inline def setEnableColorSchemeUndefined: Self = StObject.set(x, "enableColorScheme", js.undefined)
+    
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    
+    inline def setSxFunction1(
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
+    ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
+    
+    inline def setSxNull: Self = StObject.set(x, "sx", null)
+    
+    inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
+    
+    inline def setSxVarargs(
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
+        ]))*
+    ): Self = StObject.set(x, "sx", js.Array(value*))
   }
 }

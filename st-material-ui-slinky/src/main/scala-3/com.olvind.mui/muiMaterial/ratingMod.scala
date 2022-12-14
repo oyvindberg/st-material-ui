@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.ratingClassesMod.RatingClasses
+import com.olvind.mui.muiMaterial.ratingRatingClassesMod.RatingClasses
 import com.olvind.mui.muiMaterial.ratingRatingMod.RatingProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

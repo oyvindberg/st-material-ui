@@ -1,7 +1,5 @@
 package com.olvind.mui.react.mod
 
-import com.olvind.mui.react.reactStrings.`lazy`
-import com.olvind.mui.react.reactStrings.eager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +19,7 @@ trait IframeHTMLAttributes[T]
   
   var height: js.UndefOr[Double | String] = js.undefined
   
-  var loading: js.UndefOr[eager | `lazy`] = js.undefined
+  var loading: js.UndefOr["eager" | "lazy"] = js.undefined
   
   /** @deprecated */
   var marginHeight: js.UndefOr[Double] = js.undefined
@@ -75,7 +73,7 @@ object IframeHTMLAttributes {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setLoading(value: eager | `lazy`): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: "eager" | "lazy"): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     

@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.stepLabelClassesMod.StepLabelClasses
+import com.olvind.mui.muiMaterial.stepLabelStepLabelClassesMod.StepLabelClasses
 import com.olvind.mui.muiMaterial.stepLabelStepLabelMod.StepLabelProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -17,11 +17,11 @@ object stepLabelMod {
     *
     * Demos:
     *
-    * - [Steppers](https://mui.com/components/steppers/)
+    * - [Stepper](https://mui.com/material-ui/react-stepper/)
     *
     * API:
     *
-    * - [StepLabel API](https://mui.com/api/step-label/)
+    * - [StepLabel API](https://mui.com/material-ui/api/step-label/)
     */
   /* Inlined (props : @mui/material.@mui/material/StepLabel/StepLabel.StepLabelProps): react.react.<global>.JSX.Element & {  muiName :string} */
   object default {

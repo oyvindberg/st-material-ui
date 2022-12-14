@@ -1,7 +1,5 @@
 package com.olvind.mui.react.mod
 
-import com.olvind.mui.react.reactStrings.mount
-import com.olvind.mui.react.reactStrings.update
 import com.olvind.mui.scheduler.tracingMod.Interaction
 import com.olvind.mui.std.Set
 import org.scalablytyped.runtime.StObject
@@ -20,7 +18,7 @@ object ProfilerProps {
   
   inline def apply(
     id: String,
-    onRender: (/* id */ String, /* phase */ mount | update, /* actualDuration */ Double, /* baseDuration */ Double, /* startTime */ Double, /* commitTime */ Double, /* interactions */ Set[Interaction]) => Unit
+    onRender: (/* id */ String, /* phase */ "mount" | "update", /* actualDuration */ Double, /* baseDuration */ Double, /* startTime */ Double, /* commitTime */ Double, /* interactions */ Set[Interaction]) => Unit
   ): ProfilerProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onRender = js.Any.fromFunction7(onRender))
     __obj.asInstanceOf[ProfilerProps]
@@ -35,7 +33,7 @@ object ProfilerProps {
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setOnRender(
-      value: (/* id */ String, /* phase */ mount | update, /* actualDuration */ Double, /* baseDuration */ Double, /* startTime */ Double, /* commitTime */ Double, /* interactions */ Set[Interaction]) => Unit
+      value: (/* id */ String, /* phase */ "mount" | "update", /* actualDuration */ Double, /* baseDuration */ Double, /* startTime */ Double, /* commitTime */ Double, /* interactions */ Set[Interaction]) => Unit
     ): Self = StObject.set(x, "onRender", js.Any.fromFunction7(value))
   }
 }

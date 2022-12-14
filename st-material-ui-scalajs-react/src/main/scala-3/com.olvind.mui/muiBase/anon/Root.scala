@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Root extends StObject {
   
-  var Root: js.UndefOr[ElementType] = js.undefined
+  var badge: js.UndefOr[ElementType] = js.undefined
+  
+  var root: js.UndefOr[ElementType] = js.undefined
 }
 object Root {
   
@@ -18,8 +20,12 @@ object Root {
   
   extension [Self <: Root](x: Self) {
     
-    inline def setRoot(value: ElementType): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
+    inline def setBadge(value: ElementType): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    
+    inline def setRoot(value: ElementType): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsPaperTypeMapdiv
-import com.olvind.mui.muiMaterial.paperClassesMod.PaperClasses
+import com.olvind.mui.muiMaterial.paperPaperClassesMod.PaperClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +17,12 @@ object paperMod {
     *
     * Demos:
     *
-    * - [Cards](https://mui.com/components/cards/)
-    * - [Paper](https://mui.com/components/paper/)
+    * - [Card](https://mui.com/material-ui/react-card/)
+    * - [Paper](https://mui.com/material-ui/react-paper/)
     *
     * API:
     *
-    * - [Paper API](https://mui.com/api/paper/)
+    * - [Paper API](https://mui.com/material-ui/api/paper/)
     */
   @JSImport("@mui/material/Paper", JSImport.Default)
   @js.native

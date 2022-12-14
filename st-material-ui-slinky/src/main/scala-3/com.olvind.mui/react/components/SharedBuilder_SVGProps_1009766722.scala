@@ -6,74 +6,6 @@ import com.olvind.mui.react.mod.AriaRole
 import com.olvind.mui.react.mod.Booleanish
 import com.olvind.mui.react.mod.CSSProperties
 import com.olvind.mui.react.mod.DragEvent
-import com.olvind.mui.react.reactStrings._empty
-import com.olvind.mui.react.reactStrings.`additions removals`
-import com.olvind.mui.react.reactStrings.`additions text`
-import com.olvind.mui.react.reactStrings.`after-edge`
-import com.olvind.mui.react.reactStrings.`before-edge`
-import com.olvind.mui.react.reactStrings.`inline`
-import com.olvind.mui.react.reactStrings.`removals additions`
-import com.olvind.mui.react.reactStrings.`removals text`
-import com.olvind.mui.react.reactStrings.`text additions`
-import com.olvind.mui.react.reactStrings.`text removals`
-import com.olvind.mui.react.reactStrings.`text-after-edge`
-import com.olvind.mui.react.reactStrings.`text-before-edge`
-import com.olvind.mui.react.reactStrings.`use-credentials`
-import com.olvind.mui.react.reactStrings.additions
-import com.olvind.mui.react.reactStrings.all
-import com.olvind.mui.react.reactStrings.alphabetic
-import com.olvind.mui.react.reactStrings.anonymous
-import com.olvind.mui.react.reactStrings.ascending
-import com.olvind.mui.react.reactStrings.assertive
-import com.olvind.mui.react.reactStrings.auto
-import com.olvind.mui.react.reactStrings.baseline
-import com.olvind.mui.react.reactStrings.bevel
-import com.olvind.mui.react.reactStrings.both
-import com.olvind.mui.react.reactStrings.butt
-import com.olvind.mui.react.reactStrings.central
-import com.olvind.mui.react.reactStrings.copy
-import com.olvind.mui.react.reactStrings.date
-import com.olvind.mui.react.reactStrings.descending
-import com.olvind.mui.react.reactStrings.evenodd
-import com.olvind.mui.react.reactStrings.execute
-import com.olvind.mui.react.reactStrings.grammar
-import com.olvind.mui.react.reactStrings.grid
-import com.olvind.mui.react.reactStrings.hanging
-import com.olvind.mui.react.reactStrings.horizontal
-import com.olvind.mui.react.reactStrings.ideographic
-import com.olvind.mui.react.reactStrings.inherit
-import com.olvind.mui.react.reactStrings.initial
-import com.olvind.mui.react.reactStrings.isolated
-import com.olvind.mui.react.reactStrings.linearRGB
-import com.olvind.mui.react.reactStrings.list
-import com.olvind.mui.react.reactStrings.listbox
-import com.olvind.mui.react.reactStrings.location
-import com.olvind.mui.react.reactStrings.mathematical
-import com.olvind.mui.react.reactStrings.medial
-import com.olvind.mui.react.reactStrings.middle
-import com.olvind.mui.react.reactStrings.miter
-import com.olvind.mui.react.reactStrings.mixed
-import com.olvind.mui.react.reactStrings.move
-import com.olvind.mui.react.reactStrings.no
-import com.olvind.mui.react.reactStrings.none
-import com.olvind.mui.react.reactStrings.nonzero
-import com.olvind.mui.react.reactStrings.off
-import com.olvind.mui.react.reactStrings.other
-import com.olvind.mui.react.reactStrings.page
-import com.olvind.mui.react.reactStrings.polite
-import com.olvind.mui.react.reactStrings.popup
-import com.olvind.mui.react.reactStrings.removals
-import com.olvind.mui.react.reactStrings.replace
-import com.olvind.mui.react.reactStrings.round
-import com.olvind.mui.react.reactStrings.sRGB
-import com.olvind.mui.react.reactStrings.spelling
-import com.olvind.mui.react.reactStrings.square
-import com.olvind.mui.react.reactStrings.step
-import com.olvind.mui.react.reactStrings.sum
-import com.olvind.mui.react.reactStrings.terminal
-import com.olvind.mui.react.reactStrings.tree
-import com.olvind.mui.react.reactStrings.vertical
-import com.olvind.mui.react.reactStrings.yes
 import org.scalajs.dom.Event
 import org.scalajs.dom.EventTarget
 import org.scalajs.dom.SVGElement
@@ -101,31 +33,31 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def accentHeight(value: Double | String): this.type = set("accentHeight", value.asInstanceOf[js.Any])
   
-  inline def accumulate(value: none | sum): this.type = set("accumulate", value.asInstanceOf[js.Any])
+  inline def accumulate(value: "none" | "sum"): this.type = set("accumulate", value.asInstanceOf[js.Any])
   
-  inline def additive(value: replace | sum): this.type = set("additive", value.asInstanceOf[js.Any])
+  inline def additive(value: "replace" | "sum"): this.type = set("additive", value.asInstanceOf[js.Any])
   
   inline def alignmentBaseline(
-    value: auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+    value: "auto" | "baseline" | "before-edge" | "text-before-edge" | "middle" | "central" | "after-edge" | "text-after-edge" | "ideographic" | "alphabetic" | "hanging" | "mathematical" | "inherit"
   ): this.type = set("alignmentBaseline", value.asInstanceOf[js.Any])
   
-  inline def allowReorder(value: no | yes): this.type = set("allowReorder", value.asInstanceOf[js.Any])
+  inline def allowReorder(value: "no" | "yes"): this.type = set("allowReorder", value.asInstanceOf[js.Any])
   
   inline def alphabetic(value: Double | String): this.type = set("alphabetic", value.asInstanceOf[js.Any])
   
   inline def amplitude(value: Double | String): this.type = set("amplitude", value.asInstanceOf[js.Any])
   
-  inline def arabicForm(value: initial | medial | terminal | isolated): this.type = set("arabicForm", value.asInstanceOf[js.Any])
+  inline def arabicForm(value: "initial" | "medial" | "terminal" | "isolated"): this.type = set("arabicForm", value.asInstanceOf[js.Any])
   
   inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
   
   inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
   
-  inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+  inline def `aria-autocomplete`(value: "none" | "inline" | "list" | "both"): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
   
   inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
   
-  inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+  inline def `aria-checked`(value: Boolean | "mixed"): this.type = set("aria-checked", value.asInstanceOf[js.Any])
   
   inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
   
@@ -135,7 +67,7 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
   
-  inline def `aria-current`(value: Boolean | page | step | location | date | com.olvind.mui.react.reactStrings.time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+  inline def `aria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): this.type = set("aria-current", value.asInstanceOf[js.Any])
   
   inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
   
@@ -143,7 +75,7 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
   
-  inline def `aria-dropeffect`(value: none | copy | execute | com.olvind.mui.react.reactStrings.link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+  inline def `aria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
   
   inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
   
@@ -153,13 +85,11 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
   
-  inline def `aria-haspopup`(
-    value: Boolean | com.olvind.mui.react.reactStrings.menu | listbox | tree | grid | com.olvind.mui.react.reactStrings.dialog
-  ): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+  inline def `aria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
   
   inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
   
-  inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+  inline def `aria-invalid`(value: Boolean | "grammar" | "spelling"): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
   
   inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
   
@@ -169,7 +99,7 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
   
-  inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+  inline def `aria-live`(value: "off" | "assertive" | "polite"): this.type = set("aria-live", value.asInstanceOf[js.Any])
   
   inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
   
@@ -177,7 +107,7 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
   
-  inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+  inline def `aria-orientation`(value: "horizontal" | "vertical"): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
   
   inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
   
@@ -185,12 +115,12 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
   
-  inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+  inline def `aria-pressed`(value: Boolean | "mixed"): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
   
   inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
   
   inline def `aria-relevant`(
-    value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | com.olvind.mui.react.reactStrings.text | (`text additions`) | (`text removals`)
+    value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
   ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
   
   inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
@@ -207,7 +137,7 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
   
-  inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+  inline def `aria-sort`(value: "none" | "ascending" | "descending" | "other"): this.type = set("aria-sort", value.asInstanceOf[js.Any])
   
   inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
   
@@ -259,7 +189,7 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def colorInterpolation(value: Double | String): this.type = set("colorInterpolation", value.asInstanceOf[js.Any])
   
-  inline def colorInterpolationFilters(value: auto | sRGB | linearRGB | inherit): this.type = set("colorInterpolationFilters", value.asInstanceOf[js.Any])
+  inline def colorInterpolationFilters(value: "auto" | "sRGB" | "linearRGB" | "inherit"): this.type = set("colorInterpolationFilters", value.asInstanceOf[js.Any])
   
   inline def colorProfile(value: Double | String): this.type = set("colorProfile", value.asInstanceOf[js.Any])
   
@@ -269,7 +199,7 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def contentStyleType(value: Double | String): this.type = set("contentStyleType", value.asInstanceOf[js.Any])
   
-  inline def crossOrigin(value: anonymous | `use-credentials` | _empty): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
+  inline def crossOrigin(value: "anonymous" | "use-credentials" | ""): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
   
   inline def cursor(value: Double | String): this.type = set("cursor", value.asInstanceOf[js.Any])
   
@@ -317,7 +247,7 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def fillOpacity(value: Double | String): this.type = set("fillOpacity", value.asInstanceOf[js.Any])
   
-  inline def fillRule(value: nonzero | evenodd | inherit): this.type = set("fillRule", value.asInstanceOf[js.Any])
+  inline def fillRule(value: "nonzero" | "evenodd" | "inherit"): this.type = set("fillRule", value.asInstanceOf[js.Any])
   
   inline def filter(value: String): this.type = set("filter", value.asInstanceOf[js.Any])
   
@@ -329,7 +259,7 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def floodOpacity(value: Double | String): this.type = set("floodOpacity", value.asInstanceOf[js.Any])
   
-  inline def focusable(value: Booleanish | auto): this.type = set("focusable", value.asInstanceOf[js.Any])
+  inline def focusable(value: Booleanish | "auto"): this.type = set("focusable", value.asInstanceOf[js.Any])
   
   inline def fontFamily(value: String): this.type = set("fontFamily", value.asInstanceOf[js.Any])
   
@@ -589,6 +519,8 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def onReset(value: SyntheticEvent[EventTarget & SVGElement, Event] => Unit): this.type = set("onReset", js.Any.fromFunction1(value))
   
+  inline def onResize(value: SyntheticEvent[Event, SVGElement] => Unit): this.type = set("onResize", js.Any.fromFunction1(value))
+  
   inline def onScroll(value: SyntheticUIEvent[SVGElement] => Unit): this.type = set("onScroll", js.Any.fromFunction1(value))
   
   inline def onSeeked(value: SyntheticEvent[Event, SVGElement] => Unit): this.type = set("onSeeked", js.Any.fromFunction1(value))
@@ -743,9 +675,9 @@ open class SharedBuilder_SVGProps_1009766722[R <: js.Object] (val args: js.Array
   
   inline def strokeDashoffset(value: String | Double): this.type = set("strokeDashoffset", value.asInstanceOf[js.Any])
   
-  inline def strokeLinecap(value: butt | round | square | inherit): this.type = set("strokeLinecap", value.asInstanceOf[js.Any])
+  inline def strokeLinecap(value: "butt" | "round" | "square" | "inherit"): this.type = set("strokeLinecap", value.asInstanceOf[js.Any])
   
-  inline def strokeLinejoin(value: miter | round | bevel | inherit): this.type = set("strokeLinejoin", value.asInstanceOf[js.Any])
+  inline def strokeLinejoin(value: "miter" | "round" | "bevel" | "inherit"): this.type = set("strokeLinejoin", value.asInstanceOf[js.Any])
   
   inline def strokeMiterlimit(value: Double | String): this.type = set("strokeMiterlimit", value.asInstanceOf[js.Any])
   

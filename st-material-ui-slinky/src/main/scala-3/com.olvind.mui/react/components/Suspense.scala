@@ -1,7 +1,6 @@
 package com.olvind.mui.react.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.react.mod.ReactPortal
 import com.olvind.mui.react.mod.SuspenseProps
 import slinky.core.facade.ReactElement
 import slinky.web.html.`*`.tag
@@ -20,13 +19,7 @@ object Suspense {
     extends AnyVal
        with StBuildingComponent[tag.type, js.Object] {
     
-    inline def fallback(
-      value: ReactElement | String | Double | js.Object | js.Iterable[ReactElement] | ReactPortal | Boolean
-    ): this.type = set("fallback", value.asInstanceOf[js.Any])
-    
-    inline def fallbackNull: this.type = set("fallback", null)
-    
-    inline def fallbackReactElement(value: ReactElement): this.type = set("fallback", value.asInstanceOf[js.Any])
+    inline def fallback(value: ReactElement): this.type = set("fallback", value.asInstanceOf[js.Any])
     
     inline def unstable_expectedLoadTime(value: Double): this.type = set("unstable_expectedLoadTime", value.asInstanceOf[js.Any])
   }

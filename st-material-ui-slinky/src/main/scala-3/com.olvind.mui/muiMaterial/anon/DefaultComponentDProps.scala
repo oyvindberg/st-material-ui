@@ -9,11 +9,11 @@ trait DefaultComponentDProps[P, D /* <: ReactElement */] extends StObject {
   
   var defaultComponent: D
   
-  var props: P & Icon
+  var props: P & DisableElevation
 }
 object DefaultComponentDProps {
   
-  inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & Icon): DefaultComponentDProps[P, D] = {
+  inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & DisableElevation): DefaultComponentDProps[P, D] = {
     val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultComponentDProps[P, D]]
   }
@@ -22,6 +22,6 @@ object DefaultComponentDProps {
     
     inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & Icon): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: P & DisableElevation): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

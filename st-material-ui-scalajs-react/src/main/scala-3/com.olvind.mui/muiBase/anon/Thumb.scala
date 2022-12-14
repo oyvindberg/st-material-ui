@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Thumb extends StObject {
   
-  var Input: js.UndefOr[ElementType] = js.undefined
+  var input: js.UndefOr[ElementType] = js.undefined
   
-  var Root: js.UndefOr[ElementType] = js.undefined
+  var root: js.UndefOr[ElementType] = js.undefined
   
-  var Thumb: js.UndefOr[ElementType] = js.undefined
+  var thumb: js.UndefOr[ElementType] = js.undefined
   
-  var Track: js.UndefOr[ElementType | Null] = js.undefined
+  var track: js.UndefOr[ElementType | Null] = js.undefined
 }
 object Thumb {
   
@@ -24,22 +24,22 @@ object Thumb {
   
   extension [Self <: Thumb](x: Self) {
     
-    inline def setInput(value: ElementType): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: ElementType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setRoot(value: ElementType): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: ElementType): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    inline def setThumb(value: ElementType): Self = StObject.set(x, "Thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: ElementType): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
-    inline def setThumbUndefined: Self = StObject.set(x, "Thumb", js.undefined)
+    inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
     
-    inline def setTrack(value: ElementType): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: ElementType): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    inline def setTrackNull: Self = StObject.set(x, "Track", null)
+    inline def setTrackNull: Self = StObject.set(x, "track", null)
     
-    inline def setTrackUndefined: Self = StObject.set(x, "Track", js.undefined)
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

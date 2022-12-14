@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsFormHelperTextTypeM
-import com.olvind.mui.muiMaterial.formHelperTextClassesMod.FormHelperTextClasses
+import com.olvind.mui.muiMaterial.formHelperTextFormHelperTextClassesMod.FormHelperTextClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object formHelperTextMod {
     *
     * Demos:
     *
-    * - [Text Fields](https://mui.com/components/text-fields/)
+    * - [Text Field](https://mui.com/material-ui/react-text-field/)
     *
     * API:
     *
-    * - [FormHelperText API](https://mui.com/api/form-helper-text/)
+    * - [FormHelperText API](https://mui.com/material-ui/api/form-helper-text/)
     */
   @JSImport("@mui/material/FormHelperText", JSImport.Default)
   @js.native

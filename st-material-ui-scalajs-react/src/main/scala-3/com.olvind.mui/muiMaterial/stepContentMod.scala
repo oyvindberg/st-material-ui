@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.stepContentClassesMod.StepContentClasses
+import com.olvind.mui.muiMaterial.stepContentStepContentClassesMod.StepContentClasses
 import com.olvind.mui.muiMaterial.stepContentStepContentMod.StepContentProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

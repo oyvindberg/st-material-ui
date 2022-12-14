@@ -1,10 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.center
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.justify
-import com.olvind.mui.muiMaterial.muiMaterialStrings.left
-import com.olvind.mui.muiMaterial.muiMaterialStrings.right
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import japgolly.scalajs.react.facade.Empty
@@ -22,7 +17,7 @@ trait Align extends StObject {
     * Set the text-align on the component.
     * @default 'inherit'
     */
-  var align: js.UndefOr[inherit | left | center | right | justify] = js.undefined
+  var align: js.UndefOr["inherit" | "left" | "center" | "right" | "justify"] = js.undefined
   
   /**
     * The content of the component.
@@ -58,13 +53,13 @@ trait Align extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * Applies the theme typography styles.
     * @default 'body1'
     */
-  var variant: js.UndefOr[com.olvind.mui.muiMaterial.createTypographyMod.Variant | inherit] = js.undefined
+  var variant: js.UndefOr[com.olvind.mui.muiMaterial.stylesCreateTypographyMod.Variant | "inherit"] = js.undefined
   
   /**
     * The component maps the variant prop to a range of different HTML element types.
@@ -96,7 +91,7 @@ object Align {
   
   extension [Self <: Align](x: Self) {
     
-    inline def setAlign(value: inherit | left | center | right | justify): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: "inherit" | "left" | "center" | "right" | "justify"): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
@@ -126,10 +121,10 @@ object Align {
     
     inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -137,13 +132,13 @@ object Align {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
-    inline def setVariant(value: com.olvind.mui.muiMaterial.createTypographyMod.Variant | inherit): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: com.olvind.mui.muiMaterial.stylesCreateTypographyMod.Variant | "inherit"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantMapping(value: PartialRecordVariantinheritstring): Self = StObject.set(x, "variantMapping", value.asInstanceOf[js.Any])
     

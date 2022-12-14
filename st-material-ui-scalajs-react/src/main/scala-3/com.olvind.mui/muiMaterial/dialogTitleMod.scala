@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.dialogTitleClassesMod.DialogTitleClasses
-import com.olvind.mui.muiMaterial.dialogTitleDialogTitleMod.DialogTitleProps
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsDialogTitleTypeMapT
+import com.olvind.mui.muiMaterial.dialogTitleDialogTitleClassesMod.DialogTitleClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,19 @@ object dialogTitleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: DialogTitleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  /**
+    *
+    * Demos:
+    *
+    * - [Dialog](https://mui.com/material-ui/react-dialog/)
+    *
+    * API:
+    *
+    * - [DialogTitle API](https://mui.com/material-ui/api/dialog-title/)
+    */
+  @JSImport("@mui/material/DialogTitle", JSImport.Default)
+  @js.native
+  val default: js.Function1[/* props */ DefaultComponentPropsDialogTitleTypeMapT, Element] = js.native
   
   @JSImport("@mui/material/DialogTitle", "dialogTitleClasses")
   @js.native

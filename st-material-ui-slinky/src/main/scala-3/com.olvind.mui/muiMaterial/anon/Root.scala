@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Root extends StObject {
   
-  var Input: js.UndefOr[ReactElement] = js.undefined
-  
   var Root: js.UndefOr[ReactElement] = js.undefined
 }
 object Root {
@@ -19,10 +17,6 @@ object Root {
   }
   
   extension [Self <: Root](x: Self) {
-    
-    inline def setInput(value: ReactElement): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
-    
-    inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
     inline def setRoot(value: ReactElement): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     

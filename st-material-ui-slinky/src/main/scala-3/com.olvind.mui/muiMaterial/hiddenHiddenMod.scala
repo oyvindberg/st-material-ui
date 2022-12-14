@@ -1,8 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.css
-import com.olvind.mui.muiMaterial.muiMaterialStrings.js_
-import com.olvind.mui.muiSystem.createBreakpointsMod.Breakpoint
+import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.Breakpoint
 import com.olvind.mui.react.mod.JSXElementConstructor
 import org.scalablytyped.runtime.Shortcut
 import slinky.core.facade.ReactElement
@@ -17,11 +15,11 @@ object hiddenHiddenMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Hidden](https://mui.com/components/hidden/)
+    * - [Hidden](https://mui.com/material-ui/react-hidden/)
     *
     * API:
     *
-    * - [Hidden API](https://mui.com/api/hidden/)
+    * - [Hidden API](https://mui.com/material-ui/api/hidden/)
     */
   @JSImport("@mui/material/Hidden/Hidden", JSImport.Default)
   @js.native
@@ -39,7 +37,7 @@ object hiddenHiddenMod extends Shortcut {
       * server-side rendering.
       * @default 'js'
       */
-    var implementation: js.UndefOr[js_ | css] = js.undefined
+    var implementation: js.UndefOr["js" | "css"] = js.undefined
     
     /**
       * You can use this prop when choosing the `js` implementation with server-side rendering.
@@ -132,7 +130,7 @@ object hiddenHiddenMod extends Shortcut {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setImplementation(value: js_ | css): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+      inline def setImplementation(value: "js" | "css"): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
       inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
       

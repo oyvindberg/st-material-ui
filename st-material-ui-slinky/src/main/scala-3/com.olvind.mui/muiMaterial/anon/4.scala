@@ -1,27 +1,27 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.button
+import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `4` extends StObject {
+trait `4`[P, D /* <: ReactElement */] extends StObject {
   
-  var defaultComponent: button
+  var defaultComponent: D
   
-  var props: js.Object & DisableElevation
+  var props: P & FocusVisibleClassName
 }
 object `4` {
   
-  inline def apply(props: js.Object & DisableElevation): `4` = {
-    val __obj = js.Dynamic.literal(defaultComponent = "button", props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`4`]
+  inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & FocusVisibleClassName): `4`[P, D] = {
+    val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`4`[P, D]]
   }
   
-  extension [Self <: `4`](x: Self) {
+  extension [Self <: `4`[?, ?], P, D /* <: ReactElement */](x: Self & (`4`[P, D])) {
     
-    inline def setDefaultComponent(value: button): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+    inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & DisableElevation): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: P & FocusVisibleClassName): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

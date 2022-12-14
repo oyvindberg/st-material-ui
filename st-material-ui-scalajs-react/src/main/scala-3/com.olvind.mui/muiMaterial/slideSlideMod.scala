@@ -1,10 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.down
-import com.olvind.mui.muiMaterial.muiMaterialStrings.left
-import com.olvind.mui.muiMaterial.muiMaterialStrings.right
-import com.olvind.mui.muiMaterial.muiMaterialStrings.up
-import com.olvind.mui.muiMaterial.transitionMod.TransitionProps
+import com.olvind.mui.muiMaterial.transitionsTransitionMod.TransitionProps
 import com.olvind.mui.react.mod.Ref
 import com.olvind.mui.react.mod.global.JSX.Element
 import japgolly.scalajs.react.Callback
@@ -43,7 +39,7 @@ object slideSlideMod {
       * Direction the child node will enter from.
       * @default 'down'
       */
-    var direction: js.UndefOr[left | right | up | down] = js.undefined
+    var direction: js.UndefOr["left" | "right" | "up" | "down"] = js.undefined
     
     var ref: js.UndefOr[Ref[Any]] = js.undefined
   }
@@ -68,7 +64,7 @@ object slideSlideMod {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setDirection(value: left | right | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: "left" | "right" | "up" | "down"): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       

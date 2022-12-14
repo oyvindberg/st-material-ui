@@ -16,11 +16,11 @@ object imageListItemImageListItemMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Image List](https://mui.com/components/image-list/)
+    * - [Image List](https://mui.com/material-ui/react-image-list/)
     *
     * API:
     *
-    * - [ImageListItem API](https://mui.com/api/image-list-item/)
+    * - [ImageListItem API](https://mui.com/material-ui/api/image-list-item/)
     */
   @JSImport("@mui/material/ImageListItem/ImageListItem", JSImport.Default)
   @js.native

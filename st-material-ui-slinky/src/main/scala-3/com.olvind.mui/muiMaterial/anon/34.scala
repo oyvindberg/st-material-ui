@@ -9,11 +9,11 @@ trait `34`[P, D /* <: ReactElement */] extends StObject {
   
   var defaultComponent: D
   
-  var props: P & Active
+  var props: P & HideSortIcon
 }
 object `34` {
   
-  inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & Active): `34`[P, D] = {
+  inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & HideSortIcon): `34`[P, D] = {
     val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`34`[P, D]]
   }
@@ -22,6 +22,6 @@ object `34` {
     
     inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & Active): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: P & HideSortIcon): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,19 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.muiBaseStrings.div
-import com.olvind.mui.muiBase.tabPanelUnstyledPropsMod.TabPanelUnstyledComponentsPropsOverrides
+import com.olvind.mui.muiBase.menuItemUnstyledMenuItemUnstyledDottypesMod.MenuItemUnstyledComponentsPropsOverrides
+import com.olvind.mui.muiBase.menuItemUnstyledMenuItemUnstyledDottypesMod.MenuItemUnstyledOwnerState
+import com.olvind.mui.muiBase.utilsTypesMod.SlotComponentProps
 import com.olvind.mui.react.mod.ComponentPropsWithRef
+import com.olvind.mui.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `5` extends StObject {
   
-  var root: js.UndefOr[ComponentPropsWithRef[div] & TabPanelUnstyledComponentsPropsOverrides] = js.undefined
+  var root: js.UndefOr[
+    SlotComponentProps["li", MenuItemUnstyledComponentsPropsOverrides, MenuItemUnstyledOwnerState]
+  ] = js.undefined
 }
 object `5` {
   
@@ -20,7 +24,13 @@ object `5` {
   
   extension [Self <: `5`](x: Self) {
     
-    inline def setRoot(value: ComponentPropsWithRef[div] & TabPanelUnstyledComponentsPropsOverrides): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(
+      value: SlotComponentProps["li", MenuItemUnstyledComponentsPropsOverrides, MenuItemUnstyledOwnerState]
+    ): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootFunction1(
+      value: MenuItemUnstyledOwnerState => Partial[ComponentPropsWithRef["li"]] & MenuItemUnstyledComponentsPropsOverrides
+    ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }

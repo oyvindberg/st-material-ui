@@ -1,16 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.default
-import com.olvind.mui.muiMaterial.muiMaterialStrings.error
-import com.olvind.mui.muiMaterial.muiMaterialStrings.filled
-import com.olvind.mui.muiMaterial.muiMaterialStrings.info
-import com.olvind.mui.muiMaterial.muiMaterialStrings.medium
-import com.olvind.mui.muiMaterial.muiMaterialStrings.outlined
-import com.olvind.mui.muiMaterial.muiMaterialStrings.primary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.secondary
-import com.olvind.mui.muiMaterial.muiMaterialStrings.small
-import com.olvind.mui.muiMaterial.muiMaterialStrings.success
-import com.olvind.mui.muiMaterial.muiMaterialStrings.warning
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.mod.EventHandler
@@ -53,10 +42,12 @@ trait Clickable extends StObject {
   var clickable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The color of the component. It supports those theme colors that make sense for this component.
+    * The color of the component.
+    * It supports both default and custom theme colors, which can be added as shown in the
+    * [palette customization guide](https://mui.com/material-ui/customization/palette/#adding-new-colors).
     * @default 'default'
     */
-  var color: js.UndefOr[default | primary | secondary | error | info | success | warning] = js.undefined
+  var color: js.UndefOr["default" | "primary" | "secondary" | "error" | "info" | "success" | "warning"] = js.undefined
   
   /**
     * Override the default delete icon element. Shown only if `onDelete` is set.
@@ -89,18 +80,30 @@ trait Clickable extends StObject {
     * The size of the component.
     * @default 'medium'
     */
-  var size: js.UndefOr[small | medium] = js.undefined
+  var size: js.UndefOr["small" | "medium"] = js.undefined
+  
+  /**
+    * If `true`, allows the disabled chip to escape focus.
+    * If `false`, allows the disabled chip to receive focus.
+    * @default false
+    */
+  var skipFocusWhenDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
+  
+  /**
+    *  @ignore
+    */
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The variant to use.
     * @default 'filled'
     */
-  var variant: js.UndefOr[filled | outlined] = js.undefined
+  var variant: js.UndefOr["filled" | "outlined"] = js.undefined
 }
 object Clickable {
   
@@ -123,7 +126,7 @@ object Clickable {
     
     inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
-    inline def setColor(value: default | primary | secondary | error | info | success | warning): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: "default" | "primary" | "secondary" | "error" | "info" | "success" | "warning"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -153,14 +156,18 @@ object Clickable {
     
     inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
     
-    inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: "small" | "medium"): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSkipFocusWhenDisabled(value: Boolean): Self = StObject.set(x, "skipFocusWhenDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setSkipFocusWhenDisabledUndefined: Self = StObject.set(x, "skipFocusWhenDisabled", js.undefined)
+    
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -168,13 +175,17 @@ object Clickable {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
-    inline def setVariant(value: filled | outlined): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    
+    inline def setVariant(value: "filled" | "outlined"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

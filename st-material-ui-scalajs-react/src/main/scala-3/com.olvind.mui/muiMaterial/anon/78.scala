@@ -1,38 +1,42 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.formGroupFormGroupClassesMod.FormGroupClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `78` extends StObject {
+trait `78`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialFormLabelPropslabel] = js.undefined
+  var defaultProps: js.UndefOr[PartialFormGroupProps] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesFormLabelClass] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[FormGroupClassKey, "MuiFormGroup", Theme]]
+  ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialFormLabelPropslabel]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialFormGroupProps]] = js.undefined
 }
 object `78` {
   
-  inline def apply(): `78` = {
+  inline def apply[Theme](): `78`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`78`]
+    __obj.asInstanceOf[`78`[Theme]]
   }
   
-  extension [Self <: `78`](x: Self) {
+  extension [Self <: `78`[?], Theme](x: Self & `78`[Theme]) {
     
-    inline def setDefaultProps(value: PartialFormLabelPropslabel): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialFormGroupProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesFormLabelClass): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(value: com.olvind.mui.std.Partial[OverridesStyleRules[FormGroupClassKey, "MuiFormGroup", Theme]]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialFormLabelPropslabel]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialFormGroupProps]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialFormLabelPropslabel*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialFormGroupProps*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.speedDialIconClassesMod.SpeedDialIconClasses
+import com.olvind.mui.muiMaterial.speedDialIconSpeedDialIconClassesMod.SpeedDialIconClasses
 import com.olvind.mui.muiMaterial.speedDialIconSpeedDialIconMod.SpeedDialIconProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -17,11 +17,11 @@ object speedDialIconMod {
     *
     * Demos:
     *
-    * - [Speed Dial](https://mui.com/components/speed-dial/)
+    * - [Speed Dial](https://mui.com/material-ui/react-speed-dial/)
     *
     * API:
     *
-    * - [SpeedDialIcon API](https://mui.com/api/speed-dial-icon/)
+    * - [SpeedDialIcon API](https://mui.com/material-ui/api/speed-dial-icon/)
     */
   /* Inlined (props : @mui/material.@mui/material/SpeedDialIcon/SpeedDialIcon.SpeedDialIconProps): react.react.<global>.JSX.Element & {  muiName :string} */
   object default {

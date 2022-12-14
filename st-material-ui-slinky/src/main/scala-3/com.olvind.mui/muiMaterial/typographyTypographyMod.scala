@@ -2,8 +2,8 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.Align
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTypographyTypeMapsp
-import com.olvind.mui.muiMaterial.createThemeMod.Theme
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.boxBoxMod.SystemProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.Shortcut
@@ -18,12 +18,12 @@ object typographyTypographyMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Breadcrumbs](https://mui.com/components/breadcrumbs/)
-    * - [Typography](https://mui.com/components/typography/)
+    * - [Breadcrumbs](https://mui.com/material-ui/react-breadcrumbs/)
+    * - [Typography](https://mui.com/material-ui/react-typography/)
     *
     * API:
     *
-    * - [Typography API](https://mui.com/api/typography/)
+    * - [Typography API](https://mui.com/material-ui/api/typography/)
     */
   @JSImport("@mui/material/Typography/Typography", JSImport.Default)
   @js.native

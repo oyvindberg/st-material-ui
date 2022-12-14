@@ -1,9 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.bottom
-import com.olvind.mui.muiMaterial.muiMaterialStrings.end
-import com.olvind.mui.muiMaterial.muiMaterialStrings.start
-import com.olvind.mui.muiMaterial.muiMaterialStrings.top
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import slinky.core.facade.ReactElement
@@ -45,7 +41,7 @@ trait IconPosition extends StObject {
     * The position of the icon relative to the label.
     * @default 'top'
     */
-  var iconPosition: js.UndefOr[top | bottom | start | end] = js.undefined
+  var iconPosition: js.UndefOr["top" | "bottom" | "start" | "end"] = js.undefined
   
   /**
     * The label element.
@@ -55,7 +51,7 @@ trait IconPosition extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * You can provide your own value. Otherwise, we fallback to the child position index.
@@ -92,7 +88,7 @@ object IconPosition {
     
     inline def setIcon(value: String | ReactElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    inline def setIconPosition(value: top | bottom | start | end): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
+    inline def setIconPosition(value: "top" | "bottom" | "start" | "end"): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
     
     inline def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
     
@@ -104,10 +100,10 @@ object IconPosition {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -115,9 +111,9 @@ object IconPosition {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     

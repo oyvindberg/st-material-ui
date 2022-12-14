@@ -1,8 +1,8 @@
 package com.olvind.mui.emotionReact.components
 
 import com.olvind.mui.StBuildingComponent.Default
-import com.olvind.mui.emotionReact.emotionReactMod.Theme
-import com.olvind.mui.emotionReact.themingMod.ThemeProviderProps
+import com.olvind.mui.emotionReact.mod.Theme
+import com.olvind.mui.emotionReact.typesThemingMod.ThemeProviderProps
 import slinky.web.html.`*`.tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

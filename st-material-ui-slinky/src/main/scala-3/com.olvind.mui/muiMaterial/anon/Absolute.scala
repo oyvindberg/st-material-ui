@@ -1,13 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.center
-import com.olvind.mui.muiMaterial.muiMaterialStrings.fullWidth
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inset
-import com.olvind.mui.muiMaterial.muiMaterialStrings.left
-import com.olvind.mui.muiMaterial.muiMaterialStrings.middle
-import com.olvind.mui.muiMaterial.muiMaterialStrings.right
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import slinky.core.facade.ReactElement
@@ -50,24 +42,24 @@ trait Absolute extends StObject {
     * The component orientation.
     * @default 'horizontal'
     */
-  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
+  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   /**
     * The text alignment.
     * @default 'center'
     */
-  var textAlign: js.UndefOr[center | right | left] = js.undefined
+  var textAlign: js.UndefOr["center" | "right" | "left"] = js.undefined
   
   /**
     * The variant to use.
     * @default 'fullWidth'
     */
-  var variant: js.UndefOr[fullWidth | inset | middle] = js.undefined
+  var variant: js.UndefOr["fullWidth" | "inset" | "middle"] = js.undefined
 }
 object Absolute {
   
@@ -98,14 +90,14 @@ object Absolute {
     
     inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
-    inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -113,17 +105,17 @@ object Absolute {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
-    inline def setTextAlign(value: center | right | left): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: "center" | "right" | "left"): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    inline def setVariant(value: fullWidth | inset | middle): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "fullWidth" | "inset" | "middle"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

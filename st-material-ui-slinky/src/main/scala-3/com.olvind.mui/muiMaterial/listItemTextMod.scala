@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.listItemTextClassesMod.ListItemTextClasses
+import com.olvind.mui.muiMaterial.listItemTextListItemTextClassesMod.ListItemTextClasses
 import com.olvind.mui.muiMaterial.listItemTextListItemTextMod.ListItemTextProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import slinky.core.facade.ReactElement

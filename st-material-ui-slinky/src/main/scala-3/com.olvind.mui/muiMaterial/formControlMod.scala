@@ -1,8 +1,8 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsFormControlTypeMapd
-import com.olvind.mui.muiMaterial.formControlClassesMod.FormControlClasses
-import com.olvind.mui.muiMaterial.useFormControlMod.FormControlState
+import com.olvind.mui.muiMaterial.formControlFormControlClassesMod.FormControlClasses
+import com.olvind.mui.muiMaterial.formControlFormControlContextMod.FormControlState
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +25,7 @@ object formControlMod {
     * *   Input
     * *   InputLabel
     *
-    * You can find one composition example below and more going to [the demos](https://mui.com/components/text-fields/#components).
+    * You can find one composition example below and more going to [the demos](https://mui.com/material-ui/react-text-field/#components).
     *
     * ```jsx
     * <FormControl>
@@ -35,19 +35,19 @@ object formControlMod {
     * </FormControl>
     * ```
     *
-    * ⚠️ Only one `InputBase` can be used within a FormControl because it create visual inconsistencies.
+    * ⚠️ Only one `InputBase` can be used within a FormControl because it creates visual inconsistencies.
     * For instance, only one input can be focused at the same time, the state shouldn't be shared.
     *
     * Demos:
     *
-    * - [Checkboxes](https://mui.com/components/checkboxes/)
-    * - [Radio Buttons](https://mui.com/components/radio-buttons/)
-    * - [Switches](https://mui.com/components/switches/)
-    * - [Text Fields](https://mui.com/components/text-fields/)
+    * - [Checkbox](https://mui.com/material-ui/react-checkbox/)
+    * - [Radio Group](https://mui.com/material-ui/react-radio-button/)
+    * - [Switch](https://mui.com/material-ui/react-switch/)
+    * - [Text Field](https://mui.com/material-ui/react-text-field/)
     *
     * API:
     *
-    * - [FormControl API](https://mui.com/api/form-control/)
+    * - [FormControl API](https://mui.com/material-ui/api/form-control/)
     */
   @JSImport("@mui/material/FormControl", JSImport.Default)
   @js.native

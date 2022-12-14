@@ -1,63 +1,10 @@
 package com.olvind.mui.muiBase.components
 
 import com.olvind.mui.StBuildingComponent
+import com.olvind.mui.muiBase.anon.Backdrop
+import com.olvind.mui.muiBase.anon.BackdropRoot
 import com.olvind.mui.muiBase.anon.DefaultComponentPropsModalUnstyledTypeMa
-import com.olvind.mui.muiBase.anon.PartialBackdropUnstyledPropsBackdropUnst
 import com.olvind.mui.muiBase.anon.PartialModalUnstyledClasses
-import com.olvind.mui.muiBase.anon.Root
-import com.olvind.mui.muiBase.anon.`4`
-import com.olvind.mui.muiBase.muiBaseStrings.`additions removals`
-import com.olvind.mui.muiBase.muiBaseStrings.`additions text`
-import com.olvind.mui.muiBase.muiBaseStrings.`inline`
-import com.olvind.mui.muiBase.muiBaseStrings.`removals additions`
-import com.olvind.mui.muiBase.muiBaseStrings.`removals text`
-import com.olvind.mui.muiBase.muiBaseStrings.`text additions`
-import com.olvind.mui.muiBase.muiBaseStrings.`text removals`
-import com.olvind.mui.muiBase.muiBaseStrings.additions
-import com.olvind.mui.muiBase.muiBaseStrings.all
-import com.olvind.mui.muiBase.muiBaseStrings.ascending
-import com.olvind.mui.muiBase.muiBaseStrings.assertive
-import com.olvind.mui.muiBase.muiBaseStrings.backdropClick
-import com.olvind.mui.muiBase.muiBaseStrings.both
-import com.olvind.mui.muiBase.muiBaseStrings.copy
-import com.olvind.mui.muiBase.muiBaseStrings.date
-import com.olvind.mui.muiBase.muiBaseStrings.decimal
-import com.olvind.mui.muiBase.muiBaseStrings.descending
-import com.olvind.mui.muiBase.muiBaseStrings.dialog
-import com.olvind.mui.muiBase.muiBaseStrings.email
-import com.olvind.mui.muiBase.muiBaseStrings.escapeKeyDown
-import com.olvind.mui.muiBase.muiBaseStrings.execute
-import com.olvind.mui.muiBase.muiBaseStrings.grammar
-import com.olvind.mui.muiBase.muiBaseStrings.grid
-import com.olvind.mui.muiBase.muiBaseStrings.horizontal
-import com.olvind.mui.muiBase.muiBaseStrings.inherit
-import com.olvind.mui.muiBase.muiBaseStrings.link
-import com.olvind.mui.muiBase.muiBaseStrings.list
-import com.olvind.mui.muiBase.muiBaseStrings.listbox
-import com.olvind.mui.muiBase.muiBaseStrings.location
-import com.olvind.mui.muiBase.muiBaseStrings.menu
-import com.olvind.mui.muiBase.muiBaseStrings.mixed
-import com.olvind.mui.muiBase.muiBaseStrings.move
-import com.olvind.mui.muiBase.muiBaseStrings.no
-import com.olvind.mui.muiBase.muiBaseStrings.none
-import com.olvind.mui.muiBase.muiBaseStrings.numeric
-import com.olvind.mui.muiBase.muiBaseStrings.off
-import com.olvind.mui.muiBase.muiBaseStrings.on
-import com.olvind.mui.muiBase.muiBaseStrings.other
-import com.olvind.mui.muiBase.muiBaseStrings.page
-import com.olvind.mui.muiBase.muiBaseStrings.polite
-import com.olvind.mui.muiBase.muiBaseStrings.popup
-import com.olvind.mui.muiBase.muiBaseStrings.removals
-import com.olvind.mui.muiBase.muiBaseStrings.search
-import com.olvind.mui.muiBase.muiBaseStrings.spelling
-import com.olvind.mui.muiBase.muiBaseStrings.step
-import com.olvind.mui.muiBase.muiBaseStrings.tel
-import com.olvind.mui.muiBase.muiBaseStrings.text
-import com.olvind.mui.muiBase.muiBaseStrings.time
-import com.olvind.mui.muiBase.muiBaseStrings.tree
-import com.olvind.mui.muiBase.muiBaseStrings.url
-import com.olvind.mui.muiBase.muiBaseStrings.vertical
-import com.olvind.mui.muiBase.muiBaseStrings.yes
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AriaRole
 import com.olvind.mui.react.mod.Booleanish
@@ -77,7 +24,6 @@ import japgolly.scalajs.react.ReactTouchEventFrom
 import japgolly.scalajs.react.ReactTransitionEventFrom
 import japgolly.scalajs.react.ReactUIEventFrom
 import japgolly.scalajs.react.ReactWheelEventFrom
-import japgolly.scalajs.react.facade.React.ElementType
 import org.scalajs.dom.Element
 import org.scalajs.dom.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -100,10 +46,6 @@ object ModalUnstyled {
     extends AnyVal
        with StBuildingComponent[HTMLDivElement] {
     
-    inline def BackdropComponent(value: ElementType): this.type = set("BackdropComponent", value.asInstanceOf[js.Any])
-    
-    inline def BackdropProps(value: PartialBackdropUnstyledPropsBackdropUnst): this.type = set("BackdropProps", value.asInstanceOf[js.Any])
-    
     inline def about(value: String): this.type = set("about", value.asInstanceOf[js.Any])
     
     inline def accessKey(value: String): this.type = set("accessKey", value.asInstanceOf[js.Any])
@@ -112,11 +54,11 @@ object ModalUnstyled {
     
     inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
     
-    inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `aria-autocomplete`(value: "none" | "inline" | "list" | "both"): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
     
-    inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+    inline def `aria-checked`(value: Boolean | "mixed"): this.type = set("aria-checked", value.asInstanceOf[js.Any])
     
     inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
     
@@ -126,7 +68,7 @@ object ModalUnstyled {
     
     inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
     
-    inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+    inline def `aria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): this.type = set("aria-current", value.asInstanceOf[js.Any])
     
     inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
     
@@ -134,7 +76,7 @@ object ModalUnstyled {
     
     inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
     
-    inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `aria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
     
@@ -144,11 +86,11 @@ object ModalUnstyled {
     
     inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
     
-    inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `aria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
     
-    inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+    inline def `aria-invalid`(value: Boolean | "grammar" | "spelling"): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
     
     inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
     
@@ -158,7 +100,7 @@ object ModalUnstyled {
     
     inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
     
-    inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+    inline def `aria-live`(value: "off" | "assertive" | "polite"): this.type = set("aria-live", value.asInstanceOf[js.Any])
     
     inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
     
@@ -166,7 +108,7 @@ object ModalUnstyled {
     
     inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
     
-    inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+    inline def `aria-orientation`(value: "horizontal" | "vertical"): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
     
     inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
     
@@ -174,12 +116,12 @@ object ModalUnstyled {
     
     inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
     
-    inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+    inline def `aria-pressed`(value: Boolean | "mixed"): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
     
     inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `aria-relevant`(
-      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
     ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
@@ -196,7 +138,7 @@ object ModalUnstyled {
     
     inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
     
-    inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+    inline def `aria-sort`(value: "none" | "ascending" | "descending" | "other"): this.type = set("aria-sort", value.asInstanceOf[js.Any])
     
     inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
     
@@ -220,17 +162,13 @@ object ModalUnstyled {
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
     
-    inline def components(value: Root): this.type = set("components", value.asInstanceOf[js.Any])
-    
-    inline def componentsProps(value: `4`): this.type = set("componentsProps", value.asInstanceOf[js.Any])
-    
     inline def container(value: Element | (js.Function0[Element | Null])): this.type = set("container", value.asInstanceOf[js.Any])
     
     inline def containerCallbackTo(value: CallbackTo[Element | Null]): this.type = set("container", value.toJsFn)
     
     inline def containerNull: this.type = set("container", null)
     
-    inline def contentEditable(value: Booleanish | inherit): this.type = set("contentEditable", value.asInstanceOf[js.Any])
+    inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
     inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
     
@@ -268,7 +206,7 @@ object ModalUnstyled {
     
     inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
     
-    inline def inputMode(value: none | text | tel | url | email | numeric | decimal | search): this.type = set("inputMode", value.asInstanceOf[js.Any])
+    inline def inputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): this.type = set("inputMode", value.asInstanceOf[js.Any])
     
     inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
     
@@ -285,6 +223,8 @@ object ModalUnstyled {
     inline def keepMounted(value: Boolean): this.type = set("keepMounted", value.asInstanceOf[js.Any])
     
     inline def lang(value: String): this.type = set("lang", value.asInstanceOf[js.Any])
+    
+    inline def nonce(value: String): this.type = set("nonce", value.asInstanceOf[js.Any])
     
     inline def onAbort(value: ReactEventFrom[HTMLDivElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & Element]) => value(t0).runNow()))
     
@@ -310,7 +250,7 @@ object ModalUnstyled {
     
     inline def onClick(value: ReactMouseEventFrom[HTMLDivElement & Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & Element]) => value(t0).runNow()))
     
-    inline def onClose(value: (/* event */ js.Object, /* reason */ backdropClick | escapeKeyDown) => Callback): this.type = set("onClose", js.Any.fromFunction2((t0: /* event */ js.Object, t1: /* reason */ backdropClick | escapeKeyDown) => (value(t0, t1)).runNow()))
+    inline def onClose(value: (/* event */ js.Object, /* reason */ "backdropClick" | "escapeKeyDown") => Callback): this.type = set("onClose", js.Any.fromFunction2((t0: /* event */ js.Object, t1: /* reason */ "backdropClick" | "escapeKeyDown") => (value(t0, t1)).runNow()))
     
     inline def onCompositionEnd(value: ReactCompositionEventFrom[HTMLDivElement & Element] => Callback): this.type = set("onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLDivElement & Element]) => value(t0).runNow()))
     
@@ -416,6 +356,8 @@ object ModalUnstyled {
     
     inline def onReset(value: ReactEventFrom[HTMLDivElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & Element]) => value(t0).runNow()))
     
+    inline def onResize(value: ReactEventFrom[HTMLDivElement & Element] => Callback): this.type = set("onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & Element]) => value(t0).runNow()))
+    
     inline def onScroll(value: ReactUIEventFrom[HTMLDivElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLDivElement & Element]) => value(t0).runNow()))
     
     inline def onSeeked(value: ReactEventFrom[HTMLDivElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & Element]) => value(t0).runNow()))
@@ -466,6 +408,10 @@ object ModalUnstyled {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
+    inline def slotProps(value: Backdrop): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    
+    inline def slots(value: BackdropRoot): this.type = set("slots", value.asInstanceOf[js.Any])
+    
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     
     inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
@@ -478,11 +424,11 @@ object ModalUnstyled {
     
     inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
     
-    inline def translate(value: yes | no): this.type = set("translate", value.asInstanceOf[js.Any])
+    inline def translate(value: "yes" | "no"): this.type = set("translate", value.asInstanceOf[js.Any])
     
     inline def typeof(value: String): this.type = set("typeof", value.asInstanceOf[js.Any])
     
-    inline def unselectable(value: on | off): this.type = set("unselectable", value.asInstanceOf[js.Any])
+    inline def unselectable(value: "on" | "off"): this.type = set("unselectable", value.asInstanceOf[js.Any])
     
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }

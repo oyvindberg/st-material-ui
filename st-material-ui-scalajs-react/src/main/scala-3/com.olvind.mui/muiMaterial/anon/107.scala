@@ -1,38 +1,44 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.outlinedInputOutlinedInputClassesMod.OutlinedInputClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `107` extends StObject {
+trait `107`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialPaperPropsdiv] = js.undefined
+  var defaultProps: js.UndefOr[PartialOutlinedInputProps] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesPaperClassKey] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[OutlinedInputClassKey, "MuiOutlinedInput", Theme]]
+  ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialPaperPropsdiv]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialOutlinedInputProps]] = js.undefined
 }
 object `107` {
   
-  inline def apply(): `107` = {
+  inline def apply[Theme](): `107`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`107`]
+    __obj.asInstanceOf[`107`[Theme]]
   }
   
-  extension [Self <: `107`](x: Self) {
+  extension [Self <: `107`[?], Theme](x: Self & `107`[Theme]) {
     
-    inline def setDefaultProps(value: PartialPaperPropsdiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialOutlinedInputProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesPaperClassKey): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(
+      value: com.olvind.mui.std.Partial[OverridesStyleRules[OutlinedInputClassKey, "MuiOutlinedInput", Theme]]
+    ): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialPaperPropsdiv]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialOutlinedInputProps]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialPaperPropsdiv*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialOutlinedInputProps*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiMaterial.themeProviderMod.ThemeProviderProps
+import com.olvind.mui.muiMaterial.stylesThemeProviderMod.ThemeProviderProps
 import com.olvind.mui.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

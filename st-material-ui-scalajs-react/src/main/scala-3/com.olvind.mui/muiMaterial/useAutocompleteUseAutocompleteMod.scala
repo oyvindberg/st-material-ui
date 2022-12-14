@@ -1,9 +1,9 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiBase.anon.AnchorEl
-import com.olvind.mui.muiBase.useAutocompleteMod.CreateFilterOptionsConfig
-import com.olvind.mui.muiBase.useAutocompleteMod.FilterOptionsState
-import com.olvind.mui.muiBase.useAutocompleteMod.UseAutocompleteProps
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.CreateFilterOptionsConfig
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.FilterOptionsState
+import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.UseAutocompleteProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

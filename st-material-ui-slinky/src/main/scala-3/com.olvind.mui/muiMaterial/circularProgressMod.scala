@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
+import com.olvind.mui.muiMaterial.circularProgressCircularProgressClassesMod.CircularProgressClasses
 import com.olvind.mui.muiMaterial.circularProgressCircularProgressMod.CircularProgressProps
-import com.olvind.mui.muiMaterial.circularProgressClassesMod.CircularProgressClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

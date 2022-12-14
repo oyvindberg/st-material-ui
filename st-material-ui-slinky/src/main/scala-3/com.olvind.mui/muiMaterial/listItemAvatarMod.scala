@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.listItemAvatarClassesMod.ListItemAvatarClasses
+import com.olvind.mui.muiMaterial.listItemAvatarListItemAvatarClassesMod.ListItemAvatarClasses
 import com.olvind.mui.muiMaterial.listItemAvatarListItemAvatarMod.ListItemAvatarProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

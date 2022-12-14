@@ -1,12 +1,11 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiBase.badgeUnstyledPropsMod.ExtendBadgeUnstyledTypeMap
-import com.olvind.mui.muiMaterial.anon.DefaultComponentD
+import com.olvind.mui.muiBase.badgeUnstyledBadgeUnstyledDottypesMod.ExtendBadgeUnstyledTypeMap
+import com.olvind.mui.muiMaterial.anon.DefaultComponentProps
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBadgeTypeMapspan
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import com.olvind.mui.react.mod.FC
 import com.olvind.mui.react.mod.global.JSX.Element
-import com.olvind.mui.std.Record
 import japgolly.scalajs.react.facade.React.ElementType
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
@@ -19,13 +18,13 @@ object badgeBadgeMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Avatars](https://mui.com/components/avatars/)
-    * - [Badges](https://mui.com/components/badges/)
+    * - [Avatar](https://mui.com/material-ui/react-avatar/)
+    * - [Badge](https://mui.com/material-ui/react-badge/)
     *
     * API:
     *
-    * - [Badge API](https://mui.com/api/badge/)
-    * - inherits [BadgeUnstyled API](https://mui.com/api/badge-unstyled/)
+    * - [Badge API](https://mui.com/material-ui/api/badge/)
+    * - inherits [BadgeUnstyled API](https://mui.com/base/api/badge-unstyled/)
     */
   @JSImport("@mui/material/Badge/Badge", JSImport.Default)
   @js.native
@@ -39,15 +38,28 @@ object badgeBadgeMod extends Shortcut {
   @js.native
   val BadgeRoot: FC[BadgeRootProps] = js.native
   
-  @JSImport("@mui/material/Badge/Badge", "badgeClasses")
-  @js.native
-  val badgeClasses: BadgeClasses_ = js.native
+  type BadgeBadgeProps = /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Badge | undefined>['badge'] */ js.Any
   
-  type BadgeBadgeProps = /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.BadgeRoot | undefined>['badge'] */ js.Any
-  
-  type BadgeClassKey = /* keyof std.NonNullable<@mui/base.anon.PartialBadgeUnstyledClasses | undefined & @mui/material.anon.AnchorOriginBottomLeftCircular | undefined & @mui/base.anon.PartialBadgeUnstyledClasses | undefined> */ String
-  
-  type BadgeClasses_ = Record[BadgeClassKey, String]
+  trait BadgeOrigin extends StObject {
+    
+    var horizontal: "left" | "right"
+    
+    var vertical: "top" | "bottom"
+  }
+  object BadgeOrigin {
+    
+    inline def apply(horizontal: "left" | "right", vertical: "top" | "bottom"): BadgeOrigin = {
+      val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BadgeOrigin]
+    }
+    
+    extension [Self <: BadgeOrigin](x: Self) {
+      
+      inline def setHorizontal(value: "left" | "right"): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      
+      inline def setVertical(value: "top" | "bottom"): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    }
+  }
   
   type BadgeProps[D /* <: ElementType */, P] = OverrideProps[BadgeTypeMap[D, P], D]
   
@@ -55,9 +67,9 @@ object badgeBadgeMod extends Shortcut {
   
   trait BadgePropsVariantOverrides extends StObject
   
-  type BadgeRootProps = /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.BadgeRoot | undefined>['root'] */ js.Any
+  type BadgeRootProps = /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Badge | undefined>['root'] */ js.Any
   
-  type BadgeTypeMap[D /* <: ElementType */, P] = ExtendBadgeUnstyledTypeMap[DefaultComponentD[P, D]]
+  type BadgeTypeMap[D /* <: ElementType */, P] = ExtendBadgeUnstyledTypeMap[DefaultComponentProps[P, D]]
   
   type _To = js.Function1[/* props */ DefaultComponentPropsBadgeTypeMapspan, Element]
   

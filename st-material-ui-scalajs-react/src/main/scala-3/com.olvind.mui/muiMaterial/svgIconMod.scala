@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsSvgIconTypeMapsvg
-import com.olvind.mui.muiMaterial.svgIconClassesMod.SvgIconClasses
+import com.olvind.mui.muiMaterial.svgIconSvgIconClassesMod.SvgIconClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +17,12 @@ object svgIconMod {
     *
     * Demos:
     *
-    * - [Icons](https://mui.com/components/icons/)
-    * - [Material Icons](https://mui.com/components/material-icons/)
+    * - [Icons](https://mui.com/material-ui/icons/)
+    * - [Material Icons](https://mui.com/material-ui/material-icons/)
     *
     * API:
     *
-    * - [SvgIcon API](https://mui.com/api/svg-icon/)
+    * - [SvgIcon API](https://mui.com/material-ui/api/svg-icon/)
     */
   /* Inlined (props : DefaultComponentProps<SvgIconTypeMap<{}, 'svg'>> & {}): react.react.<global>.JSX.Element & {  muiName :string} */
   object default {

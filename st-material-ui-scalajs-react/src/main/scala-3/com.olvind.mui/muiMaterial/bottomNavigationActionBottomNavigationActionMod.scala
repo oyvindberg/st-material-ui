@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.DefaultComponentDProps
+import com.olvind.mui.muiMaterial.anon.DefaultComponentD
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAbout
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapBott
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
@@ -18,12 +18,12 @@ object bottomNavigationActionBottomNavigationActionMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Bottom Navigation](https://mui.com/components/bottom-navigation/)
+    * - [Bottom Navigation](https://mui.com/material-ui/react-bottom-navigation/)
     *
     * API:
     *
-    * - [BottomNavigationAction API](https://mui.com/api/bottom-navigation-action/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [BottomNavigationAction API](https://mui.com/material-ui/api/bottom-navigation-action/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/BottomNavigationAction/BottomNavigationAction", JSImport.Default)
   @js.native
@@ -34,7 +34,7 @@ object bottomNavigationActionBottomNavigationActionMod extends Shortcut {
   
   type BottomNavigationActionProps[D /* <: ElementType */, P] = OverrideProps[BottomNavigationActionTypeMap[P, D], D]
   
-  type BottomNavigationActionTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[DefaultComponentDProps[P, D]]
+  type BottomNavigationActionTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[DefaultComponentD[P, D]]
   
   type _To = js.Function1[
     /* props */ OverridePropsExtendButtonBaseTypeMapBott | DefaultComponentPropsExtendButtonBaseTypAbout, 

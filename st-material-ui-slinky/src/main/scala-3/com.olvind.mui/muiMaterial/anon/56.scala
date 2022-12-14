@@ -1,38 +1,42 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.checkboxCheckboxClassesMod.CheckboxClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `56` extends StObject {
+trait `56`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialCircularProgressProps] = js.undefined
+  var defaultProps: js.UndefOr[PartialCheckboxProps] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesCircularProgre] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[CheckboxClassKey, "MuiCheckbox", Theme]]
+  ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialCircularProgressProps]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialCheckboxProps]] = js.undefined
 }
 object `56` {
   
-  inline def apply(): `56` = {
+  inline def apply[Theme](): `56`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`56`]
+    __obj.asInstanceOf[`56`[Theme]]
   }
   
-  extension [Self <: `56`](x: Self) {
+  extension [Self <: `56`[?], Theme](x: Self & `56`[Theme]) {
     
-    inline def setDefaultProps(value: PartialCircularProgressProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialCheckboxProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesCircularProgre): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(value: com.olvind.mui.std.Partial[OverridesStyleRules[CheckboxClassKey, "MuiCheckbox", Theme]]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialCircularProgressProps]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialCheckboxProps]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialCircularProgressProps*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialCheckboxProps*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

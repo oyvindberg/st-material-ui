@@ -1,59 +1,6 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`additions text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`inline`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`removals text`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text additions`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.`text removals`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.additions
-import com.olvind.mui.muiMaterial.muiMaterialStrings.all
-import com.olvind.mui.muiMaterial.muiMaterialStrings.ascending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.assertive
-import com.olvind.mui.muiMaterial.muiMaterialStrings.auto
-import com.olvind.mui.muiMaterial.muiMaterialStrings.backdropClick
-import com.olvind.mui.muiMaterial.muiMaterialStrings.both
-import com.olvind.mui.muiMaterial.muiMaterialStrings.copy
-import com.olvind.mui.muiMaterial.muiMaterialStrings.date
-import com.olvind.mui.muiMaterial.muiMaterialStrings.decimal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.descending
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dialog
-import com.olvind.mui.muiMaterial.muiMaterialStrings.email
-import com.olvind.mui.muiMaterial.muiMaterialStrings.escapeKeyDown
-import com.olvind.mui.muiMaterial.muiMaterialStrings.execute
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grammar
-import com.olvind.mui.muiMaterial.muiMaterialStrings.grid
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inherit
-import com.olvind.mui.muiMaterial.muiMaterialStrings.link
-import com.olvind.mui.muiMaterial.muiMaterialStrings.list
-import com.olvind.mui.muiMaterial.muiMaterialStrings.listbox
-import com.olvind.mui.muiMaterial.muiMaterialStrings.location
-import com.olvind.mui.muiMaterial.muiMaterialStrings.menu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.mixed
-import com.olvind.mui.muiMaterial.muiMaterialStrings.move
-import com.olvind.mui.muiMaterial.muiMaterialStrings.no
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.numeric
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.on
-import com.olvind.mui.muiMaterial.muiMaterialStrings.other
-import com.olvind.mui.muiMaterial.muiMaterialStrings.page
-import com.olvind.mui.muiMaterial.muiMaterialStrings.polite
-import com.olvind.mui.muiMaterial.muiMaterialStrings.popup
-import com.olvind.mui.muiMaterial.muiMaterialStrings.removals
-import com.olvind.mui.muiMaterial.muiMaterialStrings.search
-import com.olvind.mui.muiMaterial.muiMaterialStrings.selectedMenu
-import com.olvind.mui.muiMaterial.muiMaterialStrings.spelling
-import com.olvind.mui.muiMaterial.muiMaterialStrings.step
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tel
-import com.olvind.mui.muiMaterial.muiMaterialStrings.text
-import com.olvind.mui.muiMaterial.muiMaterialStrings.time
-import com.olvind.mui.muiMaterial.muiMaterialStrings.tree
-import com.olvind.mui.muiMaterial.muiMaterialStrings.url
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
-import com.olvind.mui.muiMaterial.muiMaterialStrings.yes
+import com.olvind.mui.muiBase.anon.BackdropRoot
 import com.olvind.mui.muiMaterial.popoverPopoverMod.PopoverActions
 import com.olvind.mui.muiMaterial.popoverPopoverMod.PopoverOrigin
 import com.olvind.mui.muiMaterial.popoverPopoverMod.PopoverPosition
@@ -109,7 +56,7 @@ trait PartialMenuProps extends StObject {
   
   var BackdropComponent: js.UndefOr[ReactElement] = js.undefined
   
-  var BackdropProps: js.UndefOr[PartialBackdropPropsspan] = js.undefined
+  var BackdropProps: js.UndefOr[PartialBackdropPropsdiv] = js.undefined
   
   var MenuListProps: js.UndefOr[PartialMenuListPropsdefaultComponent] = js.undefined
   
@@ -119,7 +66,7 @@ trait PartialMenuProps extends StObject {
   
   var TransitionComponent: js.UndefOr[JSXElementConstructor[TransitionPropsAbout]] = js.undefined
   
-  var TransitionProps: js.UndefOr[com.olvind.mui.muiMaterial.transitionMod.TransitionProps] = js.undefined
+  var TransitionProps: js.UndefOr[com.olvind.mui.muiMaterial.transitionsTransitionMod.TransitionProps] = js.undefined
   
   var about: js.UndefOr[String] = js.undefined
   
@@ -139,11 +86,11 @@ trait PartialMenuProps extends StObject {
   
   var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr["none" | "inline" | "list" | "both"] = js.undefined
   
   var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+  var `aria-checked`: js.UndefOr[Boolean | "mixed"] = js.undefined
   
   var `aria-colcount`: js.UndefOr[Double] = js.undefined
   
@@ -153,7 +100,7 @@ trait PartialMenuProps extends StObject {
   
   var `aria-controls`: js.UndefOr[String] = js.undefined
   
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+  var `aria-current`: js.UndefOr[Boolean | "page" | "step" | "location" | "date" | "time"] = js.undefined
   
   var `aria-describedby`: js.UndefOr[String] = js.undefined
   
@@ -161,7 +108,7 @@ trait PartialMenuProps extends StObject {
   
   var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+  var `aria-dropeffect`: js.UndefOr["none" | "copy" | "execute" | "link" | "move" | "popup"] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
@@ -171,11 +118,11 @@ trait PartialMenuProps extends StObject {
   
   var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+  var `aria-haspopup`: js.UndefOr[Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"] = js.undefined
   
   var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+  var `aria-invalid`: js.UndefOr[Boolean | "grammar" | "spelling"] = js.undefined
   
   var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
   
@@ -185,7 +132,7 @@ trait PartialMenuProps extends StObject {
   
   var `aria-level`: js.UndefOr[Double] = js.undefined
   
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+  var `aria-live`: js.UndefOr["off" | "assertive" | "polite"] = js.undefined
   
   var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
   
@@ -193,7 +140,7 @@ trait PartialMenuProps extends StObject {
   
   var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+  var `aria-orientation`: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   var `aria-owns`: js.UndefOr[String] = js.undefined
   
@@ -201,12 +148,12 @@ trait PartialMenuProps extends StObject {
   
   var `aria-posinset`: js.UndefOr[Double] = js.undefined
   
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+  var `aria-pressed`: js.UndefOr[Boolean | "mixed"] = js.undefined
   
   var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
-    additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+    "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
   ] = js.undefined
   
   var `aria-required`: js.UndefOr[Booleanish] = js.undefined
@@ -223,7 +170,7 @@ trait PartialMenuProps extends StObject {
   
   var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+  var `aria-sort`: js.UndefOr["none" | "ascending" | "descending" | "other"] = js.undefined
   
   var `aria-valuemax`: js.UndefOr[Double] = js.undefined
   
@@ -251,13 +198,13 @@ trait PartialMenuProps extends StObject {
   
   var color: js.UndefOr[String] = js.undefined
   
-  var components: js.UndefOr[com.olvind.mui.muiBase.anon.Root] = js.undefined
+  var components: js.UndefOr[Backdrop] = js.undefined
   
-  var componentsProps: js.UndefOr[com.olvind.mui.muiBase.anon.`4`] = js.undefined
+  var componentsProps: js.UndefOr[com.olvind.mui.muiBase.anon.Backdrop] = js.undefined
   
   var container: js.UndefOr[Element | (js.Function0[Element | Null]) | Null] = js.undefined
   
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
@@ -297,7 +244,7 @@ trait PartialMenuProps extends StObject {
   
   var inlist: js.UndefOr[Any] = js.undefined
   
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
   
   var is: js.UndefOr[String] = js.undefined
   
@@ -318,6 +265,8 @@ trait PartialMenuProps extends StObject {
   var lang: js.UndefOr[String] = js.undefined
   
   var marginThreshold: js.UndefOr[Double] = js.undefined
+  
+  var nonce: js.UndefOr[String] = js.undefined
   
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
@@ -344,7 +293,7 @@ trait PartialMenuProps extends StObject {
   var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
   var onClose: js.UndefOr[
-    js.Function2[/* event */ js.Object, /* reason */ backdropClick | escapeKeyDown, Unit]
+    js.Function2[/* event */ js.Object, /* reason */ "backdropClick" | "escapeKeyDown", Unit]
   ] = js.undefined
   
   var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -451,6 +400,8 @@ trait PartialMenuProps extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  
   var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
   
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -505,6 +456,10 @@ trait PartialMenuProps extends StObject {
   
   var slot: js.UndefOr[String] = js.undefined
   
+  var slotProps: js.UndefOr[com.olvind.mui.muiBase.anon.Backdrop] = js.undefined
+  
+  var slots: js.UndefOr[BackdropRoot] = js.undefined
+  
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -513,7 +468,7 @@ trait PartialMenuProps extends StObject {
   
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
@@ -521,15 +476,15 @@ trait PartialMenuProps extends StObject {
   
   var transformOrigin: js.UndefOr[PopoverOrigin] = js.undefined
   
-  var transitionDuration: js.UndefOr[Any | auto] = js.undefined
+  var transitionDuration: js.UndefOr[Any | "auto"] = js.undefined
   
-  var translate: js.UndefOr[yes | no] = js.undefined
+  var translate: js.UndefOr["yes" | "no"] = js.undefined
   
   var typeof: js.UndefOr[String] = js.undefined
   
-  var unselectable: js.UndefOr[on | off] = js.undefined
+  var unselectable: js.UndefOr["on" | "off"] = js.undefined
   
-  var variant: js.UndefOr[menu | selectedMenu] = js.undefined
+  var variant: js.UndefOr["menu" | "selectedMenu"] = js.undefined
   
   var vocab: js.UndefOr[String] = js.undefined
 }
@@ -588,7 +543,7 @@ object PartialMenuProps {
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
-    inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `setAria-autocomplete`(value: "none" | "inline" | "list" | "both"): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
@@ -596,7 +551,7 @@ object PartialMenuProps {
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
-    inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+    inline def `setAria-checked`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
     
     inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
     
@@ -616,7 +571,7 @@ object PartialMenuProps {
     
     inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
     
-    inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+    inline def `setAria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
     
     inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
     
@@ -632,7 +587,7 @@ object PartialMenuProps {
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
-    inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `setAria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
     
@@ -652,7 +607,7 @@ object PartialMenuProps {
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
-    inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `setAria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
@@ -660,7 +615,7 @@ object PartialMenuProps {
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
-    inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+    inline def `setAria-invalid`(value: Boolean | "grammar" | "spelling"): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
     
     inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
     
@@ -680,7 +635,7 @@ object PartialMenuProps {
     
     inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
     
-    inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+    inline def `setAria-live`(value: "off" | "assertive" | "polite"): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
@@ -696,7 +651,7 @@ object PartialMenuProps {
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
-    inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+    inline def `setAria-orientation`(value: "horizontal" | "vertical"): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
     
     inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
     
@@ -712,7 +667,7 @@ object PartialMenuProps {
     
     inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
     
-    inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+    inline def `setAria-pressed`(value: Boolean | "mixed"): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
@@ -721,7 +676,7 @@ object PartialMenuProps {
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
     inline def `setAria-relevant`(
-      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
     ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
@@ -754,7 +709,7 @@ object PartialMenuProps {
     
     inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
     
-    inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+    inline def `setAria-sort`(value: "none" | "ascending" | "descending" | "other"): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
     
     inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
     
@@ -794,7 +749,7 @@ object PartialMenuProps {
     
     inline def setBackdropComponentUndefined: Self = StObject.set(x, "BackdropComponent", js.undefined)
     
-    inline def setBackdropProps(value: PartialBackdropPropsspan): Self = StObject.set(x, "BackdropProps", value.asInstanceOf[js.Any])
+    inline def setBackdropProps(value: PartialBackdropPropsdiv): Self = StObject.set(x, "BackdropProps", value.asInstanceOf[js.Any])
     
     inline def setBackdropPropsUndefined: Self = StObject.set(x, "BackdropProps", js.undefined)
     
@@ -818,9 +773,9 @@ object PartialMenuProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setComponents(value: com.olvind.mui.muiBase.anon.Root): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: Backdrop): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    inline def setComponentsProps(value: com.olvind.mui.muiBase.anon.`4`): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
+    inline def setComponentsProps(value: com.olvind.mui.muiBase.anon.Backdrop): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
     
     inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
     
@@ -834,7 +789,7 @@ object PartialMenuProps {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+    inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
     
@@ -916,7 +871,7 @@ object PartialMenuProps {
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
-    inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+    inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
     
     inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
     
@@ -966,6 +921,10 @@ object PartialMenuProps {
     
     inline def setMenuListPropsUndefined: Self = StObject.set(x, "MenuListProps", js.undefined)
     
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    
     inline def setOnAbort(value: SyntheticEvent[Event, HTMLDivElement] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     
     inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
@@ -1014,7 +973,7 @@ object PartialMenuProps {
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnClose(value: (/* event */ js.Object, /* reason */ backdropClick | escapeKeyDown) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+    inline def setOnClose(value: (/* event */ js.Object, /* reason */ "backdropClick" | "escapeKeyDown") => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
     
     inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
@@ -1226,6 +1185,10 @@ object PartialMenuProps {
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
+    inline def setOnResize(value: SyntheticEvent[Event, HTMLDivElement] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+    
     inline def setOnScroll(value: SyntheticUIEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1346,7 +1309,15 @@ object PartialMenuProps {
     
     inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
+    inline def setSlotProps(value: com.olvind.mui.muiBase.anon.Backdrop): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    
+    inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
+    
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+    
+    inline def setSlots(value: BackdropRoot): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
     inline def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
     
@@ -1364,10 +1335,10 @@ object PartialMenuProps {
     
     inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.createThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
     inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.createThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
     ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
@@ -1375,9 +1346,9 @@ object PartialMenuProps {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.createThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.createThemeMod.Theme]
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
@@ -1397,15 +1368,15 @@ object PartialMenuProps {
     
     inline def setTransitionComponentUndefined: Self = StObject.set(x, "TransitionComponent", js.undefined)
     
-    inline def setTransitionDuration(value: Any | auto): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+    inline def setTransitionDuration(value: Any | "auto"): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
-    inline def setTransitionProps(value: com.olvind.mui.muiMaterial.transitionMod.TransitionProps): Self = StObject.set(x, "TransitionProps", value.asInstanceOf[js.Any])
+    inline def setTransitionProps(value: com.olvind.mui.muiMaterial.transitionsTransitionMod.TransitionProps): Self = StObject.set(x, "TransitionProps", value.asInstanceOf[js.Any])
     
     inline def setTransitionPropsUndefined: Self = StObject.set(x, "TransitionProps", js.undefined)
     
-    inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: "yes" | "no"): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
@@ -1413,11 +1384,11 @@ object PartialMenuProps {
     
     inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
     
-    inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+    inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
     
     inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     
-    inline def setVariant(value: menu | selectedMenu): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: "menu" | "selectedMenu"): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     

@@ -4,32 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - `com.olvind.mui`.csstype.csstypeStrings.mixed
-  - `com.olvind.mui`.csstype.csstypeStrings.sideways
-  - `com.olvind.mui`.csstype.csstypeStrings.upright
-  - `com.olvind.mui`.csstype.csstypeStrings.`-moz-initial`
-  - `com.olvind.mui`.csstype.csstypeStrings.inherit
-  - `com.olvind.mui`.csstype.csstypeStrings.initial
-  - `com.olvind.mui`.csstype.csstypeStrings.revert
-  - `com.olvind.mui`.csstype.csstypeStrings.unset
-*/
-trait TextOrientation extends StObject
 object TextOrientation {
   
-  inline def `-moz-initial`: com.olvind.mui.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def inherit: com.olvind.mui.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: com.olvind.mui.csstype.csstypeStrings.initial = "initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def mixed: com.olvind.mui.csstype.csstypeStrings.mixed = "mixed".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.mixed]
+  inline def mixed: "mixed" = "mixed".asInstanceOf["mixed"]
   
-  inline def revert: com.olvind.mui.csstype.csstypeStrings.revert = "revert".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def sideways: com.olvind.mui.csstype.csstypeStrings.sideways = "sideways".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.sideways]
+  inline def sideways: "sideways" = "sideways".asInstanceOf["sideways"]
   
-  inline def unset: com.olvind.mui.csstype.csstypeStrings.unset = "unset".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
   
-  inline def upright: com.olvind.mui.csstype.csstypeStrings.upright = "upright".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.upright]
+  inline def upright: "upright" = "upright".asInstanceOf["upright"]
 }

@@ -4,170 +4,113 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - `com.olvind.mui`.csstype.csstypeStrings.`-apple-pay-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.button
-  - `com.olvind.mui`.csstype.csstypeStrings.`button-bevel`
-  - `com.olvind.mui`.csstype.csstypeStrings.caret
-  - `com.olvind.mui`.csstype.csstypeStrings.checkbox
-  - `com.olvind.mui`.csstype.csstypeStrings.`default-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`inner-spin-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.listbox
-  - `com.olvind.mui`.csstype.csstypeStrings.listitem
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-controls-background`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-controls-fullscreen-background`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-current-time-display`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-enter-fullscreen-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-exit-fullscreen-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-fullscreen-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-mute-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-overlay-play-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-play-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-seek-back-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-seek-forward-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-slider`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-sliderthumb`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-time-remaining-display`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-toggle-closed-captions-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-volume-slider`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-volume-slider-container`
-  - `com.olvind.mui`.csstype.csstypeStrings.`media-volume-sliderthumb`
-  - `com.olvind.mui`.csstype.csstypeStrings.menulist
-  - `com.olvind.mui`.csstype.csstypeStrings.`menulist-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`menulist-text`
-  - `com.olvind.mui`.csstype.csstypeStrings.`menulist-textfield`
-  - `com.olvind.mui`.csstype.csstypeStrings.meter
-  - `com.olvind.mui`.csstype.csstypeStrings.none
-  - `com.olvind.mui`.csstype.csstypeStrings.`progress-bar`
-  - `com.olvind.mui`.csstype.csstypeStrings.`progress-bar-value`
-  - `com.olvind.mui`.csstype.csstypeStrings.`push-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.radio
-  - `com.olvind.mui`.csstype.csstypeStrings.searchfield
-  - `com.olvind.mui`.csstype.csstypeStrings.`searchfield-cancel-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`searchfield-decoration`
-  - `com.olvind.mui`.csstype.csstypeStrings.`searchfield-results-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.`searchfield-results-decoration`
-  - `com.olvind.mui`.csstype.csstypeStrings.`slider-horizontal`
-  - `com.olvind.mui`.csstype.csstypeStrings.`slider-vertical`
-  - `com.olvind.mui`.csstype.csstypeStrings.`sliderthumb-horizontal`
-  - `com.olvind.mui`.csstype.csstypeStrings.`sliderthumb-vertical`
-  - `com.olvind.mui`.csstype.csstypeStrings.`square-button`
-  - `com.olvind.mui`.csstype.csstypeStrings.textarea
-  - `com.olvind.mui`.csstype.csstypeStrings.textfield
-  - `com.olvind.mui`.csstype.csstypeStrings.`-moz-initial`
-  - `com.olvind.mui`.csstype.csstypeStrings.inherit
-  - `com.olvind.mui`.csstype.csstypeStrings.initial
-  - `com.olvind.mui`.csstype.csstypeStrings.revert
-  - `com.olvind.mui`.csstype.csstypeStrings.unset
-*/
-trait WebkitAppearance extends StObject
 object WebkitAppearance {
   
-  inline def `-apple-pay-button`: com.olvind.mui.csstype.csstypeStrings.`-apple-pay-button` = "-apple-pay-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`-apple-pay-button`]
+  inline def `-apple-pay-button`: "-apple-pay-button" = "-apple-pay-button".asInstanceOf["-apple-pay-button"]
   
-  inline def `-moz-initial`: com.olvind.mui.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def button: com.olvind.mui.csstype.csstypeStrings.button = "button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.button]
+  inline def button: "button" = "button".asInstanceOf["button"]
   
-  inline def `button-bevel`: com.olvind.mui.csstype.csstypeStrings.`button-bevel` = "button-bevel".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`button-bevel`]
+  inline def `button-bevel`: "button-bevel" = "button-bevel".asInstanceOf["button-bevel"]
   
-  inline def caret: com.olvind.mui.csstype.csstypeStrings.caret = "caret".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.caret]
+  inline def caret: "caret" = "caret".asInstanceOf["caret"]
   
-  inline def checkbox: com.olvind.mui.csstype.csstypeStrings.checkbox = "checkbox".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.checkbox]
+  inline def checkbox: "checkbox" = "checkbox".asInstanceOf["checkbox"]
   
-  inline def `default-button`: com.olvind.mui.csstype.csstypeStrings.`default-button` = "default-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`default-button`]
+  inline def `default-button`: "default-button" = "default-button".asInstanceOf["default-button"]
   
-  inline def inherit: com.olvind.mui.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: com.olvind.mui.csstype.csstypeStrings.initial = "initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def `inner-spin-button`: com.olvind.mui.csstype.csstypeStrings.`inner-spin-button` = "inner-spin-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`inner-spin-button`]
+  inline def `inner-spin-button`: "inner-spin-button" = "inner-spin-button".asInstanceOf["inner-spin-button"]
   
-  inline def listbox: com.olvind.mui.csstype.csstypeStrings.listbox = "listbox".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.listbox]
+  inline def listbox: "listbox" = "listbox".asInstanceOf["listbox"]
   
-  inline def listitem: com.olvind.mui.csstype.csstypeStrings.listitem = "listitem".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.listitem]
+  inline def listitem: "listitem" = "listitem".asInstanceOf["listitem"]
   
-  inline def `media-controls-background`: com.olvind.mui.csstype.csstypeStrings.`media-controls-background` = "media-controls-background".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-controls-background`]
+  inline def `media-controls-background`: "media-controls-background" = "media-controls-background".asInstanceOf["media-controls-background"]
   
-  inline def `media-controls-fullscreen-background`: com.olvind.mui.csstype.csstypeStrings.`media-controls-fullscreen-background` = "media-controls-fullscreen-background".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-controls-fullscreen-background`]
+  inline def `media-controls-fullscreen-background`: "media-controls-fullscreen-background" = "media-controls-fullscreen-background".asInstanceOf["media-controls-fullscreen-background"]
   
-  inline def `media-current-time-display`: com.olvind.mui.csstype.csstypeStrings.`media-current-time-display` = "media-current-time-display".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-current-time-display`]
+  inline def `media-current-time-display`: "media-current-time-display" = "media-current-time-display".asInstanceOf["media-current-time-display"]
   
-  inline def `media-enter-fullscreen-button`: com.olvind.mui.csstype.csstypeStrings.`media-enter-fullscreen-button` = "media-enter-fullscreen-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-enter-fullscreen-button`]
+  inline def `media-enter-fullscreen-button`: "media-enter-fullscreen-button" = "media-enter-fullscreen-button".asInstanceOf["media-enter-fullscreen-button"]
   
-  inline def `media-exit-fullscreen-button`: com.olvind.mui.csstype.csstypeStrings.`media-exit-fullscreen-button` = "media-exit-fullscreen-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-exit-fullscreen-button`]
+  inline def `media-exit-fullscreen-button`: "media-exit-fullscreen-button" = "media-exit-fullscreen-button".asInstanceOf["media-exit-fullscreen-button"]
   
-  inline def `media-fullscreen-button`: com.olvind.mui.csstype.csstypeStrings.`media-fullscreen-button` = "media-fullscreen-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-fullscreen-button`]
+  inline def `media-fullscreen-button`: "media-fullscreen-button" = "media-fullscreen-button".asInstanceOf["media-fullscreen-button"]
   
-  inline def `media-mute-button`: com.olvind.mui.csstype.csstypeStrings.`media-mute-button` = "media-mute-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-mute-button`]
+  inline def `media-mute-button`: "media-mute-button" = "media-mute-button".asInstanceOf["media-mute-button"]
   
-  inline def `media-overlay-play-button`: com.olvind.mui.csstype.csstypeStrings.`media-overlay-play-button` = "media-overlay-play-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-overlay-play-button`]
+  inline def `media-overlay-play-button`: "media-overlay-play-button" = "media-overlay-play-button".asInstanceOf["media-overlay-play-button"]
   
-  inline def `media-play-button`: com.olvind.mui.csstype.csstypeStrings.`media-play-button` = "media-play-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-play-button`]
+  inline def `media-play-button`: "media-play-button" = "media-play-button".asInstanceOf["media-play-button"]
   
-  inline def `media-seek-back-button`: com.olvind.mui.csstype.csstypeStrings.`media-seek-back-button` = "media-seek-back-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-seek-back-button`]
+  inline def `media-seek-back-button`: "media-seek-back-button" = "media-seek-back-button".asInstanceOf["media-seek-back-button"]
   
-  inline def `media-seek-forward-button`: com.olvind.mui.csstype.csstypeStrings.`media-seek-forward-button` = "media-seek-forward-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-seek-forward-button`]
+  inline def `media-seek-forward-button`: "media-seek-forward-button" = "media-seek-forward-button".asInstanceOf["media-seek-forward-button"]
   
-  inline def `media-slider`: com.olvind.mui.csstype.csstypeStrings.`media-slider` = "media-slider".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-slider`]
+  inline def `media-slider`: "media-slider" = "media-slider".asInstanceOf["media-slider"]
   
-  inline def `media-sliderthumb`: com.olvind.mui.csstype.csstypeStrings.`media-sliderthumb` = "media-sliderthumb".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-sliderthumb`]
+  inline def `media-sliderthumb`: "media-sliderthumb" = "media-sliderthumb".asInstanceOf["media-sliderthumb"]
   
-  inline def `media-time-remaining-display`: com.olvind.mui.csstype.csstypeStrings.`media-time-remaining-display` = "media-time-remaining-display".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-time-remaining-display`]
+  inline def `media-time-remaining-display`: "media-time-remaining-display" = "media-time-remaining-display".asInstanceOf["media-time-remaining-display"]
   
-  inline def `media-toggle-closed-captions-button`: com.olvind.mui.csstype.csstypeStrings.`media-toggle-closed-captions-button` = "media-toggle-closed-captions-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-toggle-closed-captions-button`]
+  inline def `media-toggle-closed-captions-button`: "media-toggle-closed-captions-button" = "media-toggle-closed-captions-button".asInstanceOf["media-toggle-closed-captions-button"]
   
-  inline def `media-volume-slider`: com.olvind.mui.csstype.csstypeStrings.`media-volume-slider` = "media-volume-slider".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-volume-slider`]
+  inline def `media-volume-slider`: "media-volume-slider" = "media-volume-slider".asInstanceOf["media-volume-slider"]
   
-  inline def `media-volume-slider-container`: com.olvind.mui.csstype.csstypeStrings.`media-volume-slider-container` = "media-volume-slider-container".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-volume-slider-container`]
+  inline def `media-volume-slider-container`: "media-volume-slider-container" = "media-volume-slider-container".asInstanceOf["media-volume-slider-container"]
   
-  inline def `media-volume-sliderthumb`: com.olvind.mui.csstype.csstypeStrings.`media-volume-sliderthumb` = "media-volume-sliderthumb".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`media-volume-sliderthumb`]
+  inline def `media-volume-sliderthumb`: "media-volume-sliderthumb" = "media-volume-sliderthumb".asInstanceOf["media-volume-sliderthumb"]
   
-  inline def menulist: com.olvind.mui.csstype.csstypeStrings.menulist = "menulist".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.menulist]
+  inline def menulist: "menulist" = "menulist".asInstanceOf["menulist"]
   
-  inline def `menulist-button`: com.olvind.mui.csstype.csstypeStrings.`menulist-button` = "menulist-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`menulist-button`]
+  inline def `menulist-button`: "menulist-button" = "menulist-button".asInstanceOf["menulist-button"]
   
-  inline def `menulist-text`: com.olvind.mui.csstype.csstypeStrings.`menulist-text` = "menulist-text".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`menulist-text`]
+  inline def `menulist-text`: "menulist-text" = "menulist-text".asInstanceOf["menulist-text"]
   
-  inline def `menulist-textfield`: com.olvind.mui.csstype.csstypeStrings.`menulist-textfield` = "menulist-textfield".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`menulist-textfield`]
+  inline def `menulist-textfield`: "menulist-textfield" = "menulist-textfield".asInstanceOf["menulist-textfield"]
   
-  inline def meter: com.olvind.mui.csstype.csstypeStrings.meter = "meter".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.meter]
+  inline def meter: "meter" = "meter".asInstanceOf["meter"]
   
-  inline def none: com.olvind.mui.csstype.csstypeStrings.none = "none".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.none]
+  inline def none: "none" = "none".asInstanceOf["none"]
   
-  inline def `progress-bar`: com.olvind.mui.csstype.csstypeStrings.`progress-bar` = "progress-bar".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`progress-bar`]
+  inline def `progress-bar`: "progress-bar" = "progress-bar".asInstanceOf["progress-bar"]
   
-  inline def `progress-bar-value`: com.olvind.mui.csstype.csstypeStrings.`progress-bar-value` = "progress-bar-value".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`progress-bar-value`]
+  inline def `progress-bar-value`: "progress-bar-value" = "progress-bar-value".asInstanceOf["progress-bar-value"]
   
-  inline def `push-button`: com.olvind.mui.csstype.csstypeStrings.`push-button` = "push-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`push-button`]
+  inline def `push-button`: "push-button" = "push-button".asInstanceOf["push-button"]
   
-  inline def radio: com.olvind.mui.csstype.csstypeStrings.radio = "radio".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.radio]
+  inline def radio: "radio" = "radio".asInstanceOf["radio"]
   
-  inline def revert: com.olvind.mui.csstype.csstypeStrings.revert = "revert".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def searchfield: com.olvind.mui.csstype.csstypeStrings.searchfield = "searchfield".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.searchfield]
+  inline def searchfield: "searchfield" = "searchfield".asInstanceOf["searchfield"]
   
-  inline def `searchfield-cancel-button`: com.olvind.mui.csstype.csstypeStrings.`searchfield-cancel-button` = "searchfield-cancel-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`searchfield-cancel-button`]
+  inline def `searchfield-cancel-button`: "searchfield-cancel-button" = "searchfield-cancel-button".asInstanceOf["searchfield-cancel-button"]
   
-  inline def `searchfield-decoration`: com.olvind.mui.csstype.csstypeStrings.`searchfield-decoration` = "searchfield-decoration".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`searchfield-decoration`]
+  inline def `searchfield-decoration`: "searchfield-decoration" = "searchfield-decoration".asInstanceOf["searchfield-decoration"]
   
-  inline def `searchfield-results-button`: com.olvind.mui.csstype.csstypeStrings.`searchfield-results-button` = "searchfield-results-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`searchfield-results-button`]
+  inline def `searchfield-results-button`: "searchfield-results-button" = "searchfield-results-button".asInstanceOf["searchfield-results-button"]
   
-  inline def `searchfield-results-decoration`: com.olvind.mui.csstype.csstypeStrings.`searchfield-results-decoration` = "searchfield-results-decoration".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`searchfield-results-decoration`]
+  inline def `searchfield-results-decoration`: "searchfield-results-decoration" = "searchfield-results-decoration".asInstanceOf["searchfield-results-decoration"]
   
-  inline def `slider-horizontal`: com.olvind.mui.csstype.csstypeStrings.`slider-horizontal` = "slider-horizontal".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`slider-horizontal`]
+  inline def `slider-horizontal`: "slider-horizontal" = "slider-horizontal".asInstanceOf["slider-horizontal"]
   
-  inline def `slider-vertical`: com.olvind.mui.csstype.csstypeStrings.`slider-vertical` = "slider-vertical".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`slider-vertical`]
+  inline def `slider-vertical`: "slider-vertical" = "slider-vertical".asInstanceOf["slider-vertical"]
   
-  inline def `sliderthumb-horizontal`: com.olvind.mui.csstype.csstypeStrings.`sliderthumb-horizontal` = "sliderthumb-horizontal".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`sliderthumb-horizontal`]
+  inline def `sliderthumb-horizontal`: "sliderthumb-horizontal" = "sliderthumb-horizontal".asInstanceOf["sliderthumb-horizontal"]
   
-  inline def `sliderthumb-vertical`: com.olvind.mui.csstype.csstypeStrings.`sliderthumb-vertical` = "sliderthumb-vertical".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`sliderthumb-vertical`]
+  inline def `sliderthumb-vertical`: "sliderthumb-vertical" = "sliderthumb-vertical".asInstanceOf["sliderthumb-vertical"]
   
-  inline def `square-button`: com.olvind.mui.csstype.csstypeStrings.`square-button` = "square-button".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`square-button`]
+  inline def `square-button`: "square-button" = "square-button".asInstanceOf["square-button"]
   
-  inline def textarea: com.olvind.mui.csstype.csstypeStrings.textarea = "textarea".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.textarea]
+  inline def textarea: "textarea" = "textarea".asInstanceOf["textarea"]
   
-  inline def textfield: com.olvind.mui.csstype.csstypeStrings.textfield = "textfield".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.textfield]
+  inline def textfield: "textfield" = "textfield".asInstanceOf["textfield"]
   
-  inline def unset: com.olvind.mui.csstype.csstypeStrings.unset = "unset".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
 }

@@ -537,186 +537,11 @@ import com.olvind.mui.csstype.mod.Property.WordWrap
 import com.olvind.mui.csstype.mod.Property.WritingMode
 import com.olvind.mui.csstype.mod.Property.ZIndex
 import com.olvind.mui.csstype.mod.Property.Zoom
-import com.olvind.mui.emotionReact.helperMod.PropsOf
-import com.olvind.mui.emotionStyled.baseMod.StyledComponent
-import com.olvind.mui.emotionStyled.baseMod.StyledOptions
+import com.olvind.mui.emotionReact.typesHelperMod.PropsOf
+import com.olvind.mui.emotionStyled.typesBaseMod.StyledComponent
+import com.olvind.mui.emotionStyled.typesBaseMod.StyledOptions
 import com.olvind.mui.muiStyledEngine.anon.Ref
 import com.olvind.mui.muiStyledEngine.anon.Theme
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.`object`
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.`var`
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.a
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.abbr
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.address
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.animate
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.animateMotion
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.animateTransform
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.area
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.article
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.aside
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.audio
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.b
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.base
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.bdi
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.bdo
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.big
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.blockquote
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.body
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.br
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.button
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.canvas
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.caption
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.circle
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.cite
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.clipPath
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.code
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.col
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.colgroup
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.data
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.datalist
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.dd
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.defs
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.del
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.desc
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.details
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.dfn
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.dialog
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.div
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.dl
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.dt
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.ellipse
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.em
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.embed
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feBlend
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feColorMatrix
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feComponentTransfer
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feComposite
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feConvolveMatrix
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feDiffuseLighting
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feDisplacementMap
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feDistantLight
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feDropShadow
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feFlood
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feFuncA
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feFuncB
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feFuncG
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feFuncR
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feGaussianBlur
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feImage
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feMerge
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feMergeNode
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feMorphology
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feOffset
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.fePointLight
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feSpecularLighting
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feSpotLight
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feTile
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.feTurbulence
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.fieldset
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.figcaption
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.figure
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.filter
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.footer
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.foreignObject
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.form
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.g
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.h1
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.h2
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.h3
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.h4
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.h5
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.h6
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.head
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.header
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.hgroup
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.hr
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.html
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.i
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.iframe
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.image
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.img
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.input
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.ins
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.kbd
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.keygen
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.label
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.legend
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.li
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.line
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.linearGradient
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.link
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.main
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.map
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.mark
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.marker
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.mask
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.menu
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.menuitem
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.meta
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.metadata
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.meter
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.mpath
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.nav
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.noindex
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.noscript
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.ol
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.optgroup
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.option
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.output
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.p
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.param
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.path
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.pattern
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.picture
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.polygon
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.polyline
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.pre
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.progress
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.q
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.radialGradient
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.rect
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.rp
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.rt
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.ruby
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.s
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.samp
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.script
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.section
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.select
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.slot
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.small
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.source
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.span
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.stop
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.strong
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.style
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.sub
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.summary
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.sup
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.svg
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.switch
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.symbol
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.table
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.tbody
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.td
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.template
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.text
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.textPath
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.textarea
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.tfoot
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.th
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.thead
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.time
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.title
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.tr
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.track
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.tspan
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.u
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.ul
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.use
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.video
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.view
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.wbr
-import com.olvind.mui.muiStyledEngine.muiStyledEngineStrings.webview
 import com.olvind.mui.react.HTMLWebViewElement
 import com.olvind.mui.react.mod.AnchorHTMLAttributes
 import com.olvind.mui.react.mod.AreaHTMLAttributes
@@ -774,11 +599,15 @@ import com.olvind.mui.react.mod.VideoHTMLAttributes
 import com.olvind.mui.react.mod.WebViewHTMLAttributes
 import com.olvind.mui.std.Extract
 import com.olvind.mui.std.HTMLDataElement
+import com.olvind.mui.std.HTMLDetailsElement
 import com.olvind.mui.std.HTMLDialogElement
+import com.olvind.mui.std.HTMLMeterElement
+import com.olvind.mui.std.HTMLOutputElement
 import com.olvind.mui.std.HTMLSlotElement
 import com.olvind.mui.std.HTMLTableDataCellElement
 import com.olvind.mui.std.HTMLTableHeaderCellElement
 import com.olvind.mui.std.HTMLTemplateElement
+import com.olvind.mui.std.HTMLTimeElement
 import com.olvind.mui.std.NonNullable
 import com.olvind.mui.std.SVGFEDropShadowElement
 import com.olvind.mui.std.SVGForeignObjectElement
@@ -895,6 +724,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type CSSInterpolation = @mui/styled-engine.@mui/styled-engine.InterpolationPrimitive | @mui/styled-engine.@mui/styled-engine.ArrayCSSInterpolation
+  }}}
+  to avoid circular code involving: 
+  - @mui/styled-engine.@mui/styled-engine.ArrayCSSInterpolation
+  - @mui/styled-engine.@mui/styled-engine.CSSInterpolation
+  */
   type CSSInterpolation = InterpolationPrimitive | Any
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -912,7 +750,6 @@ object mod {
     extends StObject
        with CSSPropertiesWithMultiValues
        with CSSPseudos
-       with _InterpolationPrimitive
   object CSSObject {
     
     inline def apply(): CSSObject = {
@@ -22913,9 +22750,7 @@ object mod {
     }
   }
   
-  trait ComponentSelector
-    extends StObject
-       with _InterpolationPrimitive {
+  trait ComponentSelector extends StObject {
     
     var __emotion_styles: Any
   }
@@ -22933,1528 +22768,2244 @@ object mod {
   }
   
   @js.native
-  trait CreateMUIStyled[MUIStyledCommonProps, MuiStyledOptions, Theme /* <: js.Object */] extends StObject {
+  trait CreateMUIStyled[MUIStyledCommonProps /* <: js.Object */, MuiStyledOptions, Theme /* <: js.Object */] extends StObject {
     
-    def apply(tag: `object`): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: `object`, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: `var`): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_menuitem")
+    def apply(tag: "menuitem"): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: `var`, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: a): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: abbr): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: abbr, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: address): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: address, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: animate): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
-    def apply(tag: animateMotion): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
-    def apply(tag: animateMotion, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
-    def apply(tag: animateTransform): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
-    def apply(tag: animateTransform, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
-    def apply(tag: animate, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
-    def apply(tag: a, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: area): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: area, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: article): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: article, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: aside): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: aside, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: audio): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: audio, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: b): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: base): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: base, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: bdi): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: bdi, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: bdo): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: bdo, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: big): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: big, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: blockquote): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: blockquote, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: body): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: body, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: b, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: br): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: br, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: button): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: button, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: canvas): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: canvas, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: caption): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: caption, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: circle): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGCircleElement], js.Object, Theme] = js.native
-    def apply(tag: circle, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGCircleElement], js.Object, Theme] = js.native
-    def apply(tag: cite): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: cite, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: clipPath): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGClipPathElement], js.Object, Theme] = js.native
-    def apply(tag: clipPath, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGClipPathElement], js.Object, Theme] = js.native
-    def apply(tag: code): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: code, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: col): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: colgroup): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: colgroup, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: col, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: data): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_data")
+    def apply(tag: "data"): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: datalist): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feDistantLight")
+    def apply(tag: "feDistantLight"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDistantLightElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_area")
+    def apply(tag: "area"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_col")
+    def apply(tag: "col"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feSpotLight")
+    def apply(tag: "feSpotLight"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFESpotLightElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feTurbulence")
+    def apply(tag: "feTurbulence"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFETurbulenceElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_time")
+    def apply(tag: "time"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_form")
+    def apply(tag: "form"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_rt")
+    def apply(tag: "rt"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feOffset")
+    def apply(tag: "feOffset"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEOffsetElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_kbd")
+    def apply(tag: "kbd"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mpath")
+    def apply(tag: "mpath"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h5")
+    def apply(tag: "h5"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_tfoot")
+    def apply(tag: "tfoot"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feMergeNode")
+    def apply(tag: "feMergeNode"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMergeNodeElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_div")
+    def apply(tag: "div"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_linearGradient")
+    def apply(tag: "linearGradient"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGLinearGradientElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animate")
+    def apply(tag: "animate"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_meter")
+    def apply(tag: "meter"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feComponentTransfer")
+    def apply(tag: "feComponentTransfer"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEComponentTransferElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_main")
+    def apply(tag: "main"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_base")
+    def apply(tag: "base"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_html")
+    def apply(tag: "html"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_hr")
+    def apply(tag: "hr"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webview")
+    def apply(tag: "webview"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_i")
+    def apply(tag: "i"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dd")
+    def apply(tag: "dd"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ins")
+    def apply(tag: "ins"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_big")
+    def apply(tag: "big"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_datalist")
+    def apply(tag: "datalist"): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: datalist, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feConvolveMatrix")
+    def apply(tag: "feConvolveMatrix"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEConvolveMatrixElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_colgroup")
+    def apply(tag: "colgroup"): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
+        DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: data, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_text")
+    def apply(tag: "text"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTextElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feSpecularLighting")
+    def apply(tag: "feSpecularLighting"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFESpecularLightingElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ul")
+    def apply(tag: "ul"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_meta")
+    def apply(tag: "meta"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_small")
+    def apply(tag: "small"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_u")
+    def apply(tag: "u"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_view")
+    def apply(tag: "view"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGViewElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ol")
+    def apply(tag: "ol"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_tbody")
+    def apply(tag: "tbody"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_br")
+    def apply(tag: "br"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_sup")
+    def apply(tag: "sup"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h3")
+    def apply(tag: "h3"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_foreignObject")
+    def apply(tag: "foreignObject"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGForeignObjectElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_link")
+    def apply(tag: "link"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_button")
+    def apply(tag: "button"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_video")
+    def apply(tag: "video"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_head")
+    def apply(tag: "head"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dialog")
+    def apply(tag: "dialog"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_footer")
+    def apply(tag: "footer"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_nav")
+    def apply(tag: "nav"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_noscript")
+    def apply(tag: "noscript"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_audio")
+    def apply(tag: "audio"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mask")
+    def apply(tag: "mask"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMaskElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_embed")
+    def apply(tag: "embed"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_source")
+    def apply(tag: "source"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canvas")
+    def apply(tag: "canvas"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_figure")
+    def apply(tag: "figure"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feGaussianBlur")
+    def apply(tag: "feGaussianBlur"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEGaussianBlurElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_textarea")
+    def apply(tag: "textarea"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_legend")
+    def apply(tag: "legend"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feComposite")
+    def apply(tag: "feComposite"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFECompositeElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_option")
+    def apply(tag: "option"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_output")
+    def apply(tag: "output"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_path")
+    def apply(tag: "path"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPathElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_desc")
+    def apply(tag: "desc"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGDescElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_image")
+    def apply(tag: "image"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGImageElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_template")
+    def apply(tag: "template"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h6")
+    def apply(tag: "h6"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pattern")
+    def apply(tag: "pattern"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPatternElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_label")
+    def apply(tag: "label"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_select")
+    def apply(tag: "select"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_hgroup")
+    def apply(tag: "hgroup"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_blockquote")
+    def apply(tag: "blockquote"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feFlood")
+    def apply(tag: "feFlood"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFloodElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_polyline")
+    def apply(tag: "polyline"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPolylineElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_menu")
+    def apply(tag: "menu"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feFuncB")
+    def apply(tag: "feFuncB"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncBElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_img")
+    def apply(tag: "img"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_polygon")
+    def apply(tag: "polygon"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPolygonElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_textPath")
+    def apply(tag: "textPath"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTextPathElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_circle")
+    def apply(tag: "circle"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGCircleElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_code")
+    def apply(tag: "code"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_rp")
+    def apply(tag: "rp"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_bdo")
+    def apply(tag: "bdo"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h1")
+    def apply(tag: "h1"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_optgroup")
+    def apply(tag: "optgroup"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dt")
+    def apply(tag: "dt"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_line")
+    def apply(tag: "line"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGLineElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_symbol")
+    def apply(tag: "symbol"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSymbolElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dfn")
+    def apply(tag: "dfn"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feTile")
+    def apply(tag: "feTile"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFETileElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_li")
+    def apply(tag: "li"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_q")
+    def apply(tag: "q"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_body")
+    def apply(tag: "body"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_caption")
+    def apply(tag: "caption"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_center")
+    def apply(tag: "center"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keygen")
+    def apply(tag: "keygen"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_metadata")
+    def apply(tag: "metadata"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMetadataElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_details")
+    def apply(tag: "details"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_article")
+    def apply(tag: "article"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_sub")
+    def apply(tag: "sub"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_filter")
+    def apply(tag: "filter"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFilterElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_g")
+    def apply(tag: "g"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cite")
+    def apply(tag: "cite"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feMerge")
+    def apply(tag: "feMerge"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMergeElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_s")
+    def apply(tag: "s"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fePointLight")
+    def apply(tag: "fePointLight"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEPointLightElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_use")
+    def apply(tag: "use"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGUseElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_object")
+    def apply(tag: "object"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ellipse")
+    def apply(tag: "ellipse"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGEllipseElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_param")
+    def apply(tag: "param"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_stop")
+    def apply(tag: "stop"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGStopElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_title")
+    def apply(tag: "title"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_defs")
+    def apply(tag: "defs"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGDefsElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_input")
+    def apply(tag: "input"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_bdi")
+    def apply(tag: "bdi"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_table")
+    def apply(tag: "table"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_span")
+    def apply(tag: "span"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_em")
+    def apply(tag: "em"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_slot")
+    def apply(tag: "slot"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_tr")
+    def apply(tag: "tr"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h4")
+    def apply(tag: "h4"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_summary")
+    def apply(tag: "summary"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_clipPath")
+    def apply(tag: "clipPath"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGClipPathElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_abbr")
+    def apply(tag: "abbr"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feDisplacementMap")
+    def apply(tag: "feDisplacementMap"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDisplacementMapElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feDiffuseLighting")
+    def apply(tag: "feDiffuseLighting"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDiffuseLightingElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ruby")
+    def apply(tag: "ruby"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_progress")
+    def apply(tag: "progress"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animateMotion")
+    def apply(tag: "animateMotion"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dl")
+    def apply(tag: "dl"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_marker")
+    def apply(tag: "marker"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMarkerElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feFuncA")
+    def apply(tag: "feFuncA"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncAElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feColorMatrix")
+    def apply(tag: "feColorMatrix"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEColorMatrixElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feDropShadow")
+    def apply(tag: "feDropShadow"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDropShadowElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_noindex")
+    def apply(tag: "noindex"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_iframe")
+    def apply(tag: "iframe"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_b")
+    def apply(tag: "b"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pre")
+    def apply(tag: "pre"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_var")
+    def apply(tag: "var"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_address")
+    def apply(tag: "address"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animateTransform")
+    def apply(tag: "animateTransform"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_track")
+    def apply(tag: "track"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_header")
+    def apply(tag: "header"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_del")
+    def apply(tag: "del"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[DelHTMLAttributes[HTMLModElement], HTMLModElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_switch")
+    def apply(tag: "switch"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSwitchElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_p")
+    def apply(tag: "p"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h2")
+    def apply(tag: "h2"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_picture")
+    def apply(tag: "picture"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_aside")
+    def apply(tag: "aside"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_td")
+    def apply(tag: "td"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_thead")
+    def apply(tag: "thead"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_radialGradient")
+    def apply(tag: "radialGradient"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGRadialGradientElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_figcaption")
+    def apply(tag: "figcaption"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feMorphology")
+    def apply(tag: "feMorphology"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMorphologyElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_a")
+    def apply(tag: "a"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fieldset")
+    def apply(tag: "fieldset"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feFuncG")
+    def apply(tag: "feFuncG"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_section")
+    def apply(tag: "section"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_tspan")
+    def apply(tag: "tspan"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTSpanElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feImage")
+    def apply(tag: "feImage"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEImageElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_style")
+    def apply(tag: "style"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_th")
+    def apply(tag: "th"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_wbr")
+    def apply(tag: "wbr"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_svg")
+    def apply(tag: "svg"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSVGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_script")
+    def apply(tag: "script"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feBlend")
+    def apply(tag: "feBlend"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEBlendElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_samp")
+    def apply(tag: "samp"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_rect")
+    def apply(tag: "rect"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGRectElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_strong")
+    def apply(tag: "strong"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feFuncR")
+    def apply(tag: "feFuncR"): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncRElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_map")
+    def apply(tag: "map"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mark")
+    def apply(tag: "mark"): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feFuncA")
+    def apply(tag: "feFuncA", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncAElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_data")
+    def apply(tag: "data", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: dd): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_tspan")
+    def apply(tag: "tspan", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTSpanElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_address")
+    def apply(tag: "address", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: dd, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: defs): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGDefsElement], js.Object, Theme] = js.native
-    def apply(tag: defs, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGDefsElement], js.Object, Theme] = js.native
-    def apply(tag: del): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: del, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: desc): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGDescElement], js.Object, Theme] = js.native
-    def apply(tag: desc, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGDescElement], js.Object, Theme] = js.native
-    def apply(tag: details): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: details, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: dfn): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: dfn, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: dialog): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: dialog, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: div): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: div, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: dl): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: dl, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: dt): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: dt, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: ellipse): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGEllipseElement], js.Object, Theme] = js.native
-    def apply(tag: ellipse, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGEllipseElement], js.Object, Theme] = js.native
-    def apply(tag: em): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: embed): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: embed, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: em, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: feBlend): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEBlendElement], js.Object, Theme] = js.native
-    def apply(tag: feBlend, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEBlendElement], js.Object, Theme] = js.native
-    def apply(tag: feColorMatrix): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEColorMatrixElement], js.Object, Theme] = js.native
-    def apply(tag: feColorMatrix, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEColorMatrixElement], js.Object, Theme] = js.native
-    def apply(tag: feComponentTransfer): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEComponentTransferElement], js.Object, Theme] = js.native
-    def apply(tag: feComponentTransfer, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEComponentTransferElement], js.Object, Theme] = js.native
-    def apply(tag: feComposite): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFECompositeElement], js.Object, Theme] = js.native
-    def apply(tag: feComposite, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFECompositeElement], js.Object, Theme] = js.native
-    def apply(tag: feConvolveMatrix): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEConvolveMatrixElement], js.Object, Theme] = js.native
-    def apply(tag: feConvolveMatrix, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEConvolveMatrixElement], js.Object, Theme] = js.native
-    def apply(tag: feDiffuseLighting): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDiffuseLightingElement], js.Object, Theme] = js.native
-    def apply(tag: feDiffuseLighting, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDiffuseLightingElement], js.Object, Theme] = js.native
-    def apply(tag: feDisplacementMap): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDisplacementMapElement], js.Object, Theme] = js.native
-    def apply(tag: feDisplacementMap, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDisplacementMapElement], js.Object, Theme] = js.native
-    def apply(tag: feDistantLight): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDistantLightElement], js.Object, Theme] = js.native
-    def apply(tag: feDistantLight, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDistantLightElement], js.Object, Theme] = js.native
-    def apply(tag: feDropShadow): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDropShadowElement], js.Object, Theme] = js.native
-    def apply(tag: feDropShadow, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDropShadowElement], js.Object, Theme] = js.native
-    def apply(tag: feFlood): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFloodElement], js.Object, Theme] = js.native
-    def apply(tag: feFlood, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFloodElement], js.Object, Theme] = js.native
-    def apply(tag: feFuncA): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncAElement], js.Object, Theme] = js.native
-    def apply(tag: feFuncA, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncAElement], js.Object, Theme] = js.native
-    def apply(tag: feFuncB): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncBElement], js.Object, Theme] = js.native
-    def apply(tag: feFuncB, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncBElement], js.Object, Theme] = js.native
-    def apply(tag: feFuncG): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncGElement], js.Object, Theme] = js.native
-    def apply(tag: feFuncG, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncGElement], js.Object, Theme] = js.native
-    def apply(tag: feFuncR): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncRElement], js.Object, Theme] = js.native
-    def apply(tag: feFuncR, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncRElement], js.Object, Theme] = js.native
-    def apply(tag: feGaussianBlur): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEGaussianBlurElement], js.Object, Theme] = js.native
-    def apply(tag: feGaussianBlur, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEGaussianBlurElement], js.Object, Theme] = js.native
-    def apply(tag: feImage): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEImageElement], js.Object, Theme] = js.native
-    def apply(tag: feImage, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEImageElement], js.Object, Theme] = js.native
-    def apply(tag: feMerge): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMergeElement], js.Object, Theme] = js.native
-    def apply(tag: feMergeNode): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMergeNodeElement], js.Object, Theme] = js.native
-    def apply(tag: feMergeNode, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMergeNodeElement], js.Object, Theme] = js.native
-    def apply(tag: feMerge, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMergeElement], js.Object, Theme] = js.native
-    def apply(tag: feMorphology): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMorphologyElement], js.Object, Theme] = js.native
-    def apply(tag: feMorphology, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMorphologyElement], js.Object, Theme] = js.native
-    def apply(tag: feOffset): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEOffsetElement], js.Object, Theme] = js.native
-    def apply(tag: feOffset, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEOffsetElement], js.Object, Theme] = js.native
-    def apply(tag: fePointLight): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEPointLightElement], js.Object, Theme] = js.native
-    def apply(tag: fePointLight, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEPointLightElement], js.Object, Theme] = js.native
-    def apply(tag: feSpecularLighting): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFESpecularLightingElement], js.Object, Theme] = js.native
-    def apply(tag: feSpecularLighting, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFESpecularLightingElement], js.Object, Theme] = js.native
-    def apply(tag: feSpotLight): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFESpotLightElement], js.Object, Theme] = js.native
-    def apply(tag: feSpotLight, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFESpotLightElement], js.Object, Theme] = js.native
-    def apply(tag: feTile): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFETileElement], js.Object, Theme] = js.native
-    def apply(tag: feTile, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFETileElement], js.Object, Theme] = js.native
-    def apply(tag: feTurbulence): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFETurbulenceElement], js.Object, Theme] = js.native
-    def apply(tag: feTurbulence, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFETurbulenceElement], js.Object, Theme] = js.native
-    def apply(tag: fieldset): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: fieldset, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: figcaption): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: figcaption, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: figure): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: figure, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: filter): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFilterElement], js.Object, Theme] = js.native
-    def apply(tag: filter, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFilterElement], js.Object, Theme] = js.native
-    def apply(tag: footer): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: footer, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: foreignObject): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGForeignObjectElement], js.Object, Theme] = js.native
-    def apply(tag: foreignObject, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGForeignObjectElement], js.Object, Theme] = js.native
-    def apply(tag: form): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: form, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: g): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGGElement], js.Object, Theme] = js.native
-    def apply(tag: g, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGGElement], js.Object, Theme] = js.native
-    def apply(tag: h1): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h1, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h2): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h2, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h3): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h3, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h4): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h4, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h5): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h5, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h6): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: h6, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: head): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: header): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: header, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: head, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: hgroup): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: hgroup, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: hr): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: hr, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: html): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: html, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: i): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: iframe): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: iframe, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: image): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGImageElement], js.Object, Theme] = js.native
-    def apply(tag: image, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGImageElement], js.Object, Theme] = js.native
-    def apply(tag: img): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: img, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: input): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: input, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: ins): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ins")
+    def apply(tag: "ins", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: ins, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: i, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: kbd): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: kbd, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: keygen): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: keygen, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: label): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: label, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: legend): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: legend, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: li): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: line): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGLineElement], js.Object, Theme] = js.native
-    def apply(tag: linearGradient): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGLinearGradientElement], js.Object, Theme] = js.native
-    def apply(tag: linearGradient, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGLinearGradientElement], js.Object, Theme] = js.native
-    def apply(tag: line, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGLineElement], js.Object, Theme] = js.native
-    def apply(tag: link): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: link, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: li, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: main): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: main, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: map): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: map, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: mark): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: marker): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMarkerElement], js.Object, Theme] = js.native
-    def apply(tag: marker, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMarkerElement], js.Object, Theme] = js.native
-    def apply(tag: mark, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: mask): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMaskElement], js.Object, Theme] = js.native
-    def apply(tag: mask, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMaskElement], js.Object, Theme] = js.native
-    def apply(tag: menu): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: menuitem): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: menuitem, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: menu, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: meta): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: metadata): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMetadataElement], js.Object, Theme] = js.native
-    def apply(tag: metadata, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMetadataElement], js.Object, Theme] = js.native
-    def apply(tag: meta, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: meter): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: meter, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: mpath): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
-    def apply(tag: mpath, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
-    def apply(tag: nav): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: nav, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: noindex): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: noindex, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: noscript): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: noscript, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: ol): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: ol, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: optgroup): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: optgroup, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: option): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: option, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: output): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: output, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: p): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: param): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: param, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: path): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPathElement], js.Object, Theme] = js.native
-    def apply(tag: path, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPathElement], js.Object, Theme] = js.native
-    def apply(tag: pattern): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPatternElement], js.Object, Theme] = js.native
-    def apply(tag: pattern, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPatternElement], js.Object, Theme] = js.native
-    def apply(tag: picture): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: picture, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: polygon): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPolygonElement], js.Object, Theme] = js.native
-    def apply(tag: polygon, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPolygonElement], js.Object, Theme] = js.native
-    def apply(tag: polyline): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPolylineElement], js.Object, Theme] = js.native
-    def apply(tag: polyline, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPolylineElement], js.Object, Theme] = js.native
-    def apply(tag: p, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: pre): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_symbol")
+    def apply(tag: "symbol", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSymbolElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pre")
+    def apply(tag: "pre", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: pre, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_output")
+    def apply(tag: "output", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
+        DetailedHTMLProps[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: progress): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: progress, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: q): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: q, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: radialGradient): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGRadialGradientElement], js.Object, Theme] = js.native
-    def apply(tag: radialGradient, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGRadialGradientElement], js.Object, Theme] = js.native
-    def apply(tag: rect): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGRectElement], js.Object, Theme] = js.native
-    def apply(tag: rect, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGRectElement], js.Object, Theme] = js.native
-    def apply(tag: rp): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_main")
+    def apply(tag: "main", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: rp, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h2")
+    def apply(tag: "h2", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_textPath")
+    def apply(tag: "textPath", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTextPathElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ellipse")
+    def apply(tag: "ellipse", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGEllipseElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_form")
+    def apply(tag: "form", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feMerge")
+    def apply(tag: "feMerge", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMergeElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dd")
+    def apply(tag: "dd", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: rt): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_br")
+    def apply(tag: "br", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_html")
+    def apply(tag: "html", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h4")
+    def apply(tag: "h4", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feComponentTransfer")
+    def apply(tag: "feComponentTransfer", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEComponentTransferElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feSpotLight")
+    def apply(tag: "feSpotLight", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFESpotLightElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_footer")
+    def apply(tag: "footer", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: rt, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ruby")
+    def apply(tag: "ruby", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: ruby): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: ruby, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: s): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: samp): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: samp, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: script): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: script, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: section): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: section, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: select): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: select, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: slot): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: slot, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: small): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: small, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: s, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: source): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: source, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: span): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: span, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: stop): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGStopElement], js.Object, Theme] = js.native
-    def apply(tag: stop, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGStopElement], js.Object, Theme] = js.native
-    def apply(tag: strong): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: strong, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: style): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: style, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: sub): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: sub, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: summary): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: summary, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: sup): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: sup, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: svg): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSVGElement], js.Object, Theme] = js.native
-    def apply(tag: svg, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSVGElement], js.Object, Theme] = js.native
-    def apply(tag: switch): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSwitchElement], js.Object, Theme] = js.native
-    def apply(tag: switch, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSwitchElement], js.Object, Theme] = js.native
-    def apply(tag: symbol): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSymbolElement], js.Object, Theme] = js.native
-    def apply(tag: symbol, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSymbolElement], js.Object, Theme] = js.native
-    def apply(tag: table): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: table, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: tbody): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_desc")
+    def apply(tag: "desc", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGDescElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_thead")
+    def apply(tag: "thead", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: tbody, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feConvolveMatrix")
+    def apply(tag: "feConvolveMatrix", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEConvolveMatrixElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_meta")
+    def apply(tag: "meta", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: td): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_nav")
+    def apply(tag: "nav", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: td, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_datalist")
+    def apply(tag: "datalist", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
+        DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: template): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_del")
+    def apply(tag: "del", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
+        DetailedHTMLProps[DelHTMLAttributes[HTMLModElement], HTMLModElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: template, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feGaussianBlur")
+    def apply(tag: "feGaussianBlur", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEGaussianBlurElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_noscript")
+    def apply(tag: "noscript", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: text): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTextElement], js.Object, Theme] = js.native
-    def apply(tag: textPath): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTextPathElement], js.Object, Theme] = js.native
-    def apply(tag: textPath, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTextPathElement], js.Object, Theme] = js.native
-    def apply(tag: textarea): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_li")
+    def apply(tag: "li", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
+        DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: textarea, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_strong")
+    def apply(tag: "strong", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: text, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTextElement], js.Object, Theme] = js.native
-    def apply(tag: tfoot): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feMergeNode")
+    def apply(tag: "feMergeNode", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMergeNodeElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_em")
+    def apply(tag: "em", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: tfoot, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_code")
+    def apply(tag: "code", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: th): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animateMotion")
+    def apply(tag: "animateMotion", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_button")
+    def apply(tag: "button", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
+        DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: thead): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: thead, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: th, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: time): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: time, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: title): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: title, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: tr): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: track): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feColorMatrix")
+    def apply(tag: "feColorMatrix", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEColorMatrixElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_track")
+    def apply(tag: "track", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: track, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_label")
+    def apply(tag: "label", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
+        DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: tr, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_marker")
+    def apply(tag: "marker", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMarkerElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feComposite")
+    def apply(tag: "feComposite", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFECompositeElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_tfoot")
+    def apply(tag: "tfoot", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_link")
+    def apply(tag: "link", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_filter")
+    def apply(tag: "filter", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFilterElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_progress")
+    def apply(tag: "progress", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_option")
+    def apply(tag: "option", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_b")
+    def apply(tag: "b", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_object")
+    def apply(tag: "object", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feImage")
+    def apply(tag: "feImage", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEImageElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feSpecularLighting")
+    def apply(tag: "feSpecularLighting", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFESpecularLightingElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_noindex")
+    def apply(tag: "noindex", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_optgroup")
+    def apply(tag: "optgroup", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_img")
+    def apply(tag: "img", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feBlend")
+    def apply(tag: "feBlend", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEBlendElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_tbody")
+    def apply(tag: "tbody", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_canvas")
+    def apply(tag: "canvas", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_polygon")
+    def apply(tag: "polygon", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPolygonElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dt")
+    def apply(tag: "dt", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_video")
+    def apply(tag: "video", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_view")
+    def apply(tag: "view", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGViewElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_defs")
+    def apply(tag: "defs", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGDefsElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_legend")
+    def apply(tag: "legend", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_source")
+    def apply(tag: "source", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feDiffuseLighting")
+    def apply(tag: "feDiffuseLighting", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDiffuseLightingElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_foreignObject")
+    def apply(tag: "foreignObject", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGForeignObjectElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_table")
+    def apply(tag: "table", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_body")
+    def apply(tag: "body", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fePointLight")
+    def apply(tag: "fePointLight", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEPointLightElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_image")
+    def apply(tag: "image", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGImageElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mpath")
+    def apply(tag: "mpath", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_kbd")
+    def apply(tag: "kbd", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_a")
+    def apply(tag: "a", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_menuitem")
+    def apply(tag: "menuitem", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_slot")
+    def apply(tag: "slot", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animate")
+    def apply(tag: "animate", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_th")
+    def apply(tag: "th", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_blockquote")
+    def apply(tag: "blockquote", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_header")
+    def apply(tag: "header", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mark")
+    def apply(tag: "mark", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_fieldset")
+    def apply(tag: "fieldset", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_small")
+    def apply(tag: "small", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_textarea")
+    def apply(tag: "textarea", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_use")
+    def apply(tag: "use", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGUseElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feOffset")
+    def apply(tag: "feOffset", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEOffsetElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_rp")
+    def apply(tag: "rp", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_circle")
+    def apply(tag: "circle", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGCircleElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_colgroup")
+    def apply(tag: "colgroup", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_template")
+    def apply(tag: "template", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_s")
+    def apply(tag: "s", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_tr")
+    def apply(tag: "tr", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: tspan): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTSpanElement], js.Object, Theme] = js.native
-    def apply(tag: tspan, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTSpanElement], js.Object, Theme] = js.native
-    def apply(tag: u): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dl")
+    def apply(tag: "dl", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h3")
+    def apply(tag: "h3", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_linearGradient")
+    def apply(tag: "linearGradient", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGLinearGradientElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_samp")
+    def apply(tag: "samp", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: ul): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_svg")
+    def apply(tag: "svg", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSVGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dialog")
+    def apply(tag: "dialog", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
+        DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: ul, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_title")
+    def apply(tag: "title", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
+        DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: u, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h5")
+    def apply(tag: "h5", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: use): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGUseElement], js.Object, Theme] = js.native
-    def apply(tag: use, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGUseElement], js.Object, Theme] = js.native
-    def apply(tag: video): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: video, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
-        MUIStyledCommonProps, 
-        DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
-        js.Object, 
-        Theme
-      ] = js.native
-    def apply(tag: view): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGViewElement], js.Object, Theme] = js.native
-    def apply(tag: view, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGViewElement], js.Object, Theme] = js.native
-    def apply(tag: wbr): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_summary")
+    def apply(tag: "summary", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: wbr, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_rt")
+    def apply(tag: "rt", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: webview): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_td")
+    def apply(tag: "td", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_line")
+    def apply(tag: "line", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGLineElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_center")
+    def apply(tag: "center", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feMorphology")
+    def apply(tag: "feMorphology", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEMorphologyElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_keygen")
+    def apply(tag: "keygen", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feTurbulence")
+    def apply(tag: "feTurbulence", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFETurbulenceElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_cite")
+    def apply(tag: "cite", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_g")
+    def apply(tag: "g", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_caption")
+    def apply(tag: "caption", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_webview")
+    def apply(tag: "webview", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
         DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
         js.Object, 
         Theme
       ] = js.native
-    def apply(tag: webview, options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_area")
+    def apply(tag: "area", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
         MUIStyledCommonProps, 
-        DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
+        DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
         js.Object, 
         Theme
       ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_sub")
+    def apply(tag: "sub", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_select")
+    def apply(tag: "select", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h6")
+    def apply(tag: "h6", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_animateTransform")
+    def apply(tag: "animateTransform", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_h1")
+    def apply(tag: "h1", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_i")
+    def apply(tag: "i", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_div")
+    def apply(tag: "div", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_time")
+    def apply(tag: "time", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_polyline")
+    def apply(tag: "polyline", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPolylineElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_sup")
+    def apply(tag: "sup", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_p")
+    def apply(tag: "p", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_dfn")
+    def apply(tag: "dfn", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feDistantLight")
+    def apply(tag: "feDistantLight", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDistantLightElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feDropShadow")
+    def apply(tag: "feDropShadow", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDropShadowElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_style")
+    def apply(tag: "style", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_abbr")
+    def apply(tag: "abbr", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_picture")
+    def apply(tag: "picture", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_stop")
+    def apply(tag: "stop", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGStopElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ol")
+    def apply(tag: "ol", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_menu")
+    def apply(tag: "menu", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_meter")
+    def apply(tag: "meter", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_bdo")
+    def apply(tag: "bdo", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_figcaption")
+    def apply(tag: "figcaption", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_var")
+    def apply(tag: "var", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_figure")
+    def apply(tag: "figure", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_aside")
+    def apply(tag: "aside", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_wbr")
+    def apply(tag: "wbr", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_text")
+    def apply(tag: "text", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGTextElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_rect")
+    def apply(tag: "rect", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGRectElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_param")
+    def apply(tag: "param", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_big")
+    def apply(tag: "big", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_script")
+    def apply(tag: "script", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_audio")
+    def apply(tag: "audio", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_pattern")
+    def apply(tag: "pattern", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPatternElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_switch")
+    def apply(tag: "switch", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGSwitchElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feDisplacementMap")
+    def apply(tag: "feDisplacementMap", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEDisplacementMapElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_base")
+    def apply(tag: "base", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_details")
+    def apply(tag: "details", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_span")
+    def apply(tag: "span", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_iframe")
+    def apply(tag: "iframe", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feTile")
+    def apply(tag: "feTile", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFETileElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feFuncB")
+    def apply(tag: "feFuncB", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncBElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_article")
+    def apply(tag: "article", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_embed")
+    def apply(tag: "embed", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_u")
+    def apply(tag: "u", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_head")
+    def apply(tag: "head", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feFlood")
+    def apply(tag: "feFlood", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFloodElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_mask")
+    def apply(tag: "mask", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMaskElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_hgroup")
+    def apply(tag: "hgroup", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feFuncR")
+    def apply(tag: "feFuncR", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncRElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_input")
+    def apply(tag: "input", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_bdi")
+    def apply(tag: "bdi", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_section")
+    def apply(tag: "section", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_map")
+    def apply(tag: "map", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_q")
+    def apply(tag: "q", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_radialGradient")
+    def apply(tag: "radialGradient", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGRadialGradientElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_path")
+    def apply(tag: "path", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGPathElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_hr")
+    def apply(tag: "hr", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_metadata")
+    def apply(tag: "metadata", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGMetadataElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_ul")
+    def apply(tag: "ul", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_feFuncG")
+    def apply(tag: "feFuncG", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGFEFuncGElement], js.Object, Theme] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_col")
+    def apply(tag: "col", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[
+        MUIStyledCommonProps, 
+        DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
+        js.Object, 
+        Theme
+      ] = js.native
+    @JSName("<apply>")
+    @scala.annotation.targetName("apply_clipPath")
+    def apply(tag: "clipPath", options: StyledOptions[MUIStyledCommonProps] & MuiStyledOptions): CreateStyledComponent[MUIStyledCommonProps, SVGProps[SVGClipPathElement], js.Object, Theme] = js.native
     def apply[C /* <: ReactComponentClass[ComponentProps[C]] */](component: C): CreateStyledComponent[PropsOf[C] & MUIStyledCommonProps, js.Object, Ref[C], Theme] = js.native
     def apply[C /* <: ReactComponentClass[ComponentProps[C]] */](component: C, options: (StyledOptions[PropsOf[C] & MUIStyledCommonProps]) & MuiStyledOptions): CreateStyledComponent[PropsOf[C] & MUIStyledCommonProps, js.Object, Ref[C], Theme] = js.native
   }
@@ -24469,39 +25020,41 @@ object mod {
     ): StyledComponent[ComponentProps, SpecificComponentProps, JSXProps] = js.native
   }
   
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type FunctionInterpolation = (props : Props): @mui/styled-engine.@mui/styled-engine.Interpolation<Props>
+  }}}
+  to avoid circular code involving: 
+  - @mui/styled-engine.@mui/styled-engine.ArrayInterpolation
+  - @mui/styled-engine.@mui/styled-engine.FunctionInterpolation
+  - @mui/styled-engine.@mui/styled-engine.Interpolation
+  */
   @js.native
-  trait FunctionInterpolation[Props]
-    extends StObject
-       with _Interpolation[Props] {
+  trait FunctionInterpolation[Props] extends StObject {
     
     def apply(props: Props): Interpolation[Props] = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - `com.olvind.mui`.muiStyledEngine.mod.InterpolationPrimitive
-    - scala.Any
-    - `com.olvind.mui`.muiStyledEngine.mod.FunctionInterpolation[Props]
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type Interpolation = @mui/styled-engine.@mui/styled-engine.InterpolationPrimitive | @mui/styled-engine.@mui/styled-engine.ArrayInterpolation<Props> | @mui/styled-engine.@mui/styled-engine.FunctionInterpolation<Props>
+  }}}
+  to avoid circular code involving: 
+  - @mui/styled-engine.@mui/styled-engine.ArrayInterpolation
+  - @mui/styled-engine.@mui/styled-engine.Interpolation
   */
-  type Interpolation[Props] = js.UndefOr[_Interpolation[Props] | Any | Null | Boolean | Double | String]
+  type Interpolation[Props] = InterpolationPrimitive | Any | FunctionInterpolation[Props]
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Null
-    - scala.Unit
-    - scala.Boolean
-    - scala.Double
-    - java.lang.String
-    - `com.olvind.mui`.muiStyledEngine.mod.ComponentSelector
-    - `com.olvind.mui`.muiStyledEngine.mod.Keyframes_
-    - `com.olvind.mui`.muiStyledEngine.mod.SerializedStyles
-    - `com.olvind.mui`.muiStyledEngine.mod.CSSObject
-  */
-  type InterpolationPrimitive = js.UndefOr[_InterpolationPrimitive | Null | Boolean | Double | String]
+  type InterpolationPrimitive = js.UndefOr[
+    Null | Boolean | Double | String | ComponentSelector | Keyframes_ | SerializedStyles | CSSObject
+  ]
   
   @js.native
   trait Keyframes_
     extends StObject
-       with com.olvind.mui.std.String
-       with _InterpolationPrimitive {
+       with com.olvind.mui.std.String {
     
     var anim: Double = js.native
     
@@ -24510,9 +25063,7 @@ object mod {
     var styles: String = js.native
   }
   
-  trait SerializedStyles
-    extends StObject
-       with _InterpolationPrimitive {
+  trait SerializedStyles extends StObject {
     
     var map: js.UndefOr[String] = js.undefined
     
@@ -24544,10 +25095,4 @@ object mod {
       inline def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     }
   }
-  
-  trait _Interpolation[Props] extends StObject
-  
-  trait _InterpolationPrimitive
-    extends StObject
-       with _Interpolation[Any]
 }

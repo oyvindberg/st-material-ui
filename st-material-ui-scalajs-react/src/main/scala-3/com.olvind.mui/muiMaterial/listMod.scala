@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendListTypeMapLi
-import com.olvind.mui.muiMaterial.listClassesMod.ListClasses
+import com.olvind.mui.muiMaterial.listListClassesMod.ListClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +17,12 @@ object listMod {
     *
     * Demos:
     *
-    * - [Lists](https://mui.com/components/lists/)
-    * - [Transfer List](https://mui.com/components/transfer-list/)
+    * - [Lists](https://mui.com/material-ui/react-list/)
+    * - [Transfer List](https://mui.com/material-ui/react-transfer-list/)
     *
     * API:
     *
-    * - [List API](https://mui.com/api/list/)
+    * - [List API](https://mui.com/material-ui/api/list/)
     */
   @JSImport("@mui/material/List", JSImport.Default)
   @js.native

@@ -1,6 +1,5 @@
 package com.olvind.mui.muiBase
 
-import com.olvind.mui.muiBase.muiBaseBooleans.`false`
 import japgolly.scalajs.react.facade.React.Element
 import org.scalajs.dom.MouseEvent
 import org.scalajs.dom.TouchEvent
@@ -29,7 +28,7 @@ object clickAwayListenerClickAwayListenerMod {
       * The mouse event to listen to. You can disable the listener by providing `false`.
       * @default 'onClick'
       */
-    var mouseEvent: js.UndefOr[ClickAwayMouseEventHandler | `false`] = js.native
+    var mouseEvent: js.UndefOr[ClickAwayMouseEventHandler | false] = js.native
     
     /**
       * Callback fired when a "click away" event is detected.
@@ -41,33 +40,28 @@ object clickAwayListenerClickAwayListenerMod {
       * The touch event to listen to. You can disable the listener by providing `false`.
       * @default 'onTouchEnd'
       */
-    var touchEvent: js.UndefOr[ClickAwayTouchEventHandler | `false`] = js.native
+    var touchEvent: js.UndefOr[ClickAwayTouchEventHandler | false] = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - `com.olvind.mui`.muiBase.muiBaseStrings.onClick
-    - `com.olvind.mui`.muiBase.muiBaseStrings.onMouseDown
-    - `com.olvind.mui`.muiBase.muiBaseStrings.onMouseUp
-  */
-  trait ClickAwayMouseEventHandler extends StObject
   object ClickAwayMouseEventHandler {
     
-    inline def onClick: com.olvind.mui.muiBase.muiBaseStrings.onClick = "onClick".asInstanceOf[com.olvind.mui.muiBase.muiBaseStrings.onClick]
+    inline def onClick: "onClick" = "onClick".asInstanceOf["onClick"]
     
-    inline def onMouseDown: com.olvind.mui.muiBase.muiBaseStrings.onMouseDown = "onMouseDown".asInstanceOf[com.olvind.mui.muiBase.muiBaseStrings.onMouseDown]
+    inline def onMouseDown: "onMouseDown" = "onMouseDown".asInstanceOf["onMouseDown"]
     
-    inline def onMouseUp: com.olvind.mui.muiBase.muiBaseStrings.onMouseUp = "onMouseUp".asInstanceOf[com.olvind.mui.muiBase.muiBaseStrings.onMouseUp]
+    inline def onMouseUp: "onMouseUp" = "onMouseUp".asInstanceOf["onMouseUp"]
+    
+    inline def onPointerDown: "onPointerDown" = "onPointerDown".asInstanceOf["onPointerDown"]
+    
+    inline def onPointerUp: "onPointerUp" = "onPointerUp".asInstanceOf["onPointerUp"]
   }
+  type ClickAwayMouseEventHandler = "onClick" | "onMouseDown" | "onMouseUp" | "onPointerDown" | "onPointerUp"
   
-  /* Rewritten from type alias, can be one of: 
-    - `com.olvind.mui`.muiBase.muiBaseStrings.onTouchStart
-    - `com.olvind.mui`.muiBase.muiBaseStrings.onTouchEnd
-  */
-  trait ClickAwayTouchEventHandler extends StObject
   object ClickAwayTouchEventHandler {
     
-    inline def onTouchEnd: com.olvind.mui.muiBase.muiBaseStrings.onTouchEnd = "onTouchEnd".asInstanceOf[com.olvind.mui.muiBase.muiBaseStrings.onTouchEnd]
+    inline def onTouchEnd: "onTouchEnd" = "onTouchEnd".asInstanceOf["onTouchEnd"]
     
-    inline def onTouchStart: com.olvind.mui.muiBase.muiBaseStrings.onTouchStart = "onTouchStart".asInstanceOf[com.olvind.mui.muiBase.muiBaseStrings.onTouchStart]
+    inline def onTouchStart: "onTouchStart" = "onTouchStart".asInstanceOf["onTouchStart"]
   }
+  type ClickAwayTouchEventHandler = "onTouchStart" | "onTouchEnd"
 }

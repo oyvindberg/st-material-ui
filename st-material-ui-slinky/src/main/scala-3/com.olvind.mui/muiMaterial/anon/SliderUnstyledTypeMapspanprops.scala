@@ -1,16 +1,7 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiBase.anon.Mark
 import com.olvind.mui.muiBase.anon.MarkLabel
 import com.olvind.mui.muiBase.anon.PartialSliderUnstyledClasses
-import com.olvind.mui.muiMaterial.muiMaterialBooleans.`false`
-import com.olvind.mui.muiMaterial.muiMaterialStrings.auto
-import com.olvind.mui.muiMaterial.muiMaterialStrings.horizontal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.inverted
-import com.olvind.mui.muiMaterial.muiMaterialStrings.normal
-import com.olvind.mui.muiMaterial.muiMaterialStrings.off
-import com.olvind.mui.muiMaterial.muiMaterialStrings.on
-import com.olvind.mui.muiMaterial.muiMaterialStrings.vertical
 import org.scalajs.dom.Element
 import org.scalajs.dom.Event
 import slinky.core.SyntheticEvent
@@ -41,19 +32,6 @@ trait SliderUnstyledTypeMapspanprops extends StObject {
     * Override or extend the styles applied to the component.
     */
   var classes: js.UndefOr[PartialSliderUnstyledClasses] = js.undefined
-  
-  /**
-    * The components used for each slot inside the Slider.
-    * Either a string to use a HTML element or a component.
-    * @default {}
-    */
-  var components: js.UndefOr[Mark] = js.undefined
-  
-  /**
-    * The props used for each slot inside the Slider.
-    * @default {}
-    */
-  var componentsProps: js.UndefOr[MarkLabel] = js.undefined
   
   /**
     * The default value. Use when the component is not controlled.
@@ -101,7 +79,9 @@ trait SliderUnstyledTypeMapspanprops extends StObject {
     * If an array, it should contain objects with `value` and an optional `label` keys.
     * @default false
     */
-  var marks: js.UndefOr[Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledSliderUnstyledMod.Mark]] = js.undefined
+  var marks: js.UndefOr[
+    Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark]
+  ] = js.undefined
   
   /**
     * The maximum allowed value of the slider.
@@ -158,13 +138,26 @@ trait SliderUnstyledTypeMapspanprops extends StObject {
     * The component orientation.
     * @default 'horizontal'
     */
-  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
+  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   /**
     * A transformation function, to change the scale of the slider.
     * @default (x) => x
     */
   var scale: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
+  
+  /**
+    * The props used for each slot inside the Slider.
+    * @default {}
+    */
+  var slotProps: js.UndefOr[com.olvind.mui.muiBase.anon.Mark] = js.undefined
+  
+  /**
+    * The components used for each slot inside the Slider.
+    * Either a string to use a HTML element or a component.
+    * @default {}
+    */
+  var slots: js.UndefOr[MarkLabel] = js.undefined
   
   /**
     * The granularity with which the slider can step through values. (A "discrete" slider.)
@@ -189,7 +182,7 @@ trait SliderUnstyledTypeMapspanprops extends StObject {
     * - `false` the track will render without a bar.
     * @default 'normal'
     */
-  var track: js.UndefOr[normal | `false` | inverted] = js.undefined
+  var track: js.UndefOr["normal" | false | "inverted"] = js.undefined
   
   /**
     * The value of the slider.
@@ -205,7 +198,7 @@ trait SliderUnstyledTypeMapspanprops extends StObject {
     * - `off` will never display.
     * @default 'off'
     */
-  var valueLabelDisplay: js.UndefOr[on | auto | off] = js.undefined
+  var valueLabelDisplay: js.UndefOr["on" | "auto" | "off"] = js.undefined
   
   /**
     * The format function the value label's value.
@@ -243,14 +236,6 @@ object SliderUnstyledTypeMapspanprops {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setComponents(value: Mark): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
-    
-    inline def setComponentsProps(value: MarkLabel): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
-    
-    inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
-    
-    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
-    
     inline def setDefaultValue(value: Double | js.Array[Double]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
@@ -277,11 +262,11 @@ object SliderUnstyledTypeMapspanprops {
     
     inline def setIsRtlUndefined: Self = StObject.set(x, "isRtl", js.undefined)
     
-    inline def setMarks(value: Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledSliderUnstyledMod.Mark]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+    inline def setMarks(value: Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
-    inline def setMarksVarargs(value: com.olvind.mui.muiBase.sliderUnstyledSliderUnstyledMod.Mark*): Self = StObject.set(x, "marks", js.Array(value*))
+    inline def setMarksVarargs(value: com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark*): Self = StObject.set(x, "marks", js.Array(value*))
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
@@ -307,13 +292,21 @@ object SliderUnstyledTypeMapspanprops {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     inline def setScale(value: /* value */ Double => Double): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setSlotProps(value: com.olvind.mui.muiBase.anon.Mark): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    
+    inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
+    
+    inline def setSlots(value: MarkLabel): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
     inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
@@ -325,13 +318,13 @@ object SliderUnstyledTypeMapspanprops {
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
-    inline def setTrack(value: normal | `false` | inverted): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: "normal" | false | "inverted"): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
     inline def setValue(value: Double | js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueLabelDisplay(value: on | auto | off): Self = StObject.set(x, "valueLabelDisplay", value.asInstanceOf[js.Any])
+    inline def setValueLabelDisplay(value: "on" | "auto" | "off"): Self = StObject.set(x, "valueLabelDisplay", value.asInstanceOf[js.Any])
     
     inline def setValueLabelDisplayUndefined: Self = StObject.set(x, "valueLabelDisplay", js.undefined)
     

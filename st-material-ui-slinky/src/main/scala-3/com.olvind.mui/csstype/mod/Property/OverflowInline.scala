@@ -4,38 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - `com.olvind.mui`.csstype.csstypeStrings.auto
-  - `com.olvind.mui`.csstype.csstypeStrings.clip
-  - `com.olvind.mui`.csstype.csstypeStrings.hidden
-  - `com.olvind.mui`.csstype.csstypeStrings.scroll
-  - `com.olvind.mui`.csstype.csstypeStrings.visible
-  - `com.olvind.mui`.csstype.csstypeStrings.`-moz-initial`
-  - `com.olvind.mui`.csstype.csstypeStrings.inherit
-  - `com.olvind.mui`.csstype.csstypeStrings.initial
-  - `com.olvind.mui`.csstype.csstypeStrings.revert
-  - `com.olvind.mui`.csstype.csstypeStrings.unset
-*/
-trait OverflowInline extends StObject
 object OverflowInline {
   
-  inline def `-moz-initial`: com.olvind.mui.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: "-moz-initial" = "-moz-initial".asInstanceOf["-moz-initial"]
   
-  inline def auto: com.olvind.mui.csstype.csstypeStrings.auto = "auto".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.auto]
+  inline def auto: "auto" = "auto".asInstanceOf["auto"]
   
-  inline def clip: com.olvind.mui.csstype.csstypeStrings.clip = "clip".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.clip]
+  inline def clip: "clip" = "clip".asInstanceOf["clip"]
   
-  inline def hidden: com.olvind.mui.csstype.csstypeStrings.hidden = "hidden".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.hidden]
+  inline def hidden: "hidden" = "hidden".asInstanceOf["hidden"]
   
-  inline def inherit: com.olvind.mui.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.inherit]
+  inline def inherit: "inherit" = "inherit".asInstanceOf["inherit"]
   
-  inline def initial: com.olvind.mui.csstype.csstypeStrings.initial = "initial".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.initial]
+  inline def initial: "initial" = "initial".asInstanceOf["initial"]
   
-  inline def revert: com.olvind.mui.csstype.csstypeStrings.revert = "revert".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.revert]
+  inline def revert: "revert" = "revert".asInstanceOf["revert"]
   
-  inline def scroll: com.olvind.mui.csstype.csstypeStrings.scroll = "scroll".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.scroll]
+  inline def scroll: "scroll" = "scroll".asInstanceOf["scroll"]
   
-  inline def unset: com.olvind.mui.csstype.csstypeStrings.unset = "unset".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.unset]
+  inline def unset: "unset" = "unset".asInstanceOf["unset"]
   
-  inline def visible: com.olvind.mui.csstype.csstypeStrings.visible = "visible".asInstanceOf[com.olvind.mui.csstype.csstypeStrings.visible]
+  inline def visible: "visible" = "visible".asInstanceOf["visible"]
 }

@@ -1,38 +1,42 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.imageListImageListClassesMod.ImageListClassKey
+import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `83` extends StObject {
+trait `83`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialIconPropsspan] = js.undefined
+  var defaultProps: js.UndefOr[PartialImageListPropsul] = js.undefined
   
-  var styleOverrides: js.UndefOr[PartialOverridesStyleRulesIconClassKey] = js.undefined
+  var styleOverrides: js.UndefOr[
+    com.olvind.mui.std.Partial[OverridesStyleRules[ImageListClassKey, "MuiImageList", Theme]]
+  ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialIconPropsspan]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialImageListPropsul]] = js.undefined
 }
 object `83` {
   
-  inline def apply(): `83` = {
+  inline def apply[Theme](): `83`[Theme] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`83`]
+    __obj.asInstanceOf[`83`[Theme]]
   }
   
-  extension [Self <: `83`](x: Self) {
+  extension [Self <: `83`[?], Theme](x: Self & `83`[Theme]) {
     
-    inline def setDefaultProps(value: PartialIconPropsspan): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialImageListPropsul): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: PartialOverridesStyleRulesIconClassKey): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(value: com.olvind.mui.std.Partial[OverridesStyleRules[ImageListClassKey, "MuiImageList", Theme]]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialIconPropsspan]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialImageListPropsul]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialIconPropsspan*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialImageListPropsul*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

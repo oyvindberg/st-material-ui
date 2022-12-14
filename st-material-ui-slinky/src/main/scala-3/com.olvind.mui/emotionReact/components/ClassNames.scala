@@ -1,8 +1,8 @@
 package com.olvind.mui.emotionReact.components
 
 import com.olvind.mui.StBuildingComponent.Default
-import com.olvind.mui.emotionReact.emotionReactMod.ClassNamesContent
-import com.olvind.mui.emotionReact.emotionReactMod.ClassNamesProps
+import com.olvind.mui.emotionReact.mod.ClassNamesContent
+import com.olvind.mui.emotionReact.mod.ClassNamesProps
 import slinky.core.facade.ReactElement
 import slinky.web.html.`*`.tag
 import org.scalablytyped.runtime.StObject

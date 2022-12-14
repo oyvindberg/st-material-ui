@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriacolindex
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapTabT
-import com.olvind.mui.muiMaterial.tabClassesMod.TabClasses
+import com.olvind.mui.muiMaterial.tabTabClassesMod.TabClasses
 import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,12 +18,12 @@ object tabMod {
     *
     * Demos:
     *
-    * - [Tabs](https://mui.com/components/tabs/)
+    * - [Tabs](https://mui.com/material-ui/react-tabs/)
     *
     * API:
     *
-    * - [Tab API](https://mui.com/api/tab/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [Tab API](https://mui.com/material-ui/api/tab/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/Tab", JSImport.Default)
   @js.native

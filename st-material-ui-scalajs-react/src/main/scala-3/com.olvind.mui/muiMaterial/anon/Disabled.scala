@@ -1,8 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.muiMaterialStrings.dense
-import com.olvind.mui.muiMaterial.muiMaterialStrings.none
-import com.olvind.mui.muiMaterial.muiMaterialStrings.normal
 import japgolly.scalajs.react.facade.Empty
 import japgolly.scalajs.react.facade.JsNumber
 import japgolly.scalajs.react.facade.React.Element
@@ -22,7 +19,7 @@ trait Disabled extends StObject {
   
   var focused: js.UndefOr[Boolean] = js.undefined
   
-  var margin: js.UndefOr[dense | none | normal] = js.undefined
+  var margin: js.UndefOr["dense" | "none" | "normal"] = js.undefined
   
   var required: js.UndefOr[Boolean] = js.undefined
   
@@ -53,7 +50,7 @@ object Disabled {
     
     inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
-    inline def setMargin(value: dense | none | normal): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: "dense" | "none" | "normal"): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     

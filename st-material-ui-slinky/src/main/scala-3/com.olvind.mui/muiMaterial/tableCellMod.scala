@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.tableCellClassesMod.TableCellClasses
+import com.olvind.mui.muiMaterial.tableCellTableCellClassesMod.TableCellClasses
 import com.olvind.mui.muiMaterial.tableCellTableCellMod.TableCellProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.stepIconClassesMod.StepIconClasses
+import com.olvind.mui.muiMaterial.stepIconStepIconClassesMod.StepIconClasses
 import com.olvind.mui.muiMaterial.stepIconStepIconMod.StepIconProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

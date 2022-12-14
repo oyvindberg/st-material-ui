@@ -3,7 +3,7 @@ package com.olvind.mui.muiMaterial
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAlignItems
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsListItemTypeMapli
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapList
-import com.olvind.mui.muiMaterial.listItemClassesMod.ListItemClasses
+import com.olvind.mui.muiMaterial.listItemListItemClassesMod.ListItemClasses
 import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,12 +20,12 @@ object listItemMod {
     *
     * Demos:
     *
-    * - [Lists](https://mui.com/components/lists/)
-    * - [Transfer List](https://mui.com/components/transfer-list/)
+    * - [Lists](https://mui.com/material-ui/react-list/)
+    * - [Transfer List](https://mui.com/material-ui/react-transfer-list/)
     *
     * API:
     *
-    * - [ListItem API](https://mui.com/api/list-item/)
+    * - [ListItem API](https://mui.com/material-ui/api/list-item/)
     */
   @JSImport("@mui/material/ListItem", JSImport.Default)
   @js.native

@@ -1,5 +1,8 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
+import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
+import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,33 +10,136 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Components extends StObject {
   
   /**
-    * The components used for each slot inside the InputBase.
-    * Either a string to use a HTML element or a component.
-    * @default {}
+    * The content of the component.
     */
-  var components: js.UndefOr[`14`] = js.undefined
+  var children: js.UndefOr[ReactElement] = js.undefined
   
   /**
-    * The props used for each slot inside the Input.
+    * Override or extend the styles applied to the component.
+    */
+  var classes: js.UndefOr[PartialBackdropClasses] = js.undefined
+  
+  /**
+    * The components used for each slot inside.
+    *
+    * This prop is an alias for the `slots` prop.
+    * It's recommended to use the `slots` prop instead.
+    *
     * @default {}
     */
-  var componentsProps: js.UndefOr[`15`] = js.undefined
+  var components: js.UndefOr[Root] = js.undefined
+  
+  /**
+    * The extra props for the slot components.
+    * You can override the existing props or add new ones.
+    *
+    * This prop is an alias for the `slotProps` prop.
+    * It's recommended to use the `slotProps` prop instead, as `componentsProps` will be deprecated in the future.
+    *
+    * @default {}
+    */
+  var componentsProps: js.UndefOr[`0`] = js.undefined
+  
+  /**
+    * If `true`, the backdrop is invisible.
+    * It can be used when rendering a popover or a custom select component.
+    * @default false
+    */
+  var invisible: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If `true`, the component is shown.
+    */
+  var open: Boolean
+  
+  /**
+    * The extra props for the slot components.
+    * You can override the existing props or add new ones.
+    *
+    * This prop is an alias for the `componentsProps` prop, which will be deprecated in the future.
+    *
+    * @default {}
+    */
+  var slotProps: js.UndefOr[`0`] = js.undefined
+  
+  /**
+    * The components used for each slot inside.
+    *
+    * This prop is an alias for the `components` prop, which will be deprecated in the future.
+    *
+    * @default {}
+    */
+  var slots: js.UndefOr[`1`] = js.undefined
+  
+  /**
+    * The system prop that allows defining system overrides as well as additional CSS styles.
+    */
+  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
+  
+  /**
+    * The duration for the transition, in milliseconds.
+    * You may specify a single timeout for all transitions, or individually with an object.
+    */
+  var transitionDuration: js.UndefOr[Any] = js.undefined
 }
 object Components {
   
-  inline def apply(): Components = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(open: Boolean): Components = {
+    val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[Components]
   }
   
   extension [Self <: Components](x: Self) {
     
-    inline def setComponents(value: `14`): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setComponentsProps(value: `15`): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setClasses(value: PartialBackdropClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setComponents(value: Root): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    
+    inline def setComponentsProps(value: `0`): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
     
     inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    
+    inline def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+    
+    inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+    
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    
+    inline def setSlotProps(value: `0`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    
+    inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
+    
+    inline def setSlots(value: `1`): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+    
+    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    
+    inline def setSxFunction1(
+      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
+    ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
+    
+    inline def setSxNull: Self = StObject.set(x, "sx", null)
+    
+    inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
+    
+    inline def setSxVarargs(
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
+        ]))*
+    ): Self = StObject.set(x, "sx", js.Array(value*))
+    
+    inline def setTransitionDuration(value: Any): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
   }
 }

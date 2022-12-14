@@ -1,7 +1,7 @@
 package com.olvind.mui.muiBase.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.noSsrNoSsrMod.NoSsrProps
+import com.olvind.mui.muiBase.noSsrNoSsrDottypesMod.NoSsrProps
 import slinky.core.facade.ReactElement
 import slinky.web.html.`*`.tag
 import org.scalablytyped.runtime.StObject

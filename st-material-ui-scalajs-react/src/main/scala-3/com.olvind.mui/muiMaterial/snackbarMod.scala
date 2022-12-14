@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.snackbarClassesMod.SnackbarClasses
+import com.olvind.mui.muiMaterial.snackbarSnackbarClassesMod.SnackbarClasses
 import com.olvind.mui.muiMaterial.snackbarSnackbarMod.SnackbarProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

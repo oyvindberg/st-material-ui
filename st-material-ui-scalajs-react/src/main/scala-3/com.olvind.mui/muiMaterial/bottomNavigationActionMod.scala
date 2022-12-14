@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAbout
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapBott
-import com.olvind.mui.muiMaterial.bottomNavigationActionClassesMod.BottomNavigationActionClasses
+import com.olvind.mui.muiMaterial.bottomNavigationActionBottomNavigationActionClassesMod.BottomNavigationActionClasses
 import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,12 +18,12 @@ object bottomNavigationActionMod {
     *
     * Demos:
     *
-    * - [Bottom Navigation](https://mui.com/components/bottom-navigation/)
+    * - [Bottom Navigation](https://mui.com/material-ui/react-bottom-navigation/)
     *
     * API:
     *
-    * - [BottomNavigationAction API](https://mui.com/api/bottom-navigation-action/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [BottomNavigationAction API](https://mui.com/material-ui/api/bottom-navigation-action/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/BottomNavigationAction", JSImport.Default)
   @js.native

@@ -4,65 +4,6 @@ import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiBase.anon.BackButton
 import com.olvind.mui.muiBase.anon.DefaultComponentPropsTablePaginationActi
 import com.olvind.mui.muiBase.anon.FirstButton
-import com.olvind.mui.muiBase.muiBaseStrings.`additions removals`
-import com.olvind.mui.muiBase.muiBaseStrings.`additions text`
-import com.olvind.mui.muiBase.muiBaseStrings.`inline`
-import com.olvind.mui.muiBase.muiBaseStrings.`removals additions`
-import com.olvind.mui.muiBase.muiBaseStrings.`removals text`
-import com.olvind.mui.muiBase.muiBaseStrings.`text additions`
-import com.olvind.mui.muiBase.muiBaseStrings.`text removals`
-import com.olvind.mui.muiBase.muiBaseStrings.additions
-import com.olvind.mui.muiBase.muiBaseStrings.all
-import com.olvind.mui.muiBase.muiBaseStrings.ascending
-import com.olvind.mui.muiBase.muiBaseStrings.assertive
-import com.olvind.mui.muiBase.muiBaseStrings.both
-import com.olvind.mui.muiBase.muiBaseStrings.button
-import com.olvind.mui.muiBase.muiBaseStrings.copy
-import com.olvind.mui.muiBase.muiBaseStrings.date
-import com.olvind.mui.muiBase.muiBaseStrings.decimal
-import com.olvind.mui.muiBase.muiBaseStrings.descending
-import com.olvind.mui.muiBase.muiBaseStrings.dialog
-import com.olvind.mui.muiBase.muiBaseStrings.email
-import com.olvind.mui.muiBase.muiBaseStrings.execute
-import com.olvind.mui.muiBase.muiBaseStrings.first
-import com.olvind.mui.muiBase.muiBaseStrings.grammar
-import com.olvind.mui.muiBase.muiBaseStrings.grid
-import com.olvind.mui.muiBase.muiBaseStrings.horizontal
-import com.olvind.mui.muiBase.muiBaseStrings.inherit
-import com.olvind.mui.muiBase.muiBaseStrings.last
-import com.olvind.mui.muiBase.muiBaseStrings.link
-import com.olvind.mui.muiBase.muiBaseStrings.list
-import com.olvind.mui.muiBase.muiBaseStrings.listbox
-import com.olvind.mui.muiBase.muiBaseStrings.location
-import com.olvind.mui.muiBase.muiBaseStrings.ltr
-import com.olvind.mui.muiBase.muiBaseStrings.menu
-import com.olvind.mui.muiBase.muiBaseStrings.mixed
-import com.olvind.mui.muiBase.muiBaseStrings.move
-import com.olvind.mui.muiBase.muiBaseStrings.next
-import com.olvind.mui.muiBase.muiBaseStrings.no
-import com.olvind.mui.muiBase.muiBaseStrings.none
-import com.olvind.mui.muiBase.muiBaseStrings.numeric
-import com.olvind.mui.muiBase.muiBaseStrings.off
-import com.olvind.mui.muiBase.muiBaseStrings.on
-import com.olvind.mui.muiBase.muiBaseStrings.other
-import com.olvind.mui.muiBase.muiBaseStrings.page
-import com.olvind.mui.muiBase.muiBaseStrings.polite
-import com.olvind.mui.muiBase.muiBaseStrings.popup
-import com.olvind.mui.muiBase.muiBaseStrings.previous
-import com.olvind.mui.muiBase.muiBaseStrings.removals
-import com.olvind.mui.muiBase.muiBaseStrings.reset
-import com.olvind.mui.muiBase.muiBaseStrings.rtl
-import com.olvind.mui.muiBase.muiBaseStrings.search
-import com.olvind.mui.muiBase.muiBaseStrings.spelling
-import com.olvind.mui.muiBase.muiBaseStrings.step
-import com.olvind.mui.muiBase.muiBaseStrings.submit
-import com.olvind.mui.muiBase.muiBaseStrings.tel
-import com.olvind.mui.muiBase.muiBaseStrings.text
-import com.olvind.mui.muiBase.muiBaseStrings.time
-import com.olvind.mui.muiBase.muiBaseStrings.tree
-import com.olvind.mui.muiBase.muiBaseStrings.url
-import com.olvind.mui.muiBase.muiBaseStrings.vertical
-import com.olvind.mui.muiBase.muiBaseStrings.yes
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AriaRole
 import com.olvind.mui.react.mod.Booleanish
@@ -71,7 +12,6 @@ import com.olvind.mui.react.mod.DragEvent
 import org.scalajs.dom.Event
 import org.scalajs.dom.EventTarget
 import org.scalajs.dom.HTMLButtonElement
-import org.scalajs.dom.HTMLDivElement
 import slinky.core.SyntheticEvent
 import slinky.web.SyntheticAnimationEvent
 import slinky.web.SyntheticClipboardEvent
@@ -84,7 +24,7 @@ import slinky.web.SyntheticTouchEvent
 import slinky.web.SyntheticTransitionEvent
 import slinky.web.SyntheticUIEvent
 import slinky.web.SyntheticWheelEvent
-import slinky.web.html.div.tag
+import slinky.web.html.button.tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,7 +33,7 @@ object TablePaginationActionsUnstyled {
   
   inline def apply(
     count: Double,
-    getItemAriaLabel: (first | last | next | previous, Double) => String,
+    getItemAriaLabel: ("first" | "last" | "next" | "previous", Double) => String,
     onPageChange: (Null | SyntheticMouseEvent[HTMLButtonElement], Double) => Unit,
     page: Double,
     rowsPerPage: Double,
@@ -104,7 +44,7 @@ object TablePaginationActionsUnstyled {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsTablePaginationActi]))
   }
   
-  @JSImport("@mui/base/TablePaginationUnstyled/TablePaginationActionsUnstyled", JSImport.Default)
+  @JSImport("@mui/base", "TablePaginationActionsUnstyled")
   @js.native
   val component: js.Object = js.native
   
@@ -121,11 +61,11 @@ object TablePaginationActionsUnstyled {
     
     inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
     
-    inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `aria-autocomplete`(value: "none" | "inline" | "list" | "both"): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
     
-    inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+    inline def `aria-checked`(value: Boolean | "mixed"): this.type = set("aria-checked", value.asInstanceOf[js.Any])
     
     inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
     
@@ -135,7 +75,7 @@ object TablePaginationActionsUnstyled {
     
     inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
     
-    inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+    inline def `aria-current`(value: Boolean | "page" | "step" | "location" | "date" | "time"): this.type = set("aria-current", value.asInstanceOf[js.Any])
     
     inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
     
@@ -143,7 +83,7 @@ object TablePaginationActionsUnstyled {
     
     inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
     
-    inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `aria-dropeffect`(value: "none" | "copy" | "execute" | "link" | "move" | "popup"): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
     
@@ -153,11 +93,11 @@ object TablePaginationActionsUnstyled {
     
     inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
     
-    inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `aria-haspopup`(value: Boolean | "menu" | "listbox" | "tree" | "grid" | "dialog"): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
     
-    inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+    inline def `aria-invalid`(value: Boolean | "grammar" | "spelling"): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
     
     inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
     
@@ -167,7 +107,7 @@ object TablePaginationActionsUnstyled {
     
     inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
     
-    inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+    inline def `aria-live`(value: "off" | "assertive" | "polite"): this.type = set("aria-live", value.asInstanceOf[js.Any])
     
     inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
     
@@ -175,7 +115,7 @@ object TablePaginationActionsUnstyled {
     
     inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
     
-    inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+    inline def `aria-orientation`(value: "horizontal" | "vertical"): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
     
     inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
     
@@ -183,12 +123,12 @@ object TablePaginationActionsUnstyled {
     
     inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
     
-    inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+    inline def `aria-pressed`(value: Boolean | "mixed"): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
     
     inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `aria-relevant`(
-      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      value: "additions" | ("additions removals") | ("additions text") | "all" | "removals" | ("removals additions") | ("removals text") | "text" | ("text additions") | ("text removals")
     ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
     
     inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
@@ -205,7 +145,7 @@ object TablePaginationActionsUnstyled {
     
     inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
     
-    inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+    inline def `aria-sort`(value: "none" | "ascending" | "descending" | "other"): this.type = set("aria-sort", value.asInstanceOf[js.Any])
     
     inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
     
@@ -229,11 +169,7 @@ object TablePaginationActionsUnstyled {
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
     
-    inline def components(value: BackButton): this.type = set("components", value.asInstanceOf[js.Any])
-    
-    inline def componentsProps(value: FirstButton): this.type = set("componentsProps", value.asInstanceOf[js.Any])
-    
-    inline def contentEditable(value: Booleanish | inherit): this.type = set("contentEditable", value.asInstanceOf[js.Any])
+    inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
     inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
     
@@ -249,7 +185,7 @@ object TablePaginationActionsUnstyled {
     
     inline def dir(value: String): this.type = set("dir", value.asInstanceOf[js.Any])
     
-    inline def direction(value: ltr | rtl): this.type = set("direction", value.asInstanceOf[js.Any])
+    inline def direction(value: "ltr" | "rtl"): this.type = set("direction", value.asInstanceOf[js.Any])
     
     inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
     
@@ -273,7 +209,7 @@ object TablePaginationActionsUnstyled {
     
     inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
     
-    inline def inputMode(value: none | text | tel | url | email | numeric | decimal | search): this.type = set("inputMode", value.asInstanceOf[js.Any])
+    inline def inputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): this.type = set("inputMode", value.asInstanceOf[js.Any])
     
     inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
     
@@ -291,163 +227,167 @@ object TablePaginationActionsUnstyled {
     
     inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
     
-    inline def onAbort(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onAbort", js.Any.fromFunction1(value))
+    inline def nonce(value: String): this.type = set("nonce", value.asInstanceOf[js.Any])
     
-    inline def onAnimationEnd(value: SyntheticAnimationEvent[HTMLDivElement] => Unit): this.type = set("onAnimationEnd", js.Any.fromFunction1(value))
+    inline def onAbort(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onAbort", js.Any.fromFunction1(value))
     
-    inline def onAnimationIteration(value: SyntheticAnimationEvent[HTMLDivElement] => Unit): this.type = set("onAnimationIteration", js.Any.fromFunction1(value))
+    inline def onAnimationEnd(value: SyntheticAnimationEvent[HTMLButtonElement] => Unit): this.type = set("onAnimationEnd", js.Any.fromFunction1(value))
     
-    inline def onAnimationStart(value: SyntheticAnimationEvent[HTMLDivElement] => Unit): this.type = set("onAnimationStart", js.Any.fromFunction1(value))
+    inline def onAnimationIteration(value: SyntheticAnimationEvent[HTMLButtonElement] => Unit): this.type = set("onAnimationIteration", js.Any.fromFunction1(value))
     
-    inline def onAuxClick(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onAuxClick", js.Any.fromFunction1(value))
+    inline def onAnimationStart(value: SyntheticAnimationEvent[HTMLButtonElement] => Unit): this.type = set("onAnimationStart", js.Any.fromFunction1(value))
     
-    inline def onBeforeInput(value: SyntheticEvent[EventTarget & HTMLDivElement, Event] => Unit): this.type = set("onBeforeInput", js.Any.fromFunction1(value))
+    inline def onAuxClick(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onAuxClick", js.Any.fromFunction1(value))
     
-    inline def onBlur(value: SyntheticFocusEvent[HTMLDivElement] => Unit): this.type = set("onBlur", js.Any.fromFunction1(value))
+    inline def onBeforeInput(value: SyntheticEvent[EventTarget & HTMLButtonElement, Event] => Unit): this.type = set("onBeforeInput", js.Any.fromFunction1(value))
     
-    inline def onCanPlay(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onCanPlay", js.Any.fromFunction1(value))
+    inline def onBlur(value: SyntheticFocusEvent[HTMLButtonElement] => Unit): this.type = set("onBlur", js.Any.fromFunction1(value))
     
-    inline def onCanPlayThrough(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onCanPlayThrough", js.Any.fromFunction1(value))
+    inline def onCanPlay(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onCanPlay", js.Any.fromFunction1(value))
     
-    inline def onChange(value: SyntheticEvent[EventTarget & HTMLDivElement, Event] => Unit): this.type = set("onChange", js.Any.fromFunction1(value))
+    inline def onCanPlayThrough(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onCanPlayThrough", js.Any.fromFunction1(value))
     
-    inline def onClick(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onClick", js.Any.fromFunction1(value))
+    inline def onChange(value: SyntheticEvent[EventTarget & HTMLButtonElement, Event] => Unit): this.type = set("onChange", js.Any.fromFunction1(value))
     
-    inline def onCompositionEnd(value: SyntheticCompositionEvent[HTMLDivElement] => Unit): this.type = set("onCompositionEnd", js.Any.fromFunction1(value))
+    inline def onClick(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onClick", js.Any.fromFunction1(value))
     
-    inline def onCompositionStart(value: SyntheticCompositionEvent[HTMLDivElement] => Unit): this.type = set("onCompositionStart", js.Any.fromFunction1(value))
+    inline def onCompositionEnd(value: SyntheticCompositionEvent[HTMLButtonElement] => Unit): this.type = set("onCompositionEnd", js.Any.fromFunction1(value))
     
-    inline def onCompositionUpdate(value: SyntheticCompositionEvent[HTMLDivElement] => Unit): this.type = set("onCompositionUpdate", js.Any.fromFunction1(value))
+    inline def onCompositionStart(value: SyntheticCompositionEvent[HTMLButtonElement] => Unit): this.type = set("onCompositionStart", js.Any.fromFunction1(value))
     
-    inline def onContextMenu(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onContextMenu", js.Any.fromFunction1(value))
+    inline def onCompositionUpdate(value: SyntheticCompositionEvent[HTMLButtonElement] => Unit): this.type = set("onCompositionUpdate", js.Any.fromFunction1(value))
     
-    inline def onCopy(value: SyntheticClipboardEvent[HTMLDivElement] => Unit): this.type = set("onCopy", js.Any.fromFunction1(value))
+    inline def onContextMenu(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onContextMenu", js.Any.fromFunction1(value))
     
-    inline def onCut(value: SyntheticClipboardEvent[HTMLDivElement] => Unit): this.type = set("onCut", js.Any.fromFunction1(value))
+    inline def onCopy(value: SyntheticClipboardEvent[HTMLButtonElement] => Unit): this.type = set("onCopy", js.Any.fromFunction1(value))
     
-    inline def onDoubleClick(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onDoubleClick", js.Any.fromFunction1(value))
+    inline def onCut(value: SyntheticClipboardEvent[HTMLButtonElement] => Unit): this.type = set("onCut", js.Any.fromFunction1(value))
     
-    inline def onDrag(value: DragEvent[HTMLDivElement] => Unit): this.type = set("onDrag", js.Any.fromFunction1(value))
+    inline def onDoubleClick(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onDoubleClick", js.Any.fromFunction1(value))
     
-    inline def onDragEnd(value: DragEvent[HTMLDivElement] => Unit): this.type = set("onDragEnd", js.Any.fromFunction1(value))
+    inline def onDrag(value: DragEvent[HTMLButtonElement] => Unit): this.type = set("onDrag", js.Any.fromFunction1(value))
     
-    inline def onDragEnter(value: DragEvent[HTMLDivElement] => Unit): this.type = set("onDragEnter", js.Any.fromFunction1(value))
+    inline def onDragEnd(value: DragEvent[HTMLButtonElement] => Unit): this.type = set("onDragEnd", js.Any.fromFunction1(value))
     
-    inline def onDragExit(value: DragEvent[HTMLDivElement] => Unit): this.type = set("onDragExit", js.Any.fromFunction1(value))
+    inline def onDragEnter(value: DragEvent[HTMLButtonElement] => Unit): this.type = set("onDragEnter", js.Any.fromFunction1(value))
     
-    inline def onDragLeave(value: DragEvent[HTMLDivElement] => Unit): this.type = set("onDragLeave", js.Any.fromFunction1(value))
+    inline def onDragExit(value: DragEvent[HTMLButtonElement] => Unit): this.type = set("onDragExit", js.Any.fromFunction1(value))
     
-    inline def onDragOver(value: DragEvent[HTMLDivElement] => Unit): this.type = set("onDragOver", js.Any.fromFunction1(value))
+    inline def onDragLeave(value: DragEvent[HTMLButtonElement] => Unit): this.type = set("onDragLeave", js.Any.fromFunction1(value))
     
-    inline def onDragStart(value: DragEvent[HTMLDivElement] => Unit): this.type = set("onDragStart", js.Any.fromFunction1(value))
+    inline def onDragOver(value: DragEvent[HTMLButtonElement] => Unit): this.type = set("onDragOver", js.Any.fromFunction1(value))
     
-    inline def onDrop(value: DragEvent[HTMLDivElement] => Unit): this.type = set("onDrop", js.Any.fromFunction1(value))
+    inline def onDragStart(value: DragEvent[HTMLButtonElement] => Unit): this.type = set("onDragStart", js.Any.fromFunction1(value))
     
-    inline def onDurationChange(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onDurationChange", js.Any.fromFunction1(value))
+    inline def onDrop(value: DragEvent[HTMLButtonElement] => Unit): this.type = set("onDrop", js.Any.fromFunction1(value))
     
-    inline def onEmptied(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onEmptied", js.Any.fromFunction1(value))
+    inline def onDurationChange(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onDurationChange", js.Any.fromFunction1(value))
     
-    inline def onEncrypted(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onEncrypted", js.Any.fromFunction1(value))
+    inline def onEmptied(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onEmptied", js.Any.fromFunction1(value))
     
-    inline def onEnded(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onEnded", js.Any.fromFunction1(value))
+    inline def onEncrypted(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onEncrypted", js.Any.fromFunction1(value))
     
-    inline def onError(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onError", js.Any.fromFunction1(value))
+    inline def onEnded(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onEnded", js.Any.fromFunction1(value))
     
-    inline def onFocus(value: SyntheticFocusEvent[HTMLDivElement] => Unit): this.type = set("onFocus", js.Any.fromFunction1(value))
+    inline def onError(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onError", js.Any.fromFunction1(value))
     
-    inline def onInput(value: SyntheticEvent[EventTarget & HTMLDivElement, Event] => Unit): this.type = set("onInput", js.Any.fromFunction1(value))
+    inline def onFocus(value: SyntheticFocusEvent[HTMLButtonElement] => Unit): this.type = set("onFocus", js.Any.fromFunction1(value))
     
-    inline def onInvalid(value: SyntheticEvent[EventTarget & HTMLDivElement, Event] => Unit): this.type = set("onInvalid", js.Any.fromFunction1(value))
+    inline def onInput(value: SyntheticEvent[EventTarget & HTMLButtonElement, Event] => Unit): this.type = set("onInput", js.Any.fromFunction1(value))
     
-    inline def onKeyDown(value: SyntheticKeyboardEvent[HTMLDivElement] => Unit): this.type = set("onKeyDown", js.Any.fromFunction1(value))
+    inline def onInvalid(value: SyntheticEvent[EventTarget & HTMLButtonElement, Event] => Unit): this.type = set("onInvalid", js.Any.fromFunction1(value))
     
-    inline def onKeyPress(value: SyntheticKeyboardEvent[HTMLDivElement] => Unit): this.type = set("onKeyPress", js.Any.fromFunction1(value))
+    inline def onKeyDown(value: SyntheticKeyboardEvent[HTMLButtonElement] => Unit): this.type = set("onKeyDown", js.Any.fromFunction1(value))
     
-    inline def onKeyUp(value: SyntheticKeyboardEvent[HTMLDivElement] => Unit): this.type = set("onKeyUp", js.Any.fromFunction1(value))
+    inline def onKeyPress(value: SyntheticKeyboardEvent[HTMLButtonElement] => Unit): this.type = set("onKeyPress", js.Any.fromFunction1(value))
     
-    inline def onLoad(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onLoad", js.Any.fromFunction1(value))
+    inline def onKeyUp(value: SyntheticKeyboardEvent[HTMLButtonElement] => Unit): this.type = set("onKeyUp", js.Any.fromFunction1(value))
     
-    inline def onLoadStart(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onLoadStart", js.Any.fromFunction1(value))
+    inline def onLoad(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onLoad", js.Any.fromFunction1(value))
     
-    inline def onLoadedData(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onLoadedData", js.Any.fromFunction1(value))
+    inline def onLoadStart(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onLoadStart", js.Any.fromFunction1(value))
     
-    inline def onLoadedMetadata(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onLoadedMetadata", js.Any.fromFunction1(value))
+    inline def onLoadedData(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onLoadedData", js.Any.fromFunction1(value))
     
-    inline def onMouseDown(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onMouseDown", js.Any.fromFunction1(value))
+    inline def onLoadedMetadata(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onLoadedMetadata", js.Any.fromFunction1(value))
     
-    inline def onMouseEnter(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onMouseEnter", js.Any.fromFunction1(value))
+    inline def onMouseDown(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onMouseDown", js.Any.fromFunction1(value))
     
-    inline def onMouseLeave(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onMouseLeave", js.Any.fromFunction1(value))
+    inline def onMouseEnter(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onMouseEnter", js.Any.fromFunction1(value))
     
-    inline def onMouseMove(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onMouseMove", js.Any.fromFunction1(value))
+    inline def onMouseLeave(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onMouseLeave", js.Any.fromFunction1(value))
     
-    inline def onMouseOut(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onMouseOut", js.Any.fromFunction1(value))
+    inline def onMouseMove(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onMouseMove", js.Any.fromFunction1(value))
     
-    inline def onMouseOver(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onMouseOver", js.Any.fromFunction1(value))
+    inline def onMouseOut(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onMouseOut", js.Any.fromFunction1(value))
     
-    inline def onMouseUp(value: SyntheticMouseEvent[HTMLDivElement] => Unit): this.type = set("onMouseUp", js.Any.fromFunction1(value))
+    inline def onMouseOver(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onMouseOver", js.Any.fromFunction1(value))
     
-    inline def onPaste(value: SyntheticClipboardEvent[HTMLDivElement] => Unit): this.type = set("onPaste", js.Any.fromFunction1(value))
+    inline def onMouseUp(value: SyntheticMouseEvent[HTMLButtonElement] => Unit): this.type = set("onMouseUp", js.Any.fromFunction1(value))
     
-    inline def onPause(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onPause", js.Any.fromFunction1(value))
+    inline def onPaste(value: SyntheticClipboardEvent[HTMLButtonElement] => Unit): this.type = set("onPaste", js.Any.fromFunction1(value))
     
-    inline def onPlay(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onPlay", js.Any.fromFunction1(value))
+    inline def onPause(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onPause", js.Any.fromFunction1(value))
     
-    inline def onPlaying(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onPlaying", js.Any.fromFunction1(value))
+    inline def onPlay(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onPlay", js.Any.fromFunction1(value))
     
-    inline def onPointerCancel(value: SyntheticPointerEvent[HTMLDivElement] => Unit): this.type = set("onPointerCancel", js.Any.fromFunction1(value))
+    inline def onPlaying(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onPlaying", js.Any.fromFunction1(value))
     
-    inline def onPointerDown(value: SyntheticPointerEvent[HTMLDivElement] => Unit): this.type = set("onPointerDown", js.Any.fromFunction1(value))
+    inline def onPointerCancel(value: SyntheticPointerEvent[HTMLButtonElement] => Unit): this.type = set("onPointerCancel", js.Any.fromFunction1(value))
     
-    inline def onPointerEnter(value: SyntheticPointerEvent[HTMLDivElement] => Unit): this.type = set("onPointerEnter", js.Any.fromFunction1(value))
+    inline def onPointerDown(value: SyntheticPointerEvent[HTMLButtonElement] => Unit): this.type = set("onPointerDown", js.Any.fromFunction1(value))
     
-    inline def onPointerLeave(value: SyntheticPointerEvent[HTMLDivElement] => Unit): this.type = set("onPointerLeave", js.Any.fromFunction1(value))
+    inline def onPointerEnter(value: SyntheticPointerEvent[HTMLButtonElement] => Unit): this.type = set("onPointerEnter", js.Any.fromFunction1(value))
     
-    inline def onPointerMove(value: SyntheticPointerEvent[HTMLDivElement] => Unit): this.type = set("onPointerMove", js.Any.fromFunction1(value))
+    inline def onPointerLeave(value: SyntheticPointerEvent[HTMLButtonElement] => Unit): this.type = set("onPointerLeave", js.Any.fromFunction1(value))
     
-    inline def onPointerOut(value: SyntheticPointerEvent[HTMLDivElement] => Unit): this.type = set("onPointerOut", js.Any.fromFunction1(value))
+    inline def onPointerMove(value: SyntheticPointerEvent[HTMLButtonElement] => Unit): this.type = set("onPointerMove", js.Any.fromFunction1(value))
     
-    inline def onPointerOver(value: SyntheticPointerEvent[HTMLDivElement] => Unit): this.type = set("onPointerOver", js.Any.fromFunction1(value))
+    inline def onPointerOut(value: SyntheticPointerEvent[HTMLButtonElement] => Unit): this.type = set("onPointerOut", js.Any.fromFunction1(value))
     
-    inline def onPointerUp(value: SyntheticPointerEvent[HTMLDivElement] => Unit): this.type = set("onPointerUp", js.Any.fromFunction1(value))
+    inline def onPointerOver(value: SyntheticPointerEvent[HTMLButtonElement] => Unit): this.type = set("onPointerOver", js.Any.fromFunction1(value))
     
-    inline def onProgress(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onProgress", js.Any.fromFunction1(value))
+    inline def onPointerUp(value: SyntheticPointerEvent[HTMLButtonElement] => Unit): this.type = set("onPointerUp", js.Any.fromFunction1(value))
     
-    inline def onRateChange(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onRateChange", js.Any.fromFunction1(value))
+    inline def onProgress(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onProgress", js.Any.fromFunction1(value))
     
-    inline def onReset(value: SyntheticEvent[EventTarget & HTMLDivElement, Event] => Unit): this.type = set("onReset", js.Any.fromFunction1(value))
+    inline def onRateChange(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onRateChange", js.Any.fromFunction1(value))
     
-    inline def onScroll(value: SyntheticUIEvent[HTMLDivElement] => Unit): this.type = set("onScroll", js.Any.fromFunction1(value))
+    inline def onReset(value: SyntheticEvent[EventTarget & HTMLButtonElement, Event] => Unit): this.type = set("onReset", js.Any.fromFunction1(value))
     
-    inline def onSeeked(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onSeeked", js.Any.fromFunction1(value))
+    inline def onResize(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onResize", js.Any.fromFunction1(value))
     
-    inline def onSeeking(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onSeeking", js.Any.fromFunction1(value))
+    inline def onScroll(value: SyntheticUIEvent[HTMLButtonElement] => Unit): this.type = set("onScroll", js.Any.fromFunction1(value))
     
-    inline def onSelect(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onSelect", js.Any.fromFunction1(value))
+    inline def onSeeked(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onSeeked", js.Any.fromFunction1(value))
     
-    inline def onStalled(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onStalled", js.Any.fromFunction1(value))
+    inline def onSeeking(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onSeeking", js.Any.fromFunction1(value))
     
-    inline def onSubmit(value: SyntheticEvent[EventTarget & HTMLDivElement, Event] => Unit): this.type = set("onSubmit", js.Any.fromFunction1(value))
+    inline def onSelect(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onSelect", js.Any.fromFunction1(value))
     
-    inline def onSuspend(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onSuspend", js.Any.fromFunction1(value))
+    inline def onStalled(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onStalled", js.Any.fromFunction1(value))
     
-    inline def onTimeUpdate(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onTimeUpdate", js.Any.fromFunction1(value))
+    inline def onSubmit(value: SyntheticEvent[EventTarget & HTMLButtonElement, Event] => Unit): this.type = set("onSubmit", js.Any.fromFunction1(value))
     
-    inline def onTouchCancel(value: SyntheticTouchEvent[HTMLDivElement] => Unit): this.type = set("onTouchCancel", js.Any.fromFunction1(value))
+    inline def onSuspend(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onSuspend", js.Any.fromFunction1(value))
     
-    inline def onTouchEnd(value: SyntheticTouchEvent[HTMLDivElement] => Unit): this.type = set("onTouchEnd", js.Any.fromFunction1(value))
+    inline def onTimeUpdate(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onTimeUpdate", js.Any.fromFunction1(value))
     
-    inline def onTouchMove(value: SyntheticTouchEvent[HTMLDivElement] => Unit): this.type = set("onTouchMove", js.Any.fromFunction1(value))
+    inline def onTouchCancel(value: SyntheticTouchEvent[HTMLButtonElement] => Unit): this.type = set("onTouchCancel", js.Any.fromFunction1(value))
     
-    inline def onTouchStart(value: SyntheticTouchEvent[HTMLDivElement] => Unit): this.type = set("onTouchStart", js.Any.fromFunction1(value))
+    inline def onTouchEnd(value: SyntheticTouchEvent[HTMLButtonElement] => Unit): this.type = set("onTouchEnd", js.Any.fromFunction1(value))
     
-    inline def onTransitionEnd(value: SyntheticTransitionEvent[HTMLDivElement] => Unit): this.type = set("onTransitionEnd", js.Any.fromFunction1(value))
+    inline def onTouchMove(value: SyntheticTouchEvent[HTMLButtonElement] => Unit): this.type = set("onTouchMove", js.Any.fromFunction1(value))
     
-    inline def onVolumeChange(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onVolumeChange", js.Any.fromFunction1(value))
+    inline def onTouchStart(value: SyntheticTouchEvent[HTMLButtonElement] => Unit): this.type = set("onTouchStart", js.Any.fromFunction1(value))
     
-    inline def onWaiting(value: SyntheticEvent[Event, HTMLDivElement] => Unit): this.type = set("onWaiting", js.Any.fromFunction1(value))
+    inline def onTransitionEnd(value: SyntheticTransitionEvent[HTMLButtonElement] => Unit): this.type = set("onTransitionEnd", js.Any.fromFunction1(value))
     
-    inline def onWheel(value: SyntheticWheelEvent[HTMLDivElement] => Unit): this.type = set("onWheel", js.Any.fromFunction1(value))
+    inline def onVolumeChange(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onVolumeChange", js.Any.fromFunction1(value))
+    
+    inline def onWaiting(value: SyntheticEvent[Event, HTMLButtonElement] => Unit): this.type = set("onWaiting", js.Any.fromFunction1(value))
+    
+    inline def onWheel(value: SyntheticWheelEvent[HTMLButtonElement] => Unit): this.type = set("onWheel", js.Any.fromFunction1(value))
     
     inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
     
@@ -467,6 +407,10 @@ object TablePaginationActionsUnstyled {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
+    inline def slotProps(value: FirstButton): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    
+    inline def slots(value: BackButton): this.type = set("slots", value.asInstanceOf[js.Any])
+    
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     
     inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
@@ -479,13 +423,13 @@ object TablePaginationActionsUnstyled {
     
     inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
     
-    inline def translate(value: yes | no): this.type = set("translate", value.asInstanceOf[js.Any])
+    inline def translate(value: "yes" | "no"): this.type = set("translate", value.asInstanceOf[js.Any])
     
-    inline def `type`(value: submit | reset | button): this.type = set("type", value.asInstanceOf[js.Any])
+    inline def `type`(value: "submit" | "reset" | "button"): this.type = set("type", value.asInstanceOf[js.Any])
     
     inline def typeof(value: String): this.type = set("typeof", value.asInstanceOf[js.Any])
     
-    inline def unselectable(value: on | off): this.type = set("unselectable", value.asInstanceOf[js.Any])
+    inline def unselectable(value: "on" | "off"): this.type = set("unselectable", value.asInstanceOf[js.Any])
     
     inline def value(value: String | js.Array[String] | Double): this.type = set("value", value.asInstanceOf[js.Any])
     

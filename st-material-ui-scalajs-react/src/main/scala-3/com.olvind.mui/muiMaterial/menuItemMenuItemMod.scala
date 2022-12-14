@@ -18,12 +18,12 @@ object menuItemMenuItemMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Menus](https://mui.com/components/menus/)
+    * - [Menu](https://mui.com/material-ui/react-menu/)
     *
     * API:
     *
-    * - [MenuItem API](https://mui.com/api/menu-item/)
-    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    * - [MenuItem API](https://mui.com/material-ui/api/menu-item/)
+    * - inherits [ButtonBase API](https://mui.com/material-ui/api/button-base/)
     */
   @JSImport("@mui/material/MenuItem/MenuItem", JSImport.Default)
   @js.native

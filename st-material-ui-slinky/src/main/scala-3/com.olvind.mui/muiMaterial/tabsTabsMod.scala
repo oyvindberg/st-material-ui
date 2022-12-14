@@ -17,11 +17,11 @@ object tabsTabsMod extends Shortcut {
     *
     * Demos:
     *
-    * - [Tabs](https://mui.com/components/tabs/)
+    * - [Tabs](https://mui.com/material-ui/react-tabs/)
     *
     * API:
     *
-    * - [Tabs API](https://mui.com/api/tabs/)
+    * - [Tabs API](https://mui.com/material-ui/api/tabs/)
     */
   @JSImport("@mui/material/Tabs/Tabs", JSImport.Default)
   @js.native
@@ -57,6 +57,8 @@ object tabsTabsMod extends Shortcut {
   }
   
   type TabsProps[D /* <: ReactElement */, P] = OverrideProps[TabsTypeMap[P, D], D]
+  
+  trait TabsPropsIndicatorColorOverrides extends StObject
   
   trait TabsTypeMap[P, D /* <: ReactElement */] extends StObject {
     

@@ -1,8 +1,8 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiMaterial.hiddenCssMod.HiddenCssProps
-import com.olvind.mui.muiSystem.createBreakpointsMod.Breakpoint
+import com.olvind.mui.muiMaterial.hiddenHiddenCssMod.HiddenCssProps
+import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.Breakpoint
 import slinky.web.html.`*`.tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

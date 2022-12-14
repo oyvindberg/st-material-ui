@@ -1,6 +1,5 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.muiBaseNumbers.`-1`
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,7 @@ trait Datatagindex extends StObject {
   
   def onDelete(event: Any): Unit
   
-  var tabIndex: `-1`
+  var tabIndex: -1
 }
 object Datatagindex {
   
@@ -32,6 +31,6 @@ object Datatagindex {
     
     inline def setOnDelete(value: Any => Callback): Self = StObject.set(x, "onDelete", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
     
-    inline def setTabIndex(value: `-1`): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: -1): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
   }
 }

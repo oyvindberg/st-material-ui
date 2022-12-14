@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsImageListItemTypeMa
-import com.olvind.mui.muiMaterial.imageListItemClassesMod.ImageListItemClasses
+import com.olvind.mui.muiMaterial.imageListItemImageListItemClassesMod.ImageListItemClasses
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object imageListItemMod {
     *
     * Demos:
     *
-    * - [Image List](https://mui.com/components/image-list/)
+    * - [Image List](https://mui.com/material-ui/react-image-list/)
     *
     * API:
     *
-    * - [ImageListItem API](https://mui.com/api/image-list-item/)
+    * - [ImageListItem API](https://mui.com/material-ui/api/image-list-item/)
     */
   @JSImport("@mui/material/ImageListItem", JSImport.Default)
   @js.native
