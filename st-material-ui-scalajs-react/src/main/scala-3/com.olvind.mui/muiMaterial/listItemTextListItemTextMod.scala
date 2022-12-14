@@ -1,8 +1,8 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.PartialListItemTextClasses
-import com.olvind.mui.muiMaterial.anon.`18`
-import com.olvind.mui.muiMaterial.anon.`19`
+import com.olvind.mui.muiMaterial.anon.`21`
+import com.olvind.mui.muiMaterial.anon.`22`
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiMaterial.typographyTypographyMod.TypographyProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
@@ -168,6 +168,8 @@ object listItemTextListItemTextMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     /**
@@ -184,6 +186,8 @@ object listItemTextListItemTextMod {
     var classes: js.UndefOr[PartialListItemTextClasses] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
@@ -414,7 +418,7 @@ object listItemTextListItemTextMod {
       * These props will be forwarded to the primary typography component
       * (as long as disableTypography is not `true`).
       */
-    var primaryTypographyProps: js.UndefOr[TypographyProps[PrimaryTypographyComponent, `18`[PrimaryTypographyComponent]]] = js.undefined
+    var primaryTypographyProps: js.UndefOr[TypographyProps[PrimaryTypographyComponent, `21`[PrimaryTypographyComponent]]] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
@@ -424,9 +428,13 @@ object listItemTextListItemTextMod {
         /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
       ] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -440,7 +448,7 @@ object listItemTextListItemTextMod {
       * (as long as disableTypography is not `true`).
       */
     var secondaryTypographyProps: js.UndefOr[
-        TypographyProps[SecondaryTypographyComponent, `19`[SecondaryTypographyComponent]]
+        TypographyProps[SecondaryTypographyComponent, `22`[SecondaryTypographyComponent]]
       ] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
@@ -692,6 +700,10 @@ object listItemTextListItemTextMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -718,9 +730,13 @@ object listItemTextListItemTextMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1140,7 +1156,7 @@ object listItemTextListItemTextMod {
       
       inline def setPrimaryNull: Self = StObject.set(x, "primary", null)
       
-      inline def setPrimaryTypographyProps(value: TypographyProps[PrimaryTypographyComponent, `18`[PrimaryTypographyComponent]]): Self = StObject.set(x, "primaryTypographyProps", value.asInstanceOf[js.Any])
+      inline def setPrimaryTypographyProps(value: TypographyProps[PrimaryTypographyComponent, `21`[PrimaryTypographyComponent]]): Self = StObject.set(x, "primaryTypographyProps", value.asInstanceOf[js.Any])
       
       inline def setPrimaryTypographyPropsUndefined: Self = StObject.set(x, "primaryTypographyProps", js.undefined)
       
@@ -1164,6 +1180,10 @@ object listItemTextListItemTextMod {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1171,6 +1191,10 @@ object listItemTextListItemTextMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1180,7 +1204,7 @@ object listItemTextListItemTextMod {
       
       inline def setSecondaryNull: Self = StObject.set(x, "secondary", null)
       
-      inline def setSecondaryTypographyProps(value: TypographyProps[SecondaryTypographyComponent, `19`[SecondaryTypographyComponent]]): Self = StObject.set(x, "secondaryTypographyProps", value.asInstanceOf[js.Any])
+      inline def setSecondaryTypographyProps(value: TypographyProps[SecondaryTypographyComponent, `22`[SecondaryTypographyComponent]]): Self = StObject.set(x, "secondaryTypographyProps", value.asInstanceOf[js.Any])
       
       inline def setSecondaryTypographyPropsUndefined: Self = StObject.set(x, "secondaryTypographyProps", js.undefined)
       

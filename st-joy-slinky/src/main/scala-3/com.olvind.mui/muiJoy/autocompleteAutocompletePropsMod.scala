@@ -1,21 +1,21 @@
 package com.olvind.mui.muiJoy
 
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteChangeDetails
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteCloseReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteFreeSoloValueMapping
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteHighlightChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteInputChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteValue
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.FilterOptionsState
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.UseAutocompleteProps
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteChangeDetails
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteCloseReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteFreeSoloValueMapping
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteHighlightChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteInputChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteValue
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.FilterOptionsState
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.UseAutocompleteProps
 import com.olvind.mui.muiJoy.anon.ClearIndicator
 import com.olvind.mui.muiJoy.anon.Datatagindex
 import com.olvind.mui.muiJoy.anon.Index
 import com.olvind.mui.muiJoy.anon.Input
 import com.olvind.mui.muiJoy.anon.KeyboardEventHTMLDivElement
-import com.olvind.mui.muiJoy.anon.LimitTag
 import com.olvind.mui.muiJoy.anon.OmitHTMLAttributesHTMLLIElementcolor
+import com.olvind.mui.muiJoy.anon.PartialAutocompleteSlots
 import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme
@@ -70,7 +70,7 @@ object autocompleteAutocompletePropsMod {
   trait AutocompleteOwnProps[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */]
     extends StObject
        with UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo]
-       with CreateSlotsAndSlotProps[AutocompleteSlot, ClearIndicator] {
+       with CreateSlotsAndSlotProps[AutocompleteSlots, ClearIndicator] {
     
     /**
       * If `true`, the `input` element is focused during the first mount.
@@ -79,7 +79,7 @@ object autocompleteAutocompletePropsMod {
     
     /**
       * The icon to display in place of the default clear icon.
-      * @default <ClearIcon fontSize="small" />
+      * @default <ClearIcon fontSize="md" />
       */
     var clearIcon: js.UndefOr[ReactElement] = js.undefined
     
@@ -113,6 +113,7 @@ object autocompleteAutocompletePropsMod {
     /**
       * If `true`, the `input` will indicate an error.
       * The prop defaults to the value (`false`) inherited from the parent FormControl component.
+      * @default false
       */
     var error: js.UndefOr[Boolean] = js.undefined
     
@@ -125,11 +126,11 @@ object autocompleteAutocompletePropsMod {
     /**
       * The label to display when the tags are truncated (`limitTags`).
       *
-      * @param {number} more The number of truncated tags.
+      * @param {string | number} more The number of truncated tags.
       * @returns {ReactNode}
-      * @default (more) => `+${more}`
+      * @default (more: string | number) => `+${more}`
       */
-    var getLimitTagsText: js.UndefOr[js.Function1[/* more */ Double, ReactElement]] = js.undefined
+    var getLimitTagsText: js.UndefOr[js.Function1[/* more */ String | Double, ReactElement]] = js.undefined
     
     /**
       * The maximum number of tags that will be visible when not focused.
@@ -250,7 +251,7 @@ object autocompleteAutocompletePropsMod {
     var sx: js.UndefOr[SxProps] = js.undefined
     
     /**
-      * The variant to use.
+      * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
       * @default 'outlined'
       */
     var variant: js.UndefOr[OverridableStringUnion[VariantProp, AutocompletePropsVariantOverrides]] = js.undefined
@@ -297,7 +298,7 @@ object autocompleteAutocompletePropsMod {
       
       inline def setForcePopupIconUndefined: Self = StObject.set(x, "forcePopupIcon", js.undefined)
       
-      inline def setGetLimitTagsText(value: /* more */ Double => ReactElement): Self = StObject.set(x, "getLimitTagsText", js.Any.fromFunction1(value))
+      inline def setGetLimitTagsText(value: /* more */ String | Double => ReactElement): Self = StObject.set(x, "getLimitTagsText", js.Any.fromFunction1(value))
       
       inline def setGetLimitTagsTextUndefined: Self = StObject.set(x, "getLimitTagsText", js.undefined)
       
@@ -377,9 +378,8 @@ object autocompleteAutocompletePropsMod {
     }
   }
   
-  trait AutocompleteOwnerState[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */]
-    extends StObject
-       with AutocompleteOwnProps[T, Multiple, DisableClearable, FreeSolo] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped std.Omit<@mui/joy.@mui/joy/Autocomplete/AutocompleteProps.AutocompleteOwnProps<T, Multiple, DisableClearable, FreeSolo>, 'color'> & @mui/joy.anon.61<@mui/joy.@mui/joy/Autocomplete/AutocompleteProps.AutocompleteOwnProps<T, Multiple, DisableClearable, FreeSolo>> extends std.Function ? std.Omit<@mui/joy.@mui/joy/Autocomplete/AutocompleteProps.AutocompleteOwnProps<T, Multiple, DisableClearable, FreeSolo>, 'color'> & @mui/joy.anon.61<@mui/joy.@mui/joy/Autocomplete/AutocompleteProps.AutocompleteOwnProps<T, Multiple, DisableClearable, FreeSolo>> : {[ K in keyof std.Omit<@mui/joy.@mui/joy/Autocomplete/AutocompleteProps.AutocompleteOwnProps<T, Multiple, DisableClearable, FreeSolo>, 'color'> & @mui/joy.anon.61<@mui/joy.@mui/joy/Autocomplete/AutocompleteProps.AutocompleteOwnProps<T, Multiple, DisableClearable, FreeSolo>> ]: std.Omit<@mui/joy.@mui/joy/Autocomplete/AutocompleteProps.AutocompleteOwnProps<T, Multiple, DisableClearable, FreeSolo>, 'color'> & @mui/joy.anon.61<@mui/joy.@mui/joy/Autocomplete/AutocompleteProps.AutocompleteOwnProps<T, Multiple, DisableClearable, FreeSolo>>[K]} */ trait AutocompleteOwnerState[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] extends StObject {
     
     var focused: js.UndefOr[Boolean] = js.undefined
     
@@ -395,8 +395,8 @@ object autocompleteAutocompletePropsMod {
   }
   object AutocompleteOwnerState {
     
-    inline def apply[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](options: js.Array[T]): AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo] = {
-      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    inline def apply[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](): AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo]]
     }
     
@@ -564,6 +564,9 @@ object autocompleteAutocompletePropsMod {
       * If `true`, the selected option becomes the value of the input
       * when the Autocomplete loses focus unless the user chooses
       * a different option or changes the character string in the input.
+      *
+      * When using `freeSolo` mode, the typed value will be the input value
+      * if the Autocomplete loses focus without highlighting an option.
       * @default false
       */
     var autoSelect: js.UndefOr[Boolean] = js.undefined
@@ -583,7 +586,7 @@ object autocompleteAutocompletePropsMod {
     
     /**
       * The icon to display in place of the default clear icon.
-      * @default <ClearIcon fontSize="small" />
+      * @default <ClearIcon fontSize="md" />
       */
     var clearIcon: js.UndefOr[ReactElement] = js.undefined
     
@@ -628,6 +631,8 @@ object autocompleteAutocompletePropsMod {
       * The component name that is using this hook. Used for warnings.
       */
     var componentName: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
@@ -687,6 +692,7 @@ object autocompleteAutocompletePropsMod {
     /**
       * If `true`, the `input` will indicate an error.
       * The prop defaults to the value (`false`) inherited from the parent FormControl component.
+      * @default false
       */
     var error: js.UndefOr[Boolean] = js.undefined
     
@@ -722,11 +728,11 @@ object autocompleteAutocompletePropsMod {
     /**
       * The label to display when the tags are truncated (`limitTags`).
       *
-      * @param {number} more The number of truncated tags.
+      * @param {string | number} more The number of truncated tags.
       * @returns {ReactNode}
-      * @default (more) => `+${more}`
+      * @default (more: string | number) => `+${more}`
       */
-    var getLimitTagsText: js.UndefOr[js.Function1[/* more */ Double, ReactElement]] = js.undefined
+    var getLimitTagsText: js.UndefOr[js.Function1[/* more */ String | Double, ReactElement]] = js.undefined
     
     /**
       * Used to determine the disabled state for a given option.
@@ -957,7 +963,7 @@ object autocompleteAutocompletePropsMod {
       *
       * @param {React.SyntheticEvent} event The event source of the callback.
       * @param {T} option The highlighted option.
-      * @param {string} reason Can be: `"keyboard"`, `"auto"`, `"mouse"`.
+      * @param {string} reason Can be: `"keyboard"`, `"auto"`, `"mouse"`, `"touch"`.
       */
     var onHighlightChange: js.UndefOr[
         js.Function3[
@@ -1135,6 +1141,8 @@ object autocompleteAutocompletePropsMod {
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     /**
       * Render the group.
       *
@@ -1187,6 +1195,8 @@ object autocompleteAutocompletePropsMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
@@ -1206,9 +1216,9 @@ object autocompleteAutocompletePropsMod {
     
     var slot: js.UndefOr[String] = js.undefined
     
-    var slotProps: js.UndefOr[LimitTag] = js.undefined
+    var slotProps: js.UndefOr[Input] = js.undefined
     
-    var slots: js.UndefOr[Input] = js.undefined
+    var slots: js.UndefOr[PartialAutocompleteSlots] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
@@ -1265,7 +1275,7 @@ object autocompleteAutocompletePropsMod {
     var value: js.UndefOr[AutocompleteValue[T, Multiple, DisableClearable, FreeSolo]] = js.undefined
     
     /**
-      * The variant to use.
+      * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
       * @default 'outlined'
       */
     var variant: js.UndefOr[OverridableStringUnion[VariantProp, AutocompletePropsVariantOverrides]] = js.undefined
@@ -1548,9 +1558,13 @@ object autocompleteAutocompletePropsMod {
       
       inline def setComponentNameUndefined: Self = StObject.set(x, "componentName", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1626,7 +1640,7 @@ object autocompleteAutocompletePropsMod {
       
       inline def setFreeSoloUndefined: Self = StObject.set(x, "freeSolo", js.undefined)
       
-      inline def setGetLimitTagsText(value: /* more */ Double => ReactElement): Self = StObject.set(x, "getLimitTagsText", js.Any.fromFunction1(value))
+      inline def setGetLimitTagsText(value: /* more */ String | Double => ReactElement): Self = StObject.set(x, "getLimitTagsText", js.Any.fromFunction1(value))
       
       inline def setGetLimitTagsTextUndefined: Self = StObject.set(x, "getLimitTagsText", js.undefined)
       
@@ -2112,6 +2126,10 @@ object autocompleteAutocompletePropsMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRenderGroup(value: /* params */ AutocompleteRenderGroupParams => ReactElement): Self = StObject.set(x, "renderGroup", js.Any.fromFunction1(value))
       
       inline def setRenderGroupUndefined: Self = StObject.set(x, "renderGroup", js.undefined)
@@ -2140,6 +2158,10 @@ object autocompleteAutocompletePropsMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -2158,13 +2180,13 @@ object autocompleteAutocompletePropsMod {
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
-      inline def setSlotProps(value: LimitTag): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      inline def setSlotProps(value: Input): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
       
       inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
       inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
-      inline def setSlots(value: Input): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: PartialAutocompleteSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
@@ -2336,5 +2358,128 @@ object autocompleteAutocompletePropsMod {
   }
   type AutocompleteSlot = "root" | "wrapper" | "input" | "startDecorator" | "endDecorator" | "clearIndicator" | "popupIndicator" | "listbox" | "option" | "loading" | "noOptions" | "limitTag"
   
-  type AutocompleteSlotsAndSlotProps = CreateSlotsAndSlotProps[AutocompleteSlot, ClearIndicator]
+  trait AutocompleteSlots extends StObject {
+    
+    /**
+      * The component that renders the clear indicator.
+      * @default 'button'
+      */
+    var clearIndicator: ReactElement
+    
+    /**
+      * The component that renders the end decorator.
+      * @default 'span'
+      */
+    var endDecorator: ReactElement
+    
+    /**
+      * The component that renders the input.
+      * @default 'input'
+      */
+    var input: ReactElement
+    
+    /**
+      * The component that renders the limit tag.
+      * @default 'span'
+      */
+    var limitTag: ReactElement
+    
+    /**
+      * The component that renders the listbox.
+      * @default 'ul'
+      */
+    var listbox: ReactElement
+    
+    /**
+      * The component that renders the loading.
+      * @default 'li'
+      */
+    var loading: ReactElement
+    
+    /**
+      * The component that renders the no-options.
+      * @default 'li'
+      */
+    var noOptions: ReactElement
+    
+    /**
+      * The component that renders the option.
+      * @default 'li'
+      */
+    var option: ReactElement
+    
+    /**
+      * The component that renders the popup indicator.
+      * @default 'button'
+      */
+    var popupIndicator: ReactElement
+    
+    /**
+      * The component that renders the root.
+      * @default 'div'
+      */
+    var root: ReactElement
+    
+    /**
+      * The component that renders the start decorator.
+      * @default 'span'
+      */
+    var startDecorator: ReactElement
+    
+    /**
+      * The component that renders the wrapper.
+      * @default 'div'
+      */
+    var wrapper: ReactElement
+  }
+  object AutocompleteSlots {
+    
+    inline def apply(
+      clearIndicator: ReactElement,
+      endDecorator: ReactElement,
+      input: ReactElement,
+      limitTag: ReactElement,
+      listbox: ReactElement,
+      loading: ReactElement,
+      noOptions: ReactElement,
+      option: ReactElement,
+      popupIndicator: ReactElement,
+      root: ReactElement,
+      startDecorator: ReactElement,
+      wrapper: ReactElement
+    ): AutocompleteSlots = {
+      val __obj = js.Dynamic.literal(clearIndicator = clearIndicator.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], limitTag = limitTag.asInstanceOf[js.Any], listbox = listbox.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], noOptions = noOptions.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], popupIndicator = popupIndicator.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AutocompleteSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteSlots] (val x: Self) extends AnyVal {
+      
+      inline def setClearIndicator(value: ReactElement): Self = StObject.set(x, "clearIndicator", value.asInstanceOf[js.Any])
+      
+      inline def setEndDecorator(value: ReactElement): Self = StObject.set(x, "endDecorator", value.asInstanceOf[js.Any])
+      
+      inline def setInput(value: ReactElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      inline def setLimitTag(value: ReactElement): Self = StObject.set(x, "limitTag", value.asInstanceOf[js.Any])
+      
+      inline def setListbox(value: ReactElement): Self = StObject.set(x, "listbox", value.asInstanceOf[js.Any])
+      
+      inline def setLoading(value: ReactElement): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      
+      inline def setNoOptions(value: ReactElement): Self = StObject.set(x, "noOptions", value.asInstanceOf[js.Any])
+      
+      inline def setOption(value: ReactElement): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+      
+      inline def setPopupIndicator(value: ReactElement): Self = StObject.set(x, "popupIndicator", value.asInstanceOf[js.Any])
+      
+      inline def setRoot(value: ReactElement): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setStartDecorator(value: ReactElement): Self = StObject.set(x, "startDecorator", value.asInstanceOf[js.Any])
+      
+      inline def setWrapper(value: ReactElement): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type AutocompleteSlotsAndSlotProps = CreateSlotsAndSlotProps[AutocompleteSlots, ClearIndicator]
 }

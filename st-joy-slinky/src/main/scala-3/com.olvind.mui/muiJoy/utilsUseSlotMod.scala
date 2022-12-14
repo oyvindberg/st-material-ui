@@ -1,9 +1,9 @@
 package com.olvind.mui.muiJoy
 
 import com.olvind.mui.muiJoy.anon.ClassNameOwnerState
-import com.olvind.mui.muiJoy.anon.Component
+import com.olvind.mui.muiJoy.anon.ComponentRef
 import com.olvind.mui.muiJoy.anon.GetSlotOwnerState
-import com.olvind.mui.muiJoy.anon.Style
+import com.olvind.mui.muiJoy.anon.Ref
 import com.olvind.mui.react.mod.EventHandler
 import com.olvind.mui.std.Exclude
 import com.olvind.mui.std.Record
@@ -19,7 +19,7 @@ object utilsUseSlotMod {
   val ^ : js.Any = js.native
   
   @scala.annotation.targetName("default_root")
-  inline def default[T /* <: String */, ElementType /* <: ReactElement */, SlotProps, OwnerState /* <: js.Object */, ExternalSlotProps /* <: Component */, ExternalForwardedProps /* <: com.olvind.mui.muiJoy.anon.SlotProps[T, ExternalSlotProps, OwnerState] */, AdditionalProps, SlotOwnerState /* <: js.Object */](
+  inline def default[T /* <: String */, ElementType /* <: ReactElement */, SlotProps, OwnerState /* <: js.Object */, ExternalSlotProps /* <: ComponentRef */, ExternalForwardedProps /* <: com.olvind.mui.muiJoy.anon.SlotProps[T, ExternalSlotProps, OwnerState] */, AdditionalProps, SlotOwnerState /* <: js.Object */](
     /**
     * The slot's name. All Joy UI components should have `root` slot.
     *
@@ -67,5 +67,5 @@ object utilsUseSlotMod {
   @js.native
   trait ExtractComponentProps[P] extends StObject
   
-  type WithCommonProps[T] = T & Style
+  type WithCommonProps[T] = T & Ref
 }

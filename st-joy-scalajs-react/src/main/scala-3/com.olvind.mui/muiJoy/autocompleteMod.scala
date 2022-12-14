@@ -1,7 +1,7 @@
 package com.olvind.mui.muiJoy
 
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.CreateFilterOptionsConfig
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.FilterOptionsState
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.CreateFilterOptionsConfig
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.FilterOptionsState
 import com.olvind.mui.muiJoy.autocompleteAutocompleteClassesMod.AutocompleteClasses
 import com.olvind.mui.muiJoy.autocompleteAutocompleteMod.AutocompleteComponent
 import org.scalablytyped.runtime.StObject
@@ -14,6 +14,16 @@ object autocompleteMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Autocomplete](https://mui.com/joy-ui/react-autocomplete/)
+    *
+    * API:
+    *
+    * - [Autocomplete API](https://mui.com/joy-ui/api/autocomplete/)
+    */
   @JSImport("@mui/joy/Autocomplete", JSImport.Default)
   @js.native
   val default: AutocompleteComponent = js.native

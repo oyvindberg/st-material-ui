@@ -2,7 +2,7 @@ package com.olvind.mui.muiJoy
 
 import com.olvind.mui.muiJoy.anon.MaxRows
 import com.olvind.mui.muiJoy.anon.PickTextareaHTMLAttributesHTMLTextAreaEl
-import com.olvind.mui.muiJoy.anon.RootStartDecoratorTextarea
+import com.olvind.mui.muiJoy.anon.StartDecoratorTextarea
 import com.olvind.mui.muiJoy.utilsTypesMod.CreateSlotsAndSlotProps
 import com.olvind.mui.muiTypes.mod.OverrideProps
 import slinky.core.facade.ReactElement
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object textareaTextareaPropsMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped std.Omit<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo, 'color'> & @mui/joy.anon.62<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo> extends std.Function ? std.Omit<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo, 'color'> & @mui/joy.anon.62<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo> : {[ K in keyof std.Omit<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo, 'color'> & @mui/joy.anon.62<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo> ]: std.Omit<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo, 'color'> & @mui/joy.anon.62<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo>[K]} */ trait TextareaOwnerState extends StObject {
+  - Dropped std.Omit<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo, 'color'> & @mui/joy.anon.61<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo> extends std.Function ? std.Omit<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo, 'color'> & @mui/joy.anon.61<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo> : {[ K in keyof std.Omit<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo, 'color'> & @mui/joy.anon.61<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo> ]: std.Omit<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo, 'color'> & @mui/joy.anon.61<@mui/joy.anon.TextareaPropsTextareaTypeMapdivdefaultCo>[K]} */ trait TextareaOwnerState extends StObject {
     
     /**
       * If `true`, the input is focused.
@@ -54,7 +54,58 @@ object textareaTextareaPropsMod {
   }
   type TextareaSlot = "root" | "textarea" | "startDecorator" | "endDecorator"
   
-  type TextareaSlotsAndSlotProps = CreateSlotsAndSlotProps[TextareaSlot, RootStartDecoratorTextarea]
+  trait TextareaSlots extends StObject {
+    
+    /**
+      * The component that renders the end decorator.
+      * @default 'div'
+      */
+    var endDecorator: ReactElement
+    
+    /**
+      * The component that renders the root.
+      * @default 'div'
+      */
+    var root: ReactElement
+    
+    /**
+      * The component that renders the start decorator.
+      * @default 'div'
+      */
+    var startDecorator: ReactElement
+    
+    /**
+      * The component that renders the textarea.
+      * @default 'textarea'
+      */
+    var textarea: ReactElement
+  }
+  object TextareaSlots {
+    
+    inline def apply(
+      endDecorator: ReactElement,
+      root: ReactElement,
+      startDecorator: ReactElement,
+      textarea: ReactElement
+    ): TextareaSlots = {
+      val __obj = js.Dynamic.literal(endDecorator = endDecorator.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TextareaSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaSlots] (val x: Self) extends AnyVal {
+      
+      inline def setEndDecorator(value: ReactElement): Self = StObject.set(x, "endDecorator", value.asInstanceOf[js.Any])
+      
+      inline def setRoot(value: ReactElement): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setStartDecorator(value: ReactElement): Self = StObject.set(x, "startDecorator", value.asInstanceOf[js.Any])
+      
+      inline def setTextarea(value: ReactElement): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type TextareaSlotsAndSlotProps = CreateSlotsAndSlotProps[TextareaSlots, StartDecoratorTextarea]
   
   trait TextareaTypeMap[P, D /* <: ReactElement */] extends StObject {
     

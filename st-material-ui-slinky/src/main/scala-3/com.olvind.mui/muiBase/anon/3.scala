@@ -1,7 +1,7 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.formControlUnstyledFormControlUnstyledDottypesMod.FormControlUnstyledComponentsPropsOverrides
-import com.olvind.mui.muiBase.formControlUnstyledFormControlUnstyledDottypesMod.FormControlUnstyledOwnerState
+import com.olvind.mui.muiBase.menuItemUnstyledMenuItemUnstyledDottypesMod.MenuItemUnstyledOwnerState
+import com.olvind.mui.muiBase.menuItemUnstyledMenuItemUnstyledDottypesMod.MenuItemUnstyledRootSlotPropsOverrides
 import com.olvind.mui.muiBase.utilsTypesMod.SlotComponentProps
 import com.olvind.mui.react.mod.ComponentPropsWithRef
 import com.olvind.mui.std.Partial
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `3` extends StObject {
   
   var root: js.UndefOr[
-    SlotComponentProps["div", FormControlUnstyledComponentsPropsOverrides, FormControlUnstyledOwnerState]
+    SlotComponentProps["li", MenuItemUnstyledRootSlotPropsOverrides, MenuItemUnstyledOwnerState]
   ] = js.undefined
 }
 object `3` {
@@ -26,11 +26,11 @@ object `3` {
   implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
     
     inline def setRoot(
-      value: SlotComponentProps["div", FormControlUnstyledComponentsPropsOverrides, FormControlUnstyledOwnerState]
+      value: SlotComponentProps["li", MenuItemUnstyledRootSlotPropsOverrides, MenuItemUnstyledOwnerState]
     ): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootFunction1(
-      value: FormControlUnstyledOwnerState => Partial[ComponentPropsWithRef["div"]] & FormControlUnstyledComponentsPropsOverrides
+      value: MenuItemUnstyledOwnerState => Partial[ComponentPropsWithRef["li"]] & MenuItemUnstyledRootSlotPropsOverrides
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)

@@ -26,6 +26,8 @@ object nativeSelectNativeSelectInputMod extends Shortcut {
     
     var IconComponent: ReactElement
     
+    var error: js.UndefOr[Boolean] = js.undefined
+    
     var inputRef: js.UndefOr[Ref[HTMLSelectElement]] = js.undefined
     
     var sx: js.UndefOr[SxProps[Theme]] = js.undefined
@@ -41,6 +43,10 @@ object nativeSelectNativeSelectInputMod extends Shortcut {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: NativeSelectInputProps] (val x: Self) extends AnyVal {
+      
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setIconComponent(value: ReactElement): Self = StObject.set(x, "IconComponent", value.asInstanceOf[js.Any])
       

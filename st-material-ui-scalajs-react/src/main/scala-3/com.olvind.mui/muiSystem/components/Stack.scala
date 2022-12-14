@@ -272,6 +272,8 @@ object Stack {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def bgcolor(
@@ -562,6 +564,8 @@ object Stack {
           (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]]) | (ColumnGap[Double | String]) | (NonNullable[js.UndefOr[ColumnGap[Double | String]]]) | Null
         ])*
     ): this.type = set("columnGap", js.Array(value*))
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -2398,9 +2402,13 @@ object Stack {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def right(
       value: (ResponsiveStyleValue[
@@ -2566,6 +2574,8 @@ object Stack {
     inline def typographyVarargs(value: (js.UndefOr[String] | Null)*): this.type = set("typography", js.Array(value*))
     
     inline def unselectable(value: "on" | "off"): this.type = set("unselectable", value.asInstanceOf[js.Any])
+    
+    inline def useFlexGap(value: Boolean): this.type = set("useFlexGap", value.asInstanceOf[js.Any])
     
     inline def visibility(
       value: (ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]) | (js.Function1[

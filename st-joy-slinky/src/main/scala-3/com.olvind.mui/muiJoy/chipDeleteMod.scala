@@ -13,6 +13,16 @@ object chipDeleteMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Chip](https://mui.com/joy-ui/react-chip/)
+    *
+    * API:
+    *
+    * - [ChipDelete API](https://mui.com/joy-ui/api/chip-delete/)
+    */
   @JSImport("@mui/joy/ChipDelete", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsChipDeleteTypeMapbu, Element | Null] = js.native

@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * has changed.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usecallback
+  * @see https://react.dev/reference/react/useCallback
   */
 // A specific function type would not trigger implicit any.
 // See https://github.com/DefinitelyTyped/DefinitelyTyped/issues/52873#issuecomment-845806435 for a comparison between `Function` and more specific types.
@@ -49,7 +49,7 @@ inline def useCallback[T /* <: js.Function */](callback: T, deps: DependencyList
   * context value, as given by the nearest context provider for the given context.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usecontext
+  * @see https://react.dev/reference/react/useContext
   */
 inline def useContext[T](context: Context[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useContext")(context.asInstanceOf[js.Any]).asInstanceOf[T]
 
@@ -60,7 +60,7 @@ inline def useContext[T](context: Context[T]): T = ^.asInstanceOf[js.Dynamic].ap
   * It’s most valuable for custom hooks that are part of shared libraries.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usedebugvalue
+  * @see https://react.dev/reference/react/useDebugValue
   */
 // the name of the custom hook is itself derived from the function name at runtime:
 // it's just the function name without the "use" prefix.
@@ -76,7 +76,7 @@ inline def useDeferredValue[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDy
   * @param deps If present, effect will only activate if the values in the list change.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#useeffect
+  * @see https://react.dev/reference/react/useEffect
   */
 inline def useEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def useEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -91,7 +91,7 @@ inline def useId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useId")().
   * `useImperativeHandle` should be used with `React.forwardRef`.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#useimperativehandle
+  * @see https://react.dev/reference/react/useImperativeHandle
   */
 inline def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R], deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -112,7 +112,7 @@ inline def useInsertionEffect(effect: EffectCallback, deps: DependencyList): Uni
   * `componentDidMount` and `componentDidUpdate`.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#uselayouteffect
+  * @see https://react.dev/reference/react/useLayoutEffect
   */
 inline def useLayoutEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def useLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -121,7 +121,7 @@ inline def useLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit =
   * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usememo
+  * @see https://react.dev/reference/react/useMemo
   */
 // allow undefined, but don't make it optional as that is very likely a mistake
 inline def useMemo[T](factory: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useMemo")(factory.asInstanceOf[js.Any]).asInstanceOf[T]
@@ -135,7 +135,7 @@ inline def useMemo[T](factory: js.Function0[T], deps: DependencyList): T = (^.as
   * updates because you can pass `dispatch` down instead of callbacks.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+  * @see https://react.dev/reference/react/useReducer
   */
 // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
 // The Flow types do have an overload for 3-ary invocation with undefined initializer.
@@ -153,7 +153,7 @@ inline def useReducer[R /* <: Reducer[Any, Any] */](reducer: R, initialState: Re
   * updates because you can pass `dispatch` down instead of callbacks.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+  * @see https://react.dev/reference/react/useReducer
   */
 // overload where dispatch could accept 0 arguments.
 inline def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction]]
@@ -165,7 +165,7 @@ inline def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initiali
   * updates because you can pass `dispatch` down instead of callbacks.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+  * @see https://react.dev/reference/react/useReducer
   */
 // overload where dispatch could accept 0 arguments.
 // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
@@ -193,7 +193,7 @@ inline def useReducer[R /* <: ReducerWithoutAction[Any] */, I](
   * of the generic argument.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#useref
+  * @see https://react.dev/reference/react/useRef
   */
 inline def useRef[T](): RefHandle[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[RefHandle[T]]
 inline def useRef[T](initialValue: T): RefHandle[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")(initialValue.asInstanceOf[js.Any]).asInstanceOf[RefHandle[T]]
@@ -203,14 +203,14 @@ inline def useRef[T](initialValue: T): RefHandle[T] = ^.asInstanceOf[js.Dynamic]
   * Returns a stateful value, and a function to update it.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usestate
+  * @see https://react.dev/reference/react/useState
   */
 inline def useState[S](): js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")().asInstanceOf[js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]]]
 /**
   * Returns a stateful value, and a function to update it.
   *
   * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usestate
+  * @see https://react.dev/reference/react/useState
   */
 inline def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[S, Dispatch[SetStateAction[S]]]]
 inline def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[S, Dispatch[SetStateAction[S]]]]
@@ -315,7 +315,7 @@ type NativeKeyboardEvent = KeyboardEvent
 type PointerEventHandler[T] = EventHandler[ReactPointerEventFrom[T & Element]]
 
 /**
-  * {@link https://reactjs.org/docs/profiler.html#onrender-callback Profiler API}
+  * {@link https://react.dev/reference/react/Profiler#onrender-callback Profiler API}
   */
 type ProfilerOnRenderCallback = js.Function7[
 /* id */ String, 
@@ -334,10 +334,10 @@ type PropsWithChildren[P] = P & Children
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
   * TS definition: {{{
-  // Pick would not be sufficient for this. We'd like to avoid unnecessary mapping and need a distributive conditional to support unions.
+  // Omit would not be sufficient for this. We'd like to avoid unnecessary mapping and need a distributive conditional to support unions.
 // see: https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#distributive-conditional-types
 // https://github.com/Microsoft/TypeScript/issues/28339
-P extends any ? 'ref' extends keyof P ? std.Pick<P, std.Exclude<keyof P, 'ref'>> : P : P
+P extends any ? 'ref' extends keyof P ? std.Omit<P, 'ref'> : P : P
   }}}
   */
 type PropsWithoutRef[P] = P

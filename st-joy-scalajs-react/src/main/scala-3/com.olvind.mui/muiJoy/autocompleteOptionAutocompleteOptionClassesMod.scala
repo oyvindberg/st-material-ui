@@ -16,9 +16,12 @@ object autocompleteOptionAutocompleteOptionClassesMod {
   
   inline def getAutocompleteOptionUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutocompleteOptionUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type AutocompleteOptionClassKey = "root" | "focused" | "focusVisible" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "variantPlain" | "variantSoft" | "variantOutlined" | "variantSolid"
+  type AutocompleteOptionClassKey = "root" | "focused" | "focusVisible" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "colorContext" | "variantPlain" | "variantSoft" | "variantOutlined" | "variantSolid"
   
   trait AutocompleteOptionClasses extends StObject {
+    
+    /** Styles applied to the root element when color inversion is triggered. */
+    var colorContext: String
     
     /** Styles applied to the root element if `color="danger"`. */
     var colorDanger: String
@@ -62,6 +65,7 @@ object autocompleteOptionAutocompleteOptionClassesMod {
   object AutocompleteOptionClasses {
     
     inline def apply(
+      colorContext: String,
       colorDanger: String,
       colorInfo: String,
       colorNeutral: String,
@@ -76,12 +80,14 @@ object autocompleteOptionAutocompleteOptionClassesMod {
       variantSoft: String,
       variantSolid: String
     ): AutocompleteOptionClasses = {
-      val __obj = js.Dynamic.literal(colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(colorContext = colorContext.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutocompleteOptionClasses]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: AutocompleteOptionClasses] (val x: Self) extends AnyVal {
+      
+      inline def setColorContext(value: String): Self = StObject.set(x, "colorContext", value.asInstanceOf[js.Any])
       
       inline def setColorDanger(value: String): Self = StObject.set(x, "colorDanger", value.asInstanceOf[js.Any])
       

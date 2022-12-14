@@ -9,27 +9,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Input/InputProps.InputOwnerState>,   input :@mui/joy.@mui/joy/utils/types.SlotProps<'input', {}, @mui/joy.@mui/joy/Input/InputProps.InputOwnerState>,   startDecorator :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Input/InputProps.InputOwnerState>,   endDecorator :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Input/InputProps.InputOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Input/InputProps.InputOwnerState>,   input :@mui/joy.@mui/joy/utils/types.SlotProps<'input', {}, @mui/joy.@mui/joy/Input/InputProps.InputOwnerState>,   startDecorator :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Input/InputProps.InputOwnerState>,   endDecorator :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Input/InputProps.InputOwnerState>}[P]} */
 trait InputRoot extends StObject {
   
-  var endDecorator: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, InputOwnerState]
-  ] = js.undefined
+  var endDecorator: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, InputOwnerState]
   
-  var input: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, InputOwnerState]
-  ] = js.undefined
+  var input: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, InputOwnerState]
   
-  var root: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, InputOwnerState]] = js.undefined
+  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, InputOwnerState]
   
-  var startDecorator: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, InputOwnerState]
-  ] = js.undefined
+  var startDecorator: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, InputOwnerState]
 }
 object InputRoot {
   
-  inline def apply(): InputRoot = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    endDecorator: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, InputOwnerState],
+    input: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, InputOwnerState],
+    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, InputOwnerState],
+    startDecorator: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, InputOwnerState]
+  ): InputRoot = {
+    val __obj = js.Dynamic.literal(endDecorator = endDecorator.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputRoot]
   }
   
@@ -42,15 +40,11 @@ object InputRoot {
       value: InputOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "endDecorator", js.Any.fromFunction1(value))
     
-    inline def setEndDecoratorUndefined: Self = StObject.set(x, "endDecorator", js.undefined)
-    
     inline def setInput(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, InputOwnerState]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setInputFunction1(
       value: InputOwnerState => (Omit[ComponentPropsWithRef["input"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
-    
-    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, InputOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
@@ -58,14 +52,10 @@ object InputRoot {
       value: InputOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
-    
     inline def setStartDecorator(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, InputOwnerState]): Self = StObject.set(x, "startDecorator", value.asInstanceOf[js.Any])
     
     inline def setStartDecoratorFunction1(
       value: InputOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "startDecorator", js.Any.fromFunction1(value))
-    
-    inline def setStartDecoratorUndefined: Self = StObject.set(x, "startDecorator", js.undefined)
   }
 }

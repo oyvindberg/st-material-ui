@@ -38,6 +38,7 @@ import com.olvind.mui.muiMaterial.anon.IconPropsIconTypeMapspandefaultComponent
 import com.olvind.mui.muiMaterial.anon.ImageListItemPropsImageListItemTypeMapli
 import com.olvind.mui.muiMaterial.anon.ImageListPropsImageListTypeMapuldefaultC
 import com.olvind.mui.muiMaterial.anon.InputAdornmentPropsInputAdornmentTypeMap
+import com.olvind.mui.muiMaterial.anon.InputLabelPropsInputLabelTypeMaplabeldef
 import com.olvind.mui.muiMaterial.anon.LinkPropsLinkTypeMapadefaultComponent
 import com.olvind.mui.muiMaterial.anon.ListItemButtonPropsListItemButtonTypeMap
 import com.olvind.mui.muiMaterial.anon.ListItemPropsli
@@ -87,7 +88,6 @@ import com.olvind.mui.muiMaterial.formGroupFormGroupMod.FormGroupProps
 import com.olvind.mui.muiMaterial.imageListItemBarImageListItemBarMod.ImageListItemBarProps
 import com.olvind.mui.muiMaterial.inputBaseInputBaseMod.InputBaseProps
 import com.olvind.mui.muiMaterial.inputInputMod.InputProps
-import com.olvind.mui.muiMaterial.inputLabelInputLabelMod.InputLabelProps
 import com.olvind.mui.muiMaterial.linearProgressLinearProgressMod.LinearProgressProps
 import com.olvind.mui.muiMaterial.listItemAvatarListItemAvatarMod.ListItemAvatarProps
 import com.olvind.mui.muiMaterial.listItemIconListItemIconMod.ListItemIconProps
@@ -120,7 +120,7 @@ import com.olvind.mui.muiMaterial.tabsTabsMod.TabsProps
 import com.olvind.mui.muiMaterial.textFieldTextFieldMod.TextFieldProps
 import com.olvind.mui.muiMaterial.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps
 import com.olvind.mui.muiMaterial.tooltipTooltipMod.TooltipProps
-import com.olvind.mui.muiMaterial.useMediaQueryUseMediaQueryMod.Options
+import com.olvind.mui.muiMaterial.useMediaQueryUseMediaQueryMod.UseMediaQueryOptions
 import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -240,7 +240,7 @@ object stylesPropsMod {
     
     var MuiInputBase: InputBaseProps
     
-    var MuiInputLabel: InputLabelProps
+    var MuiInputLabel: InputLabelPropsInputLabelTypeMaplabeldef
     
     var MuiLinearProgress: LinearProgressProps
     
@@ -374,7 +374,7 @@ object stylesPropsMod {
     
     var MuiTypography: TypographyPropsTypographyTypeMapspandefa
     
-    var MuiUseMediaQuery: Options
+    var MuiUseMediaQuery: UseMediaQueryOptions
   }
   object ComponentsPropsList {
     
@@ -433,7 +433,7 @@ object stylesPropsMod {
       MuiInput: InputProps,
       MuiInputAdornment: InputAdornmentPropsInputAdornmentTypeMap,
       MuiInputBase: InputBaseProps,
-      MuiInputLabel: InputLabelProps,
+      MuiInputLabel: InputLabelPropsInputLabelTypeMaplabeldef,
       MuiLinearProgress: LinearProgressProps,
       MuiLink: LinkPropsLinkTypeMapadefaultComponent,
       MuiList: ListPropsListTypeMapuldefaultComponent,
@@ -503,7 +503,7 @@ object stylesPropsMod {
       MuiTooltip: TooltipProps,
       MuiTouchRipple: TouchRippleProps,
       MuiTypography: TypographyPropsTypographyTypeMapspandefa,
-      MuiUseMediaQuery: Options
+      MuiUseMediaQuery: UseMediaQueryOptions
     ): ComponentsPropsList = {
       val __obj = js.Dynamic.literal(MuiAccordion = MuiAccordion.asInstanceOf[js.Any], MuiAccordionActions = MuiAccordionActions.asInstanceOf[js.Any], MuiAccordionDetails = MuiAccordionDetails.asInstanceOf[js.Any], MuiAccordionSummary = MuiAccordionSummary.asInstanceOf[js.Any], MuiAlert = MuiAlert.asInstanceOf[js.Any], MuiAlertTitle = MuiAlertTitle.asInstanceOf[js.Any], MuiAppBar = MuiAppBar.asInstanceOf[js.Any], MuiAutocomplete = MuiAutocomplete.asInstanceOf[js.Any], MuiAvatar = MuiAvatar.asInstanceOf[js.Any], MuiAvatarGroup = MuiAvatarGroup.asInstanceOf[js.Any], MuiBackdrop = MuiBackdrop.asInstanceOf[js.Any], MuiBadge = MuiBadge.asInstanceOf[js.Any], MuiBottomNavigation = MuiBottomNavigation.asInstanceOf[js.Any], MuiBottomNavigationAction = MuiBottomNavigationAction.asInstanceOf[js.Any], MuiBreadcrumbs = MuiBreadcrumbs.asInstanceOf[js.Any], MuiButton = MuiButton.asInstanceOf[js.Any], MuiButtonBase = MuiButtonBase.asInstanceOf[js.Any], MuiButtonGroup = MuiButtonGroup.asInstanceOf[js.Any], MuiCard = MuiCard.asInstanceOf[js.Any], MuiCardActionArea = MuiCardActionArea.asInstanceOf[js.Any], MuiCardActions = MuiCardActions.asInstanceOf[js.Any], MuiCardContent = MuiCardContent.asInstanceOf[js.Any], MuiCardHeader = MuiCardHeader.asInstanceOf[js.Any], MuiCardMedia = MuiCardMedia.asInstanceOf[js.Any], MuiCheckbox = MuiCheckbox.asInstanceOf[js.Any], MuiChip = MuiChip.asInstanceOf[js.Any], MuiCircularProgress = MuiCircularProgress.asInstanceOf[js.Any], MuiCollapse = MuiCollapse.asInstanceOf[js.Any], MuiContainer = MuiContainer.asInstanceOf[js.Any], MuiCssBaseline = MuiCssBaseline.asInstanceOf[js.Any], MuiDialog = MuiDialog.asInstanceOf[js.Any], MuiDialogActions = MuiDialogActions.asInstanceOf[js.Any], MuiDialogContent = MuiDialogContent.asInstanceOf[js.Any], MuiDialogContentText = MuiDialogContentText.asInstanceOf[js.Any], MuiDialogTitle = MuiDialogTitle.asInstanceOf[js.Any], MuiDivider = MuiDivider.asInstanceOf[js.Any], MuiDrawer = MuiDrawer.asInstanceOf[js.Any], MuiFab = MuiFab.asInstanceOf[js.Any], MuiFilledInput = MuiFilledInput.asInstanceOf[js.Any], MuiFormControl = MuiFormControl.asInstanceOf[js.Any], MuiFormControlLabel = MuiFormControlLabel.asInstanceOf[js.Any], MuiFormGroup = MuiFormGroup.asInstanceOf[js.Any], MuiFormHelperText = MuiFormHelperText.asInstanceOf[js.Any], MuiFormLabel = MuiFormLabel.asInstanceOf[js.Any], MuiGrid = MuiGrid.asInstanceOf[js.Any], MuiGrid2 = MuiGrid2.asInstanceOf[js.Any], MuiIcon = MuiIcon.asInstanceOf[js.Any], MuiIconButton = MuiIconButton.asInstanceOf[js.Any], MuiImageList = MuiImageList.asInstanceOf[js.Any], MuiImageListItem = MuiImageListItem.asInstanceOf[js.Any], MuiImageListItemBar = MuiImageListItemBar.asInstanceOf[js.Any], MuiInput = MuiInput.asInstanceOf[js.Any], MuiInputAdornment = MuiInputAdornment.asInstanceOf[js.Any], MuiInputBase = MuiInputBase.asInstanceOf[js.Any], MuiInputLabel = MuiInputLabel.asInstanceOf[js.Any], MuiLinearProgress = MuiLinearProgress.asInstanceOf[js.Any], MuiLink = MuiLink.asInstanceOf[js.Any], MuiList = MuiList.asInstanceOf[js.Any], MuiListItem = MuiListItem.asInstanceOf[js.Any], MuiListItemAvatar = MuiListItemAvatar.asInstanceOf[js.Any], MuiListItemButton = MuiListItemButton.asInstanceOf[js.Any], MuiListItemIcon = MuiListItemIcon.asInstanceOf[js.Any], MuiListItemSecondaryAction = MuiListItemSecondaryAction.asInstanceOf[js.Any], MuiListItemText = MuiListItemText.asInstanceOf[js.Any], MuiListSubheader = MuiListSubheader.asInstanceOf[js.Any], MuiMenu = MuiMenu.asInstanceOf[js.Any], MuiMenuItem = MuiMenuItem.asInstanceOf[js.Any], MuiMenuList = MuiMenuList.asInstanceOf[js.Any], MuiMobileStepper = MuiMobileStepper.asInstanceOf[js.Any], MuiModal = MuiModal.asInstanceOf[js.Any], MuiNativeSelect = MuiNativeSelect.asInstanceOf[js.Any], MuiOutlinedInput = MuiOutlinedInput.asInstanceOf[js.Any], MuiPagination = MuiPagination.asInstanceOf[js.Any], MuiPaginationItem = MuiPaginationItem.asInstanceOf[js.Any], MuiPaper = MuiPaper.asInstanceOf[js.Any], MuiPopover = MuiPopover.asInstanceOf[js.Any], MuiPopper = MuiPopper.asInstanceOf[js.Any], MuiRadio = MuiRadio.asInstanceOf[js.Any], MuiRadioGroup = MuiRadioGroup.asInstanceOf[js.Any], MuiRating = MuiRating.asInstanceOf[js.Any], MuiScopedCssBaseline = MuiScopedCssBaseline.asInstanceOf[js.Any], MuiSelect = MuiSelect.asInstanceOf[js.Any], MuiSkeleton = MuiSkeleton.asInstanceOf[js.Any], MuiSlider = MuiSlider.asInstanceOf[js.Any], MuiSnackbar = MuiSnackbar.asInstanceOf[js.Any], MuiSnackbarContent = MuiSnackbarContent.asInstanceOf[js.Any], MuiSpeedDial = MuiSpeedDial.asInstanceOf[js.Any], MuiSpeedDialAction = MuiSpeedDialAction.asInstanceOf[js.Any], MuiSpeedDialIcon = MuiSpeedDialIcon.asInstanceOf[js.Any], MuiStack = MuiStack.asInstanceOf[js.Any], MuiStep = MuiStep.asInstanceOf[js.Any], MuiStepButton = MuiStepButton.asInstanceOf[js.Any], MuiStepConnector = MuiStepConnector.asInstanceOf[js.Any], MuiStepContent = MuiStepContent.asInstanceOf[js.Any], MuiStepIcon = MuiStepIcon.asInstanceOf[js.Any], MuiStepLabel = MuiStepLabel.asInstanceOf[js.Any], MuiStepper = MuiStepper.asInstanceOf[js.Any], MuiSvgIcon = MuiSvgIcon.asInstanceOf[js.Any], MuiSwipeableDrawer = MuiSwipeableDrawer.asInstanceOf[js.Any], MuiSwitch = MuiSwitch.asInstanceOf[js.Any], MuiTab = MuiTab.asInstanceOf[js.Any], MuiTable = MuiTable.asInstanceOf[js.Any], MuiTableBody = MuiTableBody.asInstanceOf[js.Any], MuiTableCell = MuiTableCell.asInstanceOf[js.Any], MuiTableContainer = MuiTableContainer.asInstanceOf[js.Any], MuiTableFooter = MuiTableFooter.asInstanceOf[js.Any], MuiTableHead = MuiTableHead.asInstanceOf[js.Any], MuiTablePagination = MuiTablePagination.asInstanceOf[js.Any], MuiTableRow = MuiTableRow.asInstanceOf[js.Any], MuiTableSortLabel = MuiTableSortLabel.asInstanceOf[js.Any], MuiTabs = MuiTabs.asInstanceOf[js.Any], MuiTextField = MuiTextField.asInstanceOf[js.Any], MuiToggleButton = MuiToggleButton.asInstanceOf[js.Any], MuiToggleButtonGroup = MuiToggleButtonGroup.asInstanceOf[js.Any], MuiToolbar = MuiToolbar.asInstanceOf[js.Any], MuiTooltip = MuiTooltip.asInstanceOf[js.Any], MuiTouchRipple = MuiTouchRipple.asInstanceOf[js.Any], MuiTypography = MuiTypography.asInstanceOf[js.Any], MuiUseMediaQuery = MuiUseMediaQuery.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentsPropsList]
@@ -620,7 +620,7 @@ object stylesPropsMod {
       
       inline def setMuiInputBase(value: InputBaseProps): Self = StObject.set(x, "MuiInputBase", value.asInstanceOf[js.Any])
       
-      inline def setMuiInputLabel(value: InputLabelProps): Self = StObject.set(x, "MuiInputLabel", value.asInstanceOf[js.Any])
+      inline def setMuiInputLabel(value: InputLabelPropsInputLabelTypeMaplabeldef): Self = StObject.set(x, "MuiInputLabel", value.asInstanceOf[js.Any])
       
       inline def setMuiLinearProgress(value: LinearProgressProps): Self = StObject.set(x, "MuiLinearProgress", value.asInstanceOf[js.Any])
       
@@ -756,7 +756,7 @@ object stylesPropsMod {
       
       inline def setMuiTypography(value: TypographyPropsTypographyTypeMapspandefa): Self = StObject.set(x, "MuiTypography", value.asInstanceOf[js.Any])
       
-      inline def setMuiUseMediaQuery(value: Options): Self = StObject.set(x, "MuiUseMediaQuery", value.asInstanceOf[js.Any])
+      inline def setMuiUseMediaQuery(value: UseMediaQueryOptions): Self = StObject.set(x, "MuiUseMediaQuery", value.asInstanceOf[js.Any])
     }
   }
 }

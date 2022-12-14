@@ -8,21 +8,26 @@ object modalUnstyledModalUnstyledClassesMod {
   
   trait ModalUnstyledClasses extends StObject {
     
-    /** Styles applied to the root element if the `Modal` has exited. */
+    /** Class name applied to the backdrop element. */
+    var backdrop: String
+    
+    /** Class name applied to the root element if the `Modal` has exited. */
     var hidden: String
     
-    /** Styles applied to the root element. */
+    /** Class name applied to the root element. */
     var root: String
   }
   object ModalUnstyledClasses {
     
-    inline def apply(hidden: String, root: String): ModalUnstyledClasses = {
-      val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    inline def apply(backdrop: String, hidden: String, root: String): ModalUnstyledClasses = {
+      val __obj = js.Dynamic.literal(backdrop = backdrop.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModalUnstyledClasses]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ModalUnstyledClasses] (val x: Self) extends AnyVal {
+      
+      inline def setBackdrop(value: String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
       inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

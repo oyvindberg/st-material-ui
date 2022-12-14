@@ -101,7 +101,7 @@ type NativeKeyboardEvent = KeyboardEvent
 type PointerEventHandler[T] = EventHandler[SyntheticPointerEvent[T]]
 
 /**
-  * {@link https://reactjs.org/docs/profiler.html#onrender-callback Profiler API}
+  * {@link https://react.dev/reference/react/Profiler#onrender-callback Profiler API}
   */
 type ProfilerOnRenderCallback = js.Function7[
 /* id */ String, 
@@ -120,10 +120,10 @@ type PropsWithChildren[P] = P & Children
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
   * TS definition: {{{
-  // Pick would not be sufficient for this. We'd like to avoid unnecessary mapping and need a distributive conditional to support unions.
+  // Omit would not be sufficient for this. We'd like to avoid unnecessary mapping and need a distributive conditional to support unions.
 // see: https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#distributive-conditional-types
 // https://github.com/Microsoft/TypeScript/issues/28339
-P extends any ? 'ref' extends keyof P ? std.Pick<P, std.Exclude<keyof P, 'ref'>> : P : P
+P extends any ? 'ref' extends keyof P ? std.Omit<P, 'ref'> : P : P
   }}}
   */
 type PropsWithoutRef[P] = P

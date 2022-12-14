@@ -1,22 +1,25 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiBase.sliderUnstyledSliderUnstyledDottypesMod.SliderValueLabelProps
-import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendSliderUnstyle
-import com.olvind.mui.muiMaterial.sliderSliderMod.SliderClasses_
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsSliderTypeMapspan
+import com.olvind.mui.muiMaterial.sliderSliderClassesMod.SliderClasses
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderMarkLabelProps
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderMarkProps
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderRailProps
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderRootProps
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderThumbProps
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderTrackProps
+import com.olvind.mui.muiMaterial.sliderSliderMod.SliderValueLabelProps
 import com.olvind.mui.react.mod.global.JSX.Element
-import org.scalablytyped.runtime.Shortcut
 import slinky.core.ReactComponentClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object sliderMod extends Shortcut {
+object sliderMod {
+  
+  @JSImport("@mui/material/Slider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     *
@@ -27,11 +30,10 @@ object sliderMod extends Shortcut {
     * API:
     *
     * - [Slider API](https://mui.com/material-ui/api/slider/)
-    * - inherits [SliderUnstyled API](https://mui.com/base/api/slider-unstyled/)
     */
   @JSImport("@mui/material/Slider", JSImport.Default)
   @js.native
-  val default: js.Function1[/* props */ DefaultComponentPropsExtendSliderUnstyle, Element | Null] = js.native
+  val default: js.Function1[/* props */ DefaultComponentPropsSliderTypeMapspan, Element] = js.native
   
   @JSImport("@mui/material/Slider", "SliderMark")
   @js.native
@@ -61,12 +63,9 @@ object sliderMod extends Shortcut {
   @js.native
   val SliderValueLabel: ReactComponentClass[SliderValueLabelProps] = js.native
   
+  inline def getSliderUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSliderUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("@mui/material/Slider", "sliderClasses")
   @js.native
-  val sliderClasses: SliderClasses_ = js.native
-  
-  type _To = js.Function1[/* props */ DefaultComponentPropsExtendSliderUnstyle, Element | Null]
-  
-  /* This means you don't have to write `default`, but can instead just say `sliderMod.foo` */
-  override def _to: js.Function1[/* props */ DefaultComponentPropsExtendSliderUnstyle, Element | Null] = default
+  val sliderClasses: SliderClasses = js.native
 }

@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sliderSliderMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Slider](https://mui.com/joy-ui/react-slider/)
+    *
+    * API:
+    *
+    * - [Slider API](https://mui.com/joy-ui/api/slider/)
+    */
   @JSImport("@mui/joy/Slider/Slider", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsSliderTypeMapspan, Element | Null] = js.native

@@ -13,6 +13,16 @@ object menuListMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Menu](https://mui.com/joy-ui/react-menu/)
+    *
+    * API:
+    *
+    * - [MenuList API](https://mui.com/joy-ui/api/menu-list/)
+    */
   @JSImport("@mui/joy/MenuList", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsMenuListTypeMapul, Element | Null] = js.native

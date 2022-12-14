@@ -1,0 +1,11 @@
+package com.olvind.mui.muiBase.components
+
+import com.olvind.mui.StBuildingComponent
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@scala.inline
+open class SharedBuilder_DefaultComponentProps_1147930024[TValue /* <: js.Object */, Multiple /* <: Boolean */] (val args: js.Array[Any])
+  extends AnyVal
+     with StBuildingComponent[scala.Nothing]

@@ -13,6 +13,16 @@ object sheetMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Sheet](https://mui.com/joy-ui/react-sheet/)
+    *
+    * API:
+    *
+    * - [Sheet API](https://mui.com/joy-ui/api/sheet/)
+    */
   @JSImport("@mui/joy/Sheet", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsSheetTypeMapdiv, Element | Null] = js.native

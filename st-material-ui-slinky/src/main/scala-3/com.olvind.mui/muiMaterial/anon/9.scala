@@ -1,28 +1,57 @@
 package com.olvind.mui.muiMaterial.anon
 
-import slinky.core.facade.ReactElement
+import com.olvind.mui.muiBase.utilsTypesMod.SlotComponentProps
+import com.olvind.mui.muiMaterial.backdropBackdropMod.BackdropTypeMap
+import com.olvind.mui.muiMaterial.modalModalMod.ModalComponentsPropsOverrides
+import com.olvind.mui.muiMaterial.modalModalMod.ModalOwnerState
+import com.olvind.mui.muiMaterial.overridableComponentMod.OverridableComponent
+import com.olvind.mui.react.mod.ComponentPropsWithRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `9`[P, D /* <: ReactElement */] extends StObject {
+trait `9` extends StObject {
   
-  var defaultComponent: D
+  var backdrop: js.UndefOr[
+    SlotComponentProps[
+      OverridableComponent[BackdropTypeMap[js.Object, "div"]], 
+      ModalComponentsPropsOverrides, 
+      ModalOwnerState
+    ]
+  ] = js.undefined
   
-  var props: P & DisableRipple
+  var root: js.UndefOr[SlotComponentProps["div", ModalComponentsPropsOverrides, ModalOwnerState]] = js.undefined
 }
 object `9` {
   
-  inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & DisableRipple): `9`[P, D] = {
-    val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`9`[P, D]]
+  inline def apply(): `9` = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`9`]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `9`[?, ?], P, D /* <: ReactElement */] (val x: Self & (`9`[P, D])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `9`] (val x: Self) extends AnyVal {
     
-    inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+    inline def setBackdrop(
+      value: SlotComponentProps[
+          OverridableComponent[BackdropTypeMap[js.Object, "div"]], 
+          ModalComponentsPropsOverrides, 
+          ModalOwnerState
+        ]
+    ): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & DisableRipple): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setBackdropFunction1(
+      value: ModalOwnerState => (com.olvind.mui.std.Partial[ComponentPropsWithRef[OverridableComponent[BackdropTypeMap[js.Object, "div"]]]]) & ModalComponentsPropsOverrides
+    ): Self = StObject.set(x, "backdrop", js.Any.fromFunction1(value))
+    
+    inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+    
+    inline def setRoot(value: SlotComponentProps["div", ModalComponentsPropsOverrides, ModalOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootFunction1(
+      value: ModalOwnerState => com.olvind.mui.std.Partial[ComponentPropsWithRef["div"]] & ModalComponentsPropsOverrides
+    ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -16,12 +16,15 @@ object selectSelectClassesMod {
   
   inline def getSelectUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type SelectClassKey = "root" | "button" | "indicator" | "startDecorator" | "endDecorator" | "popper" | "listbox" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid" | "sizeSm" | "sizeMd" | "sizeLg" | "focusVisible" | "disabled" | "expanded"
+  type SelectClassKey = "root" | "button" | "indicator" | "startDecorator" | "endDecorator" | "popper" | "listbox" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "colorContext" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid" | "sizeSm" | "sizeMd" | "sizeLg" | "focusVisible" | "disabled" | "expanded"
   
   trait SelectClasses extends StObject {
     
     /** Styles applied to the button slot. */
     var button: String
+    
+    /** Styles applied to the root element when color inversion is triggered. */
+    var colorContext: String
     
     /** Styles applied to the root slot if `color="danger"`. */
     var colorDanger: String
@@ -93,6 +96,7 @@ object selectSelectClassesMod {
     
     inline def apply(
       button: String,
+      colorContext: String,
       colorDanger: String,
       colorInfo: String,
       colorNeutral: String,
@@ -116,7 +120,7 @@ object selectSelectClassesMod {
       variantSoft: String,
       variantSolid: String
     ): SelectClasses = {
-      val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any], indicator = indicator.asInstanceOf[js.Any], listbox = listbox.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], colorContext = colorContext.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any], indicator = indicator.asInstanceOf[js.Any], listbox = listbox.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectClasses]
     }
     
@@ -124,6 +128,8 @@ object selectSelectClassesMod {
     implicit open class MutableBuilder[Self <: SelectClasses] (val x: Self) extends AnyVal {
       
       inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      inline def setColorContext(value: String): Self = StObject.set(x, "colorContext", value.asInstanceOf[js.Any])
       
       inline def setColorDanger(value: String): Self = StObject.set(x, "colorDanger", value.asInstanceOf[js.Any])
       

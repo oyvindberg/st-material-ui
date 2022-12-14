@@ -16,12 +16,15 @@ object nativeSelectNativeSelectClassesMod {
   
   inline def getNativeSelectUtilityClasses(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNativeSelectUtilityClasses")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type NativeSelectClassKey = "root" | "select" | "multiple" | "filled" | "outlined" | "standard" | "disabled" | "icon" | "iconOpen" | "iconFilled" | "iconOutlined" | "iconStandard" | "nativeInput"
+  type NativeSelectClassKey = "root" | "select" | "multiple" | "filled" | "outlined" | "standard" | "disabled" | "icon" | "iconOpen" | "iconFilled" | "iconOutlined" | "iconStandard" | "nativeInput" | "error"
   
   trait NativeSelectClasses extends StObject {
     
     /** State class applied to the select component `disabled` class. */
     var disabled: String
+    
+    /** State class applied to the select component `error` class. */
+    var error: String
     
     /** Styles applied to the select component if `variant="filled"`. */
     var filled: String
@@ -63,6 +66,7 @@ object nativeSelectNativeSelectClassesMod {
     
     inline def apply(
       disabled: String,
+      error: String,
       filled: String,
       icon: String,
       iconFilled: String,
@@ -76,7 +80,7 @@ object nativeSelectNativeSelectClassesMod {
       select: String,
       standard: String
     ): NativeSelectClasses = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], filled = filled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconFilled = iconFilled.asInstanceOf[js.Any], iconOpen = iconOpen.asInstanceOf[js.Any], iconOutlined = iconOutlined.asInstanceOf[js.Any], iconStandard = iconStandard.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], nativeInput = nativeInput.asInstanceOf[js.Any], outlined = outlined.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], filled = filled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconFilled = iconFilled.asInstanceOf[js.Any], iconOpen = iconOpen.asInstanceOf[js.Any], iconOutlined = iconOutlined.asInstanceOf[js.Any], iconStandard = iconStandard.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], nativeInput = nativeInput.asInstanceOf[js.Any], outlined = outlined.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any])
       __obj.asInstanceOf[NativeSelectClasses]
     }
     
@@ -84,6 +88,8 @@ object nativeSelectNativeSelectClassesMod {
     implicit open class MutableBuilder[Self <: NativeSelectClasses] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setFilled(value: String): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
       

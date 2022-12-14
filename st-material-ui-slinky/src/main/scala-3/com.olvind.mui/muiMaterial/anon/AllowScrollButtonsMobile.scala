@@ -117,6 +117,19 @@ trait AllowScrollButtonsMobile extends StObject {
   var selectionFollowsFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The extra props for the slot components.
+    * You can override the existing props or add new ones.
+    * @default {}
+    */
+  var slotProps: js.UndefOr[EndScrollButtonIconStartScrollButtonIcon] = js.undefined
+  
+  /**
+    * The components used for each slot inside.
+    * @default {}
+    */
+  var slots: js.UndefOr[EndScrollButtonIcon] = js.undefined
+  
+  /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
   var sx: js.UndefOr[SxProps[Theme]] = js.undefined
@@ -219,6 +232,14 @@ object AllowScrollButtonsMobile {
     inline def setSelectionFollowsFocus(value: Boolean): Self = StObject.set(x, "selectionFollowsFocus", value.asInstanceOf[js.Any])
     
     inline def setSelectionFollowsFocusUndefined: Self = StObject.set(x, "selectionFollowsFocus", js.undefined)
+    
+    inline def setSlotProps(value: EndScrollButtonIconStartScrollButtonIcon): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    
+    inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
+    
+    inline def setSlots(value: EndScrollButtonIcon): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
     inline def setSx(value: SxProps[Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     

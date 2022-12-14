@@ -1,10 +1,10 @@
 package com.olvind.mui.muiJoy.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.anon.PartialSliderUnstyledClasses
-import com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark
+import com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark
 import com.olvind.mui.muiJoy.anon.DefaultComponentPropsSliderTypeMapspan
-import com.olvind.mui.muiJoy.anon.ValueLabel
+import com.olvind.mui.muiJoy.anon.PartialSliderSlots
+import com.olvind.mui.muiJoy.anon.PartialSliderUnstyledClasses
 import com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderPropsColorOverrides
 import com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderPropsSizeOverrides
 import com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderPropsVariantOverrides
@@ -157,6 +157,8 @@ object Slider {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
@@ -164,6 +166,8 @@ object Slider {
     inline def classes(value: PartialSliderUnstyledClasses): this.type = set("classes", value.asInstanceOf[js.Any])
     
     inline def color(value: OverridableStringUnion[ColorPaletteProp, SliderPropsColorOverrides]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -403,9 +407,13 @@ object Slider {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -417,9 +425,9 @@ object Slider {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: ValueLabel): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: com.olvind.mui.muiJoy.anon.Mark): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: com.olvind.mui.muiJoy.anon.Mark): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: PartialSliderSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

@@ -2,10 +2,10 @@ package com.olvind.mui.muiBase.components
 
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiBase.anon.DefaultComponentPropsPopperUnstyledTypeM
-import com.olvind.mui.muiBase.anon.Placement
-import com.olvind.mui.muiBase.anon.`1`
-import com.olvind.mui.muiBase.anon.`7`
-import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledMod.PopperPlacementType
+import com.olvind.mui.muiBase.anon.`5`
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperPlacementType
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperUnstyledChildrenProps
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperUnstyledSlots
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AriaRole
 import com.olvind.mui.react.mod.Booleanish
@@ -32,6 +32,7 @@ import japgolly.scalajs.react.facade.React.Element
 import japgolly.scalajs.react.facade.React.Node
 import japgolly.scalajs.react.vdom.VdomElement
 import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,14 +58,14 @@ object PopperUnstyled {
     inline def accessKey(value: String): this.type = set("accessKey", value.asInstanceOf[js.Any])
     
     inline def anchorEl(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ])
     ): this.type = set("anchorEl", value.asInstanceOf[js.Any])
     
     inline def anchorElCallbackTo(
       value: CallbackTo[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ]
     ): this.type = set("anchorEl", value.toJsFn)
     
@@ -172,11 +173,13 @@ object PopperUnstyled {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
-    inline def children(value: Node | (js.Function1[/* props */ Placement, Node])): this.type = set("children", value.asInstanceOf[js.Any])
+    inline def children(value: Node | (js.Function1[/* props */ PopperUnstyledChildrenProps, Node])): this.type = set("children", value.asInstanceOf[js.Any])
     
-    inline def childrenFunction1(value: /* props */ Placement => Node): this.type = set("children", js.Any.fromFunction1(value))
+    inline def childrenFunction1(value: /* props */ PopperUnstyledChildrenProps => Node): this.type = set("children", js.Any.fromFunction1(value))
     
     inline def childrenNull: this.type = set("children", null)
     
@@ -193,6 +196,8 @@ object PopperUnstyled {
     inline def containerCallbackTo(value: CallbackTo[org.scalajs.dom.Element | Null]): this.type = set("container", value.toJsFn)
     
     inline def containerNull: this.type = set("container", null)
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -406,6 +411,8 @@ object PopperUnstyled {
     
     inline def onWheel(value: ReactWheelEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
+    inline def ownerState(value: Any): this.type = set("ownerState", value.asInstanceOf[js.Any])
+    
     inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
     
     inline def placement(value: PopperPlacementType): this.type = set("placement", value.asInstanceOf[js.Any])
@@ -430,9 +437,13 @@ object PopperUnstyled {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -440,9 +451,9 @@ object PopperUnstyled {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: `7`): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: `5`): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: `1`): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: PopperUnstyledSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

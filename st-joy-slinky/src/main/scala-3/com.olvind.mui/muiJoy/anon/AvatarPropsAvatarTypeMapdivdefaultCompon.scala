@@ -51,7 +51,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarProps<@mui/joy.@mui/joy/Avatar/AvatarProps.AvatarTypeMap<{}, 'div'>['defaultComponent'], {  component :react.react.ElementType<any> | undefined}> */
-trait AvatarPropsAvatarTypeMapdivdefaultCompon[P] extends StObject {
+trait AvatarPropsAvatarTypeMapdivdefaultCompon extends StObject {
   
   var about: js.UndefOr[String] = js.undefined
   
@@ -165,6 +165,8 @@ trait AvatarPropsAvatarTypeMapdivdefaultCompon[P] extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   /**
@@ -182,6 +184,8 @@ trait AvatarPropsAvatarTypeMapdivdefaultCompon[P] extends StObject {
   var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, AvatarPropsColorOverrides]] = js.undefined
   
   var component: js.UndefOr[ReactElement] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -202,12 +206,6 @@ trait AvatarPropsAvatarTypeMapdivdefaultCompon[P] extends StObject {
   var hidden: js.UndefOr[Boolean] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
-  
-  /**
-    * [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attributes) applied to the `img` element if the component is used to display an image.
-    * It can be used to listen for the loading error event.
-    */
-  var imgProps: js.UndefOr[ImgHTMLAttributesHTMLImageElement] = js.undefined
   
   var inlist: js.UndefOr[Any] = js.undefined
   
@@ -401,9 +399,13 @@ trait AvatarPropsAvatarTypeMapdivdefaultCompon[P] extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -418,11 +420,9 @@ trait AvatarPropsAvatarTypeMapdivdefaultCompon[P] extends StObject {
   
   var slot: js.UndefOr[String] = js.undefined
   
-  var slotProps: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>,   img :@mui/joy.@mui/joy/utils/types.SlotProps<'img', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>,   fallback :@mui/joy.@mui/joy/utils/types.SlotProps<'svg', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>,   img :@mui/joy.@mui/joy/utils/types.SlotProps<'img', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>,   fallback :@mui/joy.@mui/joy/utils/types.SlotProps<'svg', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>}[P]} */ js.Any
-  ] = js.undefined
+  var slotProps: js.UndefOr[Fallback] = js.undefined
   
-  var slots: js.UndefOr[Fallback] = js.undefined
+  var slots: js.UndefOr[PartialAvatarSlots] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -459,7 +459,7 @@ trait AvatarPropsAvatarTypeMapdivdefaultCompon[P] extends StObject {
   var unselectable: js.UndefOr["on" | "off"] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'soft'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, AvatarPropsVariantOverrides]] = js.undefined
@@ -468,13 +468,13 @@ trait AvatarPropsAvatarTypeMapdivdefaultCompon[P] extends StObject {
 }
 object AvatarPropsAvatarTypeMapdivdefaultCompon {
   
-  inline def apply[P](): AvatarPropsAvatarTypeMapdivdefaultCompon[P] = {
+  inline def apply(): AvatarPropsAvatarTypeMapdivdefaultCompon = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AvatarPropsAvatarTypeMapdivdefaultCompon[P]]
+    __obj.asInstanceOf[AvatarPropsAvatarTypeMapdivdefaultCompon]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: AvatarPropsAvatarTypeMapdivdefaultCompon[?], P] (val x: Self & AvatarPropsAvatarTypeMapdivdefaultCompon[P]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: AvatarPropsAvatarTypeMapdivdefaultCompon] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     
@@ -690,6 +690,10 @@ object AvatarPropsAvatarTypeMapdivdefaultCompon {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -710,9 +714,13 @@ object AvatarPropsAvatarTypeMapdivdefaultCompon {
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -751,10 +759,6 @@ object AvatarPropsAvatarTypeMapdivdefaultCompon {
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
-    inline def setImgProps(value: ImgHTMLAttributesHTMLImageElement): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
-    
-    inline def setImgPropsUndefined: Self = StObject.set(x, "imgProps", js.undefined)
     
     inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
@@ -1148,6 +1152,10 @@ object AvatarPropsAvatarTypeMapdivdefaultCompon {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1155,6 +1163,10 @@ object AvatarPropsAvatarTypeMapdivdefaultCompon {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -1170,15 +1182,13 @@ object AvatarPropsAvatarTypeMapdivdefaultCompon {
     
     inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    inline def setSlotProps(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>,   img :@mui/joy.@mui/joy/utils/types.SlotProps<'img', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>,   fallback :@mui/joy.@mui/joy/utils/types.SlotProps<'svg', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>,   img :@mui/joy.@mui/joy/utils/types.SlotProps<'img', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>,   fallback :@mui/joy.@mui/joy/utils/types.SlotProps<'svg', {}, @mui/joy.@mui/joy/Avatar/AvatarProps.AvatarOwnerState>}[P]} */ js.Any
-    ): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: Fallback): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: Fallback): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: PartialAvatarSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     

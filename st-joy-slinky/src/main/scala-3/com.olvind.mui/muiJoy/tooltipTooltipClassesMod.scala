@@ -16,12 +16,15 @@ object tooltipTooltipClassesMod {
   
   inline def getTooltipUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTooltipUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type TooltipClassKey = "root" | "tooltipArrow" | "arrow" | "touch" | "placementLeft" | "placementRight" | "placementTop" | "placementBottom" | "colorPrimary" | "colorDanger" | "colorInfo" | "colorNeutral" | "colorSuccess" | "colorWarning" | "sizeSm" | "sizeMd" | "sizeLg" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid"
+  type TooltipClassKey = "root" | "tooltipArrow" | "arrow" | "touch" | "placementLeft" | "placementRight" | "placementTop" | "placementBottom" | "colorPrimary" | "colorDanger" | "colorInfo" | "colorNeutral" | "colorSuccess" | "colorWarning" | "colorContext" | "sizeSm" | "sizeMd" | "sizeLg" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid"
   
   trait TooltipClasses extends StObject {
     
     /** Styles applied to the arrow element. */
     var arrow: String
+    
+    /** Styles applied to the root element when color inversion is triggered. */
+    var colorContext: String
     
     /** Styles applied to the root element if `color="danger"`. */
     var colorDanger: String
@@ -87,6 +90,7 @@ object tooltipTooltipClassesMod {
     
     inline def apply(
       arrow: String,
+      colorContext: String,
       colorDanger: String,
       colorInfo: String,
       colorNeutral: String,
@@ -108,7 +112,7 @@ object tooltipTooltipClassesMod {
       variantSoft: String,
       variantSolid: String
     ): TooltipClasses = {
-      val __obj = js.Dynamic.literal(arrow = arrow.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], placementBottom = placementBottom.asInstanceOf[js.Any], placementLeft = placementLeft.asInstanceOf[js.Any], placementRight = placementRight.asInstanceOf[js.Any], placementTop = placementTop.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], tooltipArrow = tooltipArrow.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(arrow = arrow.asInstanceOf[js.Any], colorContext = colorContext.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], placementBottom = placementBottom.asInstanceOf[js.Any], placementLeft = placementLeft.asInstanceOf[js.Any], placementRight = placementRight.asInstanceOf[js.Any], placementTop = placementTop.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], tooltipArrow = tooltipArrow.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipClasses]
     }
     
@@ -116,6 +120,8 @@ object tooltipTooltipClassesMod {
     implicit open class MutableBuilder[Self <: TooltipClasses] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: String): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+      
+      inline def setColorContext(value: String): Self = StObject.set(x, "colorContext", value.asInstanceOf[js.Any])
       
       inline def setColorDanger(value: String): Self = StObject.set(x, "colorDanger", value.asInstanceOf[js.Any])
       

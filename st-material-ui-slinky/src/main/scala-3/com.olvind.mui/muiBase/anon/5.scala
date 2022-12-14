@@ -1,7 +1,7 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.menuItemUnstyledMenuItemUnstyledDottypesMod.MenuItemUnstyledComponentsPropsOverrides
-import com.olvind.mui.muiBase.menuItemUnstyledMenuItemUnstyledDottypesMod.MenuItemUnstyledOwnerState
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperUnstyledOwnerState
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperUnstyledRootSlotPropsOverrides
 import com.olvind.mui.muiBase.utilsTypesMod.SlotComponentProps
 import com.olvind.mui.react.mod.ComponentPropsWithRef
 import com.olvind.mui.std.Partial
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `5` extends StObject {
   
   var root: js.UndefOr[
-    SlotComponentProps["li", MenuItemUnstyledComponentsPropsOverrides, MenuItemUnstyledOwnerState]
+    SlotComponentProps["div", PopperUnstyledRootSlotPropsOverrides, PopperUnstyledOwnerState]
   ] = js.undefined
 }
 object `5` {
@@ -25,12 +25,10 @@ object `5` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `5`] (val x: Self) extends AnyVal {
     
-    inline def setRoot(
-      value: SlotComponentProps["li", MenuItemUnstyledComponentsPropsOverrides, MenuItemUnstyledOwnerState]
-    ): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SlotComponentProps["div", PopperUnstyledRootSlotPropsOverrides, PopperUnstyledOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootFunction1(
-      value: MenuItemUnstyledOwnerState => Partial[ComponentPropsWithRef["li"]] & MenuItemUnstyledComponentsPropsOverrides
+      value: PopperUnstyledOwnerState => Partial[ComponentPropsWithRef["div"]] & PopperUnstyledRootSlotPropsOverrides
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)

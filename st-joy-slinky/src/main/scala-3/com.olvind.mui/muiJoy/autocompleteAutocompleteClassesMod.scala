@@ -16,12 +16,15 @@ object autocompleteAutocompleteClassesMod {
   
   inline def getAutocompleteUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutocompleteUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type AutocompleteClassKey = "root" | "wrapper" | "input" | "startDecorator" | "endDecorator" | "formControl" | "focused" | "disabled" | "error" | "multiple" | "limitTag" | "hasPopupIcon" | "hasClearIcon" | "clearIndicator" | "popupIndicator" | "popupIndicatorOpen" | "listbox" | "option" | "loading" | "noOptions" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "sizeSm" | "sizeMd" | "sizeLg" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid"
+  type AutocompleteClassKey = "root" | "wrapper" | "input" | "startDecorator" | "endDecorator" | "formControl" | "focused" | "disabled" | "error" | "multiple" | "limitTag" | "hasPopupIcon" | "hasClearIcon" | "clearIndicator" | "popupIndicator" | "popupIndicatorOpen" | "listbox" | "option" | "loading" | "noOptions" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "colorContext" | "sizeSm" | "sizeMd" | "sizeLg" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid"
   
   trait AutocompleteClasses extends StObject {
     
     /** Styles applied to the clear indicator. */
     var clearIndicator: String
+    
+    /** Styles applied to the root element when color inversion is triggered. */
+    var colorContext: String
     
     /** Styles applied to the root element if `color="danger"`. */
     var colorDanger: String
@@ -123,6 +126,7 @@ object autocompleteAutocompleteClassesMod {
     
     inline def apply(
       clearIndicator: String,
+      colorContext: String,
       colorDanger: String,
       colorInfo: String,
       colorNeutral: String,
@@ -156,7 +160,7 @@ object autocompleteAutocompleteClassesMod {
       variantSolid: String,
       wrapper: String
     ): AutocompleteClasses = {
-      val __obj = js.Dynamic.literal(clearIndicator = clearIndicator.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], formControl = formControl.asInstanceOf[js.Any], hasClearIcon = hasClearIcon.asInstanceOf[js.Any], hasPopupIcon = hasPopupIcon.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], limitTag = limitTag.asInstanceOf[js.Any], listbox = listbox.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], noOptions = noOptions.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], popupIndicator = popupIndicator.asInstanceOf[js.Any], popupIndicatorOpen = popupIndicatorOpen.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(clearIndicator = clearIndicator.asInstanceOf[js.Any], colorContext = colorContext.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], formControl = formControl.asInstanceOf[js.Any], hasClearIcon = hasClearIcon.asInstanceOf[js.Any], hasPopupIcon = hasPopupIcon.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], limitTag = limitTag.asInstanceOf[js.Any], listbox = listbox.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], noOptions = noOptions.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], popupIndicator = popupIndicator.asInstanceOf[js.Any], popupIndicatorOpen = popupIndicatorOpen.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutocompleteClasses]
     }
     
@@ -164,6 +168,8 @@ object autocompleteAutocompleteClassesMod {
     implicit open class MutableBuilder[Self <: AutocompleteClasses] (val x: Self) extends AnyVal {
       
       inline def setClearIndicator(value: String): Self = StObject.set(x, "clearIndicator", value.asInstanceOf[js.Any])
+      
+      inline def setColorContext(value: String): Self = StObject.set(x, "colorContext", value.asInstanceOf[js.Any])
       
       inline def setColorDanger(value: String): Self = StObject.set(x, "colorDanger", value.asInstanceOf[js.Any])
       

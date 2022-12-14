@@ -2,8 +2,8 @@ package com.olvind.mui.muiJoy.components
 
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiJoy.anon.DefaultComponentPropsSwitchTypeMapdiv
-import com.olvind.mui.muiJoy.anon.StartDecoratorThumb
-import com.olvind.mui.muiJoy.anon.ThumbTrack
+import com.olvind.mui.muiJoy.anon.PartialSwitchSlots
+import com.olvind.mui.muiJoy.anon.Thumb
 import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme
@@ -160,6 +160,8 @@ object Switch {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
@@ -167,6 +169,8 @@ object Switch {
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
     inline def color(value: OverridableStringUnion[ColorPaletteProp, SwitchPropsColorOverrides]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -390,11 +394,15 @@ object Switch {
     
     inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def required(value: Boolean): this.type = set("required", value.asInstanceOf[js.Any])
     
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -404,9 +412,9 @@ object Switch {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: ThumbTrack): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: Thumb): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: StartDecoratorThumb): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: PartialSwitchSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

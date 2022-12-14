@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.ChildrenClasses
+import com.olvind.mui.muiMaterial.anon.ChildrenClassesSx
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsDialogTitleTypeMapT
 import com.olvind.mui.muiMaterial.anon.OmitTypographyTypeMapspanpropsclasses
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
@@ -33,11 +33,11 @@ object dialogTitleDialogTitleMod extends Shortcut {
     
     var defaultComponent: D
     
-    var props: P & ChildrenClasses & OmitTypographyTypeMapspanpropsclasses
+    var props: P & ChildrenClassesSx & OmitTypographyTypeMapspanpropsclasses
   }
   object DialogTitleTypeMap {
     
-    inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & ChildrenClasses & OmitTypographyTypeMapspanpropsclasses): DialogTitleTypeMap[P, D] = {
+    inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & ChildrenClassesSx & OmitTypographyTypeMapspanpropsclasses): DialogTitleTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialogTitleTypeMap[P, D]]
     }
@@ -47,7 +47,7 @@ object dialogTitleDialogTitleMod extends Shortcut {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: P & ChildrenClasses & OmitTypographyTypeMapspanpropsclasses): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P & ChildrenClassesSx & OmitTypographyTypeMapspanpropsclasses): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   

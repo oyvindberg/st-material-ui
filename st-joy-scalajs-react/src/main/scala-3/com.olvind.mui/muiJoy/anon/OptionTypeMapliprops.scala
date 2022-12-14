@@ -54,7 +54,7 @@ trait OptionTypeMapliprops extends StObject {
   var value: js.UndefOr[Any] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'plain'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, OptionPropsVariantOverrides]] = js.undefined

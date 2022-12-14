@@ -1,34 +1,26 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.modalDialogModalDialogPropsMod.ModalDialogOwnerState
-import com.olvind.mui.muiJoy.modalDialogModalDialogPropsMod.ModalDialogSlot
-import com.olvind.mui.muiJoy.stylesComponentsMod.OverridesStyleRules
+import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `60`[Theme] extends StObject {
+trait `60` extends StObject {
   
-  var defaultProps: js.UndefOr[PartialModalDialogPropsModalDialogTypeMa] = js.undefined
-  
-  var styleOverrides: js.UndefOr[OverridesStyleRules[ModalDialogSlot, ModalDialogOwnerState, Theme]] = js.undefined
+  var color: js.UndefOr[ColorPaletteProp | "inherit"] = js.undefined
 }
 object `60` {
   
-  inline def apply[Theme](): `60`[Theme] = {
+  inline def apply(): `60` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`60`[Theme]]
+    __obj.asInstanceOf[`60`]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `60`[?], Theme] (val x: Self & `60`[Theme]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `60`] (val x: Self) extends AnyVal {
     
-    inline def setDefaultProps(value: PartialModalDialogPropsModalDialogTypeMa): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorPaletteProp | "inherit"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
-    
-    inline def setStyleOverrides(value: OverridesStyleRules[ModalDialogSlot, ModalDialogOwnerState, Theme]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
-    
-    inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.`38`
+import com.olvind.mui.muiMaterial.anon.Sx
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.boxBoxMod.SystemProps
 import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridBaseProps
@@ -20,11 +20,11 @@ object unstableGrid2Grid2PropsMod {
     
     var defaultComponent: D
     
-    var props: P & GridBaseProps & `38` & SystemProps[Theme]
+    var props: P & GridBaseProps & Sx & SystemProps[Theme]
   }
   object Grid2TypeMap {
     
-    inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & GridBaseProps & `38` & SystemProps[Theme]): Grid2TypeMap[P, D] = {
+    inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & GridBaseProps & Sx & SystemProps[Theme]): Grid2TypeMap[P, D] = {
       val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[Grid2TypeMap[P, D]]
     }
@@ -34,7 +34,7 @@ object unstableGrid2Grid2PropsMod {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: P & GridBaseProps & `38` & SystemProps[Theme]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P & GridBaseProps & Sx & SystemProps[Theme]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

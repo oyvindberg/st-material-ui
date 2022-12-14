@@ -16,7 +16,7 @@ object typographyTypographyClassesMod {
   
   inline def getTypographyUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypographyUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type TypographyClassKey = "root" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "body1" | "body2" | "body3" | "noWrap" | "gutterBottom" | "startDecorator" | "endDecorator" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid"
+  type TypographyClassKey = "root" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "body1" | "body2" | "body3" | "noWrap" | "gutterBottom" | "startDecorator" | "endDecorator" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "colorContext" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid"
   
   trait TypographyClasses extends StObject {
     
@@ -28,6 +28,9 @@ object typographyTypographyClassesMod {
     
     /** Styles applied to the root element if `level="body3"`. */
     var body3: String
+    
+    /** Styles applied to the root element when color inversion is triggered. */
+    var colorContext: String
     
     /** Styles applied to the root element if `color="danger"`. */
     var colorDanger: String
@@ -98,6 +101,7 @@ object typographyTypographyClassesMod {
       body1: String,
       body2: String,
       body3: String,
+      colorContext: String,
       colorDanger: String,
       colorInfo: String,
       colorNeutral: String,
@@ -120,7 +124,7 @@ object typographyTypographyClassesMod {
       variantSoft: String,
       variantSolid: String
     ): TypographyClasses = {
-      val __obj = js.Dynamic.literal(body1 = body1.asInstanceOf[js.Any], body2 = body2.asInstanceOf[js.Any], body3 = body3.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], gutterBottom = gutterBottom.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], noWrap = noWrap.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(body1 = body1.asInstanceOf[js.Any], body2 = body2.asInstanceOf[js.Any], body3 = body3.asInstanceOf[js.Any], colorContext = colorContext.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], gutterBottom = gutterBottom.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], noWrap = noWrap.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypographyClasses]
     }
     
@@ -132,6 +136,8 @@ object typographyTypographyClassesMod {
       inline def setBody2(value: String): Self = StObject.set(x, "body2", value.asInstanceOf[js.Any])
       
       inline def setBody3(value: String): Self = StObject.set(x, "body3", value.asInstanceOf[js.Any])
+      
+      inline def setColorContext(value: String): Self = StObject.set(x, "colorContext", value.asInstanceOf[js.Any])
       
       inline def setColorDanger(value: String): Self = StObject.set(x, "colorDanger", value.asInstanceOf[js.Any])
       

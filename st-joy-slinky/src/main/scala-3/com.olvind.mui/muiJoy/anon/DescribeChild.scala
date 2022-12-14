@@ -31,7 +31,7 @@ trait DescribeChild extends StObject {
   
   /**
     * The color of the component. It supports those theme colors that make sense for this component.
-    * @default 'primary'
+    * @default 'neutral'
     */
   var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, TooltipPropsColorOverrides]] = js.undefined
   
@@ -155,8 +155,8 @@ trait DescribeChild extends StObject {
   var title: ReactElement
   
   /**
-    * The variant to use.
-    * @default 'soft'
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
+    * @default 'solid'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, TooltipPropsVariantOverrides]] = js.undefined
 }

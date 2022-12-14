@@ -10,6 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listListMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Lists](https://mui.com/joy-ui/react-list/)
+    *
+    * API:
+    *
+    * - [List API](https://mui.com/joy-ui/api/list/)
+    */
   @JSImport("@mui/joy/List/List", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsListTypeMapul, Element | Null] = js.native

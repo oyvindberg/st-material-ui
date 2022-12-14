@@ -1,5 +1,6 @@
 package com.olvind.mui.muiBase.anon
 
+import com.olvind.mui.muiBase.formControlUnstyledFormControlUnstyledDottypesMod.FormControlUnstyledSlots
 import com.olvind.mui.muiBase.formControlUnstyledFormControlUnstyledDottypesMod.FormControlUnstyledState
 import com.olvind.mui.muiBase.formControlUnstyledFormControlUnstyledDottypesMod.NativeFormControlElement
 import com.olvind.mui.react.mod.ChangeEventHandler
@@ -35,9 +36,9 @@ trait OmitFormControlUnstyledOwnPropsNonOption extends StObject {
   
   var required: Boolean
   
-  var slotProps: js.UndefOr[`3`] = js.undefined
+  var slotProps: js.UndefOr[`1`] = js.undefined
   
-  var slots: js.UndefOr[`1`] = js.undefined
+  var slots: js.UndefOr[FormControlUnstyledSlots] = js.undefined
   
   var value: js.UndefOr[Any] = js.undefined
 }
@@ -85,11 +86,11 @@ object OmitFormControlUnstyledOwnPropsNonOption {
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    inline def setSlotProps(value: `3`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: `1`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
-    inline def setSlots(value: `1`): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: FormControlUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     

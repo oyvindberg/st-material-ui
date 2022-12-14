@@ -117,7 +117,7 @@ trait ActionsComponent extends StObject {
     * Use -1 for the value with a custom label to show all the rows.
     * @default [10, 25, 50, 100]
     */
-  var rowsPerPageOptions: js.UndefOr[js.Array[Double | Value]] = js.native
+  var rowsPerPageOptions: js.UndefOr[js.Array[Double | LabelValue]] = js.native
   
   /**
     * If `true`, show the first-page button.

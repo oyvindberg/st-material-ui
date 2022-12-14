@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object svgIconSvgIconPropsMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped std.Omit<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp, 'color'> & @mui/joy.anon.62<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp> extends std.Function ? std.Omit<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp, 'color'> & @mui/joy.anon.62<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp> : {[ K in keyof std.Omit<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp, 'color'> & @mui/joy.anon.62<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp> ]: std.Omit<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp, 'color'> & @mui/joy.anon.62<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp>[K]} */ trait SvgIconOwnerState extends StObject {
+  - Dropped std.Omit<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp, 'color'> & @mui/joy.anon.61<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp> extends std.Function ? std.Omit<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp, 'color'> & @mui/joy.anon.61<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp> : {[ K in keyof std.Omit<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp, 'color'> & @mui/joy.anon.61<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp> ]: std.Omit<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp, 'color'> & @mui/joy.anon.61<@mui/joy.anon.SvgIconPropsSvgIconTypeMapsvgdefaultComp>[K]} */ trait SvgIconOwnerState extends StObject {
     
     /**
       * The `size` specified explicitly on the instance.
       */
     var instanceFontSize: js.UndefOr[
         OverridableStringUnion[
-          "inherit" | "xs3" | "xs2" | "xs" | "sm" | "md" | "lg" | "xl" | "xl2" | "xl3" | "xl4" | "xl5" | "xl6" | "xl7", 
+          "inherit" | (/* keyof @mui/joy.@mui/joy/styles/types/typography.FontSize */ String), 
           SvgIconPropsSizeOverrides
         ]
       ] = js.undefined
@@ -35,7 +35,7 @@ object svgIconSvgIconPropsMod {
       
       inline def setInstanceFontSize(
         value: OverridableStringUnion[
-              "inherit" | "xs3" | "xs2" | "xs" | "sm" | "md" | "lg" | "xl" | "xl2" | "xl3" | "xl4" | "xl5" | "xl6" | "xl7", 
+              "inherit" | (/* keyof @mui/joy.@mui/joy/styles/types/typography.FontSize */ String), 
               SvgIconPropsSizeOverrides
             ]
       ): Self = StObject.set(x, "instanceFontSize", value.asInstanceOf[js.Any])

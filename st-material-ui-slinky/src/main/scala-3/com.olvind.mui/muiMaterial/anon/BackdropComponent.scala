@@ -33,6 +33,16 @@ trait BackdropComponent extends StObject {
   var BackdropProps: js.UndefOr[PartialBackdropPropsBackdropTypeMapdivde] = js.undefined
   
   /**
+    * @ignore
+    */
+  var className: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Override or extend the styles applied to the component.
+    */
+  var classes: js.UndefOr[PartialModalUnstyledClasses] = js.undefined
+  
+  /**
     * The components used for each slot inside.
     *
     * This prop is an alias for the `slots` prop.
@@ -40,7 +50,7 @@ trait BackdropComponent extends StObject {
     *
     * @default {}
     */
-  var components: js.UndefOr[Backdrop] = js.undefined
+  var components: js.UndefOr[BackdropRoot] = js.undefined
   
   /**
     * The extra props for the slot components.
@@ -51,7 +61,13 @@ trait BackdropComponent extends StObject {
     *
     * @default {}
     */
-  var componentsProps: js.UndefOr[com.olvind.mui.muiBase.anon.Backdrop] = js.undefined
+  var componentsProps: js.UndefOr[Backdrop] = js.undefined
+  
+  /**
+    * The props used for each slot inside the Modal.
+    * @default {}
+    */
+  var slotProps: js.UndefOr[Backdrop] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
@@ -76,13 +92,25 @@ object BackdropComponent {
     
     inline def setBackdropPropsUndefined: Self = StObject.set(x, "BackdropProps", js.undefined)
     
-    inline def setComponents(value: Backdrop): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setComponentsProps(value: com.olvind.mui.muiBase.anon.Backdrop): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setClasses(value: PartialModalUnstyledClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setComponents(value: BackdropRoot): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    
+    inline def setComponentsProps(value: Backdrop): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
     
     inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    
+    inline def setSlotProps(value: Backdrop): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    
+    inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
     inline def setSx(value: SxProps[Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     

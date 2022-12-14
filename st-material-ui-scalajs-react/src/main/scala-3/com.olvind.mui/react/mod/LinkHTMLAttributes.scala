@@ -12,7 +12,7 @@ trait LinkHTMLAttributes[T]
   
   var charSet: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr["anonymous" | "use-credentials" | ""] = js.undefined
   
   var href: js.UndefOr[String] = js.undefined
   
@@ -27,8 +27,6 @@ trait LinkHTMLAttributes[T]
   var media: js.UndefOr[String] = js.undefined
   
   var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
-  
-  var rel: js.UndefOr[String] = js.undefined
   
   var sizes: js.UndefOr[String] = js.undefined
   
@@ -52,7 +50,7 @@ object LinkHTMLAttributes {
     
     inline def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: "anonymous" | "use-credentials" | ""): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -83,10 +81,6 @@ object LinkHTMLAttributes {
     inline def setReferrerPolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     
     inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
-    
-    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
-    
-    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     

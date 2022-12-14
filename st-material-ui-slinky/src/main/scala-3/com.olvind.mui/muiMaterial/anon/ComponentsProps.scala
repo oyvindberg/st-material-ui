@@ -25,7 +25,7 @@ trait ComponentsProps extends StObject {
     *
     * @default {}
     */
-  var componentsProps: js.UndefOr[`15`] = js.undefined
+  var componentsProps: js.UndefOr[`18`] = js.undefined
   
   /**
     * The extra props for the slot components.
@@ -35,7 +35,7 @@ trait ComponentsProps extends StObject {
     *
     * @default {}
     */
-  var slotProps: js.UndefOr[`15`] = js.undefined
+  var slotProps: js.UndefOr[`18`] = js.undefined
   
   /**
     * The components used for each slot inside.
@@ -58,13 +58,13 @@ object ComponentsProps {
     
     inline def setComponents(value: Root): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    inline def setComponentsProps(value: `15`): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
+    inline def setComponentsProps(value: `18`): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
     
     inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    inline def setSlotProps(value: `15`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: `18`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     

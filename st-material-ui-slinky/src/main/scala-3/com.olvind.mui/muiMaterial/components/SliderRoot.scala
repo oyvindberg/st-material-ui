@@ -13,19 +13,19 @@ object SliderRoot {
   @js.native
   val component: js.Object = js.native
   
-  type Props = /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Mark | undefined>['root'] */ js.Any
+  type Props = /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/material.anon.Mark | undefined>['root'] */ js.Any
   
   implicit def make(companion: SliderRoot.type): Default[tag.type, js.Object] = new Default[tag.type, js.Object](js.Array(this.component, js.Dictionary.empty))()
   
   def styled: Builder[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Mark | undefined>['root'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/material.anon.Mark | undefined>['root'] */ js.Any, 
     Default[tag.type, js.Object]
   ] = new Builder[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Mark | undefined>['root'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/material.anon.Mark | undefined>['root'] */ js.Any, 
     Default[tag.type, js.Object]
   ](this.component, new js.Object, js.Array(), (newComponent: Any) => new Default[tag.type, js.Object](js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(
-    p: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Mark | undefined>['root'] */ js.Any
+    p: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/material.anon.Mark | undefined>['root'] */ js.Any
   ): Default[tag.type, js.Object] = new Default[tag.type, js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

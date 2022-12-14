@@ -1,6 +1,7 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.snackbarUnstyledUseSnackbarDottypesMod.SnackbarCloseReason
+import com.olvind.mui.muiBase.snackbarUnstyledSnackbarUnstyledDottypesMod.SnackbarUnstyledSlots
+import com.olvind.mui.muiBase.useSnackbarUseSnackbarDottypesMod.SnackbarCloseReason
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -156,6 +157,8 @@ trait DefaultComponentPropsSnackbarUnstyledTyp extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoHideDuration: js.UndefOr[Double | Null] = js.undefined
   
   var autoSave: js.UndefOr[String] = js.undefined
@@ -165,6 +168,8 @@ trait DefaultComponentPropsSnackbarUnstyledTyp extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -396,11 +401,15 @@ trait DefaultComponentPropsSnackbarUnstyledTyp extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
   
   var resumeHideDuration: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -419,7 +428,7 @@ trait DefaultComponentPropsSnackbarUnstyledTyp extends StObject {
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[`1`] = js.undefined
+  var slots: js.UndefOr[SnackbarUnstyledSlots] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -661,6 +670,10 @@ object DefaultComponentPropsSnackbarUnstyledTyp {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
     
     inline def setAutoHideDurationNull: Self = StObject.set(x, "autoHideDuration", null)
@@ -689,9 +702,13 @@ object DefaultComponentPropsSnackbarUnstyledTyp {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1139,6 +1156,10 @@ object DefaultComponentPropsSnackbarUnstyledTyp {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1150,6 +1171,10 @@ object DefaultComponentPropsSnackbarUnstyledTyp {
     inline def setResumeHideDuration(value: Double): Self = StObject.set(x, "resumeHideDuration", value.asInstanceOf[js.Any])
     
     inline def setResumeHideDurationUndefined: Self = StObject.set(x, "resumeHideDuration", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -1167,7 +1192,7 @@ object DefaultComponentPropsSnackbarUnstyledTyp {
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: `1`): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: SnackbarUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     

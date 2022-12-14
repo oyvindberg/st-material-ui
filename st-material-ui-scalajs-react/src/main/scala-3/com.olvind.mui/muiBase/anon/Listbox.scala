@@ -1,8 +1,9 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.menuUnstyledMenuUnstyledDottypesMod.MenuUnstyledComponentsPropsOverrides
+import com.olvind.mui.muiBase.menuUnstyledMenuUnstyledDottypesMod.MenuUnstyledListboxSlotPropsOverrides
 import com.olvind.mui.muiBase.menuUnstyledMenuUnstyledDottypesMod.MenuUnstyledOwnerState
-import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledMod.PopperUnstyledTypeMap
+import com.olvind.mui.muiBase.menuUnstyledMenuUnstyledDottypesMod.MenuUnstyledRootSlotPropsOverrides
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperUnstyledTypeMap
 import com.olvind.mui.muiBase.utilsTypesMod.SlotComponentProps
 import com.olvind.mui.muiTypes.mod.OverridableComponent
 import com.olvind.mui.react.mod.ComponentPropsWithRef
@@ -14,13 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Listbox extends StObject {
   
   var listbox: js.UndefOr[
-    SlotComponentProps["ul", MenuUnstyledComponentsPropsOverrides, MenuUnstyledOwnerState]
+    SlotComponentProps["ul", MenuUnstyledListboxSlotPropsOverrides, MenuUnstyledOwnerState]
   ] = js.undefined
   
   var root: js.UndefOr[
     SlotComponentProps[
       OverridableComponent[PopperUnstyledTypeMap[js.Object, "div"]], 
-      MenuUnstyledComponentsPropsOverrides, 
+      MenuUnstyledRootSlotPropsOverrides, 
       MenuUnstyledOwnerState
     ]
   ] = js.undefined
@@ -35,10 +36,10 @@ object Listbox {
   @scala.inline
   implicit open class MutableBuilder[Self <: Listbox] (val x: Self) extends AnyVal {
     
-    inline def setListbox(value: SlotComponentProps["ul", MenuUnstyledComponentsPropsOverrides, MenuUnstyledOwnerState]): Self = StObject.set(x, "listbox", value.asInstanceOf[js.Any])
+    inline def setListbox(value: SlotComponentProps["ul", MenuUnstyledListboxSlotPropsOverrides, MenuUnstyledOwnerState]): Self = StObject.set(x, "listbox", value.asInstanceOf[js.Any])
     
     inline def setListboxFunction1(
-      value: MenuUnstyledOwnerState => Partial[ComponentPropsWithRef["ul"]] & MenuUnstyledComponentsPropsOverrides
+      value: MenuUnstyledOwnerState => Partial[ComponentPropsWithRef["ul"]] & MenuUnstyledListboxSlotPropsOverrides
     ): Self = StObject.set(x, "listbox", js.Any.fromFunction1(value))
     
     inline def setListboxUndefined: Self = StObject.set(x, "listbox", js.undefined)
@@ -46,7 +47,7 @@ object Listbox {
     inline def setRoot(
       value: SlotComponentProps[
           OverridableComponent[PopperUnstyledTypeMap[js.Object, "div"]], 
-          MenuUnstyledComponentsPropsOverrides, 
+          MenuUnstyledRootSlotPropsOverrides, 
           MenuUnstyledOwnerState
         ]
     ): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
@@ -54,7 +55,7 @@ object Listbox {
     inline def setRootFunction1(
       value: MenuUnstyledOwnerState => (Partial[
           ComponentPropsWithRef[OverridableComponent[PopperUnstyledTypeMap[js.Object, "div"]]]
-        ]) & MenuUnstyledComponentsPropsOverrides
+        ]) & MenuUnstyledRootSlotPropsOverrides
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)

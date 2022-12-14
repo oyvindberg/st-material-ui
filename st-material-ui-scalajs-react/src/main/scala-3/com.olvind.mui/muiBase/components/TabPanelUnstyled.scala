@@ -2,8 +2,8 @@ package com.olvind.mui.muiBase.components
 
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiBase.anon.DefaultComponentPropsTabPanelUnstyledTyp
-import com.olvind.mui.muiBase.anon.`11`
-import com.olvind.mui.muiBase.anon.`1`
+import com.olvind.mui.muiBase.anon.`8`
+import com.olvind.mui.muiBase.tabPanelUnstyledTabPanelUnstyledDottypesMod.TabPanelUnstyledSlots
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AriaRole
 import com.olvind.mui.react.mod.Booleanish
@@ -150,11 +150,15 @@ object TabPanelUnstyled {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -366,9 +370,13 @@ object TabPanelUnstyled {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -376,9 +384,9 @@ object TabPanelUnstyled {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: `11`): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: `8`): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: `1`): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: TabPanelUnstyledSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

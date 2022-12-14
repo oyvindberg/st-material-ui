@@ -13,6 +13,16 @@ object formHelperTextMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Input](https://mui.com/joy-ui/react-input/)
+    *
+    * API:
+    *
+    * - [FormHelperText API](https://mui.com/joy-ui/api/form-helper-text/)
+    */
   @JSImport("@mui/joy/FormHelperText", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsFormHelperTextTypeM, Element | Null] = js.native

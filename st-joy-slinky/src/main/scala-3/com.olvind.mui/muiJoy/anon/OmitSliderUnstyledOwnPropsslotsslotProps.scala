@@ -1,6 +1,5 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiBase.anon.PartialSliderUnstyledClasses
 import org.scalajs.dom.Element
 import org.scalajs.dom.Event
 import slinky.core.SyntheticEvent
@@ -18,8 +17,6 @@ trait OmitSliderUnstyledOwnPropsslotsslotProps extends StObject {
   
   var `aria-valuetext`: js.UndefOr[String] = js.undefined
   
-  var classes: js.UndefOr[PartialSliderUnstyledClasses] = js.undefined
-  
   var defaultValue: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   var disableSwap: js.UndefOr[Boolean] = js.undefined
@@ -32,9 +29,7 @@ trait OmitSliderUnstyledOwnPropsslotsslotProps extends StObject {
   
   var isRtl: js.UndefOr[Boolean] = js.undefined
   
-  var marks: js.UndefOr[
-    Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark]
-  ] = js.undefined
+  var marks: js.UndefOr[Boolean | js.Array[com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark]] = js.undefined
   
   var max: js.UndefOr[Double] = js.undefined
   
@@ -71,8 +66,6 @@ trait OmitSliderUnstyledOwnPropsslotsslotProps extends StObject {
   
   var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var valueLabelDisplay: js.UndefOr["on" | "auto" | "off"] = js.undefined
-  
   var valueLabelFormat: js.UndefOr[String | (js.Function2[/* value */ Double, /* index */ Double, ReactElement])] = js.undefined
 }
 object OmitSliderUnstyledOwnPropsslotsslotProps {
@@ -96,10 +89,6 @@ object OmitSliderUnstyledOwnPropsslotsslotProps {
     inline def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
     
     inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
-    
-    inline def setClasses(value: PartialSliderUnstyledClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
-    
-    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     inline def setDefaultValue(value: Double | js.Array[Double]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
@@ -127,11 +116,11 @@ object OmitSliderUnstyledOwnPropsslotsslotProps {
     
     inline def setIsRtlUndefined: Self = StObject.set(x, "isRtl", js.undefined)
     
-    inline def setMarks(value: Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+    inline def setMarks(value: Boolean | js.Array[com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
-    inline def setMarksVarargs(value: com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark*): Self = StObject.set(x, "marks", js.Array(value*))
+    inline def setMarksVarargs(value: com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark*): Self = StObject.set(x, "marks", js.Array(value*))
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
@@ -180,10 +169,6 @@ object OmitSliderUnstyledOwnPropsslotsslotProps {
     inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
     inline def setValue(value: Double | js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    inline def setValueLabelDisplay(value: "on" | "auto" | "off"): Self = StObject.set(x, "valueLabelDisplay", value.asInstanceOf[js.Any])
-    
-    inline def setValueLabelDisplayUndefined: Self = StObject.set(x, "valueLabelDisplay", js.undefined)
     
     inline def setValueLabelFormat(value: String | (js.Function2[/* value */ Double, /* index */ Double, ReactElement])): Self = StObject.set(x, "valueLabelFormat", value.asInstanceOf[js.Any])
     

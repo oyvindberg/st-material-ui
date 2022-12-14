@@ -13,6 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object selectSelectMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Select](https://mui.com/joy-ui/react-select/)
+    *
+    * API:
+    *
+    * - [Select API](https://mui.com/joy-ui/api/select/)
+    */
   @JSImport("@mui/joy/Select/Select", JSImport.Default)
   @js.native
   val default: SelectComponent = js.native

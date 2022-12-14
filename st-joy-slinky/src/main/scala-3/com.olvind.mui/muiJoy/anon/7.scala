@@ -1,7 +1,6 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.avatarGroupAvatarGroupPropsMod.AvatarGroupOwnerState
-import com.olvind.mui.muiJoy.avatarGroupAvatarGroupPropsMod.AvatarGroupSlot
+import com.olvind.mui.muiJoy.boxBoxPropsMod.BoxSlot
 import com.olvind.mui.muiJoy.stylesComponentsMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `7`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialAvatarGroupPropsAvatarGroupTypeMa] = js.undefined
+  var defaultProps: js.UndefOr[PartialBoxPropsBoxTypeMapdivThemedefault] = js.undefined
   
-  var styleOverrides: js.UndefOr[OverridesStyleRules[AvatarGroupSlot, AvatarGroupOwnerState, Theme]] = js.undefined
+  var styleOverrides: js.UndefOr[OverridesStyleRules[BoxSlot, BoxPropsBoxTypeMapdivThemedefaultCompone, Theme]] = js.undefined
 }
 object `7` {
   
@@ -23,11 +22,11 @@ object `7` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `7`[?], Theme] (val x: Self & `7`[Theme]) extends AnyVal {
     
-    inline def setDefaultProps(value: PartialAvatarGroupPropsAvatarGroupTypeMa): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialBoxPropsBoxTypeMapdivThemedefault): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: OverridesStyleRules[AvatarGroupSlot, AvatarGroupOwnerState, Theme]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(value: OverridesStyleRules[BoxSlot, BoxPropsBoxTypeMapdivThemedefaultCompone, Theme]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
   }

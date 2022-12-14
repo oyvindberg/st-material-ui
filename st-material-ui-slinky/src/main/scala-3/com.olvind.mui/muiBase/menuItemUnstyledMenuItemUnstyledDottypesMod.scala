@@ -1,7 +1,6 @@
 package com.olvind.mui.muiBase
 
-import com.olvind.mui.muiBase.anon.`1`
-import com.olvind.mui.muiBase.anon.`5`
+import com.olvind.mui.muiBase.anon.`3`
 import com.olvind.mui.react.mod.MouseEventHandler
 import org.scalajs.dom.HTMLElement
 import slinky.core.facade.ReactElement
@@ -11,8 +10,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuItemUnstyledMenuItemUnstyledDottypesMod {
-  
-  trait MenuItemUnstyledComponentsPropsOverrides extends StObject
   
   trait MenuItemUnstyledOwnProps extends StObject {
     
@@ -38,14 +35,14 @@ object menuItemUnstyledMenuItemUnstyledDottypesMod {
       * The props used for each slot inside the MenuItem.
       * @default {}
       */
-    var slotProps: js.UndefOr[`5`] = js.undefined
+    var slotProps: js.UndefOr[`3`] = js.undefined
     
     /**
       * The components used for each slot inside the MenuItem.
       * Either a string to use a HTML element or a component.
       * @default {}
       */
-    var slots: js.UndefOr[`1`] = js.undefined
+    var slots: js.UndefOr[MenuItemUnstyledSlots] = js.undefined
   }
   object MenuItemUnstyledOwnProps {
     
@@ -77,11 +74,11 @@ object menuItemUnstyledMenuItemUnstyledDottypesMod {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setSlotProps(value: `5`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      inline def setSlotProps(value: `3`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
       
       inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
-      inline def setSlots(value: `1`): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: MenuItemUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     }
@@ -95,11 +92,13 @@ object menuItemUnstyledMenuItemUnstyledDottypesMod {
     var disabled_MenuItemUnstyledOwnerState: Boolean
     
     var focusVisible: Boolean
+    
+    var highlighted: Boolean
   }
   object MenuItemUnstyledOwnerState {
     
-    inline def apply(disabled: Boolean, focusVisible: Boolean): MenuItemUnstyledOwnerState = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any])
+    inline def apply(disabled: Boolean, focusVisible: Boolean, highlighted: Boolean): MenuItemUnstyledOwnerState = {
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any], highlighted = highlighted.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuItemUnstyledOwnerState]
     }
     
@@ -109,6 +108,34 @@ object menuItemUnstyledMenuItemUnstyledDottypesMod {
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+      
+      inline def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait MenuItemUnstyledRootSlotPropsOverrides extends StObject
+  
+  trait MenuItemUnstyledSlots extends StObject {
+    
+    /**
+      * The component that renders the root.
+      * @default 'li'
+      */
+    var root: js.UndefOr[ReactElement] = js.undefined
+  }
+  object MenuItemUnstyledSlots {
+    
+    inline def apply(): MenuItemUnstyledSlots = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MenuItemUnstyledSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemUnstyledSlots] (val x: Self) extends AnyVal {
+      
+      inline def setRoot(value: ReactElement): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

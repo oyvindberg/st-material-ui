@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiBase.modalUnstyledModalUnstyledClassesMod.ModalUnstyledClasses
-import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendModalUnstyled
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsModalTypeMapdiv
 import com.olvind.mui.muiMaterial.modalModalMod.ModalClasses_
 import com.olvind.mui.muiMaterial.modalModalMod.ModalRootProps
 import com.olvind.mui.react.mod.global.JSX.Element
@@ -39,7 +39,7 @@ object modalMod {
     */
   @JSImport("@mui/material/Modal", JSImport.Default)
   @js.native
-  val default: js.Function1[/* props */ DefaultComponentPropsExtendModalUnstyled, Element | Null] = js.native
+  val default: js.Function1[/* props */ DefaultComponentPropsModalTypeMapdiv, Element] = js.native
   
   @JSImport("@mui/material/Modal", "ModalManager")
   @js.native

@@ -6,21 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `26` extends StObject {
   
-  /* you can set this property to change the underlying component. keep in mind that the types of callbacks may be different */
-  val component: js.UndefOr[String] = js.undefined
+  var defaultComponent: "ul"
+  
+  var props: AutoFocusItem
 }
 object `26` {
   
-  inline def apply(): `26` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(props: AutoFocusItem): `26` = {
+    val __obj = js.Dynamic.literal(defaultComponent = "ul", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`26`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `26`] (val x: Self) extends AnyVal {
     
-    inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setDefaultComponent(value: "ul"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setProps(value: AutoFocusItem): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

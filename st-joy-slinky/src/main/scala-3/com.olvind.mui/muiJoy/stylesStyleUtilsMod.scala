@@ -11,7 +11,7 @@ object stylesStyleUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def resolveSxValue(param0: Theme, key: String): js.UndefOr[String | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSxValue")(param0.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Double]]
-  inline def resolveSxValue(param0: Theme, key: String, defaultValue: String): js.UndefOr[String | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSxValue")(param0.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Double]]
-  inline def resolveSxValue(param0: Theme, key: String, defaultValue: Double): js.UndefOr[String | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSxValue")(param0.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Double]]
+  inline def resolveSxValue(param0: Theme, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSxValue")(param0.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def resolveSxValue(param0: Theme, key: String, defaultValue: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSxValue")(param0.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def resolveSxValue(param0: Theme, key: String, defaultValue: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSxValue")(param0.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

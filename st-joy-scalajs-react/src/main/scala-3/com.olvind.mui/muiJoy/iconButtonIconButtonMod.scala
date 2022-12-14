@@ -11,6 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object iconButtonIconButtonMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Button](https://mui.com/joy-ui/react-button/)
+    *
+    * API:
+    *
+    * - [IconButton API](https://mui.com/joy-ui/api/icon-button/)
+    */
   @JSImport("@mui/joy/IconButton/IconButton", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ OverridePropsExtendIconButtonTypeMapIcon, Element] = js.native

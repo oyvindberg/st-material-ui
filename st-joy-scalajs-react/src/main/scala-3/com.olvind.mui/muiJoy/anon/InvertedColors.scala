@@ -1,7 +1,8 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.sheetSheetPropsMod.SheetPropsColorOverrides
-import com.olvind.mui.muiJoy.sheetSheetPropsMod.SheetPropsVariantOverrides
+import com.olvind.mui.muiJoy.cardCardPropsMod.CardPropsColorOverrides
+import com.olvind.mui.muiJoy.cardCardPropsMod.CardPropsSizeOverrides
+import com.olvind.mui.muiJoy.cardCardPropsMod.CardPropsVariantOverrides
 import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
 import com.olvind.mui.muiJoy.stylesTypesVariantsMod.VariantProp
@@ -20,7 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InvertedColors extends StObject {
   
   /**
-    * The content of the component.
+    * Used to render icon or text elements inside the Card if `src` is not set.
+    * This can be an element, or just a string.
     */
   var children: js.UndefOr[Node] = js.undefined
   
@@ -28,7 +30,7 @@ trait InvertedColors extends StObject {
     * The color of the component. It supports those theme colors that make sense for this component.
     * @default 'neutral'
     */
-  var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, SheetPropsColorOverrides]] = js.undefined
+  var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, CardPropsColorOverrides]] = js.undefined
   
   /**
     * If `true`, the children with an implicit color prop invert their colors to match the component's variant and color.
@@ -37,15 +39,28 @@ trait InvertedColors extends StObject {
   var invertedColors: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The component orientation.
+    * @default 'vertical'
+    */
+  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
+  
+  /**
+    * The size of the component.
+    * It accepts theme values between 'sm' and 'lg'.
+    * @default 'md'
+    */
+  var size: js.UndefOr[OverridableStringUnion["sm" | "md" | "lg", CardPropsSizeOverrides]] = js.undefined
+  
+  /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
   var sx: js.UndefOr[SxProps] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'plain'
     */
-  var variant: js.UndefOr[OverridableStringUnion[VariantProp, SheetPropsVariantOverrides]] = js.undefined
+  var variant: js.UndefOr[OverridableStringUnion[VariantProp, CardPropsVariantOverrides]] = js.undefined
 }
 object InvertedColors {
   
@@ -67,13 +82,21 @@ object InvertedColors {
     
     inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
     
-    inline def setColor(value: OverridableStringUnion[ColorPaletteProp, SheetPropsColorOverrides]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: OverridableStringUnion[ColorPaletteProp, CardPropsColorOverrides]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setInvertedColors(value: Boolean): Self = StObject.set(x, "invertedColors", value.asInstanceOf[js.Any])
     
     inline def setInvertedColorsUndefined: Self = StObject.set(x, "invertedColors", js.undefined)
+    
+    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setSize(value: OverridableStringUnion["sm" | "md" | "lg", CardPropsSizeOverrides]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setSx(value: SxProps): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
@@ -92,7 +115,7 @@ object InvertedColors {
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
-    inline def setVariant(value: OverridableStringUnion[VariantProp, SheetPropsVariantOverrides]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: OverridableStringUnion[VariantProp, CardPropsVariantOverrides]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

@@ -13,6 +13,16 @@ object radioMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Radio](https://mui.com/joy-ui/react-radio-button/)
+    *
+    * API:
+    *
+    * - [Radio API](https://mui.com/joy-ui/api/radio/)
+    */
   @JSImport("@mui/joy/Radio", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsRadioTypeMapspan, Element | Null] = js.native

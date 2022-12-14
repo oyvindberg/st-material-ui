@@ -13,6 +13,16 @@ object badgeMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Badge](https://mui.com/joy-ui/react-badge/)
+    *
+    * API:
+    *
+    * - [Badge API](https://mui.com/joy-ui/api/badge/)
+    */
   @JSImport("@mui/joy/Badge", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsBadgeTypeMapspan, Element | Null] = js.native

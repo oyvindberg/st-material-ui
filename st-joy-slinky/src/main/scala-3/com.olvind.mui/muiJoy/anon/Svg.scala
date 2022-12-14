@@ -9,29 +9,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/CircularProgress/CircularProgressProps.CircularProgressOwnerState>,   svg :@mui/joy.@mui/joy/utils/types.SlotProps<'svg', {}, @mui/joy.@mui/joy/CircularProgress/CircularProgressProps.CircularProgressOwnerState>,   track :@mui/joy.@mui/joy/utils/types.SlotProps<'circle', {}, @mui/joy.@mui/joy/CircularProgress/CircularProgressProps.CircularProgressOwnerState>,   progress :@mui/joy.@mui/joy/utils/types.SlotProps<'circle', {}, @mui/joy.@mui/joy/CircularProgress/CircularProgressProps.CircularProgressOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/CircularProgress/CircularProgressProps.CircularProgressOwnerState>,   svg :@mui/joy.@mui/joy/utils/types.SlotProps<'svg', {}, @mui/joy.@mui/joy/CircularProgress/CircularProgressProps.CircularProgressOwnerState>,   track :@mui/joy.@mui/joy/utils/types.SlotProps<'circle', {}, @mui/joy.@mui/joy/CircularProgress/CircularProgressProps.CircularProgressOwnerState>,   progress :@mui/joy.@mui/joy/utils/types.SlotProps<'circle', {}, @mui/joy.@mui/joy/CircularProgress/CircularProgressProps.CircularProgressOwnerState>}[P]} */
 trait Svg extends StObject {
   
-  var progress: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["circle", js.Object, CircularProgressOwnerState]
-  ] = js.undefined
+  var progress: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["circle", js.Object, CircularProgressOwnerState]
   
-  var root: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CircularProgressOwnerState]
-  ] = js.undefined
+  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CircularProgressOwnerState]
   
-  var svg: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["svg", js.Object, CircularProgressOwnerState]
-  ] = js.undefined
+  var svg: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["svg", js.Object, CircularProgressOwnerState]
   
-  var track: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["circle", js.Object, CircularProgressOwnerState]
-  ] = js.undefined
+  var track: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["circle", js.Object, CircularProgressOwnerState]
 }
 object Svg {
   
-  inline def apply(): Svg = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    progress: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["circle", js.Object, CircularProgressOwnerState],
+    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CircularProgressOwnerState],
+    svg: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["svg", js.Object, CircularProgressOwnerState],
+    track: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["circle", js.Object, CircularProgressOwnerState]
+  ): Svg = {
+    val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[Svg]
   }
   
@@ -46,8 +42,6 @@ object Svg {
       value: CircularProgressOwnerState => (Omit[ComponentPropsWithRef["circle"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     
-    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
-    
     inline def setRoot(
       value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CircularProgressOwnerState]
     ): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
@@ -56,15 +50,11 @@ object Svg {
       value: CircularProgressOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
-    
     inline def setSvg(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["svg", js.Object, CircularProgressOwnerState]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     inline def setSvgFunction1(
       value: CircularProgressOwnerState => (Omit[ComponentPropsWithRef["svg"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "svg", js.Any.fromFunction1(value))
-    
-    inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
     
     inline def setTrack(
       value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["circle", js.Object, CircularProgressOwnerState]
@@ -73,7 +63,5 @@ object Svg {
     inline def setTrackFunction1(
       value: CircularProgressOwnerState => (Omit[ComponentPropsWithRef["circle"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "track", js.Any.fromFunction1(value))
-    
-    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

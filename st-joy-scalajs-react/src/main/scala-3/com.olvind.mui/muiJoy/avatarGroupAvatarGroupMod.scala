@@ -11,6 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object avatarGroupAvatarGroupMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Avatar](https://mui.com/joy-ui/react-avatar/)
+    *
+    * API:
+    *
+    * - [AvatarGroup API](https://mui.com/joy-ui/api/avatar-group/)
+    */
   @JSImport("@mui/joy/AvatarGroup/AvatarGroup", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsAvatarGroupTypeMapd, Element | Null] = js.native

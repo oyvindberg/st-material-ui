@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object switchSwitchMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Switch](https://mui.com/joy-ui/react-switch/)
+    *
+    * API:
+    *
+    * - [Switch API](https://mui.com/joy-ui/api/switch/)
+    */
   @JSImport("@mui/joy/Switch/Switch", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsSwitchTypeMapdiv, Element | Null] = js.native

@@ -71,6 +71,7 @@ import com.olvind.mui.muiJoy.linkLinkPropsMod.LinkPropsColorOverrides
 import com.olvind.mui.muiJoy.linkLinkPropsMod.LinkPropsVariantOverrides
 import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
+import com.olvind.mui.muiJoy.stylesTypesThemeMod.TextColor
 import com.olvind.mui.muiJoy.stylesTypesVariantsMod.VariantProp
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
@@ -254,6 +255,8 @@ trait PartialLinkPropsLinkTypeMapadefaultCompo extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var bgcolor: js.UndefOr[
@@ -403,6 +406,8 @@ trait PartialLinkPropsLinkTypeMapadefaultCompo extends StObject {
   ] = js.undefined
   
   var component: js.UndefOr[ElementType] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -749,7 +754,7 @@ trait PartialLinkPropsLinkTypeMapadefaultCompo extends StObject {
   ] = js.undefined
   
   var level: js.UndefOr[
-    "body4" | "display2" | "body2" | "body5" | "h2" | "display1" | "h3" | "body1" | "h6" | "h1" | "h5" | "body3" | "h4" | "inherit"
+    (/* keyof @mui/joy.@mui/joy/styles/types/typography.TypographySystem */ String) | "inherit"
   ] = js.undefined
   
   var lineHeight: js.UndefOr[
@@ -1454,6 +1459,8 @@ trait PartialLinkPropsLinkTypeMapadefaultCompo extends StObject {
   
   var results: js.UndefOr[Double] = js.undefined
   
+  var rev: js.UndefOr[String] = js.undefined
+  
   var right: js.UndefOr[
     (ResponsiveStyleValue[
       js.UndefOr[
@@ -1492,7 +1499,7 @@ trait PartialLinkPropsLinkTypeMapadefaultCompo extends StObject {
   
   var slotProps: js.UndefOr[EndDecoratorRoot] = js.undefined
   
-  var slots: js.UndefOr[EndDecorator] = js.undefined
+  var slots: js.UndefOr[PartialLinkSlots] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -1517,20 +1524,7 @@ trait PartialLinkPropsLinkTypeMapadefaultCompo extends StObject {
     ])
   ] = js.undefined
   
-  var textColor: js.UndefOr[
-    (ResponsiveStyleValue[
-      js.UndefOr[
-        com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-      ]
-    ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme, 
-      ResponsiveStyleValue[
-        js.UndefOr[
-          com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-        ]
-      ]
-    ])
-  ] = js.undefined
+  var textColor: js.UndefOr[TextColor] = js.undefined
   
   var textOverflow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]) | (js.Function1[
@@ -1883,6 +1877,10 @@ object PartialLinkPropsLinkTypeMapadefaultCompo {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -2213,9 +2211,13 @@ object PartialLinkPropsLinkTypeMapadefaultCompo {
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -3001,9 +3003,7 @@ object PartialLinkPropsLinkTypeMapadefaultCompo {
         ])*
     ): Self = StObject.set(x, "letterSpacing", js.Array(value*))
     
-    inline def setLevel(
-      value: "body4" | "display2" | "body2" | "body5" | "h2" | "display1" | "h3" | "body1" | "h6" | "h1" | "h5" | "body3" | "h4" | "inherit"
-    ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: (/* keyof @mui/joy.@mui/joy/styles/types/typography.TypographySystem */ String) | "inherit"): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
@@ -4463,6 +4463,10 @@ object PartialLinkPropsLinkTypeMapadefaultCompo {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+    
     inline def setRight(
       value: (ResponsiveStyleValue[
           js.UndefOr[
@@ -4541,7 +4545,7 @@ object PartialLinkPropsLinkTypeMapadefaultCompo {
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: EndDecorator): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: PartialLinkSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
@@ -4615,36 +4619,9 @@ object PartialLinkPropsLinkTypeMapadefaultCompo {
         ])*
     ): Self = StObject.set(x, "textAlign", js.Array(value*))
     
-    inline def setTextColor(
-      value: (ResponsiveStyleValue[
-          js.UndefOr[
-            com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-          ]
-        ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme, 
-          ResponsiveStyleValue[
-            js.UndefOr[
-              com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-            ]
-          ]
-        ])
-    ): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
-    
-    inline def setTextColorFunction1(
-      value: /* theme */ com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme => ResponsiveStyleValue[
-          js.UndefOr[
-            com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-          ]
-        ]
-    ): Self = StObject.set(x, "textColor", js.Any.fromFunction1(value))
+    inline def setTextColor(value: TextColor): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
-    
-    inline def setTextColorVarargs(
-      value: (js.UndefOr[
-          js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]] | com.olvind.mui.csstype.mod.Property.Color | NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]] | Null
-        ])*
-    ): Self = StObject.set(x, "textColor", js.Array(value*))
     
     inline def setTextOverflow(
       value: (ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]) | (js.Function1[

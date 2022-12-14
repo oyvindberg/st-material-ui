@@ -3,6 +3,7 @@ package com.olvind.mui.muiMaterial
 import com.olvind.mui.emotionSerialize.mod.CSSInterpolation
 import com.olvind.mui.emotionSerialize.mod.Keyframes
 import com.olvind.mui.emotionUtils.mod.SerializedStyles
+import com.olvind.mui.muiMaterial.anon.Css
 import com.olvind.mui.muiMaterial.anon.NameProps
 import com.olvind.mui.muiMaterial.anon.OmitThemepaletteCssVarsTheme
 import com.olvind.mui.muiMaterial.anon.PropsWithChildrenPartialCssVarsProviderC
@@ -221,6 +222,8 @@ object stylesMod {
     
     var cssVarPrefix: String
     
+    var generateCssVars: js.Function1[/* colorScheme */ js.UndefOr[SupportedColorScheme], Css]
+    
     var getColorSchemeSelector: js.Function1[/* colorScheme */ SupportedColorScheme, String]
     
     var getCssVar: js.Function2[/* field */ ThemeCssVar, /* repeated */ ThemeCssVar, String]
@@ -234,6 +237,8 @@ object stylesMod {
     var shadows: Shadows
     
     var shape: Shape
+    
+    var shouldSkipGeneratingVar: js.Function2[/* keys */ js.Array[String], /* value */ String | Double, Boolean]
     
     var spacing: Spacing
     
@@ -255,6 +260,7 @@ object stylesMod {
       breakpints: Breakpoints,
       colorSchemes: RecordSupportedColorSchemeColorSystem,
       cssVarPrefix: String,
+      generateCssVars: /* colorScheme */ js.UndefOr[SupportedColorScheme] => Css,
       getColorSchemeSelector: /* colorScheme */ SupportedColorScheme => String,
       getCssVar: (/* field */ ThemeCssVar, /* repeated */ ThemeCssVar) => String,
       mixins: Mixins,
@@ -262,6 +268,7 @@ object stylesMod {
       overlays: Overlays,
       shadows: Shadows,
       shape: Shape,
+      shouldSkipGeneratingVar: (/* keys */ js.Array[String], /* value */ String | Double) => Boolean,
       spacing: Spacing,
       transitions: Transitions,
       typography: Typography,
@@ -270,7 +277,7 @@ object stylesMod {
       vars: ThemeVars,
       zIndex: ZIndex
     ): Theme = {
-      val __obj = js.Dynamic.literal(breakpints = breakpints.asInstanceOf[js.Any], colorSchemes = colorSchemes.asInstanceOf[js.Any], cssVarPrefix = cssVarPrefix.asInstanceOf[js.Any], getColorSchemeSelector = js.Any.fromFunction1(getColorSchemeSelector), getCssVar = js.Any.fromFunction2(getCssVar), mixins = mixins.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], overlays = overlays.asInstanceOf[js.Any], shadows = shadows.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any], typography = typography.asInstanceOf[js.Any], unstable_sx = js.Any.fromFunction1(unstable_sx), unstable_sxConfig = unstable_sxConfig.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(breakpints = breakpints.asInstanceOf[js.Any], colorSchemes = colorSchemes.asInstanceOf[js.Any], cssVarPrefix = cssVarPrefix.asInstanceOf[js.Any], generateCssVars = js.Any.fromFunction1(generateCssVars), getColorSchemeSelector = js.Any.fromFunction1(getColorSchemeSelector), getCssVar = js.Any.fromFunction2(getCssVar), mixins = mixins.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], overlays = overlays.asInstanceOf[js.Any], shadows = shadows.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], shouldSkipGeneratingVar = js.Any.fromFunction2(shouldSkipGeneratingVar), spacing = spacing.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any], typography = typography.asInstanceOf[js.Any], unstable_sx = js.Any.fromFunction1(unstable_sx), unstable_sxConfig = unstable_sxConfig.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Theme]
     }
     
@@ -282,6 +289,8 @@ object stylesMod {
       inline def setColorSchemes(value: RecordSupportedColorSchemeColorSystem): Self = StObject.set(x, "colorSchemes", value.asInstanceOf[js.Any])
       
       inline def setCssVarPrefix(value: String): Self = StObject.set(x, "cssVarPrefix", value.asInstanceOf[js.Any])
+      
+      inline def setGenerateCssVars(value: /* colorScheme */ js.UndefOr[SupportedColorScheme] => Css): Self = StObject.set(x, "generateCssVars", js.Any.fromFunction1(value))
       
       inline def setGetColorSchemeSelector(value: /* colorScheme */ SupportedColorScheme => String): Self = StObject.set(x, "getColorSchemeSelector", js.Any.fromFunction1(value))
       
@@ -300,6 +309,8 @@ object stylesMod {
       inline def setShadowsVarargs(value: Any*): Self = StObject.set(x, "shadows", js.Array(value*))
       
       inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      
+      inline def setShouldSkipGeneratingVar(value: (/* keys */ js.Array[String], /* value */ String | Double) => Boolean): Self = StObject.set(x, "shouldSkipGeneratingVar", js.Any.fromFunction2(value))
       
       inline def setSpacing(value: Spacing): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       

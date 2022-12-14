@@ -27,6 +27,10 @@ object localeMod {
   @js.native
   val azAZ: Localization = js.native
   
+  @JSImport("@mui/material/locale", "beBY")
+  @js.native
+  val beBY: Localization = js.native
+  
   @JSImport("@mui/material/locale", "bgBG")
   @js.native
   val bgBG: Localization = js.native
@@ -126,6 +130,14 @@ object localeMod {
   @JSImport("@mui/material/locale", "koKR")
   @js.native
   val koKR: Localization = js.native
+  
+  @JSImport("@mui/material/locale", "kuCKB")
+  @js.native
+  val kuCKB: Localization = js.native
+  
+  @JSImport("@mui/material/locale", "kuLatn")
+  @js.native
+  val kuLatn: Localization = js.native
   
   @JSImport("@mui/material/locale", "mkMK")
   @js.native

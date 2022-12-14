@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriachecked
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapMenu
-import com.olvind.mui.muiMaterial.anon.`20`
+import com.olvind.mui.muiMaterial.anon.`23`
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import org.scalablytyped.runtime.Shortcut
@@ -33,7 +33,7 @@ object menuItemMenuItemMod extends Shortcut {
   
   type MenuItemProps[D /* <: ReactElement */, P] = OverrideProps[MenuItemTypeMap[P, D], D]
   
-  type MenuItemTypeMap[P, D /* <: ReactElement */] = ExtendButtonBaseTypeMap[`20`[P, D]]
+  type MenuItemTypeMap[P, D /* <: ReactElement */] = ExtendButtonBaseTypeMap[`23`[P, D]]
   
   type _To = js.Function1[
     /* props */ OverridePropsExtendButtonBaseTypeMapMenu | DefaultComponentPropsExtendButtonBaseTypAriachecked, 

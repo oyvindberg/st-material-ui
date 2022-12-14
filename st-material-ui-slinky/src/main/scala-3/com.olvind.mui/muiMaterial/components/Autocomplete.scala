@@ -1,16 +1,17 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteChangeDetails
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteCloseReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteFreeSoloValueMapping
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteHighlightChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteInputChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteValue
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.FilterOptionsState
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteChangeDetails
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteCloseReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteFreeSoloValueMapping
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteHighlightChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteInputChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteValue
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.FilterOptionsState
 import com.olvind.mui.muiMaterial.anon.ClearIndicator
 import com.olvind.mui.muiMaterial.anon.PartialAutocompleteClasses
+import com.olvind.mui.muiMaterial.anon.Sx
 import com.olvind.mui.muiMaterial.autocompleteAutocompleteMod.AutocompleteOwnerState
 import com.olvind.mui.muiMaterial.autocompleteAutocompleteMod.AutocompleteProps
 import com.olvind.mui.muiMaterial.autocompleteAutocompleteMod.AutocompleteRenderGetTagProps
@@ -74,9 +75,9 @@ object Autocomplete {
     inline def ListboxComponent(value: HTMLAttributes[HTMLElement] => ReactElement | Null): this.type = set("ListboxComponent", js.Any.fromFunction1(value))
     
     inline def ListboxProps(
-      value: ReturnType[
+      value: (ReturnType[
           /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<@mui/material.anon.FnCall>['getListboxProps'] */ js.Any
-        ]
+        ]) & Sx
     ): this.type = set("ListboxProps", value.asInstanceOf[js.Any])
     
     inline def PaperComponent(value: HTMLAttributes[HTMLElement] => ReactElement | Null): this.type = set("PaperComponent", js.Any.fromFunction1(value))
@@ -191,6 +192,8 @@ object Autocomplete {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoHighlight(value: Boolean): this.type = set("autoHighlight", value.asInstanceOf[js.Any])
     
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
@@ -218,6 +221,8 @@ object Autocomplete {
     inline def componentName(value: String): this.type = set("componentName", value.asInstanceOf[js.Any])
     
     inline def componentsProps(value: ClearIndicator): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -505,6 +510,8 @@ object Autocomplete {
       value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
     ): this.type = set("ref", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def renderGroup(value: /* params */ AutocompleteRenderGroupParams => ReactElement): this.type = set("renderGroup", js.Any.fromFunction1(value))
     
     inline def renderOption(
@@ -518,6 +525,8 @@ object Autocomplete {
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     

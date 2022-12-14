@@ -1,9 +1,10 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
+import com.olvind.mui.muiBase.modalUnstyledModalUnstyledDottypesMod.ModalUnstyledSlots
 import com.olvind.mui.muiMaterial.anon.PartialBackdropPropsdiv
 import com.olvind.mui.muiMaterial.anon.PartialDrawerClasses
-import com.olvind.mui.muiMaterial.anon.PartialModalPropsdefaultComponent
+import com.olvind.mui.muiMaterial.anon.PartialModalPropsdiv
 import com.olvind.mui.muiMaterial.anon.PartialPaperPropsdiv
 import com.olvind.mui.muiMaterial.anon.PartialSlideProps
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
@@ -19,6 +20,7 @@ import org.scalajs.dom.Element
 import org.scalajs.dom.Event
 import org.scalajs.dom.EventTarget
 import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.TouchEvent
 import slinky.core.SyntheticEvent
 import slinky.core.facade.ReactElement
 import slinky.web.SyntheticAnimationEvent
@@ -60,7 +62,7 @@ object SwipeableDrawer {
     
     inline def BackdropProps(value: PartialBackdropPropsdiv): this.type = set("BackdropProps", value.asInstanceOf[js.Any])
     
-    inline def ModalProps(value: PartialModalPropsdefaultComponent): this.type = set("ModalProps", value.asInstanceOf[js.Any])
+    inline def ModalProps(value: PartialModalPropsdiv): this.type = set("ModalProps", value.asInstanceOf[js.Any])
     
     inline def PaperProps(value: PartialPaperPropsdiv): this.type = set("PaperProps", value.asInstanceOf[js.Any])
     
@@ -71,6 +73,17 @@ object SwipeableDrawer {
     inline def about(value: String): this.type = set("about", value.asInstanceOf[js.Any])
     
     inline def accessKey(value: String): this.type = set("accessKey", value.asInstanceOf[js.Any])
+    
+    inline def allowSwipeInChildren(
+      value: Boolean | (js.Function3[
+          /* e */ TouchEvent, 
+          /* swipeArea */ HTMLDivElement, 
+          /* paper */ HTMLDivElement, 
+          Boolean
+        ])
+    ): this.type = set("allowSwipeInChildren", value.asInstanceOf[js.Any])
+    
+    inline def allowSwipeInChildrenFunction3(value: (/* e */ TouchEvent, /* swipeArea */ HTMLDivElement, /* paper */ HTMLDivElement) => Boolean): this.type = set("allowSwipeInChildren", js.Any.fromFunction3(value))
     
     inline def anchor(value: "left" | "top" | "right" | "bottom"): this.type = set("anchor", value.asInstanceOf[js.Any])
     
@@ -176,6 +189,8 @@ object SwipeableDrawer {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
@@ -186,15 +201,17 @@ object SwipeableDrawer {
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
     
-    inline def components(value: com.olvind.mui.muiMaterial.anon.Backdrop): this.type = set("components", value.asInstanceOf[js.Any])
+    inline def components(value: com.olvind.mui.muiMaterial.anon.BackdropRoot): this.type = set("components", value.asInstanceOf[js.Any])
     
-    inline def componentsProps(value: com.olvind.mui.muiBase.anon.Backdrop): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+    inline def componentsProps(value: com.olvind.mui.muiMaterial.anon.Backdrop): this.type = set("componentsProps", value.asInstanceOf[js.Any])
     
     inline def container(value: Element | (js.Function0[Element | Null])): this.type = set("container", value.asInstanceOf[js.Any])
     
     inline def containerFunction0(value: () => Element | Null): this.type = set("container", js.Any.fromFunction0(value))
     
     inline def containerNull: this.type = set("container", null)
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -438,9 +455,13 @@ object SwipeableDrawer {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -448,9 +469,9 @@ object SwipeableDrawer {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: com.olvind.mui.muiBase.anon.Backdrop): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: com.olvind.mui.muiMaterial.anon.Backdrop): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: com.olvind.mui.muiBase.anon.BackdropRoot): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: ModalUnstyledSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object alertAlertMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Alert](https://mui.com/joy-ui/react-alert/)
+    *
+    * API:
+    *
+    * - [Alert API](https://mui.com/joy-ui/api/alert/)
+    */
   @JSImport("@mui/joy/Alert/Alert", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsAlertTypeMapdiv, Element | Null] = js.native

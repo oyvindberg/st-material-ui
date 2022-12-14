@@ -48,12 +48,12 @@ trait Determinate extends StObject {
     * The value of the progress indicator for the determinate variant.
     * Value between 0 and 100.
     *
-    * For indeterminate, @default 25
+    * @default determinate ? 0 : 25
     */
   var value: js.UndefOr[Double] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'soft'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, CircularProgressPropsVariantOverrides]] = js.undefined

@@ -24,9 +24,11 @@ object generateUtilityClassGenerateUtilityClassMod {
     
     inline def focused: "focused" = "focused".asInstanceOf["focused"]
     
+    inline def readOnly: "readOnly" = "readOnly".asInstanceOf["readOnly"]
+    
     inline def required: "required" = "required".asInstanceOf["required"]
     
     inline def selected: "selected" = "selected".asInstanceOf["selected"]
   }
-  type GlobalStateSlot = "active" | "checked" | "completed" | "disabled" | "error" | "expanded" | "focused" | "focusVisible" | "required" | "selected"
+  type GlobalStateSlot = "active" | "checked" | "completed" | "disabled" | "readOnly" | "error" | "expanded" | "focused" | "focusVisible" | "required" | "selected"
 }

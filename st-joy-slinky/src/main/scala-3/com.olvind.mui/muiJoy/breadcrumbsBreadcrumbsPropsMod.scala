@@ -1,8 +1,8 @@
 package com.olvind.mui.muiJoy
 
-import com.olvind.mui.muiJoy.anon.ChildrenSeparator
 import com.olvind.mui.muiJoy.anon.Li
 import com.olvind.mui.muiJoy.anon.Ol
+import com.olvind.mui.muiJoy.anon.PartialBreadcrumbsSlots
 import com.olvind.mui.muiJoy.anon.Separator
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme
@@ -163,6 +163,8 @@ object breadcrumbsBreadcrumbsPropsMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     /**
@@ -175,6 +177,8 @@ object breadcrumbsBreadcrumbsPropsMod {
     var color: js.UndefOr[String] = js.undefined
     
     var component: js.UndefOr[ReactElement] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
@@ -388,9 +392,13 @@ object breadcrumbsBreadcrumbsPropsMod {
     
     var ref: js.UndefOr[LegacyRef[HTMLElement]] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -411,9 +419,9 @@ object breadcrumbsBreadcrumbsPropsMod {
     
     var slot: js.UndefOr[String] = js.undefined
     
-    var slotProps: js.UndefOr[Ol] = js.undefined
+    var slotProps: js.UndefOr[Li] = js.undefined
     
-    var slots: js.UndefOr[Li] = js.undefined
+    var slots: js.UndefOr[PartialBreadcrumbsSlots] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
@@ -660,6 +668,10 @@ object breadcrumbsBreadcrumbsPropsMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -680,9 +692,13 @@ object breadcrumbsBreadcrumbsPropsMod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1114,6 +1130,10 @@ object breadcrumbsBreadcrumbsPropsMod {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1121,6 +1141,10 @@ object breadcrumbsBreadcrumbsPropsMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1140,13 +1164,13 @@ object breadcrumbsBreadcrumbsPropsMod {
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
-      inline def setSlotProps(value: Ol): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      inline def setSlotProps(value: Li): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
       
       inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
       inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
-      inline def setSlots(value: Li): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: PartialBreadcrumbsSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
@@ -1218,17 +1242,63 @@ object breadcrumbsBreadcrumbsPropsMod {
   }
   type BreadcrumbsSlot = "root" | "ol" | "li" | "separator"
   
-  type BreadcrumbsSlotsAndSlotProps = CreateSlotsAndSlotProps[BreadcrumbsSlot, Separator]
+  trait BreadcrumbsSlots extends StObject {
+    
+    /**
+      * The component that renders the li.
+      * @default 'li'
+      */
+    var li: ReactElement
+    
+    /**
+      * The component that renders the ol.
+      * @default 'ol'
+      */
+    var ol: ReactElement
+    
+    /**
+      * The component that renders the root.
+      * @default 'nav'
+      */
+    var root: ReactElement
+    
+    /**
+      * The component that renders the separator.
+      * @default 'li'
+      */
+    var separator: ReactElement
+  }
+  object BreadcrumbsSlots {
+    
+    inline def apply(li: ReactElement, ol: ReactElement, root: ReactElement, separator: ReactElement): BreadcrumbsSlots = {
+      val __obj = js.Dynamic.literal(li = li.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], separator = separator.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BreadcrumbsSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsSlots] (val x: Self) extends AnyVal {
+      
+      inline def setLi(value: ReactElement): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
+      
+      inline def setOl(value: ReactElement): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+      
+      inline def setRoot(value: ReactElement): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setSeparator(value: ReactElement): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type BreadcrumbsSlotsAndSlotProps = CreateSlotsAndSlotProps[BreadcrumbsSlots, Ol]
   
   trait BreadcrumbsTypeMap[P, D /* <: ReactElement */] extends StObject {
     
     var defaultComponent: D
     
-    var props: P & BreadcrumbsSlotsAndSlotProps & ChildrenSeparator
+    var props: P & BreadcrumbsSlotsAndSlotProps & Separator
   }
   object BreadcrumbsTypeMap {
     
-    inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & BreadcrumbsSlotsAndSlotProps & ChildrenSeparator): BreadcrumbsTypeMap[P, D] = {
+    inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & BreadcrumbsSlotsAndSlotProps & Separator): BreadcrumbsTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[BreadcrumbsTypeMap[P, D]]
     }
@@ -1238,7 +1308,7 @@ object breadcrumbsBreadcrumbsPropsMod {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: P & BreadcrumbsSlotsAndSlotProps & ChildrenSeparator): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P & BreadcrumbsSlotsAndSlotProps & Separator): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

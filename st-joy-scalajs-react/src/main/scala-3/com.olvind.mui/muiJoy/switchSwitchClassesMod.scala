@@ -16,7 +16,7 @@ object switchSwitchClassesMod {
   
   inline def getSwitchUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSwitchUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type SwitchClassKey = "root" | "checked" | "disabled" | "action" | "input" | "thumb" | "track" | "focusVisible" | "readOnly" | "colorPrimary" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "sizeSm" | "sizeMd" | "sizeLg" | "variantOutlined" | "variantSoft" | "variantSolid" | "startDecorator" | "endDecorator"
+  type SwitchClassKey = "root" | "checked" | "disabled" | "action" | "input" | "thumb" | "track" | "focusVisible" | "readOnly" | "colorPrimary" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "colorContext" | "sizeSm" | "sizeMd" | "sizeLg" | "variantOutlined" | "variantSoft" | "variantSolid" | "startDecorator" | "endDecorator"
   
   trait SwitchClasses extends StObject {
     
@@ -25,6 +25,9 @@ object switchSwitchClassesMod {
     
     /** State class applied to the root `checked` class. */
     var checked: String
+    
+    /** Styles applied to the root element when color inversion is triggered. */
+    var colorContext: String
     
     /** Styles applied to the root element if `color="danger"`. */
     var colorDanger: String
@@ -91,6 +94,7 @@ object switchSwitchClassesMod {
     inline def apply(
       action: String,
       checked: String,
+      colorContext: String,
       colorDanger: String,
       colorInfo: String,
       colorPrimary: String,
@@ -112,7 +116,7 @@ object switchSwitchClassesMod {
       variantSoft: String,
       variantSolid: String
     ): SwitchClasses = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], checked = checked.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], checked = checked.asInstanceOf[js.Any], colorContext = colorContext.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwitchClasses]
     }
     
@@ -122,6 +126,8 @@ object switchSwitchClassesMod {
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      
+      inline def setColorContext(value: String): Self = StObject.set(x, "colorContext", value.asInstanceOf[js.Any])
       
       inline def setColorDanger(value: String): Self = StObject.set(x, "colorDanger", value.asInstanceOf[js.Any])
       

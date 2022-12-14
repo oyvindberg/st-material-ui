@@ -24,7 +24,6 @@ object badgeBadgeMod extends Shortcut {
     * API:
     *
     * - [Badge API](https://mui.com/material-ui/api/badge/)
-    * - inherits [BadgeUnstyled API](https://mui.com/base/api/badge-unstyled/)
     */
   @JSImport("@mui/material/Badge/Badge", JSImport.Default)
   @js.native

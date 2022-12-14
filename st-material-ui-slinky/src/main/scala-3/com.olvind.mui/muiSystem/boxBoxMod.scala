@@ -69,11 +69,13 @@ import com.olvind.mui.csstype.mod.Property.Top
 import com.olvind.mui.csstype.mod.Property.Visibility
 import com.olvind.mui.csstype.mod.Property.Width
 import com.olvind.mui.csstype.mod.Property.ZIndex
-import com.olvind.mui.muiSystem.anon.DefaultComponentPropsBoxTypeMapdiv
+import com.olvind.mui.muiSystem.anon.Children
+import com.olvind.mui.muiSystem.anon.DefaultComponentPropsBoxTypeMapdivTheme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.react.mod.global.JSX.Element
 import com.olvind.mui.std.NonNullable
 import org.scalablytyped.runtime.Shortcut
+import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,7 +95,29 @@ object boxBoxMod extends Shortcut {
     */
   @JSImport("@mui/system/Box/Box", JSImport.Default)
   @js.native
-  val default: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element | Null] = js.native
+  val default: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdivTheme, Element | Null] = js.native
+  
+  trait BoxTypeMap[P, D /* <: ReactElement */, T /* <: js.Object */] extends StObject {
+    
+    var defaultComponent: D
+    
+    var props: P & SystemProps[T] & Children[T]
+  }
+  object BoxTypeMap {
+    
+    inline def apply[P, D /* <: ReactElement */, T /* <: js.Object */](defaultComponent: D, props: P & SystemProps[T] & Children[T]): BoxTypeMap[P, D, T] = {
+      val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BoxTypeMap[P, D, T]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxTypeMap[?, ?, ?], P, D /* <: ReactElement */, T /* <: js.Object */] (val x: Self & (BoxTypeMap[P, D, T])) extends AnyVal {
+      
+      inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: P & SystemProps[T] & Children[T]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
   
   type StyleFunction[Props] = js.Function1[/* props */ Props, Any]
   
@@ -3476,8 +3500,8 @@ object boxBoxMod extends Shortcut {
     }
   }
   
-  type _To = js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element | Null]
+  type _To = js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdivTheme, Element | Null]
   
   /* This means you don't have to write `default`, but can instead just say `boxBoxMod.foo` */
-  override def _to: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element | Null] = default
+  override def _to: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdivTheme, Element | Null] = default
 }

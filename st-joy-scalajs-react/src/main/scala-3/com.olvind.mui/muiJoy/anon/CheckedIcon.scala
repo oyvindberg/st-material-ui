@@ -54,7 +54,7 @@ trait CheckedIcon extends StObject {
   
   /**
     * The icon to display when the component is indeterminate.
-    * @default <IndeterminateCheckBoxIcon />
+    * @default <IndeterminateIcon />
     */
   var indeterminateIcon: js.UndefOr[Node] = js.undefined
   
@@ -98,7 +98,7 @@ trait CheckedIcon extends StObject {
   var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'solid'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, CheckboxPropsVariantOverrides]] = js.undefined

@@ -24,6 +24,7 @@ trait DefaultValue extends StObject {
   
   /**
     * The color of the component. It supports those theme colors that make sense for this component.
+    * @default 'neutral'
     */
   var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, RadioPropsColorOverrides]] = js.undefined
   
@@ -40,6 +41,7 @@ trait DefaultValue extends StObject {
   
   /**
     * The radio's `disabledIcon` prop. If specified, the value is passed down to every radios under this element.
+    * @default false
     */
   var disableIcon: js.UndefOr[Boolean] = js.undefined
   
@@ -58,15 +60,16 @@ trait DefaultValue extends StObject {
   var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit]] = js.undefined
   
   /**
-    * The radio's `overlay` prop. If specified, the value is passed down to every radios under this element.
+    * The component orientation.
+    * @default 'vertical'
     */
-  var overlay: js.UndefOr[Boolean] = js.undefined
+  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   /**
-    * If `true`, flex direction is set to 'row'.
+    * The radio's `overlay` prop. If specified, the value is passed down to every radios under this element.
     * @default false
     */
-  var row: js.UndefOr[Boolean] = js.undefined
+  var overlay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The size of the component.
@@ -85,7 +88,8 @@ trait DefaultValue extends StObject {
   var value: js.UndefOr[Any] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
+    * @default 'plain'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, RadioPropsVariantOverrides]] = js.undefined
 }
@@ -127,13 +131,13 @@ object DefaultValue {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
+    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
     inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
-    
-    inline def setRow(value: Boolean): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
-    
-    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
     inline def setSize(value: OverridableStringUnion["sm" | "md" | "lg", RadioPropsSizeOverrides]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

@@ -12,6 +12,16 @@ object tooltipTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Tooltip](https://mui.com/joy-ui/react-tooltip/)
+    *
+    * API:
+    *
+    * - [Tooltip API](https://mui.com/joy-ui/api/tooltip/)
+    */
   @JSImport("@mui/joy/Tooltip/Tooltip", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsTooltipTypeMapdiv, Element | Null] = js.native

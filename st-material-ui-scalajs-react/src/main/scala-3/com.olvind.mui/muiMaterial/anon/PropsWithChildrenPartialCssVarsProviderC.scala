@@ -40,8 +40,6 @@ trait PropsWithChildrenPartialCssVarsProviderC extends StObject {
   
   var modeStorageKey: js.UndefOr[String] = js.undefined
   
-  var shouldSkipGeneratingVar: js.UndefOr[js.Function2[/* keys */ js.Array[String], /* value */ String | Double, Boolean]] = js.undefined
-  
   var storageWindow: js.UndefOr[Window | Null] = js.undefined
   
   var theme: js.UndefOr[ColorSchemes] = js.undefined
@@ -113,10 +111,6 @@ object PropsWithChildrenPartialCssVarsProviderC {
     inline def setModeStorageKey(value: String): Self = StObject.set(x, "modeStorageKey", value.asInstanceOf[js.Any])
     
     inline def setModeStorageKeyUndefined: Self = StObject.set(x, "modeStorageKey", js.undefined)
-    
-    inline def setShouldSkipGeneratingVar(value: (/* keys */ js.Array[String], /* value */ String | Double) => Boolean): Self = StObject.set(x, "shouldSkipGeneratingVar", js.Any.fromFunction2(value))
-    
-    inline def setShouldSkipGeneratingVarUndefined: Self = StObject.set(x, "shouldSkipGeneratingVar", js.undefined)
     
     inline def setStorageWindow(value: Window): Self = StObject.set(x, "storageWindow", value.asInstanceOf[js.Any])
     

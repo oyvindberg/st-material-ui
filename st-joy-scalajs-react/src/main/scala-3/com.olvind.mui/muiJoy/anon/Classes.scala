@@ -1,15 +1,13 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.dividerDividerPropsMod.DividerInsetOverrides
+import com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderPropsColorOverrides
+import com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderPropsSizeOverrides
+import com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderPropsVariantOverrides
+import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
+import com.olvind.mui.muiJoy.stylesTypesVariantsMod.VariantProp
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.muiTypes.mod.OverridableStringUnion
-import japgolly.scalajs.react.facade.Empty
-import japgolly.scalajs.react.facade.JsNumber
-import japgolly.scalajs.react.facade.React.Element
-import japgolly.scalajs.react.facade.React.Node
-import japgolly.scalajs.react.vdom.VdomElement
-import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,30 +15,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Classes extends StObject {
   
   /**
-    * The content of the component.
-    */
-  var children: js.UndefOr[Node] = js.undefined
-  
-  /**
     * Override or extend the styles applied to the component.
     */
-  var classes: js.UndefOr[PartialDividerClasses] = js.undefined
+  var classes: js.UndefOr[PartialSliderUnstyledClasses] = js.undefined
   
   /**
-    * The styles applied to the divider to shrink or stretch the line based on the orientation.
+    * The color of the component. It supports those theme colors that make sense for this component.
+    * @default 'primary'
     */
-  var inset: js.UndefOr[OverridableStringUnion["none" | "context", DividerInsetOverrides]] = js.undefined
+  var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, SliderPropsColorOverrides]] = js.undefined
   
   /**
-    * The component orientation.
-    * @default 'horizontal'
+    * The size of the component.
+    * It accepts theme values between 'sm' and 'lg'.
+    * @default 'md'
     */
-  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
+  var size: js.UndefOr[OverridableStringUnion["sm" | "md" | "lg", SliderPropsSizeOverrides]] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
   var sx: js.UndefOr[SxProps] = js.undefined
+  
+  /**
+    * Controls when the value label is displayed:
+    *
+    * - `auto` the value label will display when the thumb is hovered or focused.
+    * - `on` will display persistently.
+    * - `off` will never display.
+    * @default 'off'
+    */
+  var valueLabelDisplay: js.UndefOr["on" | "auto" | "off"] = js.undefined
+  
+  /**
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
+    * @default 'solid'
+    */
+  var variant: js.UndefOr[OverridableStringUnion[VariantProp, SliderPropsVariantOverrides]] = js.undefined
 }
 object Classes {
   
@@ -52,27 +63,17 @@ object Classes {
   @scala.inline
   implicit open class MutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
     
-    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
-    
-    inline def setChildrenNull: Self = StObject.set(x, "children", null)
-    
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    
-    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
-    
-    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
-    
-    inline def setClasses(value: PartialDividerClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: PartialSliderUnstyledClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setInset(value: OverridableStringUnion["none" | "context", DividerInsetOverrides]): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setColor(value: OverridableStringUnion[ColorPaletteProp, SliderPropsColorOverrides]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setSize(value: OverridableStringUnion["sm" | "md" | "lg", SliderPropsSizeOverrides]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setSx(value: SxProps): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
@@ -90,5 +91,13 @@ object Classes {
           SystemStyleObject[com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
+    
+    inline def setValueLabelDisplay(value: "on" | "auto" | "off"): Self = StObject.set(x, "valueLabelDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setValueLabelDisplayUndefined: Self = StObject.set(x, "valueLabelDisplay", js.undefined)
+    
+    inline def setVariant(value: OverridableStringUnion[VariantProp, SliderPropsVariantOverrides]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

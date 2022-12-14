@@ -34,6 +34,7 @@ trait MaxRows extends StObject {
   /**
     * If `true`, the `input` will indicate an error.
     * The prop defaults to the value (`false`) inherited from the parent FormControl component.
+    * @default false
     */
   var error: js.UndefOr[Boolean] = js.undefined
   
@@ -65,7 +66,7 @@ trait MaxRows extends StObject {
   var sx: js.UndefOr[SxProps] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'outlined'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, TextareaPropsVariantOverrides]] = js.undefined

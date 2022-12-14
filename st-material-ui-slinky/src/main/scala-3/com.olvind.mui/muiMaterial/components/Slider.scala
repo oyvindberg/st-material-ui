@@ -1,11 +1,11 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.anon.MarkLabel
-import com.olvind.mui.muiBase.anon.PartialSliderUnstyledClasses
-import com.olvind.mui.muiMaterial.anon.ColorPrimary
-import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendSliderUnstyle
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsSliderTypeMapspan
 import com.olvind.mui.muiMaterial.anon.Mark
+import com.olvind.mui.muiMaterial.anon.MarkLabel
+import com.olvind.mui.muiMaterial.anon.PartialSliderClasses
+import com.olvind.mui.muiMaterial.anon.Rail
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
@@ -153,17 +153,23 @@ object Slider {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
-    inline def classes(value: js.UndefOr[PartialSliderUnstyledClasses] & ColorPrimary): this.type = set("classes", value.asInstanceOf[js.Any])
+    inline def classes(value: PartialSliderClasses): this.type = set("classes", value.asInstanceOf[js.Any])
     
     inline def color(value: "primary" | "secondary"): this.type = set("color", value.asInstanceOf[js.Any])
     
-    inline def components(value: Mark): this.type = set("components", value.asInstanceOf[js.Any])
+    inline def component(value: String): this.type = set("component", value.asInstanceOf[js.Any])
     
-    inline def componentsProps(value: com.olvind.mui.muiBase.anon.Mark): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+    inline def components(value: MarkLabel): this.type = set("components", value.asInstanceOf[js.Any])
+    
+    inline def componentsProps(value: Mark): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -201,8 +207,6 @@ object Slider {
     
     inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
     
-    inline def isRtl(value: Boolean): this.type = set("isRtl", value.asInstanceOf[js.Any])
-    
     inline def itemID(value: String): this.type = set("itemID", value.asInstanceOf[js.Any])
     
     inline def itemProp(value: String): this.type = set("itemProp", value.asInstanceOf[js.Any])
@@ -215,9 +219,9 @@ object Slider {
     
     inline def lang(value: String): this.type = set("lang", value.asInstanceOf[js.Any])
     
-    inline def marks(value: Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark]): this.type = set("marks", value.asInstanceOf[js.Any])
+    inline def marks(value: Boolean | js.Array[com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark]): this.type = set("marks", value.asInstanceOf[js.Any])
     
-    inline def marksVarargs(value: com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark*): this.type = set("marks", js.Array(value*))
+    inline def marksVarargs(value: com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark*): this.type = set("marks", js.Array(value*))
     
     inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
     
@@ -403,9 +407,13 @@ object Slider {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -417,9 +425,9 @@ object Slider {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: com.olvind.mui.muiBase.anon.Mark): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: Mark): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: MarkLabel): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: Rail): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     
@@ -466,11 +474,11 @@ object Slider {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
-  type Props = /* props */ DefaultComponentPropsExtendSliderUnstyle
+  type Props = /* props */ DefaultComponentPropsSliderTypeMapspan
   
   implicit def make(companion: Slider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
-  def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsExtendSliderUnstyle, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsExtendSliderUnstyle, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsSliderTypeMapspan, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsSliderTypeMapspan, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
-  def withProps(p: /* props */ DefaultComponentPropsExtendSliderUnstyle): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps(p: /* props */ DefaultComponentPropsSliderTypeMapspan): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

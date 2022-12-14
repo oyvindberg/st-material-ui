@@ -13,6 +13,16 @@ object tabsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Tabs](https://mui.com/joy-ui/react-tabs/)
+    *
+    * API:
+    *
+    * - [Tabs API](https://mui.com/joy-ui/api/tabs/)
+    */
   @JSImport("@mui/joy/Tabs", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsTabsTypeMapdiv, Element | Null] = js.native

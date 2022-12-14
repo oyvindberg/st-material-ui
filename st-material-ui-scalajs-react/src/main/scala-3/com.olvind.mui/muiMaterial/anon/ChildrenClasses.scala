@@ -22,7 +22,7 @@ trait ChildrenClasses extends StObject {
   /**
     * Override or extend the styles applied to the component.
     */
-  var classes: js.UndefOr[PartialDialogTitleClasses] = js.undefined
+  var classes: js.UndefOr[PartialCardContentClasses] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
@@ -49,7 +49,7 @@ object ChildrenClasses {
     
     inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
     
-    inline def setClasses(value: PartialDialogTitleClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: PartialCardContentClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     

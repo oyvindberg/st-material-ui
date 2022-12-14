@@ -12,6 +12,16 @@ object selectMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Select](https://mui.com/joy-ui/react-select/)
+    *
+    * API:
+    *
+    * - [Select API](https://mui.com/joy-ui/api/select/)
+    */
   @JSImport("@mui/joy/Select", JSImport.Default)
   @js.native
   val default: SelectComponent = js.native

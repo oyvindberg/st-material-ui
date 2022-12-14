@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.Ref
-import com.olvind.mui.muiMaterial.anon.`26`
+import com.olvind.mui.muiMaterial.anon.`27`
 import com.olvind.mui.muiMaterial.stylesMod.StyledComponentProps
 import com.olvind.mui.muiTypes.mod.DistributiveOmit
 import com.olvind.mui.react.mod.CSSProperties
@@ -62,7 +62,7 @@ object overridableComponentMod {
     /* keyof @mui/material.@mui/material/OverridableComponent.BaseProps<M> */ "className" | "style" | "classes"
   ]) & Ref
   
-  type OverridableComponent[M /* <: OverridableTypeMap */] = js.Function1[/* props */ DefaultComponentProps[M] & `26`, Element]
+  type OverridableComponent[M /* <: OverridableTypeMap */] = js.Function1[/* props */ DefaultComponentProps[M] & `27`, Element]
   
   trait OverridableTypeMap extends StObject {
     

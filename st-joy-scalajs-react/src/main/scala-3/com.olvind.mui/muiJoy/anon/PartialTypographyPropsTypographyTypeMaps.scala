@@ -69,6 +69,7 @@ import com.olvind.mui.csstype.mod.Property.Width
 import com.olvind.mui.csstype.mod.Property.ZIndex
 import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
+import com.olvind.mui.muiJoy.stylesTypesThemeMod.TextColor
 import com.olvind.mui.muiJoy.stylesTypesVariantsMod.VariantProp
 import com.olvind.mui.muiJoy.typographyTypographyPropsMod.TypographyPropsColorOverrides
 import com.olvind.mui.muiJoy.typographyTypographyPropsMod.TypographyPropsVariantOverrides
@@ -96,6 +97,8 @@ import com.olvind.mui.react.mod.TransitionEventHandler
 import com.olvind.mui.react.mod.UIEventHandler
 import com.olvind.mui.react.mod.WheelEventHandler
 import com.olvind.mui.std.NonNullable
+import com.olvind.mui.std.Partial
+import com.olvind.mui.std.Record
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactAnimationEventFrom
 import japgolly.scalajs.react.ReactClipboardEventFrom
@@ -252,6 +255,8 @@ trait PartialTypographyPropsTypographyTypeMaps extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var bgcolor: js.UndefOr[
@@ -401,6 +406,8 @@ trait PartialTypographyPropsTypographyTypeMaps extends StObject {
   ] = js.undefined
   
   var component: js.UndefOr[ElementType] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -739,10 +746,17 @@ trait PartialTypographyPropsTypographyTypeMaps extends StObject {
   ] = js.undefined
   
   var level: js.UndefOr[
-    "body4" | "display2" | "body2" | "body5" | "h2" | "display1" | "h3" | "body1" | "h6" | "h1" | "h5" | "body3" | "h4" | "inherit"
+    (/* keyof @mui/joy.@mui/joy/styles/types/typography.TypographySystem */ String) | "inherit"
   ] = js.undefined
   
-  var levelMapping: js.UndefOr[PartialRecordkeyofTypographySysteminheri] = js.undefined
+  var levelMapping: js.UndefOr[
+    Partial[
+      Record[
+        (/* keyof @mui/joy.@mui/joy/styles/types/typography.TypographySystem */ String) | "inherit", 
+        String
+      ]
+    ]
+  ] = js.undefined
   
   var lineHeight: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1434,9 +1448,13 @@ trait PartialTypographyPropsTypographyTypeMaps extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLSpanElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var right: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1474,9 +1492,9 @@ trait PartialTypographyPropsTypographyTypeMaps extends StObject {
   
   var slot: js.UndefOr[String] = js.undefined
   
-  var slotProps: js.UndefOr[`3`] = js.undefined
+  var slotProps: js.UndefOr[EndDecoratorRootStartDecorator] = js.undefined
   
-  var slots: js.UndefOr[EndDecorator] = js.undefined
+  var slots: js.UndefOr[PartialTypographySlots] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -1499,20 +1517,7 @@ trait PartialTypographyPropsTypographyTypeMaps extends StObject {
     ])
   ] = js.undefined
   
-  var textColor: js.UndefOr[
-    (ResponsiveStyleValue[
-      js.UndefOr[
-        com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-      ]
-    ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme, 
-      ResponsiveStyleValue[
-        js.UndefOr[
-          com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-        ]
-      ]
-    ])
-  ] = js.undefined
+  var textColor: js.UndefOr[TextColor] = js.undefined
   
   var textOverflow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]) | (js.Function1[
@@ -1861,6 +1866,10 @@ object PartialTypographyPropsTypographyTypeMaps {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -2191,9 +2200,13 @@ object PartialTypographyPropsTypographyTypeMaps {
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -2963,11 +2976,16 @@ object PartialTypographyPropsTypographyTypeMaps {
         ])*
     ): Self = StObject.set(x, "letterSpacing", js.Array(value*))
     
-    inline def setLevel(
-      value: "body4" | "display2" | "body2" | "body5" | "h2" | "display1" | "h3" | "body1" | "h6" | "h1" | "h5" | "body3" | "h4" | "inherit"
-    ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: (/* keyof @mui/joy.@mui/joy/styles/types/typography.TypographySystem */ String) | "inherit"): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setLevelMapping(value: PartialRecordkeyofTypographySysteminheri): Self = StObject.set(x, "levelMapping", value.asInstanceOf[js.Any])
+    inline def setLevelMapping(
+      value: Partial[
+          Record[
+            (/* keyof @mui/joy.@mui/joy/styles/types/typography.TypographySystem */ String) | "inherit", 
+            String
+          ]
+        ]
+    ): Self = StObject.set(x, "levelMapping", value.asInstanceOf[js.Any])
     
     inline def setLevelMappingUndefined: Self = StObject.set(x, "levelMapping", js.undefined)
     
@@ -4405,6 +4423,10 @@ object PartialTypographyPropsTypographyTypeMaps {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -4412,6 +4434,10 @@ object PartialTypographyPropsTypographyTypeMaps {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRight(
       value: (ResponsiveStyleValue[
@@ -4485,13 +4511,13 @@ object PartialTypographyPropsTypographyTypeMaps {
     
     inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    inline def setSlotProps(value: `3`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: EndDecoratorRootStartDecorator): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: EndDecorator): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: PartialTypographySlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
@@ -4561,36 +4587,9 @@ object PartialTypographyPropsTypographyTypeMaps {
         ])*
     ): Self = StObject.set(x, "textAlign", js.Array(value*))
     
-    inline def setTextColor(
-      value: (ResponsiveStyleValue[
-          js.UndefOr[
-            com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-          ]
-        ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme, 
-          ResponsiveStyleValue[
-            js.UndefOr[
-              com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-            ]
-          ]
-        ])
-    ): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
-    
-    inline def setTextColorFunction1(
-      value: /* theme */ com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme => ResponsiveStyleValue[
-          js.UndefOr[
-            com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-          ]
-        ]
-    ): Self = StObject.set(x, "textColor", js.Any.fromFunction1(value))
+    inline def setTextColor(value: TextColor): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
-    
-    inline def setTextColorVarargs(
-      value: (js.UndefOr[
-          js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]] | com.olvind.mui.csstype.mod.Property.Color | NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]] | Null
-        ])*
-    ): Self = StObject.set(x, "textColor", js.Array(value*))
     
     inline def setTextOverflow(
       value: (ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]) | (js.Function1[

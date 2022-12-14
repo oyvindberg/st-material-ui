@@ -13,7 +13,7 @@ trait ScriptHTMLAttributes[T]
   /** @deprecated */
   var charSet: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr["anonymous" | "use-credentials" | ""] = js.undefined
   
   var defer: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +45,7 @@ object ScriptHTMLAttributes {
     
     inline def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: "anonymous" | "use-credentials" | ""): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     

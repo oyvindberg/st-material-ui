@@ -1,5 +1,6 @@
 package com.olvind.mui.muiBase.anon
 
+import com.olvind.mui.muiBase.badgeUnstyledBadgeUnstyledDottypesMod.BadgeUnstyledSlots
 import japgolly.scalajs.react.facade.Empty
 import japgolly.scalajs.react.facade.JsNumber
 import japgolly.scalajs.react.facade.React.Element
@@ -52,7 +53,7 @@ trait BadgeUnstyledTypeMapspanprops extends StObject {
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[Root] = js.undefined
+  var slots: js.UndefOr[BadgeUnstyledSlots] = js.undefined
 }
 object BadgeUnstyledTypeMapspanprops {
   
@@ -100,7 +101,7 @@ object BadgeUnstyledTypeMapspanprops {
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
-    inline def setSlots(value: Root): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: BadgeUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }

@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object avatarAvatarMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Avatar](https://mui.com/joy-ui/react-avatar/)
+    *
+    * API:
+    *
+    * - [Avatar API](https://mui.com/joy-ui/api/avatar/)
+    */
   @JSImport("@mui/joy/Avatar/Avatar", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsAvatarTypeMapdiv, Element | Null] = js.native

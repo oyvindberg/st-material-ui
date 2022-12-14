@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object svgIconSvgIconMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Avatar](https://mui.com/joy-ui/react-avatar/)
+    *
+    * API:
+    *
+    * - [SvgIcon API](https://mui.com/joy-ui/api/svg-icon/)
+    */
   @JSImport("@mui/joy/SvgIcon/SvgIcon", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsSvgIconTypeMapsvg, Element | Null] = js.native

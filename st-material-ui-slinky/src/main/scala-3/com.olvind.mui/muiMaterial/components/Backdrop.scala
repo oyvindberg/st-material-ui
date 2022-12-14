@@ -4,6 +4,7 @@ import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBackdropTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.PartialBackdropClasses
 import com.olvind.mui.muiMaterial.anon.Root
+import com.olvind.mui.muiMaterial.anon.TransitionPropsAbout
 import com.olvind.mui.muiMaterial.anon.`0`
 import com.olvind.mui.muiMaterial.anon.`1`
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
@@ -18,6 +19,7 @@ import org.scalajs.dom.Event
 import org.scalajs.dom.EventTarget
 import org.scalajs.dom.HTMLElement
 import slinky.core.SyntheticEvent
+import slinky.core.facade.ReactElement
 import slinky.web.SyntheticAnimationEvent
 import slinky.web.SyntheticClipboardEvent
 import slinky.web.SyntheticCompositionEvent
@@ -49,6 +51,8 @@ object Backdrop {
   open class Builder (val args: js.Array[Any])
     extends AnyVal
        with StBuildingComponent[tag.type, js.Object] {
+    
+    inline def TransitionComponent(value: TransitionPropsAbout => ReactElement | Null): this.type = set("TransitionComponent", js.Any.fromFunction1(value))
     
     inline def about(value: String): this.type = set("about", value.asInstanceOf[js.Any])
     
@@ -160,6 +164,8 @@ object Backdrop {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
@@ -173,6 +179,8 @@ object Backdrop {
     inline def components(value: Root): this.type = set("components", value.asInstanceOf[js.Any])
     
     inline def componentsProps(value: `0`): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -408,9 +416,13 @@ object Backdrop {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     

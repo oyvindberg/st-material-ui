@@ -13,6 +13,17 @@ object menuMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Menu](https://mui.com/joy-ui/react-menu/)
+    *
+    * API:
+    *
+    * - [Menu API](https://mui.com/joy-ui/api/menu/)
+    * - inherits [PopperUnstyled API](https://mui.com/base/api/popper-unstyled/)
+    */
   @JSImport("@mui/joy/Menu", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsMenuTypeMapul, Element | Null] = js.native

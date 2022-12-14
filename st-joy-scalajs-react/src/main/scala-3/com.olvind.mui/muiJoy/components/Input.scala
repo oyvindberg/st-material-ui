@@ -3,7 +3,7 @@ package com.olvind.mui.muiJoy.components
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiJoy.anon.DefaultComponentPropsInputTypeMapdiv
 import com.olvind.mui.muiJoy.anon.EndDecoratorInput
-import com.olvind.mui.muiJoy.anon.InputRoot
+import com.olvind.mui.muiJoy.anon.PartialInputSlots
 import com.olvind.mui.muiJoy.inputInputPropsMod.InputPropsColorOverrides
 import com.olvind.mui.muiJoy.inputInputPropsMod.InputPropsSizeOverrides
 import com.olvind.mui.muiJoy.inputInputPropsMod.InputPropsVariantOverrides
@@ -169,6 +169,8 @@ object Input {
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
     inline def color(value: OverridableStringUnion[ColorPaletteProp, InputPropsColorOverrides]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -398,11 +400,15 @@ object Input {
     
     inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def required(value: Boolean): this.type = set("required", value.asInstanceOf[js.Any])
     
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -412,9 +418,9 @@ object Input {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: InputRoot): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: EndDecoratorInput): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: EndDecoratorInput): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: PartialInputSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

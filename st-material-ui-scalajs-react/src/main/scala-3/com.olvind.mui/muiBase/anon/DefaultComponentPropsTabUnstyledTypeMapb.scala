@@ -1,6 +1,7 @@
 package com.olvind.mui.muiBase.anon
 
 import com.olvind.mui.muiBase.buttonUnstyledButtonUnstyledDottypesMod.ButtonUnstyledActions
+import com.olvind.mui.muiBase.tabUnstyledTabUnstyledDottypesMod.TabUnstyledSlots
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -168,6 +169,8 @@ trait DefaultComponentPropsTabUnstyledTypeMapb extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -408,9 +411,13 @@ trait DefaultComponentPropsTabUnstyledTypeMapb extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLButtonElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -422,14 +429,14 @@ trait DefaultComponentPropsTabUnstyledTypeMapb extends StObject {
     * The props used for each slot inside the Tab.
     * @default {}
     */
-  var slotProps: js.UndefOr[`12`] = js.undefined
+  var slotProps: js.UndefOr[`9`] = js.undefined
   
   /**
     * The components used for each slot inside the Tab.
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[`1`] = js.undefined
+  var slots: js.UndefOr[TabUnstyledSlots] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -714,9 +721,13 @@ object DefaultComponentPropsTabUnstyledTypeMapb {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1190,6 +1201,10 @@ object DefaultComponentPropsTabUnstyledTypeMapb {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1197,6 +1212,10 @@ object DefaultComponentPropsTabUnstyledTypeMapb {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -1208,13 +1227,13 @@ object DefaultComponentPropsTabUnstyledTypeMapb {
     
     inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    inline def setSlotProps(value: `12`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: `9`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: `1`): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: TabUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     

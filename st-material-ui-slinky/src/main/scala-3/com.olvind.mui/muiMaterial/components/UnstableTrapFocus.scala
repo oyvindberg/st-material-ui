@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.focusTrapFocusTrapMod.FocusTrapProps
+import com.olvind.mui.muiBase.focusTrapFocusTrapDottypesMod.FocusTrapProps
 import org.scalajs.dom.HTMLElement
 import slinky.web.html.`*`.tag
 import org.scalablytyped.runtime.StObject
@@ -15,7 +15,7 @@ object UnstableTrapFocus {
     new Builder(js.Array(this.component, __props.asInstanceOf[FocusTrapProps]))
   }
   
-  @JSImport("@mui/material", "UnstableTrapFocus")
+  @JSImport("@mui/material/Unstable_TrapFocus", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

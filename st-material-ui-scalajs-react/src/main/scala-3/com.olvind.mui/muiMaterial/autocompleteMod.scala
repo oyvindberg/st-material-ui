@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.CreateFilterOptionsConfig
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.FilterOptionsState
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.CreateFilterOptionsConfig
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.FilterOptionsState
 import com.olvind.mui.muiMaterial.autocompleteAutocompleteClassesMod.AutocompleteClasses
 import com.olvind.mui.muiMaterial.autocompleteAutocompleteMod.AutocompleteProps
 import com.olvind.mui.react.mod.global.JSX.Element

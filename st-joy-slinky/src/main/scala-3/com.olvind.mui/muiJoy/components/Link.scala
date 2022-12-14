@@ -15,7 +15,6 @@ import com.olvind.mui.csstype.mod.Property.BorderTop
 import com.olvind.mui.csstype.mod.Property.Bottom
 import com.olvind.mui.csstype.mod.Property.BoxShadow
 import com.olvind.mui.csstype.mod.Property.BoxSizing
-import com.olvind.mui.csstype.mod.Property.Color
 import com.olvind.mui.csstype.mod.Property.ColumnGap
 import com.olvind.mui.csstype.mod.Property.Display
 import com.olvind.mui.csstype.mod.Property.Flex
@@ -71,12 +70,13 @@ import com.olvind.mui.csstype.mod.Property.Visibility
 import com.olvind.mui.csstype.mod.Property.Width
 import com.olvind.mui.csstype.mod.Property.ZIndex
 import com.olvind.mui.muiJoy.anon.DefaultComponentPropsLinkTypeMapa
-import com.olvind.mui.muiJoy.anon.EndDecorator
 import com.olvind.mui.muiJoy.anon.EndDecoratorRoot
+import com.olvind.mui.muiJoy.anon.PartialLinkSlots
 import com.olvind.mui.muiJoy.linkLinkPropsMod.LinkPropsColorOverrides
 import com.olvind.mui.muiJoy.linkLinkPropsMod.LinkPropsVariantOverrides
 import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
+import com.olvind.mui.muiJoy.stylesTypesThemeMod.TextColor
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme
 import com.olvind.mui.muiJoy.stylesTypesVariantsMod.VariantProp
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
@@ -278,6 +278,8 @@ object Link {
     inline def autoCapitalize(value: String): this.type = set("autoCapitalize", value.asInstanceOf[js.Any])
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
     
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
@@ -554,6 +556,8 @@ object Link {
           (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]]) | (ColumnGap[Double | String]) | (NonNullable[js.UndefOr[ColumnGap[Double | String]]]) | Null
         ])*
     ): this.type = set("columnGap", js.Array(value*))
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -1210,9 +1214,7 @@ object Link {
         ])*
     ): this.type = set("letterSpacing", js.Array(value*))
     
-    inline def level(
-      value: "body4" | "display2" | "body2" | "body5" | "h2" | "display1" | "h3" | "body1" | "h6" | "h1" | "h5" | "body3" | "h4" | "inherit"
-    ): this.type = set("level", value.asInstanceOf[js.Any])
+    inline def level(value: (/* keyof @mui/joy.@mui/joy/styles/types/typography.TypographySystem */ String) | "inherit"): this.type = set("level", value.asInstanceOf[js.Any])
     
     inline def lineHeight(
       value: (ResponsiveStyleValue[
@@ -2406,6 +2408,8 @@ object Link {
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
     
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
+    
     inline def right(
       value: (ResponsiveStyleValue[
           js.UndefOr[
@@ -2472,7 +2476,7 @@ object Link {
     
     inline def slotProps(value: EndDecoratorRoot): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: EndDecorator): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: PartialLinkSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     
@@ -2513,22 +2517,7 @@ object Link {
         ])*
     ): this.type = set("textAlign", js.Array(value*))
     
-    inline def textColor(
-      value: (ResponsiveStyleValue[js.UndefOr[Color | js.Array[NonNullable[js.UndefOr[Color]]]]]) | (js.Function1[
-          /* theme */ Theme, 
-          ResponsiveStyleValue[js.UndefOr[Color | js.Array[NonNullable[js.UndefOr[Color]]]]]
-        ])
-    ): this.type = set("textColor", value.asInstanceOf[js.Any])
-    
-    inline def textColorFunction1(
-      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[Color | js.Array[NonNullable[js.UndefOr[Color]]]]]
-    ): this.type = set("textColor", js.Any.fromFunction1(value))
-    
-    inline def textColorVarargs(
-      value: (js.UndefOr[
-          js.Array[NonNullable[js.UndefOr[Color]]] | Color | NonNullable[js.UndefOr[Color]] | Null
-        ])*
-    ): this.type = set("textColor", js.Array(value*))
+    inline def textColor(value: TextColor): this.type = set("textColor", value.asInstanceOf[js.Any])
     
     inline def textOverflow(
       value: (ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]) | (js.Function1[

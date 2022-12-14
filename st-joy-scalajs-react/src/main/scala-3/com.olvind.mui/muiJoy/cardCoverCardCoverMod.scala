@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cardCoverCardCoverMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Card](https://mui.com/joy-ui/react-card/)
+    *
+    * API:
+    *
+    * - [CardCover API](https://mui.com/joy-ui/api/card-cover/)
+    */
   @JSImport("@mui/joy/CardCover/CardCover", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsCardCoverTypeMapdiv, Element | Null] = js.native

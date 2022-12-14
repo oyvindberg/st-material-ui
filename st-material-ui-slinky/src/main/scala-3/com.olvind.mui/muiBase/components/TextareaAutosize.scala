@@ -1,13 +1,14 @@
 package com.olvind.mui.muiBase.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.textareaAutosizeTextareaAutosizeMod.TextareaAutosizeProps
+import com.olvind.mui.muiBase.anon.PickTextareaAutosizePropshiddencolorstyl
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AriaRole
 import com.olvind.mui.react.mod.Booleanish
 import com.olvind.mui.react.mod.CSSProperties
 import com.olvind.mui.react.mod.ChangeEvent
 import com.olvind.mui.react.mod.DragEvent
+import org.scalajs.dom.Element
 import org.scalajs.dom.Event
 import org.scalajs.dom.EventTarget
 import org.scalajs.dom.HTMLTextAreaElement
@@ -30,14 +31,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TextareaAutosize {
   
-  @JSImport("@mui/base", "TextareaAutosize")
+  @JSImport("@mui/base/TextareaAutosize", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   
   @scala.inline
   open class Builder (val args: js.Array[Any])
     extends AnyVal
-       with StBuildingComponent[tag.type, HTMLTextAreaElement] {
+       with StBuildingComponent[tag.type, Element] {
     
     inline def about(value: String): this.type = set("about", value.asInstanceOf[js.Any])
     
@@ -217,87 +218,179 @@ object TextareaAutosize {
     
     inline def onAbort(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onAbort", js.Any.fromFunction1(value))
     
+    inline def onAbortCapture(value: Any): this.type = set("onAbortCapture", value.asInstanceOf[js.Any])
+    
     inline def onAnimationEnd(value: SyntheticAnimationEvent[HTMLTextAreaElement] => Unit): this.type = set("onAnimationEnd", js.Any.fromFunction1(value))
+    
+    inline def onAnimationEndCapture(value: Any): this.type = set("onAnimationEndCapture", value.asInstanceOf[js.Any])
     
     inline def onAnimationIteration(value: SyntheticAnimationEvent[HTMLTextAreaElement] => Unit): this.type = set("onAnimationIteration", js.Any.fromFunction1(value))
     
+    inline def onAnimationIterationCapture(value: Any): this.type = set("onAnimationIterationCapture", value.asInstanceOf[js.Any])
+    
     inline def onAnimationStart(value: SyntheticAnimationEvent[HTMLTextAreaElement] => Unit): this.type = set("onAnimationStart", js.Any.fromFunction1(value))
+    
+    inline def onAnimationStartCapture(value: Any): this.type = set("onAnimationStartCapture", value.asInstanceOf[js.Any])
     
     inline def onAuxClick(value: SyntheticMouseEvent[HTMLTextAreaElement] => Unit): this.type = set("onAuxClick", js.Any.fromFunction1(value))
     
+    inline def onAuxClickCapture(value: Any): this.type = set("onAuxClickCapture", value.asInstanceOf[js.Any])
+    
     inline def onBeforeInput(value: SyntheticEvent[EventTarget & HTMLTextAreaElement, Event] => Unit): this.type = set("onBeforeInput", js.Any.fromFunction1(value))
+    
+    inline def onBeforeInputCapture(value: Any): this.type = set("onBeforeInputCapture", value.asInstanceOf[js.Any])
     
     inline def onBlur(value: SyntheticFocusEvent[HTMLTextAreaElement] => Unit): this.type = set("onBlur", js.Any.fromFunction1(value))
     
+    inline def onBlurCapture(value: Any): this.type = set("onBlurCapture", value.asInstanceOf[js.Any])
+    
     inline def onCanPlay(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onCanPlay", js.Any.fromFunction1(value))
+    
+    inline def onCanPlayCapture(value: Any): this.type = set("onCanPlayCapture", value.asInstanceOf[js.Any])
     
     inline def onCanPlayThrough(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onCanPlayThrough", js.Any.fromFunction1(value))
     
+    inline def onCanPlayThroughCapture(value: Any): this.type = set("onCanPlayThroughCapture", value.asInstanceOf[js.Any])
+    
     inline def onChange(value: ChangeEvent[HTMLTextAreaElement] => Unit): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def onChangeCapture(value: Any): this.type = set("onChangeCapture", value.asInstanceOf[js.Any])
     
     inline def onClick(value: SyntheticMouseEvent[HTMLTextAreaElement] => Unit): this.type = set("onClick", js.Any.fromFunction1(value))
     
+    inline def onClickCapture(value: Any): this.type = set("onClickCapture", value.asInstanceOf[js.Any])
+    
     inline def onCompositionEnd(value: SyntheticCompositionEvent[HTMLTextAreaElement] => Unit): this.type = set("onCompositionEnd", js.Any.fromFunction1(value))
+    
+    inline def onCompositionEndCapture(value: Any): this.type = set("onCompositionEndCapture", value.asInstanceOf[js.Any])
     
     inline def onCompositionStart(value: SyntheticCompositionEvent[HTMLTextAreaElement] => Unit): this.type = set("onCompositionStart", js.Any.fromFunction1(value))
     
+    inline def onCompositionStartCapture(value: Any): this.type = set("onCompositionStartCapture", value.asInstanceOf[js.Any])
+    
     inline def onCompositionUpdate(value: SyntheticCompositionEvent[HTMLTextAreaElement] => Unit): this.type = set("onCompositionUpdate", js.Any.fromFunction1(value))
+    
+    inline def onCompositionUpdateCapture(value: Any): this.type = set("onCompositionUpdateCapture", value.asInstanceOf[js.Any])
     
     inline def onContextMenu(value: SyntheticMouseEvent[HTMLTextAreaElement] => Unit): this.type = set("onContextMenu", js.Any.fromFunction1(value))
     
+    inline def onContextMenuCapture(value: Any): this.type = set("onContextMenuCapture", value.asInstanceOf[js.Any])
+    
     inline def onCopy(value: SyntheticClipboardEvent[HTMLTextAreaElement] => Unit): this.type = set("onCopy", js.Any.fromFunction1(value))
+    
+    inline def onCopyCapture(value: Any): this.type = set("onCopyCapture", value.asInstanceOf[js.Any])
     
     inline def onCut(value: SyntheticClipboardEvent[HTMLTextAreaElement] => Unit): this.type = set("onCut", js.Any.fromFunction1(value))
     
+    inline def onCutCapture(value: Any): this.type = set("onCutCapture", value.asInstanceOf[js.Any])
+    
     inline def onDoubleClick(value: SyntheticMouseEvent[HTMLTextAreaElement] => Unit): this.type = set("onDoubleClick", js.Any.fromFunction1(value))
+    
+    inline def onDoubleClickCapture(value: Any): this.type = set("onDoubleClickCapture", value.asInstanceOf[js.Any])
     
     inline def onDrag(value: DragEvent[HTMLTextAreaElement] => Unit): this.type = set("onDrag", js.Any.fromFunction1(value))
     
+    inline def onDragCapture(value: Any): this.type = set("onDragCapture", value.asInstanceOf[js.Any])
+    
     inline def onDragEnd(value: DragEvent[HTMLTextAreaElement] => Unit): this.type = set("onDragEnd", js.Any.fromFunction1(value))
+    
+    inline def onDragEndCapture(value: Any): this.type = set("onDragEndCapture", value.asInstanceOf[js.Any])
     
     inline def onDragEnter(value: DragEvent[HTMLTextAreaElement] => Unit): this.type = set("onDragEnter", js.Any.fromFunction1(value))
     
+    inline def onDragEnterCapture(value: Any): this.type = set("onDragEnterCapture", value.asInstanceOf[js.Any])
+    
     inline def onDragExit(value: DragEvent[HTMLTextAreaElement] => Unit): this.type = set("onDragExit", js.Any.fromFunction1(value))
+    
+    inline def onDragExitCapture(value: Any): this.type = set("onDragExitCapture", value.asInstanceOf[js.Any])
     
     inline def onDragLeave(value: DragEvent[HTMLTextAreaElement] => Unit): this.type = set("onDragLeave", js.Any.fromFunction1(value))
     
+    inline def onDragLeaveCapture(value: Any): this.type = set("onDragLeaveCapture", value.asInstanceOf[js.Any])
+    
     inline def onDragOver(value: DragEvent[HTMLTextAreaElement] => Unit): this.type = set("onDragOver", js.Any.fromFunction1(value))
+    
+    inline def onDragOverCapture(value: Any): this.type = set("onDragOverCapture", value.asInstanceOf[js.Any])
     
     inline def onDragStart(value: DragEvent[HTMLTextAreaElement] => Unit): this.type = set("onDragStart", js.Any.fromFunction1(value))
     
+    inline def onDragStartCapture(value: Any): this.type = set("onDragStartCapture", value.asInstanceOf[js.Any])
+    
     inline def onDrop(value: DragEvent[HTMLTextAreaElement] => Unit): this.type = set("onDrop", js.Any.fromFunction1(value))
+    
+    inline def onDropCapture(value: Any): this.type = set("onDropCapture", value.asInstanceOf[js.Any])
     
     inline def onDurationChange(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onDurationChange", js.Any.fromFunction1(value))
     
+    inline def onDurationChangeCapture(value: Any): this.type = set("onDurationChangeCapture", value.asInstanceOf[js.Any])
+    
     inline def onEmptied(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onEmptied", js.Any.fromFunction1(value))
+    
+    inline def onEmptiedCapture(value: Any): this.type = set("onEmptiedCapture", value.asInstanceOf[js.Any])
     
     inline def onEncrypted(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onEncrypted", js.Any.fromFunction1(value))
     
+    inline def onEncryptedCapture(value: Any): this.type = set("onEncryptedCapture", value.asInstanceOf[js.Any])
+    
     inline def onEnded(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onEnded", js.Any.fromFunction1(value))
+    
+    inline def onEndedCapture(value: Any): this.type = set("onEndedCapture", value.asInstanceOf[js.Any])
     
     inline def onError(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onError", js.Any.fromFunction1(value))
     
+    inline def onErrorCapture(value: Any): this.type = set("onErrorCapture", value.asInstanceOf[js.Any])
+    
     inline def onFocus(value: SyntheticFocusEvent[HTMLTextAreaElement] => Unit): this.type = set("onFocus", js.Any.fromFunction1(value))
+    
+    inline def onFocusCapture(value: Any): this.type = set("onFocusCapture", value.asInstanceOf[js.Any])
+    
+    inline def onGotPointerCapture(value: Any): this.type = set("onGotPointerCapture", value.asInstanceOf[js.Any])
+    
+    inline def onGotPointerCaptureCapture(value: Any): this.type = set("onGotPointerCaptureCapture", value.asInstanceOf[js.Any])
     
     inline def onInput(value: SyntheticEvent[EventTarget & HTMLTextAreaElement, Event] => Unit): this.type = set("onInput", js.Any.fromFunction1(value))
     
+    inline def onInputCapture(value: Any): this.type = set("onInputCapture", value.asInstanceOf[js.Any])
+    
     inline def onInvalid(value: SyntheticEvent[EventTarget & HTMLTextAreaElement, Event] => Unit): this.type = set("onInvalid", js.Any.fromFunction1(value))
+    
+    inline def onInvalidCapture(value: Any): this.type = set("onInvalidCapture", value.asInstanceOf[js.Any])
     
     inline def onKeyDown(value: SyntheticKeyboardEvent[HTMLTextAreaElement] => Unit): this.type = set("onKeyDown", js.Any.fromFunction1(value))
     
+    inline def onKeyDownCapture(value: Any): this.type = set("onKeyDownCapture", value.asInstanceOf[js.Any])
+    
     inline def onKeyPress(value: SyntheticKeyboardEvent[HTMLTextAreaElement] => Unit): this.type = set("onKeyPress", js.Any.fromFunction1(value))
+    
+    inline def onKeyPressCapture(value: Any): this.type = set("onKeyPressCapture", value.asInstanceOf[js.Any])
     
     inline def onKeyUp(value: SyntheticKeyboardEvent[HTMLTextAreaElement] => Unit): this.type = set("onKeyUp", js.Any.fromFunction1(value))
     
+    inline def onKeyUpCapture(value: Any): this.type = set("onKeyUpCapture", value.asInstanceOf[js.Any])
+    
     inline def onLoad(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onLoad", js.Any.fromFunction1(value))
+    
+    inline def onLoadCapture(value: Any): this.type = set("onLoadCapture", value.asInstanceOf[js.Any])
     
     inline def onLoadStart(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onLoadStart", js.Any.fromFunction1(value))
     
+    inline def onLoadStartCapture(value: Any): this.type = set("onLoadStartCapture", value.asInstanceOf[js.Any])
+    
     inline def onLoadedData(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onLoadedData", js.Any.fromFunction1(value))
+    
+    inline def onLoadedDataCapture(value: Any): this.type = set("onLoadedDataCapture", value.asInstanceOf[js.Any])
     
     inline def onLoadedMetadata(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onLoadedMetadata", js.Any.fromFunction1(value))
     
+    inline def onLoadedMetadataCapture(value: Any): this.type = set("onLoadedMetadataCapture", value.asInstanceOf[js.Any])
+    
+    inline def onLostPointerCapture(value: Any): this.type = set("onLostPointerCapture", value.asInstanceOf[js.Any])
+    
+    inline def onLostPointerCaptureCapture(value: Any): this.type = set("onLostPointerCaptureCapture", value.asInstanceOf[js.Any])
+    
     inline def onMouseDown(value: SyntheticMouseEvent[HTMLTextAreaElement] => Unit): this.type = set("onMouseDown", js.Any.fromFunction1(value))
+    
+    inline def onMouseDownCapture(value: Any): this.type = set("onMouseDownCapture", value.asInstanceOf[js.Any])
     
     inline def onMouseEnter(value: SyntheticMouseEvent[HTMLTextAreaElement] => Unit): this.type = set("onMouseEnter", js.Any.fromFunction1(value))
     
@@ -305,75 +398,147 @@ object TextareaAutosize {
     
     inline def onMouseMove(value: SyntheticMouseEvent[HTMLTextAreaElement] => Unit): this.type = set("onMouseMove", js.Any.fromFunction1(value))
     
+    inline def onMouseMoveCapture(value: Any): this.type = set("onMouseMoveCapture", value.asInstanceOf[js.Any])
+    
     inline def onMouseOut(value: SyntheticMouseEvent[HTMLTextAreaElement] => Unit): this.type = set("onMouseOut", js.Any.fromFunction1(value))
+    
+    inline def onMouseOutCapture(value: Any): this.type = set("onMouseOutCapture", value.asInstanceOf[js.Any])
     
     inline def onMouseOver(value: SyntheticMouseEvent[HTMLTextAreaElement] => Unit): this.type = set("onMouseOver", js.Any.fromFunction1(value))
     
+    inline def onMouseOverCapture(value: Any): this.type = set("onMouseOverCapture", value.asInstanceOf[js.Any])
+    
     inline def onMouseUp(value: SyntheticMouseEvent[HTMLTextAreaElement] => Unit): this.type = set("onMouseUp", js.Any.fromFunction1(value))
+    
+    inline def onMouseUpCapture(value: Any): this.type = set("onMouseUpCapture", value.asInstanceOf[js.Any])
     
     inline def onPaste(value: SyntheticClipboardEvent[HTMLTextAreaElement] => Unit): this.type = set("onPaste", js.Any.fromFunction1(value))
     
+    inline def onPasteCapture(value: Any): this.type = set("onPasteCapture", value.asInstanceOf[js.Any])
+    
     inline def onPause(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onPause", js.Any.fromFunction1(value))
+    
+    inline def onPauseCapture(value: Any): this.type = set("onPauseCapture", value.asInstanceOf[js.Any])
     
     inline def onPlay(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onPlay", js.Any.fromFunction1(value))
     
+    inline def onPlayCapture(value: Any): this.type = set("onPlayCapture", value.asInstanceOf[js.Any])
+    
     inline def onPlaying(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onPlaying", js.Any.fromFunction1(value))
+    
+    inline def onPlayingCapture(value: Any): this.type = set("onPlayingCapture", value.asInstanceOf[js.Any])
     
     inline def onPointerCancel(value: SyntheticPointerEvent[HTMLTextAreaElement] => Unit): this.type = set("onPointerCancel", js.Any.fromFunction1(value))
     
+    inline def onPointerCancelCapture(value: Any): this.type = set("onPointerCancelCapture", value.asInstanceOf[js.Any])
+    
     inline def onPointerDown(value: SyntheticPointerEvent[HTMLTextAreaElement] => Unit): this.type = set("onPointerDown", js.Any.fromFunction1(value))
+    
+    inline def onPointerDownCapture(value: Any): this.type = set("onPointerDownCapture", value.asInstanceOf[js.Any])
     
     inline def onPointerEnter(value: SyntheticPointerEvent[HTMLTextAreaElement] => Unit): this.type = set("onPointerEnter", js.Any.fromFunction1(value))
     
+    inline def onPointerEnterCapture(value: Any): this.type = set("onPointerEnterCapture", value.asInstanceOf[js.Any])
+    
     inline def onPointerLeave(value: SyntheticPointerEvent[HTMLTextAreaElement] => Unit): this.type = set("onPointerLeave", js.Any.fromFunction1(value))
+    
+    inline def onPointerLeaveCapture(value: Any): this.type = set("onPointerLeaveCapture", value.asInstanceOf[js.Any])
     
     inline def onPointerMove(value: SyntheticPointerEvent[HTMLTextAreaElement] => Unit): this.type = set("onPointerMove", js.Any.fromFunction1(value))
     
+    inline def onPointerMoveCapture(value: Any): this.type = set("onPointerMoveCapture", value.asInstanceOf[js.Any])
+    
     inline def onPointerOut(value: SyntheticPointerEvent[HTMLTextAreaElement] => Unit): this.type = set("onPointerOut", js.Any.fromFunction1(value))
+    
+    inline def onPointerOutCapture(value: Any): this.type = set("onPointerOutCapture", value.asInstanceOf[js.Any])
     
     inline def onPointerOver(value: SyntheticPointerEvent[HTMLTextAreaElement] => Unit): this.type = set("onPointerOver", js.Any.fromFunction1(value))
     
+    inline def onPointerOverCapture(value: Any): this.type = set("onPointerOverCapture", value.asInstanceOf[js.Any])
+    
     inline def onPointerUp(value: SyntheticPointerEvent[HTMLTextAreaElement] => Unit): this.type = set("onPointerUp", js.Any.fromFunction1(value))
+    
+    inline def onPointerUpCapture(value: Any): this.type = set("onPointerUpCapture", value.asInstanceOf[js.Any])
     
     inline def onProgress(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onProgress", js.Any.fromFunction1(value))
     
+    inline def onProgressCapture(value: Any): this.type = set("onProgressCapture", value.asInstanceOf[js.Any])
+    
     inline def onRateChange(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onRateChange", js.Any.fromFunction1(value))
+    
+    inline def onRateChangeCapture(value: Any): this.type = set("onRateChangeCapture", value.asInstanceOf[js.Any])
     
     inline def onReset(value: SyntheticEvent[EventTarget & HTMLTextAreaElement, Event] => Unit): this.type = set("onReset", js.Any.fromFunction1(value))
     
+    inline def onResetCapture(value: Any): this.type = set("onResetCapture", value.asInstanceOf[js.Any])
+    
     inline def onResize(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onResize", js.Any.fromFunction1(value))
+    
+    inline def onResizeCapture(value: Any): this.type = set("onResizeCapture", value.asInstanceOf[js.Any])
     
     inline def onScroll(value: SyntheticUIEvent[HTMLTextAreaElement] => Unit): this.type = set("onScroll", js.Any.fromFunction1(value))
     
+    inline def onScrollCapture(value: Any): this.type = set("onScrollCapture", value.asInstanceOf[js.Any])
+    
     inline def onSeeked(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onSeeked", js.Any.fromFunction1(value))
+    
+    inline def onSeekedCapture(value: Any): this.type = set("onSeekedCapture", value.asInstanceOf[js.Any])
     
     inline def onSeeking(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onSeeking", js.Any.fromFunction1(value))
     
+    inline def onSeekingCapture(value: Any): this.type = set("onSeekingCapture", value.asInstanceOf[js.Any])
+    
     inline def onSelect(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onSelect", js.Any.fromFunction1(value))
+    
+    inline def onSelectCapture(value: Any): this.type = set("onSelectCapture", value.asInstanceOf[js.Any])
     
     inline def onStalled(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onStalled", js.Any.fromFunction1(value))
     
+    inline def onStalledCapture(value: Any): this.type = set("onStalledCapture", value.asInstanceOf[js.Any])
+    
     inline def onSubmit(value: SyntheticEvent[EventTarget & HTMLTextAreaElement, Event] => Unit): this.type = set("onSubmit", js.Any.fromFunction1(value))
+    
+    inline def onSubmitCapture(value: Any): this.type = set("onSubmitCapture", value.asInstanceOf[js.Any])
     
     inline def onSuspend(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onSuspend", js.Any.fromFunction1(value))
     
+    inline def onSuspendCapture(value: Any): this.type = set("onSuspendCapture", value.asInstanceOf[js.Any])
+    
     inline def onTimeUpdate(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onTimeUpdate", js.Any.fromFunction1(value))
+    
+    inline def onTimeUpdateCapture(value: Any): this.type = set("onTimeUpdateCapture", value.asInstanceOf[js.Any])
     
     inline def onTouchCancel(value: SyntheticTouchEvent[HTMLTextAreaElement] => Unit): this.type = set("onTouchCancel", js.Any.fromFunction1(value))
     
+    inline def onTouchCancelCapture(value: Any): this.type = set("onTouchCancelCapture", value.asInstanceOf[js.Any])
+    
     inline def onTouchEnd(value: SyntheticTouchEvent[HTMLTextAreaElement] => Unit): this.type = set("onTouchEnd", js.Any.fromFunction1(value))
+    
+    inline def onTouchEndCapture(value: Any): this.type = set("onTouchEndCapture", value.asInstanceOf[js.Any])
     
     inline def onTouchMove(value: SyntheticTouchEvent[HTMLTextAreaElement] => Unit): this.type = set("onTouchMove", js.Any.fromFunction1(value))
     
+    inline def onTouchMoveCapture(value: Any): this.type = set("onTouchMoveCapture", value.asInstanceOf[js.Any])
+    
     inline def onTouchStart(value: SyntheticTouchEvent[HTMLTextAreaElement] => Unit): this.type = set("onTouchStart", js.Any.fromFunction1(value))
+    
+    inline def onTouchStartCapture(value: Any): this.type = set("onTouchStartCapture", value.asInstanceOf[js.Any])
     
     inline def onTransitionEnd(value: SyntheticTransitionEvent[HTMLTextAreaElement] => Unit): this.type = set("onTransitionEnd", js.Any.fromFunction1(value))
     
+    inline def onTransitionEndCapture(value: Any): this.type = set("onTransitionEndCapture", value.asInstanceOf[js.Any])
+    
     inline def onVolumeChange(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onVolumeChange", js.Any.fromFunction1(value))
+    
+    inline def onVolumeChangeCapture(value: Any): this.type = set("onVolumeChangeCapture", value.asInstanceOf[js.Any])
     
     inline def onWaiting(value: SyntheticEvent[Event, HTMLTextAreaElement] => Unit): this.type = set("onWaiting", js.Any.fromFunction1(value))
     
+    inline def onWaitingCapture(value: Any): this.type = set("onWaitingCapture", value.asInstanceOf[js.Any])
+    
     inline def onWheel(value: SyntheticWheelEvent[HTMLTextAreaElement] => Unit): this.type = set("onWheel", js.Any.fromFunction1(value))
+    
+    inline def onWheelCapture(value: Any): this.type = set("onWheelCapture", value.asInstanceOf[js.Any])
     
     inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
     
@@ -424,11 +589,11 @@ object TextareaAutosize {
     inline def wrap(value: String): this.type = set("wrap", value.asInstanceOf[js.Any])
   }
   
-  type Props = TextareaAutosizeProps
+  type Props = PickTextareaAutosizePropshiddencolorstyl
   
   implicit def make(companion: TextareaAutosize.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
-  def styled: com.olvind.mui.StyledComponent.Builder[TextareaAutosizeProps, Builder] = new com.olvind.mui.StyledComponent.Builder[TextareaAutosizeProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  def styled: com.olvind.mui.StyledComponent.Builder[PickTextareaAutosizePropshiddencolorstyl, Builder] = new com.olvind.mui.StyledComponent.Builder[PickTextareaAutosizePropshiddencolorstyl, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
-  def withProps(p: TextareaAutosizeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps(p: PickTextareaAutosizePropshiddencolorstyl): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

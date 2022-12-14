@@ -13,6 +13,16 @@ object autocompleteListboxMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Autocomplete](https://mui.com/joy-ui/react-autocomplete/)
+    *
+    * API:
+    *
+    * - [AutocompleteListbox API](https://mui.com/joy-ui/api/autocomplete-listbox/)
+    */
   @JSImport("@mui/joy/AutocompleteListbox", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsAutocompleteListbox, Element | Null] = js.native

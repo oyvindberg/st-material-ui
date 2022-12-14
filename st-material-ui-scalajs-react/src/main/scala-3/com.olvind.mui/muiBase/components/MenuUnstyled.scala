@@ -3,8 +3,8 @@ package com.olvind.mui.muiBase.components
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiBase.anon.DefaultComponentPropsMenuUnstyledTypeMap
 import com.olvind.mui.muiBase.anon.Listbox
-import com.olvind.mui.muiBase.anon.ListboxRoot
 import com.olvind.mui.muiBase.menuUnstyledMenuUnstyledDottypesMod.MenuUnstyledActions
+import com.olvind.mui.muiBase.menuUnstyledMenuUnstyledDottypesMod.MenuUnstyledSlots
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AriaRole
 import com.olvind.mui.react.mod.Booleanish
@@ -26,6 +26,7 @@ import japgolly.scalajs.react.ReactTransitionEventFrom
 import japgolly.scalajs.react.ReactUIEventFrom
 import japgolly.scalajs.react.ReactWheelEventFrom
 import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,14 +54,14 @@ object MenuUnstyled {
     inline def actionsNull: this.type = set("actions", null)
     
     inline def anchorEl(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ])
     ): this.type = set("anchorEl", value.asInstanceOf[js.Any])
     
     inline def anchorElCallbackTo(
       value: CallbackTo[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ]
     ): this.type = set("anchorEl", value.toJsFn)
     
@@ -168,11 +169,15 @@ object MenuUnstyled {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -392,9 +397,13 @@ object MenuUnstyled {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -404,7 +413,7 @@ object MenuUnstyled {
     
     inline def slotProps(value: Listbox): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: ListboxRoot): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: MenuUnstyledSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

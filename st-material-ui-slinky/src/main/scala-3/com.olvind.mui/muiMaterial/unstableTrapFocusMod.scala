@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiBase.focusTrapFocusTrapMod.FocusTrapProps
+import com.olvind.mui.muiBase.focusTrapFocusTrapDottypesMod.FocusTrapProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,9 +8,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object unstableTrapFocusMod {
   
-  @JSImport("@mui/material/Unstable_TrapFocus", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(props: FocusTrapProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  object default {
+    
+    /**
+      * Utility component that locks focus inside the component.
+      *
+      * Demos:
+      *
+      * - [Focus Trap](https://mui.com/base/react-focus-trap/)
+      *
+      * API:
+      *
+      * - [FocusTrap API](https://mui.com/base/react-focus-trap/components-api/#focus-trap)
+      */
+    inline def apply(props: FocusTrapProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("@mui/material/Unstable_TrapFocus", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@mui/material/Unstable_TrapFocus", "default.propTypes")
+    @js.native
+    def propTypes: Any = js.native
+    inline def propTypes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  }
 }

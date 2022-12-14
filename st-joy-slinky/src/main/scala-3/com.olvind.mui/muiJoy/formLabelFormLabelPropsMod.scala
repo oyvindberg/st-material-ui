@@ -2,7 +2,7 @@ package com.olvind.mui.muiJoy
 
 import com.olvind.mui.muiJoy.anon.Asterisk
 import com.olvind.mui.muiJoy.anon.AsteriskRoot
-import com.olvind.mui.muiJoy.anon.AsteriskSlotProps
+import com.olvind.mui.muiJoy.anon.PartialFormLabelSlots
 import com.olvind.mui.muiJoy.anon.Required
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme
@@ -162,6 +162,8 @@ object formLabelFormLabelPropsMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     /**
@@ -174,6 +176,8 @@ object formLabelFormLabelPropsMod {
     var color: js.UndefOr[String] = js.undefined
     
     var component: js.UndefOr[ReactElement] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
@@ -391,6 +395,8 @@ object formLabelFormLabelPropsMod {
     
     var ref: js.UndefOr[LegacyRef[HTMLLabelElement]] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     /**
       * The asterisk is added if required=`true`
       */
@@ -400,15 +406,17 @@ object formLabelFormLabelPropsMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
-    var slotProps: js.UndefOr[AsteriskRoot] = js.undefined
+    var slotProps: js.UndefOr[Asterisk] = js.undefined
     
-    var slots: js.UndefOr[Asterisk] = js.undefined
+    var slots: js.UndefOr[PartialFormLabelSlots] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
@@ -655,6 +663,10 @@ object formLabelFormLabelPropsMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -675,9 +687,13 @@ object formLabelFormLabelPropsMod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1117,6 +1133,10 @@ object formLabelFormLabelPropsMod {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1129,6 +1149,10 @@ object formLabelFormLabelPropsMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -1139,13 +1163,13 @@ object formLabelFormLabelPropsMod {
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
-      inline def setSlotProps(value: AsteriskRoot): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      inline def setSlotProps(value: Asterisk): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
       
       inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
       inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
-      inline def setSlots(value: Asterisk): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: PartialFormLabelSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
@@ -1211,7 +1235,37 @@ object formLabelFormLabelPropsMod {
   }
   type FormLabelSlot = "root" | "asterisk"
   
-  type FormLabelSlotsAndSlotProps = CreateSlotsAndSlotProps[FormLabelSlot, AsteriskSlotProps]
+  trait FormLabelSlots extends StObject {
+    
+    /**
+      * The component that renders the asterisk.
+      * @default 'span'
+      */
+    var asterisk: ReactElement
+    
+    /**
+      * The component that renders the root.
+      * @default 'label'
+      */
+    var root: ReactElement
+  }
+  object FormLabelSlots {
+    
+    inline def apply(asterisk: ReactElement, root: ReactElement): FormLabelSlots = {
+      val __obj = js.Dynamic.literal(asterisk = asterisk.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FormLabelSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormLabelSlots] (val x: Self) extends AnyVal {
+      
+      inline def setAsterisk(value: ReactElement): Self = StObject.set(x, "asterisk", value.asInstanceOf[js.Any])
+      
+      inline def setRoot(value: ReactElement): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type FormLabelSlotsAndSlotProps = CreateSlotsAndSlotProps[FormLabelSlots, AsteriskRoot]
   
   trait FormLabelTypeMap[P, D /* <: ReactElement */] extends StObject {
     

@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listDividerListDividerMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Lists](https://mui.com/joy-ui/react-list/)
+    *
+    * API:
+    *
+    * - [ListDivider API](https://mui.com/joy-ui/api/list-divider/)
+    */
   @JSImport("@mui/joy/ListDivider/ListDivider", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsListDividerTypeMapl, Element | Null] = js.native

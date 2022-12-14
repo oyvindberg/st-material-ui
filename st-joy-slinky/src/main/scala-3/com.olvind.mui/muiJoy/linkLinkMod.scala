@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object linkLinkMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Link](https://mui.com/joy-ui/react-link/)
+    *
+    * API:
+    *
+    * - [Link API](https://mui.com/joy-ui/api/link/)
+    */
   @JSImport("@mui/joy/Link/Link", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsLinkTypeMapa, Element | Null] = js.native

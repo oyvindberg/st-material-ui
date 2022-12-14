@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SlotProps[T /* <: String */, ExternalSlotProps /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  component :react.react.ElementType<any> | undefined} */ js.Any */, OwnerState /* <: js.Object */] extends StObject {
+trait SlotProps[T /* <: String */, ExternalSlotProps /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  component :react.react.ElementType<any> | undefined,   ref :react.react.Ref<any> | undefined} */ js.Any */, OwnerState /* <: js.Object */] extends StObject {
   
   var component: js.UndefOr[ElementType] = js.undefined
   
   var slotProps: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: {[ k in T ]:? @mui/joy.@mui/joy/utils/useSlot.WithCommonProps<ExternalSlotProps> | (ownerState : OwnerState): @mui/joy.@mui/joy/utils/useSlot.WithCommonProps<ExternalSlotProps>} */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ k in T ]:? ExternalSlotProps | (ownerState : OwnerState): ExternalSlotProps} */ js.Any
   ] = js.undefined
   
   var slots: js.UndefOr[
@@ -19,20 +19,20 @@ trait SlotProps[T /* <: String */, ExternalSlotProps /* <: /* import warning: im
 }
 object SlotProps {
   
-  inline def apply[T /* <: String */, ExternalSlotProps /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  component :react.react.ElementType<any> | undefined} */ js.Any */, OwnerState /* <: js.Object */](): SlotProps[T, ExternalSlotProps, OwnerState] = {
+  inline def apply[T /* <: String */, ExternalSlotProps /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  component :react.react.ElementType<any> | undefined,   ref :react.react.Ref<any> | undefined} */ js.Any */, OwnerState /* <: js.Object */](): SlotProps[T, ExternalSlotProps, OwnerState] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlotProps[T, ExternalSlotProps, OwnerState]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: SlotProps[?, ?, ?], T /* <: String */, ExternalSlotProps /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  component :react.react.ElementType<any> | undefined} */ js.Any */, OwnerState /* <: js.Object */] (val x: Self & (SlotProps[T, ExternalSlotProps, OwnerState])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: SlotProps[?, ?, ?], T /* <: String */, ExternalSlotProps /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  component :react.react.ElementType<any> | undefined,   ref :react.react.Ref<any> | undefined} */ js.Any */, OwnerState /* <: js.Object */] (val x: Self & (SlotProps[T, ExternalSlotProps, OwnerState])) extends AnyVal {
     
     inline def setComponent(value: ElementType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     inline def setSlotProps(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in T ]:? @mui/joy.@mui/joy/utils/useSlot.WithCommonProps<ExternalSlotProps> | (ownerState : OwnerState): @mui/joy.@mui/joy/utils/useSlot.WithCommonProps<ExternalSlotProps>} */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in T ]:? ExternalSlotProps | (ownerState : OwnerState): ExternalSlotProps} */ js.Any
     ): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)

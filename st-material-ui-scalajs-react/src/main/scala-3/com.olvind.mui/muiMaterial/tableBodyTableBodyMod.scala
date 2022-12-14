@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.ChildrenClassesSx
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTableBodyTypeMaptbo
+import com.olvind.mui.muiMaterial.anon.`30`
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import com.olvind.mui.react.mod.global.JSX.Element
 import japgolly.scalajs.react.facade.React.ElementType
@@ -32,11 +32,11 @@ object tableBodyTableBodyMod extends Shortcut {
     
     var defaultComponent: D
     
-    var props: P & ChildrenClassesSx
+    var props: P & `30`
   }
   object TableBodyTypeMap {
     
-    inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & ChildrenClassesSx): TableBodyTypeMap[P, D] = {
+    inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & `30`): TableBodyTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableBodyTypeMap[P, D]]
     }
@@ -46,7 +46,7 @@ object tableBodyTableBodyMod extends Shortcut {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: P & ChildrenClassesSx): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P & `30`): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   

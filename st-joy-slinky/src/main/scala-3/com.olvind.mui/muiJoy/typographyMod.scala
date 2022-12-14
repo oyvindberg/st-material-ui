@@ -13,6 +13,16 @@ object typographyMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Typography](https://mui.com/joy-ui/react-typography/)
+    *
+    * API:
+    *
+    * - [Typography API](https://mui.com/joy-ui/api/typography/)
+    */
   @JSImport("@mui/joy/Typography", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsTypographyTypeMapsp, Element | Null] = js.native

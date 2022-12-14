@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object badgeBadgeMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Badge](https://mui.com/joy-ui/react-badge/)
+    *
+    * API:
+    *
+    * - [Badge API](https://mui.com/joy-ui/api/badge/)
+    */
   @JSImport("@mui/joy/Badge/Badge", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsBadgeTypeMapspan, Element | Null] = js.native

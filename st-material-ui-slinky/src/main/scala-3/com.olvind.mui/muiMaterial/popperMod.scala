@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.PickPopperPropshiddencolorstyleopentrans
+import com.olvind.mui.muiMaterial.anon.OmitPopperUnstyledPropsdivdirectionRefAt
 import org.scalablytyped.runtime.Shortcut
 import slinky.core.ReactComponentClass
 import org.scalablytyped.runtime.StObject
@@ -23,10 +23,10 @@ object popperMod extends Shortcut {
     */
   @JSImport("@mui/material/Popper", JSImport.Default)
   @js.native
-  val default: ReactComponentClass[PickPopperPropshiddencolorstyleopentrans] = js.native
+  val default: ReactComponentClass[OmitPopperUnstyledPropsdivdirectionRefAt] = js.native
   
-  type _To = ReactComponentClass[PickPopperPropshiddencolorstyleopentrans]
+  type _To = ReactComponentClass[OmitPopperUnstyledPropsdivdirectionRefAt]
   
   /* This means you don't have to write `default`, but can instead just say `popperMod.foo` */
-  override def _to: ReactComponentClass[PickPopperPropshiddencolorstyleopentrans] = default
+  override def _to: ReactComponentClass[OmitPopperUnstyledPropsdivdirectionRefAt] = default
 }

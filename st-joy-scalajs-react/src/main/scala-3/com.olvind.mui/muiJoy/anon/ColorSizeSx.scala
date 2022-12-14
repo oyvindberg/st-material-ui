@@ -22,6 +22,7 @@ trait ColorSizeSx extends StObject {
   
   /**
     * The size of the component.
+    * @default 'md'
     */
   var size: js.UndefOr[OverridableStringUnion["sm" | "md" | "lg", TabsPropsSizeOverrides]] = js.undefined
   
@@ -31,7 +32,7 @@ trait ColorSizeSx extends StObject {
   var sx: js.UndefOr[SxProps] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'plain'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, TabsPropsVariantOverrides]] = js.undefined

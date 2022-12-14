@@ -9,26 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SelectUnstyled {
   
-  inline def apply[TValue /* <: js.Object */](): SharedBuilder_DefaultComponentProps1544830250[TValue] = {
+  inline def apply[TValue /* <: js.Object */, Multiple /* <: Boolean */](): SharedBuilder_DefaultComponentProps_1147930024[TValue, Multiple] = {
     val __props = js.Dynamic.literal()
-    new SharedBuilder_DefaultComponentProps1544830250[TValue](js.Array(this.component, __props.asInstanceOf[DefaultComponentProps[SelectUnstyledTypeMap[TValue, js.Object, "button"]]]))
+    new SharedBuilder_DefaultComponentProps_1147930024[TValue, Multiple](js.Array(this.component, __props.asInstanceOf[DefaultComponentProps[SelectUnstyledTypeMap[TValue, Multiple, js.Object, "button"]]]))
   }
   
   @JSImport("@mui/base", "SelectUnstyled")
   @js.native
   val component: js.Object = js.native
   
-  type Props[TValue /* <: js.Object */] = DefaultComponentProps[SelectUnstyledTypeMap[TValue, js.Object, "button"]]
+  type Props[TValue /* <: js.Object */, Multiple /* <: Boolean */] = DefaultComponentProps[SelectUnstyledTypeMap[TValue, Multiple, js.Object, "button"]]
   
-  implicit def make[TValue /* <: js.Object */](companion: SelectUnstyled.type): SharedBuilder_DefaultComponentProps1544830250[TValue] = new SharedBuilder_DefaultComponentProps1544830250[TValue](js.Array(this.component, js.Dictionary.empty))()
+  implicit def make[TValue /* <: js.Object */, Multiple /* <: Boolean */](companion: SelectUnstyled.type): SharedBuilder_DefaultComponentProps_1147930024[TValue, Multiple] = new SharedBuilder_DefaultComponentProps_1147930024[TValue, Multiple](js.Array(this.component, js.Dictionary.empty))()
   
-  def styled[TValue /* <: js.Object */]: Builder[
-    DefaultComponentProps[SelectUnstyledTypeMap[TValue, js.Object, "button"]], 
-    SharedBuilder_DefaultComponentProps1544830250[TValue]
+  def styled[TValue /* <: js.Object */, Multiple /* <: Boolean */]: Builder[
+    DefaultComponentProps[SelectUnstyledTypeMap[TValue, Multiple, js.Object, "button"]], 
+    SharedBuilder_DefaultComponentProps_1147930024[TValue, Multiple]
   ] = new Builder[
-    DefaultComponentProps[SelectUnstyledTypeMap[TValue, js.Object, "button"]], 
-    SharedBuilder_DefaultComponentProps1544830250[TValue]
-  ](this.component, new js.Object, js.Array(), (newComponent: Any) => new SharedBuilder_DefaultComponentProps1544830250[TValue](js.Array(newComponent, js.Dictionary.empty)))
+    DefaultComponentProps[SelectUnstyledTypeMap[TValue, Multiple, js.Object, "button"]], 
+    SharedBuilder_DefaultComponentProps_1147930024[TValue, Multiple]
+  ](this.component, new js.Object, js.Array(), (newComponent: Any) => new SharedBuilder_DefaultComponentProps_1147930024[TValue, Multiple](js.Array(newComponent, js.Dictionary.empty)))
   
-  def withProps[TValue /* <: js.Object */](p: DefaultComponentProps[SelectUnstyledTypeMap[TValue, js.Object, "button"]]): SharedBuilder_DefaultComponentProps1544830250[TValue] = new SharedBuilder_DefaultComponentProps1544830250[TValue](js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps[TValue /* <: js.Object */, Multiple /* <: Boolean */](p: DefaultComponentProps[SelectUnstyledTypeMap[TValue, Multiple, js.Object, "button"]]): SharedBuilder_DefaultComponentProps_1147930024[TValue, Multiple] = new SharedBuilder_DefaultComponentProps_1147930024[TValue, Multiple](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

@@ -3,15 +3,13 @@ package com.olvind.mui.muiMaterial.mod
 import com.olvind.mui.emotionSerialize.mod.CSSInterpolation
 import com.olvind.mui.emotionSerialize.mod.Keyframes
 import com.olvind.mui.emotionUtils.mod.SerializedStyles
-import com.olvind.mui.muiBase.anon.AnchorEl
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.CreateFilterOptionsConfig
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.FilterOptionsState
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.UseAutocompleteProps
-import com.olvind.mui.muiBase.focusTrapFocusTrapMod.FocusTrapProps
+import com.olvind.mui.muiBase.anon.PickTextareaAutosizePropshiddencolorstyl
 import com.olvind.mui.muiBase.modalUnstyledModalUnstyledClassesMod.ModalUnstyledClasses
-import com.olvind.mui.muiBase.portalPortalMod.PortalProps
-import com.olvind.mui.muiBase.sliderUnstyledSliderUnstyledDottypesMod.SliderValueLabelProps
-import com.olvind.mui.muiBase.textareaAutosizeTextareaAutosizeMod.TextareaAutosizeProps
+import com.olvind.mui.muiBase.portalPortalDottypesMod.PortalProps
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.CreateFilterOptionsConfig
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.FilterOptionsState
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.UseAutocompleteProps
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.UseAutocompleteReturnValue
 import com.olvind.mui.muiMaterial.accordionAccordionClassesMod.AccordionClasses
 import com.olvind.mui.muiMaterial.accordionAccordionMod.AccordionProps
 import com.olvind.mui.muiMaterial.accordionActionsAccordionActionsClassesMod.AccordionActionsClasses
@@ -29,7 +27,7 @@ import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsAvatarTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBackdropTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBadgeTypeMapspan
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBottomNavigationTyp
-import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBoxTypeMapdiv
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBoxTypeMapdivTheme
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBreadcrumbsTypeMapn
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsButtonGroupTypeMapd
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsCardContentTypeMapd
@@ -57,8 +55,6 @@ import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypA
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriacolspan
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendListTypeMapLi
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendListTypeMapMe
-import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendModalUnstyled
-import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendSliderUnstyle
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsFormControlTypeMapd
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsFormHelperTextTypeM
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsFormLabelTypeMaplab
@@ -67,13 +63,16 @@ import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsGridTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsImageListItemTypeMa
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsImageListTypeMapul
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsInputAdornmentTypeM
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsInputLabelTypeMapla
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsLinkTypeMapa
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsListItemTypeMapli
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsListSubheaderTypeMa
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsModalTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsPaginationItemTypeM
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsPaperTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsScopedCssBaselineTy
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsSkeletonTypeMapspan
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsSliderTypeMapspan
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsStackTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsStepTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsStepperTypeMapdiv
@@ -88,6 +87,7 @@ import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTabsTypeMappropsOve
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsToolbarTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTypographyTypeMapsp
 import com.olvind.mui.muiMaterial.anon.NameProps
+import com.olvind.mui.muiMaterial.anon.OmitPopperUnstyledPropsdivdirectionRefAt
 import com.olvind.mui.muiMaterial.anon.OmitThemepaletteCssVarsTheme
 import com.olvind.mui.muiMaterial.anon.OverridableComponentSvgIconTypeMapsvg
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapAcco
@@ -104,7 +104,6 @@ import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapStep
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapTabT
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapTabl
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapTogg
-import com.olvind.mui.muiMaterial.anon.PickPopperPropshiddencolorstyleopentrans
 import com.olvind.mui.muiMaterial.anon.PropsWithChildrenPartialCssVarsProviderC
 import com.olvind.mui.muiMaterial.anon.ScrollbarColor
 import com.olvind.mui.muiMaterial.anon.Style
@@ -178,7 +177,6 @@ import com.olvind.mui.muiMaterial.inputBaseInputBaseClassesMod.InputBaseClasses
 import com.olvind.mui.muiMaterial.inputBaseInputBaseMod.InputBaseProps
 import com.olvind.mui.muiMaterial.inputInputClassesMod.InputClasses
 import com.olvind.mui.muiMaterial.inputLabelInputLabelClassesMod.InputLabelClasses
-import com.olvind.mui.muiMaterial.inputLabelInputLabelMod.InputLabelProps
 import com.olvind.mui.muiMaterial.linearProgressLinearProgressClassesMod.LinearProgressClasses
 import com.olvind.mui.muiMaterial.linearProgressLinearProgressMod.LinearProgressProps
 import com.olvind.mui.muiMaterial.linkLinkClassesMod.LinkClasses
@@ -218,13 +216,14 @@ import com.olvind.mui.muiMaterial.ratingRatingMod.RatingProps
 import com.olvind.mui.muiMaterial.selectSelectClassesMod.SelectClasses
 import com.olvind.mui.muiMaterial.skeletonSkeletonClassesMod.SkeletonClasses
 import com.olvind.mui.muiMaterial.slideSlideMod.SlideProps
-import com.olvind.mui.muiMaterial.sliderSliderMod.SliderClasses_
+import com.olvind.mui.muiMaterial.sliderSliderClassesMod.SliderClasses
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderMarkLabelProps
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderMarkProps
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderRailProps
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderRootProps
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderThumbProps
 import com.olvind.mui.muiMaterial.sliderSliderMod.SliderTrackProps
+import com.olvind.mui.muiMaterial.sliderSliderMod.SliderValueLabelProps
 import com.olvind.mui.muiMaterial.snackbarContentSnackbarContentClassesMod.SnackbarContentClasses
 import com.olvind.mui.muiMaterial.snackbarContentSnackbarContentMod.SnackbarContentProps
 import com.olvind.mui.muiMaterial.snackbarSnackbarClassesMod.SnackbarClasses
@@ -286,13 +285,14 @@ import com.olvind.mui.muiMaterial.toolbarToolbarClassesMod.ToolbarClasses
 import com.olvind.mui.muiMaterial.tooltipTooltipClassesMod.TooltipClasses
 import com.olvind.mui.muiMaterial.tooltipTooltipMod.TooltipProps
 import com.olvind.mui.muiMaterial.typographyTypographyClassesMod.TypographyClasses
-import com.olvind.mui.muiMaterial.useMediaQueryUseMediaQueryMod.Options
+import com.olvind.mui.muiMaterial.useMediaQueryUseMediaQueryMod.UseMediaQueryOptions
 import com.olvind.mui.muiMaterial.useScrollTriggerUseScrollTriggerMod.UseScrollTriggerOptions
 import com.olvind.mui.muiMaterial.zoomZoomMod.ZoomProps
 import com.olvind.mui.muiStyledEngine.styledEngineProviderStyledEngineProviderMod.StyledEngineProviderProps
 import com.olvind.mui.muiSystem.colorManipulatorMod.ColorObject
 import com.olvind.mui.muiSystem.containerContainerClassesMod.ContainerClasses
 import com.olvind.mui.muiSystem.createStyledMod.CreateMUIStyled
+import com.olvind.mui.muiSystem.stackStackClassesMod.StackClasses
 import com.olvind.mui.muiSystem.unstableGridGridClassesMod.GridClasses
 import com.olvind.mui.muiTypes.mod.DistributiveOmit
 import com.olvind.mui.muiUtils.debounceMod.Cancelable
@@ -304,6 +304,7 @@ import com.olvind.mui.react.mod.EffectCallback
 import com.olvind.mui.react.mod.JSXElementConstructor
 import com.olvind.mui.react.mod.MutableRefObject
 import com.olvind.mui.react.mod.Ref
+import com.olvind.mui.react.mod.RefAttributes
 import com.olvind.mui.react.mod.RefCallback
 import com.olvind.mui.react.mod.global.JSX.Element
 import com.olvind.mui.std.Record
@@ -402,7 +403,6 @@ inline def BackdropRoot: ReactComponentClass[BackdropRootProps] = ^.asInstanceOf
   * API:
   *
   * - [Badge API](https://mui.com/material-ui/api/badge/)
-  * - inherits [BadgeUnstyled API](https://mui.com/base/api/badge-unstyled/)
   */
 inline def Badge: js.Function1[/* props */ DefaultComponentPropsBadgeTypeMapspan, Element] = ^.asInstanceOf[js.Dynamic].selectDynamic("Badge").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsBadgeTypeMapspan, Element]]
 
@@ -449,7 +449,7 @@ ReactElement | Null]]
   *
   * - [Box API](https://mui.com/material-ui/api/box/)
   */
-inline def Box: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element] = ^.asInstanceOf[js.Dynamic].selectDynamic("Box").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element]]
+inline def Box: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdivTheme, Element | Null] = ^.asInstanceOf[js.Dynamic].selectDynamic("Box").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdivTheme, Element | Null]]
 
 /**
   *
@@ -835,7 +835,18 @@ inline def InputAdornment: js.Function1[/* props */ DefaultComponentPropsInputAd
 
 inline def InputBase(props: InputBaseProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InputBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def InputLabel(props: InputLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InputLabel")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+/**
+  *
+  * Demos:
+  *
+  * - [Text Field](https://mui.com/material-ui/react-text-field/)
+  *
+  * API:
+  *
+  * - [InputLabel API](https://mui.com/material-ui/api/input-label/)
+  * - inherits [FormLabel API](https://mui.com/material-ui/api/form-label/)
+  */
+inline def InputLabel: js.Function1[/* props */ DefaultComponentPropsInputLabelTypeMapla, Element] = ^.asInstanceOf[js.Dynamic].selectDynamic("InputLabel").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsInputLabelTypeMapla, Element]]
 
 inline def LinearProgress(props: LinearProgressProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LinearProgress")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
@@ -939,7 +950,7 @@ ReactElement | Null] = ^.asInstanceOf[js.Dynamic].selectDynamic("MenuItem").asIn
 ReactElement | Null]]
 
 /**
-  * A permanently displayed menu following https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/.
+  * A permanently displayed menu following https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/.
   * It's exposed to help customization of the [`Menu`](https://mui.com/material-ui/api/menu/) component if you
   * use it separately you need to move focus into the component manually. Once
   * the focus is placed inside the component it is fully keyboard accessible.
@@ -978,7 +989,7 @@ inline def MobileStepper(props: MobileStepperProps): Element = ^.asInstanceOf[js
   *
   * - [Modal API](https://mui.com/material-ui/api/modal/)
   */
-inline def Modal: js.Function1[/* props */ DefaultComponentPropsExtendModalUnstyled, Element | Null] = ^.asInstanceOf[js.Dynamic].selectDynamic("Modal").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsExtendModalUnstyled, Element | Null]]
+inline def Modal: js.Function1[/* props */ DefaultComponentPropsModalTypeMapdiv, Element] = ^.asInstanceOf[js.Dynamic].selectDynamic("Modal").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsModalTypeMapdiv, Element]]
 
 inline def ModalRoot: ReactComponentClass[ModalRootProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ModalRoot").asInstanceOf[ReactComponentClass[ModalRootProps]]
 
@@ -1023,9 +1034,21 @@ inline def Popover(props: PopoverProps): Element = ^.asInstanceOf[js.Dynamic].ap
   *
   * - [Popper API](https://mui.com/material-ui/api/popper/)
   */
-inline def Popper: ReactComponentClass[PickPopperPropshiddencolorstyleopentrans] = ^.asInstanceOf[js.Dynamic].selectDynamic("Popper").asInstanceOf[ReactComponentClass[PickPopperPropshiddencolorstyleopentrans]]
+inline def Popper: ReactComponentClass[OmitPopperUnstyledPropsdivdirectionRefAt] = ^.asInstanceOf[js.Dynamic].selectDynamic("Popper").asInstanceOf[ReactComponentClass[OmitPopperUnstyledPropsdivdirectionRefAt]]
 
-inline def Portal(props: PortalProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+/**
+  * Portals provide a first-class way to render children into a DOM node
+  * that exists outside the DOM hierarchy of the parent component.
+  *
+  * Demos:
+  *
+  * - [Portal](https://mui.com/base/react-portal/)
+  *
+  * API:
+  *
+  * - [Portal API](https://mui.com/base/react-portal/components-api/#portal)
+  */
+inline def Portal: ReactComponentClass[PortalProps & RefAttributes[org.scalajs.dom.Element]] = ^.asInstanceOf[js.Dynamic].selectDynamic("Portal").asInstanceOf[ReactComponentClass[PortalProps & RefAttributes[org.scalajs.dom.Element]]]
 
 inline def Radio(props: RadioProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Radio")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
@@ -1068,9 +1091,8 @@ inline def Slide(props: SlideProps): Element = ^.asInstanceOf[js.Dynamic].applyD
   * API:
   *
   * - [Slider API](https://mui.com/material-ui/api/slider/)
-  * - inherits [SliderUnstyled API](https://mui.com/base/api/slider-unstyled/)
   */
-inline def Slider: js.Function1[/* props */ DefaultComponentPropsExtendSliderUnstyle, Element | Null] = ^.asInstanceOf[js.Dynamic].selectDynamic("Slider").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsExtendSliderUnstyle, Element | Null]]
+inline def Slider: js.Function1[/* props */ DefaultComponentPropsSliderTypeMapspan, Element] = ^.asInstanceOf[js.Dynamic].selectDynamic("Slider").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsSliderTypeMapspan, Element]]
 
 inline def SliderMark: ReactComponentClass[SliderMarkProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SliderMark").asInstanceOf[ReactComponentClass[SliderMarkProps]]
 
@@ -1321,7 +1343,18 @@ inline def Tabs: js.Function1[/* props */ DefaultComponentPropsTabsTypeMappropsO
 
 inline def TextField(props: TextFieldProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TextField")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def TextareaAutosize(props: TextareaAutosizeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TextareaAutosize")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+/**
+  *
+  * Demos:
+  *
+  * - [Textarea Autosize](https://mui.com/base/react-textarea-autosize/)
+  * - [Textarea Autosize](https://mui.com/material-ui/react-textarea-autosize/)
+  *
+  * API:
+  *
+  * - [TextareaAutosize API](https://mui.com/base/react-textarea-autosize/components-api/#textarea-autosize)
+  */
+inline def TextareaAutosize: ReactComponentClass[PickTextareaAutosizePropshiddencolorstyl] = ^.asInstanceOf[js.Dynamic].selectDynamic("TextareaAutosize").asInstanceOf[ReactComponentClass[PickTextareaAutosizePropshiddencolorstyl]]
 
 inline def ThemeProvider[T](props: ThemeProviderProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 
@@ -1372,8 +1405,6 @@ inline def Tooltip(props: TooltipProps): Element = ^.asInstanceOf[js.Dynamic].ap
 inline def Typography: js.Function1[/* props */ DefaultComponentPropsTypographyTypeMapsp, Element] = ^.asInstanceOf[js.Dynamic].selectDynamic("Typography").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsTypographyTypeMapsp, Element]]
 
 inline def UnstableGrid2: js.Function1[/* props */ DefaultComponentPropsGrid2TypeMapdiv, Element | Null] = ^.asInstanceOf[js.Dynamic].selectDynamic("Unstable_Grid2").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsGrid2TypeMapdiv, Element | Null]]
-
-inline def UnstableTrapFocus(props: FocusTrapProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Unstable_TrapFocus")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 inline def Zoom(props: ZoomProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Zoom")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
@@ -1694,6 +1725,8 @@ inline def getSelectUtilityClasses(slot: String): String = ^.asInstanceOf[js.Dyn
 
 inline def getSkeletonUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSkeletonUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
 
+inline def getSliderUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSliderUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
+
 inline def getSnackbarContentUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnackbarContentUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
 
 inline def getSnackbarUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnackbarUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -1703,6 +1736,8 @@ inline def getSpeedDialActionUtilityClass(slot: String): String = ^.asInstanceOf
 inline def getSpeedDialIconUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpeedDialIconUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
 
 inline def getSpeedDialUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpeedDialUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
+
+inline def getStackUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStackUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
 
 inline def getStepButtonUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStepButtonUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
 
@@ -1877,7 +1912,7 @@ inline def shouldSkipGeneratingVar(keys: js.Array[String]): Boolean = ^.asInstan
 
 inline def skeletonClasses: SkeletonClasses = ^.asInstanceOf[js.Dynamic].selectDynamic("skeletonClasses").asInstanceOf[SkeletonClasses]
 
-inline def sliderClasses: SliderClasses_ = ^.asInstanceOf[js.Dynamic].selectDynamic("sliderClasses").asInstanceOf[SliderClasses_]
+inline def sliderClasses: SliderClasses = ^.asInstanceOf[js.Dynamic].selectDynamic("sliderClasses").asInstanceOf[SliderClasses]
 
 inline def snackbarClasses: SnackbarClasses = ^.asInstanceOf[js.Dynamic].selectDynamic("snackbarClasses").asInstanceOf[SnackbarClasses]
 
@@ -1888,6 +1923,8 @@ inline def speedDialActionClasses: SpeedDialActionClasses = ^.asInstanceOf[js.Dy
 inline def speedDialClasses: SpeedDialClasses = ^.asInstanceOf[js.Dynamic].selectDynamic("speedDialClasses").asInstanceOf[SpeedDialClasses]
 
 inline def speedDialIconClasses: SpeedDialIconClasses = ^.asInstanceOf[js.Dynamic].selectDynamic("speedDialIconClasses").asInstanceOf[SpeedDialIconClasses]
+
+inline def stackClasses: StackClasses = ^.asInstanceOf[js.Dynamic].selectDynamic("stackClasses").asInstanceOf[StackClasses]
 
 inline def stepButtonClasses: StepButtonClasses = ^.asInstanceOf[js.Dynamic].selectDynamic("stepButtonClasses").asInstanceOf[StepButtonClasses]
 
@@ -1986,7 +2023,7 @@ inline def unsupportedProp(
   propFullName: String
 ): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("unsupportedProp")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any], location.asInstanceOf[js.Any], propFullName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
 
-inline def useAutocomplete[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](props: UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo]): AnchorEl[T, Multiple, DisableClearable, FreeSolo] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutocomplete")(props.asInstanceOf[js.Any]).asInstanceOf[AnchorEl[T, Multiple, DisableClearable, FreeSolo]]
+inline def useAutocomplete[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](props: UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo]): UseAutocompleteReturnValue[T, Multiple, DisableClearable, FreeSolo] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutocomplete")(props.asInstanceOf[js.Any]).asInstanceOf[UseAutocompleteReturnValue[T, Multiple, DisableClearable, FreeSolo]]
 
 inline def useControlled[T](props: UseControlledProps[T]): js.Tuple2[T, js.Function1[/* newValue */ T | (js.Function1[/* prevValue */ T, T]), Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useControlled")(props.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, js.Function1[/* newValue */ T | (js.Function1[/* prevValue */ T, T]), Unit]]]
 
@@ -1999,9 +2036,9 @@ inline def useFormControl(): js.UndefOr[FormControlState] = ^.asInstanceOf[js.Dy
 inline def useIsFocusVisible(): UseIsFocusVisibleResult = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsFocusVisible")().asInstanceOf[UseIsFocusVisibleResult]
 
 inline def useMediaQuery[Theme](queryInput: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(queryInput.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-inline def useMediaQuery[Theme](queryInput: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(queryInput.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def useMediaQuery[Theme](queryInput: String, options: UseMediaQueryOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(queryInput.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def useMediaQuery[Theme](queryInput: js.Function1[/* theme */ Theme, String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(queryInput.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-inline def useMediaQuery[Theme](queryInput: js.Function1[/* theme */ Theme, String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(queryInput.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def useMediaQuery[Theme](queryInput: js.Function1[/* theme */ Theme, String], options: UseMediaQueryOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(queryInput.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def useRadioGroup(): js.UndefOr[RadioGroupState] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRadioGroup")().asInstanceOf[js.UndefOr[RadioGroupState]]
 

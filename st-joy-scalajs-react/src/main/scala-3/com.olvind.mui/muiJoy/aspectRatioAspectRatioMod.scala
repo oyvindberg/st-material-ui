@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object aspectRatioAspectRatioMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Aspect Ratio](https://mui.com/joy-ui/react-aspect-ratio/)
+    *
+    * API:
+    *
+    * - [AspectRatio API](https://mui.com/joy-ui/api/aspect-ratio/)
+    */
   @JSImport("@mui/joy/AspectRatio/AspectRatio", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsAspectRatioTypeMapd, Element | Null] = js.native

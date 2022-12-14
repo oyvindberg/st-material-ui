@@ -13,6 +13,16 @@ object breadcrumbsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Breadcrumbs](https://mui.com/joy-ui/react-breadcrumbs/)
+    *
+    * API:
+    *
+    * - [Breadcrumbs API](https://mui.com/joy-ui/api/breadcrumbs/)
+    */
   @JSImport("@mui/joy/Breadcrumbs", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsBreadcrumbsTypeMapn, Element | Null] = js.native

@@ -1,28 +1,27 @@
 package com.olvind.mui.muiMaterial.anon
 
-import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `29`[P, D /* <: ReactElement */] extends StObject {
+trait `29` extends StObject {
   
-  var defaultComponent: D
+  var defaultComponent: "div"
   
-  var props: P & IconPosition
+  var props: IconPosition
 }
 object `29` {
   
-  inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & IconPosition): `29`[P, D] = {
-    val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`29`[P, D]]
+  inline def apply(props: IconPosition): `29` = {
+    val __obj = js.Dynamic.literal(defaultComponent = "div", props = props.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`29`]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `29`[?, ?], P, D /* <: ReactElement */] (val x: Self & (`29`[P, D])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `29`] (val x: Self) extends AnyVal {
     
-    inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+    inline def setDefaultComponent(value: "div"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & IconPosition): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: IconPosition): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

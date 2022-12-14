@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.PickPopperPropshiddencolorstyleopentrans
+import com.olvind.mui.muiMaterial.anon.OmitPopperUnstyledPropsdivdirectionRefAt
 import com.olvind.mui.react.mod.ForwardRefExoticComponent
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
@@ -23,10 +23,10 @@ object popperMod extends Shortcut {
     */
   @JSImport("@mui/material/Popper", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PickPopperPropshiddencolorstyleopentrans] = js.native
+  val default: ForwardRefExoticComponent[OmitPopperUnstyledPropsdivdirectionRefAt] = js.native
   
-  type _To = ForwardRefExoticComponent[PickPopperPropshiddencolorstyleopentrans]
+  type _To = ForwardRefExoticComponent[OmitPopperUnstyledPropsdivdirectionRefAt]
   
   /* This means you don't have to write `default`, but can instead just say `popperMod.foo` */
-  override def _to: ForwardRefExoticComponent[PickPopperPropshiddencolorstyleopentrans] = default
+  override def _to: ForwardRefExoticComponent[OmitPopperUnstyledPropsdivdirectionRefAt] = default
 }

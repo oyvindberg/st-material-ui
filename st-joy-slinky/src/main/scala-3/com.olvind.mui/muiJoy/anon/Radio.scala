@@ -9,37 +9,31 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>,   radio :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>,   icon :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>,   action :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>,   input :@mui/joy.@mui/joy/utils/types.SlotProps<'input', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>,   label :@mui/joy.@mui/joy/utils/types.SlotProps<'label', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>,   radio :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>,   icon :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>,   action :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>,   input :@mui/joy.@mui/joy/utils/types.SlotProps<'input', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>,   label :@mui/joy.@mui/joy/utils/types.SlotProps<'label', {}, @mui/joy.@mui/joy/Radio/RadioProps.RadioOwnerState>}[P]} */
 trait Radio extends StObject {
   
-  var action: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]
-  ] = js.undefined
+  var action: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]
   
-  var icon: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]
-  ] = js.undefined
+  var icon: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]
   
-  var input: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, RadioOwnerState]
-  ] = js.undefined
+  var input: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, RadioOwnerState]
   
-  var label: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["label", js.Object, RadioOwnerState]
-  ] = js.undefined
+  var label: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["label", js.Object, RadioOwnerState]
   
-  var radio: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]
-  ] = js.undefined
+  var radio: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]
   
-  var root: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]
-  ] = js.undefined
+  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]
 }
 object Radio {
   
-  inline def apply(): Radio = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    action: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState],
+    icon: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState],
+    input: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, RadioOwnerState],
+    label: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["label", js.Object, RadioOwnerState],
+    radio: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState],
+    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]
+  ): Radio = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Radio]
   }
   
@@ -52,15 +46,11 @@ object Radio {
       value: RadioOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
-    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
-    
     inline def setIcon(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconFunction1(
       value: RadioOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
-    
-    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     inline def setInput(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, RadioOwnerState]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
@@ -68,15 +58,11 @@ object Radio {
       value: RadioOwnerState => (Omit[ComponentPropsWithRef["input"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
     
-    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
-    
     inline def setLabel(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["label", js.Object, RadioOwnerState]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelFunction1(
       value: RadioOwnerState => (Omit[ComponentPropsWithRef["label"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
-    
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setRadio(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     
@@ -84,14 +70,10 @@ object Radio {
       value: RadioOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "radio", js.Any.fromFunction1(value))
     
-    inline def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
-    
     inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, RadioOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootFunction1(
       value: RadioOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
-    
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

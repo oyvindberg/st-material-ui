@@ -4,6 +4,7 @@ import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBackdropTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.PartialBackdropClasses
 import com.olvind.mui.muiMaterial.anon.Root
+import com.olvind.mui.muiMaterial.anon.TransitionPropsAbout
 import com.olvind.mui.muiMaterial.anon.`0`
 import com.olvind.mui.muiMaterial.anon.`1`
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
@@ -27,7 +28,7 @@ import japgolly.scalajs.react.ReactTouchEventFrom
 import japgolly.scalajs.react.ReactTransitionEventFrom
 import japgolly.scalajs.react.ReactUIEventFrom
 import japgolly.scalajs.react.ReactWheelEventFrom
-import org.scalajs.dom.Element
+import japgolly.scalajs.react.facade.React.Element
 import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,6 +49,8 @@ object Backdrop {
   open class Builder (val args: js.Array[Any])
     extends AnyVal
        with StBuildingComponent[js.Object] {
+    
+    inline def TransitionComponent(value: TransitionPropsAbout => Element | Null): this.type = set("TransitionComponent", js.Any.fromFunction1(value))
     
     inline def about(value: String): this.type = set("about", value.asInstanceOf[js.Any])
     
@@ -159,6 +162,8 @@ object Backdrop {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
@@ -172,6 +177,8 @@ object Backdrop {
     inline def components(value: Root): this.type = set("components", value.asInstanceOf[js.Any])
     
     inline def componentsProps(value: `0`): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -227,65 +234,65 @@ object Backdrop {
     
     inline def nonce(value: String): this.type = set("nonce", value.asInstanceOf[js.Any])
     
-    inline def onAbort(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onAbort(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onAnimationEnd(value: ReactAnimationEventFrom[HTMLElement & Element] => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onAnimationEnd(value: ReactAnimationEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onAnimationIteration(value: ReactAnimationEventFrom[HTMLElement & Element] => Callback): this.type = set("onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onAnimationIteration(value: ReactAnimationEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onAnimationStart(value: ReactAnimationEventFrom[HTMLElement & Element] => Callback): this.type = set("onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onAnimationStart(value: ReactAnimationEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onAuxClick(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onAuxClick(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onBeforeInput(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onBeforeInput(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onBlur(value: ReactFocusEventFrom[HTMLElement & Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onBlur(value: ReactFocusEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onCanPlay(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCanPlay(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onCanPlayThrough(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCanPlayThrough(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onChange(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onChange(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onClick(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onClick(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onCompositionEnd(value: ReactCompositionEventFrom[HTMLElement & Element] => Callback): this.type = set("onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCompositionEnd(value: ReactCompositionEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onCompositionStart(value: ReactCompositionEventFrom[HTMLElement & Element] => Callback): this.type = set("onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCompositionStart(value: ReactCompositionEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onCompositionUpdate(value: ReactCompositionEventFrom[HTMLElement & Element] => Callback): this.type = set("onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCompositionUpdate(value: ReactCompositionEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onContextMenu(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onContextMenu(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onCopy(value: ReactClipboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCopy(value: ReactClipboardEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onCut(value: ReactClipboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onCut(value: ReactClipboardEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onDoubleClick(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDoubleClick(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onDrag(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDrag(value: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onDragEnd(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragEnd(value: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onDragEnter(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragEnter(value: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onDragExit(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragExit(value: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onDragLeave(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragLeave(value: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onDragOver(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragOver(value: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onDragStart(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDragStart(value: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onDrop(value: ReactDragEventFrom[HTMLElement & Element] => Callback): this.type = set("onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDrop(value: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onDurationChange(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onDurationChange(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onEmptied(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onEmptied(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onEncrypted(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onEncrypted(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onEnded(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onEnded", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onEnded(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onEnded", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def onEnter(value: Any): this.type = set("onEnter", value.asInstanceOf[js.Any])
     
@@ -293,7 +300,7 @@ object Backdrop {
     
     inline def onEntering(value: Any): this.type = set("onEntering", value.asInstanceOf[js.Any])
     
-    inline def onError(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onError", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onError(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onError", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def onExit(value: Any): this.type = set("onExit", value.asInstanceOf[js.Any])
     
@@ -301,103 +308,103 @@ object Backdrop {
     
     inline def onExiting(value: Any): this.type = set("onExiting", value.asInstanceOf[js.Any])
     
-    inline def onFocus(value: ReactFocusEventFrom[HTMLElement & Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onFocus(value: ReactFocusEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onInput(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onInput(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onInvalid(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onInvalid(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onKeyDown(value: ReactKeyboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onKeyDown(value: ReactKeyboardEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onKeyPress(value: ReactKeyboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onKeyPress(value: ReactKeyboardEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onKeyUp(value: ReactKeyboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onKeyUp(value: ReactKeyboardEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onLoad(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onLoad", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onLoad(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onLoad", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onLoadStart(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onLoadStart(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onLoadedData(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onLoadedData(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onLoadedMetadata(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onLoadedMetadata(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onMouseDown(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseDown(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onMouseEnter(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseEnter(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onMouseLeave(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseLeave(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onMouseMove(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseMove(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onMouseOut(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseOut(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onMouseOver(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseOver(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onMouseUp(value: ReactMouseEventFrom[HTMLElement & Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onMouseUp(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPaste(value: ReactClipboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPaste(value: ReactClipboardEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPause(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onPause", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPause(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPause", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPlay(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPlay(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPlaying(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPlaying(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPointerCancel(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerCancel(value: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPointerDown(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerDown(value: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPointerEnter(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerEnter(value: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPointerLeave(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerLeave(value: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPointerMove(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerMove(value: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPointerOut(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerOut(value: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPointerOver(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerOver(value: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onPointerUp(value: ReactPointerEventFrom[HTMLElement & Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onPointerUp(value: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onProgress(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onProgress", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onProgress(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onProgress", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onRateChange(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onRateChange(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onReset(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onReset(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onResize(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onResize(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onScroll(value: ReactUIEventFrom[HTMLElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onScroll(value: ReactUIEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onSeeked(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onSeeked(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onSeeking(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onSeeking(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onSelect(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onSelect(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onStalled(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onStalled", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onStalled(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onStalled", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onSubmit(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onSubmit(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onSuspend(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onSuspend(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onTimeUpdate(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTimeUpdate(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onTouchCancel(value: ReactTouchEventFrom[HTMLElement & Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTouchCancel(value: ReactTouchEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onTouchEnd(value: ReactTouchEventFrom[HTMLElement & Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTouchEnd(value: ReactTouchEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onTouchMove(value: ReactTouchEventFrom[HTMLElement & Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTouchMove(value: ReactTouchEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onTouchStart(value: ReactTouchEventFrom[HTMLElement & Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTouchStart(value: ReactTouchEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onTransitionEnd(value: ReactTransitionEventFrom[HTMLElement & Element] => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onTransitionEnd(value: ReactTransitionEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onVolumeChange(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onVolumeChange(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onWaiting(value: ReactEventFrom[HTMLElement & Element] => Callback): this.type = set("onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onWaiting(value: ReactEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def onWheel(value: ReactWheelEventFrom[HTMLElement & Element] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    inline def onWheel(value: ReactWheelEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
     
@@ -407,9 +414,13 @@ object Backdrop {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     

@@ -1,13 +1,13 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteChangeDetails
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteCloseReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteFreeSoloValueMapping
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteHighlightChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteInputChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteValue
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.FilterOptionsState
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteChangeDetails
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteCloseReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteFreeSoloValueMapping
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteHighlightChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteInputChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteValue
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.FilterOptionsState
 import com.olvind.mui.muiJoy.autocompleteAutocompletePropsMod.AutocompleteOwnerState
 import com.olvind.mui.muiJoy.autocompleteAutocompletePropsMod.AutocompletePropsColorOverrides
 import com.olvind.mui.muiJoy.autocompleteAutocompletePropsMod.AutocompletePropsSizeOverrides
@@ -202,6 +202,8 @@ trait PartialAutocompletePropsanyanyanyany extends StObject {
   
   var componentName: js.UndefOr[String] = js.undefined
   
+  var content: js.UndefOr[String] = js.undefined
+  
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
@@ -242,7 +244,7 @@ trait PartialAutocompletePropsanyanyanyany extends StObject {
   
   var freeSolo: js.UndefOr[Any] = js.undefined
   
-  var getLimitTagsText: js.UndefOr[js.Function1[/* more */ Double, Node]] = js.undefined
+  var getLimitTagsText: js.UndefOr[js.Function1[/* more */ String | Double, Node]] = js.undefined
   
   var getOptionDisabled: js.UndefOr[js.Function1[/* option */ Any, Boolean]] = js.undefined
   
@@ -506,6 +508,8 @@ trait PartialAutocompletePropsanyanyanyany extends StObject {
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var renderGroup: js.UndefOr[js.Function1[/* params */ AutocompleteRenderGroupParams, Node]] = js.undefined
   
   var renderOption: js.UndefOr[
@@ -532,6 +536,8 @@ trait PartialAutocompletePropsanyanyanyany extends StObject {
   
   var results: js.UndefOr[Double] = js.undefined
   
+  var rev: js.UndefOr[String] = js.undefined
+  
   var role: js.UndefOr[AriaRole] = js.undefined
   
   var security: js.UndefOr[String] = js.undefined
@@ -542,9 +548,9 @@ trait PartialAutocompletePropsanyanyanyany extends StObject {
   
   var slot: js.UndefOr[String] = js.undefined
   
-  var slotProps: js.UndefOr[Listbox] = js.undefined
+  var slotProps: js.UndefOr[LimitTag] = js.undefined
   
-  var slots: js.UndefOr[Input] = js.undefined
+  var slots: js.UndefOr[PartialAutocompleteSlots] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -862,9 +868,13 @@ object PartialAutocompletePropsanyanyanyany {
     
     inline def setComponentNameUndefined: Self = StObject.set(x, "componentName", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -946,7 +956,7 @@ object PartialAutocompletePropsanyanyanyany {
     
     inline def setFreeSoloUndefined: Self = StObject.set(x, "freeSolo", js.undefined)
     
-    inline def setGetLimitTagsText(value: /* more */ Double => Node): Self = StObject.set(x, "getLimitTagsText", js.Any.fromFunction1(value))
+    inline def setGetLimitTagsText(value: /* more */ String | Double => Node): Self = StObject.set(x, "getLimitTagsText", js.Any.fromFunction1(value))
     
     inline def setGetLimitTagsTextUndefined: Self = StObject.set(x, "getLimitTagsText", js.undefined)
     
@@ -1452,6 +1462,10 @@ object PartialAutocompletePropsanyanyanyany {
     
     inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setRenderGroup(value: /* params */ AutocompleteRenderGroupParams => Node): Self = StObject.set(x, "renderGroup", js.Any.fromFunction1(value))
     
     inline def setRenderGroupUndefined: Self = StObject.set(x, "renderGroup", js.undefined)
@@ -1480,6 +1494,10 @@ object PartialAutocompletePropsanyanyanyany {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+    
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -1498,13 +1516,13 @@ object PartialAutocompletePropsanyanyanyany {
     
     inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    inline def setSlotProps(value: Listbox): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: LimitTag): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: Input): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: PartialAutocompleteSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     

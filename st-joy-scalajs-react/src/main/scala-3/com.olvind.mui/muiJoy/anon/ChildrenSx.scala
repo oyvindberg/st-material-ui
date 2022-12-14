@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChildrenSx extends StObject {
   
   /**
-    * Used to render icon or text elements inside the CardCover if `src` is not set.
-    * This can be an element, or just a string.
+    * The content of the component.
     */
   var children: js.UndefOr[Node] = js.undefined
   

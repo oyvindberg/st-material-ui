@@ -1,7 +1,9 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
+import com.olvind.mui.muiMaterial.anon.EndScrollButtonIcon
 import com.olvind.mui.muiMaterial.anon.PartialTabScrollButtonClasses
+import com.olvind.mui.muiMaterial.anon.StartScrollButtonIcon
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiMaterial.tabScrollButtonTabScrollButtonMod.TabScrollButtonProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
@@ -152,6 +154,8 @@ object TabScrollButton {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
@@ -159,6 +163,8 @@ object TabScrollButton {
     inline def classes(value: PartialTabScrollButtonClasses): this.type = set("classes", value.asInstanceOf[js.Any])
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -376,15 +382,23 @@ object TabScrollButton {
       value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
     ): this.type = set("ref", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
     inline def security(value: String): this.type = set("security", value.asInstanceOf[js.Any])
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
+    
+    inline def slotProps(value: StartScrollButtonIcon): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    
+    inline def slots(value: EndScrollButtonIcon): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

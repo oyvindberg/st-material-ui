@@ -1,5 +1,6 @@
 package com.olvind.mui.muiBase.anon
 
+import com.olvind.mui.muiBase.tablePaginationUnstyledTablePaginationActionsUnstyledDottypesMod.TablePaginationActionsUnstyledSlots
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -145,12 +146,9 @@ trait DefaultComponentPropsTablePaginationActi extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
-  /**
-    * Override or extend the styles applied to the component.
-    */
-  var classes: js.UndefOr[js.Object] = js.native
-  
   var color: js.UndefOr[String] = js.native
+  
+  var content: js.UndefOr[String] = js.native
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.native
   
@@ -405,9 +403,13 @@ trait DefaultComponentPropsTablePaginationActi extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLButtonElement]] = js.native
   
+  var rel: js.UndefOr[String] = js.native
+  
   var resource: js.UndefOr[String] = js.native
   
   var results: js.UndefOr[Double] = js.native
+  
+  var rev: js.UndefOr[String] = js.native
   
   var role: js.UndefOr[AriaRole] = js.native
   
@@ -425,14 +427,14 @@ trait DefaultComponentPropsTablePaginationActi extends StObject {
     * The props used for each slot inside the TablePagination.
     * @default {}
     */
-  var slotProps: js.UndefOr[FirstButton] = js.native
+  var slotProps: js.UndefOr[BackButton] = js.native
   
   /**
     * The components used for each slot inside the TablePagination.
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[BackButton] = js.native
+  var slots: js.UndefOr[TablePaginationActionsUnstyledSlots] = js.native
   
   var spellCheck: js.UndefOr[Booleanish] = js.native
   

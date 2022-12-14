@@ -1,61 +1,76 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.breadcrumbsBreadcrumbsPropsMod.BreadcrumbsOwnerState
-import com.olvind.mui.muiJoy.utilsTypesMod.SlotCommonProps
-import com.olvind.mui.react.mod.ComponentPropsWithRef
-import com.olvind.mui.std.Omit
-import com.olvind.mui.std.Record
+import com.olvind.mui.muiJoy.breadcrumbsBreadcrumbsPropsMod.BreadcrumbsPropsSizeOverrides
+import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
+import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
+import com.olvind.mui.muiTypes.mod.OverridableStringUnion
+import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Separator extends StObject {
   
-  var li: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["li", js.Object, BreadcrumbsOwnerState]
+  /**
+    * The content of the component.
+    */
+  var children: js.UndefOr[ReactElement] = js.undefined
   
-  var ol: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["ol", js.Object, BreadcrumbsOwnerState]
+  /**
+    * Custom separator node.
+    * @default '/'
+    */
+  var separator: js.UndefOr[ReactElement] = js.undefined
   
-  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["nav", js.Object, BreadcrumbsOwnerState]
+  /**
+    * The size of the component.
+    * It accepts theme values between 'sm' and 'lg'.
+    * @default 'md'
+    */
+  var size: js.UndefOr[OverridableStringUnion["sm" | "md" | "lg", BreadcrumbsPropsSizeOverrides]] = js.undefined
   
-  var separator: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["li", js.Object, BreadcrumbsOwnerState]
+  /**
+    * The system prop that allows defining system overrides as well as additional CSS styles.
+    */
+  var sx: js.UndefOr[SxProps] = js.undefined
 }
 object Separator {
   
-  inline def apply(
-    li: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["li", js.Object, BreadcrumbsOwnerState],
-    ol: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["ol", js.Object, BreadcrumbsOwnerState],
-    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["nav", js.Object, BreadcrumbsOwnerState],
-    separator: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["li", js.Object, BreadcrumbsOwnerState]
-  ): Separator = {
-    val __obj = js.Dynamic.literal(li = li.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], separator = separator.asInstanceOf[js.Any])
+  inline def apply(): Separator = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Separator]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
     
-    inline def setLi(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["li", js.Object, BreadcrumbsOwnerState]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setLiFunction1(
-      value: BreadcrumbsOwnerState => (Omit[ComponentPropsWithRef["li"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
-    ): Self = StObject.set(x, "li", js.Any.fromFunction1(value))
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setOl(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["ol", js.Object, BreadcrumbsOwnerState]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: ReactElement): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    inline def setOlFunction1(
-      value: BreadcrumbsOwnerState => (Omit[ComponentPropsWithRef["ol"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
-    ): Self = StObject.set(x, "ol", js.Any.fromFunction1(value))
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["nav", js.Object, BreadcrumbsOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setSize(value: OverridableStringUnion["sm" | "md" | "lg", BreadcrumbsPropsSizeOverrides]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setRootFunction1(
-      value: BreadcrumbsOwnerState => (Omit[ComponentPropsWithRef["nav"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
-    ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSeparator(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["li", js.Object, BreadcrumbsOwnerState]): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
-    inline def setSeparatorFunction1(
-      value: BreadcrumbsOwnerState => (Omit[ComponentPropsWithRef["li"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
-    ): Self = StObject.set(x, "separator", js.Any.fromFunction1(value))
+    inline def setSxFunction1(
+      value: com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme]
+    ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
+    
+    inline def setSxNull: Self = StObject.set(x, "sx", null)
+    
+    inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
+    
+    inline def setSxVarargs(
+      value: (Boolean | SystemStyleObject[com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme] | (js.Function1[
+          com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme, 
+          SystemStyleObject[com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme]
+        ]))*
+    ): Self = StObject.set(x, "sx", js.Array(value*))
   }
 }

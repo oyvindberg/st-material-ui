@@ -1,5 +1,6 @@
 package com.olvind.mui.muiBase.anon
 
+import com.olvind.mui.muiBase.sliderUnstyledSliderUnstyledDottypesMod.SliderUnstyledSlots
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -102,9 +103,6 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
     */
   var `aria-label`: js.UndefOr[String] = js.undefined
   
-  /**
-    * The id of the element containing a label for the slider.
-    */
   var `aria-labelledby`: js.UndefOr[String] = js.undefined
   
   var `aria-level`: js.UndefOr[Double] = js.undefined
@@ -164,18 +162,17 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[Node] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
-  /**
-    * Override or extend the styles applied to the component.
-    */
-  var classes: js.UndefOr[PartialSliderUnstyledClasses] = js.undefined
-  
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -187,23 +184,12 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
   
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * The default value. Use when the component is not controlled.
-    */
   var defaultValue: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   var dir: js.UndefOr[String] = js.undefined
   
-  /**
-    * If `true`, the active thumb doesn't swap when moving pointer over a thumb while dragging another thumb.
-    * @default false
-    */
   var disableSwap: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * If `true`, the component is disabled.
-    * @default false
-    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   var draggable: js.UndefOr[Booleanish] = js.undefined
@@ -235,10 +221,6 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
   
   var is: js.UndefOr[String] = js.undefined
   
-  /**
-    * Indicates whether the theme context has rtl direction. It is set automatically.
-    * @default false
-    */
   var isRtl: js.UndefOr[Boolean] = js.undefined
   
   var itemID: js.UndefOr[String] = js.undefined
@@ -255,33 +237,12 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
   
   var lang: js.UndefOr[String] = js.undefined
   
-  /**
-    * Marks indicate predetermined values to which the user can move the slider.
-    * If `true` the marks are spaced according the value of the `step` prop.
-    * If an array, it should contain objects with `value` and an optional `label` keys.
-    * @default false
-    */
-  var marks: js.UndefOr[
-    Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark]
-  ] = js.undefined
+  var marks: js.UndefOr[Boolean | js.Array[com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark]] = js.undefined
   
-  /**
-    * The maximum allowed value of the slider.
-    * Should not be equal to min.
-    * @default 100
-    */
   var max: js.UndefOr[Double] = js.undefined
   
-  /**
-    * The minimum allowed value of the slider.
-    * Should not be equal to max.
-    * @default 0
-    */
   var min: js.UndefOr[Double] = js.undefined
   
-  /**
-    * Name attribute of the hidden `input` element.
-    */
   var name: js.UndefOr[String] = js.undefined
   
   var nonce: js.UndefOr[String] = js.undefined
@@ -304,15 +265,6 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
   
   var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  /**
-    * Callback function that is fired when the slider's value changed.
-    *
-    * @param {Event} event The event source of the callback.
-    * You can pull out the new value by accessing `event.target.value` (any).
-    * **Warning**: This is a generic event not a change event.
-    * @param {number | number[]} value The new value.
-    * @param {number} activeThumb Index of the currently moved thumb.
-    */
   var onChange: js.UndefOr[
     js.Function3[
       /* event */ Event, 
@@ -322,12 +274,6 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
     ]
   ] = js.undefined
   
-  /**
-    * Callback function that is fired when the `mouseup` is triggered.
-    *
-    * @param {React.SyntheticEvent | Event} event The event source of the callback. **Warning**: This is a generic event not a change event.
-    * @param {number | number[]} value The new value.
-    */
   var onChangeCommitted: js.UndefOr[
     js.Function2[
       /* event */ ReactEventFrom[Element] | Event, 
@@ -476,10 +422,6 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
   
   var onWheel: js.UndefOr[WheelEventHandler[HTMLSpanElement]] = js.undefined
   
-  /**
-    * The component orientation.
-    * @default 'horizontal'
-    */
   var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
@@ -492,16 +434,16 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLSpanElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
   
+  var rev: js.UndefOr[String] = js.undefined
+  
   var role: js.UndefOr[AriaRole] = js.undefined
   
-  /**
-    * A transformation function, to change the scale of the slider.
-    * @default (x) => x
-    */
   var scale: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
   
   var security: js.UndefOr[String] = js.undefined
@@ -519,18 +461,10 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[MarkLabel] = js.undefined
+  var slots: js.UndefOr[SliderUnstyledSlots] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
-  /**
-    * The granularity with which the slider can step through values. (A "discrete" slider.)
-    * The `min` prop serves as the origin for the valid values.
-    * We recommend (max - min) to be evenly divisible by the step.
-    *
-    * When step is `null`, the thumb can only be slid onto marks provided with the `marks` prop.
-    * @default 1
-    */
   var step: js.UndefOr[Double | Null] = js.undefined
   
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -539,9 +473,6 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
   
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Tab index attribute of the hidden `input` element.
-    */
   var tabIndex: js.UndefOr[Double] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
@@ -562,21 +493,7 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
   
   var unselectable: js.UndefOr["on" | "off"] = js.undefined
   
-  /**
-    * The value of the slider.
-    * For ranged sliders, provide an array with two values.
-    */
   var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
-  
-  /**
-    * Controls when the value label is displayed:
-    *
-    * - `auto` the value label will display when the thumb is hovered or focused.
-    * - `on` will display persistently.
-    * - `off` will never display.
-    * @default 'off'
-    */
-  var valueLabelDisplay: js.UndefOr["on" | "auto" | "off"] = js.undefined
   
   /**
     * The format function the value label's value.
@@ -585,7 +502,11 @@ trait DefaultComponentPropsSliderUnstyledTypeM extends StObject {
     *
     * - {number} value The value label's value to format
     * - {number} index The value label's index to format
-    * @default (x) => x
+    * @param {any} x
+    * @returns {any}
+    * @default function Identity(x) {
+    *   return x;
+    * }
     */
   var valueLabelFormat: js.UndefOr[String | (js.Function2[/* value */ Double, /* index */ Double, Node])] = js.undefined
   
@@ -811,6 +732,10 @@ object DefaultComponentPropsSliderUnstyledTypeM {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -829,17 +754,17 @@ object DefaultComponentPropsSliderUnstyledTypeM {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setClasses(value: PartialSliderUnstyledClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
-    
-    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
-    
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -941,11 +866,11 @@ object DefaultComponentPropsSliderUnstyledTypeM {
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    inline def setMarks(value: Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+    inline def setMarks(value: Boolean | js.Array[com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
-    inline def setMarksVarargs(value: com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark*): Self = StObject.set(x, "marks", js.Array(value*))
+    inline def setMarksVarargs(value: com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark*): Self = StObject.set(x, "marks", js.Array(value*))
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
@@ -1319,6 +1244,10 @@ object DefaultComponentPropsSliderUnstyledTypeM {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1326,6 +1255,10 @@ object DefaultComponentPropsSliderUnstyledTypeM {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -1347,7 +1280,7 @@ object DefaultComponentPropsSliderUnstyledTypeM {
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: MarkLabel): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: SliderUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
@@ -1398,10 +1331,6 @@ object DefaultComponentPropsSliderUnstyledTypeM {
     inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     
     inline def setValue(value: Double | js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    inline def setValueLabelDisplay(value: "on" | "auto" | "off"): Self = StObject.set(x, "valueLabelDisplay", value.asInstanceOf[js.Any])
-    
-    inline def setValueLabelDisplayUndefined: Self = StObject.set(x, "valueLabelDisplay", js.undefined)
     
     inline def setValueLabelFormat(value: String | (js.Function2[/* value */ Double, /* index */ Double, Node])): Self = StObject.set(x, "valueLabelFormat", value.asInstanceOf[js.Any])
     

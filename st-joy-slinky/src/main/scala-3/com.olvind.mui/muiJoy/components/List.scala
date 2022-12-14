@@ -153,11 +153,15 @@ object List {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
     inline def color(value: OverridableStringUnion[ColorPaletteProp, ListPropsColorOverrides]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -361,6 +365,8 @@ object List {
     
     inline def onWheel(value: SyntheticWheelEvent[HTMLUListElement] => Unit): this.type = set("onWheel", js.Any.fromFunction1(value))
     
+    inline def orientation(value: "horizontal" | "vertical"): this.type = set("orientation", value.asInstanceOf[js.Any])
+    
     inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
     
     inline def prefix(value: String): this.type = set("prefix", value.asInstanceOf[js.Any])
@@ -369,13 +375,15 @@ object List {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
     
-    inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
-    inline def row(value: Boolean): this.type = set("row", value.asInstanceOf[js.Any])
+    inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
     inline def security(value: String): this.type = set("security", value.asInstanceOf[js.Any])
     

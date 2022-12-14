@@ -13,6 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object inputInputMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Input](https://mui.com/joy-ui/react-input/)
+    *
+    * API:
+    *
+    * - [Input API](https://mui.com/joy-ui/api/input/)
+    */
   @JSImport("@mui/joy/Input/Input", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsInputTypeMapdiv, Element | Null] = js.native

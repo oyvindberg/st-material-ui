@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.textareaAutosizeTextareaAutosizeMod.TextareaAutosizeProps
+import com.olvind.mui.muiBase.anon.PickTextareaAutosizePropshiddencolorstyl
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AriaRole
 import com.olvind.mui.react.mod.Booleanish
@@ -28,14 +28,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TextareaAutosize {
   
-  @JSImport("@mui/material", "TextareaAutosize")
+  @JSImport("@mui/material/TextareaAutosize", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   
   @scala.inline
   open class Builder (val args: js.Array[Any])
     extends AnyVal
-       with StBuildingComponent[HTMLTextAreaElement] {
+       with StBuildingComponent[Element] {
     
     inline def about(value: String): this.type = set("about", value.asInstanceOf[js.Any])
     
@@ -215,87 +215,179 @@ object TextareaAutosize {
     
     inline def onAbort(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onAbortCapture(value: Any): this.type = set("onAbortCapture", value.asInstanceOf[js.Any])
+    
     inline def onAnimationEnd(value: ReactAnimationEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationEndCapture(value: Any): this.type = set("onAnimationEndCapture", value.asInstanceOf[js.Any])
     
     inline def onAnimationIteration(value: ReactAnimationEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onAnimationIterationCapture(value: Any): this.type = set("onAnimationIterationCapture", value.asInstanceOf[js.Any])
+    
     inline def onAnimationStart(value: ReactAnimationEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationStartCapture(value: Any): this.type = set("onAnimationStartCapture", value.asInstanceOf[js.Any])
     
     inline def onAuxClick(value: ReactMouseEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onAuxClickCapture(value: Any): this.type = set("onAuxClickCapture", value.asInstanceOf[js.Any])
+    
     inline def onBeforeInput(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onBeforeInputCapture(value: Any): this.type = set("onBeforeInputCapture", value.asInstanceOf[js.Any])
     
     inline def onBlur(value: ReactFocusEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onBlurCapture(value: Any): this.type = set("onBlurCapture", value.asInstanceOf[js.Any])
+    
     inline def onCanPlay(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onCanPlayCapture(value: Any): this.type = set("onCanPlayCapture", value.asInstanceOf[js.Any])
     
     inline def onCanPlayThrough(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onCanPlayThroughCapture(value: Any): this.type = set("onCanPlayThroughCapture", value.asInstanceOf[js.Any])
+    
     inline def onChange(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onChangeCapture(value: Any): this.type = set("onChangeCapture", value.asInstanceOf[js.Any])
     
     inline def onClick(value: ReactMouseEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onClickCapture(value: Any): this.type = set("onClickCapture", value.asInstanceOf[js.Any])
+    
     inline def onCompositionEnd(value: ReactCompositionEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionEndCapture(value: Any): this.type = set("onCompositionEndCapture", value.asInstanceOf[js.Any])
     
     inline def onCompositionStart(value: ReactCompositionEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onCompositionStartCapture(value: Any): this.type = set("onCompositionStartCapture", value.asInstanceOf[js.Any])
+    
     inline def onCompositionUpdate(value: ReactCompositionEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionUpdateCapture(value: Any): this.type = set("onCompositionUpdateCapture", value.asInstanceOf[js.Any])
     
     inline def onContextMenu(value: ReactMouseEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onContextMenuCapture(value: Any): this.type = set("onContextMenuCapture", value.asInstanceOf[js.Any])
+    
     inline def onCopy(value: ReactClipboardEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onCopyCapture(value: Any): this.type = set("onCopyCapture", value.asInstanceOf[js.Any])
     
     inline def onCut(value: ReactClipboardEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onCutCapture(value: Any): this.type = set("onCutCapture", value.asInstanceOf[js.Any])
+    
     inline def onDoubleClick(value: ReactMouseEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onDoubleClickCapture(value: Any): this.type = set("onDoubleClickCapture", value.asInstanceOf[js.Any])
     
     inline def onDrag(value: ReactDragEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onDragCapture(value: Any): this.type = set("onDragCapture", value.asInstanceOf[js.Any])
+    
     inline def onDragEnd(value: ReactDragEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragEndCapture(value: Any): this.type = set("onDragEndCapture", value.asInstanceOf[js.Any])
     
     inline def onDragEnter(value: ReactDragEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onDragEnterCapture(value: Any): this.type = set("onDragEnterCapture", value.asInstanceOf[js.Any])
+    
     inline def onDragExit(value: ReactDragEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragExitCapture(value: Any): this.type = set("onDragExitCapture", value.asInstanceOf[js.Any])
     
     inline def onDragLeave(value: ReactDragEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onDragLeaveCapture(value: Any): this.type = set("onDragLeaveCapture", value.asInstanceOf[js.Any])
+    
     inline def onDragOver(value: ReactDragEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragOverCapture(value: Any): this.type = set("onDragOverCapture", value.asInstanceOf[js.Any])
     
     inline def onDragStart(value: ReactDragEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onDragStartCapture(value: Any): this.type = set("onDragStartCapture", value.asInstanceOf[js.Any])
+    
     inline def onDrop(value: ReactDragEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onDropCapture(value: Any): this.type = set("onDropCapture", value.asInstanceOf[js.Any])
     
     inline def onDurationChange(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onDurationChangeCapture(value: Any): this.type = set("onDurationChangeCapture", value.asInstanceOf[js.Any])
+    
     inline def onEmptied(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onEmptiedCapture(value: Any): this.type = set("onEmptiedCapture", value.asInstanceOf[js.Any])
     
     inline def onEncrypted(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onEncryptedCapture(value: Any): this.type = set("onEncryptedCapture", value.asInstanceOf[js.Any])
+    
     inline def onEnded(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onEnded", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onEndedCapture(value: Any): this.type = set("onEndedCapture", value.asInstanceOf[js.Any])
     
     inline def onError(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onError", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onErrorCapture(value: Any): this.type = set("onErrorCapture", value.asInstanceOf[js.Any])
+    
     inline def onFocus(value: ReactFocusEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onFocusCapture(value: Any): this.type = set("onFocusCapture", value.asInstanceOf[js.Any])
+    
+    inline def onGotPointerCapture(value: Any): this.type = set("onGotPointerCapture", value.asInstanceOf[js.Any])
+    
+    inline def onGotPointerCaptureCapture(value: Any): this.type = set("onGotPointerCaptureCapture", value.asInstanceOf[js.Any])
     
     inline def onInput(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onInputCapture(value: Any): this.type = set("onInputCapture", value.asInstanceOf[js.Any])
+    
     inline def onInvalid(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onInvalidCapture(value: Any): this.type = set("onInvalidCapture", value.asInstanceOf[js.Any])
     
     inline def onKeyDown(value: ReactKeyboardEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onKeyDownCapture(value: Any): this.type = set("onKeyDownCapture", value.asInstanceOf[js.Any])
+    
     inline def onKeyPress(value: ReactKeyboardEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyPressCapture(value: Any): this.type = set("onKeyPressCapture", value.asInstanceOf[js.Any])
     
     inline def onKeyUp(value: ReactKeyboardEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onKeyUpCapture(value: Any): this.type = set("onKeyUpCapture", value.asInstanceOf[js.Any])
+    
     inline def onLoad(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onLoad", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadCapture(value: Any): this.type = set("onLoadCapture", value.asInstanceOf[js.Any])
     
     inline def onLoadStart(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onLoadStartCapture(value: Any): this.type = set("onLoadStartCapture", value.asInstanceOf[js.Any])
+    
     inline def onLoadedData(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadedDataCapture(value: Any): this.type = set("onLoadedDataCapture", value.asInstanceOf[js.Any])
     
     inline def onLoadedMetadata(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onLoadedMetadataCapture(value: Any): this.type = set("onLoadedMetadataCapture", value.asInstanceOf[js.Any])
+    
+    inline def onLostPointerCapture(value: Any): this.type = set("onLostPointerCapture", value.asInstanceOf[js.Any])
+    
+    inline def onLostPointerCaptureCapture(value: Any): this.type = set("onLostPointerCaptureCapture", value.asInstanceOf[js.Any])
+    
     inline def onMouseDown(value: ReactMouseEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseDownCapture(value: Any): this.type = set("onMouseDownCapture", value.asInstanceOf[js.Any])
     
     inline def onMouseEnter(value: ReactMouseEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
@@ -303,75 +395,147 @@ object TextareaAutosize {
     
     inline def onMouseMove(value: ReactMouseEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onMouseMoveCapture(value: Any): this.type = set("onMouseMoveCapture", value.asInstanceOf[js.Any])
+    
     inline def onMouseOut(value: ReactMouseEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseOutCapture(value: Any): this.type = set("onMouseOutCapture", value.asInstanceOf[js.Any])
     
     inline def onMouseOver(value: ReactMouseEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onMouseOverCapture(value: Any): this.type = set("onMouseOverCapture", value.asInstanceOf[js.Any])
+    
     inline def onMouseUp(value: ReactMouseEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseUpCapture(value: Any): this.type = set("onMouseUpCapture", value.asInstanceOf[js.Any])
     
     inline def onPaste(value: ReactClipboardEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onPasteCapture(value: Any): this.type = set("onPasteCapture", value.asInstanceOf[js.Any])
+    
     inline def onPause(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPause", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onPauseCapture(value: Any): this.type = set("onPauseCapture", value.asInstanceOf[js.Any])
     
     inline def onPlay(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onPlayCapture(value: Any): this.type = set("onPlayCapture", value.asInstanceOf[js.Any])
+    
     inline def onPlaying(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onPlayingCapture(value: Any): this.type = set("onPlayingCapture", value.asInstanceOf[js.Any])
     
     inline def onPointerCancel(value: ReactPointerEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onPointerCancelCapture(value: Any): this.type = set("onPointerCancelCapture", value.asInstanceOf[js.Any])
+    
     inline def onPointerDown(value: ReactPointerEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerDownCapture(value: Any): this.type = set("onPointerDownCapture", value.asInstanceOf[js.Any])
     
     inline def onPointerEnter(value: ReactPointerEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onPointerEnterCapture(value: Any): this.type = set("onPointerEnterCapture", value.asInstanceOf[js.Any])
+    
     inline def onPointerLeave(value: ReactPointerEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerLeaveCapture(value: Any): this.type = set("onPointerLeaveCapture", value.asInstanceOf[js.Any])
     
     inline def onPointerMove(value: ReactPointerEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onPointerMoveCapture(value: Any): this.type = set("onPointerMoveCapture", value.asInstanceOf[js.Any])
+    
     inline def onPointerOut(value: ReactPointerEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerOutCapture(value: Any): this.type = set("onPointerOutCapture", value.asInstanceOf[js.Any])
     
     inline def onPointerOver(value: ReactPointerEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onPointerOverCapture(value: Any): this.type = set("onPointerOverCapture", value.asInstanceOf[js.Any])
+    
     inline def onPointerUp(value: ReactPointerEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerUpCapture(value: Any): this.type = set("onPointerUpCapture", value.asInstanceOf[js.Any])
     
     inline def onProgress(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onProgress", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onProgressCapture(value: Any): this.type = set("onProgressCapture", value.asInstanceOf[js.Any])
+    
     inline def onRateChange(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onRateChangeCapture(value: Any): this.type = set("onRateChangeCapture", value.asInstanceOf[js.Any])
     
     inline def onReset(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onResetCapture(value: Any): this.type = set("onResetCapture", value.asInstanceOf[js.Any])
+    
     inline def onResize(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onResizeCapture(value: Any): this.type = set("onResizeCapture", value.asInstanceOf[js.Any])
     
     inline def onScroll(value: ReactUIEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onScrollCapture(value: Any): this.type = set("onScrollCapture", value.asInstanceOf[js.Any])
+    
     inline def onSeeked(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onSeekedCapture(value: Any): this.type = set("onSeekedCapture", value.asInstanceOf[js.Any])
     
     inline def onSeeking(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onSeekingCapture(value: Any): this.type = set("onSeekingCapture", value.asInstanceOf[js.Any])
+    
     inline def onSelect(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onSelectCapture(value: Any): this.type = set("onSelectCapture", value.asInstanceOf[js.Any])
     
     inline def onStalled(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onStalled", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onStalledCapture(value: Any): this.type = set("onStalledCapture", value.asInstanceOf[js.Any])
+    
     inline def onSubmit(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onSubmitCapture(value: Any): this.type = set("onSubmitCapture", value.asInstanceOf[js.Any])
     
     inline def onSuspend(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onSuspendCapture(value: Any): this.type = set("onSuspendCapture", value.asInstanceOf[js.Any])
+    
     inline def onTimeUpdate(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onTimeUpdateCapture(value: Any): this.type = set("onTimeUpdateCapture", value.asInstanceOf[js.Any])
     
     inline def onTouchCancel(value: ReactTouchEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onTouchCancelCapture(value: Any): this.type = set("onTouchCancelCapture", value.asInstanceOf[js.Any])
+    
     inline def onTouchEnd(value: ReactTouchEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchEndCapture(value: Any): this.type = set("onTouchEndCapture", value.asInstanceOf[js.Any])
     
     inline def onTouchMove(value: ReactTouchEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onTouchMoveCapture(value: Any): this.type = set("onTouchMoveCapture", value.asInstanceOf[js.Any])
+    
     inline def onTouchStart(value: ReactTouchEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchStartCapture(value: Any): this.type = set("onTouchStartCapture", value.asInstanceOf[js.Any])
     
     inline def onTransitionEnd(value: ReactTransitionEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onTransitionEndCapture(value: Any): this.type = set("onTransitionEndCapture", value.asInstanceOf[js.Any])
+    
     inline def onVolumeChange(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onVolumeChangeCapture(value: Any): this.type = set("onVolumeChangeCapture", value.asInstanceOf[js.Any])
     
     inline def onWaiting(value: ReactEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
     
+    inline def onWaitingCapture(value: Any): this.type = set("onWaitingCapture", value.asInstanceOf[js.Any])
+    
     inline def onWheel(value: ReactWheelEventFrom[HTMLTextAreaElement & Element] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLTextAreaElement & Element]) => value(t0).runNow()))
+    
+    inline def onWheelCapture(value: Any): this.type = set("onWheelCapture", value.asInstanceOf[js.Any])
     
     inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
     
@@ -422,11 +586,11 @@ object TextareaAutosize {
     inline def wrap(value: String): this.type = set("wrap", value.asInstanceOf[js.Any])
   }
   
-  type Props = TextareaAutosizeProps
+  type Props = PickTextareaAutosizePropshiddencolorstyl
   
   implicit def make(companion: TextareaAutosize.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
-  def styled: com.olvind.mui.StyledComponent.Builder[TextareaAutosizeProps, Builder] = new com.olvind.mui.StyledComponent.Builder[TextareaAutosizeProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  def styled: com.olvind.mui.StyledComponent.Builder[PickTextareaAutosizePropshiddencolorstyl, Builder] = new com.olvind.mui.StyledComponent.Builder[PickTextareaAutosizePropshiddencolorstyl, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
-  def withProps(p: TextareaAutosizeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps(p: PickTextareaAutosizePropshiddencolorstyl): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

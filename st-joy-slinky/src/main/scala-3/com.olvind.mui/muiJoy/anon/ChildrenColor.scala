@@ -24,6 +24,7 @@ trait ChildrenColor extends StObject {
   /**
     * The color context for the avatar children.
     * It has no effect on the AvatarGroup.
+    * @default 'neutral'
     */
   var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, AvatarPropsColorOverrides]] = js.undefined
   
@@ -41,6 +42,7 @@ trait ChildrenColor extends StObject {
   /**
     * The variant context for the avatar children.
     * It has no effect on the AvatarGroup.
+    * @default 'soft'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, AvatarPropsVariantOverrides]] = js.undefined
 }

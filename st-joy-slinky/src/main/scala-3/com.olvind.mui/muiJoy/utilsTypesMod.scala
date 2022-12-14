@@ -5,6 +5,7 @@ import com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.mod.ComponentPropsWithRef
 import com.olvind.mui.std.Omit
+import com.olvind.mui.std.Partial
 import com.olvind.mui.std.Record
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
@@ -13,25 +14,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object utilsTypesMod {
   
-  trait CreateSlotsAndSlotProps[T /* <: String */, K /* <: Record[T, Any] */] extends StObject {
+  trait CreateSlotsAndSlotProps[Slots, K /* <: Record[/* keyof Slots */ String, Any] */] extends StObject {
     
     var slotProps: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof K ]:? K[P]} */ js.Any
       ] = js.undefined
     
-    var slots: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof K ]:? react.react.ElementType<any>} */ js.Any
-      ] = js.undefined
+    var slots: js.UndefOr[Partial[Slots]] = js.undefined
   }
   object CreateSlotsAndSlotProps {
     
-    inline def apply[T /* <: String */, K /* <: Record[T, Any] */](): CreateSlotsAndSlotProps[T, K] = {
+    inline def apply[Slots, K /* <: Record[/* keyof Slots */ String, Any] */](): CreateSlotsAndSlotProps[Slots, K] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CreateSlotsAndSlotProps[T, K]]
+      __obj.asInstanceOf[CreateSlotsAndSlotProps[Slots, K]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CreateSlotsAndSlotProps[?, ?], T /* <: String */, K /* <: Record[T, Any] */] (val x: Self & (CreateSlotsAndSlotProps[T, K])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CreateSlotsAndSlotProps[?, ?], Slots, K /* <: Record[/* keyof Slots */ String, Any] */] (val x: Self & (CreateSlotsAndSlotProps[Slots, K])) extends AnyVal {
       
       inline def setSlotProps(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof K ]:? K[P]} */ js.Any
@@ -39,9 +38,7 @@ object utilsTypesMod {
       
       inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
-      inline def setSlots(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof K ]:? react.react.ElementType<any>} */ js.Any
-      ): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: Partial[Slots]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     }

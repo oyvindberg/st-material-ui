@@ -295,6 +295,8 @@ trait DefaultComponentPropsFormLabelTypeMaplab extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   /**
@@ -304,9 +306,6 @@ trait DefaultComponentPropsFormLabelTypeMaplab extends StObject {
   
   var className: js.UndefOr[String] = js.undefined
   
-  /**
-    * Override or extend the styles applied to the component.
-    */
   /**
     * Override or extend the styles applied to the component.
     */
@@ -321,6 +320,8 @@ trait DefaultComponentPropsFormLabelTypeMaplab extends StObject {
   
   /* you can set this property to change the underlying component. keep in mind that the types of callbacks may be different */
   val component: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -586,6 +587,8 @@ trait DefaultComponentPropsFormLabelTypeMaplab extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLLabelElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   /**
     * If `true`, the label will indicate that the `input` is required.
     */
@@ -594,6 +597,8 @@ trait DefaultComponentPropsFormLabelTypeMaplab extends StObject {
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   // <command>, <menuitem>
   // WAI-ARIA
@@ -848,6 +853,10 @@ object DefaultComponentPropsFormLabelTypeMaplab {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -878,9 +887,13 @@ object DefaultComponentPropsFormLabelTypeMaplab {
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1334,6 +1347,10 @@ object DefaultComponentPropsFormLabelTypeMaplab {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1345,6 +1362,10 @@ object DefaultComponentPropsFormLabelTypeMaplab {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

@@ -13,6 +13,16 @@ object buttonMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Button](https://mui.com/joy-ui/react-button/)
+    *
+    * API:
+    *
+    * - [Button API](https://mui.com/joy-ui/api/button/)
+    */
   @JSImport("@mui/joy/Button", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ OverridePropsExtendButtonTypeMapButtonTy, Element] = js.native

@@ -47,6 +47,15 @@ trait CssVarsThemeOptions extends StObject {
   
   var shape: js.UndefOr[ShapeOptions] = js.undefined
   
+  /**
+    * A function to determine if the key, value should be attached as CSS Variable
+    * `keys` is an array that represents the object path keys.
+    *  Ex, if the theme is { foo: { bar: 'var(--test)' } }
+    *  then, keys = ['foo', 'bar']
+    *        value = 'var(--test)'
+    */
+  var shouldSkipGeneratingVar: js.UndefOr[js.Function2[/* keys */ js.Array[String], /* value */ String | Double, Boolean]] = js.undefined
+  
   var spacing: js.UndefOr[SpacingOptions] = js.undefined
   
   var transitions: js.UndefOr[TransitionsOptions] = js.undefined
@@ -102,6 +111,10 @@ object CssVarsThemeOptions {
     inline def setShape(value: ShapeOptions): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setShouldSkipGeneratingVar(value: (/* keys */ js.Array[String], /* value */ String | Double) => Boolean): Self = StObject.set(x, "shouldSkipGeneratingVar", js.Any.fromFunction2(value))
+    
+    inline def setShouldSkipGeneratingVarUndefined: Self = StObject.set(x, "shouldSkipGeneratingVar", js.undefined)
     
     inline def setSpacing(value: SpacingOptions): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     

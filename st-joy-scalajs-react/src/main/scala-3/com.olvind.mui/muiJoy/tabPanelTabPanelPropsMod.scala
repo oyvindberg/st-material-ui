@@ -1,7 +1,7 @@
 package com.olvind.mui.muiJoy
 
-import com.olvind.mui.muiJoy.anon.OmitTabPanelUnstyledOwnPropsslotsslotPro
-import com.olvind.mui.muiJoy.anon.`2`
+import com.olvind.mui.muiJoy.anon.OmitTabPanelUnstyledOwnPropsvalueslotssl
+import com.olvind.mui.muiJoy.anon.SxValue
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
@@ -164,6 +164,8 @@ object tabPanelTabPanelPropsMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var children: js.UndefOr[Node] = js.undefined
@@ -173,6 +175,8 @@ object tabPanelTabPanelPropsMod {
     var color: js.UndefOr[String] = js.undefined
     
     var component: js.UndefOr[ElementType] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
@@ -394,9 +398,13 @@ object tabPanelTabPanelPropsMod {
     
     var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -432,14 +440,18 @@ object tabPanelTabPanelPropsMod {
     
     var unselectable: js.UndefOr["on" | "off"] = js.undefined
     
-    var value: Double | String
+    /**
+      * The value of the TabPanel. It will be shown when the Tab with the corresponding value is selected.
+      * @default 0
+      */
+    var value: js.UndefOr[Double | String] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
   }
   object TabPanelOwnerState {
     
-    inline def apply(hidden: Boolean, value: Double | String): TabPanelOwnerState = {
-      val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(hidden: Boolean): TabPanelOwnerState = {
+      val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabPanelOwnerState]
     }
     
@@ -656,6 +668,10 @@ object tabPanelTabPanelPropsMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -682,9 +698,13 @@ object tabPanelTabPanelPropsMod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1116,6 +1136,10 @@ object tabPanelTabPanelPropsMod {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1123,6 +1147,10 @@ object tabPanelTabPanelPropsMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1188,6 +1216,8 @@ object tabPanelTabPanelPropsMod {
       
       inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
@@ -1204,11 +1234,11 @@ object tabPanelTabPanelPropsMod {
     
     var defaultComponent: D
     
-    var props: P & OmitTabPanelUnstyledOwnPropsslotsslotPro & `2`
+    var props: P & OmitTabPanelUnstyledOwnPropsvalueslotssl & SxValue
   }
   object TabPanelTypeMap {
     
-    inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & OmitTabPanelUnstyledOwnPropsslotsslotPro & `2`): TabPanelTypeMap[P, D] = {
+    inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & OmitTabPanelUnstyledOwnPropsvalueslotssl & SxValue): TabPanelTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabPanelTypeMap[P, D]]
     }
@@ -1218,7 +1248,7 @@ object tabPanelTabPanelPropsMod {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: P & OmitTabPanelUnstyledOwnPropsslotsslotPro & `2`): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P & OmitTabPanelUnstyledOwnPropsvalueslotssl & SxValue): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

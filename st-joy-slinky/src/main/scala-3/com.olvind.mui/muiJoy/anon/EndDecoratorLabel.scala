@@ -9,23 +9,28 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Chip/ChipProps.ChipOwnerState>,   label :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Chip/ChipProps.ChipOwnerState>,   action :@mui/joy.@mui/joy/utils/types.SlotProps<'button', {  href :string | undefined,   to :string | undefined}, @mui/joy.@mui/joy/Chip/ChipProps.ChipOwnerState>,   startDecorator :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Chip/ChipProps.ChipOwnerState>,   endDecorator :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Chip/ChipProps.ChipOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Chip/ChipProps.ChipOwnerState>,   label :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Chip/ChipProps.ChipOwnerState>,   action :@mui/joy.@mui/joy/utils/types.SlotProps<'button', {  href :string | undefined,   to :string | undefined}, @mui/joy.@mui/joy/Chip/ChipProps.ChipOwnerState>,   startDecorator :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Chip/ChipProps.ChipOwnerState>,   endDecorator :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Chip/ChipProps.ChipOwnerState>}[P]} */
 trait EndDecoratorLabel extends StObject {
   
-  var action: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["button", Href, ChipOwnerState]] = js.undefined
+  var action: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["button", Href, ChipOwnerState]
   
-  var endDecorator: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState]] = js.undefined
+  var endDecorator: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState]
   
-  var label: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState]] = js.undefined
+  var label: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState]
   
-  var root: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ChipOwnerState]] = js.undefined
+  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ChipOwnerState]
   
-  var startDecorator: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState]] = js.undefined
+  var startDecorator: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState]
 }
 object EndDecoratorLabel {
   
-  inline def apply(): EndDecoratorLabel = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    action: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["button", Href, ChipOwnerState],
+    endDecorator: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState],
+    label: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState],
+    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ChipOwnerState],
+    startDecorator: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState]
+  ): EndDecoratorLabel = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndDecoratorLabel]
   }
   
@@ -38,15 +43,11 @@ object EndDecoratorLabel {
       value: ChipOwnerState => (Omit[ComponentPropsWithRef["button"], "color"]) & Href & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
-    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
-    
     inline def setEndDecorator(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState]): Self = StObject.set(x, "endDecorator", value.asInstanceOf[js.Any])
     
     inline def setEndDecoratorFunction1(
       value: ChipOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "endDecorator", js.Any.fromFunction1(value))
-    
-    inline def setEndDecoratorUndefined: Self = StObject.set(x, "endDecorator", js.undefined)
     
     inline def setLabel(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -54,22 +55,16 @@ object EndDecoratorLabel {
       value: ChipOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    
     inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ChipOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootFunction1(
       value: ChipOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
-    
     inline def setStartDecorator(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, ChipOwnerState]): Self = StObject.set(x, "startDecorator", value.asInstanceOf[js.Any])
     
     inline def setStartDecoratorFunction1(
       value: ChipOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "startDecorator", js.Any.fromFunction1(value))
-    
-    inline def setStartDecoratorUndefined: Self = StObject.set(x, "startDecorator", js.undefined)
   }
 }

@@ -29,8 +29,6 @@ trait AllHTMLAttributes[T]
   
   var autoComplete: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  
   var autoPlay: js.UndefOr[Boolean] = js.undefined
   
   var capture: js.UndefOr[Boolean | "user" | "environment"] = js.undefined
@@ -53,13 +51,11 @@ trait AllHTMLAttributes[T]
   
   var cols: js.UndefOr[Double] = js.undefined
   
-  var content: js.UndefOr[String] = js.undefined
-  
   var controls: js.UndefOr[Boolean] = js.undefined
   
   var coords: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr["anonymous" | "use-credentials" | ""] = js.undefined
   
   var data: js.UndefOr[String] = js.undefined
   
@@ -158,8 +154,6 @@ trait AllHTMLAttributes[T]
   var preload: js.UndefOr[String] = js.undefined
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
-  
-  var rel: js.UndefOr[String] = js.undefined
   
   var required: js.UndefOr[Boolean] = js.undefined
   
@@ -263,10 +257,6 @@ object AllHTMLAttributes {
     
     inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
-    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-    
-    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
-    
     inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
     inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
@@ -311,10 +301,6 @@ object AllHTMLAttributes {
     
     inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-    
-    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-    
     inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
@@ -323,7 +309,7 @@ object AllHTMLAttributes {
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: "anonymous" | "use-credentials" | ""): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -526,10 +512,6 @@ object AllHTMLAttributes {
     inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
-    
-    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
-    
-    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     

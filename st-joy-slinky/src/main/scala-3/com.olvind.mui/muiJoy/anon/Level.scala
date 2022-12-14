@@ -4,11 +4,10 @@ import com.olvind.mui.muiJoy.linkLinkPropsMod.LinkPropsColorOverrides
 import com.olvind.mui.muiJoy.linkLinkPropsMod.LinkPropsVariantOverrides
 import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
+import com.olvind.mui.muiJoy.stylesTypesThemeMod.TextColor
 import com.olvind.mui.muiJoy.stylesTypesVariantsMod.VariantProp
-import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.muiTypes.mod.OverridableStringUnion
-import com.olvind.mui.std.NonNullable
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,7 +42,7 @@ trait Level extends StObject {
     * @default 'body1'
     */
   var level: js.UndefOr[
-    "body4" | "display2" | "body2" | "body5" | "h2" | "display1" | "h3" | "body1" | "h6" | "h1" | "h5" | "body3" | "h4" | "inherit"
+    (/* keyof @mui/joy.@mui/joy/styles/types/typography.TypographySystem */ String) | "inherit"
   ] = js.undefined
   
   /**
@@ -66,20 +65,7 @@ trait Level extends StObject {
   /**
     * The system color.
     */
-  var textColor: js.UndefOr[
-    (ResponsiveStyleValue[
-      js.UndefOr[
-        com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-      ]
-    ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme, 
-      ResponsiveStyleValue[
-        js.UndefOr[
-          com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-        ]
-      ]
-    ])
-  ] = js.undefined
+  var textColor: js.UndefOr[TextColor] = js.undefined
   
   /**
     * Controls when the link should have an underline.
@@ -119,9 +105,7 @@ object Level {
     
     inline def setEndDecoratorUndefined: Self = StObject.set(x, "endDecorator", js.undefined)
     
-    inline def setLevel(
-      value: "body4" | "display2" | "body2" | "body5" | "h2" | "display1" | "h3" | "body1" | "h6" | "h1" | "h5" | "body3" | "h4" | "inherit"
-    ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: (/* keyof @mui/joy.@mui/joy/styles/types/typography.TypographySystem */ String) | "inherit"): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
@@ -150,36 +134,9 @@ object Level {
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
-    inline def setTextColor(
-      value: (ResponsiveStyleValue[
-          js.UndefOr[
-            com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-          ]
-        ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme, 
-          ResponsiveStyleValue[
-            js.UndefOr[
-              com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-            ]
-          ]
-        ])
-    ): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
-    
-    inline def setTextColorFunction1(
-      value: /* theme */ com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme => ResponsiveStyleValue[
-          js.UndefOr[
-            com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
-          ]
-        ]
-    ): Self = StObject.set(x, "textColor", js.Any.fromFunction1(value))
+    inline def setTextColor(value: TextColor): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
-    
-    inline def setTextColorVarargs(
-      value: (js.UndefOr[
-          js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]] | com.olvind.mui.csstype.mod.Property.Color | NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]] | Null
-        ])*
-    ): Self = StObject.set(x, "textColor", js.Array(value*))
     
     inline def setUnderline(value: "none" | "hover" | "always"): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     

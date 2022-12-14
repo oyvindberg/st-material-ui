@@ -16,7 +16,7 @@ object radioGroupRadioGroupClassesMod {
   
   inline def getRadioGroupUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRadioGroupUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type RadioGroupClassKey = "root" | "row" | "sizeSm" | "sizeMd" | "sizeLg" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid"
+  type RadioGroupClassKey = "root" | "sizeSm" | "sizeMd" | "sizeLg" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid" | "horizontal" | "vertical"
   
   trait RadioGroupClasses extends StObject {
     
@@ -38,11 +38,11 @@ object radioGroupRadioGroupClassesMod {
     /** Styles applied to the root element if `color="warning"`. */
     var colorWarning: String
     
+    /** Styles applied to the root element if `orientation="horizontal"`. */
+    var horizontal: String
+    
     /** Styles applied to the root element. */
     var root: String
-    
-    /** Styles applied to the root element, if `row` is true. */
-    var row: String
     
     /** Styles applied to the root element if `size="lg"`. */
     var sizeLg: String
@@ -64,6 +64,9 @@ object radioGroupRadioGroupClassesMod {
     
     /** Styles applied to the root element if `variant="solid"`. */
     var variantSolid: String
+    
+    /** Styles applied to the root element if `orientation="vertical"`. */
+    var vertical: String
   }
   object RadioGroupClasses {
     
@@ -74,17 +77,18 @@ object radioGroupRadioGroupClassesMod {
       colorPrimary: String,
       colorSuccess: String,
       colorWarning: String,
+      horizontal: String,
       root: String,
-      row: String,
       sizeLg: String,
       sizeMd: String,
       sizeSm: String,
       variantOutlined: String,
       variantPlain: String,
       variantSoft: String,
-      variantSolid: String
+      variantSolid: String,
+      vertical: String
     ): RadioGroupClasses = {
-      val __obj = js.Dynamic.literal(colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadioGroupClasses]
     }
     
@@ -103,9 +107,9 @@ object radioGroupRadioGroupClassesMod {
       
       inline def setColorWarning(value: String): Self = StObject.set(x, "colorWarning", value.asInstanceOf[js.Any])
       
-      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
       inline def setSizeLg(value: String): Self = StObject.set(x, "sizeLg", value.asInstanceOf[js.Any])
       
@@ -120,6 +124,8 @@ object radioGroupRadioGroupClassesMod {
       inline def setVariantSoft(value: String): Self = StObject.set(x, "variantSoft", value.asInstanceOf[js.Any])
       
       inline def setVariantSolid(value: String): Self = StObject.set(x, "variantSolid", value.asInstanceOf[js.Any])
+      
+      inline def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }
   }
 }

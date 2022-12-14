@@ -12,7 +12,10 @@ object listListProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(param0: PropsWithChildren[ListProviderProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  /**
+    * @ignore - internal component.
+    */
+  inline def default(props: PropsWithChildren[ListProviderProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object scopedVariables {
     
@@ -20,35 +23,35 @@ object listListProviderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--List-itemButton-marginBlock")
+    @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--ListItemButton-marginBlock")
     @js.native
     def ListItemButtonMarginBlock: String = js.native
     
-    inline def ListItemButtonMarginBlock_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("--List-itemButton-marginBlock")(x.asInstanceOf[js.Any])
+    inline def ListItemButtonMarginBlock_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("--ListItemButton-marginBlock")(x.asInstanceOf[js.Any])
     
-    @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--List-itemButton-marginInline")
+    @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--ListItemButton-marginInline")
     @js.native
     def ListItemButtonMarginInline: String = js.native
     
-    inline def ListItemButtonMarginInline_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("--List-itemButton-marginInline")(x.asInstanceOf[js.Any])
+    inline def ListItemButtonMarginInline_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("--ListItemButton-marginInline")(x.asInstanceOf[js.Any])
     
-    @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--List-item-marginBlock")
+    @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--ListItem-marginBlock")
     @js.native
     def ListItemMarginBlock: String = js.native
     
-    inline def ListItemMarginBlock_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("--List-item-marginBlock")(x.asInstanceOf[js.Any])
+    inline def ListItemMarginBlock_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("--ListItem-marginBlock")(x.asInstanceOf[js.Any])
     
-    @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--List-item-marginInline")
+    @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--ListItem-marginInline")
     @js.native
     def ListItemMarginInline: String = js.native
     
-    inline def ListItemMarginInline_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("--List-item-marginInline")(x.asInstanceOf[js.Any])
+    inline def ListItemMarginInline_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("--ListItem-marginInline")(x.asInstanceOf[js.Any])
     
-    @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--NestedList-item-paddingLeft")
+    @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--NestedListItem-paddingLeft")
     @js.native
     def NestedListItemPaddingLeft: String = js.native
     
-    inline def NestedListItemPaddingLeft_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("--NestedList-item-paddingLeft")(x.asInstanceOf[js.Any])
+    inline def NestedListItemPaddingLeft_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("--NestedListItem-paddingLeft")(x.asInstanceOf[js.Any])
     
     @JSImport("@mui/joy/List/ListProvider", "scopedVariables.--NestedList-marginLeft")
     @js.native

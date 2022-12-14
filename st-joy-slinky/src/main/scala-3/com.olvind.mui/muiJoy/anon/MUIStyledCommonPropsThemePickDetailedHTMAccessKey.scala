@@ -1,6 +1,6 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.sheetSheetPropsMod.SheetOwnerState
+import com.olvind.mui.muiJoy.formControlFormControlPropsMod.FormControlOwnerState
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.anon.Html
@@ -156,6 +156,8 @@ trait MUIStyledCommonPropsThemePickDetailedHTMAccessKey extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[ReactElement] = js.undefined
@@ -163,6 +165,8 @@ trait MUIStyledCommonPropsThemePickDetailedHTMAccessKey extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -366,7 +370,7 @@ trait MUIStyledCommonPropsThemePickDetailedHTMAccessKey extends StObject {
   
   var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
   
-  var ownerState: SheetOwnerState
+  var ownerState: FormControlOwnerState
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -378,9 +382,13 @@ trait MUIStyledCommonPropsThemePickDetailedHTMAccessKey extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -414,7 +422,7 @@ trait MUIStyledCommonPropsThemePickDetailedHTMAccessKey extends StObject {
 }
 object MUIStyledCommonPropsThemePickDetailedHTMAccessKey {
   
-  inline def apply(ownerState: SheetOwnerState): MUIStyledCommonPropsThemePickDetailedHTMAccessKey = {
+  inline def apply(ownerState: FormControlOwnerState): MUIStyledCommonPropsThemePickDetailedHTMAccessKey = {
     val __obj = js.Dynamic.literal(ownerState = ownerState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIStyledCommonPropsThemePickDetailedHTMAccessKey]
   }
@@ -636,6 +644,10 @@ object MUIStyledCommonPropsThemePickDetailedHTMAccessKey {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -652,9 +664,13 @@ object MUIStyledCommonPropsThemePickDetailedHTMAccessKey {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1060,7 +1076,7 @@ object MUIStyledCommonPropsThemePickDetailedHTMAccessKey {
     
     inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
-    inline def setOwnerState(value: SheetOwnerState): Self = StObject.set(x, "ownerState", value.asInstanceOf[js.Any])
+    inline def setOwnerState(value: FormControlOwnerState): Self = StObject.set(x, "ownerState", value.asInstanceOf[js.Any])
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
@@ -1088,6 +1104,10 @@ object MUIStyledCommonPropsThemePickDetailedHTMAccessKey {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1095,6 +1115,10 @@ object MUIStyledCommonPropsThemePickDetailedHTMAccessKey {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

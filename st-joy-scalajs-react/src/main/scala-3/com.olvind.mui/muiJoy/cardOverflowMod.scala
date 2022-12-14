@@ -13,6 +13,16 @@ object cardOverflowMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Card](https://mui.com/joy-ui/react-card/)
+    *
+    * API:
+    *
+    * - [CardOverflow API](https://mui.com/joy-ui/api/card-overflow/)
+    */
   @JSImport("@mui/joy/CardOverflow", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsCardOverflowTypeMap, Element | Null] = js.native

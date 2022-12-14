@@ -13,6 +13,16 @@ object dividerMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Divider](https://mui.com/joy-ui/react-divider/)
+    *
+    * API:
+    *
+    * - [Divider API](https://mui.com/joy-ui/api/divider/)
+    */
   @JSImport("@mui/joy/Divider", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsDividerTypeMaphr, Element | Null] = js.native

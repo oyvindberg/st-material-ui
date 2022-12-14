@@ -1,6 +1,6 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.formControlFormControlPropsMod.FormControlOwnerState
+import com.olvind.mui.muiJoy.dividerDividerPropsMod.DividerOwnerState
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.anon.Html
@@ -44,12 +44,12 @@ import japgolly.scalajs.react.facade.React.ElementType
 import japgolly.scalajs.react.facade.React.Node
 import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLHRElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined MUIStyledCommonProps<Theme> & {} & Pick<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, keyof ClassAttributes<HTMLDivElement> | keyof HTMLAttributes<HTMLDivElement>> & {} */
+/* Inlined MUIStyledCommonProps<Theme> & {} & Pick<DetailedHTMLProps<HTMLAttributes<HTMLHRElement>, HTMLHRElement>, keyof ClassAttributes<HTMLHRElement> | keyof HTMLAttributes<HTMLHRElement>> & {} */
 trait MUIStyledCommonPropsThemePickDetailedHTMAbout extends StObject {
   
   var about: js.UndefOr[String] = js.undefined
@@ -160,6 +160,8 @@ trait MUIStyledCommonPropsThemePickDetailedHTMAbout extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[Node] = js.undefined
@@ -167,6 +169,8 @@ trait MUIStyledCommonPropsThemePickDetailedHTMAbout extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -210,167 +214,167 @@ trait MUIStyledCommonPropsThemePickDetailedHTMAbout extends StObject {
   
   var nonce: js.UndefOr[String] = js.undefined
   
-  var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onAbort: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLHRElement]] = js.undefined
   
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLHRElement]] = js.undefined
   
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLHRElement]] = js.undefined
   
-  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLHRElement]] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLHRElement]] = js.undefined
   
-  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+  var onChange: js.UndefOr[FormEventHandler[HTMLHRElement]] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onClick: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLHRElement]] = js.undefined
   
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLHRElement]] = js.undefined
   
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLHRElement]] = js.undefined
   
-  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
+  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLHRElement]] = js.undefined
   
-  var onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
+  var onCut: js.UndefOr[ClipboardEventHandler[HTMLHRElement]] = js.undefined
   
-  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onDrag: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+  var onDrag: js.UndefOr[DragEventHandler[HTMLHRElement]] = js.undefined
   
-  var onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+  var onDragEnd: js.UndefOr[DragEventHandler[HTMLHRElement]] = js.undefined
   
-  var onDragEnter: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+  var onDragEnter: js.UndefOr[DragEventHandler[HTMLHRElement]] = js.undefined
   
-  var onDragExit: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+  var onDragExit: js.UndefOr[DragEventHandler[HTMLHRElement]] = js.undefined
   
-  var onDragLeave: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+  var onDragLeave: js.UndefOr[DragEventHandler[HTMLHRElement]] = js.undefined
   
-  var onDragOver: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+  var onDragOver: js.UndefOr[DragEventHandler[HTMLHRElement]] = js.undefined
   
-  var onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLHRElement]] = js.undefined
   
-  var onDrop: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
+  var onDrop: js.UndefOr[DragEventHandler[HTMLHRElement]] = js.undefined
   
-  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onEmptied: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onEnded: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onError: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLHRElement]] = js.undefined
   
-  var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+  var onInput: js.UndefOr[FormEventHandler[HTMLHRElement]] = js.undefined
   
-  var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+  var onInvalid: js.UndefOr[FormEventHandler[HTMLHRElement]] = js.undefined
   
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLHRElement]] = js.undefined
   
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLHRElement]] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLHRElement]] = js.undefined
   
-  var onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onLoad: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
+  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPause: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onPause: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onPlay: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onPlaying: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLHRElement]] = js.undefined
   
-  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
+  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLHRElement]] = js.undefined
   
-  var onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onProgress: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onRateChange: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+  var onReset: js.UndefOr[FormEventHandler[HTMLHRElement]] = js.undefined
   
-  var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onResize: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
+  var onScroll: js.UndefOr[UIEventHandler[HTMLHRElement]] = js.undefined
   
-  var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onSeeked: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onSeeking: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onSelect: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onStalled: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+  var onSubmit: js.UndefOr[FormEventHandler[HTMLHRElement]] = js.undefined
   
-  var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onSuspend: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
+  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLHRElement]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
+  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLHRElement]] = js.undefined
   
-  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
+  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLHRElement]] = js.undefined
   
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLHRElement]] = js.undefined
   
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.undefined
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLHRElement]] = js.undefined
   
-  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onWaiting: js.UndefOr[ReactEventHandler[HTMLHRElement]] = js.undefined
   
-  var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
+  var onWheel: js.UndefOr[WheelEventHandler[HTMLHRElement]] = js.undefined
   
-  var ownerState: FormControlOwnerState
+  var ownerState: DividerOwnerState
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -380,11 +384,15 @@ trait MUIStyledCommonPropsThemePickDetailedHTMAbout extends StObject {
   
   var radioGroup: js.UndefOr[String] = js.undefined
   
-  var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
+  var ref: js.UndefOr[LegacyRef[HTMLHRElement]] = js.undefined
+  
+  var rel: js.UndefOr[String] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -418,7 +426,7 @@ trait MUIStyledCommonPropsThemePickDetailedHTMAbout extends StObject {
 }
 object MUIStyledCommonPropsThemePickDetailedHTMAbout {
   
-  inline def apply(ownerState: FormControlOwnerState): MUIStyledCommonPropsThemePickDetailedHTMAbout = {
+  inline def apply(ownerState: DividerOwnerState): MUIStyledCommonPropsThemePickDetailedHTMAbout = {
     val __obj = js.Dynamic.literal(ownerState = ownerState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIStyledCommonPropsThemePickDetailedHTMAbout]
   }
@@ -640,6 +648,10 @@ object MUIStyledCommonPropsThemePickDetailedHTMAbout {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -662,9 +674,13 @@ object MUIStyledCommonPropsThemePickDetailedHTMAbout {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -750,327 +766,327 @@ object MUIStyledCommonPropsThemePickDetailedHTMAbout {
     
     inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    inline def setOnAbort(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnAbort(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
-    inline def setOnAnimationEnd(value: ReactAnimationEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnAnimationEnd(value: ReactAnimationEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
     
-    inline def setOnAnimationIteration(value: ReactAnimationEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnAnimationIteration(value: ReactAnimationEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
     
-    inline def setOnAnimationStart(value: ReactAnimationEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnAnimationStart(value: ReactAnimationEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
     
-    inline def setOnAuxClick(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnAuxClick(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
     
-    inline def setOnBeforeInput(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnBeforeInput(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
-    inline def setOnBlur(value: ReactFocusEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnBlur(value: ReactFocusEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnCanPlay(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnCanPlay(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def setOnCanPlayThrough(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnCanPlayThrough(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
     
     inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
     
-    inline def setOnChange(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnChange(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnClick(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnClick(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnCompositionEnd(value: ReactCompositionEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnCompositionEnd(value: ReactCompositionEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
     
-    inline def setOnCompositionStart(value: ReactCompositionEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnCompositionStart(value: ReactCompositionEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
     
-    inline def setOnCompositionUpdate(value: ReactCompositionEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnCompositionUpdate(value: ReactCompositionEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
     
-    inline def setOnContextMenu(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnContextMenu(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
-    inline def setOnCopy(value: ReactClipboardEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnCopy(value: ReactClipboardEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
     
-    inline def setOnCut(value: ReactClipboardEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnCut(value: ReactClipboardEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
     
-    inline def setOnDoubleClick(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnDoubleClick(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
     
-    inline def setOnDrag(value: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnDrag(value: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def setOnDragEnd(value: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnDragEnd(value: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
-    inline def setOnDragEnter(value: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnDragEnter(value: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
     
-    inline def setOnDragExit(value: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnDragExit(value: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
     
-    inline def setOnDragLeave(value: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnDragLeave(value: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
     
-    inline def setOnDragOver(value: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnDragOver(value: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     
-    inline def setOnDragStart(value: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnDragStart(value: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
-    inline def setOnDrop(value: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnDrop(value: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
     
-    inline def setOnDurationChange(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnDurationChange(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
     
-    inline def setOnEmptied(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnEmptied(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
     
-    inline def setOnEncrypted(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnEncrypted(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
     
-    inline def setOnEnded(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onEnded", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnEnded(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onEnded", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
-    inline def setOnError(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onError", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnError(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onError", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnFocus(value: ReactFocusEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnFocus(value: ReactFocusEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    inline def setOnInput(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnInput(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
     
-    inline def setOnInvalid(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnInvalid(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
-    inline def setOnKeyDown(value: ReactKeyboardEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnKeyDown(value: ReactKeyboardEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
-    inline def setOnKeyPress(value: ReactKeyboardEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnKeyPress(value: ReactKeyboardEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
     
-    inline def setOnKeyUp(value: ReactKeyboardEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnKeyUp(value: ReactKeyboardEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
     
-    inline def setOnLoad(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onLoad", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnLoad(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onLoad", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
-    inline def setOnLoadStart(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnLoadStart(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    inline def setOnLoadedData(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnLoadedData(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
     
-    inline def setOnLoadedMetadata(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnLoadedMetadata(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
     
-    inline def setOnMouseDown(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnMouseDown(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
-    inline def setOnMouseEnter(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnMouseEnter(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
-    inline def setOnMouseLeave(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnMouseLeave(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
-    inline def setOnMouseMove(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnMouseMove(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
-    inline def setOnMouseOut(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnMouseOut(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
-    inline def setOnMouseOver(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnMouseOver(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
     
-    inline def setOnMouseUp(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnMouseUp(value: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
-    inline def setOnPaste(value: ReactClipboardEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPaste(value: ReactClipboardEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
     
-    inline def setOnPause(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPause", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPause(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPause", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
     
-    inline def setOnPlay(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPlay(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
     
-    inline def setOnPlaying(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPlaying(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
     
-    inline def setOnPointerCancel(value: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPointerCancel(value: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
     
-    inline def setOnPointerDown(value: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPointerDown(value: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
     
-    inline def setOnPointerEnter(value: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPointerEnter(value: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
     
-    inline def setOnPointerLeave(value: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPointerLeave(value: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
     
-    inline def setOnPointerMove(value: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPointerMove(value: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
     
-    inline def setOnPointerOut(value: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPointerOut(value: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
     
-    inline def setOnPointerOver(value: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPointerOver(value: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
     
-    inline def setOnPointerUp(value: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnPointerUp(value: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
-    inline def setOnProgress(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onProgress", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnProgress(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onProgress", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     
-    inline def setOnRateChange(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnRateChange(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
     
-    inline def setOnReset(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnReset(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
-    inline def setOnResize(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnResize(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onResize", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
-    inline def setOnScroll(value: ReactUIEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnScroll(value: ReactUIEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setOnSeeked(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnSeeked(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
     
-    inline def setOnSeeking(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnSeeking(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
     
-    inline def setOnSelect(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onSelect", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnSelect(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onSelect", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
-    inline def setOnStalled(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onStalled", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnStalled(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onStalled", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
     
-    inline def setOnSubmit(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnSubmit(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
-    inline def setOnSuspend(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnSuspend(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
     
-    inline def setOnTimeUpdate(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnTimeUpdate(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
     
-    inline def setOnTouchCancel(value: ReactTouchEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnTouchCancel(value: ReactTouchEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
     
-    inline def setOnTouchEnd(value: ReactTouchEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnTouchEnd(value: ReactTouchEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
-    inline def setOnTouchMove(value: ReactTouchEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnTouchMove(value: ReactTouchEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
-    inline def setOnTouchStart(value: ReactTouchEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnTouchStart(value: ReactTouchEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setOnTransitionEnd(value: ReactTransitionEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnTransitionEnd(value: ReactTransitionEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     
-    inline def setOnVolumeChange(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnVolumeChange(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
     
-    inline def setOnWaiting(value: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnWaiting(value: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
     
-    inline def setOnWheel(value: ReactWheelEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    inline def setOnWheel(value: ReactWheelEventFrom[HTMLHRElement & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLHRElement & org.scalajs.dom.Element]) => value(t0).runNow()))
     
     inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
-    inline def setOwnerState(value: FormControlOwnerState): Self = StObject.set(x, "ownerState", value.asInstanceOf[js.Any])
+    inline def setOwnerState(value: DividerOwnerState): Self = StObject.set(x, "ownerState", value.asInstanceOf[js.Any])
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
@@ -1088,13 +1104,17 @@ object MUIStyledCommonPropsThemePickDetailedHTMAbout {
     
     inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
     
-    inline def setRef(value: LegacyRef[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: LegacyRef[HTMLHRElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRefFunction1(value: HTMLDivElement | Null => Callback): Self = StObject.set(x, "ref", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    inline def setRefFunction1(value: HTMLHRElement | Null => Callback): Self = StObject.set(x, "ref", js.Any.fromFunction1((t0: HTMLHRElement | Null) => value(t0).runNow()))
     
     inline def setRefNull: Self = StObject.set(x, "ref", null)
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
@@ -1103,6 +1123,10 @@ object MUIStyledCommonPropsThemePickDetailedHTMAbout {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

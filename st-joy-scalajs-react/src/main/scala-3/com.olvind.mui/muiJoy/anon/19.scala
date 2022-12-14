@@ -1,7 +1,7 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.chipDeleteChipDeletePropsMod.ChipDeleteOwnerState
-import com.olvind.mui.muiJoy.chipDeleteChipDeletePropsMod.ChipDeleteSlot
+import com.olvind.mui.muiJoy.scopedCssBaselineScopedCssBaselinePropsMod.ScopedCssBaselineOwnerState
+import com.olvind.mui.muiJoy.scopedCssBaselineScopedCssBaselinePropsMod.ScopedCssBaselineSlot
 import com.olvind.mui.muiJoy.stylesComponentsMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `19`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialChipDeletePropsChipDeleteTypeMapb] = js.undefined
+  var defaultProps: js.UndefOr[PartialScopedCssBaselinePropsScopedCssBa] = js.undefined
   
-  var styleOverrides: js.UndefOr[OverridesStyleRules[ChipDeleteSlot, ChipDeleteOwnerState, Theme]] = js.undefined
+  var styleOverrides: js.UndefOr[OverridesStyleRules[ScopedCssBaselineSlot, ScopedCssBaselineOwnerState, Theme]] = js.undefined
 }
 object `19` {
   
@@ -23,11 +23,11 @@ object `19` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `19`[?], Theme] (val x: Self & `19`[Theme]) extends AnyVal {
     
-    inline def setDefaultProps(value: PartialChipDeletePropsChipDeleteTypeMapb): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialScopedCssBaselinePropsScopedCssBa): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: OverridesStyleRules[ChipDeleteSlot, ChipDeleteOwnerState, Theme]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(value: OverridesStyleRules[ScopedCssBaselineSlot, ScopedCssBaselineOwnerState, Theme]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
   }

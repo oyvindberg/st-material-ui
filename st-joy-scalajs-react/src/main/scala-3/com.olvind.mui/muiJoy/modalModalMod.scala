@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object modalModalMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Modal](https://mui.com/joy-ui/react-modal/)
+    *
+    * API:
+    *
+    * - [Modal API](https://mui.com/joy-ui/api/modal/)
+    */
   @JSImport("@mui/joy/Modal/Modal", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsModalTypeMapdiv, Element | Null] = js.native

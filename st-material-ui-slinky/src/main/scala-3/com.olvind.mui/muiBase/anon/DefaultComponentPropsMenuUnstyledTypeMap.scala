@@ -1,6 +1,7 @@
 package com.olvind.mui.muiBase.anon
 
 import com.olvind.mui.muiBase.menuUnstyledMenuUnstyledDottypesMod.MenuUnstyledActions
+import com.olvind.mui.muiBase.menuUnstyledMenuUnstyledDottypesMod.MenuUnstyledSlots
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -25,6 +26,7 @@ import com.olvind.mui.react.mod.UIEventHandler
 import com.olvind.mui.react.mod.WheelEventHandler
 import org.scalajs.dom.Event
 import org.scalajs.dom.EventTarget
+import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.HTMLUListElement
 import slinky.core.SyntheticEvent
 import slinky.core.facade.ReactElement
@@ -63,8 +65,8 @@ trait DefaultComponentPropsMenuUnstyledTypeMap extends StObject {
     * It's used to set the position of the popper.
     */
   var anchorEl: js.UndefOr[
-    Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+    Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
     ])
   ] = js.undefined
   
@@ -170,6 +172,8 @@ trait DefaultComponentPropsMenuUnstyledTypeMap extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[ReactElement] = js.undefined
@@ -177,6 +181,8 @@ trait DefaultComponentPropsMenuUnstyledTypeMap extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -411,9 +417,13 @@ trait DefaultComponentPropsMenuUnstyledTypeMap extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLUListElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -432,7 +442,7 @@ trait DefaultComponentPropsMenuUnstyledTypeMap extends StObject {
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[ListboxRoot] = js.undefined
+  var slots: js.UndefOr[MenuUnstyledSlots] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -483,13 +493,13 @@ object DefaultComponentPropsMenuUnstyledTypeMap {
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     inline def setAnchorEl(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ])
     ): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
     
     inline def setAnchorElFunction0(
-      value: () => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+      value: () => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
     ): Self = StObject.set(x, "anchorEl", js.Any.fromFunction0(value))
     
     inline def setAnchorElNull: Self = StObject.set(x, "anchorEl", null)
@@ -698,6 +708,10 @@ object DefaultComponentPropsMenuUnstyledTypeMap {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -714,9 +728,13 @@ object DefaultComponentPropsMenuUnstyledTypeMap {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1164,6 +1182,10 @@ object DefaultComponentPropsMenuUnstyledTypeMap {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1171,6 +1193,10 @@ object DefaultComponentPropsMenuUnstyledTypeMap {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -1188,7 +1214,7 @@ object DefaultComponentPropsMenuUnstyledTypeMap {
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: ListboxRoot): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: MenuUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     

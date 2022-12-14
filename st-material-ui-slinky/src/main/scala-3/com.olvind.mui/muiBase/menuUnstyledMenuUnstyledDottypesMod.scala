@@ -1,8 +1,8 @@
 package com.olvind.mui.muiBase
 
 import com.olvind.mui.muiBase.anon.ListboxRoot
-import com.olvind.mui.muiBase.anon.`8`
 import com.olvind.mui.react.mod.Ref
+import org.scalajs.dom.HTMLElement
 import slinky.core.facade.ReactElement
 import slinky.core.facade.ReactRef
 import org.scalablytyped.runtime.StObject
@@ -33,7 +33,7 @@ object menuUnstyledMenuUnstyledDottypesMod {
     }
   }
   
-  trait MenuUnstyledComponentsPropsOverrides extends StObject
+  trait MenuUnstyledListboxSlotPropsOverrides extends StObject
   
   trait MenuUnstyledOwnProps extends StObject {
     
@@ -49,8 +49,8 @@ object menuUnstyledMenuUnstyledDottypesMod {
       * It's used to set the position of the popper.
       */
     var anchorEl: js.UndefOr[
-        Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+        Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ])
       ] = js.undefined
     
@@ -83,14 +83,14 @@ object menuUnstyledMenuUnstyledDottypesMod {
       * The props used for each slot inside the Menu.
       * @default {}
       */
-    var slotProps: js.UndefOr[`8`] = js.undefined
+    var slotProps: js.UndefOr[ListboxRoot] = js.undefined
     
     /**
       * The components used for each slot inside the Menu.
       * Either a string to use a HTML element or a component.
       * @default {}
       */
-    var slots: js.UndefOr[ListboxRoot] = js.undefined
+    var slots: js.UndefOr[MenuUnstyledSlots] = js.undefined
   }
   object MenuUnstyledOwnProps {
     
@@ -113,13 +113,13 @@ object menuUnstyledMenuUnstyledDottypesMod {
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
       inline def setAnchorEl(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
             ])
       ): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
       
       inline def setAnchorElFunction0(
-        value: () => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+        value: () => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
       ): Self = StObject.set(x, "anchorEl", js.Any.fromFunction0(value))
       
       inline def setAnchorElNull: Self = StObject.set(x, "anchorEl", null)
@@ -150,11 +150,11 @@ object menuUnstyledMenuUnstyledDottypesMod {
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      inline def setSlotProps(value: `8`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      inline def setSlotProps(value: ListboxRoot): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
       
       inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
-      inline def setSlots(value: ListboxRoot): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: MenuUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     }
@@ -178,6 +178,42 @@ object menuUnstyledMenuUnstyledDottypesMod {
     implicit open class MutableBuilder[Self <: MenuUnstyledOwnerState] (val x: Self) extends AnyVal {
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait MenuUnstyledRootSlotPropsOverrides extends StObject
+  
+  trait MenuUnstyledSlots extends StObject {
+    
+    /**
+      * The component that renders the listbox.
+      * @default 'ul'
+      */
+    var listbox: js.UndefOr[ReactElement] = js.undefined
+    
+    /**
+      * The component that renders the root.
+      * @default PopperUnstyled
+      */
+    var root: js.UndefOr[ReactElement] = js.undefined
+  }
+  object MenuUnstyledSlots {
+    
+    inline def apply(): MenuUnstyledSlots = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MenuUnstyledSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuUnstyledSlots] (val x: Self) extends AnyVal {
+      
+      inline def setListbox(value: ReactElement): Self = StObject.set(x, "listbox", value.asInstanceOf[js.Any])
+      
+      inline def setListboxUndefined: Self = StObject.set(x, "listbox", js.undefined)
+      
+      inline def setRoot(value: ReactElement): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

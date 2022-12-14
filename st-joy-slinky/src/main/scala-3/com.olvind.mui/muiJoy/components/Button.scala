@@ -1,10 +1,10 @@
 package com.olvind.mui.muiJoy.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiJoy.anon.EndDecoratorLoadingIndicatorCenter
 import com.olvind.mui.muiJoy.anon.FocusVisible
 import com.olvind.mui.muiJoy.anon.LoadingIndicatorCenter
 import com.olvind.mui.muiJoy.anon.OverridePropsExtendButtonTypeMapButtonTy
+import com.olvind.mui.muiJoy.anon.PartialButtonSlots
 import com.olvind.mui.muiJoy.buttonButtonPropsMod.ButtonPropsColorOverrides
 import com.olvind.mui.muiJoy.buttonButtonPropsMod.ButtonPropsSizeOverrides
 import com.olvind.mui.muiJoy.buttonButtonPropsMod.ButtonPropsVariantOverrides
@@ -170,11 +170,15 @@ object Button {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
     inline def color(value: OverridableStringUnion[ColorPaletteProp, ButtonPropsColorOverrides]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -418,6 +422,8 @@ object Button {
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
     
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
+    
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
     inline def security(value: String): this.type = set("security", value.asInstanceOf[js.Any])
@@ -426,9 +432,9 @@ object Button {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: EndDecoratorLoadingIndicatorCenter): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: LoadingIndicatorCenter): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: LoadingIndicatorCenter): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: PartialButtonSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

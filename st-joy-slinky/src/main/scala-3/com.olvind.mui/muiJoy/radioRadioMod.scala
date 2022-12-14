@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object radioRadioMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Radio](https://mui.com/joy-ui/react-radio-button/)
+    *
+    * API:
+    *
+    * - [Radio API](https://mui.com/joy-ui/api/radio/)
+    */
   @JSImport("@mui/joy/Radio/Radio", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsRadioTypeMapspan, Element | Null] = js.native

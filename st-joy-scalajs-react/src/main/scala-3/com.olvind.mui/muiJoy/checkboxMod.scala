@@ -13,6 +13,16 @@ object checkboxMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Checkbox](https://mui.com/joy-ui/react-checkbox/)
+    *
+    * API:
+    *
+    * - [Checkbox API](https://mui.com/joy-ui/api/checkbox/)
+    */
   @JSImport("@mui/joy/Checkbox", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsCheckboxTypeMapspan, Element | Null] = js.native

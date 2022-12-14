@@ -13,6 +13,16 @@ object cardMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Card](https://mui.com/joy-ui/react-card/)
+    *
+    * API:
+    *
+    * - [Card API](https://mui.com/joy-ui/api/card/)
+    */
   @JSImport("@mui/joy/Card", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsCardTypeMapdiv, Element | Null] = js.native

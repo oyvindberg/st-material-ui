@@ -5,24 +5,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `22`[P, D /* <: ElementType */] extends StObject {
+trait `22`[SecondaryTypographyComponent /* <: ElementType */] extends StObject {
   
-  var defaultComponent: D
-  
-  var props: P & AutoFocusItem
+  var component: js.UndefOr[SecondaryTypographyComponent] = js.undefined
 }
 object `22` {
   
-  inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & AutoFocusItem): `22`[P, D] = {
-    val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`22`[P, D]]
+  inline def apply[SecondaryTypographyComponent /* <: ElementType */](): `22`[SecondaryTypographyComponent] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`22`[SecondaryTypographyComponent]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `22`[?, ?], P, D /* <: ElementType */] (val x: Self & (`22`[P, D])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `22`[?], SecondaryTypographyComponent /* <: ElementType */] (val x: Self & `22`[SecondaryTypographyComponent]) extends AnyVal {
     
-    inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+    inline def setComponent(value: SecondaryTypographyComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & AutoFocusItem): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
   }
 }

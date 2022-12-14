@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object textareaTextareaMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Textarea](https://mui.com/joy-ui/react-textarea/)
+    *
+    * API:
+    *
+    * - [Textarea API](https://mui.com/joy-ui/api/textarea/)
+    */
   @JSImport("@mui/joy/Textarea/Textarea", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsTextareaTypeMapdiv, Element | Null] = js.native

@@ -11,6 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object autocompleteListboxAutocompleteListboxMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Autocomplete](https://mui.com/joy-ui/react-autocomplete/)
+    *
+    * API:
+    *
+    * - [AutocompleteListbox API](https://mui.com/joy-ui/api/autocomplete-listbox/)
+    */
   @JSImport("@mui/joy/AutocompleteListbox/AutocompleteListbox", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsAutocompleteListbox, Element | Null] = js.native

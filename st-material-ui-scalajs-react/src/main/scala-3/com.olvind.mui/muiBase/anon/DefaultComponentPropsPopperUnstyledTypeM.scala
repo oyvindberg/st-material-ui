@@ -1,6 +1,8 @@
 package com.olvind.mui.muiBase.anon
 
-import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledMod.PopperPlacementType
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperPlacementType
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperUnstyledChildrenProps
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperUnstyledSlots
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -43,11 +45,12 @@ import japgolly.scalajs.react.facade.React.Node
 import japgolly.scalajs.react.vdom.VdomElement
 import org.scalajs.dom.Element
 import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @mui/types.@mui/types.DefaultComponentProps<@mui/base.@mui/base/PopperUnstyled/PopperUnstyled.PopperUnstyledTypeMap<{}, 'div'>> */
+/* Inlined @mui/types.@mui/types.DefaultComponentProps<@mui/base.@mui/base/PopperUnstyled/PopperUnstyled.types.PopperUnstyledTypeMap<{}, 'div'>> */
 trait DefaultComponentPropsPopperUnstyledTypeM extends StObject {
   
   var about: js.UndefOr[String] = js.undefined
@@ -61,8 +64,8 @@ trait DefaultComponentPropsPopperUnstyledTypeM extends StObject {
     * The return value will passed as the reference object of the Popper instance.
     */
   var anchorEl: js.UndefOr[
-    Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+    Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
     ])
   ] = js.undefined
   
@@ -168,12 +171,14 @@ trait DefaultComponentPropsPopperUnstyledTypeM extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   /**
     * Popper render function or node.
     */
-  var children: js.UndefOr[Node | (js.Function1[/* props */ Placement, Node])] = js.undefined
+  var children: js.UndefOr[Node | (js.Function1[/* props */ PopperUnstyledChildrenProps, Node])] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -187,6 +192,8 @@ trait DefaultComponentPropsPopperUnstyledTypeM extends StObject {
     * so it's simply `document.body` most of the time.
     */
   var container: js.UndefOr[Element | (js.Function0[Element | Null]) | Null] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -428,6 +435,8 @@ trait DefaultComponentPropsPopperUnstyledTypeM extends StObject {
     */
   var open: Boolean
   
+  var ownerState: js.UndefOr[Any] = js.undefined
+  
   var placeholder: js.UndefOr[String] = js.undefined
   
   /**
@@ -459,9 +468,13 @@ trait DefaultComponentPropsPopperUnstyledTypeM extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -473,14 +486,14 @@ trait DefaultComponentPropsPopperUnstyledTypeM extends StObject {
     * The props used for each slot inside the Popper.
     * @default {}
     */
-  var slotProps: js.UndefOr[`7`] = js.undefined
+  var slotProps: js.UndefOr[`5`] = js.undefined
   
   /**
     * The components used for each slot inside the Popper.
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[`1`] = js.undefined
+  var slots: js.UndefOr[PopperUnstyledSlots] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -527,14 +540,14 @@ object DefaultComponentPropsPopperUnstyledTypeM {
     inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
     
     inline def setAnchorEl(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ])
     ): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
     
     inline def setAnchorElCallbackTo(
       value: CallbackTo[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ]
     ): Self = StObject.set(x, "anchorEl", value.toJsFn)
     
@@ -744,13 +757,17 @@ object DefaultComponentPropsPopperUnstyledTypeM {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
     
-    inline def setChildren(value: Node | (js.Function1[/* props */ Placement, Node])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node | (js.Function1[/* props */ PopperUnstyledChildrenProps, Node])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenFunction1(value: /* props */ Placement => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildrenFunction1(value: /* props */ PopperUnstyledChildrenProps => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     inline def setChildrenNull: Self = StObject.set(x, "children", null)
     
@@ -776,9 +793,13 @@ object DefaultComponentPropsPopperUnstyledTypeM {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1204,6 +1225,10 @@ object DefaultComponentPropsPopperUnstyledTypeM {
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
+    inline def setOwnerState(value: Any): Self = StObject.set(x, "ownerState", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerStateUndefined: Self = StObject.set(x, "ownerState", js.undefined)
+    
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
@@ -1250,6 +1275,10 @@ object DefaultComponentPropsPopperUnstyledTypeM {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1257,6 +1286,10 @@ object DefaultComponentPropsPopperUnstyledTypeM {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -1268,13 +1301,13 @@ object DefaultComponentPropsPopperUnstyledTypeM {
     
     inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    inline def setSlotProps(value: `7`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: `5`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: `1`): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: PopperUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     

@@ -9,33 +9,28 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Checkbox/CheckboxProps.CheckboxOwnerState>,   checkbox :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Checkbox/CheckboxProps.CheckboxOwnerState>,   action :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Checkbox/CheckboxProps.CheckboxOwnerState>,   input :@mui/joy.@mui/joy/utils/types.SlotProps<'input', {}, @mui/joy.@mui/joy/Checkbox/CheckboxProps.CheckboxOwnerState>,   label :@mui/joy.@mui/joy/utils/types.SlotProps<'label', {}, @mui/joy.@mui/joy/Checkbox/CheckboxProps.CheckboxOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Checkbox/CheckboxProps.CheckboxOwnerState>,   checkbox :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Checkbox/CheckboxProps.CheckboxOwnerState>,   action :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Checkbox/CheckboxProps.CheckboxOwnerState>,   input :@mui/joy.@mui/joy/utils/types.SlotProps<'input', {}, @mui/joy.@mui/joy/Checkbox/CheckboxProps.CheckboxOwnerState>,   label :@mui/joy.@mui/joy/utils/types.SlotProps<'label', {}, @mui/joy.@mui/joy/Checkbox/CheckboxProps.CheckboxOwnerState>}[P]} */
 trait Label extends StObject {
   
-  var action: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState]
-  ] = js.undefined
+  var action: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState]
   
-  var checkbox: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState]
-  ] = js.undefined
+  var checkbox: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState]
   
-  var input: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, CheckboxOwnerState]
-  ] = js.undefined
+  var input: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, CheckboxOwnerState]
   
-  var label: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["label", js.Object, CheckboxOwnerState]
-  ] = js.undefined
+  var label: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["label", js.Object, CheckboxOwnerState]
   
-  var root: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState]
-  ] = js.undefined
+  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState]
 }
 object Label {
   
-  inline def apply(): Label = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    action: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState],
+    checkbox: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState],
+    input: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, CheckboxOwnerState],
+    label: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["label", js.Object, CheckboxOwnerState],
+    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState]
+  ): Label = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], checkbox = checkbox.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Label]
   }
   
@@ -48,15 +43,11 @@ object Label {
       value: CheckboxOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
-    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
-    
     inline def setCheckbox(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState]): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
     inline def setCheckboxFunction1(
       value: CheckboxOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "checkbox", js.Any.fromFunction1(value))
-    
-    inline def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
     
     inline def setInput(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, CheckboxOwnerState]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
@@ -64,22 +55,16 @@ object Label {
       value: CheckboxOwnerState => (Omit[ComponentPropsWithRef["input"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
     
-    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
-    
     inline def setLabel(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["label", js.Object, CheckboxOwnerState]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelFunction1(
       value: CheckboxOwnerState => (Omit[ComponentPropsWithRef["label"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    
     inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, CheckboxOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootFunction1(
       value: CheckboxOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
-    
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

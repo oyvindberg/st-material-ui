@@ -1,28 +1,28 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.listItemListItemMod.ListItemComponentsPropsOverrides
-import com.olvind.mui.react.mod.HTMLAttributes
-import org.scalajs.dom.HTMLDivElement
+import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `15` extends StObject {
+trait `15`[P, D /* <: ReactElement */] extends StObject {
   
-  var root: js.UndefOr[HTMLAttributes[HTMLDivElement] & ListItemComponentsPropsOverrides] = js.undefined
+  var defaultComponent: D
+  
+  var props: P & DisableAnimation
 }
 object `15` {
   
-  inline def apply(): `15` = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`15`]
+  inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & DisableAnimation): `15`[P, D] = {
+    val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`15`[P, D]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `15`] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `15`[?, ?], P, D /* <: ReactElement */] (val x: Self & (`15`[P, D])) extends AnyVal {
     
-    inline def setRoot(value: HTMLAttributes[HTMLDivElement] & ListItemComponentsPropsOverrides): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setProps(value: P & DisableAnimation): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiBase.badgeUnstyledBadgeUnstyledDottypesMod.BadgeUnstyledSlots
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -47,7 +48,7 @@ trait BadgeUnstyledTypeMapspanprops extends StObject {
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[com.olvind.mui.muiBase.anon.Root] = js.undefined
+  var slots: js.UndefOr[BadgeUnstyledSlots] = js.undefined
 }
 object BadgeUnstyledTypeMapspanprops {
   
@@ -83,7 +84,7 @@ object BadgeUnstyledTypeMapspanprops {
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
-    inline def setSlots(value: com.olvind.mui.muiBase.anon.Root): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: BadgeUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }

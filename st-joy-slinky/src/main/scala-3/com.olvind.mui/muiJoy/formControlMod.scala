@@ -13,6 +13,16 @@ object formControlMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Input](https://mui.com/joy-ui/react-input/)
+    *
+    * API:
+    *
+    * - [FormControl API](https://mui.com/joy-ui/api/form-control/)
+    */
   @JSImport("@mui/joy/FormControl", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsFormControlTypeMapd, Element | Null] = js.native

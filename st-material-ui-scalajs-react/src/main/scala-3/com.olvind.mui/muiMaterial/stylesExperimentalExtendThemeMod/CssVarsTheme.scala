@@ -1,8 +1,8 @@
 package com.olvind.mui.muiMaterial.stylesExperimentalExtendThemeMod
 
+import com.olvind.mui.muiMaterial.anon.Css
 import com.olvind.mui.muiMaterial.anon.RecordSupportedColorSchemeColorSystem
 import com.olvind.mui.muiMaterial.stylesCreateMixinsMod.Mixins
-import com.olvind.mui.muiMaterial.stylesCreatePaletteMod.Palette
 import com.olvind.mui.muiMaterial.stylesCreateTransitionsMod.Transitions
 import com.olvind.mui.muiMaterial.stylesCreateTypographyMod.Typography
 import com.olvind.mui.muiMaterial.stylesShadowsMod.Shadows
@@ -17,100 +17,52 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait CssVarsTheme
   extends StObject
      with ColorSystem {
   
-  var breakpints: Breakpoints
+  var breakpints: Breakpoints = js.native
   
-  var colorSchemes: RecordSupportedColorSchemeColorSystem
+  var colorSchemes: RecordSupportedColorSchemeColorSystem = js.native
   
-  var cssVarPrefix: String
+  var cssVarPrefix: String = js.native
   
-  def getColorSchemeSelector(colorScheme: SupportedColorScheme): String
+  def generateCssVars(): Css = js.native
+  def generateCssVars(colorScheme: SupportedColorScheme): Css = js.native
   
-  def getCssVar(field: ThemeCssVar, vars: ThemeCssVar*): String
+  def getColorSchemeSelector(colorScheme: SupportedColorScheme): String = js.native
   
-  var mixins: Mixins
+  def getCssVar(field: ThemeCssVar, vars: ThemeCssVar*): String = js.native
   
-  var shadows: Shadows
+  var mixins: Mixins = js.native
   
-  var shape: Shape
+  var shadows: Shadows = js.native
+  
+  var shape: Shape = js.native
+  
+  /**
+    * A function to determine if the key, value should be attached as CSS Variable
+    * `keys` is an array that represents the object path keys.
+    *  Ex, if the theme is { foo: { bar: 'var(--test)' } }
+    *  then, keys = ['foo', 'bar']
+    *        value = 'var(--test)'
+    */
+  def shouldSkipGeneratingVar(keys: js.Array[String], value: String): Boolean = js.native
+  def shouldSkipGeneratingVar(keys: js.Array[String], value: Double): Boolean = js.native
   
   // Default theme tokens
-  var spacing: Spacing
+  var spacing: Spacing = js.native
   
-  var transitions: Transitions
+  var transitions: Transitions = js.native
   
-  var typography: Typography
+  var typography: Typography = js.native
   
-  def unstable_sx(props: SxProps[CssVarsTheme]): CSSObject
+  def unstable_sx(props: SxProps[CssVarsTheme]): CSSObject = js.native
   
-  var unstable_sxConfig: SxConfig
+  var unstable_sxConfig: SxConfig = js.native
   
-  var vars: ThemeVars
+  var vars: ThemeVars = js.native
   
-  var zIndex: ZIndex
-}
-object CssVarsTheme {
-  
-  inline def apply(
-    breakpints: Breakpoints,
-    colorSchemes: RecordSupportedColorSchemeColorSystem,
-    cssVarPrefix: String,
-    getColorSchemeSelector: SupportedColorScheme => String,
-    getCssVar: (ThemeCssVar, /* repeated */ ThemeCssVar) => String,
-    mixins: Mixins,
-    opacity: Opacity,
-    overlays: Overlays,
-    palette: Palette & CssVarsPalette,
-    shadows: Shadows,
-    shape: Shape,
-    spacing: Spacing,
-    transitions: Transitions,
-    typography: Typography,
-    unstable_sx: SxProps[CssVarsTheme] => CSSObject,
-    unstable_sxConfig: SxConfig,
-    vars: ThemeVars,
-    zIndex: ZIndex
-  ): CssVarsTheme = {
-    val __obj = js.Dynamic.literal(breakpints = breakpints.asInstanceOf[js.Any], colorSchemes = colorSchemes.asInstanceOf[js.Any], cssVarPrefix = cssVarPrefix.asInstanceOf[js.Any], getColorSchemeSelector = js.Any.fromFunction1(getColorSchemeSelector), getCssVar = js.Any.fromFunction2(getCssVar), mixins = mixins.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], overlays = overlays.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any], shadows = shadows.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any], typography = typography.asInstanceOf[js.Any], unstable_sx = js.Any.fromFunction1(unstable_sx), unstable_sxConfig = unstable_sxConfig.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssVarsTheme]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: CssVarsTheme] (val x: Self) extends AnyVal {
-    
-    inline def setBreakpints(value: Breakpoints): Self = StObject.set(x, "breakpints", value.asInstanceOf[js.Any])
-    
-    inline def setColorSchemes(value: RecordSupportedColorSchemeColorSystem): Self = StObject.set(x, "colorSchemes", value.asInstanceOf[js.Any])
-    
-    inline def setCssVarPrefix(value: String): Self = StObject.set(x, "cssVarPrefix", value.asInstanceOf[js.Any])
-    
-    inline def setGetColorSchemeSelector(value: SupportedColorScheme => String): Self = StObject.set(x, "getColorSchemeSelector", js.Any.fromFunction1(value))
-    
-    inline def setGetCssVar(value: (ThemeCssVar, /* repeated */ ThemeCssVar) => String): Self = StObject.set(x, "getCssVar", js.Any.fromFunction2(value))
-    
-    inline def setMixins(value: Mixins): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
-    
-    inline def setShadows(value: Shadows): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
-    
-    inline def setShadowsVarargs(value: Any*): Self = StObject.set(x, "shadows", js.Array(value*))
-    
-    inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
-    
-    inline def setSpacing(value: Spacing): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
-    
-    inline def setTransitions(value: Transitions): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
-    
-    inline def setTypography(value: Typography): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
-    
-    inline def setUnstable_sx(value: SxProps[CssVarsTheme] => CSSObject): Self = StObject.set(x, "unstable_sx", js.Any.fromFunction1(value))
-    
-    inline def setUnstable_sxConfig(value: SxConfig): Self = StObject.set(x, "unstable_sxConfig", value.asInstanceOf[js.Any])
-    
-    inline def setVars(value: ThemeVars): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
-    
-    inline def setZIndex(value: ZIndex): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
-  }
+  var zIndex: ZIndex = js.native
 }

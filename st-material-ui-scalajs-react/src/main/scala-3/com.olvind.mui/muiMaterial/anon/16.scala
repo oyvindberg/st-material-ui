@@ -1,29 +1,27 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiMaterial.listItemButtonListItemButtonMod.ListItemButtonBaseProps
-import japgolly.scalajs.react.facade.React.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `16`[P, D /* <: ElementType */] extends StObject {
+trait `16` extends StObject {
   
-  var defaultComponent: D
+  var defaultComponent: "label"
   
-  var props: P & ListItemButtonBaseProps
+  var props: Focused
 }
 object `16` {
   
-  inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & ListItemButtonBaseProps): `16`[P, D] = {
-    val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`16`[P, D]]
+  inline def apply(props: Focused): `16` = {
+    val __obj = js.Dynamic.literal(defaultComponent = "label", props = props.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`16`]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `16`[?, ?], P, D /* <: ElementType */] (val x: Self & (`16`[P, D])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `16`] (val x: Self) extends AnyVal {
     
-    inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+    inline def setDefaultComponent(value: "label"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & ListItemButtonBaseProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: Focused): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

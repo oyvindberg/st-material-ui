@@ -5,7 +5,6 @@ import com.olvind.mui.muiSystem.mod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import slinky.core.facade.ReactElement
-import slinky.core.facade.ReactRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,8 +28,6 @@ trait Direction extends StObject {
     */
   var divider: js.UndefOr[ReactElement] = js.undefined
   
-  var ref: js.UndefOr[com.olvind.mui.react.mod.Ref[Any]] = js.undefined
-  
   /**
     * Defines the space between immediate children.
     * @default 0
@@ -41,6 +38,17 @@ trait Direction extends StObject {
     * The system prop, which allows defining system overrides as well as additional CSS styles.
     */
   var sx: js.UndefOr[SxProps[Theme]] = js.undefined
+  
+  /**
+    * If `true`, the CSS flexbox `gap` is used instead of applying `margin` to children.
+    *
+    * While CSS `gap` removes the [known limitations](https://mui.com/joy-ui/react-stack#limitations),
+    * it is not fully supported in some browsers. We recommend checking https://caniuse.com/?search=flex%20gap before using this flag.
+    *
+    * To enable this flag globally, follow the [theme's default props](https://mui.com/material-ui/customization/theme-components/#default-props) configuration.
+    * @default false
+    */
+  var useFlexGap: js.UndefOr[Boolean] = js.undefined
 }
 object Direction {
   
@@ -66,16 +74,6 @@ object Direction {
     
     inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
     
-    inline def setRef(value: com.olvind.mui.react.mod.Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    
-    inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-    
-    inline def setRefNull: Self = StObject.set(x, "ref", null)
-    
-    inline def setRefReactRef(value: ReactRef[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    
-    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
-    
     inline def setSpacing(value: ResponsiveStyleValue[Double | String]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
@@ -91,5 +89,9 @@ object Direction {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(value: (Boolean | SystemStyleObject[Theme] | (js.Function1[Theme, SystemStyleObject[Theme]]))*): Self = StObject.set(x, "sx", js.Array(value*))
+    
+    inline def setUseFlexGap(value: Boolean): Self = StObject.set(x, "useFlexGap", value.asInstanceOf[js.Any])
+    
+    inline def setUseFlexGapUndefined: Self = StObject.set(x, "useFlexGap", js.undefined)
   }
 }

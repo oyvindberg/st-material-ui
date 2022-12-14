@@ -13,6 +13,16 @@ object modalMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Modal](https://mui.com/joy-ui/react-modal/)
+    *
+    * API:
+    *
+    * - [Modal API](https://mui.com/joy-ui/api/modal/)
+    */
   @JSImport("@mui/joy/Modal", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsModalTypeMapdiv, Element | Null] = js.native

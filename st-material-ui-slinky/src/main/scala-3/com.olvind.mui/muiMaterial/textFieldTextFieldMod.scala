@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.PartialFilledInputProps
 import com.olvind.mui.muiMaterial.anon.PartialFormHelperTextPropsFormHelperText
-import com.olvind.mui.muiMaterial.anon.PartialInputLabelProps
+import com.olvind.mui.muiMaterial.anon.PartialInputLabelPropsInputLabelTypeMapl
 import com.olvind.mui.muiMaterial.anon.PartialInputProps
 import com.olvind.mui.muiMaterial.anon.PartialOutlinedInputProps
 import com.olvind.mui.muiMaterial.anon.PartialSelectPropsunknown
@@ -80,7 +80,7 @@ object textFieldTextFieldMod {
       * Props applied to the [`InputLabel`](/material-ui/api/input-label/) element.
       * Pointer events like `onClick` are enabled if and only if `shrink` is `true`.
       */
-    var InputLabelProps: js.UndefOr[PartialInputLabelProps] = js.undefined
+    var InputLabelProps: js.UndefOr[PartialInputLabelPropsInputLabelTypeMapl] = js.undefined
     
     /**
       * Props applied to the [`Select`](/material-ui/api/select/) element.
@@ -228,6 +228,8 @@ object textFieldTextFieldMod {
       * @default 'primary'
       */
     var color: js.UndefOr["primary" | "secondary" | "error" | "info" | "success" | "warning"] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
@@ -514,6 +516,8 @@ object textFieldTextFieldMod {
     
     var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     /**
       * If `true`, the label is displayed as required and the `input` element is required.
       * @default false
@@ -523,6 +527,8 @@ object textFieldTextFieldMod {
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -832,9 +838,13 @@ object textFieldTextFieldMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -904,7 +914,7 @@ object textFieldTextFieldMod {
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInputLabelProps(value: PartialInputLabelProps): Self = StObject.set(x, "InputLabelProps", value.asInstanceOf[js.Any])
+      inline def setInputLabelProps(value: PartialInputLabelPropsInputLabelTypeMapl): Self = StObject.set(x, "InputLabelProps", value.asInstanceOf[js.Any])
       
       inline def setInputLabelPropsUndefined: Self = StObject.set(x, "InputLabelProps", js.undefined)
       
@@ -1330,6 +1340,10 @@ object textFieldTextFieldMod {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1341,6 +1355,10 @@ object textFieldTextFieldMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formHelperTextFormHelperTextMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Input](https://mui.com/joy-ui/react-input/)
+    *
+    * API:
+    *
+    * - [FormHelperText API](https://mui.com/joy-ui/api/form-helper-text/)
+    */
   @JSImport("@mui/joy/FormHelperText/FormHelperText", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsFormHelperTextTypeM, Element | Null] = js.native

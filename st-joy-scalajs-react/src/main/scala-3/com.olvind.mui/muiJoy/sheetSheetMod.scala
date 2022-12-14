@@ -1,7 +1,7 @@
 package com.olvind.mui.muiJoy
 
 import com.olvind.mui.muiJoy.anon.DefaultComponentPropsSheetTypeMapdiv
-import com.olvind.mui.muiJoy.anon.MUIStyledCommonPropsThemePickDetailedHTMAccessKey
+import com.olvind.mui.muiJoy.anon.MUIStyledCommonPropsThemePickDetailedHTMAriaatomic
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
@@ -10,6 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sheetSheetMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Sheet](https://mui.com/joy-ui/react-sheet/)
+    *
+    * API:
+    *
+    * - [Sheet API](https://mui.com/joy-ui/api/sheet/)
+    */
   @JSImport("@mui/joy/Sheet/Sheet", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsSheetTypeMapdiv, Element | Null] = js.native
@@ -17,7 +27,7 @@ object sheetSheetMod extends Shortcut {
   @JSImport("@mui/joy/Sheet/Sheet", "SheetRoot")
   @js.native
   val SheetRoot: js.Function1[
-    /* props */ MUIStyledCommonPropsThemePickDetailedHTMAccessKey, 
+    /* props */ MUIStyledCommonPropsThemePickDetailedHTMAriaatomic, 
     japgolly.scalajs.react.facade.React.Element | Null
   ] = js.native
   

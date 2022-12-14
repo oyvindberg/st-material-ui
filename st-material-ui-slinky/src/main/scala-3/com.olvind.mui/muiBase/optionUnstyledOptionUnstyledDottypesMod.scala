@@ -1,8 +1,7 @@
 package com.olvind.mui.muiBase
 
-import com.olvind.mui.muiBase.anon.`10`
-import com.olvind.mui.muiBase.anon.`1`
-import com.olvind.mui.muiBase.listboxUnstyledUseListboxDottypesMod.OptionState
+import com.olvind.mui.muiBase.anon.`7`
+import com.olvind.mui.muiBase.useListboxUseListboxDottypesMod.OptionState
 import com.olvind.mui.muiTypes.mod.Simplify
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
@@ -10,8 +9,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionUnstyledOptionUnstyledDottypesMod {
-  
-  trait OptionUnstyledComponentsPropsOverrides extends StObject
   
   trait OptionUnstyledOwnProps[TValue] extends StObject {
     
@@ -35,14 +32,14 @@ object optionUnstyledOptionUnstyledDottypesMod {
       * The props used for each slot inside the OptionUnstyled.
       * @default {}
       */
-    var slotProps: js.UndefOr[`10`[TValue]] = js.undefined
+    var slotProps: js.UndefOr[`7`[TValue]] = js.undefined
     
     /**
       * The components used for each slot inside the OptionUnstyled.
       * Either a string to use a HTML element or a component.
       * @default {}
       */
-    var slots: js.UndefOr[`1`] = js.undefined
+    var slots: js.UndefOr[OptionUnstyledSlots] = js.undefined
     
     /**
       * The value of the option.
@@ -75,11 +72,11 @@ object optionUnstyledOptionUnstyledDottypesMod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setSlotProps(value: `10`[TValue]): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      inline def setSlotProps(value: `7`[TValue]): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
       
       inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
-      inline def setSlots(value: `1`): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: OptionUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
@@ -88,6 +85,32 @@ object optionUnstyledOptionUnstyledDottypesMod {
   }
   
   type OptionUnstyledOwnerState[TValue] = Simplify[OptionUnstyledOwnProps[TValue] & OptionState]
+  
+  trait OptionUnstyledRootSlotPropsOverrides extends StObject
+  
+  trait OptionUnstyledSlots extends StObject {
+    
+    /**
+      * The component that renders the root.
+      * @default 'li'
+      */
+    var root: js.UndefOr[ReactElement] = js.undefined
+  }
+  object OptionUnstyledSlots {
+    
+    inline def apply(): OptionUnstyledSlots = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OptionUnstyledSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionUnstyledSlots] (val x: Self) extends AnyVal {
+      
+      inline def setRoot(value: ReactElement): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
   
   trait OptionUnstyledTypeMap[TValue, P, D /* <: ReactElement */] extends StObject {
     

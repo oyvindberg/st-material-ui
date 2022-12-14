@@ -55,7 +55,7 @@ trait DisableIcon extends StObject {
   /**
     * If `true`, the root element's position is set to initial which allows the action area to fill the nearest positioned parent.
     * This prop is useful for composing Radio with ListItem component.
-    * @default false;
+    * @default false
     */
   var overlay: js.UndefOr[Boolean] = js.undefined
   
@@ -81,7 +81,7 @@ trait DisableIcon extends StObject {
   var value: js.UndefOr[Any] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'outlined'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, RadioPropsVariantOverrides]] = js.undefined

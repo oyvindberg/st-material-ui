@@ -47,6 +47,8 @@ object selectSelectInputMod extends Shortcut {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    var error: js.UndefOr[Boolean] = js.undefined
+    
     var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Node[T], Unit]] = js.undefined
     
     var multiple: Boolean
@@ -102,6 +104,10 @@ object selectSelectInputMod extends Shortcut {
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setIconComponent(value: ReactElement): Self = StObject.set(x, "IconComponent", value.asInstanceOf[js.Any])
       

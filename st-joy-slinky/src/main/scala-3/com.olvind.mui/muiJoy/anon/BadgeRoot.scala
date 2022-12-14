@@ -9,17 +9,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Badge/BadgeProps.BadgeOwnerState>,   badge :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Badge/BadgeProps.BadgeOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Badge/BadgeProps.BadgeOwnerState>,   badge :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Badge/BadgeProps.BadgeOwnerState>}[P]} */
 trait BadgeRoot extends StObject {
   
-  var badge: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, BadgeOwnerState]] = js.undefined
+  var badge: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, BadgeOwnerState]
   
-  var root: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, BadgeOwnerState]] = js.undefined
+  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, BadgeOwnerState]
 }
 object BadgeRoot {
   
-  inline def apply(): BadgeRoot = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    badge: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, BadgeOwnerState],
+    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, BadgeOwnerState]
+  ): BadgeRoot = {
+    val __obj = js.Dynamic.literal(badge = badge.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeRoot]
   }
   
@@ -32,14 +34,10 @@ object BadgeRoot {
       value: BadgeOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "badge", js.Any.fromFunction1(value))
     
-    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
-    
     inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, BadgeOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootFunction1(
       value: BadgeOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
-    
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

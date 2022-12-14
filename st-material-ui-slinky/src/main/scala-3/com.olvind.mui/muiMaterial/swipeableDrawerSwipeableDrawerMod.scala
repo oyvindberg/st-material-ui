@@ -1,10 +1,11 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiBase.anon.BackdropRoot
+import com.olvind.mui.muiBase.modalUnstyledModalUnstyledDottypesMod.ModalUnstyledSlots
 import com.olvind.mui.muiMaterial.anon.Backdrop
+import com.olvind.mui.muiMaterial.anon.BackdropRoot
 import com.olvind.mui.muiMaterial.anon.PartialBackdropPropsdiv
 import com.olvind.mui.muiMaterial.anon.PartialDrawerClasses
-import com.olvind.mui.muiMaterial.anon.PartialModalPropsdefaultComponent
+import com.olvind.mui.muiMaterial.anon.PartialModalPropsdiv
 import com.olvind.mui.muiMaterial.anon.PartialPaperPropsdiv
 import com.olvind.mui.muiMaterial.anon.PartialSlideProps
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
@@ -37,6 +38,7 @@ import org.scalajs.dom.Element
 import org.scalajs.dom.Event
 import org.scalajs.dom.EventTarget
 import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.TouchEvent
 import slinky.core.SyntheticEvent
 import slinky.core.facade.ReactElement
 import slinky.core.facade.ReactRef
@@ -79,7 +81,7 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
     
     var BackdropProps: js.UndefOr[PartialBackdropPropsdiv] = js.undefined
     
-    var ModalProps: js.UndefOr[PartialModalPropsdefaultComponent] = js.undefined
+    var ModalProps: js.UndefOr[PartialModalPropsdiv] = js.undefined
     
     var PaperProps: js.UndefOr[PartialPaperPropsdiv] = js.undefined
     
@@ -93,6 +95,27 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
     var about: js.UndefOr[String] = js.undefined
     
     var accessKey: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If set to true, the swipe event will open the drawer even if the user begins the swipe on one of the drawer's children.
+      * This can be useful in scenarios where the drawer is partially visible.
+      * You can customize it further with a callback that determines which children the user can drag over to open the drawer
+      * (for example, to ignore other elements that handle touch move events, like sliders).
+      *
+      * @param {TouchEvent} event The 'touchstart' event
+      * @param {HTMLDivElement} swipeArea The swipe area element
+      * @param {HTMLDivElement} paper The drawer's paper element
+      *
+      * @default false
+      */
+    var allowSwipeInChildren: js.UndefOr[
+        Boolean | (js.Function3[
+          /* e */ TouchEvent, 
+          /* swipeArea */ HTMLDivElement, 
+          /* paper */ HTMLDivElement, 
+          Boolean
+        ])
+      ] = js.undefined
     
     var anchor: js.UndefOr["left" | "top" | "right" | "bottom"] = js.undefined
     
@@ -198,6 +221,8 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var children: js.UndefOr[ReactElement] = js.undefined
@@ -210,11 +235,13 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var components: js.UndefOr[Backdrop] = js.undefined
+    var components: js.UndefOr[BackdropRoot] = js.undefined
     
-    var componentsProps: js.UndefOr[com.olvind.mui.muiBase.anon.Backdrop] = js.undefined
+    var componentsProps: js.UndefOr[Backdrop] = js.undefined
     
     var container: js.UndefOr[Element | (js.Function0[Element | Null]) | Null] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
@@ -504,9 +531,13 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
     
     var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -514,9 +545,9 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
     
     var slot: js.UndefOr[String] = js.undefined
     
-    var slotProps: js.UndefOr[com.olvind.mui.muiBase.anon.Backdrop] = js.undefined
+    var slotProps: js.UndefOr[Backdrop] = js.undefined
     
-    var slots: js.UndefOr[BackdropRoot] = js.undefined
+    var slots: js.UndefOr[ModalUnstyledSlots] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
@@ -571,6 +602,19 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      
+      inline def setAllowSwipeInChildren(
+        value: Boolean | (js.Function3[
+              /* e */ TouchEvent, 
+              /* swipeArea */ HTMLDivElement, 
+              /* paper */ HTMLDivElement, 
+              Boolean
+            ])
+      ): Self = StObject.set(x, "allowSwipeInChildren", value.asInstanceOf[js.Any])
+      
+      inline def setAllowSwipeInChildrenFunction3(value: (/* e */ TouchEvent, /* swipeArea */ HTMLDivElement, /* paper */ HTMLDivElement) => Boolean): Self = StObject.set(x, "allowSwipeInChildren", js.Any.fromFunction3(value))
+      
+      inline def setAllowSwipeInChildrenUndefined: Self = StObject.set(x, "allowSwipeInChildren", js.undefined)
       
       inline def setAnchor(value: "left" | "top" | "right" | "bottom"): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -778,6 +822,10 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -810,9 +858,9 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setComponents(value: Backdrop): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: BackdropRoot): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      inline def setComponentsProps(value: com.olvind.mui.muiBase.anon.Backdrop): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
+      inline def setComponentsProps(value: Backdrop): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
       
       inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
       
@@ -826,9 +874,13 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -966,7 +1018,7 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
       
       inline def setMinFlingVelocityUndefined: Self = StObject.set(x, "minFlingVelocity", js.undefined)
       
-      inline def setModalProps(value: PartialModalPropsdefaultComponent): Self = StObject.set(x, "ModalProps", value.asInstanceOf[js.Any])
+      inline def setModalProps(value: PartialModalPropsdiv): Self = StObject.set(x, "ModalProps", value.asInstanceOf[js.Any])
       
       inline def setModalPropsUndefined: Self = StObject.set(x, "ModalProps", js.undefined)
       
@@ -1336,6 +1388,10 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1343,6 +1399,10 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1358,13 +1418,13 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
-      inline def setSlotProps(value: com.olvind.mui.muiBase.anon.Backdrop): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      inline def setSlotProps(value: Backdrop): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
       
       inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
       inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
-      inline def setSlots(value: BackdropRoot): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: ModalUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       

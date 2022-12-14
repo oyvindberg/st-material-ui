@@ -242,7 +242,9 @@ trait OverridePropsExtendButtonBaseTypeMapList extends StObject {
     *
     * @default {}
     */
-  var componentsProps: js.UndefOr[`15`] = js.undefined
+  var componentsProps: js.UndefOr[`18`] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -516,6 +518,8 @@ trait OverridePropsExtendButtonBaseTypeMapList extends StObject {
   
   var results: js.UndefOr[Double] = js.undefined
   
+  var rev: js.UndefOr[String] = js.undefined
+  
   var role: js.UndefOr[AriaRole] = js.undefined
   
   /**
@@ -542,7 +546,7 @@ trait OverridePropsExtendButtonBaseTypeMapList extends StObject {
     *
     * @default {}
     */
-  var slotProps: js.UndefOr[`15`] = js.undefined
+  var slotProps: js.UndefOr[`18`] = js.undefined
   
   /**
     * The components used for each slot inside.
@@ -850,7 +854,7 @@ object OverridePropsExtendButtonBaseTypeMapList {
     
     inline def setComponents(value: Root): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    inline def setComponentsProps(value: `15`): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
+    inline def setComponentsProps(value: `18`): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
     
     inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
     
@@ -864,9 +868,13 @@ object OverridePropsExtendButtonBaseTypeMapList {
     
     inline def setContainerPropsUndefined: Self = StObject.set(x, "ContainerProps", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1376,6 +1384,10 @@ object OverridePropsExtendButtonBaseTypeMapList {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+    
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -1394,7 +1406,7 @@ object OverridePropsExtendButtonBaseTypeMapList {
     
     inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    inline def setSlotProps(value: `15`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: `18`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     

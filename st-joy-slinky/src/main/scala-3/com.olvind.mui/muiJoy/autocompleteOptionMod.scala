@@ -13,6 +13,16 @@ object autocompleteOptionMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Autocomplete](https://mui.com/joy-ui/react-autocomplete/)
+    *
+    * API:
+    *
+    * - [AutocompleteOption API](https://mui.com/joy-ui/api/autocomplete-option/)
+    */
   @JSImport("@mui/joy/AutocompleteOption", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsAutocompleteOptionT, Element | Null] = js.native

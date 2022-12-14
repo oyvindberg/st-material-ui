@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriaactivedescendant
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapCard
-import com.olvind.mui.muiMaterial.anon.`4`
+import com.olvind.mui.muiMaterial.anon.`5`
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import org.scalablytyped.runtime.Shortcut
@@ -33,7 +33,7 @@ object cardActionAreaCardActionAreaMod extends Shortcut {
   
   type CardActionAreaProps[D /* <: ReactElement */, P] = OverrideProps[CardActionAreaTypeMap[P, D], D]
   
-  type CardActionAreaTypeMap[P, D /* <: ReactElement */] = ExtendButtonBaseTypeMap[`4`[P, D]]
+  type CardActionAreaTypeMap[P, D /* <: ReactElement */] = ExtendButtonBaseTypeMap[`5`[P, D]]
   
   type _To = js.Function1[
     /* props */ OverridePropsExtendButtonBaseTypeMapCard | DefaultComponentPropsExtendButtonBaseTypAriaactivedescendant, 

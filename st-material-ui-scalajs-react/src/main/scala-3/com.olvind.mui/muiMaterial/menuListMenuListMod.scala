@@ -1,7 +1,7 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendListTypeMapMe
-import com.olvind.mui.muiMaterial.anon.`22`
+import com.olvind.mui.muiMaterial.anon.`25`
 import com.olvind.mui.muiMaterial.listListMod.ExtendListTypeMap
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import com.olvind.mui.react.mod.global.JSX.Element
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object menuListMenuListMod extends Shortcut {
   
   /**
-    * A permanently displayed menu following https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/.
+    * A permanently displayed menu following https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/.
     * It's exposed to help customization of the [`Menu`](https://mui.com/material-ui/api/menu/) component if you
     * use it separately you need to move focus into the component manually. Once
     * the focus is placed inside the component it is fully keyboard accessible.
@@ -36,7 +36,7 @@ object menuListMenuListMod extends Shortcut {
   
   type MenuListProps[D /* <: ElementType */, P] = OverrideProps[MenuListTypeMap[P, D], D]
   
-  type MenuListTypeMap[P, D /* <: ElementType */] = ExtendListTypeMap[`22`[P, D]]
+  type MenuListTypeMap[P, D /* <: ElementType */] = ExtendListTypeMap[`25`[P, D]]
   
   type _To = js.Function1[/* props */ DefaultComponentPropsExtendListTypeMapMe, Element]
   

@@ -1,6 +1,6 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBoxTypeMapdiv
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsBoxTypeMapdivTheme
 import com.olvind.mui.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
@@ -21,10 +21,10 @@ object boxMod extends Shortcut {
     */
   @JSImport("@mui/material/Box", JSImport.Default)
   @js.native
-  val default: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element] = js.native
+  val default: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdivTheme, Element | Null] = js.native
   
-  type _To = js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element]
+  type _To = js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdivTheme, Element | Null]
   
   /* This means you don't have to write `default`, but can instead just say `boxMod.foo` */
-  override def _to: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdiv, Element] = default
+  override def _to: js.Function1[/* props */ DefaultComponentPropsBoxTypeMapdivTheme, Element | Null] = default
 }

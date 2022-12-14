@@ -3,7 +3,7 @@ package com.olvind.mui.muiBase.components
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiBase.anon.DefaultComponentPropsFormControlUnstyled
 import com.olvind.mui.muiBase.anon.`1`
-import com.olvind.mui.muiBase.anon.`3`
+import com.olvind.mui.muiBase.formControlUnstyledFormControlUnstyledDottypesMod.FormControlUnstyledSlots
 import com.olvind.mui.muiBase.formControlUnstyledFormControlUnstyledDottypesMod.FormControlUnstyledState
 import com.olvind.mui.muiBase.formControlUnstyledFormControlUnstyledDottypesMod.NativeFormControlElement
 import com.olvind.mui.react.anon.Html
@@ -150,6 +150,8 @@ object FormControlUnstyled {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def children(value: ReactElement | (js.Function1[/* state */ FormControlUnstyledState, ReactElement])): this.type = set("children", value.asInstanceOf[js.Any])
@@ -161,6 +163,8 @@ object FormControlUnstyled {
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -374,11 +378,15 @@ object FormControlUnstyled {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def required(value: Boolean): this.type = set("required", value.asInstanceOf[js.Any])
     
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -386,9 +394,9 @@ object FormControlUnstyled {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: `3`): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: `1`): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: `1`): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: FormControlUnstyledSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

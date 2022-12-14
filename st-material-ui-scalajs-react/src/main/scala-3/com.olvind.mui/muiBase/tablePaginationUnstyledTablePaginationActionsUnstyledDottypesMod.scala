@@ -1,7 +1,6 @@
 package com.olvind.mui.muiBase
 
 import com.olvind.mui.muiBase.anon.BackButton
-import com.olvind.mui.muiBase.anon.FirstButton
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -23,6 +22,7 @@ import com.olvind.mui.react.mod.TransitionEventHandler
 import com.olvind.mui.react.mod.UIEventHandler
 import com.olvind.mui.react.mod.WheelEventHandler
 import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.facade.React.ElementType
 import japgolly.scalajs.react.facade.React.Node
 import org.scalajs.dom.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
@@ -31,7 +31,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tablePaginationUnstyledTablePaginationActionsUnstyledDottypesMod {
   
-  trait TablePaginationActionsUnstyledComponentsPropsOverrides extends StObject
+  trait TablePaginationActionsUnstyledBackButtonSlotPropsOverrides extends StObject
+  
+  trait TablePaginationActionsUnstyledFirstButtonSlotPropsOverrides extends StObject
+  
+  trait TablePaginationActionsUnstyledLastButtonSlotPropsOverrides extends StObject
+  
+  trait TablePaginationActionsUnstyledNextButtonSlotPropsOverrides extends StObject
+  
+  @js.native
+  trait TablePaginationActionsUnstyledOwnProps extends StObject {
+    
+    var count: Double = js.native
+    
+    /**
+      * Direction of the text.
+      * @default 'ltr'
+      */
+    var direction: js.UndefOr["ltr" | "rtl"] = js.native
+    
+    /**
+      * Accepts a function which returns a string value that provides a user-friendly name for the current page.
+      * This is important for screen reader users.
+      *
+      * For localization purposes, you can use the provided [translations](/material-ui/guides/localization/).
+      * @param {string} type The link or button type to format ('first' | 'last' | 'next' | 'previous').
+      * @returns {string}
+      */
+    @JSName("getItemAriaLabel")
+    @scala.annotation.targetName("getItemAriaLabel_first_last_next_previous")
+    def getItemAriaLabel(`type`: "first" | "last" | "next" | "previous", page: Double): String = js.native
+    
+    def onPageChange(event: ReactMouseEventFrom[HTMLButtonElement], page: Double): Unit = js.native
+    def onPageChange(event: Null, page: Double): Unit = js.native
+    
+    var page: Double = js.native
+    
+    var rowsPerPage: Double = js.native
+    
+    var showFirstButton: Boolean = js.native
+    
+    var showLastButton: Boolean = js.native
+    
+    /**
+      * The props used for each slot inside the TablePagination.
+      * @default {}
+      */
+    var slotProps: js.UndefOr[BackButton] = js.native
+    
+    /**
+      * The components used for each slot inside the TablePagination.
+      * Either a string to use a HTML element or a component.
+      * @default {}
+      */
+    var slots: js.UndefOr[TablePaginationActionsUnstyledSlots] = js.native
+  }
   
   /* Inlined @mui/base.@mui/base/TablePaginationUnstyled/TablePaginationActionsUnstyled.types.TablePaginationActionsUnstyledProps<@mui/base.@mui/base/TablePaginationUnstyled/TablePaginationActionsUnstyled.types.TablePaginationActionsUnstyledTypeMap<{}, 'button'>['defaultComponent'], {}> */
   @js.native
@@ -151,14 +205,11 @@ object tablePaginationUnstyledTablePaginationActionsUnstyledDottypesMod {
     
     var className: js.UndefOr[String] = js.native
     
-    /**
-      * Override or extend the styles applied to the component.
-      */
-    var classes: js.UndefOr[js.Object] = js.native
-    
     var color: js.UndefOr[String] = js.native
     
     var component: js.UndefOr["button"] = js.native
+    
+    var content: js.UndefOr[String] = js.native
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.native
     
@@ -413,9 +464,13 @@ object tablePaginationUnstyledTablePaginationActionsUnstyledDottypesMod {
     
     var ref: js.UndefOr[LegacyRef[HTMLButtonElement]] = js.native
     
+    var rel: js.UndefOr[String] = js.native
+    
     var resource: js.UndefOr[String] = js.native
     
     var results: js.UndefOr[Double] = js.native
+    
+    var rev: js.UndefOr[String] = js.native
     
     var role: js.UndefOr[AriaRole] = js.native
     
@@ -433,14 +488,14 @@ object tablePaginationUnstyledTablePaginationActionsUnstyledDottypesMod {
       * The props used for each slot inside the TablePagination.
       * @default {}
       */
-    var slotProps: js.UndefOr[FirstButton] = js.native
+    var slotProps: js.UndefOr[BackButton] = js.native
     
     /**
       * The components used for each slot inside the TablePagination.
       * Either a string to use a HTML element or a component.
       * @default {}
       */
-    var slots: js.UndefOr[BackButton] = js.native
+    var slots: js.UndefOr[TablePaginationActionsUnstyledSlots] = js.native
     
     var spellCheck: js.UndefOr[Booleanish] = js.native
     
@@ -465,5 +520,133 @@ object tablePaginationUnstyledTablePaginationActionsUnstyledDottypesMod {
     var value: js.UndefOr[String | js.Array[String] | Double] = js.native
     
     var vocab: js.UndefOr[String] = js.native
+  }
+  
+  trait TablePaginationActionsUnstyledRootSlotPropsOverrides extends StObject
+  
+  trait TablePaginationActionsUnstyledSlots extends StObject {
+    
+    /**
+      * The component that renders the back button.
+      * @default 'button'
+      */
+    var backButton: js.UndefOr[ElementType] = js.undefined
+    
+    /**
+      * The component that renders the back page icon.
+      * @default BackPageIconDefault
+      */
+    var backPageIcon: js.UndefOr[ElementType] = js.undefined
+    
+    /**
+      * The component that renders the first button.
+      * @default 'button'
+      */
+    var firstButton: js.UndefOr[ElementType] = js.undefined
+    
+    /**
+      * The component that renders the first page icon.
+      * @default FirstPageIconDefault
+      */
+    var firstPageIcon: js.UndefOr[ElementType] = js.undefined
+    
+    /**
+      * The component that renders the last button.
+      * @default 'button'
+      */
+    var lastButton: js.UndefOr[ElementType] = js.undefined
+    
+    /**
+      * The component that renders the last page icon.
+      * @default LastPageIconDefault
+      */
+    var lastPageIcon: js.UndefOr[ElementType] = js.undefined
+    
+    /**
+      * The component that renders the next button.
+      * @default 'button'
+      */
+    var nextButton: js.UndefOr[ElementType] = js.undefined
+    
+    /**
+      * The component that renders the next page icon.
+      * @default NextPageIconDefault
+      */
+    var nextPageIcon: js.UndefOr[ElementType] = js.undefined
+    
+    /**
+      * The component that renders the root.
+      * @default 'div'
+      */
+    var root: js.UndefOr[ElementType] = js.undefined
+  }
+  object TablePaginationActionsUnstyledSlots {
+    
+    inline def apply(): TablePaginationActionsUnstyledSlots = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TablePaginationActionsUnstyledSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablePaginationActionsUnstyledSlots] (val x: Self) extends AnyVal {
+      
+      inline def setBackButton(value: ElementType): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
+      
+      inline def setBackButtonUndefined: Self = StObject.set(x, "backButton", js.undefined)
+      
+      inline def setBackPageIcon(value: ElementType): Self = StObject.set(x, "backPageIcon", value.asInstanceOf[js.Any])
+      
+      inline def setBackPageIconUndefined: Self = StObject.set(x, "backPageIcon", js.undefined)
+      
+      inline def setFirstButton(value: ElementType): Self = StObject.set(x, "firstButton", value.asInstanceOf[js.Any])
+      
+      inline def setFirstButtonUndefined: Self = StObject.set(x, "firstButton", js.undefined)
+      
+      inline def setFirstPageIcon(value: ElementType): Self = StObject.set(x, "firstPageIcon", value.asInstanceOf[js.Any])
+      
+      inline def setFirstPageIconUndefined: Self = StObject.set(x, "firstPageIcon", js.undefined)
+      
+      inline def setLastButton(value: ElementType): Self = StObject.set(x, "lastButton", value.asInstanceOf[js.Any])
+      
+      inline def setLastButtonUndefined: Self = StObject.set(x, "lastButton", js.undefined)
+      
+      inline def setLastPageIcon(value: ElementType): Self = StObject.set(x, "lastPageIcon", value.asInstanceOf[js.Any])
+      
+      inline def setLastPageIconUndefined: Self = StObject.set(x, "lastPageIcon", js.undefined)
+      
+      inline def setNextButton(value: ElementType): Self = StObject.set(x, "nextButton", value.asInstanceOf[js.Any])
+      
+      inline def setNextButtonUndefined: Self = StObject.set(x, "nextButton", js.undefined)
+      
+      inline def setNextPageIcon(value: ElementType): Self = StObject.set(x, "nextPageIcon", value.asInstanceOf[js.Any])
+      
+      inline def setNextPageIconUndefined: Self = StObject.set(x, "nextPageIcon", js.undefined)
+      
+      inline def setRoot(value: ElementType): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  trait TablePaginationActionsUnstyledTypeMap[P, D /* <: ElementType */] extends StObject {
+    
+    var defaultComponent: D
+    
+    var props: P & TablePaginationActionsUnstyledOwnProps
+  }
+  object TablePaginationActionsUnstyledTypeMap {
+    
+    inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & TablePaginationActionsUnstyledOwnProps): TablePaginationActionsUnstyledTypeMap[P, D] = {
+      val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TablePaginationActionsUnstyledTypeMap[P, D]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablePaginationActionsUnstyledTypeMap[?, ?], P, D /* <: ElementType */] (val x: Self & (TablePaginationActionsUnstyledTypeMap[P, D])) extends AnyVal {
+      
+      inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: P & TablePaginationActionsUnstyledOwnProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
   }
 }

@@ -2,8 +2,8 @@ package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiMaterial.anon.PartialListItemTextClasses
-import com.olvind.mui.muiMaterial.anon.`18`
-import com.olvind.mui.muiMaterial.anon.`19`
+import com.olvind.mui.muiMaterial.anon.`21`
+import com.olvind.mui.muiMaterial.anon.`22`
 import com.olvind.mui.muiMaterial.listItemTextListItemTextMod.ListItemTextProps
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiMaterial.typographyTypographyMod.TypographyProps
@@ -160,6 +160,8 @@ object ListItemText {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
@@ -167,6 +169,8 @@ object ListItemText {
     inline def classes(value: PartialListItemTextClasses): this.type = set("classes", value.asInstanceOf[js.Any])
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -382,7 +386,7 @@ object ListItemText {
     
     inline def primaryNull: this.type = set("primary", null)
     
-    inline def primaryTypographyProps(value: TypographyProps[PrimaryTypographyComponent, `18`[PrimaryTypographyComponent]]): this.type = set("primaryTypographyProps", value.asInstanceOf[js.Any])
+    inline def primaryTypographyProps(value: TypographyProps[PrimaryTypographyComponent, `21`[PrimaryTypographyComponent]]): this.type = set("primaryTypographyProps", value.asInstanceOf[js.Any])
     
     inline def primaryVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): this.type = set("primary", js.Array(value*))
     
@@ -396,9 +400,13 @@ object ListItemText {
       value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
     ): this.type = set("ref", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -406,7 +414,7 @@ object ListItemText {
     
     inline def secondaryNull: this.type = set("secondary", null)
     
-    inline def secondaryTypographyProps(value: TypographyProps[SecondaryTypographyComponent, `19`[SecondaryTypographyComponent]]): this.type = set("secondaryTypographyProps", value.asInstanceOf[js.Any])
+    inline def secondaryTypographyProps(value: TypographyProps[SecondaryTypographyComponent, `22`[SecondaryTypographyComponent]]): this.type = set("secondaryTypographyProps", value.asInstanceOf[js.Any])
     
     inline def secondaryVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): this.type = set("secondary", js.Array(value*))
     

@@ -13,6 +13,16 @@ object listItemDecoratorMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Lists](https://mui.com/joy-ui/react-list/)
+    *
+    * API:
+    *
+    * - [ListItemDecorator API](https://mui.com/joy-ui/api/list-item-decorator/)
+    */
   @JSImport("@mui/joy/ListItemDecorator", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsListItemDecoratorTy, Element | Null] = js.native

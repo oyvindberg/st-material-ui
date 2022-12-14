@@ -2,9 +2,9 @@ package com.olvind.mui.muiJoy.components
 
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiJoy.anon.DefaultComponentPropsAutocompleteListbox
-import com.olvind.mui.muiJoy.listListPropsMod.ListPropsColorOverrides
-import com.olvind.mui.muiJoy.listListPropsMod.ListPropsSizeOverrides
-import com.olvind.mui.muiJoy.listListPropsMod.ListPropsVariantOverrides
+import com.olvind.mui.muiJoy.autocompleteListboxAutocompleteListboxPropsMod.AutocompleteListboxPropsColorOverrides
+import com.olvind.mui.muiJoy.autocompleteListboxAutocompleteListboxPropsMod.AutocompleteListboxPropsSizeOverrides
+import com.olvind.mui.muiJoy.autocompleteListboxAutocompleteListboxPropsMod.AutocompleteListboxPropsVariantOverrides
 import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme
@@ -152,11 +152,15 @@ object AutocompleteListbox {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
-    inline def color(value: OverridableStringUnion[ColorPaletteProp, ListPropsColorOverrides]): this.type = set("color", value.asInstanceOf[js.Any])
+    inline def color(value: OverridableStringUnion[ColorPaletteProp, AutocompleteListboxPropsColorOverrides]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -368,15 +372,19 @@ object AutocompleteListbox {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
     inline def security(value: String): this.type = set("security", value.asInstanceOf[js.Any])
     
-    inline def size(value: OverridableStringUnion["sm" | "md" | "lg", ListPropsSizeOverrides]): this.type = set("size", value.asInstanceOf[js.Any])
+    inline def size(value: OverridableStringUnion["sm" | "md" | "lg", AutocompleteListboxPropsSizeOverrides]): this.type = set("size", value.asInstanceOf[js.Any])
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
@@ -406,7 +414,7 @@ object AutocompleteListbox {
     
     inline def unselectable(value: "on" | "off"): this.type = set("unselectable", value.asInstanceOf[js.Any])
     
-    inline def variant(value: OverridableStringUnion[VariantProp, ListPropsVariantOverrides]): this.type = set("variant", value.asInstanceOf[js.Any])
+    inline def variant(value: OverridableStringUnion[VariantProp, AutocompleteListboxPropsVariantOverrides]): this.type = set("variant", value.asInstanceOf[js.Any])
     
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }

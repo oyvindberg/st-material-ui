@@ -1,7 +1,5 @@
 package com.olvind.mui.muiMaterial.anon
 
-import com.olvind.mui.muiBase.anon.MarkLabel
-import com.olvind.mui.muiBase.anon.PartialSliderUnstyledClasses
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
@@ -166,10 +164,15 @@ trait SliderPropsSliderTypeMapspandefaultCompo extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[ReactElement] = js.undefined
   
+  /**
+    * @ignore
+    */
   var className: js.UndefOr[String] = js.undefined
   
   /**
@@ -178,7 +181,7 @@ trait SliderPropsSliderTypeMapspandefaultCompo extends StObject {
   /**
     * Override or extend the styles applied to the component.
     */
-  var classes: js.UndefOr[js.UndefOr[PartialSliderUnstyledClasses] & ColorPrimary] = js.undefined
+  var classes: js.UndefOr[PartialSliderClasses] = js.undefined
   
   /**
     * The color of the component.
@@ -196,7 +199,7 @@ trait SliderPropsSliderTypeMapspandefaultCompo extends StObject {
     *
     * @default {}
     */
-  var components: js.UndefOr[Mark] = js.undefined
+  var components: js.UndefOr[MarkLabel] = js.undefined
   
   /**
     * The extra props for the slot components.
@@ -207,7 +210,9 @@ trait SliderPropsSliderTypeMapspandefaultCompo extends StObject {
     *
     * @default {}
     */
-  var componentsProps: js.UndefOr[com.olvind.mui.muiBase.anon.Mark] = js.undefined
+  var componentsProps: js.UndefOr[Mark] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -267,12 +272,6 @@ trait SliderPropsSliderTypeMapspandefaultCompo extends StObject {
   
   var is: js.UndefOr[String] = js.undefined
   
-  /**
-    * Indicates whether the theme context has rtl direction. It is set automatically.
-    * @default false
-    */
-  var isRtl: js.UndefOr[Boolean] = js.undefined
-  
   var itemID: js.UndefOr[String] = js.undefined
   
   var itemProp: js.UndefOr[String] = js.undefined
@@ -293,9 +292,7 @@ trait SliderPropsSliderTypeMapspandefaultCompo extends StObject {
     * If an array, it should contain objects with `value` and an optional `label` keys.
     * @default false
     */
-  var marks: js.UndefOr[
-    Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark]
-  ] = js.undefined
+  var marks: js.UndefOr[Boolean | js.Array[com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark]] = js.undefined
   
   /**
     * The maximum allowed value of the slider.
@@ -524,15 +521,23 @@ trait SliderPropsSliderTypeMapspandefaultCompo extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLSpanElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
   /**
     * A transformation function, to change the scale of the slider.
-    * @default (x) => x
+    * @param {any} x
+    * @returns {any}
+    * @default function Identity(x) {
+    *   return x;
+    * }
     */
   var scale: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
   
@@ -550,14 +555,14 @@ trait SliderPropsSliderTypeMapspandefaultCompo extends StObject {
     * The props used for each slot inside the Slider.
     * @default {}
     */
-  var slotProps: js.UndefOr[com.olvind.mui.muiBase.anon.Mark] = js.undefined
+  var slotProps: js.UndefOr[Mark] = js.undefined
   
   /**
     * The components used for each slot inside the Slider.
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[MarkLabel] = js.undefined
+  var slots: js.UndefOr[Rail] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -628,7 +633,11 @@ trait SliderPropsSliderTypeMapspandefaultCompo extends StObject {
     *
     * - {number} value The value label's value to format
     * - {number} index The value label's index to format
-    * @default (x) => x
+    * @param {any} x
+    * @returns {any}
+    * @default function Identity(x) {
+    *   return x;
+    * }
     */
   var valueLabelFormat: js.UndefOr[String | (js.Function2[/* value */ Double, /* index */ Double, ReactElement])] = js.undefined
   
@@ -854,6 +863,10 @@ object SliderPropsSliderTypeMapspandefaultCompo {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -866,7 +879,7 @@ object SliderPropsSliderTypeMapspandefaultCompo {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setClasses(value: js.UndefOr[PartialSliderUnstyledClasses] & ColorPrimary): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: PartialSliderClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
@@ -874,17 +887,21 @@ object SliderPropsSliderTypeMapspandefaultCompo {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setComponents(value: Mark): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: MarkLabel): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    inline def setComponentsProps(value: com.olvind.mui.muiBase.anon.Mark): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
+    inline def setComponentsProps(value: Mark): Self = StObject.set(x, "componentsProps", value.asInstanceOf[js.Any])
     
     inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -950,10 +967,6 @@ object SliderPropsSliderTypeMapspandefaultCompo {
     
     inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
-    inline def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
-    
-    inline def setIsRtlUndefined: Self = StObject.set(x, "isRtl", js.undefined)
-    
     inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     
     inline def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
@@ -986,11 +999,11 @@ object SliderPropsSliderTypeMapspandefaultCompo {
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    inline def setMarks(value: Boolean | js.Array[com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+    inline def setMarks(value: Boolean | js.Array[com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
-    inline def setMarksVarargs(value: com.olvind.mui.muiBase.sliderUnstyledUseSliderDottypesMod.Mark*): Self = StObject.set(x, "marks", js.Array(value*))
+    inline def setMarksVarargs(value: com.olvind.mui.muiBase.useSliderUseSliderDottypesMod.Mark*): Self = StObject.set(x, "marks", js.Array(value*))
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
@@ -1366,6 +1379,10 @@ object SliderPropsSliderTypeMapspandefaultCompo {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1373,6 +1390,10 @@ object SliderPropsSliderTypeMapspandefaultCompo {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -1392,13 +1413,13 @@ object SliderPropsSliderTypeMapspandefaultCompo {
     
     inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    inline def setSlotProps(value: com.olvind.mui.muiBase.anon.Mark): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: Mark): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: MarkLabel): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: Rail): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     

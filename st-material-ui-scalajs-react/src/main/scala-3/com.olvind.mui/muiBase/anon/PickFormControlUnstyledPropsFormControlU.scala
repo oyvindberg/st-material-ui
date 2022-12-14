@@ -16,14 +16,26 @@ trait PickFormControlUnstyledPropsFormControlU extends StObject {
   
   var error: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * If `true`, the form element has some value.
+    */
   var filled: Boolean
   
+  /**
+    * If `true`, the form element is focused and not disabled.
+    */
   var focused: Boolean
   
+  /**
+    * Callback fired when the form element has lost focus.
+    */
   def onBlur(): Unit
   
   var onChange: js.UndefOr[ChangeEventHandler[NativeFormControlElement]] = js.undefined
   
+  /**
+    * Callback fired when the form element receives focus.
+    */
   def onFocus(): Unit
   
   var required: js.UndefOr[Boolean] = js.undefined

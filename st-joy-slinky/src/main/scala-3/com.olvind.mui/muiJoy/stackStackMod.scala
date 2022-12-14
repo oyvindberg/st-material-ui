@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object stackStackMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Stack](https://mui.com/joy-ui/react-stack/)
+    *
+    * API:
+    *
+    * - [Stack API](https://mui.com/joy-ui/api/stack/)
+    */
   @JSImport("@mui/joy/Stack/Stack", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsStackTypeMapdiv, Element | Null] = js.native

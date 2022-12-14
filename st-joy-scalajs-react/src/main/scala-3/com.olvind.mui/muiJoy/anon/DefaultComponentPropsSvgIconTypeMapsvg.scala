@@ -301,7 +301,7 @@ trait DefaultComponentPropsSvgIconTypeMapsvg extends StObject {
     */
   var fontSize: js.UndefOr[
     OverridableStringUnion[
-      "inherit" | "xs3" | "xs2" | "xs" | "sm" | "md" | "lg" | "xl" | "xl2" | "xl3" | "xl4" | "xl5" | "xl6" | "xl7", 
+      "inherit" | (/* keyof @mui/joy.@mui/joy/styles/types/typography.FontSize */ String), 
       SvgIconPropsSizeOverrides
     ]
   ] = js.undefined
@@ -1376,7 +1376,7 @@ object DefaultComponentPropsSvgIconTypeMapsvg {
     
     inline def setFontSize(
       value: OverridableStringUnion[
-          "inherit" | "xs3" | "xs2" | "xs" | "sm" | "md" | "lg" | "xl" | "xl2" | "xl3" | "xl4" | "xl5" | "xl6" | "xl7", 
+          "inherit" | (/* keyof @mui/joy.@mui/joy/styles/types/typography.FontSize */ String), 
           SvgIconPropsSizeOverrides
         ]
     ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])

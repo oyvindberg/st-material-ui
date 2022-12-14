@@ -59,6 +59,19 @@ trait ExpandText extends StObject {
   var separator: js.UndefOr[japgolly.scalajs.react.facade.React.Node] = js.undefined
   
   /**
+    * The props used for each slot inside the Breadcumb.
+    * @default {}
+    */
+  var slotProps: js.UndefOr[`3`] = js.undefined
+  
+  /**
+    * The components used for each slot inside the Breadcumb.
+    * Either a string to use a HTML element or a component.
+    * @default {}
+    */
+  var slots: js.UndefOr[CollapsedIcon] = js.undefined
+  
+  /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
   var sx: js.UndefOr[SxProps[Theme]] = js.undefined
@@ -112,6 +125,14 @@ object ExpandText {
     inline def setSeparatorVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "separator", js.Array(value*))
     
     inline def setSeparatorVdomElement(value: VdomElement): Self = StObject.set(x, "separator", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setSlotProps(value: `3`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    
+    inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
+    
+    inline def setSlots(value: CollapsedIcon): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
     inline def setSx(value: SxProps[Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     

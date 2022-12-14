@@ -16,9 +16,12 @@ object sliderSliderClassesMod {
   
   inline def getSliderUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSliderUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type SliderClassKey = "root" | "marked" | "vertical" | "disabled" | "dragging" | "focusVisible" | "rail" | "track" | "trackFalse" | "trackInverted" | "thumb" | "valueLabel" | "valueLabelOpen" | "mark" | "markActive" | "markLabel" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "sizeSm" | "sizeMd" | "sizeLg"
+  type SliderClassKey = "root" | "marked" | "vertical" | "disabled" | "dragging" | "focusVisible" | "rail" | "track" | "trackFalse" | "trackInverted" | "thumb" | "valueLabel" | "valueLabelOpen" | "mark" | "markActive" | "markLabel" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "colorContext" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid" | "sizeSm" | "sizeMd" | "sizeLg"
   
   trait SliderClasses extends StObject {
+    
+    /** Styles applied to the root element when color inversion is triggered. */
+    var colorContext: String
     
     /** Styles applied to the root element if `color="danger"`. */
     var colorDanger: String
@@ -92,12 +95,25 @@ object sliderSliderClassesMod {
     /** Class name applied to the thumb label element if it's open. */
     var valueLabelOpen: String
     
+    /** Styles applied to the root element if `variant="outlined"`. */
+    var variantOutlined: String
+    
+    /** Styles applied to the root element if `variant="plain"`. */
+    var variantPlain: String
+    
+    /** Styles applied to the root element if `variant="soft"`. */
+    var variantSoft: String
+    
+    /** Styles applied to the root element if `variant="solid"`. */
+    var variantSolid: String
+    
     /** Class name applied to the root element if `orientation="vertical"`. */
     var vertical: String
   }
   object SliderClasses {
     
     inline def apply(
+      colorContext: String,
       colorDanger: String,
       colorInfo: String,
       colorNeutral: String,
@@ -122,14 +138,20 @@ object sliderSliderClassesMod {
       trackInverted: String,
       valueLabel: String,
       valueLabelOpen: String,
+      variantOutlined: String,
+      variantPlain: String,
+      variantSoft: String,
+      variantSolid: String,
       vertical: String
     ): SliderClasses = {
-      val __obj = js.Dynamic.literal(colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], markActive = markActive.asInstanceOf[js.Any], markLabel = markLabel.asInstanceOf[js.Any], marked = marked.asInstanceOf[js.Any], rail = rail.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], trackFalse = trackFalse.asInstanceOf[js.Any], trackInverted = trackInverted.asInstanceOf[js.Any], valueLabel = valueLabel.asInstanceOf[js.Any], valueLabelOpen = valueLabelOpen.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(colorContext = colorContext.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], markActive = markActive.asInstanceOf[js.Any], markLabel = markLabel.asInstanceOf[js.Any], marked = marked.asInstanceOf[js.Any], rail = rail.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], trackFalse = trackFalse.asInstanceOf[js.Any], trackInverted = trackInverted.asInstanceOf[js.Any], valueLabel = valueLabel.asInstanceOf[js.Any], valueLabelOpen = valueLabelOpen.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
       __obj.asInstanceOf[SliderClasses]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: SliderClasses] (val x: Self) extends AnyVal {
+      
+      inline def setColorContext(value: String): Self = StObject.set(x, "colorContext", value.asInstanceOf[js.Any])
       
       inline def setColorDanger(value: String): Self = StObject.set(x, "colorDanger", value.asInstanceOf[js.Any])
       
@@ -178,6 +200,14 @@ object sliderSliderClassesMod {
       inline def setValueLabel(value: String): Self = StObject.set(x, "valueLabel", value.asInstanceOf[js.Any])
       
       inline def setValueLabelOpen(value: String): Self = StObject.set(x, "valueLabelOpen", value.asInstanceOf[js.Any])
+      
+      inline def setVariantOutlined(value: String): Self = StObject.set(x, "variantOutlined", value.asInstanceOf[js.Any])
+      
+      inline def setVariantPlain(value: String): Self = StObject.set(x, "variantPlain", value.asInstanceOf[js.Any])
+      
+      inline def setVariantSoft(value: String): Self = StObject.set(x, "variantSoft", value.asInstanceOf[js.Any])
+      
+      inline def setVariantSolid(value: String): Self = StObject.set(x, "variantSolid", value.asInstanceOf[js.Any])
       
       inline def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }

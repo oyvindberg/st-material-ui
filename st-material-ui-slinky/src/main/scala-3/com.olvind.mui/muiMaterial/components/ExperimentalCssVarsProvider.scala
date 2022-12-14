@@ -51,8 +51,6 @@ object ExperimentalCssVarsProvider {
     
     inline def modeStorageKey(value: String): this.type = set("modeStorageKey", value.asInstanceOf[js.Any])
     
-    inline def shouldSkipGeneratingVar(value: (/* keys */ js.Array[String], /* value */ String | Double) => Boolean): this.type = set("shouldSkipGeneratingVar", js.Any.fromFunction2(value))
-    
     inline def storageWindow(value: Window): this.type = set("storageWindow", value.asInstanceOf[js.Any])
     
     inline def storageWindowNull: this.type = set("storageWindow", null)

@@ -49,7 +49,7 @@ trait Color extends StObject {
   var sx: js.UndefOr[SxProps] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'soft'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, AlertPropsVariantOverrides]] = js.undefined

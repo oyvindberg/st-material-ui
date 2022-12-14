@@ -76,6 +76,7 @@ trait Action extends StObject {
   
   /**
     * The size of the component.
+    * @default 'md'
     */
   var size: js.UndefOr[OverridableStringUnion["sm" | "md" | "lg", ButtonPropsSizeOverrides]] = js.undefined
   
@@ -95,7 +96,7 @@ trait Action extends StObject {
   var tabIndex: js.UndefOr[NonNullable[js.UndefOr[Double]]] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'solid'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, ButtonPropsVariantOverrides]] = js.undefined

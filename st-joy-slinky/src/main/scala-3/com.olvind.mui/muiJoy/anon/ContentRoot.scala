@@ -9,21 +9,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/AspectRatio/AspectRatioProps.AspectRatioOwnerState>,   content :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/AspectRatio/AspectRatioProps.AspectRatioOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/AspectRatio/AspectRatioProps.AspectRatioOwnerState>,   content :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/AspectRatio/AspectRatioProps.AspectRatioOwnerState>}[P]} */
 trait ContentRoot extends StObject {
   
-  var content: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, AspectRatioOwnerState]
-  ] = js.undefined
+  var content: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, AspectRatioOwnerState]
   
-  var root: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, AspectRatioOwnerState]
-  ] = js.undefined
+  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, AspectRatioOwnerState]
 }
 object ContentRoot {
   
-  inline def apply(): ContentRoot = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    content: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, AspectRatioOwnerState],
+    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, AspectRatioOwnerState]
+  ): ContentRoot = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentRoot]
   }
   
@@ -36,14 +34,10 @@ object ContentRoot {
       value: AspectRatioOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
-    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-    
     inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, AspectRatioOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootFunction1(
       value: AspectRatioOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
-    
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

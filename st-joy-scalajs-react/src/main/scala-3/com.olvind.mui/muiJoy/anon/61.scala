@@ -1,26 +1,27 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `61` extends StObject {
+trait `61`[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  color :@mui/joy.@mui/joy/styles/types/colorSystem.ColorPaletteProp | 'inherit' | undefined} */ js.Any */] extends StObject {
   
-  var color: js.UndefOr[ColorPaletteProp | "inherit"] = js.undefined
+  var color: (/* import warning: importer.ImportType#apply Failed type conversion: T['color'] */ js.Any) | "context"
 }
 object `61` {
   
-  inline def apply(): `61` = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`61`]
+  inline def apply[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  color :@mui/joy.@mui/joy/styles/types/colorSystem.ColorPaletteProp | 'inherit' | undefined} */ js.Any */](
+    color: (/* import warning: importer.ImportType#apply Failed type conversion: T['color'] */ js.Any) | "context"
+  ): `61`[T] = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`61`[T]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `61`] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `61`[?], T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  color :@mui/joy.@mui/joy/styles/types/colorSystem.ColorPaletteProp | 'inherit' | undefined} */ js.Any */] (val x: Self & `61`[T]) extends AnyVal {
     
-    inline def setColor(value: ColorPaletteProp | "inherit"): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-    
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColor(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: T['color'] */ js.Any) | "context"
+    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }
 }

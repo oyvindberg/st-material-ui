@@ -1,7 +1,6 @@
 package com.olvind.mui.muiBase
 
-import com.olvind.mui.muiBase.anon.`0`
-import com.olvind.mui.muiBase.anon.`1`
+import com.olvind.mui.muiBase.anon.Root
 import com.olvind.mui.react.mod.FocusEventHandler
 import com.olvind.mui.react.mod.Ref
 import com.olvind.mui.std.NonNullable
@@ -9,6 +8,7 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactFocusEventFrom
 import japgolly.scalajs.react.facade.Empty
 import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.ElementType
 import japgolly.scalajs.react.facade.React.Node
 import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
@@ -37,9 +37,7 @@ object buttonUnstyledButtonUnstyledDottypesMod {
     }
   }
   
-  trait ButtonUnstyledComponentsPropsOverrides extends StObject
-  
-  /* Inlined parent std.Omit<@mui/base.@mui/base/ButtonUnstyled/useButton.types.UseButtonParameters, 'ref'> */
+  /* Inlined parent std.Omit<@mui/base.@mui/base/useButton.UseButtonParameters, 'ref'> */
   trait ButtonUnstyledOwnProps extends StObject {
     
     /**
@@ -63,14 +61,14 @@ object buttonUnstyledButtonUnstyledDottypesMod {
       * The props used for each slot inside the Button.
       * @default {}
       */
-    var slotProps: js.UndefOr[`0`] = js.undefined
+    var slotProps: js.UndefOr[Root] = js.undefined
     
     /**
       * The components used for each slot inside the Button.
       * Either a string to use a HTML element or a component.
       * @default {}
       */
-    var slots: js.UndefOr[`1`] = js.undefined
+    var slots: js.UndefOr[ButtonUnstyledSlots] = js.undefined
     
     var tabIndex: js.UndefOr[NonNullable[js.UndefOr[Double]]] = js.undefined
     
@@ -126,11 +124,11 @@ object buttonUnstyledButtonUnstyledDottypesMod {
       
       inline def setOnFocusVisibleUndefined: Self = StObject.set(x, "onFocusVisible", js.undefined)
       
-      inline def setSlotProps(value: `0`): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      inline def setSlotProps(value: Root): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
       
       inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
-      inline def setSlots(value: `1`): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: ButtonUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
@@ -169,6 +167,32 @@ object buttonUnstyledButtonUnstyledDottypesMod {
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
       inline def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ButtonUnstyledRootSlotPropsOverrides extends StObject
+  
+  trait ButtonUnstyledSlots extends StObject {
+    
+    /**
+      * The component that renders the root.
+      * @default props.href || props.to ? 'a' : 'button'
+      */
+    var root: js.UndefOr[ElementType] = js.undefined
+  }
+  object ButtonUnstyledSlots {
+    
+    inline def apply(): ButtonUnstyledSlots = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ButtonUnstyledSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonUnstyledSlots] (val x: Self) extends AnyVal {
+      
+      inline def setRoot(value: ElementType): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

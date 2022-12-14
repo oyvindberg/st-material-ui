@@ -39,6 +39,7 @@ trait Children extends StObject {
   
   /**
     * The CSS object-fit value of the first-child.
+    * @default 'cover'
     */
   var objectFit: js.UndefOr[ObjectFit] = js.undefined
   
@@ -55,7 +56,7 @@ trait Children extends StObject {
   var sx: js.UndefOr[SxProps] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'soft'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, AspectRatioPropsVariantOverrides]] = js.undefined

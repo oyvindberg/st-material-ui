@@ -9,6 +9,8 @@ trait PartialSelectClasses extends StObject {
   
   var disabled: js.UndefOr[String] = js.undefined
   
+  var error: js.UndefOr[String] = js.undefined
+  
   var filled: js.UndefOr[String] = js.undefined
   
   var icon: js.UndefOr[String] = js.undefined
@@ -44,6 +46,10 @@ object PartialSelectClasses {
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setFilled(value: String): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     

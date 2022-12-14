@@ -13,6 +13,16 @@ object linkMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Link](https://mui.com/joy-ui/react-link/)
+    *
+    * API:
+    *
+    * - [Link API](https://mui.com/joy-ui/api/link/)
+    */
   @JSImport("@mui/joy/Link", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsLinkTypeMapa, Element | Null] = js.native

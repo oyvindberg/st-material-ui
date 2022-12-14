@@ -1,5 +1,6 @@
 package com.olvind.mui.muiBase.anon
 
+import com.olvind.mui.muiBase.switchUnstyledSwitchUnstyledDottypesMod.SwitchUnstyledSlots
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -155,6 +156,8 @@ trait DefaultComponentPropsSwitchUnstyledTypeM extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   /**
@@ -170,6 +173,8 @@ trait DefaultComponentPropsSwitchUnstyledTypeM extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -405,6 +410,8 @@ trait DefaultComponentPropsSwitchUnstyledTypeM extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLSpanElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   /**
     * If `true`, the `input` element is required.
     */
@@ -413,6 +420,8 @@ trait DefaultComponentPropsSwitchUnstyledTypeM extends StObject {
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -424,14 +433,14 @@ trait DefaultComponentPropsSwitchUnstyledTypeM extends StObject {
     * The props used for each slot inside the Switch.
     * @default {}
     */
-  var slotProps: js.UndefOr[Track] = js.undefined
+  var slotProps: js.UndefOr[Thumb] = js.undefined
   
   /**
     * The components used for each slot inside the Switch.
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[Thumb] = js.undefined
+  var slots: js.UndefOr[SwitchUnstyledSlots] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -673,6 +682,10 @@ object DefaultComponentPropsSwitchUnstyledTypeM {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -693,9 +706,13 @@ object DefaultComponentPropsSwitchUnstyledTypeM {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1139,6 +1156,10 @@ object DefaultComponentPropsSwitchUnstyledTypeM {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1151,6 +1172,10 @@ object DefaultComponentPropsSwitchUnstyledTypeM {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+    
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -1161,13 +1186,13 @@ object DefaultComponentPropsSwitchUnstyledTypeM {
     
     inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    inline def setSlotProps(value: Track): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: Thumb): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    inline def setSlots(value: Thumb): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: SwitchUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     

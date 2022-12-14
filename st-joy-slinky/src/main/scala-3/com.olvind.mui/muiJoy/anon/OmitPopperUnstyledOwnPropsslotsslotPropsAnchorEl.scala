@@ -1,7 +1,7 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiBase.anon.Placement
-import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledMod.PopperPlacementType
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperPlacementType
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperUnstyledChildrenProps
 import com.olvind.mui.muiJoy.selectSelectPropsMod.SelectPropsColorOverrides
 import com.olvind.mui.muiJoy.selectSelectPropsMod.SelectPropsSizeOverrides
 import com.olvind.mui.muiJoy.selectSelectPropsMod.SelectPropsVariantOverrides
@@ -9,6 +9,7 @@ import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesVariantsMod.VariantProp
 import com.olvind.mui.muiTypes.mod.OverridableStringUnion
 import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
 import slinky.core.facade.ReactElement
 import slinky.core.facade.ReactRef
 import org.scalablytyped.runtime.StObject
@@ -19,12 +20,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OmitPopperUnstyledOwnPropsslotsslotPropsAnchorEl extends StObject {
   
   var anchorEl: js.UndefOr[
-    Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+    Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
     ])
   ] = js.undefined
   
-  var children: js.UndefOr[ReactElement | (js.Function1[/* props */ Placement, ReactElement])] = js.undefined
+  var children: js.UndefOr[
+    ReactElement | (js.Function1[/* props */ PopperUnstyledChildrenProps, ReactElement])
+  ] = js.undefined
   
   var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, SelectPropsColorOverrides]] = js.undefined
   
@@ -39,6 +42,8 @@ trait OmitPopperUnstyledOwnPropsslotsslotPropsAnchorEl extends StObject {
   var modifiers: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options * / any['modifiers'] */ js.Any
   ] = js.undefined
+  
+  var ownerState: js.UndefOr[Any] = js.undefined
   
   var placement: js.UndefOr[PopperPlacementType] = js.undefined
   
@@ -67,22 +72,22 @@ object OmitPopperUnstyledOwnPropsslotsslotPropsAnchorEl {
   implicit open class MutableBuilder[Self <: OmitPopperUnstyledOwnPropsslotsslotPropsAnchorEl] (val x: Self) extends AnyVal {
     
     inline def setAnchorEl(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ])
     ): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
     
     inline def setAnchorElFunction0(
-      value: () => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+      value: () => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
     ): Self = StObject.set(x, "anchorEl", js.Any.fromFunction0(value))
     
     inline def setAnchorElNull: Self = StObject.set(x, "anchorEl", null)
     
     inline def setAnchorElUndefined: Self = StObject.set(x, "anchorEl", js.undefined)
     
-    inline def setChildren(value: ReactElement | (js.Function1[/* props */ Placement, ReactElement])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactElement | (js.Function1[/* props */ PopperUnstyledChildrenProps, ReactElement])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenFunction1(value: /* props */ Placement => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildrenFunction1(value: /* props */ PopperUnstyledChildrenProps => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     inline def setChildrenReactElement(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
@@ -117,6 +122,10 @@ object OmitPopperUnstyledOwnPropsslotsslotPropsAnchorEl {
     ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    
+    inline def setOwnerState(value: Any): Self = StObject.set(x, "ownerState", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerStateUndefined: Self = StObject.set(x, "ownerState", js.undefined)
     
     inline def setPlacement(value: PopperPlacementType): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     

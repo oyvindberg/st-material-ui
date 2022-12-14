@@ -1,13 +1,17 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsStackTypeMapdiv
+import com.olvind.mui.muiSystem.stackStackClassesMod.StackClasses
 import com.olvind.mui.react.mod.global.JSX.Element
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object stackMod extends Shortcut {
+object stackMod {
+  
+  @JSImport("@mui/material/Stack", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     *
@@ -23,8 +27,9 @@ object stackMod extends Shortcut {
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsStackTypeMapdiv, Element] = js.native
   
-  type _To = js.Function1[/* props */ DefaultComponentPropsStackTypeMapdiv, Element]
+  inline def getStackUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStackUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  /* This means you don't have to write `default`, but can instead just say `stackMod.foo` */
-  override def _to: js.Function1[/* props */ DefaultComponentPropsStackTypeMapdiv, Element] = default
+  @JSImport("@mui/material/Stack", "stackClasses")
+  @js.native
+  val stackClasses: StackClasses = js.native
 }

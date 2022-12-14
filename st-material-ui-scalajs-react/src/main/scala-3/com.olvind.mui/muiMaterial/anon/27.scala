@@ -1,28 +1,26 @@
 package com.olvind.mui.muiMaterial.anon
 
-import japgolly.scalajs.react.facade.React.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `27`[P, D /* <: ElementType */] extends StObject {
+trait `27` extends StObject {
   
-  var defaultComponent: D
-  
-  var props: P & Size
+  /* you can set this property to change the underlying component. keep in mind that the types of callbacks may be different */
+  val component: js.UndefOr[String] = js.undefined
 }
 object `27` {
   
-  inline def apply[P, D /* <: ElementType */](defaultComponent: D, props: P & Size): `27`[P, D] = {
-    val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`27`[P, D]]
+  inline def apply(): `27` = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`27`]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `27`[?, ?], P, D /* <: ElementType */] (val x: Self & (`27`[P, D])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `27`] (val x: Self) extends AnyVal {
     
-    inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+    inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: P & Size): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
   }
 }

@@ -27,6 +27,7 @@ trait AnchorOrigin extends StObject {
   
   /**
     * The content rendered within the badge.
+    * @default ''
     */
   var badgeContent: js.UndefOr[ReactElement] = js.undefined
   
@@ -77,7 +78,7 @@ trait AnchorOrigin extends StObject {
   var sx: js.UndefOr[SxProps] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'solid'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, BadgePropsVariantOverrides]] = js.undefined

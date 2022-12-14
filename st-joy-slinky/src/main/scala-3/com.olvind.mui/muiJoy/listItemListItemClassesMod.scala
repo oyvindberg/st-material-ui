@@ -16,9 +16,12 @@ object listItemListItemClassesMod {
   
   inline def getListItemUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getListItemUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type ListItemClassKey = "root" | "startAction" | "endAction" | "nested" | "nesting" | "sticky" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "variantPlain" | "variantSoft" | "variantOutlined" | "variantSolid"
+  type ListItemClassKey = "root" | "startAction" | "endAction" | "nested" | "nesting" | "sticky" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "colorContext" | "variantPlain" | "variantSoft" | "variantOutlined" | "variantSolid"
   
   trait ListItemClasses extends StObject {
+    
+    /** Styles applied to the root element when color inversion is triggered. */
+    var colorContext: String
     
     /** Styles applied to the root element if `color="danger"`. */
     var colorDanger: String
@@ -71,6 +74,7 @@ object listItemListItemClassesMod {
   object ListItemClasses {
     
     inline def apply(
+      colorContext: String,
       colorDanger: String,
       colorInfo: String,
       colorNeutral: String,
@@ -88,12 +92,14 @@ object listItemListItemClassesMod {
       variantSoft: String,
       variantSolid: String
     ): ListItemClasses = {
-      val __obj = js.Dynamic.literal(colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], endAction = endAction.asInstanceOf[js.Any], nested = nested.asInstanceOf[js.Any], nesting = nesting.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startAction = startAction.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(colorContext = colorContext.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], endAction = endAction.asInstanceOf[js.Any], nested = nested.asInstanceOf[js.Any], nesting = nesting.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startAction = startAction.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListItemClasses]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ListItemClasses] (val x: Self) extends AnyVal {
+      
+      inline def setColorContext(value: String): Self = StObject.set(x, "colorContext", value.asInstanceOf[js.Any])
       
       inline def setColorDanger(value: String): Self = StObject.set(x, "colorDanger", value.asInstanceOf[js.Any])
       

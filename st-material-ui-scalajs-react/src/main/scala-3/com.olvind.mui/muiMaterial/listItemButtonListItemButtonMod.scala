@@ -3,7 +3,7 @@ package com.olvind.mui.muiMaterial
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriabusy
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapListAbout
 import com.olvind.mui.muiMaterial.anon.PartialListItemButtonClasses
-import com.olvind.mui.muiMaterial.anon.`16`
+import com.olvind.mui.muiMaterial.anon.`19`
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
@@ -169,7 +169,7 @@ object listItemButtonListItemButtonMod extends Shortcut {
   
   type ListItemButtonProps[D /* <: ElementType */, P] = OverrideProps[ListItemButtonTypeMap[P, D], D]
   
-  type ListItemButtonTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[`16`[P, D]]
+  type ListItemButtonTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[`19`[P, D]]
   
   type _To = js.Function1[
     /* props */ OverridePropsExtendButtonBaseTypeMapListAbout | DefaultComponentPropsExtendButtonBaseTypAriabusy, 

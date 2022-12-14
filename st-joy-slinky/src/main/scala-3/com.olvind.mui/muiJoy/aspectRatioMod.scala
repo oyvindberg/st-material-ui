@@ -13,6 +13,16 @@ object aspectRatioMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Aspect Ratio](https://mui.com/joy-ui/react-aspect-ratio/)
+    *
+    * API:
+    *
+    * - [AspectRatio API](https://mui.com/joy-ui/api/aspect-ratio/)
+    */
   @JSImport("@mui/joy/AspectRatio", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsAspectRatioTypeMapd, Element | Null] = js.native

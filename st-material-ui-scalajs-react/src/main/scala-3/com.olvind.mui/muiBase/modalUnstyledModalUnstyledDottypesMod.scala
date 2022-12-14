@@ -1,10 +1,6 @@
 package com.olvind.mui.muiBase
 
 import com.olvind.mui.muiBase.anon.Backdrop
-import com.olvind.mui.muiBase.anon.BackdropRoot
-import com.olvind.mui.muiBase.anon.ModalUnstyledTypeMapdivprops
-import com.olvind.mui.muiBase.anon.PartialModalUnstyledClasses
-import com.olvind.mui.muiTypes.mod.OverridableTypeMap
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -41,6 +37,7 @@ import japgolly.scalajs.react.ReactTransitionEventFrom
 import japgolly.scalajs.react.ReactUIEventFrom
 import japgolly.scalajs.react.ReactWheelEventFrom
 import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
 import japgolly.scalajs.react.vdom.VdomElement
 import org.scalajs.dom.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -49,38 +46,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object modalUnstyledModalUnstyledDottypesMod {
   
-  trait ExtendModalUnstyledTypeMap[M /* <: OverridableTypeMap */] extends StObject {
-    
-    var defaultComponent: /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any
-    
-    var props: (/* import warning: importer.ImportType#apply Failed type conversion: M['props'] */ js.Any) & ModalUnstyledTypeMapdivprops
-  }
-  object ExtendModalUnstyledTypeMap {
-    
-    inline def apply[M /* <: OverridableTypeMap */](
-      defaultComponent: /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any,
-      props: (/* import warning: importer.ImportType#apply Failed type conversion: M['props'] */ js.Any) & ModalUnstyledTypeMapdivprops
-    ): ExtendModalUnstyledTypeMap[M] = {
-      val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ExtendModalUnstyledTypeMap[M]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ExtendModalUnstyledTypeMap[?], M /* <: OverridableTypeMap */] (val x: Self & ExtendModalUnstyledTypeMap[M]) extends AnyVal {
-      
-      inline def setDefaultComponent(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any
-      ): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
-      
-      inline def setProps(
-        value: (/* import warning: importer.ImportType#apply Failed type conversion: M['props'] */ js.Any) & ModalUnstyledTypeMapdivprops
-      ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
-    }
-  }
+  trait ModalUnstyledBackdropSlotPropsOverrides extends StObject
   
-  trait ModalUnstyledComponentsPropsOverrides extends StObject
-  
-  /* Inlined @mui/base.@mui/base/ModalUnstyled/ModalUnstyled.types.ModalUnstyledProps<@mui/base.@mui/base/ModalUnstyled/ModalUnstyled.types.ModalUnstyledTypeMap<{}, 'div'>['defaultComponent']> & {  closeAfterTransition :boolean,   disableAutoFocus :boolean,   disableEnforceFocus :boolean,   disableEscapeKeyDown :boolean,   disablePortal :boolean,   disableRestoreFocus :boolean,   disableScrollLock :boolean,   exited :boolean,   hideBackdrop :boolean,   keepMounted :boolean} */
+  /* Inlined @mui/base.@mui/base/ModalUnstyled/ModalUnstyled.types.ModalUnstyledProps<@mui/base.@mui/base/ModalUnstyled/ModalUnstyled.types.ModalUnstyledTypeMap<{}, 'div'>['defaultComponent'], {  component :react.react.ElementType<any> | undefined,   focusVisible :boolean | undefined}> & {  closeAfterTransition :boolean,   disableAutoFocus :boolean,   disableEnforceFocus :boolean,   disableEscapeKeyDown :boolean,   disablePortal :boolean,   disableRestoreFocus :boolean,   disableScrollLock :boolean,   exited :boolean,   hideBackdrop :boolean,   keepMounted :boolean} */
   trait ModalUnstyledOwnerState extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -189,6 +157,8 @@ object modalUnstyledModalUnstyledDottypesMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     /**
@@ -199,11 +169,6 @@ object modalUnstyledModalUnstyledDottypesMod {
     var className: js.UndefOr[String] = js.undefined
     
     /**
-      * Override or extend the styles applied to the component.
-      */
-    var classes: js.UndefOr[PartialModalUnstyledClasses] = js.undefined
-    
-    /**
       * When set to true the Modal waits until a nested Transition is completed before closing.
       * @default false
       */
@@ -211,7 +176,7 @@ object modalUnstyledModalUnstyledDottypesMod {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr["div"] = js.undefined
+    var component: js.UndefOr[ElementType] = js.undefined
     
     /**
       * An HTML element or function that returns one.
@@ -221,6 +186,8 @@ object modalUnstyledModalUnstyledDottypesMod {
       * so it's simply `document.body` most of the time.
       */
     var container: js.UndefOr[org.scalajs.dom.Element | (js.Function0[org.scalajs.dom.Element | Null]) | Null] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
@@ -284,6 +251,8 @@ object modalUnstyledModalUnstyledDottypesMod {
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
     var exited: Boolean
+    
+    var focusVisible: js.UndefOr[Boolean] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
@@ -517,9 +486,13 @@ object modalUnstyledModalUnstyledDottypesMod {
     
     var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -538,7 +511,7 @@ object modalUnstyledModalUnstyledDottypesMod {
       * Either a string to use a HTML element or a component.
       * @default {}
       */
-    var slots: js.UndefOr[BackdropRoot] = js.undefined
+    var slots: js.UndefOr[ModalUnstyledSlots] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
@@ -780,6 +753,10 @@ object modalUnstyledModalUnstyledDottypesMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -790,10 +767,6 @@ object modalUnstyledModalUnstyledDottypesMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClasses(value: PartialModalUnstyledClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
-      
-      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
-      
       inline def setCloseAfterTransition(value: Boolean): Self = StObject.set(x, "closeAfterTransition", value.asInstanceOf[js.Any])
       
       inline def setCloseAfterTransitionUndefined: Self = StObject.set(x, "closeAfterTransition", js.undefined)
@@ -802,7 +775,7 @@ object modalUnstyledModalUnstyledDottypesMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setComponent(value: "div"): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -814,9 +787,13 @@ object modalUnstyledModalUnstyledDottypesMod {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -873,6 +850,10 @@ object modalUnstyledModalUnstyledDottypesMod {
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
       inline def setExited(value: Boolean): Self = StObject.set(x, "exited", value.asInstanceOf[js.Any])
+      
+      inline def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+      
+      inline def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -1290,6 +1271,10 @@ object modalUnstyledModalUnstyledDottypesMod {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1297,6 +1282,10 @@ object modalUnstyledModalUnstyledDottypesMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1314,7 +1303,7 @@ object modalUnstyledModalUnstyledDottypesMod {
       
       inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
-      inline def setSlots(value: BackdropRoot): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: ModalUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
@@ -1357,6 +1346,41 @@ object modalUnstyledModalUnstyledDottypesMod {
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+    }
+  }
+  
+  trait ModalUnstyledRootSlotPropsOverrides extends StObject
+  
+  trait ModalUnstyledSlots extends StObject {
+    
+    /**
+      * The component that renders the backdrop.
+      */
+    var backdrop: js.UndefOr[ElementType] = js.undefined
+    
+    /**
+      * The component that renders the root.
+      * @default 'div'
+      */
+    var root: js.UndefOr[ElementType] = js.undefined
+  }
+  object ModalUnstyledSlots {
+    
+    inline def apply(): ModalUnstyledSlots = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ModalUnstyledSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalUnstyledSlots] (val x: Self) extends AnyVal {
+      
+      inline def setBackdrop(value: ElementType): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+      
+      inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+      
+      inline def setRoot(value: ElementType): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

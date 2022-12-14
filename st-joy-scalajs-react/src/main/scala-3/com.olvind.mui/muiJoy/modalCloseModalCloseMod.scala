@@ -10,6 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object modalCloseModalCloseMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Modal](https://mui.com/joy-ui/react-modal/)
+    *
+    * API:
+    *
+    * - [ModalClose API](https://mui.com/joy-ui/api/modal-close/)
+    */
   @JSImport("@mui/joy/ModalClose/ModalClose", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsModalCloseTypeMapbu, Element | Null] = js.native

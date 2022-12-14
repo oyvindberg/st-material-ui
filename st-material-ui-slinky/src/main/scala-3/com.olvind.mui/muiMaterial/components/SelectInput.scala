@@ -49,6 +49,8 @@ object SelectInput {
     
     inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
     
+    inline def error(value: Boolean): this.type = set("error", value.asInstanceOf[js.Any])
+    
     inline def inputRef(value: /* ref */ HTMLSelectElement | Node[Any] => Unit): this.type = set("inputRef", js.Any.fromFunction1(value))
     
     inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])

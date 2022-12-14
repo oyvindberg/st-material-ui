@@ -37,6 +37,17 @@ trait Direction extends StObject {
     * The system prop, which allows defining system overrides as well as additional CSS styles.
     */
   var sx: js.UndefOr[SxProps] = js.undefined
+  
+  /**
+    * If `true`, the CSS flexbox `gap` is used instead of applying `margin` to children.
+    *
+    * While CSS `gap` removes the [known limitations](https://mui.com/joy-ui/react-stack#limitations),
+    * it is not fully supported in some browsers. We recommend checking https://caniuse.com/?search=flex%20gap before using this flag.
+    *
+    * To enable this flag globally, follow the [theme's default props](https://mui.com/joy-ui/customization/themed-components/#default-props) configuration.
+    * @default false
+    */
+  var useFlexGap: js.UndefOr[Boolean] = js.undefined
 }
 object Direction {
   
@@ -84,5 +95,9 @@ object Direction {
           SystemStyleObject[com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme]
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
+    
+    inline def setUseFlexGap(value: Boolean): Self = StObject.set(x, "useFlexGap", value.asInstanceOf[js.Any])
+    
+    inline def setUseFlexGapUndefined: Self = StObject.set(x, "useFlexGap", js.undefined)
   }
 }

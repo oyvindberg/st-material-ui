@@ -13,6 +13,16 @@ object optionMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Select](https://mui.com/joy-ui/react-select/)
+    *
+    * API:
+    *
+    * - [Option API](https://mui.com/joy-ui/api/option/)
+    */
   @JSImport("@mui/joy/Option", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ OverridePropsExtendOptionTypeMapOptionTy, Element] = js.native

@@ -39,12 +39,6 @@ trait Alt extends StObject {
   var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, AvatarPropsColorOverrides]] = js.undefined
   
   /**
-    * [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attributes) applied to the `img` element if the component is used to display an image.
-    * It can be used to listen for the loading error event.
-    */
-  var imgProps: js.UndefOr[ImgHTMLAttributesHTMLImageElement] = js.undefined
-  
-  /**
     * The size of the component.
     * It accepts theme values between 'sm' and 'lg'.
     * @default 'md'
@@ -68,7 +62,7 @@ trait Alt extends StObject {
   var sx: js.UndefOr[SxProps] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'soft'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, AvatarPropsVariantOverrides]] = js.undefined
@@ -100,10 +94,6 @@ object Alt {
     inline def setColor(value: OverridableStringUnion[ColorPaletteProp, AvatarPropsColorOverrides]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-    
-    inline def setImgProps(value: ImgHTMLAttributesHTMLImageElement): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
-    
-    inline def setImgPropsUndefined: Self = StObject.set(x, "imgProps", js.undefined)
     
     inline def setSize(value: OverridableStringUnion["sm" | "md" | "lg", AvatarPropsSizeOverrides]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

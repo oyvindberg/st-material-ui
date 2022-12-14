@@ -13,6 +13,16 @@ object tabPanelMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Tabs](https://mui.com/joy-ui/react-tabs/)
+    *
+    * API:
+    *
+    * - [TabPanel API](https://mui.com/joy-ui/api/tab-panel/)
+    */
   @JSImport("@mui/joy/TabPanel", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsTabPanelTypeMapdiv, Element | Null] = js.native

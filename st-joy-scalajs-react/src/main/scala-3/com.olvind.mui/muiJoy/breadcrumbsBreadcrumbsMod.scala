@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object breadcrumbsBreadcrumbsMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Breadcrumbs](https://mui.com/joy-ui/react-breadcrumbs/)
+    *
+    * API:
+    *
+    * - [Breadcrumbs API](https://mui.com/joy-ui/api/breadcrumbs/)
+    */
   @JSImport("@mui/joy/Breadcrumbs/Breadcrumbs", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsBreadcrumbsTypeMapn, Element | Null] = js.native

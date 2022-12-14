@@ -12,8 +12,16 @@ object cssBaselineMod {
     
     /**
       * Kickstart an elegant, consistent, and simple baseline to build upon.
+      *
+      * Demos:
+      *
+      * - [CSS Baseline](https://mui.com/joy-ui/react-css-baseline/)
+      *
+      * API:
+      *
+      * - [CssBaseline API](https://mui.com/joy-ui/api/css-baseline/)
       */
-    inline def apply(param0: CssBaselineProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: CssBaselineProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@mui/joy/CssBaseline", JSImport.Default)
     @js.native

@@ -11,7 +11,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined Pick<RadioProps<'span', {}>, 'overlay' | 'size' | 'disableIcon'> & {  row :boolean | undefined,   name :string | undefined,   value :unknown | undefined,   onChange :react.react.ChangeEventHandler<std.HTMLInputElement> | undefined} */
+/* Inlined Pick<RadioProps<'span', {}>, 'overlay' | 'size' | 'disableIcon'> & {  orientation :'horizontal' | 'vertical' | undefined,   name :string | undefined,   value :unknown | undefined,   onChange :react.react.ChangeEventHandler<std.HTMLInputElement> | undefined} */
 trait PickRadioPropsspanoverlaysizedisableIcon extends StObject {
   
   var disableIcon: js.UndefOr[Boolean] = js.undefined
@@ -20,9 +20,9 @@ trait PickRadioPropsspanoverlaysizedisableIcon extends StObject {
   
   var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
   
-  var overlay: js.UndefOr[Boolean] = js.undefined
+  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
-  var row: js.UndefOr[Boolean] = js.undefined
+  var overlay: js.UndefOr[Boolean] = js.undefined
   
   var size: js.UndefOr[OverridableStringUnion["sm" | "md" | "lg", RadioPropsSizeOverrides]] = js.undefined
   
@@ -50,13 +50,13 @@ object PickRadioPropsspanoverlaysizedisableIcon {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
+    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
     inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
-    
-    inline def setRow(value: Boolean): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
-    
-    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
     inline def setSize(value: OverridableStringUnion["sm" | "md" | "lg", RadioPropsSizeOverrides]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

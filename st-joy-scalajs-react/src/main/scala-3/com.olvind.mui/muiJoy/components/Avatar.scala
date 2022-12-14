@@ -3,8 +3,7 @@ package com.olvind.mui.muiJoy.components
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiJoy.anon.DefaultComponentPropsAvatarTypeMapdiv
 import com.olvind.mui.muiJoy.anon.Fallback
-import com.olvind.mui.muiJoy.anon.Img
-import com.olvind.mui.muiJoy.anon.ImgHTMLAttributesHTMLImageElement
+import com.olvind.mui.muiJoy.anon.PartialAvatarSlots
 import com.olvind.mui.muiJoy.avatarAvatarPropsMod.AvatarPropsColorOverrides
 import com.olvind.mui.muiJoy.avatarAvatarPropsMod.AvatarPropsSizeOverrides
 import com.olvind.mui.muiJoy.avatarAvatarPropsMod.AvatarPropsVariantOverrides
@@ -157,11 +156,15 @@ object Avatar {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
     inline def color(value: OverridableStringUnion[ColorPaletteProp, AvatarPropsColorOverrides]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -184,8 +187,6 @@ object Avatar {
     inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
     
     inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
-    
-    inline def imgProps(value: ImgHTMLAttributesHTMLImageElement): this.type = set("imgProps", value.asInstanceOf[js.Any])
     
     inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
     
@@ -375,9 +376,13 @@ object Avatar {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -387,9 +392,9 @@ object Avatar {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: Img): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: Fallback): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: Fallback): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: PartialAvatarSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

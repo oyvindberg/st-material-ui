@@ -14,7 +14,7 @@ trait MediaHTMLAttributes[T]
   
   var controlsList: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr["anonymous" | "use-credentials" | ""] = js.undefined
   
   var loop: js.UndefOr[Boolean] = js.undefined
   
@@ -50,7 +50,7 @@ object MediaHTMLAttributes {
     
     inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: "anonymous" | "use-credentials" | ""): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     

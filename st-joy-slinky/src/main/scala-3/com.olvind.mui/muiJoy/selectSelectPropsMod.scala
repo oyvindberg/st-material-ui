@@ -1,7 +1,6 @@
 package com.olvind.mui.muiJoy
 
-import com.olvind.mui.muiBase.selectUnstyledSelectUnstyledDottypesMod.SelectUnstyledCommonProps
-import com.olvind.mui.muiBase.selectUnstyledUseSelectDottypesMod.SelectOption
+import com.olvind.mui.muiBase.useSelectUseSelectDottypesMod.SelectOption
 import com.olvind.mui.muiJoy.anon.Button
 import com.olvind.mui.muiJoy.anon.FocusVisible
 import com.olvind.mui.muiJoy.anon.`1`
@@ -29,7 +28,7 @@ object selectSelectPropsMod {
   trait SelectOwnProps[TValue /* <: js.Object */]
     extends StObject
        with SelectStaticProps
-       with CreateSlotsAndSlotProps[SelectSlot, Button] {
+       with CreateSlotsAndSlotProps[SelectSlots, Button] {
     
     /**
       * The default selected value. Use when the component is not controlled.
@@ -108,9 +107,8 @@ object selectSelectPropsMod {
     }
   }
   
-  trait SelectOwnerState[TValue /* <: js.Object */]
-    extends StObject
-       with SelectOwnProps[TValue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped std.Omit<@mui/joy.@mui/joy/Select/SelectProps.SelectOwnProps<TValue>, 'color'> & @mui/joy.anon.61<@mui/joy.@mui/joy/Select/SelectProps.SelectOwnProps<TValue>> extends std.Function ? std.Omit<@mui/joy.@mui/joy/Select/SelectProps.SelectOwnProps<TValue>, 'color'> & @mui/joy.anon.61<@mui/joy.@mui/joy/Select/SelectProps.SelectOwnProps<TValue>> : {[ K in keyof std.Omit<@mui/joy.@mui/joy/Select/SelectProps.SelectOwnProps<TValue>, 'color'> & @mui/joy.anon.61<@mui/joy.@mui/joy/Select/SelectProps.SelectOwnProps<TValue>> ]: std.Omit<@mui/joy.@mui/joy/Select/SelectProps.SelectOwnProps<TValue>, 'color'> & @mui/joy.anon.61<@mui/joy.@mui/joy/Select/SelectProps.SelectOwnProps<TValue>>[K]} */ trait SelectOwnerState[TValue /* <: js.Object */] extends StObject {
     
     /**
       * If `true`, the select button is active.
@@ -120,8 +118,7 @@ object selectSelectPropsMod {
     /**
       * If `true`, the select button is disabled.
       */
-    @JSName("disabled")
-    var disabled_SelectOwnerState: Boolean
+    var disabled: Boolean
     
     /**
       * If `true`, the select button's focus is visible.
@@ -179,11 +176,78 @@ object selectSelectPropsMod {
   }
   type SelectSlot = "root" | "button" | "startDecorator" | "endDecorator" | "indicator" | "listbox"
   
-  type SelectSlotsAndSlotProps = CreateSlotsAndSlotProps[SelectSlot, Button]
+  trait SelectSlots extends StObject {
+    
+    /**
+      * The component that renders the button.
+      * @default 'button'
+      */
+    var button: ReactElement
+    
+    /**
+      * The component that renders the end decorator.
+      * @default 'span'
+      */
+    var endDecorator: ReactElement
+    
+    /**
+      * The component that renders the indicator.
+      * @default 'span'
+      */
+    var indicator: ReactElement
+    
+    /**
+      * The component that renders the listbox.
+      * @default 'ul'
+      */
+    var listbox: ReactElement
+    
+    /**
+      * The component that renders the root.
+      * @default 'div'
+      */
+    var root: ReactElement
+    
+    /**
+      * The component that renders the start decorator.
+      * @default 'span'
+      */
+    var startDecorator: ReactElement
+  }
+  object SelectSlots {
+    
+    inline def apply(
+      button: ReactElement,
+      endDecorator: ReactElement,
+      indicator: ReactElement,
+      listbox: ReactElement,
+      root: ReactElement,
+      startDecorator: ReactElement
+    ): SelectSlots = {
+      val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], endDecorator = endDecorator.asInstanceOf[js.Any], indicator = indicator.asInstanceOf[js.Any], listbox = listbox.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SelectSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectSlots] (val x: Self) extends AnyVal {
+      
+      inline def setButton(value: ReactElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      inline def setEndDecorator(value: ReactElement): Self = StObject.set(x, "endDecorator", value.asInstanceOf[js.Any])
+      
+      inline def setIndicator(value: ReactElement): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+      
+      inline def setListbox(value: ReactElement): Self = StObject.set(x, "listbox", value.asInstanceOf[js.Any])
+      
+      inline def setRoot(value: ReactElement): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setStartDecorator(value: ReactElement): Self = StObject.set(x, "startDecorator", value.asInstanceOf[js.Any])
+    }
+  }
   
-  trait SelectStaticProps
-    extends StObject
-       with SelectUnstyledCommonProps {
+  type SelectSlotsAndSlotProps = CreateSlotsAndSlotProps[SelectSlots, Button]
+  
+  trait SelectStaticProps extends StObject {
     
     /**
       * A ref for imperative actions. It currently only supports `focusVisible()` action.
@@ -191,10 +255,32 @@ object selectSelectPropsMod {
     var action: js.UndefOr[Ref[FocusVisible]] = js.undefined
     
     /**
+      * If `true`, the select element is focused during the first mount
+      * @default false
+      */
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactElement] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
+    
+    /**
       * The color of the component. It supports those theme colors that make sense for this component.
-      * @default 'primary'
+      * @default 'neutral'
       */
     var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, SelectPropsColorOverrides]] = js.undefined
+    
+    /**
+      * If `true`, the select will be initially open.
+      * @default false
+      */
+    var defaultListboxOpen: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * If `true`, the component is disabled.
+      * @default false
+      */
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Trailing adornment for the select.
@@ -210,9 +296,33 @@ object selectSelectPropsMod {
     var indicator: js.UndefOr[ReactElement] = js.undefined
     
     /**
+      * `id` attribute of the listbox element.
+      * Also used to derive the `id` attributes of options.
+      */
+    var listboxId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Controls the open state of the select's listbox.
+      * @default undefined
+      */
+    var listboxOpen: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Name of the element. For example used by the server to identify the fields in form submits.
+      * If the name is provided, the component will render a hidden input element that can be submitted to a server.
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
       * Triggered when focus leaves the menu and the menu should close.
       */
     var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+      * Callback fired when the component requests to be opened.
+      * Use in controlled mode (see listboxOpen).
+      */
+    var onListboxOpenChange: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.undefined
     
     /**
       * Text to show when there is no selected value.
@@ -235,8 +345,8 @@ object selectSelectPropsMod {
     var sx: js.UndefOr[SxProps] = js.undefined
     
     /**
-      * The variant to use.
-      * @default 'solid'
+      * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
+      * @default 'outlined'
       */
     var variant: js.UndefOr[OverridableStringUnion[VariantProp, SelectPropsVariantOverrides]] = js.undefined
   }
@@ -260,9 +370,29 @@ object selectSelectPropsMod {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
       inline def setColor(value: OverridableStringUnion[ColorPaletteProp, SelectPropsColorOverrides]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setDefaultListboxOpen(value: Boolean): Self = StObject.set(x, "defaultListboxOpen", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultListboxOpenUndefined: Self = StObject.set(x, "defaultListboxOpen", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setEndDecorator(value: ReactElement): Self = StObject.set(x, "endDecorator", value.asInstanceOf[js.Any])
       
@@ -272,9 +402,25 @@ object selectSelectPropsMod {
       
       inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
       
+      inline def setListboxId(value: String): Self = StObject.set(x, "listboxId", value.asInstanceOf[js.Any])
+      
+      inline def setListboxIdUndefined: Self = StObject.set(x, "listboxId", js.undefined)
+      
+      inline def setListboxOpen(value: Boolean): Self = StObject.set(x, "listboxOpen", value.asInstanceOf[js.Any])
+      
+      inline def setListboxOpenUndefined: Self = StObject.set(x, "listboxOpen", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      
+      inline def setOnListboxOpenChange(value: /* isOpen */ Boolean => Unit): Self = StObject.set(x, "onListboxOpenChange", js.Any.fromFunction1(value))
+      
+      inline def setOnListboxOpenChangeUndefined: Self = StObject.set(x, "onListboxOpenChange", js.undefined)
       
       inline def setPlaceholder(value: ReactElement): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       

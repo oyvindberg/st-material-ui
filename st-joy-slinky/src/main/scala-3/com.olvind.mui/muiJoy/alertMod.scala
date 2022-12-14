@@ -13,6 +13,16 @@ object alertMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Alert](https://mui.com/joy-ui/react-alert/)
+    *
+    * API:
+    *
+    * - [Alert API](https://mui.com/joy-ui/api/alert/)
+    */
   @JSImport("@mui/joy/Alert", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsAlertTypeMapdiv, Element | Null] = js.native

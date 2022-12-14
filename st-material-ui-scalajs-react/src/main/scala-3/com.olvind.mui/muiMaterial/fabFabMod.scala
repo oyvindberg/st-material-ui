@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriaatomic
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapFabT
-import com.olvind.mui.muiMaterial.anon.`9`
+import com.olvind.mui.muiMaterial.anon.`10`
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import japgolly.scalajs.react.facade.React.Element
@@ -40,7 +40,7 @@ object fabFabMod extends Shortcut {
   
   trait FabPropsVariantOverrides extends StObject
   
-  type FabTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[`9`[P, D]]
+  type FabTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[`10`[P, D]]
   
   type _To = js.Function1[
     /* props */ OverridePropsExtendButtonBaseTypeMapFabT | DefaultComponentPropsExtendButtonBaseTypAriaatomic, 

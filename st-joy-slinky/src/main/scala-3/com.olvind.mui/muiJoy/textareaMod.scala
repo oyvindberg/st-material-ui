@@ -13,6 +13,16 @@ object textareaMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Textarea](https://mui.com/joy-ui/react-textarea/)
+    *
+    * API:
+    *
+    * - [Textarea API](https://mui.com/joy-ui/api/textarea/)
+    */
   @JSImport("@mui/joy/Textarea", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsTextareaTypeMapdiv, Element | Null] = js.native

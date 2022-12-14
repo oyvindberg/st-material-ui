@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriacolindex
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapTabT
-import com.olvind.mui.muiMaterial.anon.`29`
+import com.olvind.mui.muiMaterial.anon.`28`
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import japgolly.scalajs.react.facade.React.Element
@@ -34,7 +34,7 @@ object tabTabMod extends Shortcut {
   
   type TabProps[D /* <: ElementType */, P] = OverrideProps[TabTypeMap[P, D], D]
   
-  type TabTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[`29`[P, D]]
+  type TabTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[`28`[P, D]]
   
   type _To = js.Function1[
     /* props */ OverridePropsExtendButtonBaseTypeMapTabT | DefaultComponentPropsExtendButtonBaseTypAriacolindex, 

@@ -13,6 +13,16 @@ object listItemButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Lists](https://mui.com/joy-ui/react-list/)
+    *
+    * API:
+    *
+    * - [ListItemButton API](https://mui.com/joy-ui/api/list-item-button/)
+    */
   @JSImport("@mui/joy/ListItemButton", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ OverridePropsExtendListItemButtonTypeMap, Element] = js.native

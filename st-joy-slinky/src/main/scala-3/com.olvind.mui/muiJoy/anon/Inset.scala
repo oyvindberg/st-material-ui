@@ -1,6 +1,6 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.listDividerListDividerPropsMod.ListDividerInsetOverrides
+import com.olvind.mui.muiJoy.dividerDividerPropsMod.DividerInsetOverrides
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.muiTypes.mod.OverridableStringUnion
@@ -17,21 +17,9 @@ trait Inset extends StObject {
   var children: js.UndefOr[ReactElement] = js.undefined
   
   /**
-    * Override or extend the styles applied to the component.
+    * The styles applied to the divider to shrink or stretch the line based on the orientation.
     */
-  var classes: js.UndefOr[PartialListDividerClasses] = js.undefined
-  
-  /**
-    * The empty space on the side(s) of the divider in a vertical list.
-    *
-    * For horizontal list (the nearest parent List has `row` prop set to `true`), only `inset="gutter"` affects the list divider.
-    */
-  var inset: js.UndefOr[
-    OverridableStringUnion[
-      "context" | "gutter" | "startDecorator" | "startContent", 
-      ListDividerInsetOverrides
-    ]
-  ] = js.undefined
+  var inset: js.UndefOr[OverridableStringUnion["none" | "context", DividerInsetOverrides]] = js.undefined
   
   /**
     * The component orientation.
@@ -58,16 +46,7 @@ object Inset {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setClasses(value: PartialListDividerClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
-    
-    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
-    
-    inline def setInset(
-      value: OverridableStringUnion[
-          "context" | "gutter" | "startDecorator" | "startContent", 
-          ListDividerInsetOverrides
-        ]
-    ): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: OverridableStringUnion["none" | "context", DividerInsetOverrides]): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     

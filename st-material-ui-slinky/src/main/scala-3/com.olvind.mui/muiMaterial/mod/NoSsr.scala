@@ -24,7 +24,7 @@ object NoSsr {
     *
     * API:
     *
-    * - [NoSsr API](https://mui.com/base/api/no-ssr/)
+    * - [NoSsr API](https://mui.com/base/react-no-ssr/components-api/#no-ssr)
     */
   inline def apply(props: NoSsrProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   

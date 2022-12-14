@@ -162,6 +162,8 @@ trait DefaultComponentPropsCardTypeMapdiv extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   /**
@@ -177,6 +179,8 @@ trait DefaultComponentPropsCardTypeMapdiv extends StObject {
     * @default 'neutral'
     */
   var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, CardPropsColorOverrides]] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -201,6 +205,12 @@ trait DefaultComponentPropsCardTypeMapdiv extends StObject {
   var inlist: js.UndefOr[Any] = js.undefined
   
   var inputMode: js.UndefOr["none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"] = js.undefined
+  
+  /**
+    * If `true`, the children with an implicit color prop invert their colors to match the component's variant and color.
+    * @default false
+    */
+  var invertedColors: js.UndefOr[Boolean] = js.undefined
   
   var is: js.UndefOr[String] = js.undefined
   
@@ -380,6 +390,12 @@ trait DefaultComponentPropsCardTypeMapdiv extends StObject {
   
   var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
   
+  /**
+    * The component orientation.
+    * @default 'vertical'
+    */
+  var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
+  
   var placeholder: js.UndefOr[String] = js.undefined
   
   var prefix: js.UndefOr[String] = js.undefined
@@ -390,17 +406,15 @@ trait DefaultComponentPropsCardTypeMapdiv extends StObject {
   
   var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
   
-  var role: js.UndefOr[AriaRole] = js.undefined
+  var rev: js.UndefOr[String] = js.undefined
   
-  /**
-    * If `true`, flex direction is set to 'row'.
-    * @default false
-    */
-  var row: js.UndefOr[Boolean] = js.undefined
+  var role: js.UndefOr[AriaRole] = js.undefined
   
   var security: js.UndefOr[String] = js.undefined
   
@@ -437,7 +451,7 @@ trait DefaultComponentPropsCardTypeMapdiv extends StObject {
   var unselectable: js.UndefOr["on" | "off"] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'plain'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, CardPropsVariantOverrides]] = js.undefined
@@ -664,6 +678,10 @@ object DefaultComponentPropsCardTypeMapdiv {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -686,9 +704,13 @@ object DefaultComponentPropsCardTypeMapdiv {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -735,6 +757,10 @@ object DefaultComponentPropsCardTypeMapdiv {
     inline def setInputMode(value: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search"): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
     
     inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
+    
+    inline def setInvertedColors(value: Boolean): Self = StObject.set(x, "invertedColors", value.asInstanceOf[js.Any])
+    
+    inline def setInvertedColorsUndefined: Self = StObject.set(x, "invertedColors", js.undefined)
     
     inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
@@ -1094,6 +1120,10 @@ object DefaultComponentPropsCardTypeMapdiv {
     
     inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
+    inline def setOrientation(value: "horizontal" | "vertical"): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
@@ -1118,6 +1148,10 @@ object DefaultComponentPropsCardTypeMapdiv {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1126,13 +1160,13 @@ object DefaultComponentPropsCardTypeMapdiv {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+    
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
-    
-    inline def setRow(value: Boolean): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
-    
-    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
     inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     

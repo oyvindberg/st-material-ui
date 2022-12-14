@@ -1,9 +1,11 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.anon.PartialModalUnstyledClasses
-import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendModalUnstyled
+import com.olvind.mui.muiBase.modalUnstyledModalUnstyledDottypesMod.ModalUnstyledSlots
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsModalTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.PartialBackdropPropsBackdropTypeMapdivde
+import com.olvind.mui.muiMaterial.anon.PartialModalUnstyledClasses
+import com.olvind.mui.muiMaterial.anon.`9`
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
@@ -37,7 +39,7 @@ object Modal {
   
   inline def apply(open: Boolean): Builder = {
     val __props = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
-    new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsExtendModalUnstyled]))
+    new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsModalTypeMapdiv]))
   }
   
   @JSImport("@mui/material/Modal", JSImport.Default)
@@ -159,6 +161,8 @@ object Modal {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
@@ -169,15 +173,19 @@ object Modal {
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
     
-    inline def components(value: com.olvind.mui.muiMaterial.anon.Backdrop): this.type = set("components", value.asInstanceOf[js.Any])
+    inline def component(value: String): this.type = set("component", value.asInstanceOf[js.Any])
     
-    inline def componentsProps(value: com.olvind.mui.muiBase.anon.Backdrop): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+    inline def components(value: com.olvind.mui.muiMaterial.anon.BackdropRoot): this.type = set("components", value.asInstanceOf[js.Any])
+    
+    inline def componentsProps(value: `9`): this.type = set("componentsProps", value.asInstanceOf[js.Any])
     
     inline def container(value: Element | (js.Function0[Element | Null])): this.type = set("container", value.asInstanceOf[js.Any])
     
     inline def containerCallbackTo(value: CallbackTo[Element | Null]): this.type = set("container", value.toJsFn)
     
     inline def containerNull: this.type = set("container", null)
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -409,9 +417,13 @@ object Modal {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -419,9 +431,9 @@ object Modal {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: com.olvind.mui.muiBase.anon.Backdrop): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: `9`): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: com.olvind.mui.muiBase.anon.BackdropRoot): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: ModalUnstyledSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     
@@ -452,9 +464,9 @@ object Modal {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
-  type Props = /* props */ DefaultComponentPropsExtendModalUnstyled
+  type Props = /* props */ DefaultComponentPropsModalTypeMapdiv
   
-  def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsExtendModalUnstyled, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsExtendModalUnstyled, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsModalTypeMapdiv, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsModalTypeMapdiv, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
-  def withProps(p: /* props */ DefaultComponentPropsExtendModalUnstyled): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps(p: /* props */ DefaultComponentPropsModalTypeMapdiv): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

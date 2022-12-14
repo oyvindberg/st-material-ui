@@ -81,6 +81,7 @@ import com.olvind.mui.react.mod.FocusEventHandler
 import com.olvind.mui.react.mod.FormEventHandler
 import com.olvind.mui.react.mod.Key
 import com.olvind.mui.react.mod.KeyboardEventHandler
+import com.olvind.mui.react.mod.LegacyRef
 import com.olvind.mui.react.mod.MouseEventHandler
 import com.olvind.mui.react.mod.PointerEventHandler
 import com.olvind.mui.react.mod.ReactEventHandler
@@ -242,6 +243,8 @@ trait DefaultComponentPropsStackTypeMapdiv extends StObject {
   var autoCapitalize: js.UndefOr[String] = js.undefined
   
   var autoCorrect: js.UndefOr[String] = js.undefined
+  
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
   var autoSave: js.UndefOr[String] = js.undefined
   
@@ -419,6 +422,8 @@ trait DefaultComponentPropsStackTypeMapdiv extends StObject {
   
   /* you can set this property to change the underlying component. keep in mind that the types of callbacks may be different */
   val component: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
   
@@ -1457,11 +1462,15 @@ trait DefaultComponentPropsStackTypeMapdiv extends StObject {
   
   var radioGroup: js.UndefOr[String] = js.undefined
   
-  var ref: js.UndefOr[com.olvind.mui.react.mod.Ref[Any]] = js.undefined
+  var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
+  
+  var rel: js.UndefOr[String] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var right: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1560,6 +1569,17 @@ trait DefaultComponentPropsStackTypeMapdiv extends StObject {
   ] = js.undefined
   
   var unselectable: js.UndefOr["on" | "off"] = js.undefined
+  
+  /**
+    * If `true`, the CSS flexbox `gap` is used instead of applying `margin` to children.
+    *
+    * While CSS `gap` removes the [known limitations](https://mui.com/joy-ui/react-stack#limitations),
+    * it is not fully supported in some browsers. We recommend checking https://caniuse.com/?search=flex%20gap before using this flag.
+    *
+    * To enable this flag globally, follow the [theme's default props](https://mui.com/material-ui/customization/theme-components/#default-props) configuration.
+    * @default false
+    */
+  var useFlexGap: js.UndefOr[Boolean] = js.undefined
   
   var visibility: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]) | (js.Function1[
@@ -1865,6 +1885,10 @@ object DefaultComponentPropsStackTypeMapdiv {
     inline def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
+    
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
@@ -2234,9 +2258,13 @@ object DefaultComponentPropsStackTypeMapdiv {
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -4441,13 +4469,17 @@ object DefaultComponentPropsStackTypeMapdiv {
     
     inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
     
-    inline def setRef(value: com.olvind.mui.react.mod.Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: LegacyRef[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRefFunction1(value: Any | Null => Callback): Self = StObject.set(x, "ref", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    inline def setRefFunction1(value: HTMLDivElement | Null => Callback): Self = StObject.set(x, "ref", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
     
     inline def setRefNull: Self = StObject.set(x, "ref", null)
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
@@ -4456,6 +4488,10 @@ object DefaultComponentPropsStackTypeMapdiv {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRight(
       value: (ResponsiveStyleValue[
@@ -4661,6 +4697,10 @@ object DefaultComponentPropsStackTypeMapdiv {
     inline def setUnselectable(value: "on" | "off"): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
     
     inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+    
+    inline def setUseFlexGap(value: Boolean): Self = StObject.set(x, "useFlexGap", value.asInstanceOf[js.Any])
+    
+    inline def setUseFlexGapUndefined: Self = StObject.set(x, "useFlexGap", js.undefined)
     
     inline def setVisibility(
       value: (ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]) | (js.Function1[

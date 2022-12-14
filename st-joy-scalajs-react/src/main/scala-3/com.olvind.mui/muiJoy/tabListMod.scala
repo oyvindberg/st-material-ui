@@ -13,6 +13,16 @@ object tabListMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Tabs](https://mui.com/joy-ui/react-tabs/)
+    *
+    * API:
+    *
+    * - [TabList API](https://mui.com/joy-ui/api/tab-list/)
+    */
   @JSImport("@mui/joy/TabList", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsTabListTypeMapdiv, Element | Null] = js.native

@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listSubheaderListSubheaderMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Lists](https://mui.com/joy-ui/react-list/)
+    *
+    * API:
+    *
+    * - [ListSubheader API](https://mui.com/joy-ui/api/list-subheader/)
+    */
   @JSImport("@mui/joy/ListSubheader/ListSubheader", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsListSubheaderTypeMa, Element | Null] = js.native

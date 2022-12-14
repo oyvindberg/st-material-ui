@@ -13,6 +13,16 @@ object listSubheaderMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Lists](https://mui.com/joy-ui/react-list/)
+    *
+    * API:
+    *
+    * - [ListSubheader API](https://mui.com/joy-ui/api/list-subheader/)
+    */
   @JSImport("@mui/joy/ListSubheader", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsListSubheaderTypeMa, Element | Null] = js.native

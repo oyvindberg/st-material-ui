@@ -13,6 +13,4 @@ object stylesCssVarsProviderMod {
   val ^ : js.Any = js.native
   
   /* import warning: parser.TsParser#tsDeclVar Dropped IArray(useColorScheme, getInitColorSchemeScript) */ inline def CssVarsProvider(props: PropsWithChildrenPartialCssVarsProviderC): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("CssVarsProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-  
-  inline def shouldSkipGeneratingVar(keys: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldSkipGeneratingVar")(keys.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

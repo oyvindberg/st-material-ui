@@ -70,7 +70,7 @@ import com.olvind.mui.csstype.mod.Property.Top
 import com.olvind.mui.csstype.mod.Property.Visibility
 import com.olvind.mui.csstype.mod.Property.Width
 import com.olvind.mui.csstype.mod.Property.ZIndex
-import com.olvind.mui.muiSystem.anon.DefaultComponentPropsBoxTypeMapdiv
+import com.olvind.mui.muiSystem.anon.DefaultComponentPropsBoxTypeMapdivTheme
 import com.olvind.mui.muiSystem.createThemeCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
@@ -268,6 +268,8 @@ object Box {
     inline def autoCapitalize(value: String): this.type = set("autoCapitalize", value.asInstanceOf[js.Any])
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
     
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
@@ -561,6 +563,8 @@ object Box {
     ): this.type = set("columnGap", js.Array(value*))
     
     inline def component(value: ElementType): this.type = set("component", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -2385,9 +2389,13 @@ object Box {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def right(
       value: (ResponsiveStyleValue[
@@ -2607,11 +2615,11 @@ object Box {
     inline def zIndexVarargs(value: ((js.UndefOr[ZIndex | String]) | Null)*): this.type = set("zIndex", js.Array(value*))
   }
   
-  type Props = /* props */ DefaultComponentPropsBoxTypeMapdiv
+  type Props = /* props */ DefaultComponentPropsBoxTypeMapdivTheme
   
   implicit def make(companion: Box.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
-  def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsBoxTypeMapdiv, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsBoxTypeMapdiv, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsBoxTypeMapdivTheme, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsBoxTypeMapdivTheme, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
-  def withProps(p: /* props */ DefaultComponentPropsBoxTypeMapdiv): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps(p: /* props */ DefaultComponentPropsBoxTypeMapdivTheme): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

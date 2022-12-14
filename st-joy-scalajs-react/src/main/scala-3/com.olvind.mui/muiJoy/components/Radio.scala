@@ -3,6 +3,7 @@ package com.olvind.mui.muiJoy.components
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiJoy.anon.DefaultComponentPropsRadioTypeMapspan
 import com.olvind.mui.muiJoy.anon.Icon
+import com.olvind.mui.muiJoy.anon.PartialRadioSlots
 import com.olvind.mui.muiJoy.radioRadioPropsMod.RadioPropsColorOverrides
 import com.olvind.mui.muiJoy.radioRadioPropsMod.RadioPropsSizeOverrides
 import com.olvind.mui.muiJoy.radioRadioPropsMod.RadioPropsVariantOverrides
@@ -158,6 +159,8 @@ object Radio {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
@@ -173,6 +176,8 @@ object Radio {
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
     inline def color(value: OverridableStringUnion[ColorPaletteProp, RadioPropsColorOverrides]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -404,11 +409,15 @@ object Radio {
     
     inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def required(value: Boolean): this.type = set("required", value.asInstanceOf[js.Any])
     
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -418,9 +427,9 @@ object Radio {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: com.olvind.mui.muiJoy.anon.Radio): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: Icon): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: Icon): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: PartialRadioSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

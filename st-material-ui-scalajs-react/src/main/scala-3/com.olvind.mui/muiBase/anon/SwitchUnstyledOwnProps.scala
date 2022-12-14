@@ -1,5 +1,6 @@
 package com.olvind.mui.muiBase.anon
 
+import com.olvind.mui.muiBase.switchUnstyledSwitchUnstyledDottypesMod.SwitchUnstyledSlots
 import com.olvind.mui.react.mod.ChangeEventHandler
 import com.olvind.mui.react.mod.FocusEventHandler
 import japgolly.scalajs.react.Callback
@@ -65,14 +66,14 @@ trait SwitchUnstyledOwnProps extends StObject {
     * The props used for each slot inside the Switch.
     * @default {}
     */
-  var slotProps: js.UndefOr[Track] = js.undefined
+  var slotProps: js.UndefOr[Thumb] = js.undefined
   
   /**
     * The components used for each slot inside the Switch.
     * Either a string to use a HTML element or a component.
     * @default {}
     */
-  var slots: js.UndefOr[Thumb] = js.undefined
+  var slots: js.UndefOr[SwitchUnstyledSlots] = js.undefined
 }
 object SwitchUnstyledOwnProps {
   
@@ -126,11 +127,11 @@ object SwitchUnstyledOwnProps {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setSlotProps(value: Track): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: Thumb): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
-    inline def setSlots(value: Thumb): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: SwitchUnstyledSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }

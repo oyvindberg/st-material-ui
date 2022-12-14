@@ -1,13 +1,15 @@
 package com.olvind.mui.muiJoy.components
 
 import com.olvind.mui.StBuildingComponent
-import com.olvind.mui.muiBase.anon.`1`
-import com.olvind.mui.muiBase.anon.`7`
+import com.olvind.mui.muiBase.anon.`5`
 import com.olvind.mui.muiBase.menuUnstyledMenuUnstyledDottypesMod.MenuUnstyledActions
-import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledMod.PopperPlacementType
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperPlacementType
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperUnstyledSlots
 import com.olvind.mui.muiJoy.anon.DefaultComponentPropsMenuTypeMapul
+import com.olvind.mui.muiJoy.menuMenuPropsMod.MenuPropsColorOverrides
 import com.olvind.mui.muiJoy.menuMenuPropsMod.MenuPropsSizeOverrides
 import com.olvind.mui.muiJoy.menuMenuPropsMod.MenuPropsVariantOverrides
+import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.Theme
 import com.olvind.mui.muiJoy.stylesTypesVariantsMod.VariantProp
@@ -23,6 +25,7 @@ import org.scalajs.dom.Element
 import org.scalajs.dom.Event
 import org.scalajs.dom.EventTarget
 import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
 import slinky.core.SyntheticEvent
 import slinky.core.facade.ReactRef
 import slinky.web.SyntheticAnimationEvent
@@ -65,13 +68,13 @@ object Menu {
     inline def actionsReactRef(value: ReactRef[MenuUnstyledActions]): this.type = set("actions", value.asInstanceOf[js.Any])
     
     inline def anchorEl(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ])
     ): this.type = set("anchorEl", value.asInstanceOf[js.Any])
     
     inline def anchorElFunction0(
-      value: () => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+      value: () => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
     ): this.type = set("anchorEl", js.Any.fromFunction0(value))
     
     inline def anchorElNull: this.type = set("anchorEl", null)
@@ -178,11 +181,13 @@ object Menu {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
     
-    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    inline def color(value: OverridableStringUnion[ColorPaletteProp, MenuPropsColorOverrides]): this.type = set("color", value.asInstanceOf[js.Any])
     
     inline def component(value: "div"): this.type = set("component", value.asInstanceOf[js.Any])
     
@@ -191,6 +196,8 @@ object Menu {
     inline def containerFunction0(value: () => Element | Null): this.type = set("container", js.Any.fromFunction0(value))
     
     inline def containerNull: this.type = set("container", null)
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -408,6 +415,8 @@ object Menu {
     
     inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
     
+    inline def ownerState(value: Any): this.type = set("ownerState", value.asInstanceOf[js.Any])
+    
     inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
     
     inline def placement(value: PopperPlacementType): this.type = set("placement", value.asInstanceOf[js.Any])
@@ -438,9 +447,13 @@ object Menu {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -450,9 +463,9 @@ object Menu {
     
     inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
     
-    inline def slotProps(value: `7`): this.type = set("slotProps", value.asInstanceOf[js.Any])
+    inline def slotProps(value: `5`): this.type = set("slotProps", value.asInstanceOf[js.Any])
     
-    inline def slots(value: `1`): this.type = set("slots", value.asInstanceOf[js.Any])
+    inline def slots(value: PopperUnstyledSlots): this.type = set("slots", value.asInstanceOf[js.Any])
     
     inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
     

@@ -13,6 +13,16 @@ object avatarMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Avatar](https://mui.com/joy-ui/react-avatar/)
+    *
+    * API:
+    *
+    * - [Avatar API](https://mui.com/joy-ui/api/avatar/)
+    */
   @JSImport("@mui/joy/Avatar", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsAvatarTypeMapdiv, Element | Null] = js.native

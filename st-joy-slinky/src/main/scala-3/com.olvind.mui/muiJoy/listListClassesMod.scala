@@ -16,9 +16,12 @@ object listListClassesMod {
   
   inline def getListUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getListUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type ListClassKey = "root" | "nesting" | "row" | "scoped" | "sizeSm" | "sizeMd" | "sizeLg" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid"
+  type ListClassKey = "root" | "nesting" | "scoped" | "sizeSm" | "sizeMd" | "sizeLg" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "colorContext" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid" | "horizontal" | "vertical"
   
   trait ListClasses extends StObject {
+    
+    /** Styles applied to the root element when color inversion is triggered. */
+    var colorContext: String
     
     /** Classname applied to the root element if `color="danger"`. */
     var colorDanger: String
@@ -38,14 +41,14 @@ object listListClassesMod {
     /** Classname applied to the root element if `color="warning"`. */
     var colorWarning: String
     
+    /** Styles applied to the root element if `orientation="horizontal"`. */
+    var horizontal: String
+    
     /** Classname applied to the root element if wrapped with nested context. */
     var nesting: String
     
     /** Classname applied to the root element. */
     var root: String
-    
-    /** Classname applied to the root element if `row` is true. */
-    var row: String
     
     /** Classname applied to the root element if `scoped` is true. */
     var scoped: String
@@ -70,19 +73,23 @@ object listListClassesMod {
     
     /** Classname applied to the root element if `variant="solid"`. */
     var variantSolid: String
+    
+    /** Styles applied to the root element if `orientation="vertical"`. */
+    var vertical: String
   }
   object ListClasses {
     
     inline def apply(
+      colorContext: String,
       colorDanger: String,
       colorInfo: String,
       colorNeutral: String,
       colorPrimary: String,
       colorSuccess: String,
       colorWarning: String,
+      horizontal: String,
       nesting: String,
       root: String,
-      row: String,
       scoped: String,
       sizeLg: String,
       sizeMd: String,
@@ -90,14 +97,17 @@ object listListClassesMod {
       variantOutlined: String,
       variantPlain: String,
       variantSoft: String,
-      variantSolid: String
+      variantSolid: String,
+      vertical: String
     ): ListClasses = {
-      val __obj = js.Dynamic.literal(colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], nesting = nesting.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(colorContext = colorContext.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], nesting = nesting.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListClasses]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ListClasses] (val x: Self) extends AnyVal {
+      
+      inline def setColorContext(value: String): Self = StObject.set(x, "colorContext", value.asInstanceOf[js.Any])
       
       inline def setColorDanger(value: String): Self = StObject.set(x, "colorDanger", value.asInstanceOf[js.Any])
       
@@ -111,11 +121,11 @@ object listListClassesMod {
       
       inline def setColorWarning(value: String): Self = StObject.set(x, "colorWarning", value.asInstanceOf[js.Any])
       
+      inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      
       inline def setNesting(value: String): Self = StObject.set(x, "nesting", value.asInstanceOf[js.Any])
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
-      
-      inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       inline def setScoped(value: String): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
       
@@ -132,6 +142,8 @@ object listListClassesMod {
       inline def setVariantSoft(value: String): Self = StObject.set(x, "variantSoft", value.asInstanceOf[js.Any])
       
       inline def setVariantSolid(value: String): Self = StObject.set(x, "variantSolid", value.asInstanceOf[js.Any])
+      
+      inline def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -3,6 +3,7 @@ package com.olvind.mui.muiMaterial.anon
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
+import com.olvind.mui.react.mod.JSXElementConstructor
 import japgolly.scalajs.react.facade.Empty
 import japgolly.scalajs.react.facade.JsNumber
 import japgolly.scalajs.react.facade.React.Element
@@ -13,6 +14,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Components extends StObject {
+  
+  /**
+    * The component used for the transition.
+    * [Follow this guide](/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.
+    * @default Fade
+    */
+  var TransitionComponent: js.UndefOr[JSXElementConstructor[TransitionPropsAbout]] = js.undefined
   
   /**
     * The content of the component.
@@ -142,6 +150,10 @@ object Components {
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
     inline def setSxVarargs(value: (Boolean | SystemStyleObject[Theme] | (js.Function1[Theme, SystemStyleObject[Theme]]))*): Self = StObject.set(x, "sx", js.Array(value*))
+    
+    inline def setTransitionComponent(value: TransitionPropsAbout => Element | Null): Self = StObject.set(x, "TransitionComponent", js.Any.fromFunction1(value))
+    
+    inline def setTransitionComponentUndefined: Self = StObject.set(x, "TransitionComponent", js.undefined)
     
     inline def setTransitionDuration(value: Any): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     

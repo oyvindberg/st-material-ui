@@ -77,12 +77,13 @@ trait ButtonTypeMapbuttonprops extends StObject {
   
   /**
     * The size of the component.
+    * @default 'md'
     */
   var size: js.UndefOr[OverridableStringUnion["sm" | "md" | "lg", ButtonPropsSizeOverrides]] = js.undefined
   
-  var slotProps: js.UndefOr[EndDecoratorLoadingIndicatorCenter] = js.undefined
+  var slotProps: js.UndefOr[LoadingIndicatorCenter] = js.undefined
   
-  var slots: js.UndefOr[LoadingIndicatorCenter] = js.undefined
+  var slots: js.UndefOr[PartialButtonSlots] = js.undefined
   
   /**
     * Element placed before the children.
@@ -100,7 +101,7 @@ trait ButtonTypeMapbuttonprops extends StObject {
   var tabIndex: js.UndefOr[NonNullable[js.UndefOr[Double]]] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'solid'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, ButtonPropsVariantOverrides]] = js.undefined
@@ -161,11 +162,11 @@ object ButtonTypeMapbuttonprops {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSlotProps(value: EndDecoratorLoadingIndicatorCenter): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: LoadingIndicatorCenter): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
     inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
     
-    inline def setSlots(value: LoadingIndicatorCenter): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: PartialButtonSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     

@@ -1,8 +1,8 @@
 package com.olvind.mui.muiMaterial.components
 
 import com.olvind.mui.StBuildingComponent
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsInputLabelTypeMapla
 import com.olvind.mui.muiMaterial.anon.PartialInputLabelClasses
-import com.olvind.mui.muiMaterial.inputLabelInputLabelMod.InputLabelProps
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object InputLabel {
   
-  @JSImport("@mui/material", "InputLabel")
+  @JSImport("@mui/material/InputLabel", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   
@@ -147,6 +147,8 @@ object InputLabel {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
@@ -156,6 +158,10 @@ object InputLabel {
     inline def color(
       value: js.UndefOr[String] & (js.UndefOr["primary" | "secondary" | "error" | "info" | "success" | "warning"])
     ): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def component(value: String): this.type = set("component", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -383,11 +389,15 @@ object InputLabel {
     
     inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def required(value: Boolean): this.type = set("required", value.asInstanceOf[js.Any])
     
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     
@@ -430,11 +440,11 @@ object InputLabel {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
-  type Props = InputLabelProps
+  type Props = /* props */ DefaultComponentPropsInputLabelTypeMapla
   
   implicit def make(companion: InputLabel.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
-  def styled: com.olvind.mui.StyledComponent.Builder[InputLabelProps, Builder] = new com.olvind.mui.StyledComponent.Builder[InputLabelProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsInputLabelTypeMapla, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsInputLabelTypeMapla, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
-  def withProps(p: InputLabelProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  def withProps(p: /* props */ DefaultComponentPropsInputLabelTypeMapla): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

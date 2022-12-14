@@ -20,7 +20,7 @@ object clickAwayListenerMod {
       *
       * API:
       *
-      * - [ClickAwayListener API](https://mui.com/base/api/click-away-listener/)
+      * - [ClickAwayListener API](https://mui.com/base/react-click-away-listener/components-api/#click-away-listener)
       */
     inline def apply(props: ClickAwayListenerProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     

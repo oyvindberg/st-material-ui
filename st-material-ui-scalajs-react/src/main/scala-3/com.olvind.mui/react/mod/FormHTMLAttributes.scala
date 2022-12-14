@@ -22,8 +22,6 @@ trait FormHTMLAttributes[T]
   
   var noValidate: js.UndefOr[Boolean] = js.undefined
   
-  var rel: js.UndefOr[String] = js.undefined
-  
   var target: js.UndefOr[String] = js.undefined
 }
 object FormHTMLAttributes {
@@ -63,10 +61,6 @@ object FormHTMLAttributes {
     inline def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
     
     inline def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
-    
-    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
-    
-    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

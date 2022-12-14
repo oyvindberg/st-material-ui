@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object menuListMenuListMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Menu](https://mui.com/joy-ui/react-menu/)
+    *
+    * API:
+    *
+    * - [MenuList API](https://mui.com/joy-ui/api/menu-list/)
+    */
   @JSImport("@mui/joy/MenuList/MenuList", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsMenuListTypeMapul, Element | Null] = js.native

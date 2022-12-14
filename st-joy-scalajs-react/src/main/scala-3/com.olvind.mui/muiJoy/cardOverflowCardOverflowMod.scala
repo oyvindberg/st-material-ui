@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cardOverflowCardOverflowMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Card](https://mui.com/joy-ui/react-card/)
+    *
+    * API:
+    *
+    * - [CardOverflow API](https://mui.com/joy-ui/api/card-overflow/)
+    */
   @JSImport("@mui/joy/CardOverflow/CardOverflow", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsCardOverflowTypeMap, Element | Null] = js.native

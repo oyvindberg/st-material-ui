@@ -41,6 +41,7 @@ trait Actions extends StObject {
   
   /**
     * The size of the component (affect other nested list* components because the `Menu` inherits `List`).
+    * @default 'md'
     */
   var size: js.UndefOr[OverridableStringUnion["sm" | "md" | "lg", MenuPropsSizeOverrides]] = js.undefined
   
@@ -50,8 +51,8 @@ trait Actions extends StObject {
   var sx: js.UndefOr[SxProps] = js.undefined
   
   /**
-    * The variant to use.
-    * @default 'plain'
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
+    * @default 'outlined'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, MenuPropsVariantOverrides]] = js.undefined
 }

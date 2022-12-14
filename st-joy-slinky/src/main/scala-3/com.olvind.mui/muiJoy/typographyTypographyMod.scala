@@ -10,13 +10,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typographyTypographyMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Typography](https://mui.com/joy-ui/react-typography/)
+    *
+    * API:
+    *
+    * - [Typography API](https://mui.com/joy-ui/api/typography/)
+    */
   @JSImport("@mui/joy/Typography/Typography", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsTypographyTypeMapsp, Element | Null] = js.native
   
-  @JSImport("@mui/joy/Typography/Typography", "TypographyContext")
+  @JSImport("@mui/joy/Typography/Typography", "TypographyInheritContext")
   @js.native
-  val TypographyContext: Context[Boolean] = js.native
+  val TypographyInheritContext: Context[Boolean] = js.native
+  
+  @JSImport("@mui/joy/Typography/Typography", "TypographyNestedContext")
+  @js.native
+  val TypographyNestedContext: Context[Boolean] = js.native
   
   type _To = js.Function1[/* props */ DefaultComponentPropsTypographyTypeMapsp, Element | Null]
   

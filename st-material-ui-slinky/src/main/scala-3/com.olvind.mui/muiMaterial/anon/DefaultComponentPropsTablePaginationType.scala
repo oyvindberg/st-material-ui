@@ -160,6 +160,8 @@ trait DefaultComponentPropsTablePaginationType extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.native
   
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  
   var autoSave: js.UndefOr[String] = js.native
   
   /**
@@ -183,6 +185,8 @@ trait DefaultComponentPropsTablePaginationType extends StObject {
   
   /* you can set this property to change the underlying component. keep in mind that the types of callbacks may be different */
   val component: js.UndefOr[String] = js.native
+  
+  var content: js.UndefOr[String] = js.native
   
   var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.native
   
@@ -467,9 +471,13 @@ trait DefaultComponentPropsTablePaginationType extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @mui/material.@mui/material/TableCell/TableCell.TableCellBaseProps extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
   ] = js.native
   
+  var rel: js.UndefOr[String] = js.native
+  
   var resource: js.UndefOr[String] = js.native
   
   var results: js.UndefOr[Double] = js.native
+  
+  var rev: js.UndefOr[String] = js.native
   
   var role: js.UndefOr[AriaRole] = js.native
   
@@ -488,7 +496,7 @@ trait DefaultComponentPropsTablePaginationType extends StObject {
     * Use -1 for the value with a custom label to show all the rows.
     * @default [10, 25, 50, 100]
     */
-  var rowsPerPageOptions: js.UndefOr[js.Array[Double | Value]] = js.native
+  var rowsPerPageOptions: js.UndefOr[js.Array[Double | LabelValue]] = js.native
   
   var scope: js.UndefOr[String] = js.native
   

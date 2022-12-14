@@ -6,7 +6,7 @@ import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapList
 import com.olvind.mui.muiMaterial.anon.PartialListItemClasses
 import com.olvind.mui.muiMaterial.anon.PartialTouchRippleProps
 import com.olvind.mui.muiMaterial.anon.Root
-import com.olvind.mui.muiMaterial.anon.`15`
+import com.olvind.mui.muiMaterial.anon.`18`
 import com.olvind.mui.muiMaterial.anon.`1`
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ButtonBaseActions
 import com.olvind.mui.muiMaterial.buttonBaseTouchRippleMod.TouchRippleActions
@@ -202,7 +202,9 @@ object ListItem {
       
       inline def components(value: Root): this.type = set("components", value.asInstanceOf[js.Any])
       
-      inline def componentsProps(value: `15`): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+      inline def componentsProps(value: `18`): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+      
+      inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
       
       inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
       
@@ -450,6 +452,8 @@ object ListItem {
       
       inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
       
+      inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
+      
       inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
       
       inline def secondaryAction(value: ReactElement): this.type = set("secondaryAction", value.asInstanceOf[js.Any])
@@ -460,7 +464,7 @@ object ListItem {
       
       inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
       
-      inline def slotProps(value: `15`): this.type = set("slotProps", value.asInstanceOf[js.Any])
+      inline def slotProps(value: `18`): this.type = set("slotProps", value.asInstanceOf[js.Any])
       
       inline def slots(value: `1`): this.type = set("slots", value.asInstanceOf[js.Any])
       
@@ -666,7 +670,9 @@ object ListItem {
       
       inline def components(value: Root): this.type = set("components", value.asInstanceOf[js.Any])
       
-      inline def componentsProps(value: `15`): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+      inline def componentsProps(value: `18`): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+      
+      inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
       
       inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
       
@@ -898,9 +904,13 @@ object ListItem {
       
       inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
       
+      inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+      
       inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
       
       inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+      
+      inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
       
       inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
       
@@ -912,7 +922,7 @@ object ListItem {
       
       inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
       
-      inline def slotProps(value: `15`): this.type = set("slotProps", value.asInstanceOf[js.Any])
+      inline def slotProps(value: `18`): this.type = set("slotProps", value.asInstanceOf[js.Any])
       
       inline def slots(value: `1`): this.type = set("slots", value.asInstanceOf[js.Any])
       

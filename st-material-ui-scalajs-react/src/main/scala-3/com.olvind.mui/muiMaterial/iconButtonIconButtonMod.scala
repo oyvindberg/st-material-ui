@@ -2,7 +2,7 @@ package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriaautocomplete
 import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapIcon
-import com.olvind.mui.muiMaterial.anon.`12`
+import com.olvind.mui.muiMaterial.anon.`13`
 import com.olvind.mui.muiMaterial.buttonBaseButtonBaseMod.ExtendButtonBaseTypeMap
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import japgolly.scalajs.react.facade.React.Element
@@ -40,7 +40,7 @@ object iconButtonIconButtonMod extends Shortcut {
   
   trait IconButtonPropsSizeOverrides extends StObject
   
-  type IconButtonTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[`12`[P, D]]
+  type IconButtonTypeMap[P, D /* <: ElementType */] = ExtendButtonBaseTypeMap[`13`[P, D]]
   
   type _To = js.Function1[
     /* props */ OverridePropsExtendButtonBaseTypeMapIcon | DefaultComponentPropsExtendButtonBaseTypAriaautocomplete, 

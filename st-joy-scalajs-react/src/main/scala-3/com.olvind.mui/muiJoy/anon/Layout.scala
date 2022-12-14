@@ -49,8 +49,8 @@ trait Layout extends StObject {
   var sx: js.UndefOr[SxProps] = js.undefined
   
   /**
-    * The variant to use.
-    * @default 'plain'
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
+    * @default 'outlined'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, ModalDialogPropsVariantOverrides]] = js.undefined
 }

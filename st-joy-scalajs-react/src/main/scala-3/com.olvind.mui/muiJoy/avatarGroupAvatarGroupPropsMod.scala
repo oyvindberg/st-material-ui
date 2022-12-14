@@ -1,6 +1,6 @@
 package com.olvind.mui.muiJoy
 
-import com.olvind.mui.muiJoy.anon.AvatarPropsAvatarTypeMapdivdefaultCompon
+import com.olvind.mui.muiJoy.anon.AvatarPropsAvatarTypeMapdivdefaultComponAbout
 import com.olvind.mui.muiJoy.anon.ChildrenColor
 import com.olvind.mui.muiJoy.avatarAvatarPropsMod.AvatarPropsColorOverrides
 import com.olvind.mui.muiJoy.avatarAvatarPropsMod.AvatarPropsSizeOverrides
@@ -170,6 +170,8 @@ object avatarGroupAvatarGroupPropsMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     /**
@@ -183,10 +185,13 @@ object avatarGroupAvatarGroupPropsMod {
     /**
       * The color context for the avatar children.
       * It has no effect on the AvatarGroup.
+      * @default 'neutral'
       */
     var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, AvatarPropsColorOverrides]] = js.undefined
     
     var component: js.UndefOr[ElementType] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
@@ -400,9 +405,13 @@ object avatarGroupAvatarGroupPropsMod {
     
     var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -442,6 +451,7 @@ object avatarGroupAvatarGroupPropsMod {
     /**
       * The variant context for the avatar children.
       * It has no effect on the AvatarGroup.
+      * @default 'soft'
       */
     var variant: js.UndefOr[OverridableStringUnion[VariantProp, AvatarPropsVariantOverrides]] = js.undefined
     
@@ -667,6 +677,10 @@ object avatarGroupAvatarGroupPropsMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -693,9 +707,13 @@ object avatarGroupAvatarGroupPropsMod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1125,6 +1143,10 @@ object avatarGroupAvatarGroupPropsMod {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1132,6 +1154,10 @@ object avatarGroupAvatarGroupPropsMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1213,13 +1239,13 @@ object avatarGroupAvatarGroupPropsMod {
     
     var defaultComponent: D
     
-    var props: P & (Pick[AvatarPropsAvatarTypeMapdivdefaultCompon[P], "color" | "size" | "variant"]) & ChildrenColor
+    var props: P & (Pick[AvatarPropsAvatarTypeMapdivdefaultComponAbout[P], "color" | "size" | "variant"]) & ChildrenColor
   }
   object AvatarGroupTypeMap {
     
     inline def apply[P, D /* <: ElementType */](
       defaultComponent: D,
-      props: P & (Pick[AvatarPropsAvatarTypeMapdivdefaultCompon[P], "color" | "size" | "variant"]) & ChildrenColor
+      props: P & (Pick[AvatarPropsAvatarTypeMapdivdefaultComponAbout[P], "color" | "size" | "variant"]) & ChildrenColor
     ): AvatarGroupTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[AvatarGroupTypeMap[P, D]]
@@ -1231,7 +1257,7 @@ object avatarGroupAvatarGroupPropsMod {
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
       inline def setProps(
-        value: P & (Pick[AvatarPropsAvatarTypeMapdivdefaultCompon[P], "color" | "size" | "variant"]) & ChildrenColor
+        value: P & (Pick[AvatarPropsAvatarTypeMapdivdefaultComponAbout[P], "color" | "size" | "variant"]) & ChildrenColor
       ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }

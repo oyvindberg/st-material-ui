@@ -20,43 +20,43 @@ object badgeBadgeClassesMod {
   
   trait BadgeClasses extends StObject {
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'left' }}`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'left' }}`. */
     var anchorOriginBottomLeft: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'left' }} overlap="circular"`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'left' }} overlap="circular"`. */
     var anchorOriginBottomLeftCircular: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'left' }} overlap="rectangular"`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'left' }} overlap="rectangular"`. */
     var anchorOriginBottomLeftRectangular: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'right' }}`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'right' }}`. */
     var anchorOriginBottomRight: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'right' }} overlap="circular"`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'right' }} overlap="circular"`. */
     var anchorOriginBottomRightCircular: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'right' }} overlap="rectangular"`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'bottom', 'right' }} overlap="rectangular"`. */
     var anchorOriginBottomRightRectangular: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'top', 'left' }}`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'top', 'left' }}`. */
     var anchorOriginTopLeft: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'top', 'left' }} overlap="circular"`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'top', 'left' }} overlap="circular"`. */
     var anchorOriginTopLeftCircular: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'top', 'left' }} overlap="rectangular"`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'top', 'left' }} overlap="rectangular"`. */
     var anchorOriginTopLeftRectangular: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'top', 'right' }}`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'top', 'right' }}`. */
     var anchorOriginTopRight: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'top', 'right' }} overlap="circular"`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'top', 'right' }} overlap="circular"`. */
     var anchorOriginTopRightCircular: String
     
-    /** Class name applied to the badge `span` element if `anchorOrigin={{ 'top', 'right' }} overlap="rectangular"`. */
+    /** Styles applied to the badge `span` element if `anchorOrigin={{ 'top', 'right' }} overlap="rectangular"`. */
     var anchorOriginTopRightRectangular: String
     
-    /** Class name applied to the badge `span` element. */
+    /** Styles applied to the badge `span` element. */
     var badge: String
     
     /** Styles applied to the badge `span` element if `color="error"`. */
@@ -77,22 +77,22 @@ object badgeBadgeClassesMod {
     /** Styles applied to the badge `span` element if `color="warning"`. */
     var colorWarning: String
     
-    /** Class name applied to the badge `span` element if `variant="dot"`. */
+    /** Styles applied to the badge `span` element if `variant="dot"`. */
     var dot: String
     
     /** State class applied to the badge `span` element if `invisible={true}`. */
     var invisible: String
     
-    /** Class name applied to the badge `span` element if `overlap="circular"`. */
+    /** Styles applied to the badge `span` element if `overlap="circular"`. */
     var overlapCircular: String
     
-    /** Class name applied to the badge `span` element if `overlap="rectangular"`. */
+    /** Styles applied to the badge `span` element if `overlap="rectangular"`. */
     var overlapRectangular: String
     
-    /** Class name applied to the root element. */
+    /** Styles applied to the root element. */
     var root: String
     
-    /** Class name applied to the badge `span` element if `variant="standard"`. */
+    /** Styles applied to the badge `span` element if `variant="standard"`. */
     var standard: String
   }
   object BadgeClasses {

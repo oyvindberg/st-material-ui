@@ -1,19 +1,15 @@
 package com.olvind.mui.muiJoy
 
+import com.olvind.mui.muiJoy.stylesTypesUtilsMod.MergeDefault
+import com.olvind.mui.muiJoy.stylesTypesUtilsMod.OverridableRecord
 import com.olvind.mui.muiStyledEngine.mod.CSSObject
-import com.olvind.mui.muiTypes.mod.OverridableStringUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylesTypesTypographyMod {
   
-  type ExtendedTypographySystem = OverridableStringUnion[
-    "display1" | "display2" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "body1" | "body2" | "body3" | "body4" | "body5", 
-    TypographySystemOverrides
-  ]
-  
-  trait FontFamily extends StObject {
+  trait DefaultFontFamily extends StObject {
     
     var body: String
     
@@ -23,15 +19,15 @@ object stylesTypesTypographyMod {
     
     var fallback: String
   }
-  object FontFamily {
+  object DefaultFontFamily {
     
-    inline def apply(body: String, code: String, display: String, fallback: String): FontFamily = {
+    inline def apply(body: String, code: String, display: String, fallback: String): DefaultFontFamily = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], fallback = fallback.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FontFamily]
+      __obj.asInstanceOf[DefaultFontFamily]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: FontFamily] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DefaultFontFamily] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -43,7 +39,7 @@ object stylesTypesTypographyMod {
     }
   }
   
-  trait FontSize extends StObject {
+  trait DefaultFontSize extends StObject {
     
     var lg: String
     
@@ -71,7 +67,7 @@ object stylesTypesTypographyMod {
     
     var xs3: String
   }
-  object FontSize {
+  object DefaultFontSize {
     
     inline def apply(
       lg: String,
@@ -87,13 +83,13 @@ object stylesTypesTypographyMod {
       xs: String,
       xs2: String,
       xs3: String
-    ): FontSize = {
+    ): DefaultFontSize = {
       val __obj = js.Dynamic.literal(lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any], xl = xl.asInstanceOf[js.Any], xl2 = xl2.asInstanceOf[js.Any], xl3 = xl3.asInstanceOf[js.Any], xl4 = xl4.asInstanceOf[js.Any], xl5 = xl5.asInstanceOf[js.Any], xl6 = xl6.asInstanceOf[js.Any], xl7 = xl7.asInstanceOf[js.Any], xs = xs.asInstanceOf[js.Any], xs2 = xs2.asInstanceOf[js.Any], xs3 = xs3.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FontSize]
+      __obj.asInstanceOf[DefaultFontSize]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: FontSize] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DefaultFontSize] (val x: Self) extends AnyVal {
       
       inline def setLg(value: String): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -123,7 +119,7 @@ object stylesTypesTypographyMod {
     }
   }
   
-  trait FontWeight extends StObject {
+  trait DefaultFontWeight extends StObject {
     
     var lg: String | Double
     
@@ -139,7 +135,7 @@ object stylesTypesTypographyMod {
     
     var xs: String | Double
   }
-  object FontWeight {
+  object DefaultFontWeight {
     
     inline def apply(
       lg: String | Double,
@@ -149,13 +145,13 @@ object stylesTypesTypographyMod {
       xl2: String | Double,
       xl3: String | Double,
       xs: String | Double
-    ): FontWeight = {
+    ): DefaultFontWeight = {
       val __obj = js.Dynamic.literal(lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any], xl = xl.asInstanceOf[js.Any], xl2 = xl2.asInstanceOf[js.Any], xl3 = xl3.asInstanceOf[js.Any], xs = xs.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FontWeight]
+      __obj.asInstanceOf[DefaultFontWeight]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: FontWeight] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DefaultFontWeight] (val x: Self) extends AnyVal {
       
       inline def setLg(value: String | Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -173,7 +169,7 @@ object stylesTypesTypographyMod {
     }
   }
   
-  trait LetterSpacing extends StObject {
+  trait DefaultLetterSpacing extends StObject {
     
     var lg: String
     
@@ -181,15 +177,15 @@ object stylesTypesTypographyMod {
     
     var sm: String
   }
-  object LetterSpacing {
+  object DefaultLetterSpacing {
     
-    inline def apply(lg: String, md: String, sm: String): LetterSpacing = {
+    inline def apply(lg: String, md: String, sm: String): DefaultLetterSpacing = {
       val __obj = js.Dynamic.literal(lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LetterSpacing]
+      __obj.asInstanceOf[DefaultLetterSpacing]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: LetterSpacing] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DefaultLetterSpacing] (val x: Self) extends AnyVal {
       
       inline def setLg(value: String): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -199,7 +195,7 @@ object stylesTypesTypographyMod {
     }
   }
   
-  trait LineHeight extends StObject {
+  trait DefaultLineHeight extends StObject {
     
     var lg: String | Double
     
@@ -207,15 +203,15 @@ object stylesTypesTypographyMod {
     
     var sm: String | Double
   }
-  object LineHeight {
+  object DefaultLineHeight {
     
-    inline def apply(lg: String | Double, md: String | Double, sm: String | Double): LineHeight = {
+    inline def apply(lg: String | Double, md: String | Double, sm: String | Double): DefaultLineHeight = {
       val __obj = js.Dynamic.literal(lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LineHeight]
+      __obj.asInstanceOf[DefaultLineHeight]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: LineHeight] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DefaultLineHeight] (val x: Self) extends AnyVal {
       
       inline def setLg(value: String | Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -225,8 +221,7 @@ object stylesTypesTypographyMod {
     }
   }
   
-  /* Inlined parent std.Record<@mui/joy.@mui/joy/styles/types/typography.ExtendedTypographySystem, @mui/system.@mui/system.CSSObject> */
-  trait TypographySystem extends StObject {
+  trait DefaultTypographySystem extends StObject {
     
     var body1: CSSObject
     
@@ -254,7 +249,7 @@ object stylesTypesTypographyMod {
     
     var h6: CSSObject
   }
-  object TypographySystem {
+  object DefaultTypographySystem {
     
     inline def apply(
       body1: CSSObject,
@@ -270,13 +265,13 @@ object stylesTypesTypographyMod {
       h4: CSSObject,
       h5: CSSObject,
       h6: CSSObject
-    ): TypographySystem = {
+    ): DefaultTypographySystem = {
       val __obj = js.Dynamic.literal(body1 = body1.asInstanceOf[js.Any], body2 = body2.asInstanceOf[js.Any], body3 = body3.asInstanceOf[js.Any], body4 = body4.asInstanceOf[js.Any], body5 = body5.asInstanceOf[js.Any], display1 = display1.asInstanceOf[js.Any], display2 = display2.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TypographySystem]
+      __obj.asInstanceOf[DefaultTypographySystem]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: TypographySystem] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DefaultTypographySystem] (val x: Self) extends AnyVal {
       
       inline def setBody1(value: CSSObject): Self = StObject.set(x, "body1", value.asInstanceOf[js.Any])
       
@@ -305,6 +300,30 @@ object stylesTypesTypographyMod {
       inline def setH6(value: CSSObject): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
     }
   }
+  
+  type FontFamily = OverridableRecord[DefaultFontFamily, FontFamilyOverrides, String]
+  
+  trait FontFamilyOverrides extends StObject
+  
+  type FontSize = OverridableRecord[DefaultFontSize, FontSizeOverrides, String]
+  
+  trait FontSizeOverrides extends StObject
+  
+  type FontWeight = OverridableRecord[DefaultFontWeight, FontWeightOverrides, String | Double]
+  
+  trait FontWeightOverrides extends StObject
+  
+  type LetterSpacing = OverridableRecord[DefaultLetterSpacing, LetterSpacingOverrides, String]
+  
+  trait LetterSpacingOverrides extends StObject
+  
+  type LineHeight = OverridableRecord[DefaultLineHeight, LineHeightOverrides, String | Double]
+  
+  trait LineHeightOverrides extends StObject
+  
+  type TypographySystem = OverridableRecord[DefaultTypographySystem, TypographySystemOverrides, CSSObject]
+  
+  type TypographySystemOptions = MergeDefault[TypographySystem, DefaultTypographySystem]
   
   trait TypographySystemOverrides extends StObject
 }

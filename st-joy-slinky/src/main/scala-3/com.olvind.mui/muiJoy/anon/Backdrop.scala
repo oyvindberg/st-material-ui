@@ -1,16 +1,20 @@
 package com.olvind.mui.muiJoy.anon
 
-import slinky.core.facade.ReactElement
+import com.olvind.mui.muiJoy.modalModalPropsMod.ModalOwnerState
+import com.olvind.mui.muiJoy.utilsTypesMod.SlotCommonProps
+import com.olvind.mui.react.mod.ComponentPropsWithRef
+import com.olvind.mui.std.Omit
+import com.olvind.mui.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Modal/ModalProps.ModalOwnerState>,   backdrop :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Modal/ModalProps.ModalOwnerState>} ]:? react.react.ElementType<any>} */
+/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Modal/ModalProps.ModalOwnerState>,   backdrop :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Modal/ModalProps.ModalOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Modal/ModalProps.ModalOwnerState>,   backdrop :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Modal/ModalProps.ModalOwnerState>}[P]} */
 trait Backdrop extends StObject {
   
-  var backdrop: js.UndefOr[ReactElement] = js.undefined
+  var backdrop: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState]] = js.undefined
   
-  var root: js.UndefOr[ReactElement] = js.undefined
+  var root: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState]] = js.undefined
 }
 object Backdrop {
   
@@ -22,11 +26,19 @@ object Backdrop {
   @scala.inline
   implicit open class MutableBuilder[Self <: Backdrop] (val x: Self) extends AnyVal {
     
-    inline def setBackdrop(value: ReactElement): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+    inline def setBackdrop(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState]): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+    
+    inline def setBackdropFunction1(
+      value: ModalOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
+    ): Self = StObject.set(x, "backdrop", js.Any.fromFunction1(value))
     
     inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
     
-    inline def setRoot(value: ReactElement): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootFunction1(
+      value: ModalOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
+    ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }

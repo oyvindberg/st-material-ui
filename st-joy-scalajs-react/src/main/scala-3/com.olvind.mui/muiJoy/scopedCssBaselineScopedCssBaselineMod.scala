@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object scopedCssBaselineScopedCssBaselineMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [CSS Baseline](https://mui.com/joy-ui/react-css-baseline/)
+    *
+    * API:
+    *
+    * - [ScopedCssBaseline API](https://mui.com/joy-ui/api/scoped-css-baseline/)
+    */
   @JSImport("@mui/joy/ScopedCssBaseline/ScopedCssBaseline", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsScopedCssBaselineTy, Element | Null] = js.native

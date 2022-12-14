@@ -37,6 +37,9 @@ trait OmitThemecomponentspaletteCssVarsTheme extends StObject {
   
   var direction: com.olvind.mui.muiSystem.createThemeCreateThemeMod.Direction = js.native
   
+  def generateCssVars(): Css = js.native
+  def generateCssVars(colorScheme: SupportedColorScheme): Css = js.native
+  
   def getColorSchemeSelector(colorScheme: SupportedColorScheme): String = js.native
   
   def getCssVar(field: ThemeCssVar, vars: ThemeCssVar*): String = js.native
@@ -52,6 +55,16 @@ trait OmitThemecomponentspaletteCssVarsTheme extends StObject {
   var shadows: Shadows = js.native
   
   var shape: Shape = js.native
+  
+  /**
+    * A function to determine if the key, value should be attached as CSS Variable
+    * `keys` is an array that represents the object path keys.
+    *  Ex, if the theme is { foo: { bar: 'var(--test)' } }
+    *  then, keys = ['foo', 'bar']
+    *        value = 'var(--test)'
+    */
+  def shouldSkipGeneratingVar(keys: js.Array[String], value: String): Boolean = js.native
+  def shouldSkipGeneratingVar(keys: js.Array[String], value: Double): Boolean = js.native
   
   // Default theme tokens
   var spacing: Spacing = js.native

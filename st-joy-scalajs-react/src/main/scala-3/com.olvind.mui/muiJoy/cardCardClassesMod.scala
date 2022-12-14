@@ -16,9 +16,12 @@ object cardCardClassesMod {
   
   inline def getCardUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCardUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type CardClassKey = "root" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid" | "sizeSm" | "sizeMd" | "sizeLg" | "row"
+  type CardClassKey = "root" | "colorPrimary" | "colorNeutral" | "colorDanger" | "colorInfo" | "colorSuccess" | "colorWarning" | "colorContext" | "variantPlain" | "variantOutlined" | "variantSoft" | "variantSolid" | "sizeSm" | "sizeMd" | "sizeLg" | "horizontal" | "vertical"
   
   trait CardClasses extends StObject {
+    
+    /** Styles applied to the root element when color inversion is triggered. */
+    var colorContext: String
     
     /** Styles applied to the root element if `color="danger"`. */
     var colorDanger: String
@@ -38,11 +41,11 @@ object cardCardClassesMod {
     /** Styles applied to the root element if `color="warning"`. */
     var colorWarning: String
     
+    /** Styles applied to the root element if `orientation="horizontal"`. */
+    var horizontal: String
+    
     /** Styles applied to the root element. */
     var root: String
-    
-    /** Styles applied to the root element if `row={true}`. */
-    var row: String
     
     /** Styles applied to the root element if `size="lg"`. */
     var sizeLg: String
@@ -64,32 +67,39 @@ object cardCardClassesMod {
     
     /** Styles applied to the root element if `variant="solid"`. */
     var variantSolid: String
+    
+    /** Styles applied to the root element if `orientation="vertical"`. */
+    var vertical: String
   }
   object CardClasses {
     
     inline def apply(
+      colorContext: String,
       colorDanger: String,
       colorInfo: String,
       colorNeutral: String,
       colorPrimary: String,
       colorSuccess: String,
       colorWarning: String,
+      horizontal: String,
       root: String,
-      row: String,
       sizeLg: String,
       sizeMd: String,
       sizeSm: String,
       variantOutlined: String,
       variantPlain: String,
       variantSoft: String,
-      variantSolid: String
+      variantSolid: String,
+      vertical: String
     ): CardClasses = {
-      val __obj = js.Dynamic.literal(colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(colorContext = colorContext.asInstanceOf[js.Any], colorDanger = colorDanger.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorNeutral = colorNeutral.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], sizeLg = sizeLg.asInstanceOf[js.Any], sizeMd = sizeMd.asInstanceOf[js.Any], sizeSm = sizeSm.asInstanceOf[js.Any], variantOutlined = variantOutlined.asInstanceOf[js.Any], variantPlain = variantPlain.asInstanceOf[js.Any], variantSoft = variantSoft.asInstanceOf[js.Any], variantSolid = variantSolid.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardClasses]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: CardClasses] (val x: Self) extends AnyVal {
+      
+      inline def setColorContext(value: String): Self = StObject.set(x, "colorContext", value.asInstanceOf[js.Any])
       
       inline def setColorDanger(value: String): Self = StObject.set(x, "colorDanger", value.asInstanceOf[js.Any])
       
@@ -103,9 +113,9 @@ object cardCardClassesMod {
       
       inline def setColorWarning(value: String): Self = StObject.set(x, "colorWarning", value.asInstanceOf[js.Any])
       
-      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
       inline def setSizeLg(value: String): Self = StObject.set(x, "sizeLg", value.asInstanceOf[js.Any])
       
@@ -120,6 +130,8 @@ object cardCardClassesMod {
       inline def setVariantSoft(value: String): Self = StObject.set(x, "variantSoft", value.asInstanceOf[js.Any])
       
       inline def setVariantSolid(value: String): Self = StObject.set(x, "variantSolid", value.asInstanceOf[js.Any])
+      
+      inline def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }
   }
 }

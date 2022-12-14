@@ -1,12 +1,13 @@
 package com.olvind.mui.muiJoy
 
+import com.olvind.mui.muiJoy.stylesTypesUtilsMod.OverridableRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylesTypesShadowMod {
   
-  trait Shadow extends StObject {
+  trait DefaultShadow extends StObject {
     
     var lg: String
     
@@ -18,15 +19,15 @@ object stylesTypesShadowMod {
     
     var xs: String
   }
-  object Shadow {
+  object DefaultShadow {
     
-    inline def apply(lg: String, md: String, sm: String, xl: String, xs: String): Shadow = {
+    inline def apply(lg: String, md: String, sm: String, xl: String, xs: String): DefaultShadow = {
       val __obj = js.Dynamic.literal(lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any], xl = xl.asInstanceOf[js.Any], xs = xs.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Shadow]
+      __obj.asInstanceOf[DefaultShadow]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Shadow] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DefaultShadow] (val x: Self) extends AnyVal {
       
       inline def setLg(value: String): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -39,4 +40,8 @@ object stylesTypesShadowMod {
       inline def setXs(value: String): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
     }
   }
+  
+  type Shadow = OverridableRecord[DefaultShadow, ShadowOverrides, String]
+  
+  trait ShadowOverrides extends StObject
 }

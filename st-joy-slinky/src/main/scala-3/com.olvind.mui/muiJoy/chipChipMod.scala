@@ -11,6 +11,14 @@ object chipChipMod extends Shortcut {
   
   /**
     * Chips represent complex entities in small blocks, such as a contact.
+    *
+    * Demos:
+    *
+    * - [Chip](https://mui.com/joy-ui/react-chip/)
+    *
+    * API:
+    *
+    * - [Chip API](https://mui.com/joy-ui/api/chip/)
     */
   @JSImport("@mui/joy/Chip/Chip", JSImport.Default)
   @js.native

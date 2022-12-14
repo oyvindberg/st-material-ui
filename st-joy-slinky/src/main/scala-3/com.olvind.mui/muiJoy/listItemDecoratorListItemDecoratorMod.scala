@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listItemDecoratorListItemDecoratorMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Lists](https://mui.com/joy-ui/react-list/)
+    *
+    * API:
+    *
+    * - [ListItemDecorator API](https://mui.com/joy-ui/api/list-item-decorator/)
+    */
   @JSImport("@mui/joy/ListItemDecorator/ListItemDecorator", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsListItemDecoratorTy, Element | Null] = js.native

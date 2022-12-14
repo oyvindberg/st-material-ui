@@ -1,7 +1,7 @@
 package com.olvind.mui.muiJoy
 
 import com.olvind.mui.muiJoy.anon.ClassName
-import com.olvind.mui.muiJoy.anon.EndDecoratorInputRoot
+import com.olvind.mui.muiJoy.anon.InputRoot
 import com.olvind.mui.muiJoy.anon.PickInputHTMLAttributesHTMLInputElementa
 import com.olvind.mui.muiJoy.utilsTypesMod.CreateSlotsAndSlotProps
 import com.olvind.mui.muiTypes.mod.OverrideProps
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object inputInputPropsMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped std.Omit<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen, 'color'> & @mui/joy.anon.62<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen> extends std.Function ? std.Omit<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen, 'color'> & @mui/joy.anon.62<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen> : {[ K in keyof std.Omit<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen, 'color'> & @mui/joy.anon.62<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen> ]: std.Omit<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen, 'color'> & @mui/joy.anon.62<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen>[K]} */ trait InputOwnerState extends StObject {
+  - Dropped std.Omit<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen, 'color'> & @mui/joy.anon.61<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen> extends std.Function ? std.Omit<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen, 'color'> & @mui/joy.anon.61<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen> : {[ K in keyof std.Omit<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen, 'color'> & @mui/joy.anon.61<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen> ]: std.Omit<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen, 'color'> & @mui/joy.anon.61<@mui/joy.anon.InputPropsInputTypeMapdivdefaultComponen>[K]} */ trait InputOwnerState extends StObject {
     
     /**
       * If `true`, the input is focused.
@@ -54,7 +54,53 @@ object inputInputPropsMod {
   }
   type InputSlot = "root" | "input" | "startDecorator" | "endDecorator"
   
-  type InputSlotsAndSlotProps = CreateSlotsAndSlotProps[InputSlot, EndDecoratorInputRoot]
+  trait InputSlots extends StObject {
+    
+    /**
+      * The component that renders the end decorator.
+      * @default 'span'
+      */
+    var endDecorator: ElementType
+    
+    /**
+      * The component that renders the input.
+      * @default 'input'
+      */
+    var input: ElementType
+    
+    /**
+      * The component that renders the root.
+      * @default 'div'
+      */
+    var root: ElementType
+    
+    /**
+      * The component that renders the start decorator.
+      * @default 'span'
+      */
+    var startDecorator: ElementType
+  }
+  object InputSlots {
+    
+    inline def apply(endDecorator: ElementType, input: ElementType, root: ElementType, startDecorator: ElementType): InputSlots = {
+      val __obj = js.Dynamic.literal(endDecorator = endDecorator.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startDecorator = startDecorator.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InputSlots]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputSlots] (val x: Self) extends AnyVal {
+      
+      inline def setEndDecorator(value: ElementType): Self = StObject.set(x, "endDecorator", value.asInstanceOf[js.Any])
+      
+      inline def setInput(value: ElementType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      inline def setRoot(value: ElementType): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setStartDecorator(value: ElementType): Self = StObject.set(x, "startDecorator", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type InputSlotsAndSlotProps = CreateSlotsAndSlotProps[InputSlots, InputRoot]
   
   trait InputTypeMap[P, D /* <: ElementType */] extends StObject {
     

@@ -11,6 +11,8 @@ trait PartialAutocompleteClasses extends StObject {
   
   var endAdornment: js.UndefOr[String] = js.undefined
   
+  var expanded: js.UndefOr[String] = js.undefined
+  
   var focused: js.UndefOr[String] = js.undefined
   
   var fullWidth: js.UndefOr[String] = js.undefined
@@ -72,6 +74,10 @@ object PartialAutocompleteClasses {
     inline def setEndAdornment(value: String): Self = StObject.set(x, "endAdornment", value.asInstanceOf[js.Any])
     
     inline def setEndAdornmentUndefined: Self = StObject.set(x, "endAdornment", js.undefined)
+    
+    inline def setExpanded(value: String): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     inline def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     

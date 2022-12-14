@@ -19,7 +19,7 @@ trait TypeofClickAwayListener extends StObject {
     *
     * API:
     *
-    * - [ClickAwayListener API](https://mui.com/base/api/click-away-listener/)
+    * - [ClickAwayListener API](https://mui.com/base/react-click-away-listener/components-api/#click-away-listener)
     */
   def apply(props: ClickAwayListenerProps): Element = js.native
   

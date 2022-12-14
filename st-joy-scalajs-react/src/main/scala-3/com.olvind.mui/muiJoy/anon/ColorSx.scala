@@ -1,7 +1,7 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.listItemButtonListItemButtonPropsMod.ListItemButtonPropsColorOverrides
-import com.olvind.mui.muiJoy.listItemButtonListItemButtonPropsMod.ListItemButtonPropsVariantOverrides
+import com.olvind.mui.muiJoy.autocompleteOptionAutocompleteOptionPropsMod.AutocompleteOptionPropsColorOverrides
+import com.olvind.mui.muiJoy.autocompleteOptionAutocompleteOptionPropsMod.AutocompleteOptionPropsVariantOverrides
 import com.olvind.mui.muiJoy.stylesTypesColorSystemMod.ColorPaletteProp
 import com.olvind.mui.muiJoy.stylesTypesThemeMod.SxProps
 import com.olvind.mui.muiJoy.stylesTypesVariantsMod.VariantProp
@@ -17,7 +17,7 @@ trait ColorSx extends StObject {
     * The color of the component. It supports those theme colors that make sense for this component.
     * @default 'neutral'
     */
-  var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, ListItemButtonPropsColorOverrides]] = js.undefined
+  var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, AutocompleteOptionPropsColorOverrides]] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
@@ -25,10 +25,10 @@ trait ColorSx extends StObject {
   var sx: js.UndefOr[SxProps] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'plain'
     */
-  var variant: js.UndefOr[OverridableStringUnion[VariantProp, ListItemButtonPropsVariantOverrides]] = js.undefined
+  var variant: js.UndefOr[OverridableStringUnion[VariantProp, AutocompleteOptionPropsVariantOverrides]] = js.undefined
 }
 object ColorSx {
   
@@ -40,7 +40,7 @@ object ColorSx {
   @scala.inline
   implicit open class MutableBuilder[Self <: ColorSx] (val x: Self) extends AnyVal {
     
-    inline def setColor(value: OverridableStringUnion[ColorPaletteProp, ListItemButtonPropsColorOverrides]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: OverridableStringUnion[ColorPaletteProp, AutocompleteOptionPropsColorOverrides]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -61,7 +61,7 @@ object ColorSx {
         ]))*
     ): Self = StObject.set(x, "sx", js.Array(value*))
     
-    inline def setVariant(value: OverridableStringUnion[VariantProp, ListItemButtonPropsVariantOverrides]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: OverridableStringUnion[VariantProp, AutocompleteOptionPropsVariantOverrides]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }

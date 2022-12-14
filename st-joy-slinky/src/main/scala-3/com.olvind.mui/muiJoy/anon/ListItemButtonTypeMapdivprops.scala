@@ -35,13 +35,8 @@ trait ListItemButtonTypeMapdivprops extends StObject {
   var children: js.UndefOr[ReactElement] = js.undefined
   
   /**
-    * Override or extend the styles applied to the component.
-    */
-  var classes: js.UndefOr[PartialListItemButtonClasses] = js.undefined
-  
-  /**
     * The color of the component. It supports those theme colors that make sense for this component.
-    * @default 'neutral'
+    * @default selected ? 'primary' : 'neutral'
     */
   var color: js.UndefOr[OverridableStringUnion[ColorPaletteProp, ListItemButtonPropsColorOverrides]] = js.undefined
   
@@ -68,7 +63,7 @@ trait ListItemButtonTypeMapdivprops extends StObject {
   var orientation: js.UndefOr["horizontal" | "vertical"] = js.undefined
   
   /**
-    * Use to apply selected styling.
+    * If `true`, the component is selected.
     * @default false
     */
   var selected: js.UndefOr[Boolean] = js.undefined
@@ -84,7 +79,7 @@ trait ListItemButtonTypeMapdivprops extends StObject {
   var tabIndex: js.UndefOr[NonNullable[js.UndefOr[Double]]] = js.undefined
   
   /**
-    * The variant to use.
+    * The [global variant](https://mui.com/joy-ui/main-features/global-variants/) to use.
     * @default 'plain'
     */
   var variant: js.UndefOr[OverridableStringUnion[VariantProp, ListItemButtonPropsVariantOverrides]] = js.undefined
@@ -116,10 +111,6 @@ object ListItemButtonTypeMapdivprops {
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    
-    inline def setClasses(value: PartialListItemButtonClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
-    
-    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     inline def setColor(value: OverridableStringUnion[ColorPaletteProp, ListItemButtonPropsColorOverrides]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

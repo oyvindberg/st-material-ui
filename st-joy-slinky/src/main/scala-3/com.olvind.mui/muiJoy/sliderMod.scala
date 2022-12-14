@@ -13,6 +13,16 @@ object sliderMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Slider](https://mui.com/joy-ui/react-slider/)
+    *
+    * API:
+    *
+    * - [Slider API](https://mui.com/joy-ui/api/slider/)
+    */
   @JSImport("@mui/joy/Slider", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsSliderTypeMapspan, Element | Null] = js.native

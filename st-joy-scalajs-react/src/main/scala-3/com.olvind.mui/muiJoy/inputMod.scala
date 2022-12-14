@@ -13,6 +13,16 @@ object inputMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Input](https://mui.com/joy-ui/react-input/)
+    *
+    * API:
+    *
+    * - [Input API](https://mui.com/joy-ui/api/input/)
+    */
   @JSImport("@mui/joy/Input", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsInputTypeMapdiv, Element | Null] = js.native

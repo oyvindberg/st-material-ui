@@ -44,7 +44,9 @@ trait Avatar[SubheaderTypographyComponent /* <: ReactElement */, TitleTypography
     * These props will be forwarded to the subheader
     * (as long as disableTypography is not `true`).
     */
-  var subheaderTypographyProps: js.UndefOr[TypographyProps[SubheaderTypographyComponent, `5`[SubheaderTypographyComponent]]] = js.undefined
+  var subheaderTypographyProps: js.UndefOr[
+    TypographyProps[SubheaderTypographyComponent, Component[SubheaderTypographyComponent]]
+  ] = js.undefined
   
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
@@ -90,7 +92,7 @@ object Avatar {
     
     inline def setSubheader(value: ReactElement): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
     
-    inline def setSubheaderTypographyProps(value: TypographyProps[SubheaderTypographyComponent, `5`[SubheaderTypographyComponent]]): Self = StObject.set(x, "subheaderTypographyProps", value.asInstanceOf[js.Any])
+    inline def setSubheaderTypographyProps(value: TypographyProps[SubheaderTypographyComponent, Component[SubheaderTypographyComponent]]): Self = StObject.set(x, "subheaderTypographyProps", value.asInstanceOf[js.Any])
     
     inline def setSubheaderTypographyPropsUndefined: Self = StObject.set(x, "subheaderTypographyProps", js.undefined)
     

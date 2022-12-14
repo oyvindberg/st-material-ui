@@ -16,7 +16,7 @@ object autocompleteAutocompleteClassesMod {
   
   inline def getAutocompleteUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutocompleteUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type AutocompleteClassKey = "root" | "fullWidth" | "focused" | "tag" | "tagSizeSmall" | "tagSizeMedium" | "hasPopupIcon" | "hasClearIcon" | "inputRoot" | "input" | "inputFocused" | "endAdornment" | "clearIndicator" | "popupIndicator" | "popupIndicatorOpen" | "popper" | "popperDisablePortal" | "paper" | "listbox" | "loading" | "noOptions" | "option" | "groupLabel" | "groupUl"
+  type AutocompleteClassKey = "root" | "fullWidth" | "expanded" | "focused" | "tag" | "tagSizeSmall" | "tagSizeMedium" | "hasPopupIcon" | "hasClearIcon" | "inputRoot" | "input" | "inputFocused" | "endAdornment" | "clearIndicator" | "popupIndicator" | "popupIndicatorOpen" | "popper" | "popperDisablePortal" | "paper" | "listbox" | "loading" | "noOptions" | "option" | "groupLabel" | "groupUl"
   
   trait AutocompleteClasses extends StObject {
     
@@ -25,6 +25,9 @@ object autocompleteAutocompleteClassesMod {
     
     /** Styles applied to the endAdornment element. */
     var endAdornment: String
+    
+    /** State class applied to the root element if the listbox is displayed. */
+    var expanded: String
     
     /** State class applied to the root element if focused. */
     var focused: String
@@ -97,6 +100,7 @@ object autocompleteAutocompleteClassesMod {
     inline def apply(
       clearIndicator: String,
       endAdornment: String,
+      expanded: String,
       focused: String,
       fullWidth: String,
       groupLabel: String,
@@ -120,7 +124,7 @@ object autocompleteAutocompleteClassesMod {
       tagSizeMedium: String,
       tagSizeSmall: String
     ): AutocompleteClasses = {
-      val __obj = js.Dynamic.literal(clearIndicator = clearIndicator.asInstanceOf[js.Any], endAdornment = endAdornment.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], fullWidth = fullWidth.asInstanceOf[js.Any], groupLabel = groupLabel.asInstanceOf[js.Any], groupUl = groupUl.asInstanceOf[js.Any], hasClearIcon = hasClearIcon.asInstanceOf[js.Any], hasPopupIcon = hasPopupIcon.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], inputFocused = inputFocused.asInstanceOf[js.Any], inputRoot = inputRoot.asInstanceOf[js.Any], listbox = listbox.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], noOptions = noOptions.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], paper = paper.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], popperDisablePortal = popperDisablePortal.asInstanceOf[js.Any], popupIndicator = popupIndicator.asInstanceOf[js.Any], popupIndicatorOpen = popupIndicatorOpen.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagSizeMedium = tagSizeMedium.asInstanceOf[js.Any], tagSizeSmall = tagSizeSmall.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(clearIndicator = clearIndicator.asInstanceOf[js.Any], endAdornment = endAdornment.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], fullWidth = fullWidth.asInstanceOf[js.Any], groupLabel = groupLabel.asInstanceOf[js.Any], groupUl = groupUl.asInstanceOf[js.Any], hasClearIcon = hasClearIcon.asInstanceOf[js.Any], hasPopupIcon = hasPopupIcon.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], inputFocused = inputFocused.asInstanceOf[js.Any], inputRoot = inputRoot.asInstanceOf[js.Any], listbox = listbox.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], noOptions = noOptions.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], paper = paper.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], popperDisablePortal = popperDisablePortal.asInstanceOf[js.Any], popupIndicator = popupIndicator.asInstanceOf[js.Any], popupIndicatorOpen = popupIndicatorOpen.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagSizeMedium = tagSizeMedium.asInstanceOf[js.Any], tagSizeSmall = tagSizeSmall.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutocompleteClasses]
     }
     
@@ -130,6 +134,8 @@ object autocompleteAutocompleteClassesMod {
       inline def setClearIndicator(value: String): Self = StObject.set(x, "clearIndicator", value.asInstanceOf[js.Any])
       
       inline def setEndAdornment(value: String): Self = StObject.set(x, "endAdornment", value.asInstanceOf[js.Any])
+      
+      inline def setExpanded(value: String): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
       inline def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       

@@ -4,7 +4,7 @@ import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.muiMaterial.anon.Disabled
 import com.olvind.mui.muiMaterial.anon.InputRoot
 import com.olvind.mui.muiMaterial.anon.PartialOutlinedInputClasses
-import com.olvind.mui.muiMaterial.anon.`11`
+import com.olvind.mui.muiMaterial.anon.`12`
 import com.olvind.mui.muiMaterial.inputBaseInputBaseMod.InputBaseComponentProps
 import com.olvind.mui.muiMaterial.outlinedInputOutlinedInputMod.OutlinedInputProps
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
@@ -170,9 +170,11 @@ object OutlinedInput {
     
     inline def color(value: "primary" | "secondary" | "error" | "info" | "success" | "warning"): this.type = set("color", value.asInstanceOf[js.Any])
     
-    inline def components(value: `11`): this.type = set("components", value.asInstanceOf[js.Any])
+    inline def components(value: `12`): this.type = set("components", value.asInstanceOf[js.Any])
     
     inline def componentsProps(value: InputRoot): this.type = set("componentsProps", value.asInstanceOf[js.Any])
+    
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
     
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
@@ -424,6 +426,8 @@ object OutlinedInput {
       value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
     ): this.type = set("ref", value.asInstanceOf[js.Any])
     
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
     inline def renderSuffix(value: /* state */ Disabled => ReactElement): this.type = set("renderSuffix", js.Any.fromFunction1(value))
     
     inline def required(value: Boolean): this.type = set("required", value.asInstanceOf[js.Any])
@@ -431,6 +435,8 @@ object OutlinedInput {
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     

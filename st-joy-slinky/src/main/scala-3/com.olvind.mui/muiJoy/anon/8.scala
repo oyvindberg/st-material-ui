@@ -1,7 +1,7 @@
 package com.olvind.mui.muiJoy.anon
 
-import com.olvind.mui.muiJoy.badgeBadgePropsMod.BadgeOwnerState
-import com.olvind.mui.muiJoy.badgeBadgePropsMod.BadgeSlot
+import com.olvind.mui.muiJoy.buttonButtonPropsMod.ButtonOwnerState
+import com.olvind.mui.muiJoy.buttonButtonPropsMod.ButtonSlot
 import com.olvind.mui.muiJoy.stylesComponentsMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `8`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[PartialBadgePropsBadgeTypeMapspandefault] = js.undefined
+  var defaultProps: js.UndefOr[PartialButtonPropsButtonTypeMapbuttondef] = js.undefined
   
-  var styleOverrides: js.UndefOr[OverridesStyleRules[BadgeSlot, BadgeOwnerState, Theme]] = js.undefined
+  var styleOverrides: js.UndefOr[OverridesStyleRules[ButtonSlot, ButtonOwnerState, Theme]] = js.undefined
 }
 object `8` {
   
@@ -23,11 +23,11 @@ object `8` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `8`[?], Theme] (val x: Self & `8`[Theme]) extends AnyVal {
     
-    inline def setDefaultProps(value: PartialBadgePropsBadgeTypeMapspandefault): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialButtonPropsButtonTypeMapbuttondef): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    inline def setStyleOverrides(value: OverridesStyleRules[BadgeSlot, BadgeOwnerState, Theme]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    inline def setStyleOverrides(value: OverridesStyleRules[ButtonSlot, ButtonOwnerState, Theme]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
   }

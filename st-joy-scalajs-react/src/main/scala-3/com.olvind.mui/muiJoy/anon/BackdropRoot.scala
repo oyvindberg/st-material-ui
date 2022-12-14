@@ -9,17 +9,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Modal/ModalProps.ModalOwnerState>,   backdrop :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Modal/ModalProps.ModalOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Modal/ModalProps.ModalOwnerState>,   backdrop :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/Modal/ModalProps.ModalOwnerState>}[P]} */
 trait BackdropRoot extends StObject {
   
-  var backdrop: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState]] = js.undefined
+  var backdrop: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState]
   
-  var root: js.UndefOr[com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState]] = js.undefined
+  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState]
 }
 object BackdropRoot {
   
-  inline def apply(): BackdropRoot = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    backdrop: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState],
+    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState]
+  ): BackdropRoot = {
+    val __obj = js.Dynamic.literal(backdrop = backdrop.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackdropRoot]
   }
   
@@ -32,14 +34,10 @@ object BackdropRoot {
       value: ModalOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "backdrop", js.Any.fromFunction1(value))
     
-    inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
-    
     inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ModalOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootFunction1(
       value: ModalOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
-    
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

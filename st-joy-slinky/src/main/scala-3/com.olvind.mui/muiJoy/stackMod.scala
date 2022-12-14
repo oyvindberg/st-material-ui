@@ -13,6 +13,16 @@ object stackMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Stack](https://mui.com/joy-ui/react-stack/)
+    *
+    * API:
+    *
+    * - [Stack API](https://mui.com/joy-ui/api/stack/)
+    */
   @JSImport("@mui/joy/Stack", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsStackTypeMapdiv, Element | Null] = js.native

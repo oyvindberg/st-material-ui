@@ -1,10 +1,11 @@
 package com.olvind.mui.muiBase
 
-import com.olvind.mui.muiBase.anon.ListboxPopperRoot
-import com.olvind.mui.muiBase.anon.Placement
-import com.olvind.mui.muiBase.anon.PopperRoot
-import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledMod.PopperPlacementType
-import com.olvind.mui.muiBase.selectUnstyledUseSelectDottypesMod.SelectOption
+import com.olvind.mui.muiBase.anon.Popper
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperPlacementType
+import com.olvind.mui.muiBase.popperUnstyledPopperUnstyledDottypesMod.PopperUnstyledChildrenProps
+import com.olvind.mui.muiBase.useSelectUseSelectDottypesMod.SelectOption
+import com.olvind.mui.muiBase.useSelectUseSelectDottypesMod.SelectValue
+import com.olvind.mui.react.mod.ComponentType
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.ReactFocusEventFrom
@@ -12,18 +13,21 @@ import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.ReactMouseEventFrom
 import japgolly.scalajs.react.facade.Empty
 import japgolly.scalajs.react.facade.JsNumber
-import japgolly.scalajs.react.facade.React.Element
 import japgolly.scalajs.react.facade.React.ElementType
 import japgolly.scalajs.react.facade.React.Node
 import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectUnstyledSelectUnstyledDottypesMod {
   
-  trait SelectUnstyledCommonProps extends StObject {
+  trait SelectUnstyledListboxSlotPropsOverrides extends StObject
+  
+  trait SelectUnstyledOwnProps[TValue /* <: js.Object */, Multiple /* <: Boolean */] extends StObject {
     
     /**
       * If `true`, the select element is focused during the first mount
@@ -42,10 +46,27 @@ object selectUnstyledSelectUnstyledDottypesMod {
     var defaultListboxOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * The default selected value. Use when the component is not controlled.
+      */
+    var defaultValue: js.UndefOr[SelectValue[TValue, Multiple]] = js.undefined
+    
+    /**
       * If `true`, the select is disabled.
       * @default false
       */
     var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * A function to convert the currently selected value to a string.
+      * Used to set a value of a hidden input associated with the select,
+      * so that the selected value can be posted with a form.
+      */
+    var getSerializedValue: js.UndefOr[
+        js.Function1[
+          /* option */ SelectValue[SelectOption[TValue], Multiple], 
+          js.UndefOr[String | js.Array[String] | Double]
+        ]
+      ] = js.undefined
     
     /**
       * `id` attribute of the listbox element.
@@ -60,104 +81,34 @@ object selectUnstyledSelectUnstyledDottypesMod {
     var listboxOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * If `true`, selecting multiple values is allowed.
+      *
+      * @default false
+      */
+    var multiple: js.UndefOr[Multiple] = js.undefined
+    
+    /**
       * Name of the element. For example used by the server to identify the fields in form submits.
       * If the name is provided, the component will render a hidden input element that can be submitted to a server.
       */
     var name: js.UndefOr[String] = js.undefined
     
     /**
-      * Callback fired when the component requests to be opened.
-      * Use in controlled mode (see listboxOpen).
-      */
-    var onListboxOpenChange: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.undefined
-  }
-  object SelectUnstyledCommonProps {
-    
-    inline def apply(): SelectUnstyledCommonProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SelectUnstyledCommonProps]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SelectUnstyledCommonProps] (val x: Self) extends AnyVal {
-      
-      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-      
-      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
-      
-      inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
-      
-      inline def setChildrenNull: Self = StObject.set(x, "children", null)
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
-      
-      inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setDefaultListboxOpen(value: Boolean): Self = StObject.set(x, "defaultListboxOpen", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultListboxOpenUndefined: Self = StObject.set(x, "defaultListboxOpen", js.undefined)
-      
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      inline def setListboxId(value: String): Self = StObject.set(x, "listboxId", value.asInstanceOf[js.Any])
-      
-      inline def setListboxIdUndefined: Self = StObject.set(x, "listboxId", js.undefined)
-      
-      inline def setListboxOpen(value: Boolean): Self = StObject.set(x, "listboxOpen", value.asInstanceOf[js.Any])
-      
-      inline def setListboxOpenUndefined: Self = StObject.set(x, "listboxOpen", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setOnListboxOpenChange(value: /* isOpen */ Boolean => Callback): Self = StObject.set(x, "onListboxOpenChange", js.Any.fromFunction1((t0: /* isOpen */ Boolean) => value(t0).runNow()))
-      
-      inline def setOnListboxOpenChangeUndefined: Self = StObject.set(x, "onListboxOpenChange", js.undefined)
-    }
-  }
-  
-  trait SelectUnstyledComponentsPropsOverrides extends StObject
-  
-  trait SelectUnstyledOwnProps[TValue /* <: js.Object */]
-    extends StObject
-       with SelectUnstyledCommonProps {
-    
-    /**
-      * The default selected value. Use when the component is not controlled.
-      */
-    var defaultValue: js.UndefOr[TValue | Null] = js.undefined
-    
-    /**
-      * A function to convert the currently selected value to a string.
-      * Used to set a value of a hidden input associated with the select,
-      * so that the selected value can be posted with a form.
-      */
-    var getSerializedValue: js.UndefOr[
-        js.Function1[
-          /* option */ SelectOption[TValue] | Null, 
-          js.UndefOr[String | js.Array[String] | Double]
-        ]
-      ] = js.undefined
-    
-    /**
       * Callback fired when an option is selected.
       */
     var onChange: js.UndefOr[
         js.Function2[
-          /* e */ ReactMouseEventFrom[org.scalajs.dom.Element] | ReactKeyboardEventFrom[org.scalajs.dom.Element] | ReactFocusEventFrom[org.scalajs.dom.Element] | Null, 
-          /* value */ TValue | Null, 
+          /* e */ ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element] | ReactFocusEventFrom[Element] | Null, 
+          /* value */ SelectValue[TValue, Multiple], 
           Unit
         ]
       ] = js.undefined
+    
+    /**
+      * Callback fired when the component requests to be opened.
+      * Use in controlled mode (see listboxOpen).
+      */
+    var onListboxOpenChange: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.undefined
     
     /**
       * A function used to convert the option label to a string.
@@ -171,80 +122,128 @@ object selectUnstyledSelectUnstyledDottypesMod {
     /**
       * Function that customizes the rendering of the selected value.
       */
-    var renderValue: js.UndefOr[js.Function1[/* option */ SelectOption[TValue] | Null, Node]] = js.undefined
+    var renderValue: js.UndefOr[js.Function1[/* option */ SelectValue[SelectOption[TValue], Multiple], Node]] = js.undefined
     
     /**
       * The props used for each slot inside the Input.
       * @default {}
       */
-    var slotProps: js.UndefOr[PopperRoot[TValue]] = js.undefined
+    var slotProps: js.UndefOr[Popper[TValue, Multiple]] = js.undefined
     
     /**
       * The components used for each slot inside the Select.
       * Either a string to use a HTML element or a component.
       * @default {}
       */
-    var slots: js.UndefOr[ListboxPopperRoot[TValue]] = js.undefined
+    var slots: js.UndefOr[SelectUnstyledSlots[TValue, Multiple]] = js.undefined
     
     /**
       * The selected value.
       * Set to `null` to deselect all options.
       */
-    var value: js.UndefOr[TValue | Null] = js.undefined
+    var value: js.UndefOr[SelectValue[TValue, Multiple]] = js.undefined
   }
   object SelectUnstyledOwnProps {
     
-    inline def apply[TValue /* <: js.Object */](): SelectUnstyledOwnProps[TValue] = {
+    inline def apply[TValue /* <: js.Object */, Multiple /* <: Boolean */](): SelectUnstyledOwnProps[TValue, Multiple] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SelectUnstyledOwnProps[TValue]]
+      __obj.asInstanceOf[SelectUnstyledOwnProps[TValue, Multiple]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SelectUnstyledOwnProps[?], TValue /* <: js.Object */] (val x: Self & SelectUnstyledOwnProps[TValue]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SelectUnstyledOwnProps[?, ?], TValue /* <: js.Object */, Multiple /* <: Boolean */] (val x: Self & (SelectUnstyledOwnProps[TValue, Multiple])) extends AnyVal {
       
-      inline def setDefaultValue(value: TValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
+      inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setDefaultListboxOpen(value: Boolean): Self = StObject.set(x, "defaultListboxOpen", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultListboxOpenUndefined: Self = StObject.set(x, "defaultListboxOpen", js.undefined)
+      
+      inline def setDefaultValue(value: SelectValue[TValue, Multiple]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setGetSerializedValue(value: /* option */ SelectOption[TValue] | Null => js.UndefOr[String | js.Array[String] | Double]): Self = StObject.set(x, "getSerializedValue", js.Any.fromFunction1(value))
+      inline def setDefaultValueVarargs(value: TValue*): Self = StObject.set(x, "defaultValue", js.Array(value*))
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setGetSerializedValue(
+        value: /* option */ SelectValue[SelectOption[TValue], Multiple] => js.UndefOr[String | js.Array[String] | Double]
+      ): Self = StObject.set(x, "getSerializedValue", js.Any.fromFunction1(value))
       
       inline def setGetSerializedValueUndefined: Self = StObject.set(x, "getSerializedValue", js.undefined)
       
+      inline def setListboxId(value: String): Self = StObject.set(x, "listboxId", value.asInstanceOf[js.Any])
+      
+      inline def setListboxIdUndefined: Self = StObject.set(x, "listboxId", js.undefined)
+      
+      inline def setListboxOpen(value: Boolean): Self = StObject.set(x, "listboxOpen", value.asInstanceOf[js.Any])
+      
+      inline def setListboxOpenUndefined: Self = StObject.set(x, "listboxOpen", js.undefined)
+      
+      inline def setMultiple(value: Multiple): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
       inline def setOnChange(
-        value: (/* e */ ReactMouseEventFrom[org.scalajs.dom.Element] | ReactKeyboardEventFrom[org.scalajs.dom.Element] | ReactFocusEventFrom[org.scalajs.dom.Element] | Null, /* value */ TValue | Null) => Callback
-      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2((t0: /* e */ ReactMouseEventFrom[org.scalajs.dom.Element] | ReactKeyboardEventFrom[org.scalajs.dom.Element] | ReactFocusEventFrom[org.scalajs.dom.Element] | Null, t1: /* value */ TValue | Null) => (value(t0, t1)).runNow()))
+        value: (/* e */ ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element] | ReactFocusEventFrom[Element] | Null, /* value */ SelectValue[TValue, Multiple]) => Callback
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2((t0: /* e */ ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element] | ReactFocusEventFrom[Element] | Null, t1: /* value */ SelectValue[TValue, Multiple]) => (value(t0, t1)).runNow()))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      inline def setOnListboxOpenChange(value: /* isOpen */ Boolean => Callback): Self = StObject.set(x, "onListboxOpenChange", js.Any.fromFunction1((t0: /* isOpen */ Boolean) => value(t0).runNow()))
+      
+      inline def setOnListboxOpenChangeUndefined: Self = StObject.set(x, "onListboxOpenChange", js.undefined)
       
       inline def setOptionStringifier(value: /* option */ SelectOption[TValue] => String): Self = StObject.set(x, "optionStringifier", js.Any.fromFunction1(value))
       
       inline def setOptionStringifierUndefined: Self = StObject.set(x, "optionStringifier", js.undefined)
       
-      inline def setRenderValue(value: /* option */ SelectOption[TValue] | Null => Node): Self = StObject.set(x, "renderValue", js.Any.fromFunction1(value))
+      inline def setRenderValue(value: /* option */ SelectValue[SelectOption[TValue], Multiple] => Node): Self = StObject.set(x, "renderValue", js.Any.fromFunction1(value))
       
       inline def setRenderValueUndefined: Self = StObject.set(x, "renderValue", js.undefined)
       
-      inline def setSlotProps(value: PopperRoot[TValue]): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+      inline def setSlotProps(value: Popper[TValue, Multiple]): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
       
       inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
       
-      inline def setSlots(value: ListboxPopperRoot[TValue]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: SelectUnstyledSlots[TValue, Multiple]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
-      inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValue(value: SelectValue[TValue, Multiple]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      
+      inline def setValueVarargs(value: TValue*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
-  trait SelectUnstyledOwnerState[TValue /* <: js.Object */]
+  trait SelectUnstyledOwnerState[TValue /* <: js.Object */, Multiple /* <: Boolean */]
     extends StObject
-       with SelectUnstyledOwnProps[TValue] {
+       with SelectUnstyledOwnProps[TValue, Multiple] {
     
     var active: Boolean
     
@@ -257,13 +256,13 @@ object selectUnstyledSelectUnstyledDottypesMod {
   }
   object SelectUnstyledOwnerState {
     
-    inline def apply[TValue /* <: js.Object */](active: Boolean, disabled: Boolean, focusVisible: Boolean, open: Boolean): SelectUnstyledOwnerState[TValue] = {
+    inline def apply[TValue /* <: js.Object */, Multiple /* <: Boolean */](active: Boolean, disabled: Boolean, focusVisible: Boolean, open: Boolean): SelectUnstyledOwnerState[TValue, Multiple] = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectUnstyledOwnerState[TValue]]
+      __obj.asInstanceOf[SelectUnstyledOwnerState[TValue, Multiple]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SelectUnstyledOwnerState[?], TValue /* <: js.Object */] (val x: Self & SelectUnstyledOwnerState[TValue]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SelectUnstyledOwnerState[?, ?], TValue /* <: js.Object */, Multiple /* <: Boolean */] (val x: Self & (SelectUnstyledOwnerState[TValue, Multiple])) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -275,15 +274,15 @@ object selectUnstyledSelectUnstyledDottypesMod {
     }
   }
   
-  trait SelectUnstyledPopperSlotProps[TValue /* <: js.Object */] extends StObject {
+  trait SelectUnstyledPopperSlotProps[TValue /* <: js.Object */, Multiple /* <: Boolean */] extends StObject {
     
     var anchorEl: js.UndefOr[
-        Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+        Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
         ])
       ] = js.undefined
     
-    var children: js.UndefOr[Node | (js.Function1[/* props */ Placement, Node])] = js.undefined
+    var children: js.UndefOr[Node | (js.Function1[/* props */ PopperUnstyledChildrenProps, Node])] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -291,29 +290,29 @@ object selectUnstyledSelectUnstyledDottypesMod {
     
     var open: Boolean
     
-    var ownerState: SelectUnstyledOwnerState[TValue]
+    var ownerState: SelectUnstyledOwnerState[TValue, Multiple]
     
     var placement: js.UndefOr[PopperPlacementType] = js.undefined
   }
   object SelectUnstyledPopperSlotProps {
     
-    inline def apply[TValue /* <: js.Object */](open: Boolean, ownerState: SelectUnstyledOwnerState[TValue]): SelectUnstyledPopperSlotProps[TValue] = {
+    inline def apply[TValue /* <: js.Object */, Multiple /* <: Boolean */](open: Boolean, ownerState: SelectUnstyledOwnerState[TValue, Multiple]): SelectUnstyledPopperSlotProps[TValue, Multiple] = {
       val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any], ownerState = ownerState.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectUnstyledPopperSlotProps[TValue]]
+      __obj.asInstanceOf[SelectUnstyledPopperSlotProps[TValue, Multiple]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SelectUnstyledPopperSlotProps[?], TValue /* <: js.Object */] (val x: Self & SelectUnstyledPopperSlotProps[TValue]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SelectUnstyledPopperSlotProps[?, ?], TValue /* <: js.Object */, Multiple /* <: Boolean */] (val x: Self & (SelectUnstyledPopperSlotProps[TValue, Multiple])) extends AnyVal {
       
       inline def setAnchorEl(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement | (js.Function0[
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
             ])
       ): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
       
       inline def setAnchorElCallbackTo(
         value: CallbackTo[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | HTMLElement
             ]
       ): Self = StObject.set(x, "anchorEl", value.toJsFn)
       
@@ -321,15 +320,15 @@ object selectUnstyledSelectUnstyledDottypesMod {
       
       inline def setAnchorElUndefined: Self = StObject.set(x, "anchorEl", js.undefined)
       
-      inline def setChildren(value: Node | (js.Function1[/* props */ Placement, Node])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Node | (js.Function1[/* props */ PopperUnstyledChildrenProps, Node])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenFunction1(value: /* props */ Placement => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* props */ PopperUnstyledChildrenProps => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+      inline def setChildrenVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
       
@@ -343,7 +342,7 @@ object selectUnstyledSelectUnstyledDottypesMod {
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      inline def setOwnerState(value: SelectUnstyledOwnerState[TValue]): Self = StObject.set(x, "ownerState", value.asInstanceOf[js.Any])
+      inline def setOwnerState(value: SelectUnstyledOwnerState[TValue, Multiple]): Self = StObject.set(x, "ownerState", value.asInstanceOf[js.Any])
       
       inline def setPlacement(value: PopperPlacementType): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
@@ -351,25 +350,73 @@ object selectUnstyledSelectUnstyledDottypesMod {
     }
   }
   
-  trait SelectUnstyledTypeMap[TValue /* <: js.Object */, P, D /* <: ElementType */] extends StObject {
+  trait SelectUnstyledPopperSlotPropsOverrides extends StObject
+  
+  trait SelectUnstyledRootSlotPropsOverrides extends StObject
+  
+  trait SelectUnstyledSlots[TValue /* <: js.Object */, Multiple /* <: Boolean */] extends StObject {
     
-    var defaultComponent: D
+    /**
+      * The component that renders the listbox.
+      * @default 'ul'
+      */
+    var listbox: js.UndefOr[ElementType] = js.undefined
     
-    var props: P & SelectUnstyledOwnProps[TValue]
+    /**
+      * The component that renders the popper.
+      * @default PopperUnstyled
+      */
+    var popper: js.UndefOr[ComponentType[SelectUnstyledPopperSlotProps[TValue, Multiple]]] = js.undefined
+    
+    /**
+      * The component that renders the root.
+      * @default 'button'
+      */
+    var root: js.UndefOr[ElementType] = js.undefined
   }
-  object SelectUnstyledTypeMap {
+  object SelectUnstyledSlots {
     
-    inline def apply[TValue /* <: js.Object */, P, D /* <: ElementType */](defaultComponent: D, props: P & SelectUnstyledOwnProps[TValue]): SelectUnstyledTypeMap[TValue, P, D] = {
-      val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectUnstyledTypeMap[TValue, P, D]]
+    inline def apply[TValue /* <: js.Object */, Multiple /* <: Boolean */](): SelectUnstyledSlots[TValue, Multiple] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SelectUnstyledSlots[TValue, Multiple]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SelectUnstyledTypeMap[?, ?, ?], TValue /* <: js.Object */, P, D /* <: ElementType */] (val x: Self & (SelectUnstyledTypeMap[TValue, P, D])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SelectUnstyledSlots[?, ?], TValue /* <: js.Object */, Multiple /* <: Boolean */] (val x: Self & (SelectUnstyledSlots[TValue, Multiple])) extends AnyVal {
+      
+      inline def setListbox(value: ElementType): Self = StObject.set(x, "listbox", value.asInstanceOf[js.Any])
+      
+      inline def setListboxUndefined: Self = StObject.set(x, "listbox", js.undefined)
+      
+      inline def setPopper(value: ComponentType[SelectUnstyledPopperSlotProps[TValue, Multiple]]): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+      
+      inline def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
+      
+      inline def setRoot(value: ElementType): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  trait SelectUnstyledTypeMap[TValue /* <: js.Object */, Multiple /* <: Boolean */, P, D /* <: ElementType */] extends StObject {
+    
+    var defaultComponent: D
+    
+    var props: P & (SelectUnstyledOwnProps[TValue, Multiple])
+  }
+  object SelectUnstyledTypeMap {
+    
+    inline def apply[TValue /* <: js.Object */, Multiple /* <: Boolean */, P, D /* <: ElementType */](defaultComponent: D, props: P & (SelectUnstyledOwnProps[TValue, Multiple])): SelectUnstyledTypeMap[TValue, Multiple, P, D] = {
+      val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SelectUnstyledTypeMap[TValue, Multiple, P, D]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectUnstyledTypeMap[?, ?, ?, ?], TValue /* <: js.Object */, Multiple /* <: Boolean */, P, D /* <: ElementType */] (val x: Self & (SelectUnstyledTypeMap[TValue, Multiple, P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: P & SelectUnstyledOwnProps[TValue]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P & (SelectUnstyledOwnProps[TValue, Multiple])): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

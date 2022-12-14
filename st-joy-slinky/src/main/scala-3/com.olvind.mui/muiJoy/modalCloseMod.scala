@@ -13,6 +13,16 @@ object modalCloseMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Modal](https://mui.com/joy-ui/react-modal/)
+    *
+    * API:
+    *
+    * - [ModalClose API](https://mui.com/joy-ui/api/modal-close/)
+    */
   @JSImport("@mui/joy/ModalClose", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsModalCloseTypeMapbu, Element | Null] = js.native

@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tabPanelTabPanelMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Tabs](https://mui.com/joy-ui/react-tabs/)
+    *
+    * API:
+    *
+    * - [TabPanel API](https://mui.com/joy-ui/api/tab-panel/)
+    */
   @JSImport("@mui/joy/TabPanel/TabPanel", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsTabPanelTypeMapdiv, Element | Null] = js.native

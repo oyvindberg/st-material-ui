@@ -1,5 +1,3 @@
-import ScalablyTypedConverterGenSourcePlugin.autoImport.stImport
-
 val common: Project => Project = p =>
   p.enablePlugins(ScalaJSPlugin)
     .settings(
@@ -36,13 +34,13 @@ def setupST(iconsMaterialDir: File, joyDir: File): Project => Project =
   _.enablePlugins(ScalablyTypedConverterGenSourcePlugin).settings(
     /* javascript / typescript deps */
     Compile / npmDependencies ++= Seq(
-      "@emotion/react" -> "11.10.5",
-      "@emotion/styled" -> "11.10.5",
-      "@mui/material" -> "5.11.1",
-      "@mui/icons-material" -> "5.11.0",
-      "@mui/joy" -> "5.0.0-alpha.59",
-      "@types/react" -> "18.0.26",
-      "@types/react-dom" -> "18.0.9",
+      "@emotion/react" -> "11.10.6",
+      "@emotion/styled" -> "11.10.6",
+      "@mui/material" -> "5.11.16",
+      "@mui/icons-material" -> "5.11.16",
+      "@mui/joy" -> "5.0.0-alpha.74",
+      "@types/react" -> "18.0.33",
+      "@types/react-dom" -> "18.0.11",
       "react" -> "18.2.0",
       "react-dom" -> "18.2.0"
     ),

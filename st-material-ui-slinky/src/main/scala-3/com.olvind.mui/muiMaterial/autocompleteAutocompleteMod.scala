@@ -1,19 +1,20 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteChangeDetails
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteCloseReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteFreeSoloValueMapping
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteHighlightChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteInputChangeReason
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.AutocompleteValue
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.CreateFilterOptionsConfig
-import com.olvind.mui.muiBase.autocompleteUnstyledUseAutocompleteMod.FilterOptionsState
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteChangeDetails
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteCloseReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteFreeSoloValueMapping
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteHighlightChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteInputChangeReason
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.AutocompleteValue
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.CreateFilterOptionsConfig
+import com.olvind.mui.muiBase.useAutocompleteUseAutocompleteMod.FilterOptionsState
 import com.olvind.mui.muiMaterial.anon.ClassName
 import com.olvind.mui.muiMaterial.anon.ClearIndicator
 import com.olvind.mui.muiMaterial.anon.EndAdornment
 import com.olvind.mui.muiMaterial.anon.Index
 import com.olvind.mui.muiMaterial.anon.PartialAutocompleteClasses
+import com.olvind.mui.muiMaterial.anon.Sx
 import com.olvind.mui.muiMaterial.chipChipMod.ChipProps
 import com.olvind.mui.muiMaterial.popperPopperMod.PopperProps
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
@@ -84,6 +85,8 @@ object autocompleteAutocompleteMod {
     @JSName("disablePortal")
     var disablePortal_AutocompleteOwnerState: Boolean
     
+    var expanded: Boolean
+    
     var focused: Boolean
     
     @JSName("fullWidth")
@@ -104,6 +107,7 @@ object autocompleteAutocompleteMod {
     
     inline def apply[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */, ChipComponent /* <: ReactElement */](
       disablePortal: Boolean,
+      expanded: Boolean,
       focused: Boolean,
       fullWidth: Boolean,
       hasClearIcon: Boolean,
@@ -114,7 +118,7 @@ object autocompleteAutocompleteMod {
       renderInput: AutocompleteRenderInputParams => ReactElement,
       size: "small" | "medium"
     ): AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent] = {
-      val __obj = js.Dynamic.literal(disablePortal = disablePortal.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], fullWidth = fullWidth.asInstanceOf[js.Any], hasClearIcon = hasClearIcon.asInstanceOf[js.Any], hasPopupIcon = hasPopupIcon.asInstanceOf[js.Any], inputFocused = inputFocused.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], popupOpen = popupOpen.asInstanceOf[js.Any], renderInput = js.Any.fromFunction1(renderInput), size = size.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disablePortal = disablePortal.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], fullWidth = fullWidth.asInstanceOf[js.Any], hasClearIcon = hasClearIcon.asInstanceOf[js.Any], hasPopupIcon = hasPopupIcon.asInstanceOf[js.Any], inputFocused = inputFocused.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], popupOpen = popupOpen.asInstanceOf[js.Any], renderInput = js.Any.fromFunction1(renderInput), size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent]]
     }
     
@@ -122,6 +126,8 @@ object autocompleteAutocompleteMod {
     implicit open class MutableBuilder[Self <: AutocompleteOwnerState[?, ?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */, ChipComponent /* <: ReactElement */] (val x: Self & (AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent])) extends AnyVal {
       
       inline def setDisablePortal(value: Boolean): Self = StObject.set(x, "disablePortal", value.asInstanceOf[js.Any])
+      
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
@@ -158,9 +164,9 @@ object autocompleteAutocompleteMod {
       * Props applied to the Listbox element.
       */
     var ListboxProps: js.UndefOr[
-        ReturnType[
+        (ReturnType[
           /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<@mui/material.anon.FnCall>['getListboxProps'] */ js.Any
-        ]
+        ]) & Sx
       ] = js.undefined
     
     /**
@@ -289,6 +295,8 @@ object autocompleteAutocompleteMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     /**
       * If `true`, the first option is automatically highlighted.
       * @default false
@@ -301,6 +309,9 @@ object autocompleteAutocompleteMod {
       * If `true`, the selected option becomes the value of the input
       * when the Autocomplete loses focus unless the user chooses
       * a different option or changes the character string in the input.
+      *
+      * When using `freeSolo` mode, the typed value will be the input value
+      * if the Autocomplete loses focus without highlighting an option.
       * @default false
       */
     var autoSelect: js.UndefOr[Boolean] = js.undefined
@@ -373,6 +384,8 @@ object autocompleteAutocompleteMod {
       * @default {}
       */
     var componentsProps: js.UndefOr[ClearIndicator] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | "inherit"] = js.undefined
     
@@ -698,7 +711,7 @@ object autocompleteAutocompleteMod {
       *
       * @param {React.SyntheticEvent} event The event source of the callback.
       * @param {T} option The highlighted option.
-      * @param {string} reason Can be: `"keyboard"`, `"auto"`, `"mouse"`.
+      * @param {string} reason Can be: `"keyboard"`, `"auto"`, `"mouse"`, `"touch"`.
       */
     var onHighlightChange: js.UndefOr[
         js.Function3[
@@ -877,6 +890,8 @@ object autocompleteAutocompleteMod {
         /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLDivElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
       ] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     /**
       * Render the group.
       *
@@ -930,6 +945,8 @@ object autocompleteAutocompleteMod {
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -1226,6 +1243,10 @@ object autocompleteAutocompleteMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoHighlight(value: Boolean): Self = StObject.set(x, "autoHighlight", value.asInstanceOf[js.Any])
       
       inline def setAutoHighlightUndefined: Self = StObject.set(x, "autoHighlight", js.undefined)
@@ -1286,9 +1307,13 @@ object autocompleteAutocompleteMod {
       
       inline def setComponentsPropsUndefined: Self = StObject.set(x, "componentsProps", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | "inherit"): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1449,9 +1474,9 @@ object autocompleteAutocompleteMod {
       inline def setListboxComponentUndefined: Self = StObject.set(x, "ListboxComponent", js.undefined)
       
       inline def setListboxProps(
-        value: ReturnType[
+        value: (ReturnType[
               /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<@mui/material.anon.FnCall>['getListboxProps'] */ js.Any
-            ]
+            ]) & Sx
       ): Self = StObject.set(x, "ListboxProps", value.asInstanceOf[js.Any])
       
       inline def setListboxPropsUndefined: Self = StObject.set(x, "ListboxProps", js.undefined)
@@ -1874,6 +1899,10 @@ object autocompleteAutocompleteMod {
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRenderGroup(value: /* params */ AutocompleteRenderGroupParams => ReactElement): Self = StObject.set(x, "renderGroup", js.Any.fromFunction1(value))
       
       inline def setRenderGroupUndefined: Self = StObject.set(x, "renderGroup", js.undefined)
@@ -1899,6 +1928,10 @@ object autocompleteAutocompleteMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -2085,19 +2118,23 @@ object autocompleteAutocompleteMod {
   
   trait AutocompleteRenderOptionState extends StObject {
     
+    var index: Double
+    
     var inputValue: String
     
     var selected: Boolean
   }
   object AutocompleteRenderOptionState {
     
-    inline def apply(inputValue: String, selected: Boolean): AutocompleteRenderOptionState = {
-      val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    inline def apply(index: Double, inputValue: String, selected: Boolean): AutocompleteRenderOptionState = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutocompleteRenderOptionState]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: AutocompleteRenderOptionState] (val x: Self) extends AnyVal {
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       

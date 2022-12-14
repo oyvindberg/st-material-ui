@@ -9,25 +9,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'li', {}, @mui/joy.@mui/joy/ListItem/ListItemProps.ListItemOwnerState>,   startAction :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/ListItem/ListItemProps.ListItemOwnerState>,   endAction :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/ListItem/ListItemProps.ListItemOwnerState>} ]:? {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'li', {}, @mui/joy.@mui/joy/ListItem/ListItemProps.ListItemOwnerState>,   startAction :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/ListItem/ListItemProps.ListItemOwnerState>,   endAction :@mui/joy.@mui/joy/utils/types.SlotProps<'div', {}, @mui/joy.@mui/joy/ListItem/ListItemProps.ListItemOwnerState>}[P]} */
 trait StartAction extends StObject {
   
-  var endAction: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ListItemOwnerState]
-  ] = js.undefined
+  var endAction: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ListItemOwnerState]
   
-  var root: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["li", js.Object, ListItemOwnerState]
-  ] = js.undefined
+  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["li", js.Object, ListItemOwnerState]
   
-  var startAction: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ListItemOwnerState]
-  ] = js.undefined
+  var startAction: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ListItemOwnerState]
 }
 object StartAction {
   
-  inline def apply(): StartAction = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    endAction: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ListItemOwnerState],
+    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["li", js.Object, ListItemOwnerState],
+    startAction: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ListItemOwnerState]
+  ): StartAction = {
+    val __obj = js.Dynamic.literal(endAction = endAction.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], startAction = startAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartAction]
   }
   
@@ -40,22 +37,16 @@ object StartAction {
       value: ListItemOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "endAction", js.Any.fromFunction1(value))
     
-    inline def setEndActionUndefined: Self = StObject.set(x, "endAction", js.undefined)
-    
     inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["li", js.Object, ListItemOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootFunction1(
       value: ListItemOwnerState => (Omit[ComponentPropsWithRef["li"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
-    
     inline def setStartAction(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["div", js.Object, ListItemOwnerState]): Self = StObject.set(x, "startAction", value.asInstanceOf[js.Any])
     
     inline def setStartActionFunction1(
       value: ListItemOwnerState => (Omit[ComponentPropsWithRef["div"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "startAction", js.Any.fromFunction1(value))
-    
-    inline def setStartActionUndefined: Self = StObject.set(x, "startAction", js.undefined)
   }
 }

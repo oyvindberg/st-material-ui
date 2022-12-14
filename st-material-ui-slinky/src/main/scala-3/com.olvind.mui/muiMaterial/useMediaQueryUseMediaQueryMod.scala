@@ -12,9 +12,9 @@ object useMediaQueryUseMediaQueryMod {
   val ^ : js.Any = js.native
   
   inline def default[Theme](queryInput: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(queryInput.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def default[Theme](queryInput: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(queryInput.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default[Theme](queryInput: String, options: UseMediaQueryOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(queryInput.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def default[Theme](queryInput: js.Function1[/* theme */ Theme, String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(queryInput.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def default[Theme](queryInput: js.Function1[/* theme */ Theme, String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(queryInput.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default[Theme](queryInput: js.Function1[/* theme */ Theme, String], options: UseMediaQueryOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(queryInput.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait MuiMediaQueryList extends StObject {
     
@@ -66,31 +66,46 @@ object useMediaQueryUseMediaQueryMod {
   
   type MuiMediaQueryListListener = js.Function1[/* event */ MuiMediaQueryListEvent, Unit]
   
-  trait Options extends StObject {
+  trait UseMediaQueryOptions extends StObject {
     
+    /**
+      * As `window.matchMedia()` is unavailable on the server,
+      * it returns a default matches during the first mount.
+      * @default false
+      */
     var defaultMatches: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * You can provide your own implementation of matchMedia.
+      * This can be used for handling an iframe content window.
+      */
     var matchMedia: js.UndefOr[
         /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.matchMedia */ Any
       ] = js.undefined
     
     /**
-      * This option is kept for backwards compatibility and has no longer any effect.
-      * It's previous behavior is now handled automatically.
+      * To perform the server-side hydration, the hook needs to render twice.
+      * A first time with `defaultMatches`, the value of the server, and a second time with the resolved value.
+      * This double pass rendering cycle comes with a drawback: it's slower.
+      * You can set this option to `true` if you use the returned value **only** client-side.
+      * @default false
       */
     var noSsr: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * You can provide your own implementation of `matchMedia`, it's used when rendering server-side.
+      */
     var ssrMatchMedia: js.UndefOr[js.Function1[/* query */ String, Matches]] = js.undefined
   }
-  object Options {
+  object UseMediaQueryOptions {
     
-    inline def apply(): Options = {
+    inline def apply(): UseMediaQueryOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[UseMediaQueryOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: UseMediaQueryOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultMatches(value: Boolean): Self = StObject.set(x, "defaultMatches", value.asInstanceOf[js.Any])
       

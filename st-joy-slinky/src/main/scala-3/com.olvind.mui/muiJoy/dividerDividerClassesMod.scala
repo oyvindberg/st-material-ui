@@ -16,9 +16,12 @@ object dividerDividerClassesMod {
   
   inline def getDividerUtilityClass(slot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDividerUtilityClass")(slot.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type DividerClassKey = "root" | "vertical" | "insetContext" | "insetNone"
+  type DividerClassKey = "root" | "horizontal" | "vertical" | "insetContext" | "insetNone"
   
   trait DividerClasses extends StObject {
+    
+    /** Styles applied to the root element if `orientation="horizontal"`. */
+    var horizontal: String
     
     /** Styles applied to the root element if `inset="context"`. */
     var insetContext: String
@@ -34,13 +37,15 @@ object dividerDividerClassesMod {
   }
   object DividerClasses {
     
-    inline def apply(insetContext: String, insetNone: String, root: String, vertical: String): DividerClasses = {
-      val __obj = js.Dynamic.literal(insetContext = insetContext.asInstanceOf[js.Any], insetNone = insetNone.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
+    inline def apply(horizontal: String, insetContext: String, insetNone: String, root: String, vertical: String): DividerClasses = {
+      val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], insetContext = insetContext.asInstanceOf[js.Any], insetNone = insetNone.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
       __obj.asInstanceOf[DividerClasses]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: DividerClasses] (val x: Self) extends AnyVal {
+      
+      inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
       inline def setInsetContext(value: String): Self = StObject.set(x, "insetContext", value.asInstanceOf[js.Any])
       

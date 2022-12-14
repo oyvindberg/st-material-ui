@@ -144,6 +144,8 @@ object link {
     
     inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
     
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
     inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
     
     inline def charSet(value: String): this.type = set("charSet", value.asInstanceOf[js.Any])
@@ -152,11 +154,13 @@ object link {
     
     inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
     
+    inline def content(value: String): this.type = set("content", value.asInstanceOf[js.Any])
+    
     inline def contentEditable(value: Booleanish | "inherit"): this.type = set("contentEditable", value.asInstanceOf[js.Any])
     
     inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
     
-    inline def crossOrigin(value: String): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
+    inline def crossOrigin(value: "anonymous" | "use-credentials" | ""): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
     
     inline def dangerouslySetInnerHTML(value: Html): this.type = set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
     
@@ -383,6 +387,8 @@ object link {
     inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
     
     inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def rev(value: String): this.type = set("rev", value.asInstanceOf[js.Any])
     
     inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
     

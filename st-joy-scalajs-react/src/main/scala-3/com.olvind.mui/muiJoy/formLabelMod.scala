@@ -13,6 +13,16 @@ object formLabelMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Input](https://mui.com/joy-ui/react-input/)
+    *
+    * API:
+    *
+    * - [FormLabel API](https://mui.com/joy-ui/api/form-label/)
+    */
   @JSImport("@mui/joy/FormLabel", JSImport.Default)
   @js.native
   val default: js.Function1[/* props */ DefaultComponentPropsFormLabelTypeMaplab, Element | Null] = js.native

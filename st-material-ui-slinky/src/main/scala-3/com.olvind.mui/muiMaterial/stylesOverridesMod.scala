@@ -79,7 +79,7 @@ import com.olvind.mui.muiMaterial.ratingRatingClassesMod.RatingClassKey
 import com.olvind.mui.muiMaterial.scopedCssBaselineScopedCssBaselineClassesMod.ScopedCssBaselineClassKey
 import com.olvind.mui.muiMaterial.selectSelectClassesMod.SelectClassKey
 import com.olvind.mui.muiMaterial.skeletonSkeletonClassesMod.SkeletonClassKey
-import com.olvind.mui.muiMaterial.sliderSliderMod.SliderClassKey
+import com.olvind.mui.muiMaterial.sliderSliderClassesMod.SliderClassKey
 import com.olvind.mui.muiMaterial.snackbarContentSnackbarContentClassesMod.SnackbarContentClassKey
 import com.olvind.mui.muiMaterial.snackbarSnackbarClassesMod.SnackbarClassKey
 import com.olvind.mui.muiMaterial.speedDialActionSpeedDialActionClassesMod.SpeedDialActionClassKey

@@ -1,5 +1,6 @@
 package com.olvind.mui.muiJoy.anon
 
+import com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState
 import com.olvind.mui.muiJoy.utilsTypesMod.SlotCommonProps
 import com.olvind.mui.react.mod.ComponentPropsWithRef
 import com.olvind.mui.std.Omit
@@ -8,129 +9,91 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ P in keyof {  root :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Slider/SliderProps.SliderOwnerState>,   track :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Slider/SliderProps.SliderOwnerState>,   rail :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Slider/SliderProps.SliderOwnerState>,   thumb :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Slider/SliderProps.SliderOwnerState>,   mark :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, SliderOwnerState & {}>,   markLabel :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Slider/SliderProps.SliderOwnerState>,   valueLabel :@mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Slider/SliderProps.SliderOwnerState>,   input :@mui/joy.@mui/joy/utils/types.SlotProps<'input', {}, @mui/joy.@mui/joy/Slider/SliderProps.SliderOwnerState>} ]:? @mui/joy.@mui/joy/utils/types.SlotProps<'span', {}, @mui/joy.@mui/joy/Slider/SliderProps.SliderOwnerState>} */
 trait MarkLabel extends StObject {
   
-  var input: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-  ] = js.undefined
+  var input: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, SliderOwnerState]
   
-  var mark: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-  ] = js.undefined
+  var mark: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState & Percent]
   
-  var markLabel: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-  ] = js.undefined
+  var markLabel: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]
   
-  var rail: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-  ] = js.undefined
+  var rail: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]
   
-  var root: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-  ] = js.undefined
+  var root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]
   
-  var thumb: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-  ] = js.undefined
+  var thumb: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]
   
-  var track: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-  ] = js.undefined
+  var track: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]
   
-  var valueLabel: js.UndefOr[
-    com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-  ] = js.undefined
+  var valueLabel: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]
 }
 object MarkLabel {
   
-  inline def apply(): MarkLabel = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    input: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, SliderOwnerState],
+    mark: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState & Percent],
+    markLabel: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState],
+    rail: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState],
+    root: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState],
+    thumb: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState],
+    track: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState],
+    valueLabel: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]
+  ): MarkLabel = {
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], markLabel = markLabel.asInstanceOf[js.Any], rail = rail.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], valueLabel = valueLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkLabel]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: MarkLabel] (val x: Self) extends AnyVal {
     
-    inline def setInput(
-      value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-    ): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["input", js.Object, SliderOwnerState]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setInputFunction1(
-      value: com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
+      value: SliderOwnerState => (Omit[ComponentPropsWithRef["input"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
     
-    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
-    
     inline def setMark(
-      value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
+      value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState & Percent]
     ): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
     inline def setMarkFunction1(
-      value: com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
+      value: SliderOwnerState & Percent => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "mark", js.Any.fromFunction1(value))
     
-    inline def setMarkLabel(
-      value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-    ): Self = StObject.set(x, "markLabel", value.asInstanceOf[js.Any])
+    inline def setMarkLabel(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]): Self = StObject.set(x, "markLabel", value.asInstanceOf[js.Any])
     
     inline def setMarkLabelFunction1(
-      value: com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
+      value: SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "markLabel", js.Any.fromFunction1(value))
     
-    inline def setMarkLabelUndefined: Self = StObject.set(x, "markLabel", js.undefined)
-    
-    inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
-    
-    inline def setRail(
-      value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-    ): Self = StObject.set(x, "rail", value.asInstanceOf[js.Any])
+    inline def setRail(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]): Self = StObject.set(x, "rail", value.asInstanceOf[js.Any])
     
     inline def setRailFunction1(
-      value: com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
+      value: SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "rail", js.Any.fromFunction1(value))
     
-    inline def setRailUndefined: Self = StObject.set(x, "rail", js.undefined)
-    
-    inline def setRoot(
-      value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-    ): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setRootFunction1(
-      value: com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
+      value: SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
-    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
-    
-    inline def setThumb(
-      value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-    ): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
     inline def setThumbFunction1(
-      value: com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
+      value: SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "thumb", js.Any.fromFunction1(value))
     
-    inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
-    
-    inline def setTrack(
-      value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-    ): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     inline def setTrackFunction1(
-      value: com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
+      value: SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "track", js.Any.fromFunction1(value))
     
-    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
-    
-    inline def setValueLabel(
-      value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState]
-    ): Self = StObject.set(x, "valueLabel", value.asInstanceOf[js.Any])
+    inline def setValueLabel(value: com.olvind.mui.muiJoy.utilsTypesMod.SlotProps["span", js.Object, SliderOwnerState]): Self = StObject.set(x, "valueLabel", value.asInstanceOf[js.Any])
     
     inline def setValueLabelFunction1(
-      value: com.olvind.mui.muiJoy.sliderSliderPropsMod.SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
+      value: SliderOwnerState => (Omit[ComponentPropsWithRef["span"], "color"]) & js.Object & SlotCommonProps & (Record[String, Any])
     ): Self = StObject.set(x, "valueLabel", js.Any.fromFunction1(value))
-    
-    inline def setValueLabelUndefined: Self = StObject.set(x, "valueLabel", js.undefined)
   }
 }

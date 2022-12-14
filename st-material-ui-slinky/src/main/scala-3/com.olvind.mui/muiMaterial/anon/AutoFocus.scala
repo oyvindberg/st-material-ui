@@ -47,7 +47,7 @@ trait AutoFocus extends StObject {
   var divider: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Use to apply selected styling.
+    * If `true`, the component is selected.
     * @default false
     */
   var selected: js.UndefOr[Boolean] = js.undefined
