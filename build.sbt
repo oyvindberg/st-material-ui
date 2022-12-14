@@ -20,7 +20,9 @@ val common: Project => Project = _.enablePlugins(ScalaJSPlugin)
     ),
     licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
     /* disabled because it somehow triggers many warnings */
-    scalaJSLinkerConfig ~= (_.withSourceMap(false))
+    scalaJSLinkerConfig ~= (_.withSourceMap(false)),
+    /* disable scaladoc */
+    Compile / doc / sources := Nil,
   )
 
 val setupST: Project => Project = _.enablePlugins(ScalablyTypedConverterGenSourcePlugin).settings(
