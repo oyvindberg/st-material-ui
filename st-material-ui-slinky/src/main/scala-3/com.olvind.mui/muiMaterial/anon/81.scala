@@ -1,7 +1,6 @@
 package com.olvind.mui.muiMaterial.anon
 
 import com.olvind.mui.muiMaterial.gridGridClassesMod.GridClassKey
-import com.olvind.mui.muiMaterial.gridGridMod.GridProps
 import com.olvind.mui.muiMaterial.stylesOverridesMod.OverridesStyleRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `81`[Theme] extends StObject {
   
-  var defaultProps: js.UndefOr[com.olvind.mui.std.Partial[GridProps["div", js.Object]]] = js.undefined
+  var defaultProps: js.UndefOr[PartialGridPropsdiv] = js.undefined
   
   var styleOverrides: js.UndefOr[com.olvind.mui.std.Partial[OverridesStyleRules[GridClassKey, "MuiGrid", Theme]]] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartial]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartialGridPropsdiv]] = js.undefined
 }
 object `81` {
   
@@ -24,7 +23,7 @@ object `81` {
   
   extension [Self <: `81`[?], Theme](x: Self & `81`[Theme]) {
     
-    inline def setDefaultProps(value: com.olvind.mui.std.Partial[GridProps["div", js.Object]]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialGridPropsdiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
@@ -32,10 +31,10 @@ object `81` {
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartial]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartialGridPropsdiv]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartial*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartialGridPropsdiv*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

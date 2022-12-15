@@ -1,13 +1,14 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.ColumnSpacing
-import com.olvind.mui.muiMaterial.overridableComponentMod.OverridableComponent
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsGridTypeMapdiv
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.boxBoxMod.SystemProps
 import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.Breakpoint
 import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.BreakpointOverrides
 import com.olvind.mui.muiTypes.mod.IfEquals
+import com.olvind.mui.react.mod.global.JSX.Element
 import com.olvind.mui.std.Partial
 import com.olvind.mui.std.Record
 import japgolly.scalajs.react.facade.React.ElementType
@@ -30,7 +31,7 @@ object gridGridMod extends Shortcut {
     */
   @JSImport("@mui/material/Grid/Grid", JSImport.Default)
   @js.native
-  val default: OverridableComponent[GridTypeMap[js.Object, "div"]] = js.native
+  val default: js.Function1[/* props */ DefaultComponentPropsGridTypeMapdiv, Element] = js.native
   
   trait BreakpointOverridesEmpty extends StObject
   
@@ -175,8 +176,8 @@ object gridGridMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[GridTypeMap[js.Object, "div"]]
+  type _To = js.Function1[/* props */ DefaultComponentPropsGridTypeMapdiv, Element]
   
   /* This means you don't have to write `default`, but can instead just say `gridGridMod.foo` */
-  override def _to: OverridableComponent[GridTypeMap[js.Object, "div"]] = default
+  override def _to: js.Function1[/* props */ DefaultComponentPropsGridTypeMapdiv, Element] = default
 }

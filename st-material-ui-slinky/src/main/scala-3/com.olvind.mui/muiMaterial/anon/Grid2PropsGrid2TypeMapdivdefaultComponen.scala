@@ -68,6 +68,7 @@ import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyl
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridDirection
+import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridSize
 import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridSpacing
 import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridWrap
 import com.olvind.mui.react.anon.Html
@@ -784,6 +785,24 @@ trait Grid2PropsGrid2TypeMapdivdefaultComponen extends StObject {
     ])
   ] = js.undefined
   
+  /**
+    * If a number, it sets the number of columns the grid item uses.
+    * It can't be greater than the total number of columns of the container (12 by default).
+    * If 'auto', the grid item's width matches its content.
+    * If false, the prop is ignored.
+    * If true, the grid item's width grows to use the space available in the grid container.
+    * The value is applied for the `lg` breakpoint and wider screens if not overridden.
+    * @default false
+    */
+  var lg: js.UndefOr[Boolean | GridSize] = js.undefined
+  
+  /**
+    * If a number, it sets the margin-left equals to the number of columns the grid item uses.
+    * If 'auto', the grid item push itself to the right-end of the container.
+    * The value is applied for the `lg` breakpoint and wider screens if not overridden.
+    */
+  var lgOffset: js.UndefOr[GridSize] = js.undefined
+  
   var lineHeight: js.UndefOr[
     (ResponsiveStyleValue[
       js.UndefOr[
@@ -963,6 +982,24 @@ trait Grid2PropsGrid2TypeMapdivdefaultComponen extends StObject {
       ]
     ])
   ] = js.undefined
+  
+  /**
+    * If a number, it sets the number of columns the grid item uses.
+    * It can't be greater than the total number of columns of the container (12 by default).
+    * If 'auto', the grid item's width matches its content.
+    * If false, the prop is ignored.
+    * If true, the grid item's width grows to use the space available in the grid container.
+    * The value is applied for the `md` breakpoint and wider screens if not overridden.
+    * @default false
+    */
+  var md: js.UndefOr[Boolean | GridSize] = js.undefined
+  
+  /**
+    * If a number, it sets the margin-left equals to the number of columns the grid item uses.
+    * If 'auto', the grid item push itself to the right-end of the container.
+    * The value is applied for the `md` breakpoint and wider screens if not overridden.
+    */
+  var mdOffset: js.UndefOr[GridSize] = js.undefined
   
   var minHeight: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1529,6 +1566,24 @@ trait Grid2PropsGrid2TypeMapdivdefaultComponen extends StObject {
   var slot: js.UndefOr[String] = js.undefined
   
   /**
+    * If a number, it sets the number of columns the grid item uses.
+    * It can't be greater than the total number of columns of the container (12 by default).
+    * If 'auto', the grid item's width matches its content.
+    * If false, the prop is ignored.
+    * If true, the grid item's width grows to use the space available in the grid container.
+    * The value is applied for the `sm` breakpoint and wider screens if not overridden.
+    * @default false
+    */
+  var sm: js.UndefOr[Boolean | GridSize] = js.undefined
+  
+  /**
+    * If a number, it sets the margin-left equals to the number of columns the grid item uses.
+    * If 'auto', the grid item push itself to the right-end of the container.
+    * The value is applied for the `sm` breakpoint and wider screens if not overridden.
+    */
+  var smOffset: js.UndefOr[GridSize] = js.undefined
+  
+  /**
     * Defines the space between the type `item` components.
     * It can only be used on a type `container` component.
     * @default 0
@@ -1623,6 +1678,42 @@ trait Grid2PropsGrid2TypeMapdivdefaultComponen extends StObject {
     * @default 'wrap'
     */
   var wrap: js.UndefOr[GridWrap] = js.undefined
+  
+  /**
+    * If a number, it sets the number of columns the grid item uses.
+    * It can't be greater than the total number of columns of the container (12 by default).
+    * If 'auto', the grid item's width matches its content.
+    * If false, the prop is ignored.
+    * If true, the grid item's width grows to use the space available in the grid container.
+    * The value is applied for the `xl` breakpoint and wider screens if not overridden.
+    * @default false
+    */
+  var xl: js.UndefOr[Boolean | GridSize] = js.undefined
+  
+  /**
+    * If a number, it sets the margin-left equals to the number of columns the grid item uses.
+    * If 'auto', the grid item push itself to the right-end of the container.
+    * The value is applied for the `xl` breakpoint and wider screens if not overridden.
+    */
+  var xlOffset: js.UndefOr[GridSize] = js.undefined
+  
+  /**
+    * If a number, it sets the number of columns the grid item uses.
+    * It can't be greater than the total number of columns of the container (12 by default).
+    * If 'auto', the grid item's width matches its content.
+    * If false, the prop is ignored.
+    * If true, the grid item's width grows to use the space available in the grid container.
+    * The value is applied for all the screen sizes with the lowest priority.
+    * @default false
+    */
+  var xs: js.UndefOr[Boolean | GridSize] = js.undefined
+  
+  /**
+    * If a number, it sets the margin-left equals to the number of columns the grid item uses.
+    * If 'auto', the grid item push itself to the right-end of the container.
+    * The value is applied for the `xs` breakpoint and wider screens if not overridden.
+    */
+  var xsOffset: js.UndefOr[GridSize] = js.undefined
   
   var zIndex: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ZIndex | String]]) | (js.Function1[
@@ -3054,6 +3145,14 @@ object Grid2PropsGrid2TypeMapdivdefaultComponen {
         ])*
     ): Self = StObject.set(x, "letterSpacing", js.Array(value*))
     
+    inline def setLg(value: Boolean | GridSize): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+    
+    inline def setLgOffset(value: GridSize): Self = StObject.set(x, "lgOffset", value.asInstanceOf[js.Any])
+    
+    inline def setLgOffsetUndefined: Self = StObject.set(x, "lgOffset", js.undefined)
+    
+    inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+    
     inline def setLineHeight(
       value: (ResponsiveStyleValue[
           js.UndefOr[
@@ -3425,6 +3524,14 @@ object Grid2PropsGrid2TypeMapdivdefaultComponen {
           (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]]) | (MarginBottom[Double | String]) | (NonNullable[js.UndefOr[MarginBottom[Double | String]]]) | Null
         ])*
     ): Self = StObject.set(x, "mb", js.Array(value*))
+    
+    inline def setMd(value: Boolean | GridSize): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+    
+    inline def setMdOffset(value: GridSize): Self = StObject.set(x, "mdOffset", value.asInstanceOf[js.Any])
+    
+    inline def setMdOffsetUndefined: Self = StObject.set(x, "mdOffset", js.undefined)
+    
+    inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
     
     inline def setMinHeight(
       value: (ResponsiveStyleValue[
@@ -4588,6 +4695,14 @@ object Grid2PropsGrid2TypeMapdivdefaultComponen {
     
     inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
+    inline def setSm(value: Boolean | GridSize): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+    
+    inline def setSmOffset(value: GridSize): Self = StObject.set(x, "smOffset", value.asInstanceOf[js.Any])
+    
+    inline def setSmOffsetUndefined: Self = StObject.set(x, "smOffset", js.undefined)
+    
+    inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
+    
     inline def setSpacing(value: com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[GridSpacing]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
@@ -4788,6 +4903,22 @@ object Grid2PropsGrid2TypeMapdivdefaultComponen {
     inline def setWrap(value: GridWrap): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
     inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+    
+    inline def setXl(value: Boolean | GridSize): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+    
+    inline def setXlOffset(value: GridSize): Self = StObject.set(x, "xlOffset", value.asInstanceOf[js.Any])
+    
+    inline def setXlOffsetUndefined: Self = StObject.set(x, "xlOffset", js.undefined)
+    
+    inline def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
+    
+    inline def setXs(value: Boolean | GridSize): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+    
+    inline def setXsOffset(value: GridSize): Self = StObject.set(x, "xsOffset", value.asInstanceOf[js.Any])
+    
+    inline def setXsOffsetUndefined: Self = StObject.set(x, "xsOffset", js.undefined)
+    
+    inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
     
     inline def setZIndex(
       value: (ResponsiveStyleValue[js.UndefOr[ZIndex | String]]) | (js.Function1[

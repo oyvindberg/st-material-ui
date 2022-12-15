@@ -1,4 +1,4 @@
-package com.olvind.mui.muiMaterial.components
+package com.olvind.mui.muiSystem.components
 
 import com.olvind.mui.StBuildingComponent
 import com.olvind.mui.csstype.mod.Property.AlignContent
@@ -70,7 +70,7 @@ import com.olvind.mui.csstype.mod.Property.Top
 import com.olvind.mui.csstype.mod.Property.Visibility
 import com.olvind.mui.csstype.mod.Property.Width
 import com.olvind.mui.csstype.mod.Property.ZIndex
-import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
+import com.olvind.mui.muiSystem.createThemeCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
@@ -105,7 +105,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @scala.inline
-open class SharedBuilder_DefaultComponentPropsGrid2TypeMapdiv715375132[R <: js.Object] (val args: js.Array[Any])
+open class SharedBuilder_DefaultComponentPropsGridTypeMapdiv_865969679[R <: js.Object] (val args: js.Array[Any])
   extends AnyVal
      with StBuildingComponent[tag.type, R] {
   

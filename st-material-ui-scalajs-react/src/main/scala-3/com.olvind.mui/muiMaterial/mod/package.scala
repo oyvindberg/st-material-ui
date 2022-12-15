@@ -63,6 +63,7 @@ import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsFormControlTypeMapd
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsFormHelperTextTypeM
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsFormLabelTypeMaplab
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsGrid2TypeMapdiv
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsGridTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsImageListItemTypeMa
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsImageListTypeMapul
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsInputAdornmentTypeM
@@ -83,6 +84,7 @@ import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTableHeadTypeMapthe
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTablePaginationType
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTableRowTypeMaptr
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTableTypeMaptable
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTabsTypeMappropsOve
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsToolbarTypeMapdiv
 import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTypographyTypeMapsp
 import com.olvind.mui.muiMaterial.anon.NameProps
@@ -163,7 +165,6 @@ import com.olvind.mui.muiMaterial.formGroupFormGroupMod.FormGroupProps
 import com.olvind.mui.muiMaterial.formHelperTextFormHelperTextClassesMod.FormHelperTextClasses
 import com.olvind.mui.muiMaterial.formLabelFormLabelClassesMod.FormLabelClasses
 import com.olvind.mui.muiMaterial.globalStylesGlobalStylesMod.GlobalStylesProps
-import com.olvind.mui.muiMaterial.gridGridMod.GridTypeMap
 import com.olvind.mui.muiMaterial.growGrowMod.GrowProps
 import com.olvind.mui.muiMaterial.hiddenHiddenMod.HiddenProps
 import com.olvind.mui.muiMaterial.iconButtonIconButtonClassesMod.IconButtonClasses
@@ -202,7 +203,6 @@ import com.olvind.mui.muiMaterial.modalModalMod.ModalClasses_
 import com.olvind.mui.muiMaterial.modalModalMod.ModalRootProps
 import com.olvind.mui.muiMaterial.nativeSelectNativeSelectClassesMod.NativeSelectClasses
 import com.olvind.mui.muiMaterial.outlinedInputOutlinedInputClassesMod.OutlinedInputClasses
-import com.olvind.mui.muiMaterial.overridableComponentMod.OverridableComponent
 import com.olvind.mui.muiMaterial.paginationItemPaginationItemClassesMod.PaginationItemClasses
 import com.olvind.mui.muiMaterial.paginationPaginationClassesMod.PaginationClasses
 import com.olvind.mui.muiMaterial.paginationPaginationMod.PaginationProps
@@ -277,7 +277,6 @@ import com.olvind.mui.muiMaterial.tableRowTableRowClassesMod.TableRowClasses
 import com.olvind.mui.muiMaterial.tableSortLabelTableSortLabelClassesMod.TableSortLabelClasses
 import com.olvind.mui.muiMaterial.tableTableClassesMod.TableClasses
 import com.olvind.mui.muiMaterial.tabsTabsClassesMod.TabsClasses
-import com.olvind.mui.muiMaterial.tabsTabsMod.TabsTypeMap
 import com.olvind.mui.muiMaterial.textFieldTextFieldClassesMod.TextFieldClasses
 import com.olvind.mui.muiMaterial.textFieldTextFieldMod.TextFieldProps
 import com.olvind.mui.muiMaterial.toggleButtonGroupToggleButtonGroupClassesMod.ToggleButtonGroupClasses
@@ -761,7 +760,7 @@ inline def GlobalStyles(props: GlobalStylesProps): japgolly.scalajs.react.facade
   *
   * - [Grid API](https://mui.com/material-ui/api/grid/)
   */
-inline def Grid: OverridableComponent[GridTypeMap[js.Object, "div"]] = ^.asInstanceOf[js.Dynamic].selectDynamic("Grid").asInstanceOf[OverridableComponent[GridTypeMap[js.Object, "div"]]]
+inline def Grid: js.Function1[/* props */ DefaultComponentPropsGridTypeMapdiv, Element] = ^.asInstanceOf[js.Dynamic].selectDynamic("Grid").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsGridTypeMapdiv, Element]]
 
 inline def Grow(props: GrowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Grow")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
@@ -1319,21 +1318,7 @@ japgolly.scalajs.react.facade.React.Element | Null]]
   *
   * - [Tabs API](https://mui.com/material-ui/api/tabs/)
   */
-inline def Tabs: OverridableComponent[
-TabsTypeMap[
-  js.Object, 
-  js.Function1[
-    /* props */ OverridePropsExtendButtonBaseTypeMapButtAbout | DefaultComponentPropsExtendButtonBaseTypAction, 
-    japgolly.scalajs.react.facade.React.Element | Null
-  ]
-]] = ^.asInstanceOf[js.Dynamic].selectDynamic("Tabs").asInstanceOf[OverridableComponent[
-TabsTypeMap[
-  js.Object, 
-  js.Function1[
-    /* props */ OverridePropsExtendButtonBaseTypeMapButtAbout | DefaultComponentPropsExtendButtonBaseTypAction, 
-    japgolly.scalajs.react.facade.React.Element | Null
-  ]
-]]]
+inline def Tabs: js.Function1[/* props */ DefaultComponentPropsTabsTypeMappropsOve, Element] = ^.asInstanceOf[js.Dynamic].selectDynamic("Tabs").asInstanceOf[js.Function1[/* props */ DefaultComponentPropsTabsTypeMappropsOve, Element]]
 
 inline def TextField(props: TextFieldProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TextField")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 

@@ -1,12 +1,10 @@
 package com.olvind.mui.muiMaterial
 
 import com.olvind.mui.muiMaterial.anon.AllowScrollButtonsMobile
-import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAction
-import com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapButtAbout
-import com.olvind.mui.muiMaterial.overridableComponentMod.OverridableComponent
+import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsTabsTypeMappropsOve
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
+import com.olvind.mui.react.mod.global.JSX.Element
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.facade.React.Element
 import japgolly.scalajs.react.facade.React.ElementType
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
@@ -27,15 +25,7 @@ object tabsTabsMod extends Shortcut {
     */
   @JSImport("@mui/material/Tabs/Tabs", JSImport.Default)
   @js.native
-  val default: OverridableComponent[
-    TabsTypeMap[
-      js.Object, 
-      js.Function1[
-        /* props */ OverridePropsExtendButtonBaseTypeMapButtAbout | DefaultComponentPropsExtendButtonBaseTypAction, 
-        Element | Null
-      ]
-    ]
-  ] = js.native
+  val default: js.Function1[/* props */ DefaultComponentPropsTabsTypeMappropsOve, Element] = js.native
   
   trait TabsActions extends StObject {
     
@@ -83,24 +73,8 @@ object tabsTabsMod extends Shortcut {
     }
   }
   
-  type _To = OverridableComponent[
-    TabsTypeMap[
-      js.Object, 
-      js.Function1[
-        /* props */ OverridePropsExtendButtonBaseTypeMapButtAbout | DefaultComponentPropsExtendButtonBaseTypAction, 
-        Element | Null
-      ]
-    ]
-  ]
+  type _To = js.Function1[/* props */ DefaultComponentPropsTabsTypeMappropsOve, Element]
   
   /* This means you don't have to write `default`, but can instead just say `tabsTabsMod.foo` */
-  override def _to: OverridableComponent[
-    TabsTypeMap[
-      js.Object, 
-      js.Function1[
-        /* props */ OverridePropsExtendButtonBaseTypeMapButtAbout | DefaultComponentPropsExtendButtonBaseTypAction, 
-        Element | Null
-      ]
-    ]
-  ] = default
+  override def _to: js.Function1[/* props */ DefaultComponentPropsTabsTypeMappropsOve, Element] = default
 }

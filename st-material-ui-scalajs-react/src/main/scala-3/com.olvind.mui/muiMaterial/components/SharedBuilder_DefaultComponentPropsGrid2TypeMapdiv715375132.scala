@@ -75,6 +75,7 @@ import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyl
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridDirection
+import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridSize
 import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridSpacing
 import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridWrap
 import com.olvind.mui.react.anon.Html
@@ -1216,6 +1217,10 @@ open class SharedBuilder_DefaultComponentPropsGrid2TypeMapdiv715375132[R <: js.O
     ])*
   ): this.type = set("letterSpacing", js.Array(value*))
   
+  inline def lg(value: Boolean | GridSize): this.type = set("lg", value.asInstanceOf[js.Any])
+  
+  inline def lgOffset(value: GridSize): this.type = set("lgOffset", value.asInstanceOf[js.Any])
+  
   inline def lineHeight(
     value: (ResponsiveStyleValue[
       js.UndefOr[
@@ -1563,6 +1568,10 @@ open class SharedBuilder_DefaultComponentPropsGrid2TypeMapdiv715375132[R <: js.O
       (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]]) | (MarginBottom[Double | String]) | (NonNullable[js.UndefOr[MarginBottom[Double | String]]]) | Null
     ])*
   ): this.type = set("mb", js.Array(value*))
+  
+  inline def md(value: Boolean | GridSize): this.type = set("md", value.asInstanceOf[js.Any])
+  
+  inline def mdOffset(value: GridSize): this.type = set("mdOffset", value.asInstanceOf[js.Any])
   
   inline def minHeight(
     value: (ResponsiveStyleValue[
@@ -2466,6 +2475,10 @@ open class SharedBuilder_DefaultComponentPropsGrid2TypeMapdiv715375132[R <: js.O
   
   inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
   
+  inline def sm(value: Boolean | GridSize): this.type = set("sm", value.asInstanceOf[js.Any])
+  
+  inline def smOffset(value: GridSize): this.type = set("smOffset", value.asInstanceOf[js.Any])
+  
   inline def spacing(value: com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[GridSpacing]): this.type = set("spacing", value.asInstanceOf[js.Any])
   
   inline def spacingVarargs(value: (GridSpacing | Null)*): this.type = set("spacing", js.Array(value*))
@@ -2616,6 +2629,14 @@ open class SharedBuilder_DefaultComponentPropsGrid2TypeMapdiv715375132[R <: js.O
   ): this.type = set("width", js.Array(value*))
   
   inline def wrap(value: GridWrap): this.type = set("wrap", value.asInstanceOf[js.Any])
+  
+  inline def xl(value: Boolean | GridSize): this.type = set("xl", value.asInstanceOf[js.Any])
+  
+  inline def xlOffset(value: GridSize): this.type = set("xlOffset", value.asInstanceOf[js.Any])
+  
+  inline def xs(value: Boolean | GridSize): this.type = set("xs", value.asInstanceOf[js.Any])
+  
+  inline def xsOffset(value: GridSize): this.type = set("xsOffset", value.asInstanceOf[js.Any])
   
   inline def zIndex(
     value: (ResponsiveStyleValue[js.UndefOr[ZIndex | String]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[ZIndex | String]]])

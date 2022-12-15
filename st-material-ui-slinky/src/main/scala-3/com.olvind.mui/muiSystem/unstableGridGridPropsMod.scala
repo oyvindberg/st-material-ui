@@ -1,8 +1,5 @@
 package com.olvind.mui.muiSystem
 
-import com.olvind.mui.muiSystem.anon.Sx
-import com.olvind.mui.muiSystem.boxBoxMod.SystemProps
-import com.olvind.mui.muiSystem.createThemeCreateThemeMod.Theme
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,8 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object unstableGridGridPropsMod {
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped <G>(): G extends @mui/system.@mui/system/createTheme/createBreakpoints.BreakpointOverrides ? 1 : 2 extends <G>(): G extends @mui/system.@mui/system/Unstable_Grid/GridProps.BreakpointOverridesEmpty ? 1 : 2 ? @mui/system.@mui/system/Unstable_Grid/GridProps.GridDefaultBreakpoints : @mui/system.@mui/system/Unstable_Grid/GridProps.CustomBreakpoints */ trait GridBaseProps extends StObject {
+  trait GridBaseProps
+    extends StObject
+       with GridDefaultBreakpoints {
     
     /**
       * The content of the component.
@@ -126,6 +124,149 @@ object unstableGridGridPropsMod {
     }
   }
   
+  trait GridDefaultBreakpoints extends StObject {
+    
+    /**
+      * If a number, it sets the number of columns the grid item uses.
+      * It can't be greater than the total number of columns of the container (12 by default).
+      * If 'auto', the grid item's width matches its content.
+      * If false, the prop is ignored.
+      * If true, the grid item's width grows to use the space available in the grid container.
+      * The value is applied for the `lg` breakpoint and wider screens if not overridden.
+      * @default false
+      */
+    var lg: js.UndefOr[Boolean | GridSize] = js.undefined
+    
+    /**
+      * If a number, it sets the margin-left equals to the number of columns the grid item uses.
+      * If 'auto', the grid item push itself to the right-end of the container.
+      * The value is applied for the `lg` breakpoint and wider screens if not overridden.
+      */
+    var lgOffset: js.UndefOr[GridSize] = js.undefined
+    
+    /**
+      * If a number, it sets the number of columns the grid item uses.
+      * It can't be greater than the total number of columns of the container (12 by default).
+      * If 'auto', the grid item's width matches its content.
+      * If false, the prop is ignored.
+      * If true, the grid item's width grows to use the space available in the grid container.
+      * The value is applied for the `md` breakpoint and wider screens if not overridden.
+      * @default false
+      */
+    var md: js.UndefOr[Boolean | GridSize] = js.undefined
+    
+    /**
+      * If a number, it sets the margin-left equals to the number of columns the grid item uses.
+      * If 'auto', the grid item push itself to the right-end of the container.
+      * The value is applied for the `md` breakpoint and wider screens if not overridden.
+      */
+    var mdOffset: js.UndefOr[GridSize] = js.undefined
+    
+    /**
+      * If a number, it sets the number of columns the grid item uses.
+      * It can't be greater than the total number of columns of the container (12 by default).
+      * If 'auto', the grid item's width matches its content.
+      * If false, the prop is ignored.
+      * If true, the grid item's width grows to use the space available in the grid container.
+      * The value is applied for the `sm` breakpoint and wider screens if not overridden.
+      * @default false
+      */
+    var sm: js.UndefOr[Boolean | GridSize] = js.undefined
+    
+    /**
+      * If a number, it sets the margin-left equals to the number of columns the grid item uses.
+      * If 'auto', the grid item push itself to the right-end of the container.
+      * The value is applied for the `sm` breakpoint and wider screens if not overridden.
+      */
+    var smOffset: js.UndefOr[GridSize] = js.undefined
+    
+    /**
+      * If a number, it sets the number of columns the grid item uses.
+      * It can't be greater than the total number of columns of the container (12 by default).
+      * If 'auto', the grid item's width matches its content.
+      * If false, the prop is ignored.
+      * If true, the grid item's width grows to use the space available in the grid container.
+      * The value is applied for the `xl` breakpoint and wider screens if not overridden.
+      * @default false
+      */
+    var xl: js.UndefOr[Boolean | GridSize] = js.undefined
+    
+    /**
+      * If a number, it sets the margin-left equals to the number of columns the grid item uses.
+      * If 'auto', the grid item push itself to the right-end of the container.
+      * The value is applied for the `xl` breakpoint and wider screens if not overridden.
+      */
+    var xlOffset: js.UndefOr[GridSize] = js.undefined
+    
+    /**
+      * If a number, it sets the number of columns the grid item uses.
+      * It can't be greater than the total number of columns of the container (12 by default).
+      * If 'auto', the grid item's width matches its content.
+      * If false, the prop is ignored.
+      * If true, the grid item's width grows to use the space available in the grid container.
+      * The value is applied for all the screen sizes with the lowest priority.
+      * @default false
+      */
+    var xs: js.UndefOr[Boolean | GridSize] = js.undefined
+    
+    /**
+      * If a number, it sets the margin-left equals to the number of columns the grid item uses.
+      * If 'auto', the grid item push itself to the right-end of the container.
+      * The value is applied for the `xs` breakpoint and wider screens if not overridden.
+      */
+    var xsOffset: js.UndefOr[GridSize] = js.undefined
+  }
+  object GridDefaultBreakpoints {
+    
+    inline def apply(): GridDefaultBreakpoints = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GridDefaultBreakpoints]
+    }
+    
+    extension [Self <: GridDefaultBreakpoints](x: Self) {
+      
+      inline def setLg(value: Boolean | GridSize): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      
+      inline def setLgOffset(value: GridSize): Self = StObject.set(x, "lgOffset", value.asInstanceOf[js.Any])
+      
+      inline def setLgOffsetUndefined: Self = StObject.set(x, "lgOffset", js.undefined)
+      
+      inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+      
+      inline def setMd(value: Boolean | GridSize): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      
+      inline def setMdOffset(value: GridSize): Self = StObject.set(x, "mdOffset", value.asInstanceOf[js.Any])
+      
+      inline def setMdOffsetUndefined: Self = StObject.set(x, "mdOffset", js.undefined)
+      
+      inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+      
+      inline def setSm(value: Boolean | GridSize): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      
+      inline def setSmOffset(value: GridSize): Self = StObject.set(x, "smOffset", value.asInstanceOf[js.Any])
+      
+      inline def setSmOffsetUndefined: Self = StObject.set(x, "smOffset", js.undefined)
+      
+      inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
+      
+      inline def setXl(value: Boolean | GridSize): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      
+      inline def setXlOffset(value: GridSize): Self = StObject.set(x, "xlOffset", value.asInstanceOf[js.Any])
+      
+      inline def setXlOffsetUndefined: Self = StObject.set(x, "xlOffset", js.undefined)
+      
+      inline def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
+      
+      inline def setXs(value: Boolean | GridSize): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      
+      inline def setXsOffset(value: GridSize): Self = StObject.set(x, "xsOffset", value.asInstanceOf[js.Any])
+      
+      inline def setXsOffsetUndefined: Self = StObject.set(x, "xsOffset", js.undefined)
+      
+      inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+    }
+  }
+  
   object GridDirection {
     
     inline def column: "column" = "column".asInstanceOf["column"]
@@ -138,28 +279,9 @@ object unstableGridGridPropsMod {
   }
   type GridDirection = "row" | "row-reverse" | "column" | "column-reverse"
   
-  type GridSpacing = Double | String
+  type GridSize = "auto" | Double
   
-  trait GridTypeMap[P, D /* <: ReactElement */] extends StObject {
-    
-    var defaultComponent: D
-    
-    var props: P & GridBaseProps & Sx & SystemProps[Theme]
-  }
-  object GridTypeMap {
-    
-    inline def apply[P, D /* <: ReactElement */](defaultComponent: D, props: P & GridBaseProps & Sx & SystemProps[Theme]): GridTypeMap[P, D] = {
-      val __obj = js.Dynamic.literal(defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-      __obj.asInstanceOf[GridTypeMap[P, D]]
-    }
-    
-    extension [Self <: GridTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (GridTypeMap[P, D])) {
-      
-      inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
-      
-      inline def setProps(value: P & GridBaseProps & Sx & SystemProps[Theme]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
-    }
-  }
+  type GridSpacing = Double | String
   
   object GridWrap {
     

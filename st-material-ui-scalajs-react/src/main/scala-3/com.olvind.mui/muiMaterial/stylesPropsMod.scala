@@ -32,6 +32,7 @@ import com.olvind.mui.muiMaterial.anon.FormControlPropsFormControlTypeMapdivdef
 import com.olvind.mui.muiMaterial.anon.FormHelperTextPropsFormHelperTextTypeMap
 import com.olvind.mui.muiMaterial.anon.FormLabelPropsFormLabelTypeMaplabeldefau
 import com.olvind.mui.muiMaterial.anon.Grid2PropsGrid2TypeMapdivdefaultComponen
+import com.olvind.mui.muiMaterial.anon.GridPropsGridTypeMapdivdefaultComponent
 import com.olvind.mui.muiMaterial.anon.IconButtonPropsIconButtonTypeMapbuttonde
 import com.olvind.mui.muiMaterial.anon.IconPropsIconTypeMapspandefaultComponent
 import com.olvind.mui.muiMaterial.anon.ImageListItemPropsImageListItemTypeMapli
@@ -93,6 +94,7 @@ import com.olvind.mui.muiMaterial.anon.PartialFormGroupProps
 import com.olvind.mui.muiMaterial.anon.PartialFormHelperTextPropsp
 import com.olvind.mui.muiMaterial.anon.PartialFormLabelPropslabel
 import com.olvind.mui.muiMaterial.anon.PartialGrid2Propsdiv
+import com.olvind.mui.muiMaterial.anon.PartialGridPropsdiv
 import com.olvind.mui.muiMaterial.anon.PartialIconButtonPropsdefaultComponent
 import com.olvind.mui.muiMaterial.anon.PartialIconPropsspan
 import com.olvind.mui.muiMaterial.anon.PartialImageListItemBarProps
@@ -199,7 +201,6 @@ import com.olvind.mui.muiMaterial.drawerDrawerMod.DrawerProps
 import com.olvind.mui.muiMaterial.filledInputFilledInputMod.FilledInputProps
 import com.olvind.mui.muiMaterial.formControlLabelFormControlLabelMod.FormControlLabelProps
 import com.olvind.mui.muiMaterial.formGroupFormGroupMod.FormGroupProps
-import com.olvind.mui.muiMaterial.gridGridMod.GridProps
 import com.olvind.mui.muiMaterial.imageListItemBarImageListItemBarMod.ImageListItemBarProps
 import com.olvind.mui.muiMaterial.inputBaseInputBaseMod.InputBaseProps
 import com.olvind.mui.muiMaterial.inputInputMod.InputProps
@@ -336,7 +337,7 @@ object stylesPropsMod {
     
     var MuiFormLabel: js.UndefOr[PartialFormLabelPropslabel] = js.undefined
     
-    var MuiGrid: js.UndefOr[Partial[GridProps["div", js.Object]]] = js.undefined
+    var MuiGrid: js.UndefOr[PartialGridPropsdiv] = js.undefined
     
     var MuiGrid2: js.UndefOr[PartialGrid2Propsdiv] = js.undefined
     
@@ -681,7 +682,7 @@ object stylesPropsMod {
       
       inline def setMuiFormLabelUndefined: Self = StObject.set(x, "MuiFormLabel", js.undefined)
       
-      inline def setMuiGrid(value: Partial[GridProps["div", js.Object]]): Self = StObject.set(x, "MuiGrid", value.asInstanceOf[js.Any])
+      inline def setMuiGrid(value: PartialGridPropsdiv): Self = StObject.set(x, "MuiGrid", value.asInstanceOf[js.Any])
       
       inline def setMuiGrid2(value: PartialGrid2Propsdiv): Self = StObject.set(x, "MuiGrid2", value.asInstanceOf[js.Any])
       
@@ -1083,7 +1084,7 @@ object stylesPropsMod {
     
     var MuiFormLabel: FormLabelPropsFormLabelTypeMaplabeldefau
     
-    var MuiGrid: GridProps["div", js.Object]
+    var MuiGrid: GridPropsGridTypeMapdivdefaultComponent
     
     var MuiGrid2: Grid2PropsGrid2TypeMapdivdefaultComponen
     
@@ -1286,7 +1287,7 @@ object stylesPropsMod {
       MuiFormGroup: FormGroupProps,
       MuiFormHelperText: FormHelperTextPropsFormHelperTextTypeMap,
       MuiFormLabel: FormLabelPropsFormLabelTypeMaplabeldefau,
-      MuiGrid: GridProps["div", js.Object],
+      MuiGrid: GridPropsGridTypeMapdivdefaultComponent,
       MuiGrid2: Grid2PropsGrid2TypeMapdivdefaultComponen,
       MuiIcon: IconPropsIconTypeMapspandefaultComponent,
       MuiIconButton: IconButtonPropsIconButtonTypeMapbuttonde,
@@ -1462,7 +1463,7 @@ object stylesPropsMod {
       
       inline def setMuiFormLabel(value: FormLabelPropsFormLabelTypeMaplabeldefau): Self = StObject.set(x, "MuiFormLabel", value.asInstanceOf[js.Any])
       
-      inline def setMuiGrid(value: GridProps["div", js.Object]): Self = StObject.set(x, "MuiGrid", value.asInstanceOf[js.Any])
+      inline def setMuiGrid(value: GridPropsGridTypeMapdivdefaultComponent): Self = StObject.set(x, "MuiGrid", value.asInstanceOf[js.Any])
       
       inline def setMuiGrid2(value: Grid2PropsGrid2TypeMapdivdefaultComponen): Self = StObject.set(x, "MuiGrid2", value.asInstanceOf[js.Any])
       

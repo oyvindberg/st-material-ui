@@ -15,7 +15,7 @@ trait `145`[Theme] extends StObject {
     com.olvind.mui.std.Partial[OverridesStyleRules[TextFieldClassKey, "MuiTextField", Theme]]
   ] = js.undefined
   
-  var variants: js.UndefOr[js.Array[PropsPartialStyleInterpolation]] = js.undefined
+  var variants: js.UndefOr[js.Array[StyleInterpolation]] = js.undefined
 }
 object `145` {
   
@@ -34,10 +34,10 @@ object `145` {
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[PropsPartialStyleInterpolation]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[StyleInterpolation]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: PropsPartialStyleInterpolation*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: StyleInterpolation*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }

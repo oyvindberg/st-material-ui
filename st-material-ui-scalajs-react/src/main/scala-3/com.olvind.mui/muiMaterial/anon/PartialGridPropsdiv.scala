@@ -64,13 +64,13 @@ import com.olvind.mui.csstype.mod.Property.Top
 import com.olvind.mui.csstype.mod.Property.Visibility
 import com.olvind.mui.csstype.mod.Property.Width
 import com.olvind.mui.csstype.mod.Property.ZIndex
+import com.olvind.mui.muiMaterial.gridGridMod.GridDirection
+import com.olvind.mui.muiMaterial.gridGridMod.GridSize
+import com.olvind.mui.muiMaterial.gridGridMod.GridSpacing
+import com.olvind.mui.muiMaterial.gridGridMod.GridWrap
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
-import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridDirection
-import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridSize
-import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridSpacing
-import com.olvind.mui.muiSystem.unstableGridGridPropsMod.GridWrap
 import com.olvind.mui.react.anon.Html
 import com.olvind.mui.react.mod.AnimationEventHandler
 import com.olvind.mui.react.mod.AriaRole
@@ -109,7 +109,6 @@ import japgolly.scalajs.react.ReactWheelEventFrom
 import japgolly.scalajs.react.facade.Empty
 import japgolly.scalajs.react.facade.JsNumber
 import japgolly.scalajs.react.facade.React.Element
-import japgolly.scalajs.react.facade.React.ElementType
 import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalajs.dom.HTMLDivElement
@@ -117,8 +116,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<Grid2Props<'div', {}>> */
-trait PartialGrid2Propsdiv extends StObject {
+/* Inlined std.Partial<GridProps<'div', {}>> */
+trait PartialGridPropsdiv extends StObject {
   
   var about: js.UndefOr[String] = js.undefined
   
@@ -386,6 +385,8 @@ trait PartialGrid2Propsdiv extends StObject {
   
   var className: js.UndefOr[String] = js.undefined
   
+  var classes: js.UndefOr[PartialGridClasses] = js.undefined
+  
   var color: js.UndefOr[
     (ResponsiveStyleValue[
       js.UndefOr[
@@ -416,13 +417,9 @@ trait PartialGrid2Propsdiv extends StObject {
     ])
   ] = js.undefined
   
-  var columnSpacing: js.UndefOr[
-    com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[GridSpacing]
-  ] = js.undefined
+  var columnSpacing: js.UndefOr[com.olvind.mui.muiSystem.mod.ResponsiveStyleValue[GridSpacing]] = js.undefined
   
-  var columns: js.UndefOr[com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[Double]] = js.undefined
-  
-  var component: js.UndefOr[ElementType] = js.undefined
+  var columns: js.UndefOr[com.olvind.mui.muiSystem.mod.ResponsiveStyleValue[Double]] = js.undefined
   
   var container: js.UndefOr[Boolean] = js.undefined
   
@@ -440,11 +437,7 @@ trait PartialGrid2Propsdiv extends StObject {
   
   var dir: js.UndefOr[String] = js.undefined
   
-  var direction: js.UndefOr[
-    com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[GridDirection]
-  ] = js.undefined
-  
-  var disableEqualOverflow: js.UndefOr[Boolean] = js.undefined
+  var direction: js.UndefOr[com.olvind.mui.muiSystem.mod.ResponsiveStyleValue[GridDirection]] = js.undefined
   
   var display: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]) | (js.Function1[
@@ -699,6 +692,8 @@ trait PartialGrid2Propsdiv extends StObject {
   
   var is: js.UndefOr[String] = js.undefined
   
+  var item: js.UndefOr[Boolean] = js.undefined
+  
   var itemID: js.UndefOr[String] = js.undefined
   
   var itemProp: js.UndefOr[String] = js.undefined
@@ -765,8 +760,6 @@ trait PartialGrid2Propsdiv extends StObject {
   ] = js.undefined
   
   var lg: js.UndefOr[Boolean | GridSize] = js.undefined
-  
-  var lgOffset: js.UndefOr[GridSize] = js.undefined
   
   var lineHeight: js.UndefOr[
     (ResponsiveStyleValue[
@@ -949,8 +942,6 @@ trait PartialGrid2Propsdiv extends StObject {
   ] = js.undefined
   
   var md: js.UndefOr[Boolean | GridSize] = js.undefined
-  
-  var mdOffset: js.UndefOr[GridSize] = js.undefined
   
   var minHeight: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1504,9 +1495,7 @@ trait PartialGrid2Propsdiv extends StObject {
     ])
   ] = js.undefined
   
-  var rowSpacing: js.UndefOr[
-    com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[GridSpacing]
-  ] = js.undefined
+  var rowSpacing: js.UndefOr[com.olvind.mui.muiSystem.mod.ResponsiveStyleValue[GridSpacing]] = js.undefined
   
   var security: js.UndefOr[String] = js.undefined
   
@@ -1514,11 +1503,7 @@ trait PartialGrid2Propsdiv extends StObject {
   
   var sm: js.UndefOr[Boolean | GridSize] = js.undefined
   
-  var smOffset: js.UndefOr[GridSize] = js.undefined
-  
-  var spacing: js.UndefOr[
-    com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[GridSpacing]
-  ] = js.undefined
+  var spacing: js.UndefOr[com.olvind.mui.muiSystem.mod.ResponsiveStyleValue[GridSpacing]] = js.undefined
   
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
@@ -1604,11 +1589,7 @@ trait PartialGrid2Propsdiv extends StObject {
   
   var xl: js.UndefOr[Boolean | GridSize] = js.undefined
   
-  var xlOffset: js.UndefOr[GridSize] = js.undefined
-  
   var xs: js.UndefOr[Boolean | GridSize] = js.undefined
-  
-  var xsOffset: js.UndefOr[GridSize] = js.undefined
   
   var zIndex: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ZIndex | String]]) | (js.Function1[
@@ -1616,15 +1597,17 @@ trait PartialGrid2Propsdiv extends StObject {
       ResponsiveStyleValue[js.UndefOr[ZIndex | String]]
     ])
   ] = js.undefined
-}
-object PartialGrid2Propsdiv {
   
-  inline def apply(): PartialGrid2Propsdiv = {
+  var zeroMinWidth: js.UndefOr[Boolean] = js.undefined
+}
+object PartialGridPropsdiv {
+  
+  inline def apply(): PartialGridPropsdiv = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[PartialGrid2Propsdiv]
+    __obj.asInstanceOf[PartialGridPropsdiv]
   }
   
-  extension [Self <: PartialGrid2Propsdiv](x: Self) {
+  extension [Self <: PartialGridPropsdiv](x: Self) {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     
@@ -2196,6 +2179,10 @@ object PartialGrid2Propsdiv {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
+    inline def setClasses(value: PartialGridClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
     inline def setColor(
       value: (ResponsiveStyleValue[
           js.UndefOr[
@@ -2258,21 +2245,17 @@ object PartialGrid2Propsdiv {
         ])*
     ): Self = StObject.set(x, "columnGap", js.Array(value*))
     
-    inline def setColumnSpacing(value: com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[GridSpacing]): Self = StObject.set(x, "columnSpacing", value.asInstanceOf[js.Any])
+    inline def setColumnSpacing(value: com.olvind.mui.muiSystem.mod.ResponsiveStyleValue[GridSpacing]): Self = StObject.set(x, "columnSpacing", value.asInstanceOf[js.Any])
     
     inline def setColumnSpacingUndefined: Self = StObject.set(x, "columnSpacing", js.undefined)
     
     inline def setColumnSpacingVarargs(value: (GridSpacing | Null)*): Self = StObject.set(x, "columnSpacing", js.Array(value*))
     
-    inline def setColumns(value: com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[Double]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: com.olvind.mui.muiSystem.mod.ResponsiveStyleValue[Double]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     inline def setColumnsVarargs(value: (Double | Null)*): Self = StObject.set(x, "columns", js.Array(value*))
-    
-    inline def setComponent(value: ElementType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-    
-    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     inline def setContainer(value: Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
@@ -2308,15 +2291,11 @@ object PartialGrid2Propsdiv {
     
     inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    inline def setDirection(value: com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[GridDirection]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: com.olvind.mui.muiSystem.mod.ResponsiveStyleValue[GridDirection]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     inline def setDirectionVarargs(value: (GridDirection | Null)*): Self = StObject.set(x, "direction", js.Array(value*))
-    
-    inline def setDisableEqualOverflow(value: Boolean): Self = StObject.set(x, "disableEqualOverflow", value.asInstanceOf[js.Any])
-    
-    inline def setDisableEqualOverflowUndefined: Self = StObject.set(x, "disableEqualOverflow", js.undefined)
     
     inline def setDisplay(
       value: (ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]) | (js.Function1[
@@ -2897,6 +2876,8 @@ object PartialGrid2Propsdiv {
     
     inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     
+    inline def setItem(value: Boolean): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
     inline def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
     
     inline def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
@@ -2916,6 +2897,8 @@ object PartialGrid2Propsdiv {
     inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
     
     inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+    
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     inline def setJustifyContent(
       value: (ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]) | (js.Function1[
@@ -3047,10 +3030,6 @@ object PartialGrid2Propsdiv {
     ): Self = StObject.set(x, "letterSpacing", js.Array(value*))
     
     inline def setLg(value: Boolean | GridSize): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
-    
-    inline def setLgOffset(value: GridSize): Self = StObject.set(x, "lgOffset", value.asInstanceOf[js.Any])
-    
-    inline def setLgOffsetUndefined: Self = StObject.set(x, "lgOffset", js.undefined)
     
     inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
     
@@ -3427,10 +3406,6 @@ object PartialGrid2Propsdiv {
     ): Self = StObject.set(x, "mb", js.Array(value*))
     
     inline def setMd(value: Boolean | GridSize): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
-    
-    inline def setMdOffset(value: GridSize): Self = StObject.set(x, "mdOffset", value.asInstanceOf[js.Any])
-    
-    inline def setMdOffsetUndefined: Self = StObject.set(x, "mdOffset", js.undefined)
     
     inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
     
@@ -4580,7 +4555,7 @@ object PartialGrid2Propsdiv {
         ])*
     ): Self = StObject.set(x, "rowGap", js.Array(value*))
     
-    inline def setRowSpacing(value: com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[GridSpacing]): Self = StObject.set(x, "rowSpacing", value.asInstanceOf[js.Any])
+    inline def setRowSpacing(value: com.olvind.mui.muiSystem.mod.ResponsiveStyleValue[GridSpacing]): Self = StObject.set(x, "rowSpacing", value.asInstanceOf[js.Any])
     
     inline def setRowSpacingUndefined: Self = StObject.set(x, "rowSpacing", js.undefined)
     
@@ -4596,13 +4571,9 @@ object PartialGrid2Propsdiv {
     
     inline def setSm(value: Boolean | GridSize): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
     
-    inline def setSmOffset(value: GridSize): Self = StObject.set(x, "smOffset", value.asInstanceOf[js.Any])
-    
-    inline def setSmOffsetUndefined: Self = StObject.set(x, "smOffset", js.undefined)
-    
     inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
     
-    inline def setSpacing(value: com.olvind.mui.muiSystem.unstableGridGridPropsMod.ResponsiveStyleValue[GridSpacing]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: com.olvind.mui.muiSystem.mod.ResponsiveStyleValue[GridSpacing]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
@@ -4805,17 +4776,9 @@ object PartialGrid2Propsdiv {
     
     inline def setXl(value: Boolean | GridSize): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
     
-    inline def setXlOffset(value: GridSize): Self = StObject.set(x, "xlOffset", value.asInstanceOf[js.Any])
-    
-    inline def setXlOffsetUndefined: Self = StObject.set(x, "xlOffset", js.undefined)
-    
     inline def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
     
     inline def setXs(value: Boolean | GridSize): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
-    
-    inline def setXsOffset(value: GridSize): Self = StObject.set(x, "xsOffset", value.asInstanceOf[js.Any])
-    
-    inline def setXsOffsetUndefined: Self = StObject.set(x, "xsOffset", js.undefined)
     
     inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
     
@@ -4833,5 +4796,9 @@ object PartialGrid2Propsdiv {
     inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
     inline def setZIndexVarargs(value: ((js.UndefOr[ZIndex | String]) | Null)*): Self = StObject.set(x, "zIndex", js.Array(value*))
+    
+    inline def setZeroMinWidth(value: Boolean): Self = StObject.set(x, "zeroMinWidth", value.asInstanceOf[js.Any])
+    
+    inline def setZeroMinWidthUndefined: Self = StObject.set(x, "zeroMinWidth", js.undefined)
   }
 }

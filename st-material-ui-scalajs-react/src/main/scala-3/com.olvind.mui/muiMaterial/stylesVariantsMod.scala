@@ -1,6 +1,5 @@
 package com.olvind.mui.muiMaterial
 
-import com.olvind.mui.muiMaterial.anon.PropsPartial
 import com.olvind.mui.muiMaterial.anon.PropsPartialAccordionActionsProps
 import com.olvind.mui.muiMaterial.anon.PropsPartialAccordionDetailsProps
 import com.olvind.mui.muiMaterial.anon.PropsPartialAccordionProps
@@ -45,6 +44,7 @@ import com.olvind.mui.muiMaterial.anon.PropsPartialFormGroupProps
 import com.olvind.mui.muiMaterial.anon.PropsPartialFormHelperTextPropsp
 import com.olvind.mui.muiMaterial.anon.PropsPartialFormLabelPropslabel
 import com.olvind.mui.muiMaterial.anon.PropsPartialGrid2Propsdiv
+import com.olvind.mui.muiMaterial.anon.PropsPartialGridPropsdiv
 import com.olvind.mui.muiMaterial.anon.PropsPartialIconButtonPropsdefaultComponent
 import com.olvind.mui.muiMaterial.anon.PropsPartialIconPropsspan
 import com.olvind.mui.muiMaterial.anon.PropsPartialImageListItemBarProps
@@ -118,7 +118,7 @@ import com.olvind.mui.muiMaterial.anon.PropsPartialTooltipPropsAbout
 import com.olvind.mui.muiMaterial.anon.PropsPartialTouchRippleProps
 import com.olvind.mui.muiMaterial.anon.PropsPartialTypographyPropsspan
 import com.olvind.mui.muiMaterial.anon.PropsStyle
-import com.olvind.mui.muiMaterial.anon.`153`
+import com.olvind.mui.muiMaterial.anon.StyleInterpolation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -216,7 +216,7 @@ object stylesVariantsMod {
     
     var MuiFormLabel: js.UndefOr[js.Array[PropsPartialFormLabelPropslabel]] = js.undefined
     
-    var MuiGrid: js.UndefOr[js.Array[PropsPartial]] = js.undefined
+    var MuiGrid: js.UndefOr[js.Array[PropsPartialGridPropsdiv]] = js.undefined
     
     var MuiGrid2: js.UndefOr[js.Array[PropsPartialGrid2Propsdiv]] = js.undefined
     
@@ -348,9 +348,9 @@ object stylesVariantsMod {
     
     var MuiTableSortLabel: js.UndefOr[js.Array[PropsPartialTableSortLabelPropsdefaultCompone]] = js.undefined
     
-    var MuiTabs: js.UndefOr[js.Array[`153`]] = js.undefined
+    var MuiTabs: js.UndefOr[js.Array[PropsPartialStyleInterpolation]] = js.undefined
     
-    var MuiTextField: js.UndefOr[js.Array[PropsPartialStyleInterpolation]] = js.undefined
+    var MuiTextField: js.UndefOr[js.Array[StyleInterpolation]] = js.undefined
     
     var MuiToggleButton: js.UndefOr[js.Array[PropsPartialToggleButtonPropsdefaultComponent]] = js.undefined
     
@@ -639,7 +639,7 @@ object stylesVariantsMod {
       
       inline def setMuiFormLabelVarargs(value: PropsPartialFormLabelPropslabel*): Self = StObject.set(x, "MuiFormLabel", js.Array(value*))
       
-      inline def setMuiGrid(value: js.Array[PropsPartial]): Self = StObject.set(x, "MuiGrid", value.asInstanceOf[js.Any])
+      inline def setMuiGrid(value: js.Array[PropsPartialGridPropsdiv]): Self = StObject.set(x, "MuiGrid", value.asInstanceOf[js.Any])
       
       inline def setMuiGrid2(value: js.Array[PropsPartialGrid2Propsdiv]): Self = StObject.set(x, "MuiGrid2", value.asInstanceOf[js.Any])
       
@@ -649,7 +649,7 @@ object stylesVariantsMod {
       
       inline def setMuiGridUndefined: Self = StObject.set(x, "MuiGrid", js.undefined)
       
-      inline def setMuiGridVarargs(value: PropsPartial*): Self = StObject.set(x, "MuiGrid", js.Array(value*))
+      inline def setMuiGridVarargs(value: PropsPartialGridPropsdiv*): Self = StObject.set(x, "MuiGrid", js.Array(value*))
       
       inline def setMuiIcon(value: js.Array[PropsPartialIconPropsspan]): Self = StObject.set(x, "MuiIcon", value.asInstanceOf[js.Any])
       
@@ -1035,17 +1035,17 @@ object stylesVariantsMod {
       
       inline def setMuiTableVarargs(value: PropsPartialTablePropstable*): Self = StObject.set(x, "MuiTable", js.Array(value*))
       
-      inline def setMuiTabs(value: js.Array[`153`]): Self = StObject.set(x, "MuiTabs", value.asInstanceOf[js.Any])
+      inline def setMuiTabs(value: js.Array[PropsPartialStyleInterpolation]): Self = StObject.set(x, "MuiTabs", value.asInstanceOf[js.Any])
       
       inline def setMuiTabsUndefined: Self = StObject.set(x, "MuiTabs", js.undefined)
       
-      inline def setMuiTabsVarargs(value: `153`*): Self = StObject.set(x, "MuiTabs", js.Array(value*))
+      inline def setMuiTabsVarargs(value: PropsPartialStyleInterpolation*): Self = StObject.set(x, "MuiTabs", js.Array(value*))
       
-      inline def setMuiTextField(value: js.Array[PropsPartialStyleInterpolation]): Self = StObject.set(x, "MuiTextField", value.asInstanceOf[js.Any])
+      inline def setMuiTextField(value: js.Array[StyleInterpolation]): Self = StObject.set(x, "MuiTextField", value.asInstanceOf[js.Any])
       
       inline def setMuiTextFieldUndefined: Self = StObject.set(x, "MuiTextField", js.undefined)
       
-      inline def setMuiTextFieldVarargs(value: PropsPartialStyleInterpolation*): Self = StObject.set(x, "MuiTextField", js.Array(value*))
+      inline def setMuiTextFieldVarargs(value: StyleInterpolation*): Self = StObject.set(x, "MuiTextField", js.Array(value*))
       
       inline def setMuiToggleButton(value: js.Array[PropsPartialToggleButtonPropsdefaultComponent]): Self = StObject.set(x, "MuiToggleButton", value.asInstanceOf[js.Any])
       

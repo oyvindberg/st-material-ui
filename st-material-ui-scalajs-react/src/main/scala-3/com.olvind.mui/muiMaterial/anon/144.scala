@@ -24,7 +24,7 @@ trait `144`[Theme] extends StObject {
   
   var styleOverrides: js.UndefOr[com.olvind.mui.std.Partial[OverridesStyleRules[TabsClassKey, "MuiTabs", Theme]]] = js.undefined
   
-  var variants: js.UndefOr[js.Array[StyleInterpolation]] = js.undefined
+  var variants: js.UndefOr[js.Array[PropsPartial]] = js.undefined
 }
 object `144` {
   
@@ -53,10 +53,10 @@ object `144` {
     
     inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
     
-    inline def setVariants(value: js.Array[StyleInterpolation]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[PropsPartial]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: StyleInterpolation*): Self = StObject.set(x, "variants", js.Array(value*))
+    inline def setVariantsVarargs(value: PropsPartial*): Self = StObject.set(x, "variants", js.Array(value*))
   }
 }
