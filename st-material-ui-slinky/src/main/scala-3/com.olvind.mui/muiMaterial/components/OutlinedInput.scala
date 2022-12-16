@@ -483,5 +483,7 @@ object OutlinedInput {
   
   implicit def make(companion: OutlinedInput.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[OutlinedInputProps, Builder] = new com.olvind.mui.StyledComponent.Builder[OutlinedInputProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: OutlinedInputProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

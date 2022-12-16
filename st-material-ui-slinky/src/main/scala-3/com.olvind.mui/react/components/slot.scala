@@ -394,5 +394,7 @@ object slot {
   
   implicit def make(companion: slot.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], Builder] = new com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

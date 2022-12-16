@@ -428,5 +428,7 @@ object Breadcrumbs {
   
   implicit def make(companion: Breadcrumbs.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsBreadcrumbsTypeMapn, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsBreadcrumbsTypeMapn, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: /* props */ DefaultComponentPropsBreadcrumbsTypeMapn): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

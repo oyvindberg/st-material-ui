@@ -414,5 +414,7 @@ object Container {
   
   implicit def make(companion: Container.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsContainerTypeMapdiv, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsContainerTypeMapdiv, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: /* props */ DefaultComponentPropsContainerTypeMapdiv): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

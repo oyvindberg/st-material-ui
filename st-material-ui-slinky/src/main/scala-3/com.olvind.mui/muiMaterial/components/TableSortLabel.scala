@@ -482,6 +482,8 @@ object TableSortLabel {
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
     
+    def styled: com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapTabl, Builder] = new com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapTabl, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+    
     def withProps(p: OverridePropsExtendButtonBaseTypeMapTabl): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
   
@@ -902,6 +904,8 @@ object TableSortLabel {
     }
     
     implicit def make(companion: normal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+    
+    def styled: com.olvind.mui.StyledComponent.Builder[DefaultComponentPropsExtendButtonBaseTypActive, Builder] = new com.olvind.mui.StyledComponent.Builder[DefaultComponentPropsExtendButtonBaseTypActive, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     
     def withProps(p: DefaultComponentPropsExtendButtonBaseTypActive): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }

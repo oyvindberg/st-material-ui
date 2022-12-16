@@ -26,5 +26,7 @@ object Suspense {
   
   implicit def make(companion: Suspense.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[SuspenseProps, Builder] = new com.olvind.mui.StyledComponent.Builder[SuspenseProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: SuspenseProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

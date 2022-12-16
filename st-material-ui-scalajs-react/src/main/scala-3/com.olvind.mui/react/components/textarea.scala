@@ -421,5 +421,13 @@ object textarea {
   
   implicit def make(companion: textarea.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[
+    DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
+    Builder
+  ] = new com.olvind.mui.StyledComponent.Builder[
+    DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
+    Builder
+  ](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

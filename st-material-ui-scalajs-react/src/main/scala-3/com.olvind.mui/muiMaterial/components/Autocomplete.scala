@@ -596,5 +596,13 @@ object Autocomplete {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  def styled[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */]: com.olvind.mui.StyledComponent.Builder[
+    AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, "div"], 
+    Builder[T, Multiple, DisableClearable, FreeSolo]
+  ] = new com.olvind.mui.StyledComponent.Builder[
+    AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, "div"], 
+    Builder[T, Multiple, DisableClearable, FreeSolo]
+  ](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder[T, Multiple, DisableClearable, FreeSolo](js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](p: AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, "div"]): Builder[T, Multiple, DisableClearable, FreeSolo] = new Builder[T, Multiple, DisableClearable, FreeSolo](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

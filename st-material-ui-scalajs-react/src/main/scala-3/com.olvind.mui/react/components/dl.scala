@@ -391,5 +391,7 @@ object dl {
   
   implicit def make(companion: dl.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], Builder] = new com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

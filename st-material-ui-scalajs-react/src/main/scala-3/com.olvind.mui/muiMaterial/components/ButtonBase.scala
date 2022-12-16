@@ -467,6 +467,8 @@ object ButtonBase {
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
     
+    def styled: com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapButtAbout, Builder] = new com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapButtAbout, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+    
     def withProps(p: OverridePropsExtendButtonBaseTypeMapButtAbout): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
   
@@ -897,6 +899,8 @@ object ButtonBase {
     }
     
     implicit def make(companion: normal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+    
+    def styled: com.olvind.mui.StyledComponent.Builder[DefaultComponentPropsExtendButtonBaseTypAction, Builder] = new com.olvind.mui.StyledComponent.Builder[DefaultComponentPropsExtendButtonBaseTypAction, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     
     def withProps(p: DefaultComponentPropsExtendButtonBaseTypAction): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }

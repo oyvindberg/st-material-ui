@@ -23,5 +23,7 @@ object ThemeProvider {
     extends AnyVal
        with StBuildingComponent[js.Object]
   
+  def styled[T]: com.olvind.mui.StyledComponent.Builder[ThemeProviderProps[T], Builder[T]] = new com.olvind.mui.StyledComponent.Builder[ThemeProviderProps[T], Builder[T]](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder[T](js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps[T](p: ThemeProviderProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

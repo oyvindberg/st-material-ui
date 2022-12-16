@@ -410,5 +410,13 @@ object script {
   
   implicit def make(companion: script.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[
+    DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
+    Builder
+  ] = new com.olvind.mui.StyledComponent.Builder[
+    DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
+    Builder
+  ](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

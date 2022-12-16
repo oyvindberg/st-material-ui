@@ -447,5 +447,13 @@ object ListItemText {
   
   implicit def make[PrimaryTypographyComponent /* <: ElementType */, SecondaryTypographyComponent /* <: ElementType */](companion: ListItemText.type): Builder[PrimaryTypographyComponent, SecondaryTypographyComponent] = new Builder[PrimaryTypographyComponent, SecondaryTypographyComponent](js.Array(this.component, js.Dictionary.empty))()
   
+  def styled[PrimaryTypographyComponent /* <: ElementType */, SecondaryTypographyComponent /* <: ElementType */]: com.olvind.mui.StyledComponent.Builder[
+    ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent], 
+    Builder[PrimaryTypographyComponent, SecondaryTypographyComponent]
+  ] = new com.olvind.mui.StyledComponent.Builder[
+    ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent], 
+    Builder[PrimaryTypographyComponent, SecondaryTypographyComponent]
+  ](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder[PrimaryTypographyComponent, SecondaryTypographyComponent](js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps[PrimaryTypographyComponent /* <: ElementType */, SecondaryTypographyComponent /* <: ElementType */](p: ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent]): Builder[PrimaryTypographyComponent, SecondaryTypographyComponent] = new Builder[PrimaryTypographyComponent, SecondaryTypographyComponent](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

@@ -392,5 +392,7 @@ object hr {
   
   implicit def make(companion: hr.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], Builder] = new com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

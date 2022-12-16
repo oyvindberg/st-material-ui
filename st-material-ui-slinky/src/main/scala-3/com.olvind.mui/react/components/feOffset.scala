@@ -819,5 +819,7 @@ object feOffset {
   
   implicit def make(companion: feOffset.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[SVGProps[SVGFEOffsetElement], Builder] = new com.olvind.mui.StyledComponent.Builder[SVGProps[SVGFEOffsetElement], Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: SVGProps[SVGFEOffsetElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

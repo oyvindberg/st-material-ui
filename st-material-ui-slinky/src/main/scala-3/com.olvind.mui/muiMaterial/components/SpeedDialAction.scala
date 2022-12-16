@@ -485,5 +485,7 @@ object SpeedDialAction {
   
   implicit def make(companion: SpeedDialAction.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[SpeedDialActionProps, Builder] = new com.olvind.mui.StyledComponent.Builder[SpeedDialActionProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: SpeedDialActionProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

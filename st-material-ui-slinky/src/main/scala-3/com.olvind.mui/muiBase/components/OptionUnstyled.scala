@@ -26,5 +26,13 @@ object OptionUnstyled {
   
   implicit def make[TValue](companion: OptionUnstyled.type): Builder[TValue] = new Builder[TValue](js.Array(this.component, js.Dictionary.empty))()
   
+  def styled[TValue]: com.olvind.mui.StyledComponent.Builder[
+    DefaultComponentProps[OptionUnstyledTypeMap[TValue, js.Object, "li"]], 
+    Builder[TValue]
+  ] = new com.olvind.mui.StyledComponent.Builder[
+    DefaultComponentProps[OptionUnstyledTypeMap[TValue, js.Object, "li"]], 
+    Builder[TValue]
+  ](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder[TValue](js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps[TValue](p: DefaultComponentProps[OptionUnstyledTypeMap[TValue, js.Object, "li"]]): Builder[TValue] = new Builder[TValue](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

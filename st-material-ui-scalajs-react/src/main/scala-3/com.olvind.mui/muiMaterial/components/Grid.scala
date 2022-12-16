@@ -2653,5 +2653,7 @@ object Grid {
   
   implicit def make(companion: Grid.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsGridTypeMapdiv, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsGridTypeMapdiv, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: /* props */ DefaultComponentPropsGridTypeMapdiv): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

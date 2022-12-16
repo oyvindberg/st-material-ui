@@ -393,5 +393,7 @@ object menu {
   
   implicit def make(companion: menu.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], Builder] = new com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

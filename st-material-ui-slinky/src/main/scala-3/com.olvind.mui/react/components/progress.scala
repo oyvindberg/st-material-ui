@@ -398,5 +398,13 @@ object progress {
   
   implicit def make(companion: progress.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[
+    DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
+    Builder
+  ] = new com.olvind.mui.StyledComponent.Builder[
+    DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
+    Builder
+  ](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

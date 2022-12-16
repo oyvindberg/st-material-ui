@@ -412,5 +412,7 @@ object area {
   
   implicit def make(companion: area.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], Builder] = new com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

@@ -410,5 +410,7 @@ object form {
   
   implicit def make(companion: form.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], Builder] = new com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

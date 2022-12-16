@@ -396,5 +396,7 @@ object data {
   
   implicit def make(companion: data.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], Builder] = new com.olvind.mui.StyledComponent.Builder[DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

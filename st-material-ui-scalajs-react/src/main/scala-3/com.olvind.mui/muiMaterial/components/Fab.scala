@@ -477,6 +477,14 @@ object Fab {
     
     implicit def make(companion: DefaultComponentPropsExtendButtonBaseTypAriaatomic.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
     
+    def styled: com.olvind.mui.StyledComponent.Builder[
+        com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriaatomic, 
+        Builder
+      ] = new com.olvind.mui.StyledComponent.Builder[
+        com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriaatomic, 
+        Builder
+      ](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+    
     def withProps(p: com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAriaatomic): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
   
@@ -910,6 +918,8 @@ object Fab {
       
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
+    
+    def styled: com.olvind.mui.StyledComponent.Builder[com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapFabT, Builder] = new com.olvind.mui.StyledComponent.Builder[com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapFabT, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     
     def withProps(p: com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapFabT): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }

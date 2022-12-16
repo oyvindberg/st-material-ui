@@ -4,6 +4,7 @@ import com.olvind.mui.StBuildingComponent.Default
 import com.olvind.mui.react.mod.ProfilerProps
 import com.olvind.mui.scheduler.tracingMod.Interaction
 import com.olvind.mui.std.Set
+import com.olvind.mui.StyledComponent.Builder
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,6 +23,8 @@ object Profiler {
   @JSImport("react", "Profiler")
   @js.native
   val component: js.Object = js.native
+  
+  def styled: Builder[ProfilerProps, Default[js.Object]] = new Builder[ProfilerProps, Default[js.Object]](this.component, new js.Object, js.Array(), (newComponent: Any) => new Default[js.Object](js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: ProfilerProps): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

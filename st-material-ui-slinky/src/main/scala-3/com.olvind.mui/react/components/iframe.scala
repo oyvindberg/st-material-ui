@@ -425,5 +425,13 @@ object iframe {
   
   implicit def make(companion: iframe.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
+  def styled: com.olvind.mui.StyledComponent.Builder[
+    DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
+    Builder
+  ] = new com.olvind.mui.StyledComponent.Builder[
+    DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
+    Builder
+  ](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }

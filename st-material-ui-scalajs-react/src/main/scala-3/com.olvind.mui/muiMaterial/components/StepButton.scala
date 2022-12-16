@@ -487,6 +487,8 @@ object StepButton {
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
     
+    def styled: com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapStep, Builder] = new com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapStep, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+    
     def withProps(p: OverridePropsExtendButtonBaseTypeMapStep): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
   
@@ -933,6 +935,8 @@ object StepButton {
     }
     
     implicit def make(companion: normal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+    
+    def styled: com.olvind.mui.StyledComponent.Builder[DefaultComponentPropsExtendButtonBaseTypAriacolcount, Builder] = new com.olvind.mui.StyledComponent.Builder[DefaultComponentPropsExtendButtonBaseTypAriacolcount, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     
     def withProps(p: DefaultComponentPropsExtendButtonBaseTypAriacolcount): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }

@@ -2,6 +2,7 @@ package com.olvind.mui.react.components
 
 import com.olvind.mui.react.mod.DetailedHTMLProps
 import com.olvind.mui.react.mod.HTMLAttributes
+import com.olvind.mui.StyledComponent.Builder
 import org.scalajs.dom.HTMLHeadingElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,6 +13,14 @@ object h3 {
   val component: String = "h3"
   
   implicit def make(companion: h3.type): SharedBuilder_DetailedHTMLProps556941009[HTMLHeadingElement] = new SharedBuilder_DetailedHTMLProps556941009[HTMLHeadingElement](js.Array(this.component, js.Dictionary.empty))()
+  
+  def styled: Builder[
+    DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+    SharedBuilder_DetailedHTMLProps556941009[HTMLHeadingElement]
+  ] = new Builder[
+    DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
+    SharedBuilder_DetailedHTMLProps556941009[HTMLHeadingElement]
+  ](this.component, new js.Object, js.Array(), (newComponent: Any) => new SharedBuilder_DetailedHTMLProps556941009[HTMLHeadingElement](js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): SharedBuilder_DetailedHTMLProps556941009[HTMLHeadingElement] = new SharedBuilder_DetailedHTMLProps556941009[HTMLHeadingElement](js.Array(this.component, p.asInstanceOf[js.Any]))
 }

@@ -35,5 +35,7 @@ object UnstableTrapFocus {
     inline def isEnabled(value: CallbackTo[Boolean]): this.type = set("isEnabled", value.toJsFn)
   }
   
+  def styled: com.olvind.mui.StyledComponent.Builder[FocusTrapProps, Builder] = new com.olvind.mui.StyledComponent.Builder[FocusTrapProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
+  
   def withProps(p: FocusTrapProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
