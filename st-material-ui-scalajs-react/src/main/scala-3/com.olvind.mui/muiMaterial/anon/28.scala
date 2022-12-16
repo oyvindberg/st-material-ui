@@ -8,11 +8,11 @@ trait `28` extends StObject {
   
   var defaultComponent: "span"
   
-  var props: js.Object & ClassesColor
+  var props: ClassesColor
 }
 object `28` {
   
-  inline def apply(props: js.Object & ClassesColor): `28` = {
+  inline def apply(props: ClassesColor): `28` = {
     val __obj = js.Dynamic.literal(defaultComponent = "span", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`28`]
   }
@@ -21,6 +21,6 @@ object `28` {
     
     inline def setDefaultComponent(value: "span"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & ClassesColor): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: ClassesColor): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

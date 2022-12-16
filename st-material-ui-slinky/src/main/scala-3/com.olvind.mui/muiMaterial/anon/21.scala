@@ -8,11 +8,11 @@ trait `21` extends StObject {
   
   var defaultComponent: "li"
   
-  var props: js.Object & AutoFocus
+  var props: AutoFocus
 }
 object `21` {
   
-  inline def apply(props: js.Object & AutoFocus): `21` = {
+  inline def apply(props: AutoFocus): `21` = {
     val __obj = js.Dynamic.literal(defaultComponent = "li", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`21`]
   }
@@ -21,6 +21,6 @@ object `21` {
     
     inline def setDefaultComponent(value: "li"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & AutoFocus): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: AutoFocus): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

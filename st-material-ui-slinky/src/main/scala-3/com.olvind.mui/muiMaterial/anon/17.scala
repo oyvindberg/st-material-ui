@@ -9,11 +9,11 @@ trait `17` extends StObject {
   
   var defaultComponent: "div"
   
-  var props: js.Object & ListItemButtonBaseProps
+  var props: ListItemButtonBaseProps
 }
 object `17` {
   
-  inline def apply(props: js.Object & ListItemButtonBaseProps): `17` = {
+  inline def apply(props: ListItemButtonBaseProps): `17` = {
     val __obj = js.Dynamic.literal(defaultComponent = "div", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`17`]
   }
@@ -22,6 +22,6 @@ object `17` {
     
     inline def setDefaultComponent(value: "div"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & ListItemButtonBaseProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: ListItemButtonBaseProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

@@ -8,11 +8,11 @@ trait `3` extends StObject {
   
   var defaultComponent: "button"
   
-  var props: js.Object & DisableElevation
+  var props: DisableElevation
 }
 object `3` {
   
-  inline def apply(props: js.Object & DisableElevation): `3` = {
+  inline def apply(props: DisableElevation): `3` = {
     val __obj = js.Dynamic.literal(defaultComponent = "button", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`]
   }
@@ -21,6 +21,6 @@ object `3` {
     
     inline def setDefaultComponent(value: "button"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & DisableElevation): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: DisableElevation): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

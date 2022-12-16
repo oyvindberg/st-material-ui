@@ -8,11 +8,11 @@ trait `10` extends StObject {
   
   var defaultComponent: "button"
   
-  var props: js.Object & DisableRipple
+  var props: DisableRipple
 }
 object `10` {
   
-  inline def apply(props: js.Object & DisableRipple): `10` = {
+  inline def apply(props: DisableRipple): `10` = {
     val __obj = js.Dynamic.literal(defaultComponent = "button", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`10`]
   }
@@ -21,6 +21,6 @@ object `10` {
     
     inline def setDefaultComponent(value: "button"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & DisableRipple): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: DisableRipple): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

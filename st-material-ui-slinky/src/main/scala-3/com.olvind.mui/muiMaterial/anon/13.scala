@@ -8,11 +8,11 @@ trait `13` extends StObject {
   
   var defaultComponent: "button"
   
-  var props: js.Object & Edge
+  var props: Edge
 }
 object `13` {
   
-  inline def apply(props: js.Object & Edge): `13` = {
+  inline def apply(props: Edge): `13` = {
     val __obj = js.Dynamic.literal(defaultComponent = "button", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`13`]
   }
@@ -21,6 +21,6 @@ object `13` {
     
     inline def setDefaultComponent(value: "button"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & Edge): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: Edge): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

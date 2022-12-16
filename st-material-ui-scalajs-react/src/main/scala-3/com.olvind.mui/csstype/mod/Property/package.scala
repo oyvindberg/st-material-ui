@@ -68,7 +68,7 @@ type AnimationDuration[TTime] = Globals | TTime | String
 
 type AnimationFillMode = Globals | SingleAnimationFillMode | String
 
-type AnimationIterationCount = Globals | "infinite" | String | (Double & js.Object)
+type AnimationIterationCount = Globals | "infinite" | String | Double
 
 type AnimationName = Globals | "none" | String
 
@@ -162,17 +162,17 @@ type BorderEndEndRadius[TLength] = Globals | TLength | String
 
 type BorderEndStartRadius[TLength] = Globals | TLength | String
 
-type BorderImage = Globals | "none" | "repeat" | "round" | "space" | "stretch" | String | (Double & js.Object)
+type BorderImage = Globals | "none" | "repeat" | "round" | "space" | "stretch" | String | Double
 
-type BorderImageOutset[TLength] = Globals | TLength | String | (Double & js.Object)
+type BorderImageOutset[TLength] = Globals | TLength | String | Double
 
 type BorderImageRepeat = Globals | "repeat" | "round" | "space" | "stretch" | String
 
-type BorderImageSlice = Globals | String | (Double & js.Object)
+type BorderImageSlice = Globals | String | Double
 
 type BorderImageSource = Globals | "none" | String
 
-type BorderImageWidth[TLength] = Globals | TLength | "auto" | String | (Double & js.Object)
+type BorderImageWidth[TLength] = Globals | TLength | "auto" | String | Double
 
 type BorderInline[TLength] = Globals | LineWidth[TLength] | LineStyle | com.olvind.mui.csstype.mod.DataType.Color | String
 
@@ -246,13 +246,13 @@ type BoxDecorationBreak = "clone" | "slice" | "-moz-initial" | "inherit" | "init
 
 type BoxDirection = "inherit" | "normal" | "reverse" | "-moz-initial" | "initial" | "revert" | "unset"
 
-type BoxFlex = Globals | (Double & js.Object) | String
+type BoxFlex = Globals | Double | String
 
-type BoxFlexGroup = Globals | (Double & js.Object) | String
+type BoxFlexGroup = Globals | Double | String
 
 type BoxLines = "multiple" | "single" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
-type BoxOrdinalGroup = Globals | (Double & js.Object) | String
+type BoxOrdinalGroup = Globals | Double | String
 
 type BoxOrient = "block-axis" | "horizontal" | "inherit" | "inline-axis" | "vertical" | "-moz-initial" | "initial" | "revert" | "unset"
 
@@ -290,7 +290,7 @@ type ColorRendering = "auto" | "optimizeQuality" | "optimizeSpeed" | "-moz-initi
 
 type ColorScheme = Globals | "dark" | "light" | "normal" | String
 
-type ColumnCount = Globals | "auto" | (Double & js.Object) | String
+type ColumnCount = Globals | "auto" | Double | String
 
 type ColumnFill = "auto" | "balance" | "balance-all" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
@@ -308,7 +308,7 @@ type ColumnSpan = "all" | "none" | "-moz-initial" | "inherit" | "initial" | "rev
 
 type ColumnWidth[TLength] = Globals | TLength | "auto"
 
-type Columns[TLength] = Globals | TLength | "auto" | String | (Double & js.Object)
+type Columns[TLength] = Globals | TLength | "auto" | String | Double
 
 type Contain = Globals | "content" | "layout" | "none" | "paint" | "size" | "strict" | "style" | String
 
@@ -334,13 +334,13 @@ type EmptyCells = "hide" | "show" | "-moz-initial" | "inherit" | "initial" | "re
 
 type Fill = Globals | Paint
 
-type FillOpacity = Globals | (Double & js.Object) | String
+type FillOpacity = Globals | Double | String
 
 type FillRule = "evenodd" | "nonzero" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
 type Filter = Globals | "none" | String
 
-type Flex[TLength] = Globals | TLength | "auto" | "content" | "fit-content" | "max-content" | "min-content" | "none" | String | (Double & js.Object)
+type Flex[TLength] = Globals | TLength | "auto" | "content" | "fit-content" | "max-content" | "min-content" | "none" | String | Double
 
 type FlexBasis[TLength] = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "-webkit-auto" | "auto" | "content" | "fit-content" | "max-content" | "min-content" | String
 
@@ -348,9 +348,9 @@ type FlexDirection = "column" | "column-reverse" | "row" | "row-reverse" | "-moz
 
 type FlexFlow = Globals | "column" | "column-reverse" | "nowrap" | "row" | "row-reverse" | "wrap" | "wrap-reverse" | String
 
-type FlexGrow = Globals | (Double & js.Object) | String
+type FlexGrow = Globals | Double | String
 
-type FlexShrink = Globals | (Double & js.Object) | String
+type FlexShrink = Globals | Double | String
 
 type FlexWrap = "nowrap" | "wrap" | "wrap-reverse" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
@@ -358,7 +358,7 @@ type Float = "inline-end" | "inline-start" | "left" | "none" | "right" | "-moz-i
 
 type FloodColor = Globals | com.olvind.mui.csstype.mod.DataType.Color | "currentColor"
 
-type FloodOpacity = Globals | (Double & js.Object) | String
+type FloodOpacity = Globals | Double | String
 
 type Font = Globals | "caption" | "icon" | "menu" | "message-box" | "small-caption" | "status-bar" | String
 
@@ -374,7 +374,7 @@ type FontOpticalSizing = "auto" | "none" | "-moz-initial" | "inherit" | "initial
 
 type FontSize[TLength] = Globals | AbsoluteSize | TLength | "larger" | "smaller" | String
 
-type FontSizeAdjust = Globals | "from-font" | "none" | String | (Double & js.Object)
+type FontSizeAdjust = Globals | "from-font" | "none" | String | Double
 
 type FontSmooth[TLength] = Globals | AbsoluteSize | TLength | "always" | "auto" | "never"
 
@@ -406,7 +406,7 @@ type ForcedColorAdjust = "auto" | "none" | "-moz-initial" | "inherit" | "initial
 
 type Gap[TLength] = Globals | TLength | "normal" | String
 
-type GlyphOrientationVertical = Globals | "auto" | String | (Double & js.Object)
+type GlyphOrientationVertical = Globals | "auto" | String | Double
 
 type Grid = Globals | "none" | String
 
@@ -458,7 +458,7 @@ type ImageResolution = Globals | "from-image" | String
 
 type ImeMode = "active" | "auto" | "disabled" | "inactive" | "normal" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
-type InitialLetter = Globals | "normal" | String | (Double & js.Object)
+type InitialLetter = Globals | "normal" | String | Double
 
 type InlineSize[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fill-available" | "auto" | "fit-content" | "max-content" | "min-content" | String
 
@@ -494,9 +494,9 @@ type LightingColor = Globals | com.olvind.mui.csstype.mod.DataType.Color | "curr
 
 type LineBreak = "anywhere" | "auto" | "loose" | "normal" | "strict" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
-type LineClamp = Globals | "none" | (Double & js.Object) | String
+type LineClamp = Globals | "none" | Double | String
 
-type LineHeight[TLength] = Globals | TLength | "normal" | String | (Double & js.Object)
+type LineHeight[TLength] = Globals | TLength | "normal" | String | Double
 
 type LineHeightStep[TLength] = Globals | TLength
 
@@ -540,19 +540,19 @@ type MarkerStart = Globals | "none" | String
 
 type Mask[TLength] = Globals | MaskLayer[TLength] | String
 
-type MaskBorder = Globals | "alpha" | "luminance" | "none" | "repeat" | "round" | "space" | "stretch" | String | (Double & js.Object)
+type MaskBorder = Globals | "alpha" | "luminance" | "none" | "repeat" | "round" | "space" | "stretch" | String | Double
 
 type MaskBorderMode = "alpha" | "luminance" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
-type MaskBorderOutset[TLength] = Globals | TLength | String | (Double & js.Object)
+type MaskBorderOutset[TLength] = Globals | TLength | String | Double
 
 type MaskBorderRepeat = Globals | "repeat" | "round" | "space" | "stretch" | String
 
-type MaskBorderSlice = Globals | String | (Double & js.Object)
+type MaskBorderSlice = Globals | String | Double
 
 type MaskBorderSource = Globals | "none" | String
 
-type MaskBorderWidth[TLength] = Globals | TLength | "auto" | String | (Double & js.Object)
+type MaskBorderWidth[TLength] = Globals | TLength | "auto" | String | Double
 
 type MaskClip = Globals | GeometryBox | "no-clip" | String
 
@@ -580,7 +580,7 @@ type MaxHeight[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-con
 
 type MaxInlineSize[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fill-available" | "fit-content" | "max-content" | "min-content" | "none" | String
 
-type MaxLines = Globals | "none" | (Double & js.Object) | String
+type MaxLines = Globals | "none" | Double | String
 
 type MaxWidth[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fit-content" | "-webkit-max-content" | "-webkit-min-content" | "fit-content" | "intrinsic" | "max-content" | "min-content" | "none" | String
 
@@ -672,9 +672,9 @@ type MsGridRows[TLength] = Globals | TrackBreadth[TLength] | "none" | String
 
 type MsHighContrastAdjust = "auto" | "none" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
-type MsHyphenateLimitChars = Globals | "auto" | String | (Double & js.Object)
+type MsHyphenateLimitChars = Globals | "auto" | String | Double
 
-type MsHyphenateLimitLines = Globals | "no-limit" | (Double & js.Object) | String
+type MsHyphenateLimitLines = Globals | "no-limit" | Double | String
 
 type MsHyphenateLimitZone[TLength] = Globals | TLength | String
 
@@ -750,11 +750,11 @@ type OffsetPath = Globals | GeometryBox | "none" | String
 
 type OffsetRotate = Globals | "auto" | "reverse" | String
 
-type Opacity = Globals | String | (Double & js.Object)
+type Opacity = Globals | String | Double
 
-type Order = Globals | (Double & js.Object) | String
+type Order = Globals | Double | String
 
-type Orphans = Globals | (Double & js.Object) | String
+type Orphans = Globals | Double | String
 
 type Outline[TLength] = Globals | com.olvind.mui.csstype.mod.DataType.Color | LineStyle | LineWidth[TLength] | "auto" | "invert" | String
 
@@ -854,7 +854,7 @@ type RubyMerge = "auto" | "collapse" | "separate" | "-moz-initial" | "inherit" |
 
 type RubyPosition = Globals | "alternate" | "inter-character" | "over" | "under" | String
 
-type Scale = Globals | "none" | String | (Double & js.Object)
+type Scale = Globals | "none" | String | Double
 
 type ScrollBehavior = "auto" | "smooth" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
@@ -926,7 +926,7 @@ type ScrollbarGutter = Globals | "auto" | "stable" | String
 
 type ScrollbarWidth = "auto" | "none" | "thin" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
-type ShapeImageThreshold = Globals | String | (Double & js.Object)
+type ShapeImageThreshold = Globals | String | Double
 
 type ShapeMargin[TLength] = Globals | TLength | String
 
@@ -936,7 +936,7 @@ type ShapeRendering = "auto" | "crispEdges" | "geometricPrecision" | "optimizeSp
 
 type StopColor = Globals | com.olvind.mui.csstype.mod.DataType.Color | "currentColor"
 
-type StopOpacity = Globals | (Double & js.Object) | String
+type StopOpacity = Globals | Double | String
 
 type Stroke = Globals | Paint
 
@@ -948,13 +948,13 @@ type StrokeLinecap = "butt" | "round" | "square" | "-moz-initial" | "inherit" | 
 
 type StrokeLinejoin = "bevel" | "miter" | "round" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
-type StrokeMiterlimit = Globals | (Double & js.Object) | String
+type StrokeMiterlimit = Globals | Double | String
 
-type StrokeOpacity = Globals | (Double & js.Object) | String
+type StrokeOpacity = Globals | Double | String
 
 type StrokeWidth[TLength] = Globals | TLength | String
 
-type TabSize[TLength] = Globals | TLength | (Double & js.Object) | String
+type TabSize[TLength] = Globals | TLength | Double | String
 
 type TableLayout = "auto" | "fixed" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
@@ -1054,7 +1054,7 @@ type WebkitBorderBeforeWidth[TLength] = Globals | LineWidth[TLength] | String
 
 type WebkitBoxReflect[TLength] = Globals | TLength | "above" | "below" | "left" | "right" | String
 
-type WebkitLineClamp = Globals | "none" | (Double & js.Object) | String
+type WebkitLineClamp = Globals | "none" | Double | String
 
 type WebkitMask[TLength] = Globals | com.olvind.mui.csstype.mod.DataType.Position[TLength] | RepeatStyle | Box | "border" | "content" | "none" | "padding" | "text" | String
 
@@ -1100,7 +1100,7 @@ type WebkitUserModify = "read-only" | "read-write" | "read-write-plaintext-only"
 
 type WhiteSpace = "-moz-pre-wrap" | "break-spaces" | "normal" | "nowrap" | "pre" | "pre-line" | "pre-wrap" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
-type Widows = Globals | (Double & js.Object) | String
+type Widows = Globals | Double | String
 
 type Width[TLength] = Globals | TLength | "-moz-fit-content" | "-moz-max-content" | "-moz-min-content" | "-webkit-fit-content" | "-webkit-max-content" | "auto" | "fit-content" | "intrinsic" | "max-content" | "min-content" | "min-intrinsic" | String
 
@@ -1114,6 +1114,6 @@ type WordWrap = "break-word" | "normal" | "-moz-initial" | "inherit" | "initial"
 
 type WritingMode = "horizontal-tb" | "sideways-lr" | "sideways-rl" | "vertical-lr" | "vertical-rl" | "-moz-initial" | "inherit" | "initial" | "revert" | "unset"
 
-type ZIndex = Globals | "auto" | (Double & js.Object) | String
+type ZIndex = Globals | "auto" | Double | String
 
-type Zoom = Globals | "normal" | "reset" | String | (Double & js.Object)
+type Zoom = Globals | "normal" | "reset" | String | Double

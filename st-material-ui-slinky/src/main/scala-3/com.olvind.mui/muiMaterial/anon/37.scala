@@ -8,11 +8,11 @@ trait `37` extends StObject {
   
   var defaultComponent: "button"
   
-  var props: js.Object & FullWidth
+  var props: FullWidth
 }
 object `37` {
   
-  inline def apply(props: js.Object & FullWidth): `37` = {
+  inline def apply(props: FullWidth): `37` = {
     val __obj = js.Dynamic.literal(defaultComponent = "button", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`37`]
   }
@@ -21,6 +21,6 @@ object `37` {
     
     inline def setDefaultComponent(value: "button"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & FullWidth): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: FullWidth): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

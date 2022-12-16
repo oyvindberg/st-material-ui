@@ -8,11 +8,11 @@ trait `25` extends StObject {
   
   var defaultComponent: "div"
   
-  var props: js.Object & BackdropProps
+  var props: BackdropProps
 }
 object `25` {
   
-  inline def apply(props: js.Object & BackdropProps): `25` = {
+  inline def apply(props: BackdropProps): `25` = {
     val __obj = js.Dynamic.literal(defaultComponent = "div", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`25`]
   }
@@ -21,6 +21,6 @@ object `25` {
     
     inline def setDefaultComponent(value: "div"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & BackdropProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: BackdropProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

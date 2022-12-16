@@ -8,11 +8,11 @@ trait Props extends StObject {
   
   var defaultComponent: "div"
   
-  var props: js.Object & Children
+  var props: Children
 }
 object Props {
   
-  inline def apply(props: js.Object & Children): Props = {
+  inline def apply(props: Children): Props = {
     val __obj = js.Dynamic.literal(defaultComponent = "div", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
@@ -21,6 +21,6 @@ object Props {
     
     inline def setDefaultComponent(value: "div"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & Children): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: Children): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

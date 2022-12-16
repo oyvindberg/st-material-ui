@@ -8,11 +8,11 @@ trait `35` extends StObject {
   
   var defaultComponent: "span"
   
-  var props: js.Object & HideSortIcon
+  var props: HideSortIcon
 }
 object `35` {
   
-  inline def apply(props: js.Object & HideSortIcon): `35` = {
+  inline def apply(props: HideSortIcon): `35` = {
     val __obj = js.Dynamic.literal(defaultComponent = "span", props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[`35`]
   }
@@ -21,6 +21,6 @@ object `35` {
     
     inline def setDefaultComponent(value: "span"): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: js.Object & HideSortIcon): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: HideSortIcon): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

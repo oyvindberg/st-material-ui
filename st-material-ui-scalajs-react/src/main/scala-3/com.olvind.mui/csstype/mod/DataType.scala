@@ -158,7 +158,7 @@ object DataType {
   
   type CubicBezierTimingFunction = "ease" | "ease-in" | "ease-in-out" | "ease-out" | String
   
-  type Dasharray[TLength] = TLength | String | (Double & js.Object)
+  type Dasharray[TLength] = TLength | String | Double
   
   object DeprecatedSystemColor {
     
@@ -322,7 +322,7 @@ object DataType {
   
   type FontStretchAbsolute = "condensed" | "expanded" | "extra-condensed" | "extra-expanded" | "normal" | "semi-condensed" | "semi-expanded" | "ultra-condensed" | "ultra-expanded" | String
   
-  type FontWeightAbsolute = "bold" | "normal" | (Double & js.Object) | String
+  type FontWeightAbsolute = "bold" | "normal" | Double | String
   
   object GenericFamily {
     
@@ -356,7 +356,7 @@ object DataType {
   }
   type GeometryBox = "fill-box" | "margin-box" | "stroke-box" | "view-box" | "border-box" | "content-box" | "padding-box"
   
-  type GridLine = "auto" | String | (Double & js.Object)
+  type GridLine = "auto" | String | Double
   
   object LineStyle {
     
@@ -734,7 +734,7 @@ object DataType {
   }
   type SelfPosition = "center" | "end" | "flex-end" | "flex-start" | "self-end" | "self-start" | "start"
   
-  type SingleAnimation[TTime] = EasingFunction | SingleAnimationDirection | SingleAnimationFillMode | TTime | "infinite" | "none" | "paused" | "running" | String | (Double & js.Object)
+  type SingleAnimation[TTime] = EasingFunction | SingleAnimationDirection | SingleAnimationFillMode | TTime | "infinite" | "none" | "paused" | "running" | String | Double
   
   object SingleAnimationDirection {
     
