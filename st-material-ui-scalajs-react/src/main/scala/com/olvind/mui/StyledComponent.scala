@@ -35,33 +35,35 @@ object StyledComponent {
       interpolations: js.Array[Interpolation[InterpolationInput[Props]]],
       mkBuilder:      Any => ReactBuilder
   ) {
-    def opts(x: StyledOptions[Props & MUIStyledCommonProps[Theme]]): this.type = {
+    inline def opts(x: StyledOptions[Props & MUIStyledCommonProps[Theme]]): this.type = {
       js.Object.assign(this.options, x)
       this
     }
-    def opts(x: MuiStyledOptions): this.type = {
+    inline def opts(x: MuiStyledOptions): this.type = {
       js.Object.assign(this.options, x)
       this
     }
 
-    def fn(f: (Theme, Props & MUIStyledCommonProps[Theme]) => InterpolationPrimitive): StyledComponent.Builder[Props, ReactBuilder] = {
+    inline def fn(
+        inline f: (Theme, Props & MUIStyledCommonProps[Theme]) => InterpolationPrimitive
+    ): StyledComponent.Builder[Props, ReactBuilder] = {
       val raw: js.Function1[InterpolationInput[Props], InterpolationPrimitive] =
         in => f((in: com.olvind.mui.muiStyledEngine.anon.Theme[Theme]).theme, in)
       interpolations.push(raw)
       this
     }
 
-    def apply(i: InterpolationPrimitive): this.type = {
+    inline def apply(i: InterpolationPrimitive): this.type = {
       interpolations.push(i)
       this
     }
 
-    def build(): StyledComponent[ReactBuilder] = {
-      val optionsNudged =
+    inline def build(): StyledComponent[ReactBuilder] = {
+      val optionsTyped =
         options.asInstanceOf[StyledOptions[PropsOf[Any] & MUIStyledCommonProps[Theme]] & MuiStyledOptions]
 
       val createStyled: CreateStyledComponent[PropsOf[Any] & MUIStyledCommonProps[Theme], js.Object, Ref[Any], Theme] =
-        styled.apply[Any](baseComponent, optionsNudged)
+        styled.apply[Any](baseComponent, optionsTyped)
 
       val createStyledNudged: CreateStyledComponent[Props & MUIStyledCommonProps[Theme], js.Object, Ref[Any], Theme] =
         createStyled
