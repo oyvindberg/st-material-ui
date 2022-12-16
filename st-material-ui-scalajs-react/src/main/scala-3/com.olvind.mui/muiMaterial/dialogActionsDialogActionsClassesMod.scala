@@ -33,7 +33,8 @@ object dialogActionsDialogActionsClassesMod {
       __obj.asInstanceOf[DialogActionsClasses]
     }
     
-    extension [Self <: DialogActionsClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogActionsClasses] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

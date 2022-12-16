@@ -22,7 +22,8 @@ object InputRoot {
     __obj.asInstanceOf[InputRoot]
   }
   
-  extension [Self <: InputRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputRoot] (val x: Self) extends AnyVal {
     
     inline def setInput(value: InputHTMLAttributes[HTMLInputElement] & InputBaseComponentsPropsOverrides): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

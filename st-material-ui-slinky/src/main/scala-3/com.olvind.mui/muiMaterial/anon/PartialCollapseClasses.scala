@@ -26,7 +26,8 @@ object PartialCollapseClasses {
     __obj.asInstanceOf[PartialCollapseClasses]
   }
   
-  extension [Self <: PartialCollapseClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCollapseClasses] (val x: Self) extends AnyVal {
     
     inline def setEntered(value: String): Self = StObject.set(x, "entered", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object dividerDividerClassesMod {
       __obj.asInstanceOf[DividerClasses]
     }
     
-    extension [Self <: DividerClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DividerClasses] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: String): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       

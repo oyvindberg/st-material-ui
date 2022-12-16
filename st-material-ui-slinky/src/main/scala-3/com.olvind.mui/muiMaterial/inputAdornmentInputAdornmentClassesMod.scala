@@ -64,7 +64,8 @@ object inputAdornmentInputAdornmentClassesMod {
       __obj.asInstanceOf[InputAdornmentClasses]
     }
     
-    extension [Self <: InputAdornmentClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputAdornmentClasses] (val x: Self) extends AnyVal {
       
       inline def setDisablePointerEvents(value: String): Self = StObject.set(x, "disablePointerEvents", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object BackButton {
     __obj.asInstanceOf[BackButton]
   }
   
-  extension [Self <: BackButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackButton] (val x: Self) extends AnyVal {
     
     inline def setBackButton(value: ElementType): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
     

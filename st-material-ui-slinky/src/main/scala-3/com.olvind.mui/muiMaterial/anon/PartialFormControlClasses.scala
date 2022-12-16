@@ -22,7 +22,8 @@ object PartialFormControlClasses {
     __obj.asInstanceOf[PartialFormControlClasses]
   }
   
-  extension [Self <: PartialFormControlClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFormControlClasses] (val x: Self) extends AnyVal {
     
     inline def setFullWidth(value: String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object PartialListSubheaderClasses {
     __obj.asInstanceOf[PartialListSubheaderClasses]
   }
   
-  extension [Self <: PartialListSubheaderClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialListSubheaderClasses] (val x: Self) extends AnyVal {
     
     inline def setColorInherit(value: String): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PropsPartialCollapseProps {
     __obj.asInstanceOf[PropsPartialCollapseProps]
   }
   
-  extension [Self <: PropsPartialCollapseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialCollapseProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialCollapseProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

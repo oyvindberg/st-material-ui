@@ -66,7 +66,8 @@ object tablePaginationUnstyledTablePaginationUnstyledDottypesMod {
       __obj.asInstanceOf[LabelDisplayedRowsArgs]
     }
     
-    extension [Self <: LabelDisplayedRowsArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelDisplayedRowsArgs] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

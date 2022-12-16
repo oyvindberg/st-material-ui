@@ -450,7 +450,8 @@ object PartialPaginationProps {
     __obj.asInstanceOf[PartialPaginationProps]
   }
   
-  extension [Self <: PartialPaginationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaginationProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

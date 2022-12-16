@@ -32,7 +32,8 @@ object Listbox {
     __obj.asInstanceOf[Listbox]
   }
   
-  extension [Self <: Listbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Listbox] (val x: Self) extends AnyVal {
     
     inline def setListbox(value: SlotComponentProps["ul", MenuUnstyledComponentsPropsOverrides, MenuUnstyledOwnerState]): Self = StObject.set(x, "listbox", value.asInstanceOf[js.Any])
     

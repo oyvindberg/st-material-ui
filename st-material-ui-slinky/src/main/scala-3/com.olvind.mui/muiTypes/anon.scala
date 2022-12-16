@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Component[C]]
     }
     
-    extension [Self <: Component[?], C /* <: ReactElement */](x: Self & Component[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component[?], C /* <: ReactElement */] (val x: Self & Component[C]) extends AnyVal {
       
       inline def setComponent(value: C): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }

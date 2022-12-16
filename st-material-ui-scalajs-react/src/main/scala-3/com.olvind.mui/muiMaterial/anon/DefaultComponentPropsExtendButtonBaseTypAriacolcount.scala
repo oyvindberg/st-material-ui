@@ -484,7 +484,8 @@ object DefaultComponentPropsExtendButtonBaseTypAriacolcount {
     __obj.asInstanceOf[DefaultComponentPropsExtendButtonBaseTypAriacolcount]
   }
   
-  extension [Self <: DefaultComponentPropsExtendButtonBaseTypAriacolcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsExtendButtonBaseTypAriacolcount] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

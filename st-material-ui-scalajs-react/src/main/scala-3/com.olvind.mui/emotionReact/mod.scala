@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[ClassNamesProps]
     }
     
-    extension [Self <: ClassNamesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassNamesProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ClassNamesContent => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[GlobalProps]
     }
     
-    extension [Self <: GlobalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: Interpolation[Theme]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

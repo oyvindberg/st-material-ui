@@ -45,7 +45,8 @@ object stylesZIndexMod extends Shortcut {
       __obj.asInstanceOf[ZIndex]
     }
     
-    extension [Self <: ZIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZIndex] (val x: Self) extends AnyVal {
       
       inline def setAppBar(value: Double): Self = StObject.set(x, "appBar", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object stylesZIndexMod extends Shortcut {
       __obj.asInstanceOf[ZIndexOptions]
     }
     
-    extension [Self <: ZIndexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZIndexOptions] (val x: Self) extends AnyVal {
       
       inline def setAppBar(value: Double): Self = StObject.set(x, "appBar", value.asInstanceOf[js.Any])
       

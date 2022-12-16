@@ -18,7 +18,8 @@ object PropsPartialOutlinedInputProps {
     __obj.asInstanceOf[PropsPartialOutlinedInputProps]
   }
   
-  extension [Self <: PropsPartialOutlinedInputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialOutlinedInputProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialOutlinedInputProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

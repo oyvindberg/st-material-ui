@@ -73,7 +73,8 @@ object Avatar {
     __obj.asInstanceOf[Avatar[SubheaderTypographyComponent, TitleTypographyComponent]]
   }
   
-  extension [Self <: Avatar[?, ?], SubheaderTypographyComponent /* <: ElementType */, TitleTypographyComponent /* <: ElementType */](x: Self & (Avatar[SubheaderTypographyComponent, TitleTypographyComponent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Avatar[?, ?], SubheaderTypographyComponent /* <: ElementType */, TitleTypographyComponent /* <: ElementType */] (val x: Self & (Avatar[SubheaderTypographyComponent, TitleTypographyComponent])) extends AnyVal {
     
     inline def setAction(value: VdomNode): Self = StObject.set(x, "action", value.rawNode.asInstanceOf[js.Any])
     

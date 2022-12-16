@@ -108,7 +108,8 @@ object PartialButtonClasses {
     __obj.asInstanceOf[PartialButtonClasses]
   }
   
-  extension [Self <: PartialButtonClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialButtonClasses] (val x: Self) extends AnyVal {
     
     inline def setColorInherit(value: String): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object bottomNavigationActionBottomNavigationActionClassesMod {
       __obj.asInstanceOf[BottomNavigationActionClasses]
     }
     
-    extension [Self <: BottomNavigationActionClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomNavigationActionClasses] (val x: Self) extends AnyVal {
       
       inline def setIconOnly(value: String): Self = StObject.set(x, "iconOnly", value.asInstanceOf[js.Any])
       

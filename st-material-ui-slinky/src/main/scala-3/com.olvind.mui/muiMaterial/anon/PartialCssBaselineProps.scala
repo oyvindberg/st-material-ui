@@ -22,7 +22,8 @@ object PartialCssBaselineProps {
     __obj.asInstanceOf[PartialCssBaselineProps]
   }
   
-  extension [Self <: PartialCssBaselineProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCssBaselineProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

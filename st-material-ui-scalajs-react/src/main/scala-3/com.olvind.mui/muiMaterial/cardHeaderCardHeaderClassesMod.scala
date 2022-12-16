@@ -45,7 +45,8 @@ object cardHeaderCardHeaderClassesMod {
       __obj.asInstanceOf[CardHeaderClasses]
     }
     
-    extension [Self <: CardHeaderClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderClasses] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

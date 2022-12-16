@@ -199,7 +199,8 @@ object stylesMod {
       __obj.asInstanceOf[StyledComponentProps[ClassKey]]
     }
     
-    extension [Self <: StyledComponentProps[?], ClassKey /* <: String */](x: Self & StyledComponentProps[ClassKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledComponentProps[?], ClassKey /* <: String */] (val x: Self & StyledComponentProps[ClassKey]) extends AnyVal {
       
       inline def setClasses(value: Partial[ClassNameMap[ClassKey]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -270,7 +271,8 @@ object stylesMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setBreakpints(value: Breakpoints): Self = StObject.set(x, "breakpints", value.asInstanceOf[js.Any])
       

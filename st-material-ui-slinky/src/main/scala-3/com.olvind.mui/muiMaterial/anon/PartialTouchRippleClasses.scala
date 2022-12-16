@@ -28,7 +28,8 @@ object PartialTouchRippleClasses {
     __obj.asInstanceOf[PartialTouchRippleClasses]
   }
   
-  extension [Self <: PartialTouchRippleClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTouchRippleClasses] (val x: Self) extends AnyVal {
     
     inline def setChild(value: String): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     

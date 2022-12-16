@@ -1605,7 +1605,8 @@ object PartialGridPropsdiv {
     __obj.asInstanceOf[PartialGridPropsdiv]
   }
   
-  extension [Self <: PartialGridPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGridPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

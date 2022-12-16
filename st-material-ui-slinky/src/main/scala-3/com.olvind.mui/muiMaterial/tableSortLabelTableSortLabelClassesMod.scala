@@ -42,7 +42,8 @@ object tableSortLabelTableSortLabelClassesMod {
       __obj.asInstanceOf[TableSortLabelClasses]
     }
     
-    extension [Self <: TableSortLabelClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableSortLabelClasses] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

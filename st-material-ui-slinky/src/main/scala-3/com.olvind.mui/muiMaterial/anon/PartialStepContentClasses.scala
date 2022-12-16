@@ -20,7 +20,8 @@ object PartialStepContentClasses {
     __obj.asInstanceOf[PartialStepContentClasses]
   }
   
-  extension [Self <: PartialStepContentClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStepContentClasses] (val x: Self) extends AnyVal {
     
     inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     

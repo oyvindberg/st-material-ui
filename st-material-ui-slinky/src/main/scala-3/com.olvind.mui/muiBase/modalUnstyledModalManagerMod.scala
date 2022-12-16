@@ -25,7 +25,8 @@ object modalUnstyledModalManagerMod {
       __obj.asInstanceOf[ManagedModalProps]
     }
     
-    extension [Self <: ManagedModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagedModalProps] (val x: Self) extends AnyVal {
       
       inline def setDisableScrollLock(value: Boolean): Self = StObject.set(x, "disableScrollLock", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object modalUnstyledModalManagerMod {
       __obj.asInstanceOf[Modal]
     }
     
-    extension [Self <: Modal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modal] (val x: Self) extends AnyVal {
       
       inline def setModalRef(value: Element): Self = StObject.set(x, "modalRef", value.asInstanceOf[js.Any])
       

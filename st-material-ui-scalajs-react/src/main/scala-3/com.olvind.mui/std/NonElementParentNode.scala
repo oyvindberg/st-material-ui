@@ -19,7 +19,8 @@ object NonElementParentNode {
     __obj.asInstanceOf[NonElementParentNode]
   }
   
-  extension [Self <: NonElementParentNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonElementParentNode] (val x: Self) extends AnyVal {
     
     inline def setGetElementById(value: java.lang.String => org.scalajs.dom.Element | Null): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
   }

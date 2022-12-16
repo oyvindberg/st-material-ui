@@ -83,7 +83,8 @@ object stylesCreateThemeMod {
       __obj.asInstanceOf[BaseTheme]
     }
     
-    extension [Self <: BaseTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTheme] (val x: Self) extends AnyVal {
       
       inline def setMixins(value: Mixins): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object stylesCreateThemeMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: Components[BaseTheme]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object stylesCreateThemeMod {
       __obj.asInstanceOf[ThemeOptions]
     }
     
-    extension [Self <: ThemeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakpoints(value: BreakpointsOptions): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       

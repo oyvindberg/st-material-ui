@@ -100,7 +100,8 @@ object Page {
     __obj.asInstanceOf[Page]
   }
   
-  extension [Self <: Page](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: PartialPaginationItemClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

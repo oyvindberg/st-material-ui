@@ -21,7 +21,8 @@ object modalUnstyledModalUnstyledClassesMod {
       __obj.asInstanceOf[ModalUnstyledClasses]
     }
     
-    extension [Self <: ModalUnstyledClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalUnstyledClasses] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

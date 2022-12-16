@@ -440,7 +440,8 @@ object ImageListItemPropsImageListItemTypeMapli {
     __obj.asInstanceOf[ImageListItemPropsImageListItemTypeMapli]
   }
   
-  extension [Self <: ImageListItemPropsImageListItemTypeMapli](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageListItemPropsImageListItemTypeMapli] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

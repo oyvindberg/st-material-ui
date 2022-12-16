@@ -70,7 +70,8 @@ object gridGridMod extends Shortcut {
       __obj.asInstanceOf[GridTypeMap[P, D]]
     }
     
-    extension [Self <: GridTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (GridTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (GridTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object gridGridMod extends Shortcut {
       __obj.asInstanceOf[RegularBreakpoints]
     }
     
-    extension [Self <: RegularBreakpoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegularBreakpoints] (val x: Self) extends AnyVal {
       
       inline def setLg(value: Boolean | GridSize): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       

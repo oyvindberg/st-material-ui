@@ -54,7 +54,8 @@ object PartialPaletteAlert {
     __obj.asInstanceOf[PartialPaletteAlert]
   }
   
-  extension [Self <: PartialPaletteAlert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteAlert] (val x: Self) extends AnyVal {
     
     inline def setErrorColor(value: String): Self = StObject.set(x, "errorColor", value.asInstanceOf[js.Any])
     

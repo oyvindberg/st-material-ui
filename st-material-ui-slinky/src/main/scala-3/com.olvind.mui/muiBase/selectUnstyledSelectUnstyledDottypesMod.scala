@@ -71,7 +71,8 @@ object selectUnstyledSelectUnstyledDottypesMod {
       __obj.asInstanceOf[SelectUnstyledCommonProps]
     }
     
-    extension [Self <: SelectUnstyledCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectUnstyledCommonProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object selectUnstyledSelectUnstyledDottypesMod {
       __obj.asInstanceOf[SelectUnstyledOwnProps[TValue]]
     }
     
-    extension [Self <: SelectUnstyledOwnProps[?], TValue /* <: js.Object */](x: Self & SelectUnstyledOwnProps[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectUnstyledOwnProps[?], TValue /* <: js.Object */] (val x: Self & SelectUnstyledOwnProps[TValue]) extends AnyVal {
       
       inline def setDefaultValue(value: TValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -247,7 +249,8 @@ object selectUnstyledSelectUnstyledDottypesMod {
       __obj.asInstanceOf[SelectUnstyledOwnerState[TValue]]
     }
     
-    extension [Self <: SelectUnstyledOwnerState[?], TValue /* <: js.Object */](x: Self & SelectUnstyledOwnerState[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectUnstyledOwnerState[?], TValue /* <: js.Object */] (val x: Self & SelectUnstyledOwnerState[TValue]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -286,7 +289,8 @@ object selectUnstyledSelectUnstyledDottypesMod {
       __obj.asInstanceOf[SelectUnstyledPopperSlotProps[TValue]]
     }
     
-    extension [Self <: SelectUnstyledPopperSlotProps[?], TValue /* <: js.Object */](x: Self & SelectUnstyledPopperSlotProps[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectUnstyledPopperSlotProps[?], TValue /* <: js.Object */] (val x: Self & SelectUnstyledPopperSlotProps[TValue]) extends AnyVal {
       
       inline def setAnchorEl(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
@@ -341,7 +345,8 @@ object selectUnstyledSelectUnstyledDottypesMod {
       __obj.asInstanceOf[SelectUnstyledTypeMap[TValue, P, D]]
     }
     
-    extension [Self <: SelectUnstyledTypeMap[?, ?, ?], TValue /* <: js.Object */, P, D /* <: ReactElement */](x: Self & (SelectUnstyledTypeMap[TValue, P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectUnstyledTypeMap[?, ?, ?], TValue /* <: js.Object */, P, D /* <: ReactElement */] (val x: Self & (SelectUnstyledTypeMap[TValue, P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

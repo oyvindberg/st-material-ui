@@ -41,7 +41,8 @@ object inputAdornmentInputAdornmentMod extends Shortcut {
       __obj.asInstanceOf[InputAdornmentTypeMap[P, D]]
     }
     
-    extension [Self <: InputAdornmentTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (InputAdornmentTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputAdornmentTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (InputAdornmentTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

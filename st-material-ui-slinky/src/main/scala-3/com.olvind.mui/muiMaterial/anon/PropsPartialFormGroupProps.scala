@@ -18,7 +18,8 @@ object PropsPartialFormGroupProps {
     __obj.asInstanceOf[PropsPartialFormGroupProps]
   }
   
-  extension [Self <: PropsPartialFormGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialFormGroupProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialFormGroupProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

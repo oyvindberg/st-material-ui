@@ -129,7 +129,8 @@ object hiddenHiddenMod extends Shortcut {
       __obj.asInstanceOf[HiddenProps]
     }
     
-    extension [Self <: HiddenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HiddenProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
       

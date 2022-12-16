@@ -128,7 +128,8 @@ object badgeBadgeClassesMod {
       __obj.asInstanceOf[BadgeClasses]
     }
     
-    extension [Self <: BadgeClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeClasses] (val x: Self) extends AnyVal {
       
       inline def setAnchorOriginBottomLeft(value: String): Self = StObject.set(x, "anchorOriginBottomLeft", value.asInstanceOf[js.Any])
       

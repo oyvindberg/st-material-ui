@@ -15,7 +15,8 @@ object DefaultPropsPickComponentsPropsListMuiPaginationaria {
     __obj.asInstanceOf[DefaultPropsPickComponentsPropsListMuiPaginationaria]
   }
   
-  extension [Self <: DefaultPropsPickComponentsPropsListMuiPaginationaria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPropsPickComponentsPropsListMuiPaginationaria] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: PickComponentsPropsListMuiPaginationaria): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }

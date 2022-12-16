@@ -80,7 +80,8 @@ object SwitchUnstyledOwnProps {
     __obj.asInstanceOf[SwitchUnstyledOwnProps]
   }
   
-  extension [Self <: SwitchUnstyledOwnProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchUnstyledOwnProps] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

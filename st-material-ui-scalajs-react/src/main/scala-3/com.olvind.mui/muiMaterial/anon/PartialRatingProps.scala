@@ -443,7 +443,8 @@ object PartialRatingProps {
     __obj.asInstanceOf[PartialRatingProps]
   }
   
-  extension [Self <: PartialRatingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRatingProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

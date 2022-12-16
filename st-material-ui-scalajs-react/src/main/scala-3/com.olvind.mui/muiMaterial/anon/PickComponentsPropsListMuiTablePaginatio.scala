@@ -31,7 +31,8 @@ object PickComponentsPropsListMuiTablePaginatio {
     __obj.asInstanceOf[PickComponentsPropsListMuiTablePaginatio]
   }
   
-  extension [Self <: PickComponentsPropsListMuiTablePaginatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickComponentsPropsListMuiTablePaginatio] (val x: Self) extends AnyVal {
     
     inline def setGetItemAriaLabel(value: /* type */ "first" | "last" | "next" | "previous" => String): Self = StObject.set(x, "getItemAriaLabel", js.Any.fromFunction1(value))
     

@@ -1690,7 +1690,8 @@ object DefaultComponentPropsGridTypeMapdiv {
     __obj.asInstanceOf[DefaultComponentPropsGridTypeMapdiv]
   }
   
-  extension [Self <: DefaultComponentPropsGridTypeMapdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsGridTypeMapdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

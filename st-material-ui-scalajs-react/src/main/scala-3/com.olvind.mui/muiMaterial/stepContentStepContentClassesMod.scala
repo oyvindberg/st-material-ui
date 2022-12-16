@@ -36,7 +36,8 @@ object stepContentStepContentClassesMod {
       __obj.asInstanceOf[StepContentClasses]
     }
     
-    extension [Self <: StepContentClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepContentClasses] (val x: Self) extends AnyVal {
       
       inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       

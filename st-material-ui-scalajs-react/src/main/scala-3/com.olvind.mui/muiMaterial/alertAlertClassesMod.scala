@@ -104,7 +104,8 @@ object alertAlertClassesMod {
       __obj.asInstanceOf[AlertClasses]
     }
     
-    extension [Self <: AlertClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertClasses] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

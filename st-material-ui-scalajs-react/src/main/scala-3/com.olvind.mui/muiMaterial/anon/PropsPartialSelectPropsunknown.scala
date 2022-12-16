@@ -18,7 +18,8 @@ object PropsPartialSelectPropsunknown {
     __obj.asInstanceOf[PropsPartialSelectPropsunknown]
   }
   
-  extension [Self <: PropsPartialSelectPropsunknown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialSelectPropsunknown] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialSelectPropsunknown): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

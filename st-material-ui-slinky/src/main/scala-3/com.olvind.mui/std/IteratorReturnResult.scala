@@ -19,7 +19,8 @@ object IteratorReturnResult {
     __obj.asInstanceOf[IteratorReturnResult[TReturn]]
   }
   
-  extension [Self <: IteratorReturnResult[?], TReturn](x: Self & IteratorReturnResult[TReturn]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IteratorReturnResult[?], TReturn] (val x: Self & IteratorReturnResult[TReturn]) extends AnyVal {
     
     inline def setDone(value: true): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

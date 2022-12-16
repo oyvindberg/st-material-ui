@@ -32,7 +32,8 @@ object overridableComponentMod {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object overridableComponentMod {
       __obj.asInstanceOf[OverridableTypeMap]
     }
     
-    extension [Self <: OverridableTypeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverridableTypeMap] (val x: Self) extends AnyVal {
       
       inline def setDefaultComponent(value: ReactElement): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     }

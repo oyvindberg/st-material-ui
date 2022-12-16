@@ -100,7 +100,8 @@ object linearProgressLinearProgressClassesMod {
       __obj.asInstanceOf[LinearProgressClasses]
     }
     
-    extension [Self <: LinearProgressClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearProgressClasses] (val x: Self) extends AnyVal {
       
       inline def setBar(value: String): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
       

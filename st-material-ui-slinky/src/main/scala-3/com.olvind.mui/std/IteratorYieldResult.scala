@@ -19,7 +19,8 @@ object IteratorYieldResult {
     __obj.asInstanceOf[IteratorYieldResult[TYield]]
   }
   
-  extension [Self <: IteratorYieldResult[?], TYield](x: Self & IteratorYieldResult[TYield]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IteratorYieldResult[?], TYield] (val x: Self & IteratorYieldResult[TYield]) extends AnyVal {
     
     inline def setDone(value: false): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

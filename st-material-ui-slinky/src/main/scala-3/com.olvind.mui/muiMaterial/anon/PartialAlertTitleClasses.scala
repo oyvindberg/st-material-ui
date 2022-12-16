@@ -16,7 +16,8 @@ object PartialAlertTitleClasses {
     __obj.asInstanceOf[PartialAlertTitleClasses]
   }
   
-  extension [Self <: PartialAlertTitleClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAlertTitleClasses] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

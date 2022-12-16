@@ -540,7 +540,8 @@ object ListItemPropsli {
     __obj.asInstanceOf[ListItemPropsli]
   }
   
-  extension [Self <: ListItemPropsli](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemPropsli] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

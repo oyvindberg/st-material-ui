@@ -18,7 +18,8 @@ object PropsPartialBackdropPropsdiv {
     __obj.asInstanceOf[PropsPartialBackdropPropsdiv]
   }
   
-  extension [Self <: PropsPartialBackdropPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialBackdropPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialBackdropPropsdiv): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

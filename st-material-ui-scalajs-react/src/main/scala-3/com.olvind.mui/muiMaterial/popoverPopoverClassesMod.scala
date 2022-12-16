@@ -33,7 +33,8 @@ object popoverPopoverClassesMod {
       __obj.asInstanceOf[PopoverClasses]
     }
     
-    extension [Self <: PopoverClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverClasses] (val x: Self) extends AnyVal {
       
       inline def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
       

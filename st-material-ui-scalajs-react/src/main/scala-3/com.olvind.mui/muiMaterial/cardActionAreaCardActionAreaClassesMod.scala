@@ -36,7 +36,8 @@ object cardActionAreaCardActionAreaClassesMod {
       __obj.asInstanceOf[CardActionAreaClasses]
     }
     
-    extension [Self <: CardActionAreaClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardActionAreaClasses] (val x: Self) extends AnyVal {
       
       inline def setFocusHighlight(value: String): Self = StObject.set(x, "focusHighlight", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object NameProps {
     __obj.asInstanceOf[NameProps[Props, Name]]
   }
   
-  extension [Self <: NameProps[?, ?], Props, Name /* <: /* keyof any */ String */](x: Self & (NameProps[Props, Name])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameProps[?, ?], Props, Name /* <: /* keyof any */ String */] (val x: Self & (NameProps[Props, Name])) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

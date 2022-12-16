@@ -436,7 +436,8 @@ object DefaultComponentPropsMenuItemUnstyledTyp {
     __obj.asInstanceOf[DefaultComponentPropsMenuItemUnstyledTyp]
   }
   
-  extension [Self <: DefaultComponentPropsMenuItemUnstyledTyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsMenuItemUnstyledTyp] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

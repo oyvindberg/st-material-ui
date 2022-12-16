@@ -56,7 +56,8 @@ object svgIconSvgIconMod {
       __obj.asInstanceOf[SvgIconTypeMap[P, D]]
     }
     
-    extension [Self <: SvgIconTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (SvgIconTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgIconTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (SvgIconTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

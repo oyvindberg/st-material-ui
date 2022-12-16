@@ -41,7 +41,8 @@ object bottomNavigationBottomNavigationMod extends Shortcut {
       __obj.asInstanceOf[BottomNavigationTypeMap[P, D]]
     }
     
-    extension [Self <: BottomNavigationTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (BottomNavigationTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomNavigationTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (BottomNavigationTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

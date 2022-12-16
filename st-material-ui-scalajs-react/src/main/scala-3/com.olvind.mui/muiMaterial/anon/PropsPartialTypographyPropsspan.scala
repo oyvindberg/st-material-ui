@@ -18,7 +18,8 @@ object PropsPartialTypographyPropsspan {
     __obj.asInstanceOf[PropsPartialTypographyPropsspan]
   }
   
-  extension [Self <: PropsPartialTypographyPropsspan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialTypographyPropsspan] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialTypographyPropsspan): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object PartialFormGroupClasses {
     __obj.asInstanceOf[PartialFormGroupClasses]
   }
   
-  extension [Self <: PartialFormGroupClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFormGroupClasses] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

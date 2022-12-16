@@ -30,7 +30,8 @@ object cardContentCardContentClassesMod {
       __obj.asInstanceOf[CardContentClasses]
     }
     
-    extension [Self <: CardContentClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardContentClasses] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

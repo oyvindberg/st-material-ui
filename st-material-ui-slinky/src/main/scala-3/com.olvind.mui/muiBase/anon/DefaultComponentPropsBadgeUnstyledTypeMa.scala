@@ -447,7 +447,8 @@ object DefaultComponentPropsBadgeUnstyledTypeMa {
     __obj.asInstanceOf[DefaultComponentPropsBadgeUnstyledTypeMa]
   }
   
-  extension [Self <: DefaultComponentPropsBadgeUnstyledTypeMa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsBadgeUnstyledTypeMa] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

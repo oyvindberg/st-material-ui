@@ -464,7 +464,8 @@ object ComponentPropsWithRefOverridableComponen {
     __obj.asInstanceOf[ComponentPropsWithRefOverridableComponen]
   }
   
-  extension [Self <: ComponentPropsWithRefOverridableComponen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentPropsWithRefOverridableComponen] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

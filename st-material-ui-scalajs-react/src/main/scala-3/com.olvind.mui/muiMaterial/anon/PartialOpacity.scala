@@ -22,7 +22,8 @@ object PartialOpacity {
     __obj.asInstanceOf[PartialOpacity]
   }
   
-  extension [Self <: PartialOpacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOpacity] (val x: Self) extends AnyVal {
     
     inline def setInputPlaceholder(value: Double): Self = StObject.set(x, "inputPlaceholder", value.asInstanceOf[js.Any])
     

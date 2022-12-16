@@ -456,7 +456,8 @@ object DefaultComponentPropsSkeletonTypeMapspan {
     __obj.asInstanceOf[DefaultComponentPropsSkeletonTypeMapspan]
   }
   
-  extension [Self <: DefaultComponentPropsSkeletonTypeMapspan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsSkeletonTypeMapspan] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

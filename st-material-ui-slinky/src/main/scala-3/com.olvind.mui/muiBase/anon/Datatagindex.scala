@@ -22,7 +22,8 @@ object Datatagindex {
     __obj.asInstanceOf[Datatagindex]
   }
   
-  extension [Self <: Datatagindex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datatagindex] (val x: Self) extends AnyVal {
     
     inline def `setData-tag-index`(value: Double): Self = StObject.set(x, "data-tag-index", value.asInstanceOf[js.Any])
     

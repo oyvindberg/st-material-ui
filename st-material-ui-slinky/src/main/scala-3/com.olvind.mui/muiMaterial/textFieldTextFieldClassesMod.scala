@@ -30,7 +30,8 @@ object textFieldTextFieldClassesMod {
       __obj.asInstanceOf[TextFieldClasses]
     }
     
-    extension [Self <: TextFieldClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldClasses] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

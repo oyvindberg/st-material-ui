@@ -456,7 +456,8 @@ object DefaultComponentPropsInputAdornmentTypeM {
     __obj.asInstanceOf[DefaultComponentPropsInputAdornmentTypeM]
   }
   
-  extension [Self <: DefaultComponentPropsInputAdornmentTypeM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsInputAdornmentTypeM] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

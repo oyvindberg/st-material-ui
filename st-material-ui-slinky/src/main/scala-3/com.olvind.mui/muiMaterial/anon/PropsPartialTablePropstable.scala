@@ -18,7 +18,8 @@ object PropsPartialTablePropstable {
     __obj.asInstanceOf[PropsPartialTablePropstable]
   }
   
-  extension [Self <: PropsPartialTablePropstable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialTablePropstable] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialTablePropstable): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

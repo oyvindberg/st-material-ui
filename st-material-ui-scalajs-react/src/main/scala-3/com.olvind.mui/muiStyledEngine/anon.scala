@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Ref[C]]
     }
     
-    extension [Self <: Ref[?], C /* <: ComponentClassP[ComponentProps[C] & js.Object] */](x: Self & Ref[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref[?], C /* <: ComponentClassP[ComponentProps[C] & js.Object] */] (val x: Self & Ref[C]) extends AnyVal {
       
       inline def setRef(value: com.olvind.mui.react.mod.Ref[InstanceType[C]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Theme[T]]
     }
     
-    extension [Self <: Theme[?], T /* <: js.Object */](x: Self & Theme[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme[?], T /* <: js.Object */] (val x: Self & Theme[T]) extends AnyVal {
       
       inline def setTheme(value: T): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

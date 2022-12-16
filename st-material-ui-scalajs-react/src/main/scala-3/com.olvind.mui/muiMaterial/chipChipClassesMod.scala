@@ -208,7 +208,8 @@ object chipChipClassesMod {
       __obj.asInstanceOf[ChipClasses]
     }
     
-    extension [Self <: ChipClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipClasses] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       

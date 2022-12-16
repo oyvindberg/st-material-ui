@@ -43,7 +43,8 @@ object skeletonSkeletonMod extends Shortcut {
       __obj.asInstanceOf[SkeletonTypeMap[P, D]]
     }
     
-    extension [Self <: SkeletonTypeMap[?, ?], P, D /* <: ElementType */](x: Self & (SkeletonTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonTypeMap[?, ?], P, D /* <: ElementType */] (val x: Self & (SkeletonTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ClassesSx {
     __obj.asInstanceOf[ClassesSx]
   }
   
-  extension [Self <: ClassesSx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassesSx] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: PartialDialogContentTextClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

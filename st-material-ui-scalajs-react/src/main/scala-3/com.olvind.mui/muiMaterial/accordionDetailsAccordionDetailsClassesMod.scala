@@ -30,7 +30,8 @@ object accordionDetailsAccordionDetailsClassesMod {
       __obj.asInstanceOf[AccordionDetailsClasses]
     }
     
-    extension [Self <: AccordionDetailsClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionDetailsClasses] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

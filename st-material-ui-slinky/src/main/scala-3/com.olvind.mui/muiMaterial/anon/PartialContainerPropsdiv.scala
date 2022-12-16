@@ -421,7 +421,8 @@ object PartialContainerPropsdiv {
     __obj.asInstanceOf[PartialContainerPropsdiv]
   }
   
-  extension [Self <: PartialContainerPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialContainerPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

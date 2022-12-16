@@ -52,7 +52,8 @@ object stepperStepperMod extends Shortcut {
       __obj.asInstanceOf[StepperTypeMap[P, D]]
     }
     
-    extension [Self <: StepperTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (StepperTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepperTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (StepperTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

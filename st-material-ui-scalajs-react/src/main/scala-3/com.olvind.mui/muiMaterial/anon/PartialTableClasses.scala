@@ -18,7 +18,8 @@ object PartialTableClasses {
     __obj.asInstanceOf[PartialTableClasses]
   }
   
-  extension [Self <: PartialTableClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTableClasses] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

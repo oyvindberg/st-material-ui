@@ -16,7 +16,8 @@ object EventListenerOptions {
     __obj.asInstanceOf[EventListenerOptions]
   }
   
-  extension [Self <: EventListenerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventListenerOptions] (val x: Self) extends AnyVal {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     

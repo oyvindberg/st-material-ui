@@ -52,7 +52,8 @@ object backdropBackdropMod extends Shortcut {
       __obj.asInstanceOf[BackdropTypeMap[P, D]]
     }
     
-    extension [Self <: BackdropTypeMap[?, ?], P, D /* <: ElementType */](x: Self & (BackdropTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackdropTypeMap[?, ?], P, D /* <: ElementType */] (val x: Self & (BackdropTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

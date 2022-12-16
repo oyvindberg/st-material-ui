@@ -16,7 +16,8 @@ object PartialPaletteStepContent {
     __obj.asInstanceOf[PartialPaletteStepContent]
   }
   
-  extension [Self <: PartialPaletteStepContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteStepContent] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

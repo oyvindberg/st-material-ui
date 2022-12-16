@@ -20,7 +20,8 @@ object AdditionalAvatar {
     __obj.asInstanceOf[AdditionalAvatar]
   }
   
-  extension [Self <: AdditionalAvatar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalAvatar] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAvatar(
       value: (ComponentPropsWithRef[js.Function1[/* props */ DefaultComponentPropsAvatarTypeMapdiv, Element]]) & AvatarGroupComponentsPropsOverrides

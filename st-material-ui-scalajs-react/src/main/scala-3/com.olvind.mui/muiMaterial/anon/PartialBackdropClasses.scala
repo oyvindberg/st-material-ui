@@ -18,7 +18,8 @@ object PartialBackdropClasses {
     __obj.asInstanceOf[PartialBackdropClasses]
   }
   
-  extension [Self <: PartialBackdropClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBackdropClasses] (val x: Self) extends AnyVal {
     
     inline def setInvisible(value: String): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     

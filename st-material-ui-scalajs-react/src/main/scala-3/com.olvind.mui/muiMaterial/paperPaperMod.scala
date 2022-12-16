@@ -44,7 +44,8 @@ object paperPaperMod extends Shortcut {
       __obj.asInstanceOf[PaperTypeMap[P, D]]
     }
     
-    extension [Self <: PaperTypeMap[?, ?], P, D /* <: ElementType */](x: Self & (PaperTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaperTypeMap[?, ?], P, D /* <: ElementType */] (val x: Self & (PaperTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

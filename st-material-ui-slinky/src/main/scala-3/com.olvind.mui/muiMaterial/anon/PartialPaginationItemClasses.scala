@@ -50,7 +50,8 @@ object PartialPaginationItemClasses {
     __obj.asInstanceOf[PartialPaginationItemClasses]
   }
   
-  extension [Self <: PartialPaginationItemClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaginationItemClasses] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

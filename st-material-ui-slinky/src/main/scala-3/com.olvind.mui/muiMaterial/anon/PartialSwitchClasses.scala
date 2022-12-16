@@ -40,7 +40,8 @@ object PartialSwitchClasses {
     __obj.asInstanceOf[PartialSwitchClasses]
   }
   
-  extension [Self <: PartialSwitchClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSwitchClasses] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

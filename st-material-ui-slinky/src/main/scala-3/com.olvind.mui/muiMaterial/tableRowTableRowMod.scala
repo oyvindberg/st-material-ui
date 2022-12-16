@@ -43,7 +43,8 @@ object tableRowTableRowMod extends Shortcut {
       __obj.asInstanceOf[TableRowTypeMap[P, D]]
     }
     
-    extension [Self <: TableRowTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (TableRowTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRowTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (TableRowTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

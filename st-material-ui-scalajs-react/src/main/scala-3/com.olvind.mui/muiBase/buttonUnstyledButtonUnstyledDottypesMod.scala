@@ -30,7 +30,8 @@ object buttonUnstyledButtonUnstyledDottypesMod {
       __obj.asInstanceOf[ButtonUnstyledActions]
     }
     
-    extension [Self <: ButtonUnstyledActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonUnstyledActions] (val x: Self) extends AnyVal {
       
       inline def setFocusVisible(value: Callback): Self = StObject.set(x, "focusVisible", value.toJsFn)
     }
@@ -84,7 +85,8 @@ object buttonUnstyledButtonUnstyledDottypesMod {
       __obj.asInstanceOf[ButtonUnstyledOwnProps]
     }
     
-    extension [Self <: ButtonUnstyledOwnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonUnstyledOwnProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Ref[ButtonUnstyledActions]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object buttonUnstyledButtonUnstyledDottypesMod {
       __obj.asInstanceOf[ButtonUnstyledOwnerState]
     }
     
-    extension [Self <: ButtonUnstyledOwnerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonUnstyledOwnerState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

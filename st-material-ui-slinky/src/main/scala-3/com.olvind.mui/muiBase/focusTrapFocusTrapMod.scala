@@ -72,7 +72,8 @@ object focusTrapFocusTrapMod {
       __obj.asInstanceOf[FocusTrapProps]
     }
     
-    extension [Self <: FocusTrapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusTrapProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object PartialPaletteLinearProgress {
     __obj.asInstanceOf[PartialPaletteLinearProgress]
   }
   
-  extension [Self <: PartialPaletteLinearProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteLinearProgress] (val x: Self) extends AnyVal {
     
     inline def setErrorBg(value: String): Self = StObject.set(x, "errorBg", value.asInstanceOf[js.Any])
     

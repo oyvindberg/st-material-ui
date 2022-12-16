@@ -22,7 +22,8 @@ object PartialPaginationClasses {
     __obj.asInstanceOf[PartialPaginationClasses]
   }
   
-  extension [Self <: PartialPaginationClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaginationClasses] (val x: Self) extends AnyVal {
     
     inline def setOutlined(value: String): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
     

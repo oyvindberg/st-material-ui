@@ -130,7 +130,8 @@ object multiSelectUnstyledMultiSelectUnstyledDottypesMod {
       __obj.asInstanceOf[MultiSelectUnstyledOwnProps[TValue]]
     }
     
-    extension [Self <: MultiSelectUnstyledOwnProps[?], TValue /* <: js.Object */](x: Self & MultiSelectUnstyledOwnProps[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectUnstyledOwnProps[?], TValue /* <: js.Object */] (val x: Self & MultiSelectUnstyledOwnProps[TValue]) extends AnyVal {
       
       inline def setDefaultValue(value: js.Array[TValue]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -658,7 +659,8 @@ object multiSelectUnstyledMultiSelectUnstyledDottypesMod {
       __obj.asInstanceOf[MultiSelectUnstyledOwnerState[TValue]]
     }
     
-    extension [Self <: MultiSelectUnstyledOwnerState[?], TValue /* <: js.Object */](x: Self & MultiSelectUnstyledOwnerState[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectUnstyledOwnerState[?], TValue /* <: js.Object */] (val x: Self & MultiSelectUnstyledOwnerState[TValue]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1507,7 +1509,8 @@ object multiSelectUnstyledMultiSelectUnstyledDottypesMod {
       __obj.asInstanceOf[MultiSelectUnstyledPopperSlotProps[TValue]]
     }
     
-    extension [Self <: MultiSelectUnstyledPopperSlotProps[?], TValue /* <: js.Object */](x: Self & MultiSelectUnstyledPopperSlotProps[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectUnstyledPopperSlotProps[?], TValue /* <: js.Object */] (val x: Self & MultiSelectUnstyledPopperSlotProps[TValue]) extends AnyVal {
       
       inline def setAnchorEl(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
@@ -1568,7 +1571,8 @@ object multiSelectUnstyledMultiSelectUnstyledDottypesMod {
       __obj.asInstanceOf[MultiSelectUnstyledTypeMap[TValue, P, D]]
     }
     
-    extension [Self <: MultiSelectUnstyledTypeMap[?, ?, ?], TValue /* <: js.Object */, P, D /* <: ElementType */](x: Self & (MultiSelectUnstyledTypeMap[TValue, P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectUnstyledTypeMap[?, ?, ?], TValue /* <: js.Object */, P, D /* <: ElementType */] (val x: Self & (MultiSelectUnstyledTypeMap[TValue, P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

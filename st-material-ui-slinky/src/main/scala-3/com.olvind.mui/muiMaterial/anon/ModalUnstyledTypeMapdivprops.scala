@@ -140,7 +140,8 @@ object ModalUnstyledTypeMapdivprops {
     __obj.asInstanceOf[ModalUnstyledTypeMapdivprops]
   }
   
-  extension [Self <: ModalUnstyledTypeMapdivprops](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalUnstyledTypeMapdivprops] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

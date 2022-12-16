@@ -51,7 +51,8 @@ object ListTypeMapulprops {
     __obj.asInstanceOf[ListTypeMapulprops]
   }
   
-  extension [Self <: ListTypeMapulprops](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTypeMapulprops] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

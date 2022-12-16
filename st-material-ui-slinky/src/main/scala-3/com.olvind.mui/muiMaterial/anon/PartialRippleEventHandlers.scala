@@ -47,7 +47,8 @@ object PartialRippleEventHandlers {
     __obj.asInstanceOf[PartialRippleEventHandlers]
   }
   
-  extension [Self <: PartialRippleEventHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRippleEventHandlers] (val x: Self) extends AnyVal {
     
     inline def setOnBlur(value: SyntheticFocusEvent[Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     

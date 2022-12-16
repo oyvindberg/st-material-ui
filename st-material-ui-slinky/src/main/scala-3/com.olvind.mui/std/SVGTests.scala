@@ -20,7 +20,8 @@ object SVGTests {
     __obj.asInstanceOf[SVGTests]
   }
   
-  extension [Self <: SVGTests](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGTests] (val x: Self) extends AnyVal {
     
     inline def setRequiredExtensions(value: SVGStringList): Self = StObject.set(x, "requiredExtensions", value.asInstanceOf[js.Any])
     

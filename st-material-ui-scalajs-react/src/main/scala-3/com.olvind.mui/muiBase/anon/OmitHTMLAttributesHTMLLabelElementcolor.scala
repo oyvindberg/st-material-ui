@@ -403,7 +403,8 @@ object OmitHTMLAttributesHTMLLabelElementcolor {
     __obj.asInstanceOf[OmitHTMLAttributesHTMLLabelElementcolor]
   }
   
-  extension [Self <: OmitHTMLAttributesHTMLLabelElementcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitHTMLAttributesHTMLLabelElementcolor] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object formHelperTextFormHelperTextMod extends Shortcut {
       __obj.asInstanceOf[FormHelperTextTypeMap[P, D]]
     }
     
-    extension [Self <: FormHelperTextTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (FormHelperTextTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormHelperTextTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (FormHelperTextTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

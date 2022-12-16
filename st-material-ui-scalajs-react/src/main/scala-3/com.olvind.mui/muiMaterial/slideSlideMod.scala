@@ -50,7 +50,8 @@ object slideSlideMod {
       __obj.asInstanceOf[SlideProps]
     }
     
-    extension [Self <: SlideProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
       

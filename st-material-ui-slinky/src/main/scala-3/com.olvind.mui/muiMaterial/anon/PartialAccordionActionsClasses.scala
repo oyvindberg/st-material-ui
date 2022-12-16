@@ -18,7 +18,8 @@ object PartialAccordionActionsClasses {
     __obj.asInstanceOf[PartialAccordionActionsClasses]
   }
   
-  extension [Self <: PartialAccordionActionsClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAccordionActionsClasses] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

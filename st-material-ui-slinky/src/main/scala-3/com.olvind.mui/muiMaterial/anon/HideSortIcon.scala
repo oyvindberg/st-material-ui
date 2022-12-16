@@ -56,7 +56,8 @@ object HideSortIcon {
     __obj.asInstanceOf[HideSortIcon]
   }
   
-  extension [Self <: HideSortIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideSortIcon] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

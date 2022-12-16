@@ -469,7 +469,8 @@ object stylesOverridesMod {
       __obj.asInstanceOf[ComponentNameToClassKey]
     }
     
-    extension [Self <: ComponentNameToClassKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentNameToClassKey] (val x: Self) extends AnyVal {
       
       inline def setMuiAccordion(value: AccordionClassKey): Self = StObject.set(x, "MuiAccordion", value.asInstanceOf[js.Any])
       
@@ -967,7 +968,8 @@ object stylesOverridesMod {
       __obj.asInstanceOf[ComponentsOverrides[Theme]]
     }
     
-    extension [Self <: ComponentsOverrides[?], Theme](x: Self & ComponentsOverrides[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentsOverrides[?], Theme] (val x: Self & ComponentsOverrides[Theme]) extends AnyVal {
       
       inline def setMuiAccordion(value: Partial[OverridesStyleRules[AccordionClassKey, "MuiAccordion", Theme]]): Self = StObject.set(x, "MuiAccordion", value.asInstanceOf[js.Any])
       

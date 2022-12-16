@@ -50,7 +50,8 @@ object containerContainerClassesMod {
       __obj.asInstanceOf[ContainerClasses]
     }
     
-    extension [Self <: ContainerClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerClasses] (val x: Self) extends AnyVal {
       
       inline def setDisableGutters(value: String): Self = StObject.set(x, "disableGutters", value.asInstanceOf[js.Any])
       

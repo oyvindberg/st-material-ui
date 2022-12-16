@@ -20,7 +20,8 @@ object PartialPaletteChip {
     __obj.asInstanceOf[PartialPaletteChip]
   }
   
-  extension [Self <: PartialPaletteChip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteChip] (val x: Self) extends AnyVal {
     
     inline def setDefaultAvatarColor(value: String): Self = StObject.set(x, "defaultAvatarColor", value.asInstanceOf[js.Any])
     

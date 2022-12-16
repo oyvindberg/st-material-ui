@@ -24,7 +24,8 @@ object CaretPosition {
     __obj.asInstanceOf[CaretPosition]
   }
   
-  extension [Self <: CaretPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaretPosition] (val x: Self) extends AnyVal {
     
     inline def setGetClientRect(value: CallbackTo[DOMRect | Null]): Self = StObject.set(x, "getClientRect", value.toJsFn)
     

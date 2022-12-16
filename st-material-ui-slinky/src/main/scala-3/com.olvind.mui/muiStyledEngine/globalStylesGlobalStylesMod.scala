@@ -20,7 +20,8 @@ object globalStylesGlobalStylesMod {
       __obj.asInstanceOf[GlobalStylesProps[Theme]]
     }
     
-    extension [Self <: GlobalStylesProps[?], Theme](x: Self & GlobalStylesProps[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalStylesProps[?], Theme] (val x: Self & GlobalStylesProps[Theme]) extends AnyVal {
       
       inline def setDefaultTheme(value: js.Object): Self = StObject.set(x, "defaultTheme", value.asInstanceOf[js.Any])
       

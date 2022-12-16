@@ -442,7 +442,8 @@ object PartialSpeedDialProps {
     __obj.asInstanceOf[PartialSpeedDialProps]
   }
   
-  extension [Self <: PartialSpeedDialProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSpeedDialProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

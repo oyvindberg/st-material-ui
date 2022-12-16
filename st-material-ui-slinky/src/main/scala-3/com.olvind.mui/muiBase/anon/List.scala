@@ -30,7 +30,8 @@ object List {
     __obj.asInstanceOf[com.olvind.mui.muiBase.anon.List]
   }
   
-  extension [Self <: com.olvind.mui.muiBase.anon.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: com.olvind.mui.muiBase.anon.List] (val x: Self) extends AnyVal {
     
     inline def setLabel(
       value: SlotComponentProps["span", OptionGroupUnstyledComponentsPropsOverrides, OptionGroupUnstyledOwnerState]

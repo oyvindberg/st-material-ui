@@ -38,7 +38,8 @@ object PartialDrawerClasses {
     __obj.asInstanceOf[PartialDrawerClasses]
   }
   
-  extension [Self <: PartialDrawerClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDrawerClasses] (val x: Self) extends AnyVal {
     
     inline def setDocked(value: String): Self = StObject.set(x, "docked", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object Size {
     __obj.asInstanceOf[Size]
   }
   
-  extension [Self <: Size](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.UndefOr[PartialSliderUnstyledClasses] & ColorPrimary): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

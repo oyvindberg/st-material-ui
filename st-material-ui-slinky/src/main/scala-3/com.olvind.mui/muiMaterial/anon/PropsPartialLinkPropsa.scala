@@ -18,7 +18,8 @@ object PropsPartialLinkPropsa {
     __obj.asInstanceOf[PropsPartialLinkPropsa]
   }
   
-  extension [Self <: PropsPartialLinkPropsa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialLinkPropsa] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialLinkPropsa): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

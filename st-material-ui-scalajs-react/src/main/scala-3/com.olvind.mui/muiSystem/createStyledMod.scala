@@ -28,7 +28,8 @@ object createStyledMod {
       __obj.asInstanceOf[MUIStyledCommonProps[Theme]]
     }
     
-    extension [Self <: MUIStyledCommonProps[?], Theme /* <: js.Object */](x: Self & MUIStyledCommonProps[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MUIStyledCommonProps[?], Theme /* <: js.Object */] (val x: Self & MUIStyledCommonProps[Theme]) extends AnyVal {
       
       inline def setAs(value: ElementType): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object createStyledMod {
       __obj.asInstanceOf[MuiStyledOptions]
     }
     
-    extension [Self <: MuiStyledOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MuiStyledOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

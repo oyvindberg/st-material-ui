@@ -68,7 +68,8 @@ object stepConnectorStepConnectorClassesMod {
       __obj.asInstanceOf[StepConnectorClasses]
     }
     
-    extension [Self <: StepConnectorClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepConnectorClasses] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

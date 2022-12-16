@@ -17,7 +17,8 @@ object PaletteActionChannel {
     __obj.asInstanceOf[PaletteActionChannel]
   }
   
-  extension [Self <: PaletteActionChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteActionChannel] (val x: Self) extends AnyVal {
     
     inline def setActiveChannel(value: String): Self = StObject.set(x, "activeChannel", value.asInstanceOf[js.Any])
     

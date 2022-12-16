@@ -18,7 +18,8 @@ object PropsPartialChipPropsdiv {
     __obj.asInstanceOf[PropsPartialChipPropsdiv]
   }
   
-  extension [Self <: PropsPartialChipPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialChipPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialChipPropsdiv): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

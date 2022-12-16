@@ -20,7 +20,8 @@ object Partial {
     __obj.asInstanceOf[Partial]
   }
   
-  extension [Self <: Partial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partial] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double | String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

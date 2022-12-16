@@ -43,7 +43,8 @@ object dialogContentTextDialogContentTextMod extends Shortcut {
       __obj.asInstanceOf[DialogContentTextTypeMap[P, D]]
     }
     
-    extension [Self <: DialogContentTextTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (DialogContentTextTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContentTextTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (DialogContentTextTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

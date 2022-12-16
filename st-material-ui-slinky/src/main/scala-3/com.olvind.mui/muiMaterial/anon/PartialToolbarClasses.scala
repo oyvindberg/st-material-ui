@@ -22,7 +22,8 @@ object PartialToolbarClasses {
     __obj.asInstanceOf[PartialToolbarClasses]
   }
   
-  extension [Self <: PartialToolbarClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialToolbarClasses] (val x: Self) extends AnyVal {
     
     inline def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     

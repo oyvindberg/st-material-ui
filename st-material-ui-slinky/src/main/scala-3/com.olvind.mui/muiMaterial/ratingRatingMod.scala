@@ -66,7 +66,8 @@ object ratingRatingMod {
       __obj.asInstanceOf[IconContainerProps]
     }
     
-    extension [Self <: IconContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconContainerProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -559,7 +560,8 @@ object ratingRatingMod {
       __obj.asInstanceOf[RatingProps]
     }
     
-    extension [Self <: RatingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object PartialToggleButtonGroupClasses {
     __obj.asInstanceOf[PartialToggleButtonGroupClasses]
   }
   
-  extension [Self <: PartialToggleButtonGroupClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialToggleButtonGroupClasses] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

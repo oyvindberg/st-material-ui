@@ -43,7 +43,8 @@ object boxBoxMod extends Shortcut {
       __obj.asInstanceOf[BoxTypeMap[P, D]]
     }
     
-    extension [Self <: BoxTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (BoxTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (BoxTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

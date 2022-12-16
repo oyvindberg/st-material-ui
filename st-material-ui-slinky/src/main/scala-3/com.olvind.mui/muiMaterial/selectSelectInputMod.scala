@@ -86,7 +86,8 @@ object selectSelectInputMod extends Shortcut {
       __obj.asInstanceOf[SelectInputProps[T]]
     }
     
-    extension [Self <: SelectInputProps[?], T](x: Self & SelectInputProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectInputProps[?], T] (val x: Self & SelectInputProps[T]) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

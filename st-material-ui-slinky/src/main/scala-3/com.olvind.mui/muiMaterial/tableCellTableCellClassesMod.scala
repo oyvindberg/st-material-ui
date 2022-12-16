@@ -80,7 +80,8 @@ object tableCellTableCellClassesMod {
       __obj.asInstanceOf[TableCellClasses]
     }
     
-    extension [Self <: TableCellClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellClasses] (val x: Self) extends AnyVal {
       
       inline def setAlignCenter(value: String): Self = StObject.set(x, "alignCenter", value.asInstanceOf[js.Any])
       

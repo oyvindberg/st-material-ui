@@ -39,7 +39,8 @@ object paginationPaginationClassesMod {
       __obj.asInstanceOf[PaginationClasses]
     }
     
-    extension [Self <: PaginationClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationClasses] (val x: Self) extends AnyVal {
       
       inline def setOutlined(value: String): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
       

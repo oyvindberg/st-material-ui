@@ -39,7 +39,8 @@ object internalSwitchBaseClassesMod {
       __obj.asInstanceOf[SwitchBaseClasses]
     }
     
-    extension [Self <: SwitchBaseClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchBaseClasses] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

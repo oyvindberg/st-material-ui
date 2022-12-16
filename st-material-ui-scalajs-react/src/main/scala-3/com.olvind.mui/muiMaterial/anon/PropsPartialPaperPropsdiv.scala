@@ -18,7 +18,8 @@ object PropsPartialPaperPropsdiv {
     __obj.asInstanceOf[PropsPartialPaperPropsdiv]
   }
   
-  extension [Self <: PropsPartialPaperPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialPaperPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialPaperPropsdiv): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

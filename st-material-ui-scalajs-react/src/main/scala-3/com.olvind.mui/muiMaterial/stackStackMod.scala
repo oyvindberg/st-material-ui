@@ -43,7 +43,8 @@ object stackStackMod extends Shortcut {
       __obj.asInstanceOf[StackTypeMap[P, D]]
     }
     
-    extension [Self <: StackTypeMap[?, ?], P, D /* <: ElementType */](x: Self & (StackTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackTypeMap[?, ?], P, D /* <: ElementType */] (val x: Self & (StackTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

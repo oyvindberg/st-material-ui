@@ -18,7 +18,8 @@ object PropsPartialStepLabelProps {
     __obj.asInstanceOf[PropsPartialStepLabelProps]
   }
   
-  extension [Self <: PropsPartialStepLabelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialStepLabelProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialStepLabelProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

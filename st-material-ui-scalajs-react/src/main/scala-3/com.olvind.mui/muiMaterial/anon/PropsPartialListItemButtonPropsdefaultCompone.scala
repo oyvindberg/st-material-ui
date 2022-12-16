@@ -18,7 +18,8 @@ object PropsPartialListItemButtonPropsdefaultCompone {
     __obj.asInstanceOf[PropsPartialListItemButtonPropsdefaultCompone]
   }
   
-  extension [Self <: PropsPartialListItemButtonPropsdefaultCompone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialListItemButtonPropsdefaultCompone] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialListItemButtonPropsdefaultCompone): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

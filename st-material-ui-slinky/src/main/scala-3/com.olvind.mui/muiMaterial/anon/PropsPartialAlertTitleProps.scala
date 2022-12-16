@@ -18,7 +18,8 @@ object PropsPartialAlertTitleProps {
     __obj.asInstanceOf[PropsPartialAlertTitleProps]
   }
   
-  extension [Self <: PropsPartialAlertTitleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialAlertTitleProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialAlertTitleProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

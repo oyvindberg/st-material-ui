@@ -18,7 +18,8 @@ object DefaultComponentDProps {
     __obj.asInstanceOf[DefaultComponentDProps[P, D]]
   }
   
-  extension [Self <: DefaultComponentDProps[?, ?], P, D /* <: ReactElement */](x: Self & (DefaultComponentDProps[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentDProps[?, ?], P, D /* <: ReactElement */] (val x: Self & (DefaultComponentDProps[P, D])) extends AnyVal {
     
     inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     

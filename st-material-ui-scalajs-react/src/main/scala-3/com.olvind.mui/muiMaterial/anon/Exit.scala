@@ -17,7 +17,8 @@ object Exit {
     __obj.asInstanceOf[Exit]
   }
   
-  extension [Self <: Exit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exit] (val x: Self) extends AnyVal {
     
     inline def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     

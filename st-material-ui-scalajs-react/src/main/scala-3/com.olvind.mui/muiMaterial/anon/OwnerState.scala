@@ -17,7 +17,8 @@ object OwnerState {
     __obj.asInstanceOf[OwnerState[T]]
   }
   
-  extension [Self <: OwnerState[?], T /* <: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme */](x: Self & OwnerState[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnerState[?], T /* <: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme */] (val x: Self & OwnerState[T]) extends AnyVal {
     
     inline def setOwnerState(value: ColorString): Self = StObject.set(x, "ownerState", value.asInstanceOf[js.Any])
     

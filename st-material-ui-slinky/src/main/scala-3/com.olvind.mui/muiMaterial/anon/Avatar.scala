@@ -68,7 +68,8 @@ object Avatar {
     __obj.asInstanceOf[Avatar[SubheaderTypographyComponent, TitleTypographyComponent]]
   }
   
-  extension [Self <: Avatar[?, ?], SubheaderTypographyComponent /* <: ReactElement */, TitleTypographyComponent /* <: ReactElement */](x: Self & (Avatar[SubheaderTypographyComponent, TitleTypographyComponent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Avatar[?, ?], SubheaderTypographyComponent /* <: ReactElement */, TitleTypographyComponent /* <: ReactElement */] (val x: Self & (Avatar[SubheaderTypographyComponent, TitleTypographyComponent])) extends AnyVal {
     
     inline def setAction(value: ReactElement): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

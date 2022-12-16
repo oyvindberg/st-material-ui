@@ -18,7 +18,8 @@ object PropsPartialToolbarPropsdiv {
     __obj.asInstanceOf[PropsPartialToolbarPropsdiv]
   }
   
-  extension [Self <: PropsPartialToolbarPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialToolbarPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialToolbarPropsdiv): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

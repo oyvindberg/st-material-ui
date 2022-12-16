@@ -482,7 +482,8 @@ object PartialSwitchProps {
     __obj.asInstanceOf[PartialSwitchProps]
   }
   
-  extension [Self <: PartialSwitchProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSwitchProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

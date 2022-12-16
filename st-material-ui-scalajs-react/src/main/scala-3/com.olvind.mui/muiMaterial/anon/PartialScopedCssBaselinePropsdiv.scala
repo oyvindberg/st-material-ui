@@ -418,7 +418,8 @@ object PartialScopedCssBaselinePropsdiv {
     __obj.asInstanceOf[PartialScopedCssBaselinePropsdiv]
   }
   
-  extension [Self <: PartialScopedCssBaselinePropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialScopedCssBaselinePropsdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

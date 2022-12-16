@@ -43,10 +43,14 @@ object StyledComponent {
       js.Object.assign(this.options, x)
       this
     }
-    def fromInput(f: js.Function1[InterpolationInput[Props], InterpolationPrimitive]): this.type = {
-      interpolations.push(f)
+
+    def fn(f: (Theme, Props & MUIStyledCommonProps[Theme]) => InterpolationPrimitive): StyledComponent.Builder[Props, ReactBuilder] = {
+      val raw: js.Function1[InterpolationInput[Props], InterpolationPrimitive] =
+        in => f((in: com.olvind.mui.muiStyledEngine.anon.Theme[Theme]).theme, in)
+      interpolations.push(raw)
       this
     }
+
     def apply(i: InterpolationPrimitive): this.type = {
       interpolations.push(i)
       this

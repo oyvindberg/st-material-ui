@@ -36,7 +36,8 @@ object menuMenuClassesMod {
       __obj.asInstanceOf[MenuClasses]
     }
     
-    extension [Self <: MenuClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuClasses] (val x: Self) extends AnyVal {
       
       inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       

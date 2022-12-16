@@ -16,7 +16,8 @@ object PartialCardClasses {
     __obj.asInstanceOf[PartialCardClasses]
   }
   
-  extension [Self <: PartialCardClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCardClasses] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

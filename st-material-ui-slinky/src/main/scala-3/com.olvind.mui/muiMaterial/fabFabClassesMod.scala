@@ -68,7 +68,8 @@ object fabFabClassesMod {
       __obj.asInstanceOf[FabClasses]
     }
     
-    extension [Self <: FabClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FabClasses] (val x: Self) extends AnyVal {
       
       inline def setCircular(value: String): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       

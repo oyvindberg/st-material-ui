@@ -511,7 +511,8 @@ object FabPropsFabTypeMapbuttondefaultComponent {
     __obj.asInstanceOf[FabPropsFabTypeMapbuttondefaultComponent]
   }
   
-  extension [Self <: FabPropsFabTypeMapbuttondefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FabPropsFabTypeMapbuttondefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -493,7 +493,8 @@ object TabPropsTabTypeMapdivdefaultComponent {
     __obj.asInstanceOf[TabPropsTabTypeMapdivdefaultComponent]
   }
   
-  extension [Self <: TabPropsTabTypeMapdivdefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabPropsTabTypeMapdivdefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

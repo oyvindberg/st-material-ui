@@ -18,7 +18,8 @@ object PartialPaletteTextChannel {
     __obj.asInstanceOf[PartialPaletteTextChannel]
   }
   
-  extension [Self <: PartialPaletteTextChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteTextChannel] (val x: Self) extends AnyVal {
     
     inline def setPrimaryChannel(value: String): Self = StObject.set(x, "primaryChannel", value.asInstanceOf[js.Any])
     

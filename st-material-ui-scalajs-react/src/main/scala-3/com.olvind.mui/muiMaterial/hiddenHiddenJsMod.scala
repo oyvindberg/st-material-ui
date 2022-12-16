@@ -46,7 +46,8 @@ object hiddenHiddenJsMod extends Shortcut {
       __obj.asInstanceOf[HiddenJsProps]
     }
     
-    extension [Self <: HiddenJsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HiddenJsProps] (val x: Self) extends AnyVal {
       
       inline def setLgDown(value: Boolean): Self = StObject.set(x, "lgDown", value.asInstanceOf[js.Any])
       

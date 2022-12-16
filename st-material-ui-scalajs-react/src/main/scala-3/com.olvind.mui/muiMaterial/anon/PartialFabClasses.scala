@@ -34,7 +34,8 @@ object PartialFabClasses {
     __obj.asInstanceOf[PartialFabClasses]
   }
   
-  extension [Self <: PartialFabClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFabClasses] (val x: Self) extends AnyVal {
     
     inline def setCircular(value: String): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
     

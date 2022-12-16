@@ -22,7 +22,8 @@ object PartialBottomNavigationActionClasses {
     __obj.asInstanceOf[PartialBottomNavigationActionClasses]
   }
   
-  extension [Self <: PartialBottomNavigationActionClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBottomNavigationActionClasses] (val x: Self) extends AnyVal {
     
     inline def setIconOnly(value: String): Self = StObject.set(x, "iconOnly", value.asInstanceOf[js.Any])
     

@@ -469,7 +469,8 @@ object DefaultComponentPropsFormHelperTextTypeM {
     __obj.asInstanceOf[DefaultComponentPropsFormHelperTextTypeM]
   }
   
-  extension [Self <: DefaultComponentPropsFormHelperTextTypeM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsFormHelperTextTypeM] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

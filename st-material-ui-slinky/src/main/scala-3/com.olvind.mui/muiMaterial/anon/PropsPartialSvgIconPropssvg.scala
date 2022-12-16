@@ -18,7 +18,8 @@ object PropsPartialSvgIconPropssvg {
     __obj.asInstanceOf[PropsPartialSvgIconPropssvg]
   }
   
-  extension [Self <: PropsPartialSvgIconPropssvg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialSvgIconPropssvg] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialSvgIconPropssvg): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

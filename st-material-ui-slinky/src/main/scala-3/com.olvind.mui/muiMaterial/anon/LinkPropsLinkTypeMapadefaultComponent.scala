@@ -1639,7 +1639,8 @@ object LinkPropsLinkTypeMapadefaultComponent {
     __obj.asInstanceOf[LinkPropsLinkTypeMapadefaultComponent]
   }
   
-  extension [Self <: LinkPropsLinkTypeMapadefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkPropsLinkTypeMapadefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

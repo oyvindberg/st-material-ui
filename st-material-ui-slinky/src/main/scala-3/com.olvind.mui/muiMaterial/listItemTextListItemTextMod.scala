@@ -475,7 +475,8 @@ object listItemTextListItemTextMod {
       __obj.asInstanceOf[ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent]]
     }
     
-    extension [Self <: ListItemTextProps[?, ?], PrimaryTypographyComponent /* <: ReactElement */, SecondaryTypographyComponent /* <: ReactElement */](x: Self & (ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemTextProps[?, ?], PrimaryTypographyComponent /* <: ReactElement */, SecondaryTypographyComponent /* <: ReactElement */] (val x: Self & (ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent])) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

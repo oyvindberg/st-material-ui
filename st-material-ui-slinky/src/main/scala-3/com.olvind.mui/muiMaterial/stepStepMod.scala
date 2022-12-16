@@ -43,7 +43,8 @@ object stepStepMod extends Shortcut {
       __obj.asInstanceOf[StepTypeMap[P, D]]
     }
     
-    extension [Self <: StepTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (StepTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (StepTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

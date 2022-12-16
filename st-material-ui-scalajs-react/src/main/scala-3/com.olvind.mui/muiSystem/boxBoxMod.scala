@@ -1159,7 +1159,8 @@ object boxBoxMod extends Shortcut {
       __obj.asInstanceOf[SystemProps[Theme]]
     }
     
-    extension [Self <: SystemProps[?], Theme /* <: js.Object */](x: Self & SystemProps[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SystemProps[?], Theme /* <: js.Object */] (val x: Self & SystemProps[Theme]) extends AnyVal {
       
       inline def setAlignContent(
         value: (ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]) | (js.Function1[

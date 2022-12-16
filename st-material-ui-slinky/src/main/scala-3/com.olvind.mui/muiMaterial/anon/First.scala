@@ -22,7 +22,8 @@ object First {
     __obj.asInstanceOf[First]
   }
   
-  extension [Self <: First](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: First] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: ReactElement): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

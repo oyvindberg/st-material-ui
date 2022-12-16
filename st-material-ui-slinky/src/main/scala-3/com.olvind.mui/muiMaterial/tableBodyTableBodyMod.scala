@@ -41,7 +41,8 @@ object tableBodyTableBodyMod extends Shortcut {
       __obj.asInstanceOf[TableBodyTypeMap[P, D]]
     }
     
-    extension [Self <: TableBodyTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (TableBodyTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableBodyTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (TableBodyTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

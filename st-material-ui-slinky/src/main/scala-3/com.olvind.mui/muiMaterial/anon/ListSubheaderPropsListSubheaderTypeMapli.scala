@@ -450,7 +450,8 @@ object ListSubheaderPropsListSubheaderTypeMapli {
     __obj.asInstanceOf[ListSubheaderPropsListSubheaderTypeMapli]
   }
   
-  extension [Self <: ListSubheaderPropsListSubheaderTypeMapli](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSubheaderPropsListSubheaderTypeMapli] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

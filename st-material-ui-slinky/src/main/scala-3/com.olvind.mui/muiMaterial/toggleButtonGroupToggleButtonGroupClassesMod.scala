@@ -52,7 +52,8 @@ object toggleButtonGroupToggleButtonGroupClassesMod {
       __obj.asInstanceOf[ToggleButtonGroupClasses]
     }
     
-    extension [Self <: ToggleButtonGroupClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButtonGroupClasses] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object `10` {
     __obj.asInstanceOf[`10`[TValue]]
   }
   
-  extension [Self <: `10`[?], TValue](x: Self & `10`[TValue]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `10`[?], TValue] (val x: Self & `10`[TValue]) extends AnyVal {
     
     inline def setRoot(
       value: SlotComponentProps["li", OptionUnstyledComponentsPropsOverrides, OptionUnstyledOwnerState[TValue]]

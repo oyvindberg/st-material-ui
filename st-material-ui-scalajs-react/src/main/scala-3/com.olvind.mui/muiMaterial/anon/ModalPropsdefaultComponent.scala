@@ -580,7 +580,8 @@ object ModalPropsdefaultComponent {
     __obj.asInstanceOf[ModalPropsdefaultComponent]
   }
   
-  extension [Self <: ModalPropsdefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalPropsdefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

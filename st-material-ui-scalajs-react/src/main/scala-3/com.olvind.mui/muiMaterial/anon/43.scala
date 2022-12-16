@@ -23,7 +23,8 @@ object `43` {
     __obj.asInstanceOf[`43`[Theme]]
   }
   
-  extension [Self <: `43`[?], Theme](x: Self & `43`[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `43`[?], Theme] (val x: Self & `43`[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialBadgePropsdefaultComponent): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

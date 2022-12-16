@@ -50,7 +50,8 @@ object PartialLinearProgressClasses {
     __obj.asInstanceOf[PartialLinearProgressClasses]
   }
   
-  extension [Self <: PartialLinearProgressClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLinearProgressClasses] (val x: Self) extends AnyVal {
     
     inline def setBar(value: String): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     

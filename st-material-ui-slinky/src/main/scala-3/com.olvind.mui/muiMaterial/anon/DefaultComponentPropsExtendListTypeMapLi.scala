@@ -448,7 +448,8 @@ object DefaultComponentPropsExtendListTypeMapLi {
     __obj.asInstanceOf[DefaultComponentPropsExtendListTypeMapLi]
   }
   
-  extension [Self <: DefaultComponentPropsExtendListTypeMapLi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsExtendListTypeMapLi] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

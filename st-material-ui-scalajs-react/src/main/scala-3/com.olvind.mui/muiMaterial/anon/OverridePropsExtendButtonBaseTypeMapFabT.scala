@@ -512,7 +512,8 @@ object OverridePropsExtendButtonBaseTypeMapFabT {
     __obj.asInstanceOf[OverridePropsExtendButtonBaseTypeMapFabT]
   }
   
-  extension [Self <: OverridePropsExtendButtonBaseTypeMapFabT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverridePropsExtendButtonBaseTypeMapFabT] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

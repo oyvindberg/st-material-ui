@@ -41,7 +41,8 @@ object scopedCssBaselineScopedCssBaselineMod extends Shortcut {
       __obj.asInstanceOf[ScopedCssBaselineTypeMap[P, D]]
     }
     
-    extension [Self <: ScopedCssBaselineTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (ScopedCssBaselineTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScopedCssBaselineTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (ScopedCssBaselineTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

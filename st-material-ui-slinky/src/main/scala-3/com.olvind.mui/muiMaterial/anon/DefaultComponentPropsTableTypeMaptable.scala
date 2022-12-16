@@ -467,7 +467,8 @@ object DefaultComponentPropsTableTypeMaptable {
     __obj.asInstanceOf[DefaultComponentPropsTableTypeMaptable]
   }
   
-  extension [Self <: DefaultComponentPropsTableTypeMaptable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsTableTypeMaptable] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

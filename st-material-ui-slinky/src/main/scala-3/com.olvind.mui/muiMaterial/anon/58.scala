@@ -23,7 +23,8 @@ object `58` {
     __obj.asInstanceOf[`58`[Theme]]
   }
   
-  extension [Self <: `58`[?], Theme](x: Self & `58`[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `58`[?], Theme] (val x: Self & `58`[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialCircularProgressProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

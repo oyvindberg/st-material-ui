@@ -30,7 +30,8 @@ object tableHeadTableHeadClassesMod {
       __obj.asInstanceOf[TableHeadClasses]
     }
     
-    extension [Self <: TableHeadClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableHeadClasses] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

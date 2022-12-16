@@ -30,7 +30,8 @@ object MarkLabel {
     __obj.asInstanceOf[MarkLabel]
   }
   
-  extension [Self <: MarkLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkLabel] (val x: Self) extends AnyVal {
     
     inline def setInput(value: ElementType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

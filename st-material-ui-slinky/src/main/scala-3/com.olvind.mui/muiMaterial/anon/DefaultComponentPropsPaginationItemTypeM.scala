@@ -494,7 +494,8 @@ object DefaultComponentPropsPaginationItemTypeM {
     __obj.asInstanceOf[DefaultComponentPropsPaginationItemTypeM]
   }
   
-  extension [Self <: DefaultComponentPropsPaginationItemTypeM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsPaginationItemTypeM] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

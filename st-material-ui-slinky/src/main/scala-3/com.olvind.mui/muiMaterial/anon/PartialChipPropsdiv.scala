@@ -435,7 +435,8 @@ object PartialChipPropsdiv {
     __obj.asInstanceOf[PartialChipPropsdiv]
   }
   
-  extension [Self <: PartialChipPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChipPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

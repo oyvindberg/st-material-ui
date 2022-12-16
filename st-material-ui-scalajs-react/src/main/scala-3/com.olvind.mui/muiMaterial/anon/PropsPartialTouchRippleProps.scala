@@ -18,7 +18,8 @@ object PropsPartialTouchRippleProps {
     __obj.asInstanceOf[PropsPartialTouchRippleProps]
   }
   
-  extension [Self <: PropsPartialTouchRippleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialTouchRippleProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialTouchRippleProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

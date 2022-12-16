@@ -418,7 +418,8 @@ object DistributiveOmitPaperPropsPaperTypeMapdiAbout {
     __obj.asInstanceOf[DistributiveOmitPaperPropsPaperTypeMapdiAbout]
   }
   
-  extension [Self <: DistributiveOmitPaperPropsPaperTypeMapdiAbout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributiveOmitPaperPropsPaperTypeMapdiAbout] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

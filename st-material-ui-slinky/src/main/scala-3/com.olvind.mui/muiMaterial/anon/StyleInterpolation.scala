@@ -19,7 +19,8 @@ object StyleInterpolation {
     __obj.asInstanceOf[StyleInterpolation]
   }
   
-  extension [Self <: StyleInterpolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleInterpolation] (val x: Self) extends AnyVal {
     
     inline def setProps(value: com.olvind.mui.std.Partial[TextFieldProps]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

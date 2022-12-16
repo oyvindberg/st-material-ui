@@ -515,7 +515,8 @@ object PopperUnstyledPropsdiv {
     __obj.asInstanceOf[PopperUnstyledPropsdiv]
   }
   
-  extension [Self <: PopperUnstyledPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopperUnstyledPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

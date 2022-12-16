@@ -65,7 +65,8 @@ object ExpandText {
     __obj.asInstanceOf[ExpandText]
   }
   
-  extension [Self <: ExpandText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandText] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

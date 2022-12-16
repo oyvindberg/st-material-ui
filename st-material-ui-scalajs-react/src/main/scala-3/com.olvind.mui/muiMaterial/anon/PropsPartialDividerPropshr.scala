@@ -18,7 +18,8 @@ object PropsPartialDividerPropshr {
     __obj.asInstanceOf[PropsPartialDividerPropshr]
   }
   
-  extension [Self <: PropsPartialDividerPropshr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialDividerPropshr] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialDividerPropshr): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

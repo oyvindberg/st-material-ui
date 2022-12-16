@@ -60,7 +60,8 @@ object formLabelFormLabelClassesMod {
       __obj.asInstanceOf[FormLabelClasses]
     }
     
-    extension [Self <: FormLabelClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormLabelClasses] (val x: Self) extends AnyVal {
       
       inline def setAsterisk(value: String): Self = StObject.set(x, "asterisk", value.asInstanceOf[js.Any])
       

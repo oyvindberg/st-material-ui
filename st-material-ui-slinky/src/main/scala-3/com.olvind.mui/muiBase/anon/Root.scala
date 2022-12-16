@@ -18,7 +18,8 @@ object Root {
     __obj.asInstanceOf[Root]
   }
   
-  extension [Self <: Root](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: ReactElement): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

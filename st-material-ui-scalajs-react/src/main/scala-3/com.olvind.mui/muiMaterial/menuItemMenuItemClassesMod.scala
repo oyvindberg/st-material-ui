@@ -56,7 +56,8 @@ object menuItemMenuItemClassesMod {
       __obj.asInstanceOf[MenuItemClasses]
     }
     
-    extension [Self <: MenuItemClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemClasses] (val x: Self) extends AnyVal {
       
       inline def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       

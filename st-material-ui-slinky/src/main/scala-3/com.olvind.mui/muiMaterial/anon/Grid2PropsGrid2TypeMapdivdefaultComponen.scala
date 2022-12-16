@@ -1729,7 +1729,8 @@ object Grid2PropsGrid2TypeMapdivdefaultComponen {
     __obj.asInstanceOf[Grid2PropsGrid2TypeMapdivdefaultComponen]
   }
   
-  extension [Self <: Grid2PropsGrid2TypeMapdivdefaultComponen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grid2PropsGrid2TypeMapdivdefaultComponen] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

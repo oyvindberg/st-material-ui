@@ -48,7 +48,8 @@ object buttonBaseButtonBaseMod extends Shortcut {
       __obj.asInstanceOf[ButtonBaseActions]
     }
     
-    extension [Self <: ButtonBaseActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonBaseActions] (val x: Self) extends AnyVal {
       
       inline def setFocusVisible(value: () => Unit): Self = StObject.set(x, "focusVisible", js.Any.fromFunction0(value))
     }
@@ -69,7 +70,8 @@ object buttonBaseButtonBaseMod extends Shortcut {
       __obj.asInstanceOf[ButtonBaseTypeMap[P, D]]
     }
     
-    extension [Self <: ButtonBaseTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (ButtonBaseTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonBaseTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (ButtonBaseTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object buttonBaseButtonBaseMod extends Shortcut {
       __obj.asInstanceOf[ExtendButtonBaseTypeMap[M]]
     }
     
-    extension [Self <: ExtendButtonBaseTypeMap[?], M /* <: OverridableTypeMap */](x: Self & ExtendButtonBaseTypeMap[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendButtonBaseTypeMap[?], M /* <: OverridableTypeMap */] (val x: Self & ExtendButtonBaseTypeMap[M]) extends AnyVal {
       
       inline def setDefaultComponent(
         value: /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any

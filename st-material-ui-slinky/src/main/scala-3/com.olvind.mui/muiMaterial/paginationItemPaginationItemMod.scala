@@ -47,7 +47,8 @@ object paginationItemPaginationItemMod extends Shortcut {
       __obj.asInstanceOf[PaginationItemTypeMap[P, D]]
     }
     
-    extension [Self <: PaginationItemTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (PaginationItemTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationItemTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (PaginationItemTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

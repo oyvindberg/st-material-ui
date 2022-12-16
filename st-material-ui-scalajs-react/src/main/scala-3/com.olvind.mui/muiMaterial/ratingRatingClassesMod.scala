@@ -96,7 +96,8 @@ object ratingRatingClassesMod {
       __obj.asInstanceOf[RatingClasses]
     }
     
-    extension [Self <: RatingClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingClasses] (val x: Self) extends AnyVal {
       
       inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       

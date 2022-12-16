@@ -22,7 +22,8 @@ object selectUnstyledUseSelectDottypesMod {
       __obj.asInstanceOf[SelectOption[TValue]]
     }
     
-    extension [Self <: SelectOption[?], TValue](x: Self & SelectOption[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectOption[?], TValue] (val x: Self & SelectOption[TValue]) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

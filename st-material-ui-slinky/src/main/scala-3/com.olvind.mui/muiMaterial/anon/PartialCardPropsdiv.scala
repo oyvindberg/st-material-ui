@@ -422,7 +422,8 @@ object PartialCardPropsdiv {
     __obj.asInstanceOf[PartialCardPropsdiv]
   }
   
-  extension [Self <: PartialCardPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCardPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

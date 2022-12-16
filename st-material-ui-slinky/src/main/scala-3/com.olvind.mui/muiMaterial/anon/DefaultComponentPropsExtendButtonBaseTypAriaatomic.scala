@@ -511,7 +511,8 @@ object DefaultComponentPropsExtendButtonBaseTypAriaatomic {
     __obj.asInstanceOf[DefaultComponentPropsExtendButtonBaseTypAriaatomic]
   }
   
-  extension [Self <: DefaultComponentPropsExtendButtonBaseTypAriaatomic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsExtendButtonBaseTypAriaatomic] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object linkLinkClassesMod {
       __obj.asInstanceOf[LinkClasses]
     }
     
-    extension [Self <: LinkClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkClasses] (val x: Self) extends AnyVal {
       
       inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object transitionsUtilsMod {
       __obj.asInstanceOf[ComponentProps]
     }
     
-    extension [Self <: ComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentProps] (val x: Self) extends AnyVal {
       
       inline def setEasing(value: String | Enter): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object transitionsUtilsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMode(value: "enter" | "exit"): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
@@ -79,7 +81,8 @@ object transitionsUtilsMod {
       __obj.asInstanceOf[TransitionProps]
     }
     
-    extension [Self <: TransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

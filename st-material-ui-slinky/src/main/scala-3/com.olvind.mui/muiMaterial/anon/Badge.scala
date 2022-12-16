@@ -18,7 +18,8 @@ object Badge {
     __obj.asInstanceOf[Badge]
   }
   
-  extension [Self <: Badge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Badge] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: ReactElement): Self = StObject.set(x, "Badge", value.asInstanceOf[js.Any])
     

@@ -158,7 +158,8 @@ object AllowScrollButtonsMobile {
     __obj.asInstanceOf[AllowScrollButtonsMobile]
   }
   
-  extension [Self <: AllowScrollButtonsMobile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowScrollButtonsMobile] (val x: Self) extends AnyVal {
     
     inline def setAction(value: com.olvind.mui.react.mod.Ref[TabsActions]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

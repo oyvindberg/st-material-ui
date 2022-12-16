@@ -1596,7 +1596,8 @@ object DialogContentTextPropsDialogContentTextT {
     __obj.asInstanceOf[DialogContentTextPropsDialogContentTextT]
   }
   
-  extension [Self <: DialogContentTextPropsDialogContentTextT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogContentTextPropsDialogContentTextT] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

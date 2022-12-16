@@ -20,7 +20,8 @@ object ColorSystem {
     __obj.asInstanceOf[ColorSystem]
   }
   
-  extension [Self <: ColorSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSystem] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: Opacity): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

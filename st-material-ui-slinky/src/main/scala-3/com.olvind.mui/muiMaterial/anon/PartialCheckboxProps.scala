@@ -483,7 +483,8 @@ object PartialCheckboxProps {
     __obj.asInstanceOf[PartialCheckboxProps]
   }
   
-  extension [Self <: PartialCheckboxProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCheckboxProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

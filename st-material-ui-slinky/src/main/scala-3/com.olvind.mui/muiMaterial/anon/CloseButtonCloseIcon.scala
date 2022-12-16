@@ -18,7 +18,8 @@ object CloseButtonCloseIcon {
     __obj.asInstanceOf[CloseButtonCloseIcon]
   }
   
-  extension [Self <: CloseButtonCloseIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseButtonCloseIcon] (val x: Self) extends AnyVal {
     
     inline def setCloseButton(value: ReactElement): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     

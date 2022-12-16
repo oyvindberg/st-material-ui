@@ -1641,7 +1641,8 @@ object TypographyPropsTypographyTypeMapspandefa {
     __obj.asInstanceOf[TypographyPropsTypographyTypeMapspandefa]
   }
   
-  extension [Self <: TypographyPropsTypographyTypeMapspandefa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypographyPropsTypographyTypeMapspandefa] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

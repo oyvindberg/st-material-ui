@@ -524,7 +524,8 @@ object DefaultComponentPropsExtendButtonBaseTypAction {
     __obj.asInstanceOf[DefaultComponentPropsExtendButtonBaseTypAction]
   }
   
-  extension [Self <: DefaultComponentPropsExtendButtonBaseTypAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsExtendButtonBaseTypAction] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PartialDialogContentClasses {
     __obj.asInstanceOf[PartialDialogContentClasses]
   }
   
-  extension [Self <: PartialDialogContentClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDialogContentClasses] (val x: Self) extends AnyVal {
     
     inline def setDividers(value: String): Self = StObject.set(x, "dividers", value.asInstanceOf[js.Any])
     

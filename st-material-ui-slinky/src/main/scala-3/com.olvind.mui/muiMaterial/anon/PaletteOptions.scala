@@ -82,7 +82,8 @@ object PaletteOptions {
     __obj.asInstanceOf[PaletteOptions]
   }
   
-  extension [Self <: PaletteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteOptions] (val x: Self) extends AnyVal {
     
     inline def setAction(value: PartialTypeAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

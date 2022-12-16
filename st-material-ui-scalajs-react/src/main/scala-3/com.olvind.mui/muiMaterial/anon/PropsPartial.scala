@@ -38,7 +38,8 @@ object PropsPartial {
     __obj.asInstanceOf[PropsPartial]
   }
   
-  extension [Self <: PropsPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartial] (val x: Self) extends AnyVal {
     
     inline def setProps(
       value: com.olvind.mui.std.Partial[

@@ -46,7 +46,8 @@ object stepperStepperContextMod {
       __obj.asInstanceOf[StepperContextType]
     }
     
-    extension [Self <: StepperContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepperContextType] (val x: Self) extends AnyVal {
       
       inline def setActiveStep(value: Double): Self = StObject.set(x, "activeStep", value.asInstanceOf[js.Any])
       

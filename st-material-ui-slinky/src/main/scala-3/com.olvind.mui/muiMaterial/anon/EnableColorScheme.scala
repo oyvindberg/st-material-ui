@@ -38,7 +38,8 @@ object EnableColorScheme {
     __obj.asInstanceOf[EnableColorScheme]
   }
   
-  extension [Self <: EnableColorScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableColorScheme] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

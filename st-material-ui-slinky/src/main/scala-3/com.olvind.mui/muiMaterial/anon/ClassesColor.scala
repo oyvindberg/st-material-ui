@@ -64,7 +64,8 @@ object ClassesColor {
     __obj.asInstanceOf[ClassesColor]
   }
   
-  extension [Self <: ClassesColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassesColor] (val x: Self) extends AnyVal {
     
     inline def setClasses(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: @mui/material.anon.SliderUnstyledTypeMapspanprops['classes'] */ js.Any) & ColorPrimary

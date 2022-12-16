@@ -36,7 +36,8 @@ object PartialAppBarClasses {
     __obj.asInstanceOf[PartialAppBarClasses]
   }
   
-  extension [Self <: PartialAppBarClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAppBarClasses] (val x: Self) extends AnyVal {
     
     inline def setColorDefault(value: String): Self = StObject.set(x, "colorDefault", value.asInstanceOf[js.Any])
     

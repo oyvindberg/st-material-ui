@@ -66,7 +66,8 @@ object PartialButtonGroupClasses {
     __obj.asInstanceOf[PartialButtonGroupClasses]
   }
   
-  extension [Self <: PartialButtonGroupClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialButtonGroupClasses] (val x: Self) extends AnyVal {
     
     inline def setContained(value: String): Self = StObject.set(x, "contained", value.asInstanceOf[js.Any])
     

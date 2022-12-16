@@ -18,7 +18,8 @@ object PropsPartialNativeSelectProps {
     __obj.asInstanceOf[PropsPartialNativeSelectProps]
   }
   
-  extension [Self <: PropsPartialNativeSelectProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialNativeSelectProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialNativeSelectProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

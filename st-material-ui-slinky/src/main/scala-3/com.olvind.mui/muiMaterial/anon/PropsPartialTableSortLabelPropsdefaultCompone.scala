@@ -18,7 +18,8 @@ object PropsPartialTableSortLabelPropsdefaultCompone {
     __obj.asInstanceOf[PropsPartialTableSortLabelPropsdefaultCompone]
   }
   
-  extension [Self <: PropsPartialTableSortLabelPropsdefaultCompone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialTableSortLabelPropsdefaultCompone] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialTableSortLabelPropsdefaultCompone): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

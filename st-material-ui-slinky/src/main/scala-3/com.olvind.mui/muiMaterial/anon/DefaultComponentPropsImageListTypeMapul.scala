@@ -454,7 +454,8 @@ object DefaultComponentPropsImageListTypeMapul {
     __obj.asInstanceOf[DefaultComponentPropsImageListTypeMapul]
   }
   
-  extension [Self <: DefaultComponentPropsImageListTypeMapul](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsImageListTypeMapul] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PropsPartialStepConnectorProps {
     __obj.asInstanceOf[PropsPartialStepConnectorProps]
   }
   
-  extension [Self <: PropsPartialStepConnectorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialStepConnectorProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialStepConnectorProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PaletteStepConnector {
     __obj.asInstanceOf[PaletteStepConnector]
   }
   
-  extension [Self <: PaletteStepConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteStepConnector] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
   }

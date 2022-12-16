@@ -23,7 +23,8 @@ object Variants {
     __obj.asInstanceOf[Variants[Theme]]
   }
   
-  extension [Self <: Variants[?], Theme](x: Self & Variants[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Variants[?], Theme] (val x: Self & Variants[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialAlertTitleProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

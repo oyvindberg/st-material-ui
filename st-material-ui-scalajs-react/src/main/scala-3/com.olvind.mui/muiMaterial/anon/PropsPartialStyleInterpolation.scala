@@ -38,7 +38,8 @@ object PropsPartialStyleInterpolation {
     __obj.asInstanceOf[PropsPartialStyleInterpolation]
   }
   
-  extension [Self <: PropsPartialStyleInterpolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialStyleInterpolation] (val x: Self) extends AnyVal {
     
     inline def setProps(
       value: com.olvind.mui.std.Partial[

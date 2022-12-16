@@ -64,7 +64,8 @@ object stylesAdaptV4ThemeMod {
       __obj.asInstanceOf[DeprecatedThemeOptions]
     }
     
-    extension [Self <: DeprecatedThemeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatedThemeOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakpoints(value: BreakpointsOptions): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       

@@ -429,7 +429,8 @@ object DefaultComponentPropsTabPanelUnstyledTyp {
     __obj.asInstanceOf[DefaultComponentPropsTabPanelUnstyledTyp]
   }
   
-  extension [Self <: DefaultComponentPropsTabPanelUnstyledTyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsTabPanelUnstyledTyp] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

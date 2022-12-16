@@ -15,7 +15,8 @@ object DefaultProps {
     __obj.asInstanceOf[DefaultProps]
   }
   
-  extension [Self <: DefaultProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: PickComponentsPropsListMuiAlertcloseText): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }

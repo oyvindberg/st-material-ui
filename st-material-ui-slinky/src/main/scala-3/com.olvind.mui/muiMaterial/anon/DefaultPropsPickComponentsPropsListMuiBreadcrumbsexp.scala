@@ -15,7 +15,8 @@ object DefaultPropsPickComponentsPropsListMuiBreadcrumbsexp {
     __obj.asInstanceOf[DefaultPropsPickComponentsPropsListMuiBreadcrumbsexp]
   }
   
-  extension [Self <: DefaultPropsPickComponentsPropsListMuiBreadcrumbsexp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPropsPickComponentsPropsListMuiBreadcrumbsexp] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: PickComponentsPropsListMuiBreadcrumbsexp): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }

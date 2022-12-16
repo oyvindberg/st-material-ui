@@ -42,7 +42,8 @@ object usePaginationUsePaginationMod {
       __obj.asInstanceOf[UsePaginationItem]
     }
     
-    extension [Self <: UsePaginationItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsePaginationItem] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object usePaginationUsePaginationMod {
       __obj.asInstanceOf[UsePaginationProps]
     }
     
-    extension [Self <: UsePaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsePaginationProps] (val x: Self) extends AnyVal {
       
       inline def setBoundaryCount(value: Double): Self = StObject.set(x, "boundaryCount", value.asInstanceOf[js.Any])
       
@@ -202,7 +204,8 @@ object usePaginationUsePaginationMod {
       __obj.asInstanceOf[UsePaginationResult]
     }
     
-    extension [Self <: UsePaginationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsePaginationResult] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[UsePaginationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

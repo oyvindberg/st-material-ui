@@ -449,7 +449,8 @@ object DefaultComponentPropsBottomNavigationTyp {
     __obj.asInstanceOf[DefaultComponentPropsBottomNavigationTyp]
   }
   
-  extension [Self <: DefaultComponentPropsBottomNavigationTyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsBottomNavigationTyp] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

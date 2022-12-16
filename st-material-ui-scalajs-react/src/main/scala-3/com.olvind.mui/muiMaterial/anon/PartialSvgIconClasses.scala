@@ -34,7 +34,8 @@ object PartialSvgIconClasses {
     __obj.asInstanceOf[PartialSvgIconClasses]
   }
   
-  extension [Self <: PartialSvgIconClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSvgIconClasses] (val x: Self) extends AnyVal {
     
     inline def setColorAction(value: String): Self = StObject.set(x, "colorAction", value.asInstanceOf[js.Any])
     

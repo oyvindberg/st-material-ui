@@ -42,7 +42,8 @@ object radioRadioClassesMod {
       __obj.asInstanceOf[RadioClasses]
     }
     
-    extension [Self <: RadioClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioClasses] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

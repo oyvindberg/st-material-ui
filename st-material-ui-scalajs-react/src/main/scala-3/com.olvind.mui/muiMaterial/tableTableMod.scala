@@ -43,7 +43,8 @@ object tableTableMod extends Shortcut {
       __obj.asInstanceOf[TableTypeMap[P, D]]
     }
     
-    extension [Self <: TableTypeMap[?, ?], P, D /* <: ElementType */](x: Self & (TableTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableTypeMap[?, ?], P, D /* <: ElementType */] (val x: Self & (TableTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

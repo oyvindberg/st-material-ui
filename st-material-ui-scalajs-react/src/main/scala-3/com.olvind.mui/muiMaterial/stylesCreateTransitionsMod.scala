@@ -59,7 +59,8 @@ object stylesCreateTransitionsMod {
       __obj.asInstanceOf[Duration_]
     }
     
-    extension [Self <: Duration_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration_] (val x: Self) extends AnyVal {
       
       inline def setComplex(value: Double): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object stylesCreateTransitionsMod {
       __obj.asInstanceOf[Easing_]
     }
     
-    extension [Self <: Easing_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Easing_] (val x: Self) extends AnyVal {
       
       inline def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object stylesCreateTransitionsMod {
       __obj.asInstanceOf[Transitions]
     }
     
-    extension [Self <: Transitions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transitions] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (/* props */ String | js.Array[String], /* options */ js.UndefOr[Partial]) => String): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
@@ -159,7 +162,8 @@ object stylesCreateTransitionsMod {
       __obj.asInstanceOf[TransitionsOptions]
     }
     
-    extension [Self <: TransitionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionsOptions] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (/* props */ String | js.Array[String], /* options */ js.UndefOr[Partial]) => String): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       

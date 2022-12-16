@@ -1584,7 +1584,8 @@ object linkLinkMod extends Shortcut {
       __obj.asInstanceOf[LinkBaseProps]
     }
     
-    extension [Self <: LinkBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -4678,7 +4679,8 @@ object linkLinkMod extends Shortcut {
       __obj.asInstanceOf[LinkTypeMap[P, D]]
     }
     
-    extension [Self <: LinkTypeMap[?, ?], P, D /* <: ElementType */](x: Self & (LinkTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkTypeMap[?, ?], P, D /* <: ElementType */] (val x: Self & (LinkTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

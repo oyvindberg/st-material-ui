@@ -501,7 +501,8 @@ object DefaultComponentPropsChipTypeMapdiv {
     __obj.asInstanceOf[DefaultComponentPropsChipTypeMapdiv]
   }
   
-  extension [Self <: DefaultComponentPropsChipTypeMapdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsChipTypeMapdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

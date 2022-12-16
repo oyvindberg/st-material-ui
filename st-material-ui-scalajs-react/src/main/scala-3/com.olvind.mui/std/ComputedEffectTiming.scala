@@ -30,7 +30,8 @@ object ComputedEffectTiming {
     __obj.asInstanceOf[ComputedEffectTiming]
   }
   
-  extension [Self <: ComputedEffectTiming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedEffectTiming] (val x: Self) extends AnyVal {
     
     inline def setActiveDuration(value: Double): Self = StObject.set(x, "activeDuration", value.asInstanceOf[js.Any])
     

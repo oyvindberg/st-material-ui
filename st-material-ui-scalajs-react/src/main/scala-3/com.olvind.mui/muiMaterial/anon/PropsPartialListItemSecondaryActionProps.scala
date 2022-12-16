@@ -18,7 +18,8 @@ object PropsPartialListItemSecondaryActionProps {
     __obj.asInstanceOf[PropsPartialListItemSecondaryActionProps]
   }
   
-  extension [Self <: PropsPartialListItemSecondaryActionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialListItemSecondaryActionProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialListItemSecondaryActionProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

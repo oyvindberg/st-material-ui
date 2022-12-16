@@ -24,7 +24,8 @@ object PartialStepIconClasses {
     __obj.asInstanceOf[PartialStepIconClasses]
   }
   
-  extension [Self <: PartialStepIconClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStepIconClasses] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

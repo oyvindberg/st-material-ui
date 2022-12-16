@@ -26,7 +26,8 @@ object PartialImageListItemClasses {
     __obj.asInstanceOf[PartialImageListItemClasses]
   }
   
-  extension [Self <: PartialImageListItemClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialImageListItemClasses] (val x: Self) extends AnyVal {
     
     inline def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     

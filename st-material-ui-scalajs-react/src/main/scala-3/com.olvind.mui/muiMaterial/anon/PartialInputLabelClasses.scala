@@ -40,7 +40,8 @@ object PartialInputLabelClasses {
     __obj.asInstanceOf[PartialInputLabelClasses]
   }
   
-  extension [Self <: PartialInputLabelClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInputLabelClasses] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: String): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

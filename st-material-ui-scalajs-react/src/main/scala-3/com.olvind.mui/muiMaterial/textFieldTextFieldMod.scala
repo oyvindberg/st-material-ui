@@ -592,7 +592,8 @@ object textFieldTextFieldMod {
       __obj.asInstanceOf[BaseTextFieldProps]
     }
     
-    extension [Self <: BaseTextFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTextFieldProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1486,7 +1487,8 @@ object textFieldTextFieldMod {
       __obj.asInstanceOf[FilledTextFieldProps]
     }
     
-    extension [Self <: FilledTextFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilledTextFieldProps] (val x: Self) extends AnyVal {
       
       inline def setInputProps(value: PartialFilledInputProps): Self = StObject.set(x, "InputProps", value.asInstanceOf[js.Any])
       
@@ -1536,7 +1538,8 @@ object textFieldTextFieldMod {
       __obj.asInstanceOf[OutlinedTextFieldProps]
     }
     
-    extension [Self <: OutlinedTextFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutlinedTextFieldProps] (val x: Self) extends AnyVal {
       
       inline def setInputProps(value: PartialOutlinedInputProps): Self = StObject.set(x, "InputProps", value.asInstanceOf[js.Any])
       
@@ -1586,7 +1589,8 @@ object textFieldTextFieldMod {
       __obj.asInstanceOf[StandardTextFieldProps]
     }
     
-    extension [Self <: StandardTextFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardTextFieldProps] (val x: Self) extends AnyVal {
       
       inline def setInputProps(value: PartialInputProps): Self = StObject.set(x, "InputProps", value.asInstanceOf[js.Any])
       

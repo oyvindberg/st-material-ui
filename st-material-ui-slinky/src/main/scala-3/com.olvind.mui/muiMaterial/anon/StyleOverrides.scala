@@ -23,7 +23,8 @@ object StyleOverrides {
     __obj.asInstanceOf[StyleOverrides[Theme]]
   }
   
-  extension [Self <: StyleOverrides[?], Theme](x: Self & StyleOverrides[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleOverrides[?], Theme] (val x: Self & StyleOverrides[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialAlertProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

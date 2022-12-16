@@ -22,7 +22,8 @@ object Style {
     __obj.asInstanceOf[Style[C]]
   }
   
-  extension [Self <: Style[?], C](x: Self & Style[C]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Style[?], C] (val x: Self & Style[C]) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

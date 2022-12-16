@@ -26,7 +26,8 @@ object PartialPaletteSlider {
     __obj.asInstanceOf[PartialPaletteSlider]
   }
   
-  extension [Self <: PartialPaletteSlider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteSlider] (val x: Self) extends AnyVal {
     
     inline def setErrorTrack(value: String): Self = StObject.set(x, "errorTrack", value.asInstanceOf[js.Any])
     

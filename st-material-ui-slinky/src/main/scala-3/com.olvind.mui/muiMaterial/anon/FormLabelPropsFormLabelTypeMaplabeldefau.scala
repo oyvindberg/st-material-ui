@@ -629,7 +629,8 @@ object FormLabelPropsFormLabelTypeMaplabeldefau {
     __obj.asInstanceOf[FormLabelPropsFormLabelTypeMaplabeldefau]
   }
   
-  extension [Self <: FormLabelPropsFormLabelTypeMaplabeldefau](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormLabelPropsFormLabelTypeMaplabeldefau] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

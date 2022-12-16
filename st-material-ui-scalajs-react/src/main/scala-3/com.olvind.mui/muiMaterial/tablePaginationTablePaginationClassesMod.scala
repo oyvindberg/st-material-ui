@@ -72,7 +72,8 @@ object tablePaginationTablePaginationClassesMod {
       __obj.asInstanceOf[TablePaginationClasses]
     }
     
-    extension [Self <: TablePaginationClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablePaginationClasses] (val x: Self) extends AnyVal {
       
       inline def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

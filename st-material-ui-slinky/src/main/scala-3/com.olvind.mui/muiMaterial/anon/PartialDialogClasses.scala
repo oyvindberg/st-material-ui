@@ -44,7 +44,8 @@ object PartialDialogClasses {
     __obj.asInstanceOf[PartialDialogClasses]
   }
   
-  extension [Self <: PartialDialogClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDialogClasses] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

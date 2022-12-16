@@ -35,7 +35,8 @@ object PopperRoot {
     __obj.asInstanceOf[PopperRoot[TValue]]
   }
   
-  extension [Self <: PopperRoot[?], TValue /* <: js.Object */](x: Self & PopperRoot[TValue]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopperRoot[?], TValue /* <: js.Object */] (val x: Self & PopperRoot[TValue]) extends AnyVal {
     
     inline def setListbox(
       value: SlotComponentProps["button", SelectUnstyledComponentsPropsOverrides, SelectUnstyledOwnerState[TValue]]

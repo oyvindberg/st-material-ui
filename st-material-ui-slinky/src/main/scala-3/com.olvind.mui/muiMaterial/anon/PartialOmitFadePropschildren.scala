@@ -431,7 +431,8 @@ object PartialOmitFadePropschildren {
     __obj.asInstanceOf[PartialOmitFadePropschildren]
   }
   
-  extension [Self <: PartialOmitFadePropschildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOmitFadePropschildren] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

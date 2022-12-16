@@ -1194,7 +1194,8 @@ object OmitTypographyTypeMapspanpropsclasses {
     __obj.asInstanceOf[OmitTypographyTypeMapspanpropsclasses]
   }
   
-  extension [Self <: OmitTypographyTypeMapspanpropsclasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitTypographyTypeMapspanpropsclasses] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: "inherit" | "left" | "center" | "right" | "justify"): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

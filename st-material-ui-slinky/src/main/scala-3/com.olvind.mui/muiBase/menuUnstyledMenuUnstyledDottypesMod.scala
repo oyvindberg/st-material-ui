@@ -24,7 +24,8 @@ object menuUnstyledMenuUnstyledDottypesMod {
       __obj.asInstanceOf[MenuUnstyledActions]
     }
     
-    extension [Self <: MenuUnstyledActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuUnstyledActions] (val x: Self) extends AnyVal {
       
       inline def setHighlightFirstItem(value: () => Unit): Self = StObject.set(x, "highlightFirstItem", js.Any.fromFunction0(value))
       
@@ -98,7 +99,8 @@ object menuUnstyledMenuUnstyledDottypesMod {
       __obj.asInstanceOf[MenuUnstyledOwnProps]
     }
     
-    extension [Self <: MenuUnstyledOwnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuUnstyledOwnProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Ref[MenuUnstyledActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object menuUnstyledMenuUnstyledDottypesMod {
       __obj.asInstanceOf[MenuUnstyledOwnerState]
     }
     
-    extension [Self <: MenuUnstyledOwnerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuUnstyledOwnerState] (val x: Self) extends AnyVal {
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     }

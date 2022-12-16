@@ -110,7 +110,8 @@ object listItemButtonListItemButtonMod extends Shortcut {
       __obj.asInstanceOf[ListItemButtonBaseProps]
     }
     
-    extension [Self <: ListItemButtonBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemButtonBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAlignItems(value: "flex-start" | "center"): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       

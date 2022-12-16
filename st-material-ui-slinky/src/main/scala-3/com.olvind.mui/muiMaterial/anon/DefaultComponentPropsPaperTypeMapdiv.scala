@@ -448,7 +448,8 @@ object DefaultComponentPropsPaperTypeMapdiv {
     __obj.asInstanceOf[DefaultComponentPropsPaperTypeMapdiv]
   }
   
-  extension [Self <: DefaultComponentPropsPaperTypeMapdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsPaperTypeMapdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

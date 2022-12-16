@@ -490,7 +490,8 @@ object avatarGroupAvatarGroupMod {
       __obj.asInstanceOf[AvatarGroupProps]
     }
     
-    extension [Self <: AvatarGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

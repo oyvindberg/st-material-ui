@@ -68,7 +68,8 @@ object svgIconSvgIconClassesMod {
       __obj.asInstanceOf[SvgIconClasses]
     }
     
-    extension [Self <: SvgIconClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgIconClasses] (val x: Self) extends AnyVal {
       
       inline def setColorAction(value: String): Self = StObject.set(x, "colorAction", value.asInstanceOf[js.Any])
       

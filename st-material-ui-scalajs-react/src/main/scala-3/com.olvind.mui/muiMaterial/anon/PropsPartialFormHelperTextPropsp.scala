@@ -18,7 +18,8 @@ object PropsPartialFormHelperTextPropsp {
     __obj.asInstanceOf[PropsPartialFormHelperTextPropsp]
   }
   
-  extension [Self <: PropsPartialFormHelperTextPropsp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialFormHelperTextPropsp] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialFormHelperTextPropsp): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object dialogContentDialogContentClassesMod {
       __obj.asInstanceOf[DialogContentClasses]
     }
     
-    extension [Self <: DialogContentClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContentClasses] (val x: Self) extends AnyVal {
       
       inline def setDividers(value: String): Self = StObject.set(x, "dividers", value.asInstanceOf[js.Any])
       

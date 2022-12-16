@@ -33,7 +33,8 @@ object `144` {
     __obj.asInstanceOf[`144`[Theme]]
   }
   
-  extension [Self <: `144`[?], Theme](x: Self & `144`[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `144`[?], Theme] (val x: Self & `144`[Theme]) extends AnyVal {
     
     inline def setDefaultProps(
       value: com.olvind.mui.std.Partial[

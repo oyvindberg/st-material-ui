@@ -48,7 +48,8 @@ object PartialFilledInputClasses {
     __obj.asInstanceOf[PartialFilledInputClasses]
   }
   
-  extension [Self <: PartialFilledInputClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFilledInputClasses] (val x: Self) extends AnyVal {
     
     inline def setAdornedEnd(value: String): Self = StObject.set(x, "adornedEnd", value.asInstanceOf[js.Any])
     

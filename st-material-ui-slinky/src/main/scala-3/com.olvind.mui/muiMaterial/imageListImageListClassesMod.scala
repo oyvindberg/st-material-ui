@@ -42,7 +42,8 @@ object imageListImageListClassesMod {
       __obj.asInstanceOf[ImageListClasses]
     }
     
-    extension [Self <: ImageListClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageListClasses] (val x: Self) extends AnyVal {
       
       inline def setMasonry(value: String): Self = StObject.set(x, "masonry", value.asInstanceOf[js.Any])
       

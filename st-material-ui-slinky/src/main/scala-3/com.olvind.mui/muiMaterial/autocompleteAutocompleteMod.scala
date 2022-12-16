@@ -118,7 +118,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent]]
     }
     
-    extension [Self <: AutocompleteOwnerState[?, ?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */, ChipComponent /* <: ReactElement */](x: Self & (AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteOwnerState[?, ?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */, ChipComponent /* <: ReactElement */] (val x: Self & (AutocompleteOwnerState[T, Multiple, DisableClearable, FreeSolo, ChipComponent])) extends AnyVal {
       
       inline def setDisablePortal(value: Boolean): Self = StObject.set(x, "disablePortal", value.asInstanceOf[js.Any])
       
@@ -1008,7 +1009,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, ChipComponent]]
     }
     
-    extension [Self <: AutocompleteProps[?, ?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */, ChipComponent /* <: ReactElement */](x: Self & (AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, ChipComponent])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteProps[?, ?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */, ChipComponent /* <: ReactElement */] (val x: Self & (AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, ChipComponent])) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2007,7 +2009,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutocompleteRenderGroupParams]
     }
     
-    extension [Self <: AutocompleteRenderGroupParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteRenderGroupParams] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -2057,7 +2060,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutocompleteRenderInputParams]
     }
     
-    extension [Self <: AutocompleteRenderInputParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteRenderInputParams] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -2092,7 +2096,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutocompleteRenderOptionState]
     }
     
-    extension [Self <: AutocompleteRenderOptionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteRenderOptionState] (val x: Self) extends AnyVal {
       
       inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       

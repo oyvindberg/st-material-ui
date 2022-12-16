@@ -15,7 +15,8 @@ object DefaultPropsPickComponentsPropsListMuiRatingemptyLab {
     __obj.asInstanceOf[DefaultPropsPickComponentsPropsListMuiRatingemptyLab]
   }
   
-  extension [Self <: DefaultPropsPickComponentsPropsListMuiRatingemptyLab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPropsPickComponentsPropsListMuiRatingemptyLab] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: PickComponentsPropsListMuiRatingemptyLab): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object DefaultPropsStyleOverridesVariants {
     __obj.asInstanceOf[DefaultPropsStyleOverridesVariants[Theme]]
   }
   
-  extension [Self <: DefaultPropsStyleOverridesVariants[?], Theme](x: Self & DefaultPropsStyleOverridesVariants[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPropsStyleOverridesVariants[?], Theme] (val x: Self & DefaultPropsStyleOverridesVariants[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialAvatarPropsdiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

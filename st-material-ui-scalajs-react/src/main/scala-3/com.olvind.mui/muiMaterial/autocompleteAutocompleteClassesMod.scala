@@ -124,7 +124,8 @@ object autocompleteAutocompleteClassesMod {
       __obj.asInstanceOf[AutocompleteClasses]
     }
     
-    extension [Self <: AutocompleteClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteClasses] (val x: Self) extends AnyVal {
       
       inline def setClearIndicator(value: String): Self = StObject.set(x, "clearIndicator", value.asInstanceOf[js.Any])
       

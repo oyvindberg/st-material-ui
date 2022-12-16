@@ -45,7 +45,8 @@ object appBarAppBarMod extends Shortcut {
       __obj.asInstanceOf[AppBarTypeMap[P, D]]
     }
     
-    extension [Self <: AppBarTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (AppBarTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppBarTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (AppBarTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

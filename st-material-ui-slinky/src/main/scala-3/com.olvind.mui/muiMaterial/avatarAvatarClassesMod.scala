@@ -56,7 +56,8 @@ object avatarAvatarClassesMod {
       __obj.asInstanceOf[AvatarClasses]
     }
     
-    extension [Self <: AvatarClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarClasses] (val x: Self) extends AnyVal {
       
       inline def setCircular(value: String): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       

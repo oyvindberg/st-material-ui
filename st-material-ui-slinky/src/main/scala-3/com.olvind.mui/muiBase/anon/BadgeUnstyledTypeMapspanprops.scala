@@ -56,7 +56,8 @@ object BadgeUnstyledTypeMapspanprops {
     __obj.asInstanceOf[BadgeUnstyledTypeMapspanprops]
   }
   
-  extension [Self <: BadgeUnstyledTypeMapspanprops](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BadgeUnstyledTypeMapspanprops] (val x: Self) extends AnyVal {
     
     inline def setBadgeContent(value: ReactElement): Self = StObject.set(x, "badgeContent", value.asInstanceOf[js.Any])
     

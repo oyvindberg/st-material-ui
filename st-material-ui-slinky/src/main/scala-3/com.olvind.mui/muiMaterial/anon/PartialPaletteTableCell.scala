@@ -16,7 +16,8 @@ object PartialPaletteTableCell {
     __obj.asInstanceOf[PartialPaletteTableCell]
   }
   
-  extension [Self <: PartialPaletteTableCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteTableCell] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

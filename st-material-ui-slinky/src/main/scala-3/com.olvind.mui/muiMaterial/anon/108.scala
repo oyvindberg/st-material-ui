@@ -23,7 +23,8 @@ object `108` {
     __obj.asInstanceOf[`108`[Theme]]
   }
   
-  extension [Self <: `108`[?], Theme](x: Self & `108`[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `108`[?], Theme] (val x: Self & `108`[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialPaginationProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

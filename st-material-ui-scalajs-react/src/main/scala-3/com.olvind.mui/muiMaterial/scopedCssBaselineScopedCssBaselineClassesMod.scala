@@ -39,7 +39,8 @@ object scopedCssBaselineScopedCssBaselineClassesMod {
       __obj.asInstanceOf[ScopedCssBaselineClasses]
     }
     
-    extension [Self <: ScopedCssBaselineClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScopedCssBaselineClasses] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

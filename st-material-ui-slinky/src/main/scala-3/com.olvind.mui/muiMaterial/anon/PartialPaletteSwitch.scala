@@ -30,7 +30,8 @@ object PartialPaletteSwitch {
     __obj.asInstanceOf[PartialPaletteSwitch]
   }
   
-  extension [Self <: PartialPaletteSwitch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteSwitch] (val x: Self) extends AnyVal {
     
     inline def setDefaultColor(value: String): Self = StObject.set(x, "defaultColor", value.asInstanceOf[js.Any])
     

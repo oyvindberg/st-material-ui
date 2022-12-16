@@ -426,7 +426,8 @@ object PartialAppBarPropsheader {
     __obj.asInstanceOf[PartialAppBarPropsheader]
   }
   
-  extension [Self <: PartialAppBarPropsheader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAppBarPropsheader] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

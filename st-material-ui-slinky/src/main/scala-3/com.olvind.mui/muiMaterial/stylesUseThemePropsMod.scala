@@ -26,7 +26,8 @@ object stylesUseThemePropsMod {
       __obj.asInstanceOf[ThemeWithProps]
     }
     
-    extension [Self <: ThemeWithProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeWithProps] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: Components[OmitThemecomponents]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       

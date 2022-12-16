@@ -36,7 +36,8 @@ object cardMediaCardMediaClassesMod {
       __obj.asInstanceOf[CardMediaClasses]
     }
     
-    extension [Self <: CardMediaClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardMediaClasses] (val x: Self) extends AnyVal {
       
       inline def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       

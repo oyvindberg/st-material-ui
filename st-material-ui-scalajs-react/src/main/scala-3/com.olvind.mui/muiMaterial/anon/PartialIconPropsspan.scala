@@ -422,7 +422,8 @@ object PartialIconPropsspan {
     __obj.asInstanceOf[PartialIconPropsspan]
   }
   
-  extension [Self <: PartialIconPropsspan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIconPropsspan] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

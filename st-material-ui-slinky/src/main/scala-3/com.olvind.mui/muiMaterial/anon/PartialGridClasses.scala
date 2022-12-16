@@ -80,7 +80,8 @@ object PartialGridClasses {
     __obj.asInstanceOf[PartialGridClasses]
   }
   
-  extension [Self <: PartialGridClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGridClasses] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

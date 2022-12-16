@@ -15,7 +15,8 @@ object PaletteTableCell {
     __obj.asInstanceOf[PaletteTableCell]
   }
   
-  extension [Self <: PaletteTableCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteTableCell] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
   }

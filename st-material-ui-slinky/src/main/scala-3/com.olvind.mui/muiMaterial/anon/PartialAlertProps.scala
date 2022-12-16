@@ -441,7 +441,8 @@ object PartialAlertProps {
     __obj.asInstanceOf[PartialAlertProps]
   }
   
-  extension [Self <: PartialAlertProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAlertProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

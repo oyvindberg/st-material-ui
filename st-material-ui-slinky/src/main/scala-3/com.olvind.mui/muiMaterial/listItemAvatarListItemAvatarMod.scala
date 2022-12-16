@@ -432,7 +432,8 @@ object listItemAvatarListItemAvatarMod {
       __obj.asInstanceOf[ListItemAvatarProps]
     }
     
-    extension [Self <: ListItemAvatarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemAvatarProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

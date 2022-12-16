@@ -38,7 +38,8 @@ object stylesCssUtilsMod {
       __obj.asInstanceOf[AlignPropertyParams]
     }
     
-    extension [Self <: AlignPropertyParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignPropertyParams] (val x: Self) extends AnyVal {
       
       inline def setGrid(value: Double): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object stylesCssUtilsMod {
       __obj.asInstanceOf[FontGridParams]
     }
     
-    extension [Self <: FontGridParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontGridParams] (val x: Self) extends AnyVal {
       
       inline def setHtmlFontSize(value: Double): Self = StObject.set(x, "htmlFontSize", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object stylesCssUtilsMod {
       __obj.asInstanceOf[ResponsivePropertyParams]
     }
     
-    extension [Self <: ResponsivePropertyParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsivePropertyParams] (val x: Self) extends AnyVal {
       
       inline def setBreakpoints(value: js.Array[Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       

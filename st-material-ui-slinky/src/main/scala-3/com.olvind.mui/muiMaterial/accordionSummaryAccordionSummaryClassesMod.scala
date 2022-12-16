@@ -60,7 +60,8 @@ object accordionSummaryAccordionSummaryClassesMod {
       __obj.asInstanceOf[AccordionSummaryClasses]
     }
     
-    extension [Self <: AccordionSummaryClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionSummaryClasses] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

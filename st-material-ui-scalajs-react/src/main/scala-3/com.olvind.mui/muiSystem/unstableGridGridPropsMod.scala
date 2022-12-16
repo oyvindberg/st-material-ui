@@ -79,7 +79,8 @@ object unstableGridGridPropsMod {
       __obj.asInstanceOf[GridBaseProps]
     }
     
-    extension [Self <: GridBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
       
@@ -234,7 +235,8 @@ object unstableGridGridPropsMod {
       __obj.asInstanceOf[GridDefaultBreakpoints]
     }
     
-    extension [Self <: GridDefaultBreakpoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridDefaultBreakpoints] (val x: Self) extends AnyVal {
       
       inline def setLg(value: Boolean | GridSize): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       

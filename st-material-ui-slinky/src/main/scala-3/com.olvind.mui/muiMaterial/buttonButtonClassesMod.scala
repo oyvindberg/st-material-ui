@@ -216,7 +216,8 @@ object buttonButtonClassesMod {
       __obj.asInstanceOf[ButtonClasses]
     }
     
-    extension [Self <: ButtonClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonClasses] (val x: Self) extends AnyVal {
       
       inline def setColorInherit(value: String): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
       

@@ -76,7 +76,8 @@ object drawerDrawerClassesMod {
       __obj.asInstanceOf[DrawerClasses]
     }
     
-    extension [Self <: DrawerClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerClasses] (val x: Self) extends AnyVal {
       
       inline def setDocked(value: String): Self = StObject.set(x, "docked", value.asInstanceOf[js.Any])
       

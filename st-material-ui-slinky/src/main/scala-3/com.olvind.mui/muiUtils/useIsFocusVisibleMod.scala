@@ -31,7 +31,8 @@ object useIsFocusVisibleMod {
       __obj.asInstanceOf[UseIsFocusVisibleResult]
     }
     
-    extension [Self <: UseIsFocusVisibleResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseIsFocusVisibleResult] (val x: Self) extends AnyVal {
       
       inline def setIsFocusVisibleRef(value: MutableRefObject[Boolean]): Self = StObject.set(x, "isFocusVisibleRef", value.asInstanceOf[js.Any])
       

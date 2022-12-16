@@ -24,7 +24,8 @@ object PartialTableSortLabelClasses {
     __obj.asInstanceOf[PartialTableSortLabelClasses]
   }
   
-  extension [Self <: PartialTableSortLabelClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTableSortLabelClasses] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object tableFooterTableFooterMod extends Shortcut {
       __obj.asInstanceOf[TableFooterTypeMap[P, D]]
     }
     
-    extension [Self <: TableFooterTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (TableFooterTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableFooterTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (TableFooterTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

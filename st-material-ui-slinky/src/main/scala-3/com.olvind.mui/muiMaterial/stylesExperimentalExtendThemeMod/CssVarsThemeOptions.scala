@@ -66,7 +66,8 @@ object CssVarsThemeOptions {
     __obj.asInstanceOf[CssVarsThemeOptions]
   }
   
-  extension [Self <: CssVarsThemeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssVarsThemeOptions] (val x: Self) extends AnyVal {
     
     inline def setBreakpoints(value: BreakpointsOptions): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     

@@ -463,7 +463,8 @@ object DefaultComponentPropsStepTypeMapdiv {
     __obj.asInstanceOf[DefaultComponentPropsStepTypeMapdiv]
   }
   
-  extension [Self <: DefaultComponentPropsStepTypeMapdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsStepTypeMapdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

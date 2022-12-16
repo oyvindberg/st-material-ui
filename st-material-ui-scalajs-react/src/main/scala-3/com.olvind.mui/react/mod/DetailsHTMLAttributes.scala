@@ -22,7 +22,8 @@ object DetailsHTMLAttributes {
     __obj.asInstanceOf[DetailsHTMLAttributes[T]]
   }
   
-  extension [Self <: DetailsHTMLAttributes[?], T](x: Self & DetailsHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailsHTMLAttributes[?], T] (val x: Self & DetailsHTMLAttributes[T]) extends AnyVal {
     
     inline def setOnToggle(value: ReactEventFrom[T & Element] => Callback): Self = StObject.set(x, "onToggle", js.Any.fromFunction1((t0: ReactEventFrom[T & Element]) => value(t0).runNow()))
     

@@ -36,7 +36,8 @@ object PartialTablePaginationUnstyledClasses {
     __obj.asInstanceOf[PartialTablePaginationUnstyledClasses]
   }
   
-  extension [Self <: PartialTablePaginationUnstyledClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTablePaginationUnstyledClasses] (val x: Self) extends AnyVal {
     
     inline def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

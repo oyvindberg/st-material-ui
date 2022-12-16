@@ -23,7 +23,8 @@ object ClassNameRef {
     __obj.asInstanceOf[ClassNameRef[C]]
   }
   
-  extension [Self <: ClassNameRef[?], C](x: Self & ClassNameRef[C]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassNameRef[?], C] (val x: Self & ClassNameRef[C]) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

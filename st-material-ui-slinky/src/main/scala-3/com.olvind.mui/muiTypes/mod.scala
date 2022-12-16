@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[OverridableTypeMap]
     }
     
-    extension [Self <: OverridableTypeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverridableTypeMap] (val x: Self) extends AnyVal {
       
       inline def setDefaultComponent(value: ReactElement): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     }

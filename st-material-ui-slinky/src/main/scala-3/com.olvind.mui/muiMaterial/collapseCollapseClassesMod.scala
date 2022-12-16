@@ -52,7 +52,8 @@ object collapseCollapseClassesMod {
       __obj.asInstanceOf[CollapseClasses]
     }
     
-    extension [Self <: CollapseClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseClasses] (val x: Self) extends AnyVal {
       
       inline def setEntered(value: String): Self = StObject.set(x, "entered", value.asInstanceOf[js.Any])
       

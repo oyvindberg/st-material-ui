@@ -45,7 +45,8 @@ object OmitFormControlUnstyledOwnPropsNonOption {
     __obj.asInstanceOf[OmitFormControlUnstyledOwnPropsNonOption]
   }
   
-  extension [Self <: OmitFormControlUnstyledOwnPropsNonOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitFormControlUnstyledOwnPropsNonOption] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement | (js.Function1[/* state */ FormControlUnstyledState, ReactElement])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

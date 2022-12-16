@@ -39,7 +39,8 @@ object listListClassesMod {
       __obj.asInstanceOf[ListClasses]
     }
     
-    extension [Self <: ListClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListClasses] (val x: Self) extends AnyVal {
       
       inline def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       

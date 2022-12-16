@@ -18,7 +18,8 @@ object PropsPartialBottomNavigationPropsdiv {
     __obj.asInstanceOf[PropsPartialBottomNavigationPropsdiv]
   }
   
-  extension [Self <: PropsPartialBottomNavigationPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialBottomNavigationPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialBottomNavigationPropsdiv): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

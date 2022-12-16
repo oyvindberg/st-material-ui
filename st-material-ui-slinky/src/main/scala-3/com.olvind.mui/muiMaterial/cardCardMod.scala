@@ -45,7 +45,8 @@ object cardCardMod extends Shortcut {
       __obj.asInstanceOf[CardTypeMap[P, D]]
     }
     
-    extension [Self <: CardTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (CardTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (CardTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

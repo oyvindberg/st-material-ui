@@ -66,7 +66,8 @@ object BackdropProps {
     __obj.asInstanceOf[BackdropProps]
   }
   
-  extension [Self <: BackdropProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackdropProps] (val x: Self) extends AnyVal {
     
     inline def setBackdropComponent(value: ReactElement): Self = StObject.set(x, "BackdropComponent", value.asInstanceOf[js.Any])
     

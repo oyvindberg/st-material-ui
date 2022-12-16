@@ -18,7 +18,8 @@ object PropsPartialPaginationItemPropsdiv {
     __obj.asInstanceOf[PropsPartialPaginationItemPropsdiv]
   }
   
-  extension [Self <: PropsPartialPaginationItemPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialPaginationItemPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialPaginationItemPropsdiv): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object PartialPaletteAppBar {
     __obj.asInstanceOf[PartialPaletteAppBar]
   }
   
-  extension [Self <: PartialPaletteAppBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteAppBar] (val x: Self) extends AnyVal {
     
     inline def setDarkBg(value: String): Self = StObject.set(x, "darkBg", value.asInstanceOf[js.Any])
     

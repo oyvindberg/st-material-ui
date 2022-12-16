@@ -18,7 +18,8 @@ object PropsPartialTablePaginationPropsJSXElementCon {
     __obj.asInstanceOf[PropsPartialTablePaginationPropsJSXElementCon]
   }
   
-  extension [Self <: PropsPartialTablePaginationPropsJSXElementCon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialTablePaginationPropsJSXElementCon] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialTablePaginationPropsJSXElementCon): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

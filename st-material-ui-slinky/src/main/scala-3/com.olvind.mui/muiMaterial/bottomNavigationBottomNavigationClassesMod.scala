@@ -30,7 +30,8 @@ object bottomNavigationBottomNavigationClassesMod {
       __obj.asInstanceOf[BottomNavigationClasses]
     }
     
-    extension [Self <: BottomNavigationClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomNavigationClasses] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

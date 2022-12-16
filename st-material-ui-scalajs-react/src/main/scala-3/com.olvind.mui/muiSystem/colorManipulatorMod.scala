@@ -39,7 +39,8 @@ object colorManipulatorMod {
       __obj.asInstanceOf[ColorObject]
     }
     
-    extension [Self <: ColorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorObject] (val x: Self) extends AnyVal {
       
       inline def setColorSpace(value: "srgb" | "display-p3" | "a98-rgb" | "prophoto-rgb" | "rec-2020"): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
       

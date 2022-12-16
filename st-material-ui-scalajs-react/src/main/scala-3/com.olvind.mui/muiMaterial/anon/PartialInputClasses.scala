@@ -42,7 +42,8 @@ object PartialInputClasses {
     __obj.asInstanceOf[PartialInputClasses]
   }
   
-  extension [Self <: PartialInputClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInputClasses] (val x: Self) extends AnyVal {
     
     inline def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     

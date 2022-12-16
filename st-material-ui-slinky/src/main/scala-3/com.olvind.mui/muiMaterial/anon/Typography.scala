@@ -20,7 +20,8 @@ object Typography {
     __obj.asInstanceOf[Typography]
   }
   
-  extension [Self <: Typography](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typography] (val x: Self) extends AnyVal {
     
     inline def setTypography(value: TypographyPropsTypographyTypeMapspandefa): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object tabTabClassesMod {
       __obj.asInstanceOf[TabClasses]
     }
     
-    extension [Self <: TabClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabClasses] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

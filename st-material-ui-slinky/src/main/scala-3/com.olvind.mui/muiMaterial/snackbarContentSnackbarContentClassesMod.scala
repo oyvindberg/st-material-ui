@@ -36,7 +36,8 @@ object snackbarContentSnackbarContentClassesMod {
       __obj.asInstanceOf[SnackbarContentClasses]
     }
     
-    extension [Self <: SnackbarContentClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarContentClasses] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

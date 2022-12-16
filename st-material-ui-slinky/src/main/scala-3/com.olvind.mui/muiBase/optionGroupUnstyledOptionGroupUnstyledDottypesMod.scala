@@ -47,7 +47,8 @@ object optionGroupUnstyledOptionGroupUnstyledDottypesMod {
       __obj.asInstanceOf[OptionGroupUnstyledOwnProps]
     }
     
-    extension [Self <: OptionGroupUnstyledOwnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionGroupUnstyledOwnProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

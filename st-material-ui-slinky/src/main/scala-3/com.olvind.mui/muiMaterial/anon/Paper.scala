@@ -21,7 +21,8 @@ object Paper {
     __obj.asInstanceOf[Paper]
   }
   
-  extension [Self <: Paper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paper] (val x: Self) extends AnyVal {
     
     inline def setClearIndicator(value: PartialIconButtonPropsdefaultComponent): Self = StObject.set(x, "clearIndicator", value.asInstanceOf[js.Any])
     

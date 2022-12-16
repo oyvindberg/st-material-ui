@@ -32,7 +32,8 @@ object PaletteSlider {
     __obj.asInstanceOf[PaletteSlider]
   }
   
-  extension [Self <: PaletteSlider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteSlider] (val x: Self) extends AnyVal {
     
     inline def setErrorTrack(value: String): Self = StObject.set(x, "errorTrack", value.asInstanceOf[js.Any])
     

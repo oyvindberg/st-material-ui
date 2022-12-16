@@ -72,7 +72,8 @@ object appBarAppBarClassesMod {
       __obj.asInstanceOf[AppBarClasses]
     }
     
-    extension [Self <: AppBarClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppBarClasses] (val x: Self) extends AnyVal {
       
       inline def setColorDefault(value: String): Self = StObject.set(x, "colorDefault", value.asInstanceOf[js.Any])
       

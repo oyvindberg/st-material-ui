@@ -26,7 +26,8 @@ object PartialSpeedDialIconClasses {
     __obj.asInstanceOf[PartialSpeedDialIconClasses]
   }
   
-  extension [Self <: PartialSpeedDialIconClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSpeedDialIconClasses] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

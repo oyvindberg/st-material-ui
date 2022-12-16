@@ -21,7 +21,8 @@ object `82` {
     __obj.asInstanceOf[`82`[Theme]]
   }
   
-  extension [Self <: `82`[?], Theme](x: Self & `82`[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `82`[?], Theme] (val x: Self & `82`[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialGrid2Propsdiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

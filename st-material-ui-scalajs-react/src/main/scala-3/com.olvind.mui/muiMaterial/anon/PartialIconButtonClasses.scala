@@ -42,7 +42,8 @@ object PartialIconButtonClasses {
     __obj.asInstanceOf[PartialIconButtonClasses]
   }
   
-  extension [Self <: PartialIconButtonClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIconButtonClasses] (val x: Self) extends AnyVal {
     
     inline def setColorError(value: String): Self = StObject.set(x, "colorError", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object PaletteLinearProgress {
     __obj.asInstanceOf[PaletteLinearProgress]
   }
   
-  extension [Self <: PaletteLinearProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteLinearProgress] (val x: Self) extends AnyVal {
     
     inline def setErrorBg(value: String): Self = StObject.set(x, "errorBg", value.asInstanceOf[js.Any])
     

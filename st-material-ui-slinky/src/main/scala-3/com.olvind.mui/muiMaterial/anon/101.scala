@@ -23,7 +23,8 @@ object `101` {
     __obj.asInstanceOf[`101`[Theme]]
   }
   
-  extension [Self <: `101`[?], Theme](x: Self & `101`[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `101`[?], Theme] (val x: Self & `101`[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialListSubheaderPropsli): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object inputInputClassesMod {
       __obj.asInstanceOf[InputClasses]
     }
     
-    extension [Self <: InputClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputClasses] (val x: Self) extends AnyVal {
       
       inline def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
       

@@ -491,7 +491,8 @@ object PaginationItemPropsPaginationItemTypeMap {
     __obj.asInstanceOf[PaginationItemPropsPaginationItemTypeMap]
   }
   
-  extension [Self <: PaginationItemPropsPaginationItemTypeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginationItemPropsPaginationItemTypeMap] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PropsPartialTabPropsdefaultComponent {
     __obj.asInstanceOf[PropsPartialTabPropsdefaultComponent]
   }
   
-  extension [Self <: PropsPartialTabPropsdefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialTabPropsdefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialTabPropsdefaultComponent): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object mobileStepperMobileStepperClassesMod {
       __obj.asInstanceOf[MobileStepperClasses]
     }
     
-    extension [Self <: MobileStepperClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MobileStepperClasses] (val x: Self) extends AnyVal {
       
       inline def setDot(value: String): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       

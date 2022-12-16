@@ -468,7 +468,8 @@ object DefaultComponentPropsDividerTypeMaphr {
     __obj.asInstanceOf[DefaultComponentPropsDividerTypeMaphr]
   }
   
-  extension [Self <: DefaultComponentPropsDividerTypeMaphr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsDividerTypeMaphr] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

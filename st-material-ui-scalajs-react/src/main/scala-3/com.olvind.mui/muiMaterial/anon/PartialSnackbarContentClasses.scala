@@ -20,7 +20,8 @@ object PartialSnackbarContentClasses {
     __obj.asInstanceOf[PartialSnackbarContentClasses]
   }
   
-  extension [Self <: PartialSnackbarContentClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSnackbarContentClasses] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object breadcrumbsBreadcrumbsClassesMod {
       __obj.asInstanceOf[BreadcrumbsClasses]
     }
     
-    extension [Self <: BreadcrumbsClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsClasses] (val x: Self) extends AnyVal {
       
       inline def setLi(value: String): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
       

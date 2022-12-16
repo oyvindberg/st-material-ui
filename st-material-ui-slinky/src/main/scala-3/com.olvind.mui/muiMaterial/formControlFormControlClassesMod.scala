@@ -39,7 +39,8 @@ object formControlFormControlClassesMod {
       __obj.asInstanceOf[FormControlClasses]
     }
     
-    extension [Self <: FormControlClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormControlClasses] (val x: Self) extends AnyVal {
       
       inline def setFullWidth(value: String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       

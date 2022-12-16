@@ -41,7 +41,8 @@ object styleFunctionSxDefaultSxConfigMod extends Shortcut {
       __obj.asInstanceOf[SxConfigRecord]
     }
     
-    extension [Self <: SxConfigRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SxConfigRecord] (val x: Self) extends AnyVal {
       
       inline def setCssProperty(value: "hack" | false): Self = StObject.set(x, "cssProperty", value.asInstanceOf[js.Any])
       

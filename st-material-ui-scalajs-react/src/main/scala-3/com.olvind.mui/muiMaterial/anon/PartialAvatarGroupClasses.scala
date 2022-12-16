@@ -18,7 +18,8 @@ object PartialAvatarGroupClasses {
     __obj.asInstanceOf[PartialAvatarGroupClasses]
   }
   
-  extension [Self <: PartialAvatarGroupClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAvatarGroupClasses] (val x: Self) extends AnyVal {
     
     inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

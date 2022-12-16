@@ -52,7 +52,8 @@ object speedDialIconSpeedDialIconClassesMod {
       __obj.asInstanceOf[SpeedDialIconClasses]
     }
     
-    extension [Self <: SpeedDialIconClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeedDialIconClasses] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

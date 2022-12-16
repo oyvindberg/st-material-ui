@@ -78,7 +78,8 @@ object CssVarsTheme {
     __obj.asInstanceOf[CssVarsTheme]
   }
   
-  extension [Self <: CssVarsTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssVarsTheme] (val x: Self) extends AnyVal {
     
     inline def setBreakpints(value: Breakpoints): Self = StObject.set(x, "breakpints", value.asInstanceOf[js.Any])
     

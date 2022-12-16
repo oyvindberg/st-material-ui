@@ -104,7 +104,8 @@ object PartialChipClasses {
     __obj.asInstanceOf[PartialChipClasses]
   }
   
-  extension [Self <: PartialChipClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChipClasses] (val x: Self) extends AnyVal {
     
     inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

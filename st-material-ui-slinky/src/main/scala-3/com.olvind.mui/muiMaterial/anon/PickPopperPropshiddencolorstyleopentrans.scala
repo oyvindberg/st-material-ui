@@ -618,7 +618,8 @@ object PickPopperPropshiddencolorstyleopentrans {
     __obj.asInstanceOf[PickPopperPropshiddencolorstyleopentrans]
   }
   
-  extension [Self <: PickPopperPropshiddencolorstyleopentrans](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPopperPropshiddencolorstyleopentrans] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

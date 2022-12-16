@@ -18,7 +18,8 @@ object PropsPartialAutocompletePropsanyanyanyanydivAbout {
     __obj.asInstanceOf[PropsPartialAutocompletePropsanyanyanyanydivAbout]
   }
   
-  extension [Self <: PropsPartialAutocompletePropsanyanyanyanydivAbout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialAutocompletePropsanyanyanyanydivAbout] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialAutocompletePropsanyanyanyanydivAbout): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

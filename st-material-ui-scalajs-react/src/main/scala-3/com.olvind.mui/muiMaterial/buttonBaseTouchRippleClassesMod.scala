@@ -56,7 +56,8 @@ object buttonBaseTouchRippleClassesMod {
       __obj.asInstanceOf[TouchRippleClasses]
     }
     
-    extension [Self <: TouchRippleClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchRippleClasses] (val x: Self) extends AnyVal {
       
       inline def setChild(value: String): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       

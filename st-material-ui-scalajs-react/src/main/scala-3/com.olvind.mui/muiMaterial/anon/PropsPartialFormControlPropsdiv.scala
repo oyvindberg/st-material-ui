@@ -18,7 +18,8 @@ object PropsPartialFormControlPropsdiv {
     __obj.asInstanceOf[PropsPartialFormControlPropsdiv]
   }
   
-  extension [Self <: PropsPartialFormControlPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialFormControlPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialFormControlPropsdiv): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

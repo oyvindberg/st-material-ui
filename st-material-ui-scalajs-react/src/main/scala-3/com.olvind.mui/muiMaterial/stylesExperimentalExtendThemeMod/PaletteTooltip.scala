@@ -15,7 +15,8 @@ object PaletteTooltip {
     __obj.asInstanceOf[PaletteTooltip]
   }
   
-  extension [Self <: PaletteTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteTooltip] (val x: Self) extends AnyVal {
     
     inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
   }

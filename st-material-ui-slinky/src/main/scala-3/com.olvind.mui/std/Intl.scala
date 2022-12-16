@@ -36,7 +36,8 @@ object Intl {
       __obj.asInstanceOf[CollatorOptions]
     }
     
-    extension [Self <: CollatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollatorOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseFirst(value: java.lang.String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
       

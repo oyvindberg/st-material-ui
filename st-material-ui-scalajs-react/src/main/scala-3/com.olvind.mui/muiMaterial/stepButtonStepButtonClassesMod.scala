@@ -39,7 +39,8 @@ object stepButtonStepButtonClassesMod {
       __obj.asInstanceOf[StepButtonClasses]
     }
     
-    extension [Self <: StepButtonClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepButtonClasses] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       

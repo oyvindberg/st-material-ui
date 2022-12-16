@@ -70,7 +70,8 @@ object formControlFormControlMod extends Shortcut {
       __obj.asInstanceOf[FormControlTypeMap[P, D]]
     }
     
-    extension [Self <: FormControlTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (FormControlTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormControlTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (FormControlTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

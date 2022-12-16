@@ -23,7 +23,8 @@ object DialogHTMLAttributes {
     __obj.asInstanceOf[DialogHTMLAttributes[T]]
   }
   
-  extension [Self <: DialogHTMLAttributes[?], T](x: Self & DialogHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogHTMLAttributes[?], T] (val x: Self & DialogHTMLAttributes[T]) extends AnyVal {
     
     inline def setOnCancel(value: SyntheticEvent[Event, T] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
     

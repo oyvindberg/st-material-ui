@@ -460,7 +460,8 @@ object DefaultComponentPropsSwitchUnstyledTypeM {
     __obj.asInstanceOf[DefaultComponentPropsSwitchUnstyledTypeM]
   }
   
-  extension [Self <: DefaultComponentPropsSwitchUnstyledTypeM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsSwitchUnstyledTypeM] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PropsPartialLinearProgressProps {
     __obj.asInstanceOf[PropsPartialLinearProgressProps]
   }
   
-  extension [Self <: PropsPartialLinearProgressProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialLinearProgressProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialLinearProgressProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

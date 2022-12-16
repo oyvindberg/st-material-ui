@@ -48,7 +48,8 @@ object chipChipMod extends Shortcut {
       __obj.asInstanceOf[ChipTypeMap[P, D]]
     }
     
-    extension [Self <: ChipTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (ChipTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (ChipTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

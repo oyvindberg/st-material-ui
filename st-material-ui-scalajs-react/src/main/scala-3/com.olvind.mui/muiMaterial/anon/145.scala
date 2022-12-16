@@ -24,7 +24,8 @@ object `145` {
     __obj.asInstanceOf[`145`[Theme]]
   }
   
-  extension [Self <: `145`[?], Theme](x: Self & `145`[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `145`[?], Theme] (val x: Self & `145`[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: com.olvind.mui.std.Partial[TextFieldProps]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

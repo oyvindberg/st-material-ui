@@ -45,7 +45,8 @@ object imageListItemImageListItemClassesMod {
       __obj.asInstanceOf[ImageListItemClasses]
     }
     
-    extension [Self <: ImageListItemClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageListItemClasses] (val x: Self) extends AnyVal {
       
       inline def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       

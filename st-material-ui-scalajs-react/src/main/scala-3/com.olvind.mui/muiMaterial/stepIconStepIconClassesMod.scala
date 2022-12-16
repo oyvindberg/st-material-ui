@@ -42,7 +42,8 @@ object stepIconStepIconClassesMod {
       __obj.asInstanceOf[StepIconClasses]
     }
     
-    extension [Self <: StepIconClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepIconClasses] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

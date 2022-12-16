@@ -58,7 +58,8 @@ object PartialTypographyClasses {
     __obj.asInstanceOf[PartialTypographyClasses]
   }
   
-  extension [Self <: PartialTypographyClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTypographyClasses] (val x: Self) extends AnyVal {
     
     inline def setAlignCenter(value: String): Self = StObject.set(x, "alignCenter", value.asInstanceOf[js.Any])
     

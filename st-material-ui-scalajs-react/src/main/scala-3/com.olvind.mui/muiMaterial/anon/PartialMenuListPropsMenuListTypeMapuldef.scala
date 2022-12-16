@@ -432,7 +432,8 @@ object PartialMenuListPropsMenuListTypeMapuldef {
     __obj.asInstanceOf[PartialMenuListPropsMenuListTypeMapuldef]
   }
   
-  extension [Self <: PartialMenuListPropsMenuListTypeMapuldef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMenuListPropsMenuListTypeMapuldef] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object PickComponentsPropsListMuiAlertcloseText {
     __obj.asInstanceOf[PickComponentsPropsListMuiAlertcloseText]
   }
   
-  extension [Self <: PickComponentsPropsListMuiAlertcloseText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickComponentsPropsListMuiAlertcloseText] (val x: Self) extends AnyVal {
     
     inline def setCloseText(value: String): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
     

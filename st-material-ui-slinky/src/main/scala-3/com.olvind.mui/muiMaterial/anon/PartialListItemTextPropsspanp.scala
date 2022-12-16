@@ -423,7 +423,8 @@ object PartialListItemTextPropsspanp {
     __obj.asInstanceOf[PartialListItemTextPropsspanp]
   }
   
-  extension [Self <: PartialListItemTextPropsspanp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialListItemTextPropsspanp] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

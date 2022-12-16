@@ -18,7 +18,8 @@ object PropsPartialCardContentPropsdiv {
     __obj.asInstanceOf[PropsPartialCardContentPropsdiv]
   }
   
-  extension [Self <: PropsPartialCardContentPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialCardContentPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialCardContentPropsdiv): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

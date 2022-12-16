@@ -18,7 +18,8 @@ object PropsPartialListSubheaderPropsli {
     __obj.asInstanceOf[PropsPartialListSubheaderPropsli]
   }
   
-  extension [Self <: PropsPartialListSubheaderPropsli](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialListSubheaderPropsli] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialListSubheaderPropsli): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

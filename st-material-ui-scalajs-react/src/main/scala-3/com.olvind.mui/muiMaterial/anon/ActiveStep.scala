@@ -68,7 +68,8 @@ object ActiveStep {
     __obj.asInstanceOf[ActiveStep]
   }
   
-  extension [Self <: ActiveStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveStep] (val x: Self) extends AnyVal {
     
     inline def setActiveStep(value: Double): Self = StObject.set(x, "activeStep", value.asInstanceOf[js.Any])
     

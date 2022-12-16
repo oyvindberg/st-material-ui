@@ -60,7 +60,8 @@ object menuItemUnstyledMenuItemUnstyledDottypesMod {
       __obj.asInstanceOf[MenuItemUnstyledOwnProps]
     }
     
-    extension [Self <: MenuItemUnstyledOwnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemUnstyledOwnProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object menuItemUnstyledMenuItemUnstyledDottypesMod {
       __obj.asInstanceOf[MenuItemUnstyledOwnerState]
     }
     
-    extension [Self <: MenuItemUnstyledOwnerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemUnstyledOwnerState] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

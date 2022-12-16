@@ -28,7 +28,8 @@ object PartialSpeedDialActionClasses {
     __obj.asInstanceOf[PartialSpeedDialActionClasses]
   }
   
-  extension [Self <: PartialSpeedDialActionClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSpeedDialActionClasses] (val x: Self) extends AnyVal {
     
     inline def setFab(value: String): Self = StObject.set(x, "fab", value.asInstanceOf[js.Any])
     

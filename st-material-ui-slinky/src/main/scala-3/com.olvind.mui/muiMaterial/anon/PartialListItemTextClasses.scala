@@ -26,7 +26,8 @@ object PartialListItemTextClasses {
     __obj.asInstanceOf[PartialListItemTextClasses]
   }
   
-  extension [Self <: PartialListItemTextClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialListItemTextClasses] (val x: Self) extends AnyVal {
     
     inline def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     

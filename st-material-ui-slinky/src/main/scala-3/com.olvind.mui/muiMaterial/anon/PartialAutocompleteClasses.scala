@@ -62,7 +62,8 @@ object PartialAutocompleteClasses {
     __obj.asInstanceOf[PartialAutocompleteClasses]
   }
   
-  extension [Self <: PartialAutocompleteClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAutocompleteClasses] (val x: Self) extends AnyVal {
     
     inline def setClearIndicator(value: String): Self = StObject.set(x, "clearIndicator", value.asInstanceOf[js.Any])
     

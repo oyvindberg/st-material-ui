@@ -42,7 +42,8 @@ object stepStepClassesMod {
       __obj.asInstanceOf[StepClasses]
     }
     
-    extension [Self <: StepClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepClasses] (val x: Self) extends AnyVal {
       
       inline def setAlternativeLabel(value: String): Self = StObject.set(x, "alternativeLabel", value.asInstanceOf[js.Any])
       

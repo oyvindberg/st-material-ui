@@ -34,7 +34,8 @@ object PartialStepConnectorClasses {
     __obj.asInstanceOf[PartialStepConnectorClasses]
   }
   
-  extension [Self <: PartialStepConnectorClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStepConnectorClasses] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

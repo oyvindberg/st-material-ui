@@ -35,7 +35,8 @@ object ChildrenClasses {
     __obj.asInstanceOf[ChildrenClasses]
   }
   
-  extension [Self <: ChildrenClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenClasses] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
     

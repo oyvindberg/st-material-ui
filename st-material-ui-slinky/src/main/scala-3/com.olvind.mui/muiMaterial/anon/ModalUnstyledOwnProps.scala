@@ -140,7 +140,8 @@ object ModalUnstyledOwnProps {
     __obj.asInstanceOf[ModalUnstyledOwnProps]
   }
   
-  extension [Self <: ModalUnstyledOwnProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalUnstyledOwnProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

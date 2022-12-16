@@ -33,7 +33,8 @@ object listItemSecondaryActionListItemSecondaryActionClassesMod {
       __obj.asInstanceOf[ListItemSecondaryActionClasses]
     }
     
-    extension [Self <: ListItemSecondaryActionClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemSecondaryActionClasses] (val x: Self) extends AnyVal {
       
       inline def setDisableGutters(value: String): Self = StObject.set(x, "disableGutters", value.asInstanceOf[js.Any])
       

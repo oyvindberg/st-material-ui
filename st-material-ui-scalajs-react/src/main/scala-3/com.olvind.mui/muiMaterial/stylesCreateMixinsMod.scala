@@ -29,7 +29,8 @@ object stylesCreateMixinsMod {
       __obj.asInstanceOf[BaseCSSProperties]
     }
     
-    extension [Self <: BaseCSSProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCSSProperties] (val x: Self) extends AnyVal {
       
       inline def `set@font-face`(value: Fontface | js.Array[Fontface]): Self = StObject.set(x, "@font-face", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object stylesCreateMixinsMod {
       __obj.asInstanceOf[Fontface]
     }
     
-    extension [Self <: Fontface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fontface] (val x: Self) extends AnyVal {
       
       inline def setFallbacks(value: js.Array[FontFace[String | 0, String]]): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object stylesCreateMixinsMod {
       __obj.asInstanceOf[Mixins]
     }
     
-    extension [Self <: Mixins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mixins] (val x: Self) extends AnyVal {
       
       inline def setToolbar(value: CSSProperties): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     }
@@ -111,7 +114,8 @@ object stylesCreateMixinsMod {
       __obj.asInstanceOf[MixinsOptions]
     }
     
-    extension [Self <: MixinsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MixinsOptions] (val x: Self) extends AnyVal {
       
       inline def setToolbar(value: CSSProperties): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       

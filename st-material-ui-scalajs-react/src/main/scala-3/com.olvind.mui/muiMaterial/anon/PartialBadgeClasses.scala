@@ -64,7 +64,8 @@ object PartialBadgeClasses {
     __obj.asInstanceOf[PartialBadgeClasses]
   }
   
-  extension [Self <: PartialBadgeClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBadgeClasses] (val x: Self) extends AnyVal {
     
     inline def setAnchorOriginBottomLeft(value: String): Self = StObject.set(x, "anchorOriginBottomLeft", value.asInstanceOf[js.Any])
     

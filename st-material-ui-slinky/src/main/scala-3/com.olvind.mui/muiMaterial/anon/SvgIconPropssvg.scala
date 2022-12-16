@@ -902,7 +902,8 @@ object SvgIconPropssvg {
     __obj.asInstanceOf[SvgIconPropssvg]
   }
   
-  extension [Self <: SvgIconPropssvg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvgIconPropssvg] (val x: Self) extends AnyVal {
     
     inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
     

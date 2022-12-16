@@ -28,7 +28,8 @@ object PartialFormControlLabelClasses {
     __obj.asInstanceOf[PartialFormControlLabelClasses]
   }
   
-  extension [Self <: PartialFormControlLabelClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFormControlLabelClasses] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PropsPartialRatingProps {
     __obj.asInstanceOf[PropsPartialRatingProps]
   }
   
-  extension [Self <: PropsPartialRatingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialRatingProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialRatingProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

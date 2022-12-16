@@ -23,7 +23,8 @@ object `54` {
     __obj.asInstanceOf[`54`[Theme]]
   }
   
-  extension [Self <: `54`[?], Theme](x: Self & `54`[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `54`[?], Theme] (val x: Self & `54`[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialCardHeaderPropsdivspanspan): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

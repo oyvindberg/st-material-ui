@@ -18,7 +18,8 @@ object PartialDialogActionsClasses {
     __obj.asInstanceOf[PartialDialogActionsClasses]
   }
   
-  extension [Self <: PartialDialogActionsClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDialogActionsClasses] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

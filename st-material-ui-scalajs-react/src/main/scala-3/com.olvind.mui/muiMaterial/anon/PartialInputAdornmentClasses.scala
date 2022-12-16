@@ -32,7 +32,8 @@ object PartialInputAdornmentClasses {
     __obj.asInstanceOf[PartialInputAdornmentClasses]
   }
   
-  extension [Self <: PartialInputAdornmentClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInputAdornmentClasses] (val x: Self) extends AnyVal {
     
     inline def setDisablePointerEvents(value: String): Self = StObject.set(x, "disablePointerEvents", value.asInstanceOf[js.Any])
     

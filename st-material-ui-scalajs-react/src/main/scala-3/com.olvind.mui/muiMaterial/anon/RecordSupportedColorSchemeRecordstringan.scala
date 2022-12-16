@@ -19,7 +19,8 @@ object RecordSupportedColorSchemeRecordstringan {
     __obj.asInstanceOf[RecordSupportedColorSchemeRecordstringan]
   }
   
-  extension [Self <: RecordSupportedColorSchemeRecordstringan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordSupportedColorSchemeRecordstringan] (val x: Self) extends AnyVal {
     
     inline def setDark(value: Record[String, Any]): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

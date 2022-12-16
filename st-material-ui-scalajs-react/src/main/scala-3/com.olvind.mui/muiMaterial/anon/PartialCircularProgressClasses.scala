@@ -34,7 +34,8 @@ object PartialCircularProgressClasses {
     __obj.asInstanceOf[PartialCircularProgressClasses]
   }
   
-  extension [Self <: PartialCircularProgressClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCircularProgressClasses] (val x: Self) extends AnyVal {
     
     inline def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     

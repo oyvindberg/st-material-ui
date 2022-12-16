@@ -18,7 +18,8 @@ object Node {
     __obj.asInstanceOf[Node[T]]
   }
   
-  extension [Self <: Node[?], T](x: Self & Node[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Node[?], T] (val x: Self & Node[T]) extends AnyVal {
     
     inline def setNode(value: HTMLInputElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object optionGroupUnstyledOptionGroupUnstyledDottypesMod {
       __obj.asInstanceOf[OptionGroupUnstyledOwnProps]
     }
     
-    extension [Self <: OptionGroupUnstyledOwnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionGroupUnstyledOwnProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
       

@@ -366,7 +366,8 @@ object stylesComponentsMod {
       __obj.asInstanceOf[Components[Theme]]
     }
     
-    extension [Self <: Components[?], Theme](x: Self & Components[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Components[?], Theme] (val x: Self & Components[Theme]) extends AnyVal {
       
       inline def setMuiAccordion(value: `69`[Theme]): Self = StObject.set(x, "MuiAccordion", value.asInstanceOf[js.Any])
       

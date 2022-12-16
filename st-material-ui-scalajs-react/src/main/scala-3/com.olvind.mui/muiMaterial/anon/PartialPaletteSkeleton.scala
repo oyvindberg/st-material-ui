@@ -16,7 +16,8 @@ object PartialPaletteSkeleton {
     __obj.asInstanceOf[PartialPaletteSkeleton]
   }
   
-  extension [Self <: PartialPaletteSkeleton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteSkeleton] (val x: Self) extends AnyVal {
     
     inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     

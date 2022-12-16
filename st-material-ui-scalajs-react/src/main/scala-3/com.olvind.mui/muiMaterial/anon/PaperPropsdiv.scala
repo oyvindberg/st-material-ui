@@ -447,7 +447,8 @@ object PaperPropsdiv {
     __obj.asInstanceOf[PaperPropsdiv]
   }
   
-  extension [Self <: PaperPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaperPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

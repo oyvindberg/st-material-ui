@@ -16,7 +16,8 @@ object PickComponentsPropsListMuiBreadcrumbsexp {
     __obj.asInstanceOf[PickComponentsPropsListMuiBreadcrumbsexp]
   }
   
-  extension [Self <: PickComponentsPropsListMuiBreadcrumbsexp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickComponentsPropsListMuiBreadcrumbsexp] (val x: Self) extends AnyVal {
     
     inline def setExpandText(value: String): Self = StObject.set(x, "expandText", value.asInstanceOf[js.Any])
     

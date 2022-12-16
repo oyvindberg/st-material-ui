@@ -38,7 +38,8 @@ object PartialSelectClasses {
     __obj.asInstanceOf[PartialSelectClasses]
   }
   
-  extension [Self <: PartialSelectClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSelectClasses] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

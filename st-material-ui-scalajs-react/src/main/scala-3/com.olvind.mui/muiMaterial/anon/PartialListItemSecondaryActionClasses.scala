@@ -18,7 +18,8 @@ object PartialListItemSecondaryActionClasses {
     __obj.asInstanceOf[PartialListItemSecondaryActionClasses]
   }
   
-  extension [Self <: PartialListItemSecondaryActionClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialListItemSecondaryActionClasses] (val x: Self) extends AnyVal {
     
     inline def setDisableGutters(value: String): Self = StObject.set(x, "disableGutters", value.asInstanceOf[js.Any])
     

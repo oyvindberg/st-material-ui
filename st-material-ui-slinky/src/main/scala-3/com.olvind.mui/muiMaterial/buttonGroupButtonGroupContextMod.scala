@@ -42,7 +42,8 @@ object buttonGroupButtonGroupContextMod extends Shortcut {
       __obj.asInstanceOf[IButtonGroupContext]
     }
     
-    extension [Self <: IButtonGroupContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IButtonGroupContext] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object OmitThemeVarsoverlaysshadowsshape {
     __obj.asInstanceOf[OmitThemeVarsoverlaysshadowsshape]
   }
   
-  extension [Self <: OmitThemeVarsoverlaysshadowsshape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitThemeVarsoverlaysshadowsshape] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: Opacity): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object CssVarsPalette {
     __obj.asInstanceOf[CssVarsPalette]
   }
   
-  extension [Self <: CssVarsPalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssVarsPalette] (val x: Self) extends AnyVal {
     
     inline def setAction(value: PaletteActionChannel): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

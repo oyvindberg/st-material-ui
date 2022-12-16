@@ -373,7 +373,8 @@ object stylesVariantsMod {
       __obj.asInstanceOf[ComponentsVariants]
     }
     
-    extension [Self <: ComponentsVariants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentsVariants] (val x: Self) extends AnyVal {
       
       inline def setMuiAccordion(value: js.Array[PropsPartialAccordionProps]): Self = StObject.set(x, "MuiAccordion", value.asInstanceOf[js.Any])
       

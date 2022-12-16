@@ -53,7 +53,8 @@ object sliderUnstyledSliderUnstyledDottypesMod {
       __obj.asInstanceOf[ExtendSliderUnstyledTypeMap[M]]
     }
     
-    extension [Self <: ExtendSliderUnstyledTypeMap[?], M /* <: OverridableTypeMap */](x: Self & ExtendSliderUnstyledTypeMap[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendSliderUnstyledTypeMap[?], M /* <: OverridableTypeMap */] (val x: Self & ExtendSliderUnstyledTypeMap[M]) extends AnyVal {
       
       inline def setDefaultComponent(
         value: /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any
@@ -639,7 +640,8 @@ object sliderUnstyledSliderUnstyledDottypesMod {
       __obj.asInstanceOf[SliderValueLabelProps]
     }
     
-    extension [Self <: SliderValueLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderValueLabelProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object Textarea {
     __obj.asInstanceOf[Textarea]
   }
   
-  extension [Self <: Textarea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Textarea] (val x: Self) extends AnyVal {
     
     inline def setInput(value: ReactElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

@@ -529,7 +529,8 @@ object ToggleButtonPropsToggleButtonTypeMapbutt {
     __obj.asInstanceOf[ToggleButtonPropsToggleButtonTypeMapbutt]
   }
   
-  extension [Self <: ToggleButtonPropsToggleButtonTypeMapbutt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToggleButtonPropsToggleButtonTypeMapbutt] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

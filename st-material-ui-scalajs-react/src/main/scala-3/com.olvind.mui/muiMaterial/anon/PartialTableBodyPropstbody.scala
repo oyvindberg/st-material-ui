@@ -416,7 +416,8 @@ object PartialTableBodyPropstbody {
     __obj.asInstanceOf[PartialTableBodyPropstbody]
   }
   
-  extension [Self <: PartialTableBodyPropstbody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTableBodyPropstbody] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

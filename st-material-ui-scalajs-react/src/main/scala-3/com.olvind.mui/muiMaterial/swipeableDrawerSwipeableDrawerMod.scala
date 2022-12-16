@@ -565,7 +565,8 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
       __obj.asInstanceOf[SwipeableDrawerProps]
     }
     
-    extension [Self <: SwipeableDrawerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeableDrawerProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

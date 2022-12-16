@@ -82,7 +82,8 @@ object DisplayedRows {
     __obj.asInstanceOf[DisplayedRows]
   }
   
-  extension [Self <: DisplayedRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayedRows] (val x: Self) extends AnyVal {
     
     inline def setActions(
       value: SlotComponentProps[

@@ -39,7 +39,8 @@ object stepperStepperClassesMod {
       __obj.asInstanceOf[StepperClasses]
     }
     
-    extension [Self <: StepperClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepperClasses] (val x: Self) extends AnyVal {
       
       inline def setAlternativeLabel(value: String): Self = StObject.set(x, "alternativeLabel", value.asInstanceOf[js.Any])
       

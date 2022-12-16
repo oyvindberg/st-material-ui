@@ -42,7 +42,8 @@ object portalPortalMod {
       __obj.asInstanceOf[PortalProps]
     }
     
-    extension [Self <: PortalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
       

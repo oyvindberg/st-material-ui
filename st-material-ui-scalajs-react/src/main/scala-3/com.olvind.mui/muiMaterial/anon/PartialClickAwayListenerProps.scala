@@ -30,7 +30,8 @@ object PartialClickAwayListenerProps {
     __obj.asInstanceOf[PartialClickAwayListenerProps]
   }
   
-  extension [Self <: PartialClickAwayListenerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClickAwayListenerProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
     

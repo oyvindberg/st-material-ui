@@ -152,7 +152,8 @@ object popperUnstyledPopperUnstyledMod extends Shortcut {
       __obj.asInstanceOf[PopperUnstyledOwnProps]
     }
     
-    extension [Self <: PopperUnstyledOwnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperUnstyledOwnProps] (val x: Self) extends AnyVal {
       
       inline def setAnchorEl(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualElement */ Any) | (js.Function0[
@@ -261,7 +262,8 @@ object popperUnstyledPopperUnstyledMod extends Shortcut {
       __obj.asInstanceOf[PopperUnstyledTypeMap[P, D]]
     }
     
-    extension [Self <: PopperUnstyledTypeMap[?, ?], P, D /* <: ElementType */](x: Self & (PopperUnstyledTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperUnstyledTypeMap[?, ?], P, D /* <: ElementType */] (val x: Self & (PopperUnstyledTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

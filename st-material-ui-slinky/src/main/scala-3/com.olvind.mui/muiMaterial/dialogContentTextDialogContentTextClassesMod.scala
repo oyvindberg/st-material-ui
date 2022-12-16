@@ -30,7 +30,8 @@ object dialogContentTextDialogContentTextClassesMod {
       __obj.asInstanceOf[DialogContentTextClasses]
     }
     
-    extension [Self <: DialogContentTextClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContentTextClasses] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

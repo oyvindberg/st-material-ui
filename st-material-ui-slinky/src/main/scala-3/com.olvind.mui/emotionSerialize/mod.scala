@@ -7741,7 +7741,8 @@ object mod {
       __obj.asInstanceOf[CSSPropertiesWithMultiValues]
     }
     
-    extension [Self <: CSSPropertiesWithMultiValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSPropertiesWithMultiValues] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(
         value: AccentColor | (js.Array[
@@ -22068,7 +22069,8 @@ object mod {
       __obj.asInstanceOf[CSSPseudos]
     }
     
-    extension [Self <: CSSPseudos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSPseudos] (val x: Self) extends AnyVal {
       
       inline def `setColon-khtml-any-link`(value: CSSObject): Self = StObject.set(x, ":-khtml-any-link", value.asInstanceOf[js.Any])
       
@@ -22583,7 +22585,8 @@ object mod {
       __obj.asInstanceOf[ComponentSelector]
     }
     
-    extension [Self <: ComponentSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentSelector] (val x: Self) extends AnyVal {
       
       inline def set__emotion_styles(value: Any): Self = StObject.set(x, "__emotion_styles", value.asInstanceOf[js.Any])
     }

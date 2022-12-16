@@ -23,7 +23,8 @@ object EndAdornment {
     __obj.asInstanceOf[EndAdornment]
   }
   
-  extension [Self <: EndAdornment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndAdornment] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

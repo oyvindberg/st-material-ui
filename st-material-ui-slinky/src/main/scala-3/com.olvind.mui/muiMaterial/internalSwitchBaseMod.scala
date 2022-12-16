@@ -541,7 +541,8 @@ object internalSwitchBaseMod extends Shortcut {
       __obj.asInstanceOf[SwitchBaseProps]
     }
     
-    extension [Self <: SwitchBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

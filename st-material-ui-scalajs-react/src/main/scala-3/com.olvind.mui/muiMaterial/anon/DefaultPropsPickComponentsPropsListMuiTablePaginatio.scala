@@ -15,7 +15,8 @@ object DefaultPropsPickComponentsPropsListMuiTablePaginatio {
     __obj.asInstanceOf[DefaultPropsPickComponentsPropsListMuiTablePaginatio]
   }
   
-  extension [Self <: DefaultPropsPickComponentsPropsListMuiTablePaginatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPropsPickComponentsPropsListMuiTablePaginatio] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: PickComponentsPropsListMuiTablePaginatio): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }

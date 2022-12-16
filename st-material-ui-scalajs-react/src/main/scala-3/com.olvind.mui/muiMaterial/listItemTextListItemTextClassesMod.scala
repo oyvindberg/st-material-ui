@@ -45,7 +45,8 @@ object listItemTextListItemTextClassesMod {
       __obj.asInstanceOf[ListItemTextClasses]
     }
     
-    extension [Self <: ListItemTextClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemTextClasses] (val x: Self) extends AnyVal {
       
       inline def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       

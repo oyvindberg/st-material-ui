@@ -23,7 +23,8 @@ object `150` {
     __obj.asInstanceOf[`150`[Theme]]
   }
   
-  extension [Self <: `150`[?], Theme](x: Self & `150`[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `150`[?], Theme] (val x: Self & `150`[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialTouchRippleProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

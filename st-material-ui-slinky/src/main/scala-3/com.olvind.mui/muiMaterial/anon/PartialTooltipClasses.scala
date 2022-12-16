@@ -38,7 +38,8 @@ object PartialTooltipClasses {
     __obj.asInstanceOf[PartialTooltipClasses]
   }
   
-  extension [Self <: PartialTooltipClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTooltipClasses] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: String): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Thumb {
     __obj.asInstanceOf[Thumb]
   }
   
-  extension [Self <: Thumb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Thumb] (val x: Self) extends AnyVal {
     
     inline def setInput(value: ElementType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

@@ -516,7 +516,8 @@ object DefaultComponentPropsBackdropTypeMapdiv {
     __obj.asInstanceOf[DefaultComponentPropsBackdropTypeMapdiv]
   }
   
-  extension [Self <: DefaultComponentPropsBackdropTypeMapdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsBackdropTypeMapdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

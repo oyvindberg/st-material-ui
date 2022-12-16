@@ -20,7 +20,8 @@ object IgnoredProps {
     __obj.asInstanceOf[IgnoredProps[P, D]]
   }
   
-  extension [Self <: IgnoredProps[?, ?], P, D /* <: ReactElement */](x: Self & (IgnoredProps[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoredProps[?, ?], P, D /* <: ReactElement */] (val x: Self & (IgnoredProps[P, D])) extends AnyVal {
     
     inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     

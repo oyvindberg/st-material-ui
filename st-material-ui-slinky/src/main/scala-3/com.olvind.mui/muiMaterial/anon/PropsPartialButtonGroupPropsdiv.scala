@@ -18,7 +18,8 @@ object PropsPartialButtonGroupPropsdiv {
     __obj.asInstanceOf[PropsPartialButtonGroupPropsdiv]
   }
   
-  extension [Self <: PropsPartialButtonGroupPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialButtonGroupPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialButtonGroupPropsdiv): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

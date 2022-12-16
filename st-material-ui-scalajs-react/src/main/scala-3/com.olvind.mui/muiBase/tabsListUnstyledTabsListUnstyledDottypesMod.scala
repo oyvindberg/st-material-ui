@@ -439,7 +439,8 @@ object tabsListUnstyledTabsListUnstyledDottypesMod {
       __obj.asInstanceOf[TabsListUnstyledOwnerState]
     }
     
-    extension [Self <: TabsListUnstyledOwnerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsListUnstyledOwnerState] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

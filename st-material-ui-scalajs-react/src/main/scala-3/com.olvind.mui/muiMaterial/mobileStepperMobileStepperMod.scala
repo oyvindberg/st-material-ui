@@ -476,7 +476,8 @@ object mobileStepperMobileStepperMod {
       __obj.asInstanceOf[MobileStepperProps]
     }
     
-    extension [Self <: MobileStepperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MobileStepperProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

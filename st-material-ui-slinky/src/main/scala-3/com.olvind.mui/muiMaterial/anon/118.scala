@@ -23,7 +23,8 @@ object `118` {
     __obj.asInstanceOf[`118`[Theme]]
   }
   
-  extension [Self <: `118`[?], Theme](x: Self & `118`[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `118`[?], Theme] (val x: Self & `118`[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialSliderPropsdefaultComponent): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

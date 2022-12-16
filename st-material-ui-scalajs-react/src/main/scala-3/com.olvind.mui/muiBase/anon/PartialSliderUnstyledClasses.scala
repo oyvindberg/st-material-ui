@@ -54,7 +54,8 @@ object PartialSliderUnstyledClasses {
     __obj.asInstanceOf[PartialSliderUnstyledClasses]
   }
   
-  extension [Self <: PartialSliderUnstyledClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSliderUnstyledClasses] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

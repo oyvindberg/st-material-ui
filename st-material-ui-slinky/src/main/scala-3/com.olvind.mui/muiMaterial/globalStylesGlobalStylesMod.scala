@@ -29,7 +29,8 @@ object globalStylesGlobalStylesMod {
       __obj.asInstanceOf[GlobalStylesProps]
     }
     
-    extension [Self <: GlobalStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalStylesProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: Interpolation[Theme]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

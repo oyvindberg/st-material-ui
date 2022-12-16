@@ -15,7 +15,8 @@ object PaletteBackgroundChannel {
     __obj.asInstanceOf[PaletteBackgroundChannel]
   }
   
-  extension [Self <: PaletteBackgroundChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteBackgroundChannel] (val x: Self) extends AnyVal {
     
     inline def setDefaultChannel(value: String): Self = StObject.set(x, "defaultChannel", value.asInstanceOf[js.Any])
   }

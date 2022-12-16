@@ -36,7 +36,8 @@ object useMediaQueryUseMediaQueryMod {
       __obj.asInstanceOf[MuiMediaQueryList]
     }
     
-    extension [Self <: MuiMediaQueryList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MuiMediaQueryList] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: MuiMediaQueryListListener => Callback): Self = StObject.set(x, "addListener", js.Any.fromFunction1((t0: MuiMediaQueryListListener) => value(t0).runNow()))
       
@@ -57,7 +58,8 @@ object useMediaQueryUseMediaQueryMod {
       __obj.asInstanceOf[MuiMediaQueryListEvent]
     }
     
-    extension [Self <: MuiMediaQueryListEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MuiMediaQueryListEvent] (val x: Self) extends AnyVal {
       
       inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     }
@@ -88,7 +90,8 @@ object useMediaQueryUseMediaQueryMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDefaultMatches(value: Boolean): Self = StObject.set(x, "defaultMatches", value.asInstanceOf[js.Any])
       

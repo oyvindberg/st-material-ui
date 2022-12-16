@@ -144,7 +144,8 @@ object listItemListItemMod extends Shortcut {
       __obj.asInstanceOf[ListItemBaseProps]
     }
     
-    extension [Self <: ListItemBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAlignItems(value: "flex-start" | "center"): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       
@@ -239,7 +240,8 @@ object listItemListItemMod extends Shortcut {
       __obj.asInstanceOf[ListItemTypeMap[P, D]]
     }
     
-    extension [Self <: ListItemTypeMap[?, ?], P, D /* <: ElementType */](x: Self & (ListItemTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemTypeMap[?, ?], P, D /* <: ElementType */] (val x: Self & (ListItemTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

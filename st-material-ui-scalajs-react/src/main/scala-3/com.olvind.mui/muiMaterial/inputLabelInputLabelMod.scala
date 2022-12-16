@@ -493,7 +493,8 @@ object inputLabelInputLabelMod {
       __obj.asInstanceOf[InputLabelProps]
     }
     
-    extension [Self <: InputLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputLabelProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

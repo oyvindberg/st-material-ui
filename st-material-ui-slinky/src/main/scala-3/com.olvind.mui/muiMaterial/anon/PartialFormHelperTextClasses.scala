@@ -30,7 +30,8 @@ object PartialFormHelperTextClasses {
     __obj.asInstanceOf[PartialFormHelperTextClasses]
   }
   
-  extension [Self <: PartialFormHelperTextClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFormHelperTextClasses] (val x: Self) extends AnyVal {
     
     inline def setContained(value: String): Self = StObject.set(x, "contained", value.asInstanceOf[js.Any])
     

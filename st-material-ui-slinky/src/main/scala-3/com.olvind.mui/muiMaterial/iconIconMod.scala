@@ -56,7 +56,8 @@ object iconIconMod {
       __obj.asInstanceOf[IconTypeMap[P, D]]
     }
     
-    extension [Self <: IconTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (IconTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (IconTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

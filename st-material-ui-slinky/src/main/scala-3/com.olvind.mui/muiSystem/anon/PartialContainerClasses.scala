@@ -30,7 +30,8 @@ object PartialContainerClasses {
     __obj.asInstanceOf[PartialContainerClasses]
   }
   
-  extension [Self <: PartialContainerClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialContainerClasses] (val x: Self) extends AnyVal {
     
     inline def setDisableGutters(value: String): Self = StObject.set(x, "disableGutters", value.asInstanceOf[js.Any])
     

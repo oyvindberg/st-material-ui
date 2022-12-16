@@ -68,7 +68,8 @@ object skeletonSkeletonClassesMod {
       __obj.asInstanceOf[SkeletonClasses]
     }
     
-    extension [Self <: SkeletonClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonClasses] (val x: Self) extends AnyVal {
       
       inline def setCircular(value: String): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       

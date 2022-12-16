@@ -494,7 +494,8 @@ object DefaultComponentPropsExtendButtonBaseTypAriabusy {
     __obj.asInstanceOf[DefaultComponentPropsExtendButtonBaseTypAriabusy]
   }
   
-  extension [Self <: DefaultComponentPropsExtendButtonBaseTypAriabusy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsExtendButtonBaseTypAriabusy] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

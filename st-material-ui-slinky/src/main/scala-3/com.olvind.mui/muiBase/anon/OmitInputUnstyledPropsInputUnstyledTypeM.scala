@@ -451,7 +451,8 @@ object OmitInputUnstyledPropsInputUnstyledTypeM {
     __obj.asInstanceOf[OmitInputUnstyledPropsInputUnstyledTypeM]
   }
   
-  extension [Self <: OmitInputUnstyledPropsInputUnstyledTypeM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitInputUnstyledPropsInputUnstyledTypeM] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

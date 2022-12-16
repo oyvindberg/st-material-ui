@@ -51,7 +51,8 @@ object OmitButtonBaseTypeMapbuttonpropsclasses {
     __obj.asInstanceOf[OmitButtonBaseTypeMapbuttonpropsclasses]
   }
   
-  extension [Self <: OmitButtonBaseTypeMapbuttonpropsclasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitButtonBaseTypeMapbuttonpropsclasses] (val x: Self) extends AnyVal {
     
     inline def setAction(value: com.olvind.mui.react.mod.Ref[ButtonBaseActions]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

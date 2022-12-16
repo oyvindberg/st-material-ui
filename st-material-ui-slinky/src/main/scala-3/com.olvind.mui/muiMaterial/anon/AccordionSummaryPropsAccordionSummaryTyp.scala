@@ -456,7 +456,8 @@ object AccordionSummaryPropsAccordionSummaryTyp {
     __obj.asInstanceOf[AccordionSummaryPropsAccordionSummaryTyp]
   }
   
-  extension [Self <: AccordionSummaryPropsAccordionSummaryTyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccordionSummaryPropsAccordionSummaryTyp] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

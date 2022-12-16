@@ -18,7 +18,8 @@ object PropsPartialToggleButtonPropsdefaultComponent {
     __obj.asInstanceOf[PropsPartialToggleButtonPropsdefaultComponent]
   }
   
-  extension [Self <: PropsPartialToggleButtonPropsdefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialToggleButtonPropsdefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialToggleButtonPropsdefaultComponent): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

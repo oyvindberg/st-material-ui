@@ -52,7 +52,8 @@ object DisableGutters {
     __obj.asInstanceOf[DisableGutters]
   }
   
-  extension [Self <: DisableGutters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableGutters] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object Direction {
     __obj.asInstanceOf[Direction]
   }
   
-  extension [Self <: Direction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

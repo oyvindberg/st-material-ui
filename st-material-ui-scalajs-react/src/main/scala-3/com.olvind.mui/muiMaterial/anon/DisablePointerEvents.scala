@@ -60,7 +60,8 @@ object DisablePointerEvents {
     __obj.asInstanceOf[DisablePointerEvents]
   }
   
-  extension [Self <: DisablePointerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisablePointerEvents] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
     

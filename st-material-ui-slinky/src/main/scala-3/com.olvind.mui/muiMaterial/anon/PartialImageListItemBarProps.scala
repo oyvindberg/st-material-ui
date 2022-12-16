@@ -419,7 +419,8 @@ object PartialImageListItemBarProps {
     __obj.asInstanceOf[PartialImageListItemBarProps]
   }
   
-  extension [Self <: PartialImageListItemBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialImageListItemBarProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

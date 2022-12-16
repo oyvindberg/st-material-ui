@@ -30,7 +30,8 @@ object ClickAwayListener {
     __obj.asInstanceOf[ClickAwayListener]
   }
   
-  extension [Self <: ClickAwayListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickAwayListener] (val x: Self) extends AnyVal {
     
     inline def setClickAwayListener(
       value: SlotComponentProps[

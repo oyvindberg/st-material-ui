@@ -18,7 +18,8 @@ object PropsPartialIconPropsspan {
     __obj.asInstanceOf[PropsPartialIconPropsspan]
   }
   
-  extension [Self <: PropsPartialIconPropsspan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialIconPropsspan] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialIconPropsspan): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

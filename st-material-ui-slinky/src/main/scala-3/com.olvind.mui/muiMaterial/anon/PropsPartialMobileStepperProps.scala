@@ -18,7 +18,8 @@ object PropsPartialMobileStepperProps {
     __obj.asInstanceOf[PropsPartialMobileStepperProps]
   }
   
-  extension [Self <: PropsPartialMobileStepperProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialMobileStepperProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialMobileStepperProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object PartialDividerClasses {
     __obj.asInstanceOf[PartialDividerClasses]
   }
   
-  extension [Self <: PartialDividerClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDividerClasses] (val x: Self) extends AnyVal {
     
     inline def setAbsolute(value: String): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     

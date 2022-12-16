@@ -18,7 +18,8 @@ object PropsPartialSliderPropsdefaultComponent {
     __obj.asInstanceOf[PropsPartialSliderPropsdefaultComponent]
   }
   
-  extension [Self <: PropsPartialSliderPropsdefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialSliderPropsdefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialSliderPropsdefaultComponent): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

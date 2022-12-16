@@ -41,7 +41,8 @@ object listSubheaderListSubheaderMod extends Shortcut {
       __obj.asInstanceOf[ListSubheaderTypeMap[P, D]]
     }
     
-    extension [Self <: ListSubheaderTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (ListSubheaderTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSubheaderTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (ListSubheaderTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

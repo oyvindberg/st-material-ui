@@ -40,7 +40,8 @@ object PartialTabsClasses {
     __obj.asInstanceOf[PartialTabsClasses]
   }
   
-  extension [Self <: PartialTabsClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTabsClasses] (val x: Self) extends AnyVal {
     
     inline def setCentered(value: String): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
     

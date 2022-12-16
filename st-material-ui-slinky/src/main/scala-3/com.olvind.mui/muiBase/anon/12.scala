@@ -22,7 +22,8 @@ object `12` {
     __obj.asInstanceOf[`12`]
   }
   
-  extension [Self <: `12`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `12`] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: SlotComponentProps["div", TabUnstyledComponentsPropsOverrides, TabUnstyledOwnerState]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

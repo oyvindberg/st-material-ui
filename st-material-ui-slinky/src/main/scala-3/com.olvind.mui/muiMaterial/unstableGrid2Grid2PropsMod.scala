@@ -29,7 +29,8 @@ object unstableGrid2Grid2PropsMod {
       __obj.asInstanceOf[Grid2TypeMap[P, D]]
     }
     
-    extension [Self <: Grid2TypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (Grid2TypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grid2TypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (Grid2TypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

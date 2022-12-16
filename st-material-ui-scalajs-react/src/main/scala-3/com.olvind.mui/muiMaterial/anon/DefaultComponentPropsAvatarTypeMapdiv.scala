@@ -466,7 +466,8 @@ object DefaultComponentPropsAvatarTypeMapdiv {
     __obj.asInstanceOf[DefaultComponentPropsAvatarTypeMapdiv]
   }
   
-  extension [Self <: DefaultComponentPropsAvatarTypeMapdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsAvatarTypeMapdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

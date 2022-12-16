@@ -220,7 +220,8 @@ object SliderUnstyledTypeMapspanprops {
     __obj.asInstanceOf[SliderUnstyledTypeMapspanprops]
   }
   
-  extension [Self <: SliderUnstyledTypeMapspanprops](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderUnstyledTypeMapspanprops] (val x: Self) extends AnyVal {
     
     inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     

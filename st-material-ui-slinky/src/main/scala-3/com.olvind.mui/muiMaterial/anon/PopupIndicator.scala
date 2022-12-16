@@ -21,7 +21,8 @@ object PopupIndicator {
     __obj.asInstanceOf[PopupIndicator]
   }
   
-  extension [Self <: PopupIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupIndicator] (val x: Self) extends AnyVal {
     
     inline def setClearIndicator(value: PartialIconButtonPropsdefaultComponent): Self = StObject.set(x, "clearIndicator", value.asInstanceOf[js.Any])
     

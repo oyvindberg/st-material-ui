@@ -47,7 +47,8 @@ object buttonGroupButtonGroupMod extends Shortcut {
       __obj.asInstanceOf[ButtonGroupTypeMap[P, D]]
     }
     
-    extension [Self <: ButtonGroupTypeMap[?, ?], P, D /* <: ElementType */](x: Self & (ButtonGroupTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupTypeMap[?, ?], P, D /* <: ElementType */] (val x: Self & (ButtonGroupTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

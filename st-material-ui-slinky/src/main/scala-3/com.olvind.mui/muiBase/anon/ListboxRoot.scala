@@ -18,7 +18,8 @@ object ListboxRoot {
     __obj.asInstanceOf[ListboxRoot]
   }
   
-  extension [Self <: ListboxRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListboxRoot] (val x: Self) extends AnyVal {
     
     inline def setListbox(value: ReactElement): Self = StObject.set(x, "listbox", value.asInstanceOf[js.Any])
     

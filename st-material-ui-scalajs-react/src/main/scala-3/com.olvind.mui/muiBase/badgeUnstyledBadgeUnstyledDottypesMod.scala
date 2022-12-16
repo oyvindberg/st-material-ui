@@ -460,7 +460,8 @@ object badgeUnstyledBadgeUnstyledDottypesMod {
       __obj.asInstanceOf[BadgeUnstyledOwnerState]
     }
     
-    extension [Self <: BadgeUnstyledOwnerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeUnstyledOwnerState] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1238,7 +1239,8 @@ object badgeUnstyledBadgeUnstyledDottypesMod {
       __obj.asInstanceOf[ExtendBadgeUnstyledTypeMap[M]]
     }
     
-    extension [Self <: ExtendBadgeUnstyledTypeMap[?], M /* <: OverridableTypeMap */](x: Self & ExtendBadgeUnstyledTypeMap[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendBadgeUnstyledTypeMap[?], M /* <: OverridableTypeMap */] (val x: Self & ExtendBadgeUnstyledTypeMap[M]) extends AnyVal {
       
       inline def setDefaultComponent(
         value: /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any

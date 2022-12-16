@@ -452,7 +452,8 @@ object DefaultComponentPropsAppBarTypeMapheader {
     __obj.asInstanceOf[DefaultComponentPropsAppBarTypeMapheader]
   }
   
-  extension [Self <: DefaultComponentPropsAppBarTypeMapheader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsAppBarTypeMapheader] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

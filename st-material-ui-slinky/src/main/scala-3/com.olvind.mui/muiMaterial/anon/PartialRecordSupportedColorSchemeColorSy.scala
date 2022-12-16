@@ -19,7 +19,8 @@ object PartialRecordSupportedColorSchemeColorSy {
     __obj.asInstanceOf[PartialRecordSupportedColorSchemeColorSy]
   }
   
-  extension [Self <: PartialRecordSupportedColorSchemeColorSy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordSupportedColorSchemeColorSy] (val x: Self) extends AnyVal {
     
     inline def setDark(value: ColorSystemOptions): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

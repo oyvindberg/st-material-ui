@@ -29,7 +29,8 @@ object PickComponentsPropsListMuiAutocompletecl {
     __obj.asInstanceOf[PickComponentsPropsListMuiAutocompletecl]
   }
   
-  extension [Self <: PickComponentsPropsListMuiAutocompletecl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickComponentsPropsListMuiAutocompletecl] (val x: Self) extends AnyVal {
     
     inline def setClearText(value: String): Self = StObject.set(x, "clearText", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PropsPartialSpeedDialActionProps {
     __obj.asInstanceOf[PropsPartialSpeedDialActionProps]
   }
   
-  extension [Self <: PropsPartialSpeedDialActionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialSpeedDialActionProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialSpeedDialActionProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

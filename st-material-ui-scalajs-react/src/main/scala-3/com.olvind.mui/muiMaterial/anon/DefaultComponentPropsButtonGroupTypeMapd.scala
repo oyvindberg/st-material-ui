@@ -486,7 +486,8 @@ object DefaultComponentPropsButtonGroupTypeMapd {
     __obj.asInstanceOf[DefaultComponentPropsButtonGroupTypeMapd]
   }
   
-  extension [Self <: DefaultComponentPropsButtonGroupTypeMapd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsButtonGroupTypeMapd] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

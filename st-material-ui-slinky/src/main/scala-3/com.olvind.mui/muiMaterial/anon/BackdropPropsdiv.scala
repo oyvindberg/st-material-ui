@@ -513,7 +513,8 @@ object BackdropPropsdiv {
     __obj.asInstanceOf[BackdropPropsdiv]
   }
   
-  extension [Self <: BackdropPropsdiv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackdropPropsdiv] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

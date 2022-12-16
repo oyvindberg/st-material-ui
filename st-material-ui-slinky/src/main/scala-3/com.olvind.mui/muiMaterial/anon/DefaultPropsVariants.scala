@@ -17,7 +17,8 @@ object DefaultPropsVariants {
     __obj.asInstanceOf[DefaultPropsVariants]
   }
   
-  extension [Self <: DefaultPropsVariants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPropsVariants] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: PartialStackPropsdiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

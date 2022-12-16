@@ -57,7 +57,8 @@ object transitionsTransitionMod {
       __obj.asInstanceOf[EasingProps]
     }
     
-    extension [Self <: EasingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EasingProps] (val x: Self) extends AnyVal {
       
       inline def setEasing(value: String | Enter): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     }
@@ -101,7 +102,8 @@ object transitionsTransitionMod {
       __obj.asInstanceOf[TransitionHandlerProps]
     }
     
-    extension [Self <: TransitionHandlerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionHandlerProps] (val x: Self) extends AnyVal {
       
       inline def setOnEnter(value: Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
@@ -733,7 +735,8 @@ object transitionsTransitionMod {
       __obj.asInstanceOf[TransitionProps]
     }
     
-    extension [Self <: TransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

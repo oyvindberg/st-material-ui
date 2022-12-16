@@ -18,7 +18,8 @@ object PartialListItemAvatarClasses {
     __obj.asInstanceOf[PartialListItemAvatarClasses]
   }
   
-  extension [Self <: PartialListItemAvatarClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialListItemAvatarClasses] (val x: Self) extends AnyVal {
     
     inline def setAlignItemsFlexStart(value: String): Self = StObject.set(x, "alignItemsFlexStart", value.asInstanceOf[js.Any])
     

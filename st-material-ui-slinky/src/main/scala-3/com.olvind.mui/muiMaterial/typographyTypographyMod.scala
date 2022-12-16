@@ -46,7 +46,8 @@ object typographyTypographyMod extends Shortcut {
       __obj.asInstanceOf[TypographyTypeMap[P, D]]
     }
     
-    extension [Self <: TypographyTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (TypographyTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypographyTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (TypographyTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

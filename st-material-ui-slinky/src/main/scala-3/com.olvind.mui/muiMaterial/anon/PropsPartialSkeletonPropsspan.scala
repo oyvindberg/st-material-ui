@@ -18,7 +18,8 @@ object PropsPartialSkeletonPropsspan {
     __obj.asInstanceOf[PropsPartialSkeletonPropsspan]
   }
   
-  extension [Self <: PropsPartialSkeletonPropsspan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialSkeletonPropsspan] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialSkeletonPropsspan): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object PartialImageListItemBarClasses {
     __obj.asInstanceOf[PartialImageListItemBarClasses]
   }
   
-  extension [Self <: PartialImageListItemBarClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialImageListItemBarClasses] (val x: Self) extends AnyVal {
     
     inline def setActionIcon(value: String): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
     

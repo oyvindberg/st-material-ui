@@ -31,7 +31,8 @@ object Raised {
     __obj.asInstanceOf[Raised]
   }
   
-  extension [Self <: Raised](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Raised] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: PartialCardClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

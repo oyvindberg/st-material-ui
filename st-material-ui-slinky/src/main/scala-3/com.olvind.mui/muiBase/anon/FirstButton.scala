@@ -58,7 +58,8 @@ object FirstButton {
     __obj.asInstanceOf[FirstButton]
   }
   
-  extension [Self <: FirstButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstButton] (val x: Self) extends AnyVal {
     
     inline def setBackButton(
       value: SlotComponentProps[

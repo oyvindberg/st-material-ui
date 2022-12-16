@@ -116,7 +116,8 @@ object typographyTypographyClassesMod {
       __obj.asInstanceOf[TypographyClasses]
     }
     
-    extension [Self <: TypographyClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypographyClasses] (val x: Self) extends AnyVal {
       
       inline def setAlignCenter(value: String): Self = StObject.set(x, "alignCenter", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object StyleOverridesVariants {
     __obj.asInstanceOf[StyleOverridesVariants[Theme]]
   }
   
-  extension [Self <: StyleOverridesVariants[?], Theme](x: Self & StyleOverridesVariants[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleOverridesVariants[?], Theme] (val x: Self & StyleOverridesVariants[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialAutocompletePropsanyanyanyanydiv): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

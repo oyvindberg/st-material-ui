@@ -23,7 +23,8 @@ object DefaultPropsStyleOverrides {
     __obj.asInstanceOf[DefaultPropsStyleOverrides[Theme]]
   }
   
-  extension [Self <: DefaultPropsStyleOverrides[?], Theme](x: Self & DefaultPropsStyleOverrides[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPropsStyleOverrides[?], Theme] (val x: Self & DefaultPropsStyleOverrides[Theme]) extends AnyVal {
     
     inline def setDefaultProps(value: PartialAppBarPropsheader): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

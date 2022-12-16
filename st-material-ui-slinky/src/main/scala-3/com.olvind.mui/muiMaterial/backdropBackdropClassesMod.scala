@@ -33,7 +33,8 @@ object backdropBackdropClassesMod {
       __obj.asInstanceOf[BackdropClasses]
     }
     
-    extension [Self <: BackdropClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackdropClasses] (val x: Self) extends AnyVal {
       
       inline def setInvisible(value: String): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
       

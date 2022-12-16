@@ -76,7 +76,8 @@ object tooltipTooltipClassesMod {
       __obj.asInstanceOf[TooltipClasses]
     }
     
-    extension [Self <: TooltipClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipClasses] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: String): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       

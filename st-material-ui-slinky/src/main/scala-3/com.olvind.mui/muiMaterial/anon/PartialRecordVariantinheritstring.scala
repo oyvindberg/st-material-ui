@@ -42,7 +42,8 @@ object PartialRecordVariantinheritstring {
     __obj.asInstanceOf[PartialRecordVariantinheritstring]
   }
   
-  extension [Self <: PartialRecordVariantinheritstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordVariantinheritstring] (val x: Self) extends AnyVal {
     
     inline def setBody1(value: String): Self = StObject.set(x, "body1", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object useTouchRippleUseTouchRippleMod {
       __obj.asInstanceOf[RippleEventHandlers]
     }
     
-    extension [Self <: RippleEventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleEventHandlers] (val x: Self) extends AnyVal {
       
       inline def setOnBlur(value: ReactFocusEventFrom[Element & Element] => Callback): Self = StObject.set(x, "onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[Element & Element]) => value(t0).runNow()))
       
@@ -117,7 +118,8 @@ object useTouchRippleUseTouchRippleMod {
       __obj.asInstanceOf[UseTouchRippleProps]
     }
     
-    extension [Self <: UseTouchRippleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseTouchRippleProps] (val x: Self) extends AnyVal {
       
       inline def setDisableFocusRipple(value: Boolean): Self = StObject.set(x, "disableFocusRipple", value.asInstanceOf[js.Any])
       

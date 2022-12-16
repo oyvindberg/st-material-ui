@@ -47,7 +47,8 @@ object ScrollbarColor {
     __obj.asInstanceOf[ScrollbarColor]
   }
   
-  extension [Self <: ScrollbarColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollbarColor] (val x: Self) extends AnyVal {
     
     inline def `setAmpersandColonColon-webkit-scrollbar-cornerComma Ampersand AsteriskColonColon-webkit-scrollbar-corner`(value: BackgroundColor): Self = StObject.set(x, "&::-webkit-scrollbar-corner, & *::-webkit-scrollbar-corner", value.asInstanceOf[js.Any])
     

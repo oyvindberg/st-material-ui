@@ -20,7 +20,8 @@ object PartialPaletteFilledInput {
     __obj.asInstanceOf[PartialPaletteFilledInput]
   }
   
-  extension [Self <: PartialPaletteFilledInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteFilledInput] (val x: Self) extends AnyVal {
     
     inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     

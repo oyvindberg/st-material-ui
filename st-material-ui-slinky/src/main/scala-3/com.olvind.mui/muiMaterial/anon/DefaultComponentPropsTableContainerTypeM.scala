@@ -429,7 +429,8 @@ object DefaultComponentPropsTableContainerTypeM {
     __obj.asInstanceOf[DefaultComponentPropsTableContainerTypeM]
   }
   
-  extension [Self <: DefaultComponentPropsTableContainerTypeM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsTableContainerTypeM] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DefaultComponent {
     __obj.asInstanceOf[DefaultComponent[P, D]]
   }
   
-  extension [Self <: DefaultComponent[?, ?], P, D /* <: ReactElement */](x: Self & (DefaultComponent[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponent[?, ?], P, D /* <: ReactElement */] (val x: Self & (DefaultComponent[P, D])) extends AnyVal {
     
     inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
     

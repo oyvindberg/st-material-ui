@@ -19,7 +19,8 @@ object PickComponentsPropsListMuiRatingemptyLab {
     __obj.asInstanceOf[PickComponentsPropsListMuiRatingemptyLab]
   }
   
-  extension [Self <: PickComponentsPropsListMuiRatingemptyLab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickComponentsPropsListMuiRatingemptyLab] (val x: Self) extends AnyVal {
     
     inline def setEmptyLabelText(value: ReactElement): Self = StObject.set(x, "emptyLabelText", value.asInstanceOf[js.Any])
     

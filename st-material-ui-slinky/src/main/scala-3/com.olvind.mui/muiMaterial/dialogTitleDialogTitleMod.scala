@@ -42,7 +42,8 @@ object dialogTitleDialogTitleMod extends Shortcut {
       __obj.asInstanceOf[DialogTitleTypeMap[P, D]]
     }
     
-    extension [Self <: DialogTitleTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (DialogTitleTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogTitleTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (DialogTitleTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object PickFormControlUnstyledPropsFormControlU {
     __obj.asInstanceOf[PickFormControlUnstyledPropsFormControlU]
   }
   
-  extension [Self <: PickFormControlUnstyledPropsFormControlU](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickFormControlUnstyledPropsFormControlU] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

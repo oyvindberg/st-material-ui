@@ -65,7 +65,8 @@ object modalUnstyledModalUnstyledDottypesMod {
       __obj.asInstanceOf[ExtendModalUnstyledTypeMap[M]]
     }
     
-    extension [Self <: ExtendModalUnstyledTypeMap[?], M /* <: OverridableTypeMap */](x: Self & ExtendModalUnstyledTypeMap[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendModalUnstyledTypeMap[?], M /* <: OverridableTypeMap */] (val x: Self & ExtendModalUnstyledTypeMap[M]) extends AnyVal {
       
       inline def setDefaultComponent(
         value: /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any
@@ -566,7 +567,8 @@ object modalUnstyledModalUnstyledDottypesMod {
       __obj.asInstanceOf[ModalUnstyledOwnerState]
     }
     
-    extension [Self <: ModalUnstyledOwnerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalUnstyledOwnerState] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

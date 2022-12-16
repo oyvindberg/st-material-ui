@@ -17,7 +17,8 @@ object debounceMod {
       __obj.asInstanceOf[Cancelable]
     }
     
-    extension [Self <: Cancelable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancelable] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }

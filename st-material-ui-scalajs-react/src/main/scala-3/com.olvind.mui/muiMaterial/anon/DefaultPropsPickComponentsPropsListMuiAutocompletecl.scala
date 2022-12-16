@@ -15,7 +15,8 @@ object DefaultPropsPickComponentsPropsListMuiAutocompletecl {
     __obj.asInstanceOf[DefaultPropsPickComponentsPropsListMuiAutocompletecl]
   }
   
-  extension [Self <: DefaultPropsPickComponentsPropsListMuiAutocompletecl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPropsPickComponentsPropsListMuiAutocompletecl] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: PickComponentsPropsListMuiAutocompletecl): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }

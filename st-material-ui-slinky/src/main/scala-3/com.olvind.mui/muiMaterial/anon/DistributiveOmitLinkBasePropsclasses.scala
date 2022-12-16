@@ -1582,7 +1582,8 @@ object DistributiveOmitLinkBasePropsclasses {
     __obj.asInstanceOf[DistributiveOmitLinkBasePropsclasses]
   }
   
-  extension [Self <: DistributiveOmitLinkBasePropsclasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributiveOmitLinkBasePropsclasses] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

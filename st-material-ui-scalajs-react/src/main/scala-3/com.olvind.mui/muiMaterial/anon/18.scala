@@ -16,7 +16,8 @@ object `18` {
     __obj.asInstanceOf[`18`[PrimaryTypographyComponent]]
   }
   
-  extension [Self <: `18`[?], PrimaryTypographyComponent /* <: ElementType */](x: Self & `18`[PrimaryTypographyComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `18`[?], PrimaryTypographyComponent /* <: ElementType */] (val x: Self & `18`[PrimaryTypographyComponent]) extends AnyVal {
     
     inline def setComponent(value: PrimaryTypographyComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[EmotionCache]
     }
     
-    extension [Self <: EmotionCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmotionCache] (val x: Self) extends AnyVal {
       
       inline def setCompat(value: true): Self = StObject.set(x, "compat", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[SerializedStyles]
     }
     
-    extension [Self <: SerializedStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedStyles] (val x: Self) extends AnyVal {
       
       inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[StyleSheet]
     }
     
-    extension [Self <: StyleSheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleSheet] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

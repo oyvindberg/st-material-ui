@@ -578,7 +578,8 @@ object ModalPropsModalTypeMapdivdefaultComponenAbout {
     __obj.asInstanceOf[ModalPropsModalTypeMapdivdefaultComponenAbout]
   }
   
-  extension [Self <: ModalPropsModalTypeMapdivdefaultComponenAbout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalPropsModalTypeMapdivdefaultComponenAbout] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

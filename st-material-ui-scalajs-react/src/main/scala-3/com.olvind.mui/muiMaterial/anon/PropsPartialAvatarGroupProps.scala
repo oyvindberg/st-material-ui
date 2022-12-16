@@ -18,7 +18,8 @@ object PropsPartialAvatarGroupProps {
     __obj.asInstanceOf[PropsPartialAvatarGroupProps]
   }
   
-  extension [Self <: PropsPartialAvatarGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialAvatarGroupProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialAvatarGroupProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

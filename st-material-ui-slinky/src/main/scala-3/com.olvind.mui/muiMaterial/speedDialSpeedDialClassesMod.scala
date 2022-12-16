@@ -60,7 +60,8 @@ object speedDialSpeedDialClassesMod {
       __obj.asInstanceOf[SpeedDialClasses]
     }
     
-    extension [Self <: SpeedDialClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeedDialClasses] (val x: Self) extends AnyVal {
       
       inline def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

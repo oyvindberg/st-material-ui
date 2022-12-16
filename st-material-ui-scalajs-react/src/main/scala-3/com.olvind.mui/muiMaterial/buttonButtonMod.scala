@@ -67,7 +67,8 @@ object buttonButtonMod extends Shortcut {
       __obj.asInstanceOf[ExtendButtonTypeMap[M]]
     }
     
-    extension [Self <: ExtendButtonTypeMap[?], M /* <: OverridableTypeMap */](x: Self & ExtendButtonTypeMap[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendButtonTypeMap[?], M /* <: OverridableTypeMap */] (val x: Self & ExtendButtonTypeMap[M]) extends AnyVal {
       
       inline def setDefaultComponent(
         value: /* import warning: importer.ImportType#apply Failed type conversion: M['defaultComponent'] */ js.Any

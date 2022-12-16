@@ -417,7 +417,8 @@ object PartialTabScrollButtonProps {
     __obj.asInstanceOf[PartialTabScrollButtonProps]
   }
   
-  extension [Self <: PartialTabScrollButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTabScrollButtonProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

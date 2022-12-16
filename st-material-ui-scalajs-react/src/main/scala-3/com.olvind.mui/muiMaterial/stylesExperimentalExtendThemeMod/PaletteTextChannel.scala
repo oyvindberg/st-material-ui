@@ -17,7 +17,8 @@ object PaletteTextChannel {
     __obj.asInstanceOf[PaletteTextChannel]
   }
   
-  extension [Self <: PaletteTextChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteTextChannel] (val x: Self) extends AnyVal {
     
     inline def setPrimaryChannel(value: String): Self = StObject.set(x, "primaryChannel", value.asInstanceOf[js.Any])
     

@@ -478,7 +478,8 @@ object PartialButtonPropsdefaultComponent {
     __obj.asInstanceOf[PartialButtonPropsdefaultComponent]
   }
   
-  extension [Self <: PartialButtonPropsdefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialButtonPropsdefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PartialPaletteColorChannel {
     __obj.asInstanceOf[PartialPaletteColorChannel]
   }
   
-  extension [Self <: PartialPaletteColorChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaletteColorChannel] (val x: Self) extends AnyVal {
     
     inline def setContrastTextChannel(value: String): Self = StObject.set(x, "contrastTextChannel", value.asInstanceOf[js.Any])
     

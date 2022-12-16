@@ -422,7 +422,8 @@ object PartialImageListPropsul {
     __obj.asInstanceOf[PartialImageListPropsul]
   }
   
-  extension [Self <: PartialImageListPropsul](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialImageListPropsul] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object optionUnstyledOptionUnstyledDottypesMod {
       __obj.asInstanceOf[OptionUnstyledOwnProps[TValue]]
     }
     
-    extension [Self <: OptionUnstyledOwnProps[?], TValue](x: Self & OptionUnstyledOwnProps[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionUnstyledOwnProps[?], TValue] (val x: Self & OptionUnstyledOwnProps[TValue]) extends AnyVal {
       
       inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object optionUnstyledOptionUnstyledDottypesMod {
       __obj.asInstanceOf[OptionUnstyledTypeMap[TValue, P, D]]
     }
     
-    extension [Self <: OptionUnstyledTypeMap[?, ?, ?], TValue, P, D /* <: ElementType */](x: Self & (OptionUnstyledTypeMap[TValue, P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionUnstyledTypeMap[?, ?, ?], TValue, P, D /* <: ElementType */] (val x: Self & (OptionUnstyledTypeMap[TValue, P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

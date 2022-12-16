@@ -64,7 +64,8 @@ object iconIconClassesMod {
       __obj.asInstanceOf[IconClasses]
     }
     
-    extension [Self <: IconClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconClasses] (val x: Self) extends AnyVal {
       
       inline def setColorAction(value: String): Self = StObject.set(x, "colorAction", value.asInstanceOf[js.Any])
       

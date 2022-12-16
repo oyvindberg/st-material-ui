@@ -18,7 +18,8 @@ object PropsPartialRadioProps {
     __obj.asInstanceOf[PropsPartialRadioProps]
   }
   
-  extension [Self <: PropsPartialRadioProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialRadioProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialRadioProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

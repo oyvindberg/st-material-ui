@@ -429,7 +429,8 @@ object DefaultComponentPropsTableHeadTypeMapthe {
     __obj.asInstanceOf[DefaultComponentPropsTableHeadTypeMapthe]
   }
   
-  extension [Self <: DefaultComponentPropsTableHeadTypeMapthe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsTableHeadTypeMapthe] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

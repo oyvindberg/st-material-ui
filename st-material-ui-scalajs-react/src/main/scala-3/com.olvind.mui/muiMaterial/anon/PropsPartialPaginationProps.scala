@@ -18,7 +18,8 @@ object PropsPartialPaginationProps {
     __obj.asInstanceOf[PropsPartialPaginationProps]
   }
   
-  extension [Self <: PropsPartialPaginationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialPaginationProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialPaginationProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

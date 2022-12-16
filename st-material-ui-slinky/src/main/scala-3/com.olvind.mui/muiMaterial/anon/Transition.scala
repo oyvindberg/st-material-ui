@@ -32,7 +32,8 @@ object Transition {
     __obj.asInstanceOf[Transition]
   }
   
-  extension [Self <: Transition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
     
     inline def setArrow(
       value: HTMLProps[HTMLSpanElement] & MUIStyledCommonProps[com.olvind.mui.muiSystem.createThemeCreateThemeMod.Theme] & TooltipComponentsPropsOverrides

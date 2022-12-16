@@ -17,7 +17,8 @@ object EventListenerObject {
     __obj.asInstanceOf[EventListenerObject]
   }
   
-  extension [Self <: EventListenerObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventListenerObject] (val x: Self) extends AnyVal {
     
     inline def setHandleEvent(value: org.scalajs.dom.Event => Callback): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1((t0: org.scalajs.dom.Event) => value(t0).runNow()))
   }

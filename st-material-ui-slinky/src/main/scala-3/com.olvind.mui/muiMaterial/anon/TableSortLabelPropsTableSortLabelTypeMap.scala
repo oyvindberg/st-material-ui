@@ -476,7 +476,8 @@ object TableSortLabelPropsTableSortLabelTypeMap {
     __obj.asInstanceOf[TableSortLabelPropsTableSortLabelTypeMap]
   }
   
-  extension [Self <: TableSortLabelPropsTableSortLabelTypeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSortLabelPropsTableSortLabelTypeMap] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

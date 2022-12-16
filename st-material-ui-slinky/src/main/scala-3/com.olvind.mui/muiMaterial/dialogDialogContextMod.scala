@@ -23,7 +23,8 @@ object dialogDialogContextMod extends Shortcut {
       __obj.asInstanceOf[DialogContextValue]
     }
     
-    extension [Self <: DialogContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContextValue] (val x: Self) extends AnyVal {
       
       inline def setTitleId(value: String): Self = StObject.set(x, "titleId", value.asInstanceOf[js.Any])
       

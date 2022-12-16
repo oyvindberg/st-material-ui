@@ -1585,7 +1585,8 @@ object PartialTypographyPropsspan {
     __obj.asInstanceOf[PartialTypographyPropsspan]
   }
   
-  extension [Self <: PartialTypographyPropsspan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTypographyPropsspan] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

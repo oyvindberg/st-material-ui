@@ -525,7 +525,8 @@ object DefaultComponentPropsModalUnstyledTypeMa {
     __obj.asInstanceOf[DefaultComponentPropsModalUnstyledTypeMa]
   }
   
-  extension [Self <: DefaultComponentPropsModalUnstyledTypeMa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsModalUnstyledTypeMa] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

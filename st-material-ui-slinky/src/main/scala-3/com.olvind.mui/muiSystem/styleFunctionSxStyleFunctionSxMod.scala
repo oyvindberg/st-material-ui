@@ -1180,7 +1180,8 @@ object styleFunctionSxStyleFunctionSxMod {
       __obj.asInstanceOf[CSSPseudoSelectorProps[Theme]]
     }
     
-    extension [Self <: CSSPseudoSelectorProps[?], Theme /* <: js.Object */](x: Self & CSSPseudoSelectorProps[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSPseudoSelectorProps[?], Theme /* <: js.Object */] (val x: Self & CSSPseudoSelectorProps[Theme]) extends AnyVal {
       
       inline def `setColon-khtml-any-link`(value: (js.Function1[/* theme */ Theme, SystemStyleObject[Theme]]) | SystemStyleObject[Theme]): Self = StObject.set(x, ":-khtml-any-link", value.asInstanceOf[js.Any])
       
@@ -11324,7 +11325,8 @@ object styleFunctionSxStyleFunctionSxMod {
       __obj.asInstanceOf[SystemCssProperties[Theme]]
     }
     
-    extension [Self <: SystemCssProperties[?], Theme /* <: js.Object */](x: Self & SystemCssProperties[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SystemCssProperties[?], Theme /* <: js.Object */] (val x: Self & SystemCssProperties[Theme]) extends AnyVal {
       
       inline def setAccentColor(
         value: (ResponsiveStyleValue[js.UndefOr[AccentColor | js.Array[NonNullable[js.UndefOr[AccentColor]]]]]) | (js.Function1[

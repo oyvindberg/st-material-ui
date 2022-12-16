@@ -18,7 +18,8 @@ object Backdrop {
     __obj.asInstanceOf[Backdrop]
   }
   
-  extension [Self <: Backdrop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Backdrop] (val x: Self) extends AnyVal {
     
     inline def setBackdrop(value: ElementType): Self = StObject.set(x, "Backdrop", value.asInstanceOf[js.Any])
     

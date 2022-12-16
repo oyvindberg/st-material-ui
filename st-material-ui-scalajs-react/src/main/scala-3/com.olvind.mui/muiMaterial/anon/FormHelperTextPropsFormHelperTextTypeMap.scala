@@ -466,7 +466,8 @@ object FormHelperTextPropsFormHelperTextTypeMap {
     __obj.asInstanceOf[FormHelperTextPropsFormHelperTextTypeMap]
   }
   
-  extension [Self <: FormHelperTextPropsFormHelperTextTypeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormHelperTextPropsFormHelperTextTypeMap] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -426,7 +426,8 @@ object TableContainerPropsTableContainerTypeMap {
     __obj.asInstanceOf[TableContainerPropsTableContainerTypeMap]
   }
   
-  extension [Self <: TableContainerPropsTableContainerTypeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableContainerPropsTableContainerTypeMap] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object tableContainerTableContainerMod extends Shortcut {
       __obj.asInstanceOf[TableContainerTypeMap[P, D]]
     }
     
-    extension [Self <: TableContainerTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (TableContainerTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableContainerTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (TableContainerTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

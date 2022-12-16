@@ -15,7 +15,8 @@ object PaletteSpeedDialAction {
     __obj.asInstanceOf[PaletteSpeedDialAction]
   }
   
-  extension [Self <: PaletteSpeedDialAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteSpeedDialAction] (val x: Self) extends AnyVal {
     
     inline def setFabHoverBg(value: String): Self = StObject.set(x, "fabHoverBg", value.asInstanceOf[js.Any])
   }

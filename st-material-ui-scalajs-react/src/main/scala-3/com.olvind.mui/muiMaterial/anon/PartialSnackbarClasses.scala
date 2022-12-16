@@ -28,7 +28,8 @@ object PartialSnackbarClasses {
     __obj.asInstanceOf[PartialSnackbarClasses]
   }
   
-  extension [Self <: PartialSnackbarClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSnackbarClasses] (val x: Self) extends AnyVal {
     
     inline def setAnchorOriginBottomCenter(value: String): Self = StObject.set(x, "anchorOriginBottomCenter", value.asInstanceOf[js.Any])
     

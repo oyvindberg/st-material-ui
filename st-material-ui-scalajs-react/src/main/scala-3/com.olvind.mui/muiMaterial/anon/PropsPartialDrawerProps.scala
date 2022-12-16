@@ -18,7 +18,8 @@ object PropsPartialDrawerProps {
     __obj.asInstanceOf[PropsPartialDrawerProps]
   }
   
-  extension [Self <: PropsPartialDrawerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialDrawerProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialDrawerProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

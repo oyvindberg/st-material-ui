@@ -38,7 +38,8 @@ object PaletteSwitch {
     __obj.asInstanceOf[PaletteSwitch]
   }
   
-  extension [Self <: PaletteSwitch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteSwitch] (val x: Self) extends AnyVal {
     
     inline def setDefaultColor(value: String): Self = StObject.set(x, "defaultColor", value.asInstanceOf[js.Any])
     

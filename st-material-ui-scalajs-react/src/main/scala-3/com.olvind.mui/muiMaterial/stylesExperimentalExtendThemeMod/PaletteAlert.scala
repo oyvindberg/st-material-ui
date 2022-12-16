@@ -74,7 +74,8 @@ object PaletteAlert {
     __obj.asInstanceOf[PaletteAlert]
   }
   
-  extension [Self <: PaletteAlert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteAlert] (val x: Self) extends AnyVal {
     
     inline def setErrorColor(value: String): Self = StObject.set(x, "errorColor", value.asInstanceOf[js.Any])
     

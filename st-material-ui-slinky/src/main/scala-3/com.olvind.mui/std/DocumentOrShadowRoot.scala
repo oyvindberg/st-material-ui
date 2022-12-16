@@ -57,7 +57,8 @@ object DocumentOrShadowRoot {
     __obj.asInstanceOf[DocumentOrShadowRoot]
   }
   
-  extension [Self <: DocumentOrShadowRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentOrShadowRoot] (val x: Self) extends AnyVal {
     
     inline def setActiveElement(value: org.scalajs.dom.Element): Self = StObject.set(x, "activeElement", value.asInstanceOf[js.Any])
     

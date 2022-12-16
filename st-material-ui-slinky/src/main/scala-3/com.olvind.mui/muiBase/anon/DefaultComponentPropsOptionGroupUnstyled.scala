@@ -434,7 +434,8 @@ object DefaultComponentPropsOptionGroupUnstyled {
     __obj.asInstanceOf[DefaultComponentPropsOptionGroupUnstyled]
   }
   
-  extension [Self <: DefaultComponentPropsOptionGroupUnstyled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponentPropsOptionGroupUnstyled] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

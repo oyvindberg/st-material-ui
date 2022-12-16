@@ -44,7 +44,8 @@ object dividerDividerMod extends Shortcut {
       __obj.asInstanceOf[DividerTypeMap[P, D]]
     }
     
-    extension [Self <: DividerTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (DividerTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DividerTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (DividerTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

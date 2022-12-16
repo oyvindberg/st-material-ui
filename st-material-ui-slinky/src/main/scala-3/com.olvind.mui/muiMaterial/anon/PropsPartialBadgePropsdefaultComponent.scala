@@ -18,7 +18,8 @@ object PropsPartialBadgePropsdefaultComponent {
     __obj.asInstanceOf[PropsPartialBadgePropsdefaultComponent]
   }
   
-  extension [Self <: PropsPartialBadgePropsdefaultComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialBadgePropsdefaultComponent] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialBadgePropsdefaultComponent): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

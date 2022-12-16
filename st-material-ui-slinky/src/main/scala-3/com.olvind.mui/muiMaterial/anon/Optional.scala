@@ -41,7 +41,8 @@ object Optional {
     __obj.asInstanceOf[Optional]
   }
   
-  extension [Self <: Optional](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Optional] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

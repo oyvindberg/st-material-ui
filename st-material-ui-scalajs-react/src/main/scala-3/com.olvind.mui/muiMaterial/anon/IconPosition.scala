@@ -76,7 +76,8 @@ object IconPosition {
     __obj.asInstanceOf[IconPosition]
   }
   
-  extension [Self <: IconPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconPosition] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: PartialTabClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

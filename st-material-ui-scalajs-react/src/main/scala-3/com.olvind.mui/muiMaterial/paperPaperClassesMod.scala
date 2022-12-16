@@ -119,7 +119,8 @@ object paperPaperClassesMod {
       __obj.asInstanceOf[PaperClasses]
     }
     
-    extension [Self <: PaperClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaperClasses] (val x: Self) extends AnyVal {
       
       inline def setElevation(value: String): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
       

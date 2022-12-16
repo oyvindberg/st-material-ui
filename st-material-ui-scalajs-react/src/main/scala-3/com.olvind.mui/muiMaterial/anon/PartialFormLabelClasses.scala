@@ -30,7 +30,8 @@ object PartialFormLabelClasses {
     __obj.asInstanceOf[PartialFormLabelClasses]
   }
   
-  extension [Self <: PartialFormLabelClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFormLabelClasses] (val x: Self) extends AnyVal {
     
     inline def setAsterisk(value: String): Self = StObject.set(x, "asterisk", value.asInstanceOf[js.Any])
     

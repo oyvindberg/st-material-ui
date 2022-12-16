@@ -40,7 +40,8 @@ object PartialTableCellClasses {
     __obj.asInstanceOf[PartialTableCellClasses]
   }
   
-  extension [Self <: PartialTableCellClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTableCellClasses] (val x: Self) extends AnyVal {
     
     inline def setAlignCenter(value: String): Self = StObject.set(x, "alignCenter", value.asInstanceOf[js.Any])
     

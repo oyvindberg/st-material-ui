@@ -100,7 +100,8 @@ object formControlFormControlContextMod extends Shortcut {
       __obj.asInstanceOf[FormControlState]
     }
     
-    extension [Self <: FormControlState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormControlState] (val x: Self) extends AnyVal {
       
       inline def setAdornedStart(value: Boolean): Self = StObject.set(x, "adornedStart", value.asInstanceOf[js.Any])
       

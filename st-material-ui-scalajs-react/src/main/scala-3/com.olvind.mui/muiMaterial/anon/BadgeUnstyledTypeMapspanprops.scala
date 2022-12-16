@@ -60,7 +60,8 @@ object BadgeUnstyledTypeMapspanprops {
     __obj.asInstanceOf[BadgeUnstyledTypeMapspanprops]
   }
   
-  extension [Self <: BadgeUnstyledTypeMapspanprops](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BadgeUnstyledTypeMapspanprops] (val x: Self) extends AnyVal {
     
     inline def setBadgeContent(value: VdomNode): Self = StObject.set(x, "badgeContent", value.rawNode.asInstanceOf[js.Any])
     

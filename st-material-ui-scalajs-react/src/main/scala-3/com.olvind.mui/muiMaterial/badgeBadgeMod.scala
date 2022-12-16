@@ -53,7 +53,8 @@ object badgeBadgeMod extends Shortcut {
       __obj.asInstanceOf[BadgeOrigin]
     }
     
-    extension [Self <: BadgeOrigin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeOrigin] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: "left" | "right"): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       

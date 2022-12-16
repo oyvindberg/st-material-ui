@@ -36,7 +36,8 @@ object tabScrollButtonTabScrollButtonClassesMod {
       __obj.asInstanceOf[TabScrollButtonClasses]
     }
     
-    extension [Self <: TabScrollButtonClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabScrollButtonClasses] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

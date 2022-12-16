@@ -41,7 +41,8 @@ object imageListItemImageListItemMod extends Shortcut {
       __obj.asInstanceOf[ImageListItemTypeMap[P, D]]
     }
     
-    extension [Self <: ImageListItemTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (ImageListItemTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageListItemTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (ImageListItemTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       

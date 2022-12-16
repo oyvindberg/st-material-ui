@@ -18,7 +18,8 @@ object PropsPartialAccordionDetailsProps {
     __obj.asInstanceOf[PropsPartialAccordionDetailsProps]
   }
   
-  extension [Self <: PropsPartialAccordionDetailsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPartialAccordionDetailsProps] (val x: Self) extends AnyVal {
     
     inline def setProps(value: PartialAccordionDetailsProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

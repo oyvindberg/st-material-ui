@@ -84,7 +84,8 @@ object iconButtonIconButtonClassesMod {
       __obj.asInstanceOf[IconButtonClasses]
     }
     
-    extension [Self <: IconButtonClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconButtonClasses] (val x: Self) extends AnyVal {
       
       inline def setColorError(value: String): Self = StObject.set(x, "colorError", value.asInstanceOf[js.Any])
       

@@ -83,7 +83,8 @@ object tablePaginationTablePaginationMod extends Shortcut {
       __obj.asInstanceOf[LabelDisplayedRowsArgs]
     }
     
-    extension [Self <: LabelDisplayedRowsArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelDisplayedRowsArgs] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -487,7 +488,8 @@ object tablePaginationTablePaginationMod extends Shortcut {
       __obj.asInstanceOf[TablePaginationBaseProps]
     }
     
-    extension [Self <: TablePaginationBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablePaginationBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
@@ -1274,7 +1276,8 @@ object tablePaginationTablePaginationMod extends Shortcut {
       __obj.asInstanceOf[TablePaginationTypeMap[P, D]]
     }
     
-    extension [Self <: TablePaginationTypeMap[?, ?], P, D /* <: ReactElement */](x: Self & (TablePaginationTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablePaginationTypeMap[?, ?], P, D /* <: ReactElement */] (val x: Self & (TablePaginationTypeMap[P, D])) extends AnyVal {
       
       inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
