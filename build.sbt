@@ -1,7 +1,7 @@
 val common: Project => Project = _.enablePlugins(ScalaJSPlugin)
   .settings(
     organization := "com.olvind.st-material-ui",
-    version := "0.1",
+    version := "0.1-SNAPSHOT",
     scalaVersion := "3.2.1",
     homepage := Some(new URL("https://github.com/oyvindberg/st-material-ui")),
     startYear := Some(2022),
@@ -81,7 +81,7 @@ lazy val `st-material-ui-scalajs-react`: Project = project
   )
 
 lazy val `st-material-ui-icons-scalajs-react`: Project = project
-  .configure(common, setupST)
+  .configure(common)
   .dependsOn(`st-material-ui-scalajs-react`)
 
 lazy val `st-material-ui-slinky`: Project = project
@@ -116,5 +116,5 @@ lazy val `st-material-ui-slinky`: Project = project
   )
 
 lazy val `st-material-ui-icons-slinky`: Project = project
-  .configure(common, setupST)
+  .configure(common)
   .dependsOn(`st-material-ui-slinky`)
