@@ -64,6 +64,7 @@ import com.olvind.mui.csstype.mod.Property.Top
 import com.olvind.mui.csstype.mod.Property.Visibility
 import com.olvind.mui.csstype.mod.Property.Width
 import com.olvind.mui.csstype.mod.Property.ZIndex
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiMaterial.stylesMod.ClassNameMap
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.ResponsiveStyleValue
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
@@ -119,21 +120,21 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var alignContent: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]
     ])
   ] = js.undefined
   
   var alignItems: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]
     ])
   ] = js.undefined
   
   var alignSelf: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]
     ])
   ] = js.undefined
@@ -248,7 +249,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         com.olvind.mui.csstype.mod.Property.BackgroundColor | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.BackgroundColor]]]
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           com.olvind.mui.csstype.mod.Property.BackgroundColor | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.BackgroundColor]]]
@@ -259,7 +260,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var border: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]
     ])
   ] = js.undefined
@@ -270,7 +271,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
@@ -281,7 +282,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var borderColor: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]
     ])
   ] = js.undefined
@@ -292,7 +293,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
@@ -307,7 +308,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
@@ -322,7 +323,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
@@ -337,7 +338,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (BorderTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (BorderTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTop[Double | String]]]])
@@ -352,7 +353,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (Bottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Bottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]])
@@ -362,15 +363,12 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   ] = js.undefined
   
   var boxShadow: js.UndefOr[
-    (ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
-      ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]
-    ])
+    (ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]])
   ] = js.undefined
   
   var boxSizing: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]
     ])
   ] = js.undefined
@@ -393,7 +391,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
@@ -408,7 +406,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
@@ -442,14 +440,14 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var display: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
     ])
   ] = js.undefined
   
   var displayPrint: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
     ])
   ] = js.undefined
@@ -467,7 +465,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
@@ -482,7 +480,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (FlexBasis[Double | String]) | (js.Array[NonNullable[js.UndefOr[FlexBasis[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (FlexBasis[Double | String]) | (js.Array[NonNullable[js.UndefOr[FlexBasis[Double | String]]]])
@@ -493,35 +491,35 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var flexDirection: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]
     ])
   ] = js.undefined
   
   var flexGrow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]
     ])
   ] = js.undefined
   
   var flexShrink: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]
     ])
   ] = js.undefined
   
   var flexWrap: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]
     ])
   ] = js.undefined
   
   var fontFamily: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]
     ])
   ] = js.undefined
@@ -534,7 +532,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         ])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (com.olvind.mui.csstype.mod.Property.FontSize[Double | String]) | (js.Array[
@@ -547,16 +545,13 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var fontStyle: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]
     ])
   ] = js.undefined
   
   var fontWeight: js.UndefOr[
-    (ResponsiveStyleValue[js.UndefOr[FontWeight | String]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
-      ResponsiveStyleValue[js.UndefOr[FontWeight | String]]
-    ])
+    (ResponsiveStyleValue[js.UndefOr[FontWeight | String]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[FontWeight | String]]])
   ] = js.undefined
   
   var gap: js.UndefOr[
@@ -565,7 +560,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
@@ -576,7 +571,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var gridArea: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]
     ])
   ] = js.undefined
@@ -587,7 +582,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
@@ -598,7 +593,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var gridAutoFlow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]
     ])
   ] = js.undefined
@@ -609,7 +604,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (GridAutoRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoRows[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (GridAutoRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoRows[Double | String]]]])
@@ -620,14 +615,14 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var gridColumn: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]
     ])
   ] = js.undefined
   
   var gridRow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]
     ])
   ] = js.undefined
@@ -636,7 +631,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
     (ResponsiveStyleValue[
       js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]]
       ]
@@ -649,7 +644,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
@@ -664,7 +659,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
@@ -679,7 +674,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
@@ -710,21 +705,21 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var justifyContent: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]
     ])
   ] = js.undefined
   
   var justifyItems: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]
     ])
   ] = js.undefined
   
   var justifySelf: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]
     ])
   ] = js.undefined
@@ -739,7 +734,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
@@ -754,7 +749,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
@@ -769,7 +764,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
@@ -784,7 +779,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
@@ -799,7 +794,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
@@ -814,7 +809,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
@@ -829,7 +824,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -844,7 +839,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
@@ -859,7 +854,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -874,7 +869,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -889,7 +884,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -904,7 +899,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
@@ -919,7 +914,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
@@ -934,7 +929,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
@@ -949,7 +944,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
@@ -964,7 +959,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
@@ -979,7 +974,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -994,7 +989,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
@@ -1009,7 +1004,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -1024,7 +1019,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -1039,7 +1034,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -1212,14 +1207,14 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var order: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]
     ])
   ] = js.undefined
   
   var overflow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]
     ])
   ] = js.undefined
@@ -1232,7 +1227,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         ])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
@@ -1251,7 +1246,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         ])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
@@ -1268,7 +1263,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
@@ -1283,7 +1278,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -1298,7 +1293,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
@@ -1313,7 +1308,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -1328,7 +1323,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -1343,7 +1338,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -1358,7 +1353,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
@@ -1373,7 +1368,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -1386,7 +1381,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   
   var position: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]
     ])
   ] = js.undefined
@@ -1397,7 +1392,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
@@ -1416,7 +1411,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -1431,7 +1426,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -1446,7 +1441,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -1469,7 +1464,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
@@ -1486,7 +1481,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
@@ -1516,20 +1511,20 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   /**
     * The system prop, which allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[Theme]] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
   var textAlign: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]
     ])
   ] = js.undefined
   
   var textOverflow: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]
     ])
   ] = js.undefined
@@ -1542,7 +1537,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
@@ -1556,17 +1551,14 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   var typeof: js.UndefOr[String] = js.undefined
   
   var typography: js.UndefOr[
-    ResponsiveStyleValue[js.UndefOr[String]] | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
-      ResponsiveStyleValue[js.UndefOr[String]]
-    ])
+    ResponsiveStyleValue[js.UndefOr[String]] | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[String]]])
   ] = js.undefined
   
   var unselectable: js.UndefOr["on" | "off"] = js.undefined
   
   var visibility: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]
     ])
   ] = js.undefined
@@ -1579,7 +1571,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
         (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
       ]
     ]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+      /* theme */ Theme, 
       ResponsiveStyleValue[
         js.UndefOr[
           (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
@@ -1589,10 +1581,7 @@ trait StackPropsStackTypeMapdivdefaultComponen extends StObject {
   ] = js.undefined
   
   var zIndex: js.UndefOr[
-    (ResponsiveStyleValue[js.UndefOr[ZIndex | String]]) | (js.Function1[
-      /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
-      ResponsiveStyleValue[js.UndefOr[ZIndex | String]]
-    ])
+    (ResponsiveStyleValue[js.UndefOr[ZIndex | String]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[ZIndex | String]]])
   ] = js.undefined
 }
 object StackPropsStackTypeMapdivdefaultComponen {
@@ -1615,13 +1604,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setAlignContent(
       value: (ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]
         ])
     ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
     inline def setAlignContentFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]]]
     ): Self = StObject.set(x, "alignContent", js.Any.fromFunction1(value))
     
     inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
@@ -1634,13 +1623,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setAlignItems(
       value: (ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]
         ])
     ): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
     inline def setAlignItemsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]]]
     ): Self = StObject.set(x, "alignItems", js.Any.fromFunction1(value))
     
     inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
@@ -1653,13 +1642,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setAlignSelf(
       value: (ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]
         ])
     ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     
     inline def setAlignSelfFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]]]
     ): Self = StObject.set(x, "alignSelf", js.Any.fromFunction1(value))
     
     inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
@@ -1882,7 +1871,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             com.olvind.mui.csstype.mod.Property.BackgroundColor | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.BackgroundColor]]]
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               com.olvind.mui.csstype.mod.Property.BackgroundColor | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.BackgroundColor]]]
@@ -1892,7 +1881,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
     inline def setBgcolorFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             com.olvind.mui.csstype.mod.Property.BackgroundColor | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.BackgroundColor]]]
           ]
@@ -1909,7 +1898,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setBorder(
       value: (ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]
         ])
     ): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
@@ -1920,7 +1909,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
@@ -1930,7 +1919,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
     inline def setBorderBottomFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
           ]
@@ -1947,13 +1936,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setBorderColor(
       value: (ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]
         ])
     ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]]]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction1(value))
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
@@ -1965,7 +1954,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "borderColor", js.Array(value*))
     
     inline def setBorderFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[(com.olvind.mui.csstype.mod.Property.Border[String | 0]) | Double]]
     ): Self = StObject.set(x, "border", js.Any.fromFunction1(value))
     
     inline def setBorderLeft(
@@ -1974,7 +1963,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
@@ -1984,7 +1973,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
     inline def setBorderLeftFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (BorderLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderLeft[Double | String]]]])
           ]
@@ -2005,7 +1994,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
@@ -2015,7 +2004,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderRadiusFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (BorderRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRadius[Double | String]]]])
           ]
@@ -2036,7 +2025,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
@@ -2046,7 +2035,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
     inline def setBorderRightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
           ]
@@ -2067,7 +2056,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (BorderTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (BorderTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTop[Double | String]]]])
@@ -2077,7 +2066,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
     inline def setBorderTopFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (BorderTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTop[Double | String]]]])
           ]
@@ -2102,7 +2091,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (Bottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Bottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]])
@@ -2112,7 +2101,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     inline def setBottomFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Bottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[Bottom[Double | String]]]])
           ]
@@ -2128,15 +2117,10 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "bottom", js.Array(value*))
     
     inline def setBoxShadow(
-      value: (ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
-          ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]
-        ])
+      value: (ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]])
     ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
-    inline def setBoxShadowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]
-    ): Self = StObject.set(x, "boxShadow", js.Any.fromFunction1(value))
+    inline def setBoxShadowFunction1(value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[BoxShadow | Double]]): Self = StObject.set(x, "boxShadow", js.Any.fromFunction1(value))
     
     inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
@@ -2144,13 +2128,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setBoxSizing(
       value: (ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]
         ])
     ): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
     
     inline def setBoxSizingFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]]]
     ): Self = StObject.set(x, "boxSizing", js.Any.fromFunction1(value))
     
     inline def setBoxSizingUndefined: Self = StObject.set(x, "boxSizing", js.undefined)
@@ -2179,7 +2163,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
@@ -2189,7 +2173,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             com.olvind.mui.csstype.mod.Property.Color | js.Array[NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Color]]]
           ]
@@ -2210,7 +2194,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
@@ -2220,7 +2204,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
     inline def setColumnGapFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (ColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[ColumnGap[Double | String]]]])
           ]
@@ -2275,24 +2259,24 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setDisplay(
       value: (ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
         ])
     ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setDisplayFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
     ): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
     
     inline def setDisplayPrint(
       value: (ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
         ])
     ): Self = StObject.set(x, "displayPrint", value.asInstanceOf[js.Any])
     
     inline def setDisplayPrintFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]]]
     ): Self = StObject.set(x, "displayPrint", js.Any.fromFunction1(value))
     
     inline def setDisplayPrintUndefined: Self = StObject.set(x, "displayPrint", js.undefined)
@@ -2325,7 +2309,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
@@ -2340,7 +2324,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (FlexBasis[Double | String]) | (js.Array[NonNullable[js.UndefOr[FlexBasis[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (FlexBasis[Double | String]) | (js.Array[NonNullable[js.UndefOr[FlexBasis[Double | String]]]])
@@ -2350,7 +2334,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
     inline def setFlexBasisFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (FlexBasis[Double | String]) | (js.Array[NonNullable[js.UndefOr[FlexBasis[Double | String]]]])
           ]
@@ -2367,13 +2351,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setFlexDirection(
       value: (ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]
         ])
     ): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
     inline def setFlexDirectionFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]]]
     ): Self = StObject.set(x, "flexDirection", js.Any.fromFunction1(value))
     
     inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
@@ -2385,7 +2369,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "flexDirection", js.Array(value*))
     
     inline def setFlexFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Flex[Double | String]) | (js.Array[NonNullable[js.UndefOr[Flex[Double | String]]]])
           ]
@@ -2394,13 +2378,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setFlexGrow(
       value: (ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]
         ])
     ): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
     inline def setFlexGrowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]]]
     ): Self = StObject.set(x, "flexGrow", js.Any.fromFunction1(value))
     
     inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
@@ -2413,13 +2397,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setFlexShrink(
       value: (ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]
         ])
     ): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
     inline def setFlexShrinkFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]]]
     ): Self = StObject.set(x, "flexShrink", js.Any.fromFunction1(value))
     
     inline def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
@@ -2440,13 +2424,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setFlexWrap(
       value: (ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]
         ])
     ): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
     inline def setFlexWrapFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]]]
     ): Self = StObject.set(x, "flexWrap", js.Any.fromFunction1(value))
     
     inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
@@ -2459,13 +2443,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setFontFamily(
       value: (ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]
         ])
     ): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     inline def setFontFamilyFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]]]
     ): Self = StObject.set(x, "fontFamily", js.Any.fromFunction1(value))
     
     inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
@@ -2484,7 +2468,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             ])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (com.olvind.mui.csstype.mod.Property.FontSize[Double | String]) | (js.Array[
@@ -2496,7 +2480,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (com.olvind.mui.csstype.mod.Property.FontSize[Double | String]) | (js.Array[
               NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.FontSize[Double | String]]]
@@ -2517,13 +2501,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setFontStyle(
       value: (ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]
         ])
     ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     inline def setFontStyleFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]]]
     ): Self = StObject.set(x, "fontStyle", js.Any.fromFunction1(value))
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
@@ -2535,15 +2519,10 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "fontStyle", js.Array(value*))
     
     inline def setFontWeight(
-      value: (ResponsiveStyleValue[js.UndefOr[FontWeight | String]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
-          ResponsiveStyleValue[js.UndefOr[FontWeight | String]]
-        ])
+      value: (ResponsiveStyleValue[js.UndefOr[FontWeight | String]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[FontWeight | String]]])
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    inline def setFontWeightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[FontWeight | String]]
-    ): Self = StObject.set(x, "fontWeight", js.Any.fromFunction1(value))
+    inline def setFontWeightFunction1(value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[FontWeight | String]]): Self = StObject.set(x, "fontWeight", js.Any.fromFunction1(value))
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
@@ -2555,7 +2534,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
@@ -2565,7 +2544,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     inline def setGapFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
           ]
@@ -2582,13 +2561,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setGridArea(
       value: (ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]
         ])
     ): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
     inline def setGridAreaFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]]]
     ): Self = StObject.set(x, "gridArea", js.Any.fromFunction1(value))
     
     inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
@@ -2605,7 +2584,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
@@ -2615,7 +2594,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
     
     inline def setGridAutoColumnsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (GridAutoColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoColumns[Double | String]]]])
           ]
@@ -2632,13 +2611,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setGridAutoFlow(
       value: (ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]
         ])
     ): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
     inline def setGridAutoFlowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[GridAutoFlow | js.Array[NonNullable[js.UndefOr[GridAutoFlow]]]]]
     ): Self = StObject.set(x, "gridAutoFlow", js.Any.fromFunction1(value))
     
     inline def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
@@ -2655,7 +2634,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (GridAutoRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoRows[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (GridAutoRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoRows[Double | String]]]])
@@ -2665,7 +2644,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
     
     inline def setGridAutoRowsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (GridAutoRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridAutoRows[Double | String]]]])
           ]
@@ -2682,13 +2661,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setGridColumn(
       value: (ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]
         ])
     ): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
     inline def setGridColumnFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]]]
     ): Self = StObject.set(x, "gridColumn", js.Any.fromFunction1(value))
     
     inline def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
@@ -2701,13 +2680,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setGridRow(
       value: (ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]
         ])
     ): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
     inline def setGridRowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]]]
     ): Self = StObject.set(x, "gridRow", js.Any.fromFunction1(value))
     
     inline def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
@@ -2722,7 +2701,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
       value: (ResponsiveStyleValue[
           js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]]
           ]
@@ -2730,7 +2709,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateAreasFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[GridTemplateAreas | js.Array[NonNullable[js.UndefOr[GridTemplateAreas]]]]
         ]
     ): Self = StObject.set(x, "gridTemplateAreas", js.Any.fromFunction1(value))
@@ -2749,7 +2728,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
@@ -2759,7 +2738,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateColumnsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (GridTemplateColumns[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateColumns[Double | String]]]])
           ]
@@ -2780,7 +2759,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
@@ -2790,7 +2769,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateRowsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (GridTemplateRows[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridTemplateRows[Double | String]]]])
           ]
@@ -2811,7 +2790,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
@@ -2821,7 +2800,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
           ]
@@ -2878,13 +2857,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setJustifyContent(
       value: (ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]
         ])
     ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
     inline def setJustifyContentFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]]]
     ): Self = StObject.set(x, "justifyContent", js.Any.fromFunction1(value))
     
     inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
@@ -2897,13 +2876,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setJustifyItems(
       value: (ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]
         ])
     ): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
     
     inline def setJustifyItemsFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[JustifyItems | js.Array[NonNullable[js.UndefOr[JustifyItems]]]]]
     ): Self = StObject.set(x, "justifyItems", js.Any.fromFunction1(value))
     
     inline def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
@@ -2916,13 +2895,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setJustifySelf(
       value: (ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]
         ])
     ): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
     
     inline def setJustifySelfFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[JustifySelf | js.Array[NonNullable[js.UndefOr[JustifySelf]]]]]
     ): Self = StObject.set(x, "justifySelf", js.Any.fromFunction1(value))
     
     inline def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
@@ -2949,7 +2928,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
@@ -2959,7 +2938,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setLeftFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
           ]
@@ -2980,7 +2959,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
@@ -2990,7 +2969,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     inline def setLetterSpacingFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (LetterSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[LetterSpacing[Double | String]]]])
           ]
@@ -3011,7 +2990,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
@@ -3021,7 +3000,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     inline def setLineHeightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (LineHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[LineHeight[Double | String]]]])
           ]
@@ -3042,7 +3021,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
@@ -3052,7 +3031,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     inline def setMFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
           ]
@@ -3073,7 +3052,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
@@ -3088,7 +3067,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
@@ -3098,7 +3077,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     inline def setMarginBottomFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
           ]
@@ -3114,7 +3093,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "marginBottom", js.Array(value*))
     
     inline def setMarginFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
           ]
@@ -3127,7 +3106,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -3137,7 +3116,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     inline def setMarginLeftFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
@@ -3158,7 +3137,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
@@ -3168,7 +3147,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     inline def setMarginRightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
           ]
@@ -3189,7 +3168,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -3199,7 +3178,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     inline def setMarginTopFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
@@ -3228,7 +3207,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -3238,7 +3217,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
     
     inline def setMarginXFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
@@ -3259,7 +3238,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -3269,7 +3248,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
     
     inline def setMarginYFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
@@ -3290,7 +3269,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
@@ -3300,7 +3279,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     inline def setMaxHeightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
           ]
@@ -3321,7 +3300,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
@@ -3331,7 +3310,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMaxWidthFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MaxWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxWidth[Double | String]]]])
           ]
@@ -3352,7 +3331,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
@@ -3362,7 +3341,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
     inline def setMbFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
           ]
@@ -3383,7 +3362,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
@@ -3393,7 +3372,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     inline def setMinHeightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
           ]
@@ -3414,7 +3393,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
@@ -3424,7 +3403,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     inline def setMinWidthFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
           ]
@@ -3445,7 +3424,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -3455,7 +3434,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
     inline def setMlFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
@@ -3476,7 +3455,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
@@ -3486,7 +3465,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
     inline def setMrFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
           ]
@@ -3507,7 +3486,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -3517,7 +3496,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
     inline def setMtFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
@@ -3538,7 +3517,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
@@ -3548,7 +3527,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
     inline def setMxFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
           ]
@@ -3569,7 +3548,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
@@ -3579,7 +3558,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     inline def setMyFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
           ]
@@ -3920,13 +3899,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setOrder(
       value: (ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]
         ])
     ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     inline def setOrderFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]]]
     ): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
@@ -3939,13 +3918,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setOverflow(
       value: (ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]
         ])
     ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]]]
     ): Self = StObject.set(x, "overflow", js.Any.fromFunction1(value))
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
@@ -3964,7 +3943,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             ])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
@@ -3976,7 +3955,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     inline def setPFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
               NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Padding[Double | String]]]
@@ -4003,7 +3982,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             ])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
@@ -4020,7 +3999,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
@@ -4030,7 +4009,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
     inline def setPaddingBottomFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
           ]
@@ -4046,7 +4025,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "paddingBottom", js.Array(value*))
     
     inline def setPaddingFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (com.olvind.mui.csstype.mod.Property.Padding[Double | String]) | (js.Array[
               NonNullable[js.UndefOr[com.olvind.mui.csstype.mod.Property.Padding[Double | String]]]
@@ -4061,7 +4040,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -4071,7 +4050,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
     inline def setPaddingLeftFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
@@ -4092,7 +4071,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
@@ -4102,7 +4081,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
     inline def setPaddingRightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
           ]
@@ -4123,7 +4102,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -4133,7 +4112,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
     inline def setPaddingTopFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
@@ -4164,7 +4143,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -4174,7 +4153,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
     inline def setPaddingXFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
@@ -4195,7 +4174,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -4205,7 +4184,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
     inline def setPaddingYFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
@@ -4226,7 +4205,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
@@ -4236,7 +4215,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
     inline def setPbFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
           ]
@@ -4257,7 +4236,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -4267,7 +4246,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     inline def setPlFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
@@ -4288,13 +4267,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setPosition(
       value: (ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]
         ])
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[Position | js.Array[NonNullable[js.UndefOr[Position]]]]]
     ): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
@@ -4311,7 +4290,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
@@ -4321,7 +4300,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
     inline def setPrFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
           ]
@@ -4350,7 +4329,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -4360,7 +4339,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     inline def setPtFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
@@ -4381,7 +4360,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
@@ -4391,7 +4370,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
     inline def setPxFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
           ]
@@ -4412,7 +4391,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
@@ -4422,7 +4401,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
     
     inline def setPyFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
           ]
@@ -4465,7 +4444,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
@@ -4475,7 +4454,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     inline def setRightFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Right[Double | String]) | (js.Array[NonNullable[js.UndefOr[Right[Double | String]]]])
           ]
@@ -4500,7 +4479,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
@@ -4510,7 +4489,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
     
     inline def setRowGapFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
           ]
@@ -4555,22 +4534,15 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
-    inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
-    ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
+    inline def setSxFunction1(value: Theme => SystemStyleObject[Theme]): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
     
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
-    inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
-        ]))*
-    ): Self = StObject.set(x, "sx", js.Array(value*))
+    inline def setSxVarargs(value: (Boolean | SystemStyleObject[Theme] | (js.Function1[Theme, SystemStyleObject[Theme]]))*): Self = StObject.set(x, "sx", js.Array(value*))
     
     inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
@@ -4578,13 +4550,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setTextAlign(
       value: (ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]
         ])
     ): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     inline def setTextAlignFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[TextAlign | js.Array[NonNullable[js.UndefOr[TextAlign]]]]]
     ): Self = StObject.set(x, "textAlign", js.Any.fromFunction1(value))
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
@@ -4597,13 +4569,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setTextOverflow(
       value: (ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]
         ])
     ): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
     inline def setTextOverflowFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]]]
     ): Self = StObject.set(x, "textOverflow", js.Any.fromFunction1(value))
     
     inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
@@ -4624,7 +4596,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
@@ -4634,7 +4606,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     inline def setTopFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
           ]
@@ -4658,15 +4630,10 @@ object StackPropsStackTypeMapdivdefaultComponen {
     inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
     
     inline def setTypography(
-      value: ResponsiveStyleValue[js.UndefOr[String]] | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
-          ResponsiveStyleValue[js.UndefOr[String]]
-        ])
+      value: ResponsiveStyleValue[js.UndefOr[String]] | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[String]]])
     ): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
     
-    inline def setTypographyFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[String]]
-    ): Self = StObject.set(x, "typography", js.Any.fromFunction1(value))
+    inline def setTypographyFunction1(value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[String]]): Self = StObject.set(x, "typography", js.Any.fromFunction1(value))
     
     inline def setTypographyUndefined: Self = StObject.set(x, "typography", js.undefined)
     
@@ -4678,13 +4645,13 @@ object StackPropsStackTypeMapdivdefaultComponen {
     
     inline def setVisibility(
       value: (ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]
         ])
     ): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setVisibilityFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]
+      value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]]]
     ): Self = StObject.set(x, "visibility", js.Any.fromFunction1(value))
     
     inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
@@ -4705,7 +4672,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
             (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
           ]
         ]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
+          /* theme */ Theme, 
           ResponsiveStyleValue[
             js.UndefOr[
               (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
@@ -4715,7 +4682,7 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[
+      value: /* theme */ Theme => ResponsiveStyleValue[
           js.UndefOr[
             (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
           ]
@@ -4731,15 +4698,10 @@ object StackPropsStackTypeMapdivdefaultComponen {
     ): Self = StObject.set(x, "width", js.Array(value*))
     
     inline def setZIndex(
-      value: (ResponsiveStyleValue[js.UndefOr[ZIndex | String]]) | (js.Function1[
-          /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
-          ResponsiveStyleValue[js.UndefOr[ZIndex | String]]
-        ])
+      value: (ResponsiveStyleValue[js.UndefOr[ZIndex | String]]) | (js.Function1[/* theme */ Theme, ResponsiveStyleValue[js.UndefOr[ZIndex | String]]])
     ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    inline def setZIndexFunction1(
-      value: /* theme */ com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => ResponsiveStyleValue[js.UndefOr[ZIndex | String]]
-    ): Self = StObject.set(x, "zIndex", js.Any.fromFunction1(value))
+    inline def setZIndexFunction1(value: /* theme */ Theme => ResponsiveStyleValue[js.UndefOr[ZIndex | String]]): Self = StObject.set(x, "zIndex", js.Any.fromFunction1(value))
     
     inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     

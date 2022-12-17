@@ -1,5 +1,6 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiMaterial.tableCellTableCellMod.SortDirection
 import com.olvind.mui.muiMaterial.tablePaginationTablePaginationMod.LabelDisplayedRowsArgs
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
@@ -519,7 +520,7 @@ trait TablePaginationPropsJSXElementConstructo extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.native
+  var sx: js.UndefOr[SxProps[Theme]] = js.native
   
   var tabIndex: js.UndefOr[Double] = js.native
   

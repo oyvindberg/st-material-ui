@@ -1,5 +1,6 @@
 package com.olvind.mui.muiMaterial.anon
 
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SxProps
 import com.olvind.mui.muiSystem.styleFunctionSxStyleFunctionSxMod.SystemStyleObject
 import com.olvind.mui.react.anon.Html
@@ -430,7 +431,7 @@ trait DefaultComponentPropsListSubheaderTypeMa extends StObject {
   /**
     * The system prop that allows defining system overrides as well as additional CSS styles.
     */
-  var sx: js.UndefOr[SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]] = js.undefined
+  var sx: js.UndefOr[SxProps[Theme]] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
@@ -1172,22 +1173,15 @@ object DefaultComponentPropsListSubheaderTypeMa {
     
     inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
     
-    inline def setSx(value: SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+    inline def setSx(value: SxProps[Theme]): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
     
-    inline def setSxFunction1(
-      value: com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme => SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
-    ): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
+    inline def setSxFunction1(value: Theme => SystemStyleObject[Theme]): Self = StObject.set(x, "sx", js.Any.fromFunction1(value))
     
     inline def setSxNull: Self = StObject.set(x, "sx", null)
     
     inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     
-    inline def setSxVarargs(
-      value: (Boolean | SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] | (js.Function1[
-          com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme, 
-          SystemStyleObject[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme]
-        ]))*
-    ): Self = StObject.set(x, "sx", js.Array(value*))
+    inline def setSxVarargs(value: (Boolean | SystemStyleObject[Theme] | (js.Function1[Theme, SystemStyleObject[Theme]]))*): Self = StObject.set(x, "sx", js.Array(value*))
     
     inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     

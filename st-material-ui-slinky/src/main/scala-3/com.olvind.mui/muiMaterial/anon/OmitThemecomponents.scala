@@ -2,6 +2,7 @@ package com.olvind.mui.muiMaterial.anon
 
 import com.olvind.mui.muiMaterial.stylesCreateMixinsMod.Mixins
 import com.olvind.mui.muiMaterial.stylesCreatePaletteMod.Palette
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiMaterial.stylesCreateTransitionsMod.Transitions
 import com.olvind.mui.muiMaterial.stylesShadowsMod.Shadows
 import com.olvind.mui.muiMaterial.stylesZIndexMod.ZIndex
@@ -38,10 +39,7 @@ trait OmitThemecomponents extends StObject {
   
   var unstable_strictMode: js.UndefOr[Boolean] = js.undefined
   
-  var unstable_sx: js.Function1[
-    /* props */ SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme], 
-    CSSObject
-  ]
+  var unstable_sx: js.Function1[/* props */ SxProps[Theme], CSSObject]
   
   var unstable_sxConfig: SxConfig
   
@@ -59,7 +57,7 @@ object OmitThemecomponents {
     spacing: Spacing,
     transitions: Transitions,
     typography: com.olvind.mui.muiMaterial.stylesCreateTypographyMod.Typography,
-    unstable_sx: /* props */ SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] => CSSObject,
+    unstable_sx: /* props */ SxProps[Theme] => CSSObject,
     unstable_sxConfig: SxConfig,
     zIndex: ZIndex
   ): OmitThemecomponents = {
@@ -94,7 +92,7 @@ object OmitThemecomponents {
     
     inline def setUnstable_strictModeUndefined: Self = StObject.set(x, "unstable_strictMode", js.undefined)
     
-    inline def setUnstable_sx(value: /* props */ SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] => CSSObject): Self = StObject.set(x, "unstable_sx", js.Any.fromFunction1(value))
+    inline def setUnstable_sx(value: /* props */ SxProps[Theme] => CSSObject): Self = StObject.set(x, "unstable_sx", js.Any.fromFunction1(value))
     
     inline def setUnstable_sxConfig(value: SxConfig): Self = StObject.set(x, "unstable_sxConfig", value.asInstanceOf[js.Any])
     

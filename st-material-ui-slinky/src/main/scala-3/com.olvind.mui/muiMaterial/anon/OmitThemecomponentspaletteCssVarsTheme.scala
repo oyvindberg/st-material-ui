@@ -2,6 +2,7 @@ package com.olvind.mui.muiMaterial.anon
 
 import com.olvind.mui.muiMaterial.stylesCreateMixinsMod.Mixins
 import com.olvind.mui.muiMaterial.stylesCreatePaletteMod.Palette
+import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiMaterial.stylesCreateTransitionsMod.Transitions
 import com.olvind.mui.muiMaterial.stylesExperimentalExtendThemeMod.CssVarsPalette
 import com.olvind.mui.muiMaterial.stylesExperimentalExtendThemeMod.CssVarsTheme
@@ -61,10 +62,7 @@ trait OmitThemecomponentspaletteCssVarsTheme extends StObject {
   
   var unstable_strictMode: js.UndefOr[Boolean] = js.native
   
-  var unstable_sx: js.Function1[
-    /* props */ SxProps[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme], 
-    CSSObject
-  ] = js.native
+  var unstable_sx: js.Function1[/* props */ SxProps[Theme], CSSObject] = js.native
   def unstable_sx(props: SxProps[CssVarsTheme]): CSSObject = js.native
   
   var unstable_sxConfig: SxConfig = js.native
