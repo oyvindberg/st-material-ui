@@ -19,8 +19,8 @@ val common: Project => Project = p =>
           <name>Øyvind Raddum Berg</name>
         </developer>
       </developers>
-      ),
-
+    ),
+    sonatypeProfileName := "com.olvind",
       licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
       scalacOptions ++= {
         val isDotty = scalaVersion.value startsWith "3"
@@ -147,3 +147,16 @@ lazy val `st-material-ui-slinky`: Project = project
 lazy val `st-material-ui-icons-slinky`: Project = project
   .configure(common)
   .dependsOn(`st-material-ui-slinky`)
+
+lazy val root = project
+  .in(file("."))
+  .settings(
+    name := "st-material-ui-root",
+    publish / skip := true
+  )
+  .aggregate(
+    `st-material-ui-slinky`,
+    `st-material-ui-icons-slinky`,
+    `st-material-ui-scalajs-react`,
+    `st-material-ui-icons-scalajs-react`
+  )
