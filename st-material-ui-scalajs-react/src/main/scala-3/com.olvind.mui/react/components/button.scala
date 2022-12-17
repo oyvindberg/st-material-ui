@@ -411,6 +411,8 @@ object button {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]
+  
   val component: String = "button"
   
   implicit def make(companion: button.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

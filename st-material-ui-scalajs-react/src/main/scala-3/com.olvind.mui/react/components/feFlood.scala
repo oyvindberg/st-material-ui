@@ -814,6 +814,8 @@ object feFlood {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFEFloodElement]
+  
   val component: String = "feFlood"
   
   implicit def make(companion: feFlood.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

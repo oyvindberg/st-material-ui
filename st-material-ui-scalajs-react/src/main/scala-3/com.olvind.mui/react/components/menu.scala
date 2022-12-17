@@ -389,6 +389,8 @@ object menu {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement]
+  
   val component: String = "menu"
   
   implicit def make(companion: menu.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

@@ -814,6 +814,8 @@ object feSpotLight {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFESpotLightElement]
+  
   val component: String = "feSpotLight"
   
   implicit def make(companion: feSpotLight.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

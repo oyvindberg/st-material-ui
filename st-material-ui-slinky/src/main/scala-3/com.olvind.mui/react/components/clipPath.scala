@@ -815,6 +815,8 @@ object clipPath {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGClipPathElement]
+  
   val component: String = "clipPath"
   
   implicit def make(companion: clipPath.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

@@ -814,6 +814,8 @@ object feTurbulence {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFETurbulenceElement]
+  
   val component: String = "feTurbulence"
   
   implicit def make(companion: feTurbulence.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

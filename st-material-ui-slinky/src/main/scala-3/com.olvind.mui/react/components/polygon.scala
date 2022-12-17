@@ -815,6 +815,8 @@ object polygon {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGPolygonElement]
+  
   val component: String = "polygon"
   
   implicit def make(companion: polygon.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

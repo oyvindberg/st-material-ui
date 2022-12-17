@@ -390,6 +390,8 @@ object slot {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement]
+  
   val component: String = "slot"
   
   implicit def make(companion: slot.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

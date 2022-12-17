@@ -815,6 +815,8 @@ object polyline {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGPolylineElement]
+  
   val component: String = "polyline"
   
   implicit def make(companion: polyline.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

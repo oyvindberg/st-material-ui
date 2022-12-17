@@ -814,6 +814,8 @@ object radialGradient {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGRadialGradientElement]
+  
   val component: String = "radialGradient"
   
   implicit def make(companion: radialGradient.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

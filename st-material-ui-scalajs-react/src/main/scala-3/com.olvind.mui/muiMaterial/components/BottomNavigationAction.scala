@@ -491,6 +491,8 @@ object BottomNavigationAction {
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
     
+    type Props = OverridePropsExtendButtonBaseTypeMapBott
+    
     def styled: com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapBott, Builder] = new com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapBott, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     
     def withProps(p: OverridePropsExtendButtonBaseTypeMapBott): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
@@ -937,6 +939,8 @@ object BottomNavigationAction {
       
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
+    
+    type Props = DefaultComponentPropsExtendButtonBaseTypAbout
     
     implicit def make(companion: normal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
     

@@ -387,6 +387,8 @@ object br {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement]
+  
   val component: String = "br"
   
   implicit def make(companion: br.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

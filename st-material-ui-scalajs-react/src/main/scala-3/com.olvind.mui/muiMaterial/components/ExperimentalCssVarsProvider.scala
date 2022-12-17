@@ -59,6 +59,8 @@ object ExperimentalCssVarsProvider {
     inline def theme(value: ColorSchemes): this.type = set("theme", value.asInstanceOf[js.Any])
   }
   
+  type Props = PropsWithChildrenPartialCssVarsProviderC
+  
   implicit def make(companion: ExperimentalCssVarsProvider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[PropsWithChildrenPartialCssVarsProviderC, Builder] = new com.olvind.mui.StyledComponent.Builder[PropsWithChildrenPartialCssVarsProviderC, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

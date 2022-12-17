@@ -387,6 +387,8 @@ object span {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement]
+  
   val component: String = "span"
   
   implicit def make(companion: span.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

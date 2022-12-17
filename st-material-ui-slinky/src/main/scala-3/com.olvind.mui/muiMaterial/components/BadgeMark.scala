@@ -13,6 +13,8 @@ object BadgeMark {
   @js.native
   val component: js.Object = js.native
   
+  type Props = /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Badge | undefined>['badge'] */ js.Any
+  
   implicit def make(companion: BadgeMark.type): Default[tag.type, js.Object] = new Default[tag.type, js.Object](js.Array(this.component, js.Dictionary.empty))()
   
   def styled: Builder[

@@ -391,6 +391,8 @@ object del {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[DelHTMLAttributes[HTMLModElement], HTMLModElement]
+  
   val component: String = "del"
   
   implicit def make(companion: del.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

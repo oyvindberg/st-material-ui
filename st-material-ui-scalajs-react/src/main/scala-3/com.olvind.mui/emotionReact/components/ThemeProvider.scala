@@ -19,6 +19,8 @@ object ThemeProvider {
   @js.native
   val component: js.Object = js.native
   
+  type Props = /* props */ ThemeProviderProps
+  
   def styled: Builder[/* props */ ThemeProviderProps, Default[js.Object]] = new Builder[/* props */ ThemeProviderProps, Default[js.Object]](this.component, new js.Object, js.Array(), (newComponent: Any) => new Default[js.Object](js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: /* props */ ThemeProviderProps): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))

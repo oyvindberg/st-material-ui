@@ -475,6 +475,8 @@ object Dialog {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DialogProps
+  
   def styled: com.olvind.mui.StyledComponent.Builder[DialogProps, Builder] = new com.olvind.mui.StyledComponent.Builder[DialogProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: DialogProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

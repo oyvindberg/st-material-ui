@@ -401,6 +401,8 @@ object keygen {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement]
+  
   val component: String = "keygen"
   
   implicit def make(companion: keygen.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

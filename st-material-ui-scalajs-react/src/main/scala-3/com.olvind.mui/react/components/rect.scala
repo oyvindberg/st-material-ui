@@ -814,6 +814,8 @@ object rect {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGRectElement]
+  
   val component: String = "rect"
   
   implicit def make(companion: rect.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

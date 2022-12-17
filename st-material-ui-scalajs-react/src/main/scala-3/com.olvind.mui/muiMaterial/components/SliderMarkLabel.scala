@@ -12,6 +12,8 @@ object SliderMarkLabel {
   @js.native
   val component: js.Object = js.native
   
+  type Props = /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Mark | undefined>['markLabel'] */ js.Any
+  
   implicit def make(companion: SliderMarkLabel.type): Default[js.Object] = new Default[js.Object](js.Array(this.component, js.Dictionary.empty))()
   
   def styled: Builder[

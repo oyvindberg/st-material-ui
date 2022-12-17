@@ -13,6 +13,8 @@ object UnstableGrid2 {
   @js.native
   val component: js.Object = js.native
   
+  type Props = /* props */ DefaultComponentPropsGrid2TypeMapdiv
+  
   implicit def make(companion: UnstableGrid2.type): SharedBuilder_DefaultComponentPropsGrid2TypeMapdiv715375132[HTMLDivElement] = new SharedBuilder_DefaultComponentPropsGrid2TypeMapdiv715375132[HTMLDivElement](js.Array(this.component, js.Dictionary.empty))()
   
   def styled: Builder[

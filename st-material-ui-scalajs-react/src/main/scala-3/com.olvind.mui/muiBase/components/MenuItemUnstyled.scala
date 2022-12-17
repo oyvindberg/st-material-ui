@@ -405,6 +405,8 @@ object MenuItemUnstyled {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = /* props */ DefaultComponentPropsMenuItemUnstyledTyp
+  
   implicit def make(companion: MenuItemUnstyled.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsMenuItemUnstyledTyp, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsMenuItemUnstyledTyp, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

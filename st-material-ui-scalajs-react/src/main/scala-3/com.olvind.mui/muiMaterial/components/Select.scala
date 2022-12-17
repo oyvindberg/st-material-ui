@@ -549,6 +549,8 @@ object Select {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props[T] = SelectProps[T]
+  
   implicit def make[T](companion: Select.type): Builder[T] = new Builder[T](js.Array(this.component, js.Dictionary.empty))()
   
   def styled[T]: com.olvind.mui.StyledComponent.Builder[SelectProps[T], Builder[T]] = new com.olvind.mui.StyledComponent.Builder[SelectProps[T], Builder[T]](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder[T](js.Array(newComponent, js.Dictionary.empty)))

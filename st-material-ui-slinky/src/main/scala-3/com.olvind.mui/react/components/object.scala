@@ -406,6 +406,8 @@ object `object` {
     inline def wmode(value: String): this.type = set("wmode", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement]
+  
   val component: String = "object"
   
   implicit def make(companion: `object`.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

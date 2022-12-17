@@ -390,6 +390,8 @@ object blockquote {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]
+  
   val component: String = "blockquote"
   
   implicit def make(companion: blockquote.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

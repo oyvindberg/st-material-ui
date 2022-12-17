@@ -815,6 +815,8 @@ object feComponentTransfer {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFEComponentTransferElement]
+  
   val component: String = "feComponentTransfer"
   
   implicit def make(companion: feComponentTransfer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

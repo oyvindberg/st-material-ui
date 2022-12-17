@@ -815,6 +815,8 @@ object stop {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGStopElement]
+  
   val component: String = "stop"
   
   implicit def make(companion: stop.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

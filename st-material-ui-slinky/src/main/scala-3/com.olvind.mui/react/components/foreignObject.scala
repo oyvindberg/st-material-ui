@@ -815,6 +815,8 @@ object foreignObject {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGForeignObjectElement]
+  
   val component: String = "foreignObject"
   
   implicit def make(companion: foreignObject.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

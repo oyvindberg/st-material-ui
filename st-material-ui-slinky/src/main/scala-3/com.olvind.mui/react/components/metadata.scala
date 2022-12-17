@@ -815,6 +815,8 @@ object metadata {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGMetadataElement]
+  
   val component: String = "metadata"
   
   implicit def make(companion: metadata.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

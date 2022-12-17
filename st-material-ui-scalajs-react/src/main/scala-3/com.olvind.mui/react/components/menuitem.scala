@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object menuitem {
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
+  
   val component: String = "menuitem"
   
   implicit def make(companion: menuitem.type): SharedBuilder_DetailedHTMLProps_1024796696[HTMLElement] = new SharedBuilder_DetailedHTMLProps_1024796696[HTMLElement](js.Array(this.component, js.Dictionary.empty))()

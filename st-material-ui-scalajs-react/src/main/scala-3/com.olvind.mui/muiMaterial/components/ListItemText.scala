@@ -445,6 +445,8 @@ object ListItemText {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props[PrimaryTypographyComponent /* <: ElementType */, SecondaryTypographyComponent /* <: ElementType */] = ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent]
+  
   implicit def make[PrimaryTypographyComponent /* <: ElementType */, SecondaryTypographyComponent /* <: ElementType */](companion: ListItemText.type): Builder[PrimaryTypographyComponent, SecondaryTypographyComponent] = new Builder[PrimaryTypographyComponent, SecondaryTypographyComponent](js.Array(this.component, js.Dictionary.empty))()
   
   def styled[PrimaryTypographyComponent /* <: ElementType */, SecondaryTypographyComponent /* <: ElementType */]: com.olvind.mui.StyledComponent.Builder[

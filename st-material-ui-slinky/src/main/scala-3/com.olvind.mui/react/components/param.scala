@@ -394,6 +394,8 @@ object param {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement]
+  
   val component: String = "param"
   
   implicit def make(companion: param.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

@@ -397,6 +397,8 @@ object meta {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]
+  
   val component: String = "meta"
   
   implicit def make(companion: meta.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

@@ -408,6 +408,8 @@ object AccordionDetails {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = AccordionDetailsProps
+  
   implicit def make(companion: AccordionDetails.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[AccordionDetailsProps, Builder] = new com.olvind.mui.StyledComponent.Builder[AccordionDetailsProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

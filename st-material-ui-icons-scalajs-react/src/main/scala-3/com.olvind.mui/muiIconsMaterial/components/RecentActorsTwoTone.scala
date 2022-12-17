@@ -13,6 +13,8 @@ object RecentActorsTwoTone {
   @js.native
   val component: js.Object = js.native
   
+  type Props = DefaultComponentPropsSvgIconTypeMapsvg
+  
   implicit def make(companion: RecentActorsTwoTone.type): SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[SVGSVGElement] = new SharedBuilder_DefaultComponentPropsSvgIconTypeMapsvg1028217032[SVGSVGElement](js.Array(this.component, js.Dictionary.empty))()
   
   def styled: Builder[

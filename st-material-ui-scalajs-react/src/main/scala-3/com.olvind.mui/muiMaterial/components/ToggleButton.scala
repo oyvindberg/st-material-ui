@@ -476,6 +476,8 @@ object ToggleButton {
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
     
+    type Props = OverridePropsExtendButtonBaseTypeMapTogg
+    
     def styled: com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapTogg, Builder] = new com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapTogg, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     
     def withProps(p: OverridePropsExtendButtonBaseTypeMapTogg): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
@@ -915,6 +917,8 @@ object ToggleButton {
       
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
+    
+    type Props = DefaultComponentPropsExtendButtonBaseTypAriacolspan
     
     def styled: com.olvind.mui.StyledComponent.Builder[DefaultComponentPropsExtendButtonBaseTypAriacolspan, Builder] = new com.olvind.mui.StyledComponent.Builder[DefaultComponentPropsExtendButtonBaseTypAriacolspan, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     

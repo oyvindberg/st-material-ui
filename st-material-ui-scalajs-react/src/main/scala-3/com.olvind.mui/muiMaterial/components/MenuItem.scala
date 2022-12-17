@@ -477,6 +477,8 @@ object MenuItem {
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
     
+    type Props = OverridePropsExtendButtonBaseTypeMapMenu
+    
     def styled: com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapMenu, Builder] = new com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapMenu, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     
     def withProps(p: OverridePropsExtendButtonBaseTypeMapMenu): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
@@ -899,6 +901,8 @@ object MenuItem {
       
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
+    
+    type Props = DefaultComponentPropsExtendButtonBaseTypAriachecked
     
     implicit def make(companion: normal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
     

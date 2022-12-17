@@ -509,6 +509,8 @@ object ListItem {
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
     
+    type Props = OverridePropsExtendButtonBaseTypeMapList
+    
     def styled: com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapList, Builder] = new com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapList, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     
     def withProps(p: OverridePropsExtendButtonBaseTypeMapList): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
@@ -956,6 +958,8 @@ object ListItem {
       
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
+    
+    type Props = DefaultComponentPropsExtendButtonBaseTypAlignItems
     
     def styled: com.olvind.mui.StyledComponent.Builder[DefaultComponentPropsExtendButtonBaseTypAlignItems, Builder] = new com.olvind.mui.StyledComponent.Builder[DefaultComponentPropsExtendButtonBaseTypAlignItems, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     

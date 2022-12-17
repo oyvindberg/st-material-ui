@@ -814,6 +814,8 @@ object svg {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGSVGElement]
+  
   val component: String = "svg"
   
   implicit def make(companion: svg.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

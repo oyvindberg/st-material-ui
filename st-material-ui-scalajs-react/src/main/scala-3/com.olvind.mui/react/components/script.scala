@@ -406,6 +406,8 @@ object script {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement]
+  
   val component: String = "script"
   
   implicit def make(companion: script.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

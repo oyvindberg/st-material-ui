@@ -430,6 +430,8 @@ object Table {
     inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
   }
   
+  type Props = /* props */ DefaultComponentPropsTableTypeMaptable
+  
   implicit def make(companion: Table.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsTableTypeMaptable, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsTableTypeMaptable, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

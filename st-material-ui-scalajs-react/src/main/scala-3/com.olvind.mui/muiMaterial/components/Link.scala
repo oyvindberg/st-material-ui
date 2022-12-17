@@ -2650,6 +2650,8 @@ object Link {
     inline def zIndexVarargs(value: ((js.UndefOr[ZIndex | String]) | Null)*): this.type = set("zIndex", js.Array(value*))
   }
   
+  type Props = /* props */ DefaultComponentPropsLinkTypeMapa
+  
   implicit def make(companion: Link.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsLinkTypeMapa, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsLinkTypeMapa, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

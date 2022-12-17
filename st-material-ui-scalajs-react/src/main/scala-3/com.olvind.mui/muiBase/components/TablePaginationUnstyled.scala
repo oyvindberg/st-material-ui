@@ -462,6 +462,8 @@ object TablePaginationUnstyled {
     inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
   }
   
+  type Props = /* props */ DefaultComponentPropsTablePaginationUnst
+  
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsTablePaginationUnst, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsTablePaginationUnst, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: /* props */ DefaultComponentPropsTablePaginationUnst): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

@@ -396,6 +396,8 @@ object embed {
     inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement]
+  
   val component: String = "embed"
   
   implicit def make(companion: embed.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

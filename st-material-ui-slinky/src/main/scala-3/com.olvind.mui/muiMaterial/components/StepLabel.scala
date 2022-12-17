@@ -426,6 +426,8 @@ object StepLabel {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = StepLabelProps
+  
   implicit def make(companion: StepLabel.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[StepLabelProps, Builder] = new com.olvind.mui.StyledComponent.Builder[StepLabelProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

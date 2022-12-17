@@ -412,6 +412,8 @@ object Container {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = /* props */ DefaultComponentPropsContainerTypeMapdiv
+  
   implicit def make(companion: Container.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsContainerTypeMapdiv, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsContainerTypeMapdiv, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

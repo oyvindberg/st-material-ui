@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strong {
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
+  
   val component: String = "strong"
   
   implicit def make(companion: strong.type): SharedBuilder_DetailedHTMLProps_1024796696[HTMLElement] = new SharedBuilder_DetailedHTMLProps_1024796696[HTMLElement](js.Array(this.component, js.Dictionary.empty))()

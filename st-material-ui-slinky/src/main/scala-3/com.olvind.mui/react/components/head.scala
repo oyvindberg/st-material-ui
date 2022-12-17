@@ -388,6 +388,8 @@ object head {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement]
+  
   val component: String = "head"
   
   implicit def make(companion: head.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

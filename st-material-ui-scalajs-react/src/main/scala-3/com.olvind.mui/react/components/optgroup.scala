@@ -391,6 +391,8 @@ object optgroup {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement]
+  
   val component: String = "optgroup"
   
   implicit def make(companion: optgroup.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

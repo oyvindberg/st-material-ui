@@ -596,6 +596,8 @@ object Autocomplete {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] = AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, "div"]
+  
   def styled[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */]: com.olvind.mui.StyledComponent.Builder[
     AutocompleteProps[T, Multiple, DisableClearable, FreeSolo, "div"], 
     Builder[T, Multiple, DisableClearable, FreeSolo]

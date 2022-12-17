@@ -427,6 +427,8 @@ object Stepper {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = /* props */ DefaultComponentPropsStepperTypeMapdiv
+  
   implicit def make(companion: Stepper.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsStepperTypeMapdiv, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsStepperTypeMapdiv, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

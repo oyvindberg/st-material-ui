@@ -415,6 +415,8 @@ object link {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]
+  
   val component: String = "link"
   
   implicit def make(companion: link.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

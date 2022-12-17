@@ -392,6 +392,8 @@ object label {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement]
+  
   val component: String = "label"
   
   implicit def make(companion: label.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

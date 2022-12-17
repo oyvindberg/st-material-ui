@@ -815,6 +815,8 @@ object feMergeNode {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFEMergeNodeElement]
+  
   val component: String = "feMergeNode"
   
   implicit def make(companion: feMergeNode.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

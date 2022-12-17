@@ -815,6 +815,8 @@ object switch {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGSwitchElement]
+  
   val component: String = "switch"
   
   implicit def make(companion: switch.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

@@ -20,6 +20,8 @@ object ClassNames {
   @js.native
   val component: js.Object = js.native
   
+  type Props = ClassNamesProps
+  
   def styled: Builder[ClassNamesProps, Default[js.Object]] = new Builder[ClassNamesProps, Default[js.Object]](this.component, new js.Object, js.Array(), (newComponent: Any) => new Default[js.Object](js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: ClassNamesProps): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))

@@ -814,6 +814,8 @@ object feConvolveMatrix {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFEConvolveMatrixElement]
+  
   val component: String = "feConvolveMatrix"
   
   implicit def make(companion: feConvolveMatrix.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

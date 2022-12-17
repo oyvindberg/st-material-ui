@@ -456,6 +456,8 @@ object input {
     inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]
+  
   val component: String = "input"
   
   implicit def make(companion: input.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

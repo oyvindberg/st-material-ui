@@ -24,6 +24,8 @@ object OptionUnstyled {
     extends AnyVal
        with StBuildingComponent[tag.type, js.Object]
   
+  type Props[TValue] = DefaultComponentProps[OptionUnstyledTypeMap[TValue, js.Object, "li"]]
+  
   implicit def make[TValue](companion: OptionUnstyled.type): Builder[TValue] = new Builder[TValue](js.Array(this.component, js.Dictionary.empty))()
   
   def styled[TValue]: com.olvind.mui.StyledComponent.Builder[

@@ -442,6 +442,8 @@ object ButtonUnstyled {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = /* props */ DefaultComponentPropsButtonUnstyledTypeM
+  
   implicit def make(companion: ButtonUnstyled.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsButtonUnstyledTypeM, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsButtonUnstyledTypeM, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

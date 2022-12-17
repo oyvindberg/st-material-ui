@@ -487,6 +487,8 @@ object Tab {
       inline def wrapped(value: Boolean): this.type = set("wrapped", value.asInstanceOf[js.Any])
     }
     
+    type Props = OverridePropsExtendButtonBaseTypeMapTabT
+    
     def styled: com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapTabT, Builder] = new com.olvind.mui.StyledComponent.Builder[OverridePropsExtendButtonBaseTypeMapTabT, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     
     def withProps(p: OverridePropsExtendButtonBaseTypeMapTabT): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
@@ -913,6 +915,8 @@ object Tab {
       
       inline def wrapped(value: Boolean): this.type = set("wrapped", value.asInstanceOf[js.Any])
     }
+    
+    type Props = DefaultComponentPropsExtendButtonBaseTypAriacolindex
     
     implicit def make(companion: normal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
     

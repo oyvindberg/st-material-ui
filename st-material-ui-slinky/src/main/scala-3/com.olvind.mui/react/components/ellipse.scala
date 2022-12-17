@@ -815,6 +815,8 @@ object ellipse {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGEllipseElement]
+  
   val component: String = "ellipse"
   
   implicit def make(companion: ellipse.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

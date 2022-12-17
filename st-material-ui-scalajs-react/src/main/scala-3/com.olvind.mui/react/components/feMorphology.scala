@@ -814,6 +814,8 @@ object feMorphology {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFEMorphologyElement]
+  
   val component: String = "feMorphology"
   
   implicit def make(companion: feMorphology.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

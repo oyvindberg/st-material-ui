@@ -414,6 +414,8 @@ object List {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = /* props */ DefaultComponentPropsExtendListTypeMapLi
+  
   implicit def make(companion: List.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsExtendListTypeMapLi, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsExtendListTypeMapLi, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

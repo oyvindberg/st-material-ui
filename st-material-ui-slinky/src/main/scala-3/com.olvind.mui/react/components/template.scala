@@ -388,6 +388,8 @@ object template {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement]
+  
   val component: String = "template"
   
   implicit def make(companion: template.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

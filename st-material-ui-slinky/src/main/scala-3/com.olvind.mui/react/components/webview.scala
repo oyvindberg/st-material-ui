@@ -422,6 +422,8 @@ object webview {
     inline def webpreferences(value: String): this.type = set("webpreferences", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[WebViewHTMLAttributes[HTMLElement], HTMLElement]
+  
   val component: String = "webview"
   
   implicit def make(companion: webview.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

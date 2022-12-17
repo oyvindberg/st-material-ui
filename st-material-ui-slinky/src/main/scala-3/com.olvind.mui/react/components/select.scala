@@ -409,6 +409,8 @@ object select {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]
+  
   val component: String = "select"
   
   implicit def make(companion: select.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

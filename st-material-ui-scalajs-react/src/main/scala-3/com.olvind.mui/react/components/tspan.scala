@@ -814,6 +814,8 @@ object tspan {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGTSpanElement]
+  
   val component: String = "tspan"
   
   implicit def make(companion: tspan.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

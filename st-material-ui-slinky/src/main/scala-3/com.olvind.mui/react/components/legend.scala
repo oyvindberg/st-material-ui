@@ -388,6 +388,8 @@ object legend {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement]
+  
   val component: String = "legend"
   
   implicit def make(companion: legend.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

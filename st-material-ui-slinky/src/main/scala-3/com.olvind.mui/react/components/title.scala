@@ -388,6 +388,8 @@ object title {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]
+  
   val component: String = "title"
   
   implicit def make(companion: title.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

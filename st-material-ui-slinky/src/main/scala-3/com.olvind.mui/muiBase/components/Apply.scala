@@ -18,6 +18,8 @@ object Apply {
   @js.native
   val component: js.Object = js.native
   
+  type Props[TValue /* <: js.Object */] = DefaultComponentProps[SelectUnstyledTypeMap[TValue, js.Object, "button"]]
+  
   implicit def make[TValue /* <: js.Object */](companion: Apply.type): SharedBuilder_DefaultComponentProps1544830250[TValue] = new SharedBuilder_DefaultComponentProps1544830250[TValue](js.Array(this.component, js.Dictionary.empty))()
   
   def styled[TValue /* <: js.Object */]: Builder[

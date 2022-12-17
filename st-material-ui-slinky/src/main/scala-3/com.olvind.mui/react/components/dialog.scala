@@ -394,6 +394,8 @@ object dialog {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement]
+  
   val component: String = "dialog"
   
   implicit def make(companion: dialog.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

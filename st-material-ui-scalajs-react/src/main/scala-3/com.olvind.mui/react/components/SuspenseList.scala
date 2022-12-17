@@ -30,6 +30,8 @@ object SuspenseList {
       inline def tail(value: SuspenseListTailMode): this.type = set("tail", value.asInstanceOf[js.Any])
     }
     
+    type Props = com.olvind.mui.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps
+    
     def styled: com.olvind.mui.StyledComponent.Builder[
         com.olvind.mui.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps, 
         Builder
@@ -59,6 +61,8 @@ object SuspenseList {
       
       inline def revealOrder(value: Exclude[SuspenseListRevealOrder, "forwards" | "backwards"]): this.type = set("revealOrder", value.asInstanceOf[js.Any])
     }
+    
+    type Props = com.olvind.mui.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps
     
     def styled: com.olvind.mui.StyledComponent.Builder[
         com.olvind.mui.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps, 

@@ -24,6 +24,8 @@ object Suspense {
     inline def unstable_expectedLoadTime(value: Double): this.type = set("unstable_expectedLoadTime", value.asInstanceOf[js.Any])
   }
   
+  type Props = SuspenseProps
+  
   implicit def make(companion: Suspense.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[SuspenseProps, Builder] = new com.olvind.mui.StyledComponent.Builder[SuspenseProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

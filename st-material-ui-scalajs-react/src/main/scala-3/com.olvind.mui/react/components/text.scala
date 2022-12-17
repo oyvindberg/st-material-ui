@@ -814,6 +814,8 @@ object text {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGTextElement]
+  
   val component: String = "text"
   
   implicit def make(companion: text.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

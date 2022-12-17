@@ -13,6 +13,8 @@ object Fragment {
   @js.native
   val component: js.Object = js.native
   
+  type Props = Children
+  
   implicit def make(companion: Fragment.type): Default[js.Object] = new Default[js.Object](js.Array(this.component, js.Dictionary.empty))()
   
   def styled: Builder[Children, Default[js.Object]] = new Builder[Children, Default[js.Object]](this.component, new js.Object, js.Array(), (newComponent: Any) => new Default[js.Object](js.Array(newComponent, js.Dictionary.empty)))

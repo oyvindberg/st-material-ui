@@ -814,6 +814,8 @@ object feDisplacementMap {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFEDisplacementMapElement]
+  
   val component: String = "feDisplacementMap"
   
   implicit def make(companion: feDisplacementMap.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tbody {
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
+  
   val component: String = "tbody"
   
   implicit def make(companion: tbody.type): SharedBuilder_DetailedHTMLProps778393028[HTMLTableSectionElement] = new SharedBuilder_DetailedHTMLProps778393028[HTMLTableSectionElement](js.Array(this.component, js.Dictionary.empty))()

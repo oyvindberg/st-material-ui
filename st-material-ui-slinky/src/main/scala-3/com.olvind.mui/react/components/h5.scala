@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object h5 {
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
+  
   val component: String = "h5"
   
   implicit def make(companion: h5.type): SharedBuilder_DetailedHTMLProps556941009[HTMLHeadingElement] = new SharedBuilder_DetailedHTMLProps556941009[HTMLHeadingElement](js.Array(this.component, js.Dictionary.empty))()

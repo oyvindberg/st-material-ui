@@ -418,6 +418,8 @@ object InputAdornment {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = /* props */ DefaultComponentPropsInputAdornmentTypeM
+  
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsInputAdornmentTypeM, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsInputAdornmentTypeM, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: /* props */ DefaultComponentPropsInputAdornmentTypeM): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

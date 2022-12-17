@@ -24,6 +24,8 @@ object MultiSelectUnstyled {
     extends AnyVal
        with StBuildingComponent[tag.type, js.Object]
   
+  type Props[TValue /* <: js.Object */] = DefaultComponentProps[MultiSelectUnstyledTypeMap[TValue, js.Object, "button"]]
+  
   implicit def make[TValue /* <: js.Object */](companion: MultiSelectUnstyled.type): Builder[TValue] = new Builder[TValue](js.Array(this.component, js.Dictionary.empty))()
   
   def styled[TValue /* <: js.Object */]: com.olvind.mui.StyledComponent.Builder[

@@ -814,6 +814,8 @@ object feColorMatrix {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFEColorMatrixElement]
+  
   val component: String = "feColorMatrix"
   
   implicit def make(companion: feColorMatrix.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

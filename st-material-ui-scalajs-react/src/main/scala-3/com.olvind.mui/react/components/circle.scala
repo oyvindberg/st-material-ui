@@ -814,6 +814,8 @@ object circle {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGCircleElement]
+  
   val component: String = "circle"
   
   implicit def make(companion: circle.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

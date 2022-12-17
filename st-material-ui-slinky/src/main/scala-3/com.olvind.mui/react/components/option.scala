@@ -398,6 +398,8 @@ object option {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]
+  
   val component: String = "option"
   
   implicit def make(companion: option.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

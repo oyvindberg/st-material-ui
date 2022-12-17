@@ -495,6 +495,8 @@ object Popover {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = PopoverProps
+  
   def styled: com.olvind.mui.StyledComponent.Builder[PopoverProps, Builder] = new com.olvind.mui.StyledComponent.Builder[PopoverProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: PopoverProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

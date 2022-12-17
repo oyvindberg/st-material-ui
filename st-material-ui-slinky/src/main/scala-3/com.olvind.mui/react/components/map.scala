@@ -390,6 +390,8 @@ object map {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement]
+  
   val component: String = "map"
   
   implicit def make(companion: map.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

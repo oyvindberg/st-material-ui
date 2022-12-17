@@ -406,6 +406,8 @@ object form {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement]
+  
   val component: String = "form"
   
   implicit def make(companion: form.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

@@ -392,6 +392,8 @@ object canvas {
     inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement]
+  
   val component: String = "canvas"
   
   implicit def make(companion: canvas.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

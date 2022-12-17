@@ -419,6 +419,8 @@ object textarea {
     inline def wrap(value: String): this.type = set("wrap", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]
+  
   val component: String = "textarea"
   
   implicit def make(companion: textarea.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

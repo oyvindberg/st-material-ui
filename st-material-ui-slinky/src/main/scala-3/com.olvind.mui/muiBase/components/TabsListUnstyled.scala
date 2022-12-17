@@ -397,6 +397,8 @@ object TabsListUnstyled {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = /* props */ DefaultComponentPropsTabsListUnstyledTyp
+  
   implicit def make(companion: TabsListUnstyled.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsTabsListUnstyledTyp, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsTabsListUnstyledTyp, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

@@ -411,6 +411,8 @@ object img {
     inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]
+  
   val component: String = "img"
   
   implicit def make(companion: img.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

@@ -814,6 +814,8 @@ object marker {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGMarkerElement]
+  
   val component: String = "marker"
   
   implicit def make(companion: marker.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

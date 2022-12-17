@@ -425,6 +425,8 @@ object NotchedOutline {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = NotchedOutlineProps
+  
   def styled: com.olvind.mui.StyledComponent.Builder[NotchedOutlineProps, Builder] = new com.olvind.mui.StyledComponent.Builder[NotchedOutlineProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: NotchedOutlineProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

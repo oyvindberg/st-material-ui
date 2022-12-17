@@ -389,6 +389,8 @@ object colgroup {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
+  
   val component: String = "colgroup"
   
   implicit def make(companion: colgroup.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

@@ -815,6 +815,8 @@ object feTile {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFETileElement]
+  
   val component: String = "feTile"
   
   implicit def make(companion: feTile.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

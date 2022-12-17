@@ -389,6 +389,8 @@ object time {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement]
+  
   val component: String = "time"
   
   implicit def make(companion: time.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

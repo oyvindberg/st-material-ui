@@ -487,6 +487,8 @@ object SwipeableDrawer {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = SwipeableDrawerProps
+  
   def styled: com.olvind.mui.StyledComponent.Builder[SwipeableDrawerProps, Builder] = new com.olvind.mui.StyledComponent.Builder[SwipeableDrawerProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: SwipeableDrawerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

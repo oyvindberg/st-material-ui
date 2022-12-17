@@ -84,6 +84,8 @@ object SelectInput {
     inline def variant(value: "standard" | "outlined" | "filled"): this.type = set("variant", value.asInstanceOf[js.Any])
   }
   
+  type Props = SelectInputProps[Any]
+  
   def styled: com.olvind.mui.StyledComponent.Builder[SelectInputProps[Any], Builder] = new com.olvind.mui.StyledComponent.Builder[SelectInputProps[Any], Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: SelectInputProps[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

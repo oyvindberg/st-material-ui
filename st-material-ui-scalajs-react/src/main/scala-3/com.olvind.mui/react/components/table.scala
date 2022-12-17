@@ -405,6 +405,8 @@ object table {
     inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]
+  
   val component: String = "table"
   
   implicit def make(companion: table.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

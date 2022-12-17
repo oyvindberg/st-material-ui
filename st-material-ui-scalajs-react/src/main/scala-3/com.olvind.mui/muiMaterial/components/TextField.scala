@@ -497,6 +497,8 @@ object TextField {
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
     
+    type Props = FilledTextFieldProps
+    
     def styled: com.olvind.mui.StyledComponent.Builder[FilledTextFieldProps, Builder] = new com.olvind.mui.StyledComponent.Builder[FilledTextFieldProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     
     def withProps(p: FilledTextFieldProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
@@ -947,6 +949,8 @@ object TextField {
       
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
+    
+    type Props = StandardTextFieldProps
     
     implicit def make(companion: normal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
     
@@ -1403,6 +1407,8 @@ object TextField {
       
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
+    
+    type Props = OutlinedTextFieldProps
     
     def styled: com.olvind.mui.StyledComponent.Builder[OutlinedTextFieldProps, Builder] = new com.olvind.mui.StyledComponent.Builder[OutlinedTextFieldProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     

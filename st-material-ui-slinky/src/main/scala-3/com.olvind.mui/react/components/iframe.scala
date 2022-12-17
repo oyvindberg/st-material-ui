@@ -421,6 +421,8 @@ object iframe {
     inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement]
+  
   val component: String = "iframe"
   
   implicit def make(companion: iframe.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

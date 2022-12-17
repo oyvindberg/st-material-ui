@@ -409,6 +409,8 @@ object area {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement]
+  
   val component: String = "area"
   
   implicit def make(companion: area.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

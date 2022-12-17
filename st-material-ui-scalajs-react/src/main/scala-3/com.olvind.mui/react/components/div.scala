@@ -387,6 +387,8 @@ object div {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]
+  
   val component: String = "div"
   
   implicit def make(companion: div.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

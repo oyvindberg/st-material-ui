@@ -814,6 +814,8 @@ object filter {
     inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
+  type Props = SVGProps[SVGFilterElement]
+  
   val component: String = "filter"
   
   implicit def make(companion: filter.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

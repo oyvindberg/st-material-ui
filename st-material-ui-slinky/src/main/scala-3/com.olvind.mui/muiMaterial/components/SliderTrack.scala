@@ -13,6 +13,8 @@ object SliderTrack {
   @js.native
   val component: js.Object = js.native
   
+  type Props = /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/base.anon.Mark | undefined>['track'] */ js.Any
+  
   implicit def make(companion: SliderTrack.type): Default[tag.type, js.Object] = new Default[tag.type, js.Object](js.Array(this.component, js.Dictionary.empty))()
   
   def styled: Builder[

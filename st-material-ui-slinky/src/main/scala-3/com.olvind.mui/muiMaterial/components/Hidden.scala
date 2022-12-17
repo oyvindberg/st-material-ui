@@ -48,6 +48,8 @@ object Hidden {
     inline def xsUp(value: Boolean): this.type = set("xsUp", value.asInstanceOf[js.Any])
   }
   
+  type Props = HiddenProps
+  
   implicit def make(companion: Hidden.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[HiddenProps, Builder] = new com.olvind.mui.StyledComponent.Builder[HiddenProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

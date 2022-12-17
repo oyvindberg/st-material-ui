@@ -391,6 +391,8 @@ object col {
     inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
+  
   val component: String = "col"
   
   implicit def make(companion: col.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

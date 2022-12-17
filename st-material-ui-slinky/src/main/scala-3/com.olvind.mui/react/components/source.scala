@@ -402,6 +402,8 @@ object source {
     inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement]
+  
   val component: String = "source"
   
   implicit def make(companion: source.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

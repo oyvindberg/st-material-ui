@@ -439,6 +439,8 @@ object SpeedDial {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = SpeedDialProps
+  
   def styled: com.olvind.mui.StyledComponent.Builder[SpeedDialProps, Builder] = new com.olvind.mui.StyledComponent.Builder[SpeedDialProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: SpeedDialProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

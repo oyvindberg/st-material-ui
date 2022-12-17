@@ -394,6 +394,8 @@ object style {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement]
+  
   val component: String = "style"
   
   implicit def make(companion: style.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

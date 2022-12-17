@@ -488,6 +488,8 @@ object Button {
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
     
+    type Props = com.olvind.mui.muiMaterial.anon.DefaultComponentPropsExtendButtonBaseTypAccessKey
+    
     implicit def make(companion: DefaultComponentPropsExtendButtonBaseTypAccessKey.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
     
     def styled: com.olvind.mui.StyledComponent.Builder[
@@ -943,6 +945,8 @@ object Button {
       
       inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
     }
+    
+    type Props = com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapButt
     
     def styled: com.olvind.mui.StyledComponent.Builder[com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapButt, Builder] = new com.olvind.mui.StyledComponent.Builder[com.olvind.mui.muiMaterial.anon.OverridePropsExtendButtonBaseTypeMapButt, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
     

@@ -13,6 +13,8 @@ object BackdropRoot {
   @js.native
   val component: js.Object = js.native
   
+  type Props = /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@mui/material.anon.0 | undefined>['root'] */ js.Any
+  
   implicit def make(companion: BackdropRoot.type): Default[tag.type, js.Object] = new Default[tag.type, js.Object](js.Array(this.component, js.Dictionary.empty))()
   
   def styled: Builder[

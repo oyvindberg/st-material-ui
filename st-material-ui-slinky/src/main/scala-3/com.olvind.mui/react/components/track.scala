@@ -398,6 +398,8 @@ object track {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement]
+  
   val component: String = "track"
   
   implicit def make(companion: track.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

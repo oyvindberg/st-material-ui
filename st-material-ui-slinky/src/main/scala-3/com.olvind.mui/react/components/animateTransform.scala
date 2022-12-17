@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object animateTransform {
   
+  type Props = SVGProps[SVGElement]
+  
   val component: String = "animateTransform"
   
   implicit def make(companion: animateTransform.type): SharedBuilder_SVGProps_1009766722[SVGElement] = new SharedBuilder_SVGProps_1009766722[SVGElement](js.Array(this.component, js.Dictionary.empty))()

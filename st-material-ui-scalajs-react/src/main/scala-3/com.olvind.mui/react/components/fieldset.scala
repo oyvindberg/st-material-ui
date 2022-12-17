@@ -393,6 +393,8 @@ object fieldset {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement]
+  
   val component: String = "fieldset"
   
   implicit def make(companion: fieldset.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

@@ -25,6 +25,8 @@ object Global {
     inline def stylesNull: this.type = set("styles", null)
   }
   
+  type Props = GlobalProps
+  
   implicit def make(companion: Global.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[GlobalProps, Builder] = new com.olvind.mui.StyledComponent.Builder[GlobalProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

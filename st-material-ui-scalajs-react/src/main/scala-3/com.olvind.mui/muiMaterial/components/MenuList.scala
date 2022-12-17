@@ -432,6 +432,8 @@ object MenuList {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = /* props */ DefaultComponentPropsExtendListTypeMapMe
+  
   implicit def make(companion: MenuList.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsExtendListTypeMapMe, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsExtendListTypeMapMe, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

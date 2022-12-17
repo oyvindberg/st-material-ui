@@ -30,6 +30,8 @@ object SliderValueLabelUnstyled {
     inline def valueLabelDisplay(value: "on" | "auto" | "off"): this.type = set("valueLabelDisplay", value.asInstanceOf[js.Any])
   }
   
+  type Props = SliderValueLabelUnstyledProps
+  
   def styled: com.olvind.mui.StyledComponent.Builder[SliderValueLabelUnstyledProps, Builder] = new com.olvind.mui.StyledComponent.Builder[SliderValueLabelUnstyledProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
   
   def withProps(p: SliderValueLabelUnstyledProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))

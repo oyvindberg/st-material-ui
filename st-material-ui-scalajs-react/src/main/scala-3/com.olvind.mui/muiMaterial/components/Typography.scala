@@ -2623,6 +2623,8 @@ object Typography {
     inline def zIndexVarargs(value: ((js.UndefOr[ZIndex | String]) | Null)*): this.type = set("zIndex", js.Array(value*))
   }
   
+  type Props = /* props */ DefaultComponentPropsTypographyTypeMapsp
+  
   implicit def make(companion: Typography.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsTypographyTypeMapsp, Builder] = new com.olvind.mui.StyledComponent.Builder[/* props */ DefaultComponentPropsTypographyTypeMapsp, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))

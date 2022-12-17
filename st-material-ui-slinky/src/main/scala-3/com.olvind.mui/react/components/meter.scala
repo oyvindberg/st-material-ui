@@ -404,6 +404,8 @@ object meter {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement]
+  
   val component: String = "meter"
   
   implicit def make(companion: meter.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

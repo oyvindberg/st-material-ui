@@ -388,6 +388,8 @@ object dl {
     inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
   }
   
+  type Props = DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement]
+  
   val component: String = "dl"
   
   implicit def make(companion: dl.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()

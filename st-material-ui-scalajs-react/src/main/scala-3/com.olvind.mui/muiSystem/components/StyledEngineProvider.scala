@@ -20,6 +20,8 @@ object StyledEngineProvider {
     inline def injectFirst(value: Boolean): this.type = set("injectFirst", value.asInstanceOf[js.Any])
   }
   
+  type Props = StyledEngineProviderProps
+  
   implicit def make(companion: StyledEngineProvider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
   
   def styled: com.olvind.mui.StyledComponent.Builder[StyledEngineProviderProps, Builder] = new com.olvind.mui.StyledComponent.Builder[StyledEngineProviderProps, Builder](this.component, new js.Object, js.Array(), (newComponent: Any) => new Builder(js.Array(newComponent, js.Dictionary.empty)))
