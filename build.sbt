@@ -33,7 +33,6 @@ val setupST: Project => Project = _.enablePlugins(ScalablyTypedConverterGenSourc
     "@mui/icons-material" -> "5.11.0",
     "@types/react" -> "18.0.26",
     "@types/react-dom" -> "18.0.9",
-    "@types/stylis" -> "4.0.2",
     "react" -> "18.2.0",
     "react-dom" -> "18.2.0"
   ),
