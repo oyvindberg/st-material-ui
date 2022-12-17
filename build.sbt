@@ -50,6 +50,24 @@ lazy val `st-material-ui-scalajs-react`: Project = project
   .configure(common, setupST)
   .settings(
     stFlavour := Flavour.ScalajsReact,
+    // seriously, let's keep it easy. the built-in hooks are a mouthful
+    stMinimizeKeep := List(
+      "useCallback",
+      "useContext",
+      "useDebugValue",
+      "useDeferredValue",
+      "useEffect",
+      "useId",
+      "useImperativeHandle",
+      "useInsertionEffect",
+      "useLayoutEffect",
+      "useMemo",
+      "useReducer",
+      "useRef",
+      "useState",
+      "useSyncExternalStore",
+      "useTransition"
+    ).map("react.mod." + _),
     ScalablyTypedConverterGenSourcePlugin.autoImport.stImport := {
       val old  = ScalablyTypedConverterGenSourcePlugin.autoImport.stImport.value
       val from = (baseDirectory.value / s"src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
