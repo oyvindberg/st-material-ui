@@ -1,11 +1,14 @@
-val common: Project => Project = _.enablePlugins(ScalaJSPlugin)
-  .settings(
-    organization := "com.olvind.st-material-ui",
-    scalaVersion := "3.2.1",
-    homepage := Some(new URL("https://github.com/oyvindberg/st-material-ui")),
-    startYear := Some(2022),
-    pomExtra := (
-      <scm>
+import ScalablyTypedConverterGenSourcePlugin.autoImport.stImport
+
+val common: Project => Project = p =>
+  p.enablePlugins(ScalaJSPlugin)
+    .settings(
+      organization := "com.olvind.st-material-ui",
+      scalaVersion := "3.2.1",
+      homepage := Some(new URL("https://github.com/oyvindberg/st-material-ui")),
+      startYear := Some(2022),
+      pomExtra := (
+        <scm>
       <connection>scm:git:github.com:/ScalablyTyped/st-material-ui</connection>
       <developerConnection>scm:git:git@github.com:ScalablyTyped/st-material-ui.git</developerConnection>
       <url>github.com:ScalablyTyped/st-material-ui.git</url>
@@ -16,13 +19,23 @@ val common: Project => Project = _.enablePlugins(ScalaJSPlugin)
           <name>Øyvind Raddum Berg</name>
         </developer>
       </developers>
-    ),
-    licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
-    /* disabled because it somehow triggers many warnings */
-    scalaJSLinkerConfig ~= (_.withSourceMap(false)),
-    /* disable scaladoc */
-    Compile / doc / sources := Nil
-  )
+      ),
+
+      licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
+      scalacOptions ++= {
+        val isDotty = scalaVersion.value startsWith "3"
+        val ver     = version.value
+        if (isSnapshot.value) Nil
+        else {
+          val a    = p.base.toURI.toString.replaceFirst("[^/]+/?$", "")
+          val g    = s"https://raw.githubusercontent.com/oyvindberg/st-material-ui"
+          val flag = if (isDotty) "-scalajs-mapSourceURI" else "-P:scalajs:mapSourceURI"
+          s"$flag:$a->$g/v$ver/" :: Nil
+        }
+      },
+      /* disable scaladoc */
+      Compile / doc / sources := Nil
+    )
 
 val setupST: Project => Project = _.enablePlugins(ScalablyTypedConverterGenSourcePlugin).settings(
   /* javascript / typescript deps */
@@ -68,8 +81,8 @@ lazy val `st-material-ui-scalajs-react`: Project = project
       "useSyncExternalStore",
       "useTransition"
     ).map("react.mod." + _),
-    ScalablyTypedConverterGenSourcePlugin.autoImport.stImport := {
-      val old  = ScalablyTypedConverterGenSourcePlugin.autoImport.stImport.value
+    stImport := {
+      val old  = stImport.value
       val from = (baseDirectory.value / s"src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
       val to =
         ((ThisBuild / baseDirectory).value / s"st-material-ui-icons-scalajs-react/src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
@@ -104,8 +117,8 @@ lazy val `st-material-ui-slinky`: Project = project
   .configure(common, setupST)
   .settings(
     stFlavour := Flavour.Slinky,
-    ScalablyTypedConverterGenSourcePlugin.autoImport.stImport := {
-      val old  = ScalablyTypedConverterGenSourcePlugin.autoImport.stImport.value
+    stImport := {
+      val old  = stImport.value
       val from = (baseDirectory.value / s"src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
       val to =
         ((ThisBuild / baseDirectory).value / s"st-material-ui-icons-slinky/src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
