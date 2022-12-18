@@ -7,18 +7,13 @@ val common: Project => Project = p =>
       scalaVersion := "3.2.1",
       homepage := Some(new URL("https://github.com/oyvindberg/st-material-ui")),
       startYear := Some(2022),
-      pomExtra := (
-        <scm>
-      <connection>scm:git:github.com:/ScalablyTyped/st-material-ui</connection>
-      <developerConnection>scm:git:git@github.com:ScalablyTyped/st-material-ui.git</developerConnection>
-      <url>github.com:ScalablyTyped/st-material-ui.git</url>
-    </scm>
-      <developers>
-        <developer>
-          <id>oyvindberg</id>
-          <name>Øyvind Raddum Berg</name>
-        </developer>
-      </developers>
+      developers := List(
+        Developer(
+          "oyvindberg",
+          "Øyvind Raddum Berg",
+          "elacin@gmail.com",
+          url("https://github.com/oyvindberg")
+        )
       ),
       sonatypeProfileName := "com.olvind",
       licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
