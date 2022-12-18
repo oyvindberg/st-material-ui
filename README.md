@@ -1,5 +1,5 @@
-# st-material-ui
-Material UI 5 for Scala 3 (Slinky and Scalajs-React)
+# st-material-ui - Material UI 5 for Scala 3 (Slinky and Scalajs-React)
+
 
 Material-ui is a fantastic UI toolkit, and Scala.js is a fantastic frontend language - 
 Finally we can combine the newest versions of the two!
