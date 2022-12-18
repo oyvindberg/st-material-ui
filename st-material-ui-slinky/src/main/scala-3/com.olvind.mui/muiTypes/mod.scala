@@ -6,9 +6,7 @@ import com.olvind.mui.react.mod.ComponentPropsWithRef
 import com.olvind.mui.react.mod.JSXElementConstructor
 import com.olvind.mui.react.mod.global.JSX.Element
 import com.olvind.mui.react.mod.global.JSX.LibraryManagedAttributes
-import com.olvind.mui.std.Extract
 import com.olvind.mui.std.Omit
-import com.olvind.mui.std.Record
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,11 +32,6 @@ object mod {
     */
   type DistributiveOmit[T, K /* <: /* keyof any */ String */] = Omit[T, K]
   
-  type GenerateStringUnion[T] = Extract[
-    /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof T ]: true extends T[Key]? Key : never}[keyof T] */ js.Any, 
-    String
-  ]
-  
   type IfEquals[T, U, Y, N] = Y
   
   @js.native
@@ -54,7 +47,7 @@ object mod {
     var propTypes: js.UndefOr[Any] = js.native
   }
   
-  type OverridableStringUnion[T /* <: String | Double */, U] = GenerateStringUnion[Overwrite[Record[T, true], U]]
+  type OverridableStringUnion[T /* <: String | Double */, U] = T
   
   trait OverridableTypeMap extends StObject {
     
@@ -75,8 +68,6 @@ object mod {
   }
   
   type OverrideProps[M /* <: OverridableTypeMap */, C /* <: ReactElement */] = BaseProps[M] & (DistributiveOmit[ComponentPropsWithRef[C], /* keyof @mui/types.@mui/types.BaseProps<M> */ String])
-  
-  type Overwrite[T, U] = (DistributiveOmit[T, /* keyof U */ String]) & U
   
   type PropInjector[InjectedProps, AdditionalProps] = js.Function1[
     /* component */ Any, 

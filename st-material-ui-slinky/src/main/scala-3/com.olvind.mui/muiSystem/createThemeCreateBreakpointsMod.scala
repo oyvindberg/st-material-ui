@@ -1,5 +1,6 @@
 package com.olvind.mui.muiSystem
 
+import com.olvind.mui.muiSystem.anon.Lg
 import com.olvind.mui.muiTypes.mod.OverridableStringUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -80,7 +81,7 @@ object createThemeCreateBreakpointsMod {
       *    xl: 1536,
       * }
       */
-    var values: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @mui/system.@mui/system/createTheme/createBreakpoints.Breakpoint ]: number} */ js.Any = js.native
+    var values: Lg = js.native
   }
   
   /* Inlined parent std.Partial<@mui/system.@mui/system/createTheme/createBreakpoints.Breakpoints> */
@@ -113,9 +114,7 @@ object createThemeCreateBreakpointsMod {
     
     var up: js.UndefOr[js.Function1[/* key */ Breakpoint | Double, String]] = js.undefined
     
-    var values: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @mui/system.@mui/system/createTheme/createBreakpoints.Breakpoint ]: number} */ js.Any
-      ] = js.undefined
+    var values: js.UndefOr[Lg] = js.undefined
   }
   object BreakpointsOptions {
     
@@ -161,9 +160,7 @@ object createThemeCreateBreakpointsMod {
       
       inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
       
-      inline def setValues(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @mui/system.@mui/system/createTheme/createBreakpoints.Breakpoint ]: number} */ js.Any
-      ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Lg): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }

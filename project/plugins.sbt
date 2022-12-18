@@ -1,5 +1,5 @@
 addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.12.0")
 
 resolvers += MavenRepository("sonatype-s01-snapshots", "https://s01.oss.sonatype.org/content/repositories/snapshots")
-addSbtPlugin("org.scalablytyped.converter" % "sbt-converter" % "1.0.0-beta40+20-9ad37668-SNAPSHOT")
+addSbtPlugin("org.scalablytyped.converter" % "sbt-converter" % "1.0.0-beta40+21-d2fe4cdb-SNAPSHOT")
 addSbtPlugin("com.github.sbt" % "sbt-ci-release" % "1.5.11")

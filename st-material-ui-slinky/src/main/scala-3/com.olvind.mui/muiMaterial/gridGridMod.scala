@@ -5,12 +5,9 @@ import com.olvind.mui.muiMaterial.anon.DefaultComponentPropsGridTypeMapdiv
 import com.olvind.mui.muiMaterial.overridableComponentMod.OverrideProps
 import com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme
 import com.olvind.mui.muiSystem.boxBoxMod.SystemProps
-import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.Breakpoint
 import com.olvind.mui.muiSystem.createThemeCreateBreakpointsMod.BreakpointOverrides
 import com.olvind.mui.muiTypes.mod.IfEquals
 import com.olvind.mui.react.mod.global.JSX.Element
-import com.olvind.mui.std.Partial
-import com.olvind.mui.std.Record
 import org.scalablytyped.runtime.Shortcut
 import slinky.core.facade.ReactElement
 import org.scalablytyped.runtime.StObject
@@ -37,7 +34,50 @@ object gridGridMod extends Shortcut {
   
   type Breakpoints = IfEquals[BreakpointOverrides, BreakpointOverridesEmpty, RegularBreakpoints, CustomBreakpoints]
   
-  type CustomBreakpoints = Partial[Record[Breakpoint, Boolean | GridSize]]
+  /* Inlined std.Partial<std.Record<@mui/system.@mui/system.Breakpoint, boolean | @mui/material.@mui/material/Grid/Grid.GridSize>> */
+  trait CustomBreakpoints extends StObject {
+    
+    var lg: js.UndefOr[Boolean | GridSize] = js.undefined
+    
+    var md: js.UndefOr[Boolean | GridSize] = js.undefined
+    
+    var sm: js.UndefOr[Boolean | GridSize] = js.undefined
+    
+    var xl: js.UndefOr[Boolean | GridSize] = js.undefined
+    
+    var xs: js.UndefOr[Boolean | GridSize] = js.undefined
+  }
+  object CustomBreakpoints {
+    
+    inline def apply(): CustomBreakpoints = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CustomBreakpoints]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomBreakpoints] (val x: Self) extends AnyVal {
+      
+      inline def setLg(value: Boolean | GridSize): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      
+      inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+      
+      inline def setMd(value: Boolean | GridSize): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      
+      inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+      
+      inline def setSm(value: Boolean | GridSize): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      
+      inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
+      
+      inline def setXl(value: Boolean | GridSize): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      
+      inline def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
+      
+      inline def setXs(value: Boolean | GridSize): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      
+      inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+    }
+  }
   
   object GridDirection {
     
