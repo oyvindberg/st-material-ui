@@ -1,7 +1,7 @@
 # st-material-ui - Material UI 5 for Scala 3 (Slinky and Scalajs-React)
 
 
-Material-ui is a fantastic UI toolkit, and Scala.js is a fantastic frontend language - 
+Material UI is a fantastic UI toolkit, and Scala.js is a fantastic frontend language - 
 Finally we can combine the newest versions of the two!
 
 
@@ -52,14 +52,20 @@ def main: Unit =
 
 ```
 
+### Getting started (Slinky)
+The Slinky version is completely untested so far, but should work because all the machinery is the same.
+
+If you want to contribute to this repo, writing this section and cloning the scalajs-react demos would be particularly welcome.
+
 
 ## Features
 
 ### Bundles a pleasant version of the React DOM.
 
-- Scalajs-react relies on an encoding of the React DOM derived from scalatags, where you compose smaller things into bigger things. Very functional, but frustrating to use.
-- Slinky uses some completely inpenetrable implicit machinery to decide which tags are allowed which props.
-- ST has an encoding of these which uses the same builder pattern used for all other react components, which is method driven. All explicit, easy to navigate in IDE, all up to date with all the weird quirks, courtesy of Typescript.
+- Scalajs-react relies on an encoding of the React DOM derived from scalatags, where you compose smaller things into bigger things. This comes with some complexity as to general usage, legal combinations of tags/attributes, poor help from IDE, bad compile errors and so on.
+- Slinky uses something similar, with an heavy implicit machinery to decide which tags and attributes go together, which makes callbacks especially hard to use.
+
+ST, on the other hand, has an encoding which uses the same builder pattern used for all other react components, which is method driven. All explicit, easy to navigate in IDE, all up to date with all the weird details, courtesy of Typescript.
 
 ```scala
 import com.olvind.mui.react.components as react
@@ -75,7 +81,7 @@ react.button
 
 ### Styled components
 
-`st-material-ui` provides some hand written syntax for creating styled components. It is a fabulous way of working with styling, all in the browser. The underlying Javascript library is `@emotion/react`.
+`st-material-ui` provides some hand written syntax for creating styled components. It is a fabulous way of working with styling, all in the Javascript. The underlying Javascript library is `@emotion/react`.
 
 All MUI and DOM react components have the `styled` method to start building a styled component. 
 
@@ -106,15 +112,24 @@ Item(
 )  
 ```
 
+You can also specify styling in props with the `styles` prop for many components
+```scala
+mui.Typography.variant("h1")("Material-UI 5 for Scala 3").style(new CSSProperties {
+  backgroundColor = "red"
+})
+```    
+
+### Three-shaking enabled as default.
+
+As opposed to the Typescript version, here the nicest syntax has the best runtime properties. See [Minimizing bundle size](https://mui.com/material-ui/guides/minimizing-bundle-size/) for all the work you don't have to do.
+
+
 
 ## The culmination of years of *on-and-off* effort.
 
-My first [merged commit](https://github.com/chandu0101/scalajs-react-components/commit/7ac6a625310c52d45bfcec2fafba9e09b8291c97)
-which relates to the Material-UI and Scala.js combination dates all the way back to September 2015!
+In the last few years, I have been working on the [ScalablyTyped](https://scalablytyped.org) project for translating Typescript to Scala.js. One of the primary goals was to enable a reliably up-to-date and usable facade for Material UI.
 
-In between I've mostly done other things, but I've also created the [ScalablyTyped](https://scalablytyped.org) project for translating Typescript to Scala.js.
-
-For the longest time that has been stuck on supporting Material-UI up to 3.9.3, which is a bit dated by now.
+For the longest time though, it has been stuck with supporting Material UI up to 3.9.3, which is more than dated now.
 
 ### Challenge 
 The reason it was stuck there is that it pushes Typescript to it's limits, and it uses some extraordinary powerful techniques.
@@ -134,7 +149,7 @@ So that brings us to version *5.11.0*. It works!
 
 Mostly untested, but should work. The codegen used for this has been tested extensively elsewhere.
 
-That said, there are certainly imperfections in the code. Sometimes you'll just have to cast. There are entire huge type-level features from Typescript which are inexpressible in Scala. *mui* uses all of them.
+That said, there are certainly imperfections in the code. Sometimes you'll just have to cast. There are entire huge type-level features from Typescript which are inexpressible in Scala. *Material UI* uses all of them.
 
 
 
