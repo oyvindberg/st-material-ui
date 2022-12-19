@@ -46,7 +46,7 @@ object SwipeableDrawer {
     new Builder(js.Array(this.component, __props.asInstanceOf[SwipeableDrawerProps]))
   }
   
-  @JSImport("@mui/material/SwipeableDrawer/SwipeableDrawer", JSImport.Default)
+  @JSImport("@mui/material/SwipeableDrawer", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

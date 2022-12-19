@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ScopedCssBaseline {
   
-  @JSImport("@mui/material/ScopedCssBaseline/ScopedCssBaseline", JSImport.Default)
+  @JSImport("@mui/material/ScopedCssBaseline", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

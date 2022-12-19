@@ -35,7 +35,7 @@ object TabPanelUnstyled {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsTabPanelUnstyledTyp]))
   }
   
-  @JSImport("@mui/base/TabPanelUnstyled/TabPanelUnstyled", JSImport.Default)
+  @JSImport("@mui/base/TabPanelUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

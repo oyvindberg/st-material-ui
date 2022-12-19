@@ -15,7 +15,7 @@ object ThemeProvider {
     new Default[js.Object](js.Array(this.component, __props.asInstanceOf[/* props */ ThemeProviderProps]))
   }
   
-  @JSImport("@emotion/react/types/theming", "ThemeProvider")
+  @JSImport("@emotion/react", "ThemeProvider")
   @js.native
   val component: js.Object = js.native
   

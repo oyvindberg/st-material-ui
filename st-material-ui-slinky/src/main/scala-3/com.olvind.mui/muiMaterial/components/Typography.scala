@@ -106,7 +106,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Typography {
   
-  @JSImport("@mui/material/Typography/Typography", JSImport.Default)
+  @JSImport("@mui/material/Typography", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

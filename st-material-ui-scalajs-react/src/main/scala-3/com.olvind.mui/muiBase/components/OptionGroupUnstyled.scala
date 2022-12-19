@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object OptionGroupUnstyled {
   
-  @JSImport("@mui/base/OptionGroupUnstyled/OptionGroupUnstyled", JSImport.Default)
+  @JSImport("@mui/base/OptionGroupUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

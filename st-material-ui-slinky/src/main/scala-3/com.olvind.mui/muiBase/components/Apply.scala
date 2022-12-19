@@ -14,7 +14,7 @@ object Apply {
     new SharedBuilder_DefaultComponentProps1544830250[TValue](js.Array(this.component, __props.asInstanceOf[DefaultComponentProps[SelectUnstyledTypeMap[TValue, js.Object, "button"]]]))
   }
   
-  @JSImport("@mui/base/SelectUnstyled/SelectUnstyled", JSImport.Default)
+  @JSImport("@mui/base/SelectUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

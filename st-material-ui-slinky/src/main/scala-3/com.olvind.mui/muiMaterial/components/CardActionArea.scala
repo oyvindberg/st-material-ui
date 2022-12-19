@@ -51,7 +51,7 @@ object CardActionArea {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapCard]))
     }
     
-    @JSImport("@mui/material/CardActionArea/CardActionArea", JSImport.Default)
+    @JSImport("@mui/material/CardActionArea", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -482,7 +482,7 @@ object CardActionArea {
   
   object normal {
     
-    @JSImport("@mui/material/CardActionArea/CardActionArea", JSImport.Default)
+    @JSImport("@mui/material/CardActionArea", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

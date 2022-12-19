@@ -51,7 +51,7 @@ object AccordionSummary {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapAcco]))
     }
     
-    @JSImport("@mui/material/AccordionSummary/AccordionSummary", JSImport.Default)
+    @JSImport("@mui/material/AccordionSummary", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -484,7 +484,7 @@ object AccordionSummary {
   
   object normal {
     
-    @JSImport("@mui/material/AccordionSummary/AccordionSummary", JSImport.Default)
+    @JSImport("@mui/material/AccordionSummary", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

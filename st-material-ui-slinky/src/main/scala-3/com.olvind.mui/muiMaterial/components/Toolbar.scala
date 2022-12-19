@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Toolbar {
   
-  @JSImport("@mui/material/Toolbar/Toolbar", JSImport.Default)
+  @JSImport("@mui/material/Toolbar", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

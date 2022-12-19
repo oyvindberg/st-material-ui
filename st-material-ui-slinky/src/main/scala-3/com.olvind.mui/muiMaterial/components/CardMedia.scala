@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CardMedia {
   
-  @JSImport("@mui/material/CardMedia/CardMedia", JSImport.Default)
+  @JSImport("@mui/material/CardMedia", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

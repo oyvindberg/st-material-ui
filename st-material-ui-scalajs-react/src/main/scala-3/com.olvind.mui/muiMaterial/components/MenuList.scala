@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object MenuList {
   
-  @JSImport("@mui/material/MenuList/MenuList", JSImport.Default)
+  @JSImport("@mui/material/MenuList", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

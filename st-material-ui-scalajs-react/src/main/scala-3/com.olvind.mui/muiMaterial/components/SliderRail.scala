@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SliderRail {
   
-  @JSImport("@mui/material/Slider/Slider", "SliderRail")
+  @JSImport("@mui/material/Slider", "SliderRail")
   @js.native
   val component: js.Object = js.native
   

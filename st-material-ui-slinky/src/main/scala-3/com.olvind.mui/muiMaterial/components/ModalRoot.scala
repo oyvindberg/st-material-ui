@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ModalRoot {
   
-  @JSImport("@mui/material/Modal/Modal", "ModalRoot")
+  @JSImport("@mui/material/Modal", "ModalRoot")
   @js.native
   val component: js.Object = js.native
   

@@ -57,7 +57,7 @@ object ListItem {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapList]))
     }
     
-    @JSImport("@mui/material/ListItem/ListItem", JSImport.Default)
+    @JSImport("@mui/material/ListItem", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -523,7 +523,7 @@ object ListItem {
       new Builder(js.Array(this.component, __props.asInstanceOf[DefaultComponentPropsExtendButtonBaseTypAlignItems]))
     }
     
-    @JSImport("@mui/material/ListItem/ListItem", JSImport.Default)
+    @JSImport("@mui/material/ListItem", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

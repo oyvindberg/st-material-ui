@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object PaginationItem {
   
-  @JSImport("@mui/material/PaginationItem/PaginationItem", JSImport.Default)
+  @JSImport("@mui/material/PaginationItem", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

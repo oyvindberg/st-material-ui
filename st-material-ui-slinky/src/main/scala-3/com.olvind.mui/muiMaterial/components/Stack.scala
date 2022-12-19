@@ -106,7 +106,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Stack {
   
-  @JSImport("@mui/material/Stack/Stack", JSImport.Default)
+  @JSImport("@mui/material/Stack", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -53,7 +53,7 @@ object Button {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapButt]))
     }
     
-    @JSImport("@mui/material/Button/Button", JSImport.Default)
+    @JSImport("@mui/material/Button", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -506,7 +506,7 @@ object Button {
   
   object normal {
     
-    @JSImport("@mui/material/Button/Button", JSImport.Default)
+    @JSImport("@mui/material/Button", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

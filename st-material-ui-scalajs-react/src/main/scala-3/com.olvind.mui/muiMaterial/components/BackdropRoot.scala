@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BackdropRoot {
   
-  @JSImport("@mui/material/Backdrop/Backdrop", "BackdropRoot")
+  @JSImport("@mui/material/Backdrop", "BackdropRoot")
   @js.native
   val component: js.Object = js.native
   

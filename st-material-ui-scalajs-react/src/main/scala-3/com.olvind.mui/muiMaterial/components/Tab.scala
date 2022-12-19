@@ -53,7 +53,7 @@ object Tab {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapTabT]))
     }
     
-    @JSImport("@mui/material/Tab/Tab", JSImport.Default)
+    @JSImport("@mui/material/Tab", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -500,7 +500,7 @@ object Tab {
   
   object normal {
     
-    @JSImport("@mui/material/Tab/Tab", JSImport.Default)
+    @JSImport("@mui/material/Tab", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

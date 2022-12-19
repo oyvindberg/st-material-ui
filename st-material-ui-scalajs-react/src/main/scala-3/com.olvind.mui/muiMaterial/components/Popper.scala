@@ -47,7 +47,7 @@ object Popper {
     new Builder(js.Array(this.component, __props.asInstanceOf[PickPopperPropshiddencolorstyleopentrans]))
   }
   
-  @JSImport("@mui/material/Popper/Popper", JSImport.Default)
+  @JSImport("@mui/material/Popper", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

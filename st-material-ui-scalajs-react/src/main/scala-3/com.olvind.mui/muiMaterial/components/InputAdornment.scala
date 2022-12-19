@@ -37,7 +37,7 @@ object InputAdornment {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsInputAdornmentTypeM]))
   }
   
-  @JSImport("@mui/material/InputAdornment/InputAdornment", JSImport.Default)
+  @JSImport("@mui/material/InputAdornment", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

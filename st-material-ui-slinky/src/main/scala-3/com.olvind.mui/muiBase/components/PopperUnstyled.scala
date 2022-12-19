@@ -42,7 +42,7 @@ object PopperUnstyled {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsPopperUnstyledTypeM]))
   }
   
-  @JSImport("@mui/base/PopperUnstyled/PopperUnstyled", JSImport.Default)
+  @JSImport("@mui/base/PopperUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

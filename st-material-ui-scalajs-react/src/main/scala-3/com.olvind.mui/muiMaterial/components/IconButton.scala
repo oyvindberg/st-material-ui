@@ -49,7 +49,7 @@ object IconButton {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapIcon]))
     }
     
-    @JSImport("@mui/material/IconButton/IconButton", JSImport.Default)
+    @JSImport("@mui/material/IconButton", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -482,7 +482,7 @@ object IconButton {
   
   object normal {
     
-    @JSImport("@mui/material/IconButton/IconButton", JSImport.Default)
+    @JSImport("@mui/material/IconButton", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

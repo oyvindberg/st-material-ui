@@ -52,7 +52,7 @@ object Fab {
       new Builder(js.Array(this.component, __props.asInstanceOf[OverridePropsExtendButtonBaseTypeMapFabT]))
     }
     
-    @JSImport("@mui/material/Fab/Fab", JSImport.Default)
+    @JSImport("@mui/material/Fab", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     
@@ -489,7 +489,7 @@ object Fab {
   
   object normal {
     
-    @JSImport("@mui/material/Fab/Fab", JSImport.Default)
+    @JSImport("@mui/material/Fab", JSImport.Default)
     @js.native
     val component: js.Object = js.native
     

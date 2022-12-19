@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TableContainer {
   
-  @JSImport("@mui/material/TableContainer/TableContainer", JSImport.Default)
+  @JSImport("@mui/material/TableContainer", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

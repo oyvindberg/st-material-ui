@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Step {
   
-  @JSImport("@mui/material/Step/Step", JSImport.Default)
+  @JSImport("@mui/material/Step", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SliderUnstyled {
   
-  @JSImport("@mui/base/SliderUnstyled/SliderUnstyled", JSImport.Default)
+  @JSImport("@mui/base/SliderUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

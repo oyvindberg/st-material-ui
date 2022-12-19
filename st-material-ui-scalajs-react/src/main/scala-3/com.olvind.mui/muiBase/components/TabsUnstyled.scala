@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TabsUnstyled {
   
-  @JSImport("@mui/base/TabsUnstyled/TabsUnstyled", JSImport.Default)
+  @JSImport("@mui/base/TabsUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

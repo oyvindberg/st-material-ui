@@ -51,7 +51,7 @@ object Select {
     new Builder[T](js.Array(this.component, __props.asInstanceOf[SelectProps[T]]))
   }
   
-  @JSImport("@mui/material/Select/Select", JSImport.Default)
+  @JSImport("@mui/material/Select", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

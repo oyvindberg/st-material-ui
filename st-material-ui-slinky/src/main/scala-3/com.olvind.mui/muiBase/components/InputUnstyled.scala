@@ -43,7 +43,7 @@ object InputUnstyled {
     new Builder(js.Array(this.component, __props.asInstanceOf[/* props */ DefaultComponentPropsInputUnstyledTypeMa]))
   }
   
-  @JSImport("@mui/base/InputUnstyled/InputUnstyled", JSImport.Default)
+  @JSImport("@mui/base/InputUnstyled", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

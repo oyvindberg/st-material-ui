@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Stepper {
   
-  @JSImport("@mui/material/Stepper/Stepper", JSImport.Default)
+  @JSImport("@mui/material/Stepper", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   

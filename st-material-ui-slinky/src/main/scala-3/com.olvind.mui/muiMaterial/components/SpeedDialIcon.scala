@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object SpeedDialIcon {
   
-  @JSImport("@mui/material/SpeedDialIcon/SpeedDialIcon", JSImport.Default)
+  @JSImport("@mui/material/SpeedDialIcon", JSImport.Default)
   @js.native
   val component: js.Object = js.native
   
