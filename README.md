@@ -5,6 +5,7 @@ Material UI is a fantastic UI toolkit, and Scala.js is a fantastic frontend lang
 Finally we can combine the newest versions of the two!
 
 
+*There are bunch of `Any`s shown in the video, but that is due to IntelliJ's not-perfect Scala 3 support*
 
 https://user-images.githubusercontent.com/247937/208323992-fa7110b0-6a1f-4ea9-adf9-b61c0e9c39cc.mp4
 
