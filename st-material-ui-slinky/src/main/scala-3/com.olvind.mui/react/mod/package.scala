@@ -1,10 +1,12 @@
 package com.olvind.mui.react.mod
 
+import com.olvind.mui.react.anon.Children
 import com.olvind.mui.react.anon.UNDEFINEDVOIDONLY
 import com.olvind.mui.scheduler.tracingMod.Interaction
 import com.olvind.mui.std.Set
 import org.scalajs.dom.Event
 import org.scalajs.dom.EventTarget
+import org.scalajs.dom.KeyboardEvent
 import slinky.core.SyntheticEvent
 import slinky.core.facade.ReactRef
 import slinky.web.SyntheticAnimationEvent
@@ -94,6 +96,8 @@ type ModifierKey = "Alt" | "AltGraph" | "CapsLock" | "Control" | "Fn" | "FnLock"
 
 type MouseEventHandler[T] = EventHandler[SyntheticMouseEvent[T]]
 
+type NativeKeyboardEvent = KeyboardEvent
+
 type PointerEventHandler[T] = EventHandler[SyntheticPointerEvent[T]]
 
 /**
@@ -108,6 +112,8 @@ type ProfilerOnRenderCallback = js.Function7[
 /* commitTime */ Double, 
 /* interactions */ Set[Interaction], 
 Unit]
+
+type PropsWithChildren[P] = P & Children
 
 /** Ensures that the props do not include ref at all */
 /** NOTE: Conditional type definitions are impossible to translate to Scala.

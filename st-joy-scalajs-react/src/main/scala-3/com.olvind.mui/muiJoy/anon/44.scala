@@ -1,0 +1,34 @@
+package com.olvind.mui.muiJoy.anon
+
+import com.olvind.mui.muiJoy.stylesComponentsMod.OverridesStyleRules
+import com.olvind.mui.muiJoy.switchSwitchPropsMod.SwitchOwnerState
+import com.olvind.mui.muiJoy.switchSwitchPropsMod.SwitchSlot
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait `44`[Theme] extends StObject {
+  
+  var defaultProps: js.UndefOr[PartialSwitchPropsSwitchTypeMapdivdefaul] = js.undefined
+  
+  var styleOverrides: js.UndefOr[OverridesStyleRules[SwitchSlot, SwitchOwnerState, Theme]] = js.undefined
+}
+object `44` {
+  
+  inline def apply[Theme](): `44`[Theme] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`44`[Theme]]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `44`[?], Theme] (val x: Self & `44`[Theme]) extends AnyVal {
+    
+    inline def setDefaultProps(value: PartialSwitchPropsSwitchTypeMapdivdefaul): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
+    
+    inline def setStyleOverrides(value: OverridesStyleRules[SwitchSlot, SwitchOwnerState, Theme]): Self = StObject.set(x, "styleOverrides", value.asInstanceOf[js.Any])
+    
+    inline def setStyleOverridesUndefined: Self = StObject.set(x, "styleOverrides", js.undefined)
+  }
+}

@@ -13,6 +13,10 @@ https://user-images.githubusercontent.com/247937/208323992-fa7110b0-6a1f-4ea9-ad
 
 [demo repo with working code to get started](https://github.com/oyvindberg/st-material-ui-demo)
 
+## Joy UI
+
+There are now also bindings for [@mui/joy](https://mui.com/joy-ui/getting-started/overview/). These are not tested yet, but very likely work.
+
 ## Installation
 
 Note that this library is *only* available for Scala 3.2.1+. 
@@ -25,10 +29,14 @@ libraryDependencies ++= List(
     "com.olvind.st-material-ui" %%% "st-material-ui-scalajs-react" % "1.0.1",
     // if you want icons (scalajs-react) Note that this is 70 megabytes compressed jar file
     "com.olvind.st-material-ui" %%% "st-material-ui-icons-scalajs-react" % "1.0.1", 
+    // if you want joy ui 
+    "com.olvind.st-material-ui" %%% "st-joy-scalajs-react" % "1.0.1", 
     // slinky
     "com.olvind.st-material-ui" %%% "st-material-ui-slinky" % "1.0.1",
     // if you want icons (slinky). Note that this is 70 megabytes compressed jar file
     "com.olvind.st-material-ui" %%% "st-material-ui-icons-slinky" % "1.0.1", 
+    // if you want joy ui 
+    "com.olvind.st-material-ui" %%% "st-joy-slinky" % "1.0.1", 
 )
 ```
 

@@ -1,5 +1,6 @@
 package com.olvind.mui.react.mod
 
+import com.olvind.mui.react.anon.Children
 import com.olvind.mui.react.anon.UNDEFINEDVOIDONLY
 import com.olvind.mui.react.mod.^
 import com.olvind.mui.scheduler.tracingMod.Interaction
@@ -22,6 +23,7 @@ import japgolly.scalajs.react.facade.React.ElementType
 import japgolly.scalajs.react.facade.React.RefFn
 import japgolly.scalajs.react.facade.React.RefHandle
 import org.scalajs.dom.Element
+import org.scalajs.dom.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -304,7 +306,11 @@ type KeyboardEventHandler[T] = EventHandler[ReactKeyboardEventFrom[T & Element]]
 
 type LegacyRef[T] = String | Ref[T]
 
+type ModifierKey = "Alt" | "AltGraph" | "CapsLock" | "Control" | "Fn" | "FnLock" | "Hyper" | "Meta" | "NumLock" | "ScrollLock" | "Shift" | "Super" | "Symbol" | "SymbolLock"
+
 type MouseEventHandler[T] = EventHandler[ReactMouseEventFrom[T & Element]]
+
+type NativeKeyboardEvent = KeyboardEvent
 
 type PointerEventHandler[T] = EventHandler[ReactPointerEventFrom[T & Element]]
 
@@ -320,6 +326,8 @@ type ProfilerOnRenderCallback = js.Function7[
 /* commitTime */ Double, 
 /* interactions */ Set[Interaction], 
 Unit]
+
+type PropsWithChildren[P] = P & Children
 
 /** Ensures that the props do not include ref at all */
 /** NOTE: Conditional type definitions are impossible to translate to Scala.

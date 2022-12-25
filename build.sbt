@@ -32,30 +32,44 @@ val common: Project => Project = p =>
       Compile / doc / sources := Nil
     )
 
-val setupST: Project => Project = _.enablePlugins(ScalablyTypedConverterGenSourcePlugin).settings(
-  /* javascript / typescript deps */
-  Compile / npmDependencies ++= Seq(
-    "@emotion/react" -> "11.10.5",
-    "@emotion/styled" -> "11.10.5",
-    "@mui/material" -> "5.11.1",
-    "@mui/icons-material" -> "5.11.0",
-    "@types/react" -> "18.0.26",
-    "@types/react-dom" -> "18.0.9",
-    "react" -> "18.2.0",
-    "react-dom" -> "18.2.0"
-  ),
-  // shade into another package
-  stOutputPackage := "com.olvind.mui",
-  stSourceGenMode := SourceGenMode.Manual(baseDirectory.value / s"src/main/scala-3"),
-  // focus only on these libraries
-  stMinimize := Selection.AllExcept("@mui/material"),
-  stReactEnableTreeShaking := Selection.All,
-  // because npm is slow
-  useYarn := true
-)
+def setupST(iconsMaterialDir: File, joyDir: File): Project => Project =
+  _.enablePlugins(ScalablyTypedConverterGenSourcePlugin).settings(
+    /* javascript / typescript deps */
+    Compile / npmDependencies ++= Seq(
+      "@emotion/react" -> "11.10.5",
+      "@emotion/styled" -> "11.10.5",
+      "@mui/material" -> "5.11.1",
+      "@mui/icons-material" -> "5.11.0",
+      "@mui/joy" -> "5.0.0-alpha.59",
+      "@types/react" -> "18.0.26",
+      "@types/react-dom" -> "18.0.9",
+      "react" -> "18.2.0",
+      "react-dom" -> "18.2.0"
+    ),
+    // shade into another package
+    stOutputPackage := "com.olvind.mui",
+    stSourceGenMode := SourceGenMode.Manual(
+      baseDirectory.value / s"src/main/scala-3",
+      Map(
+        "@mui/icons-material" -> iconsMaterialDir,
+        "@mui/joy" -> joyDir
+      )
+    ),
+    // focus only on these libraries
+    stMinimize := Selection.AllExcept("@mui/joy", "@mui/material", "@mui/material-next"),
+    stReactEnableTreeShaking := Selection.All,
+    // because npm is slow
+    useYarn := true
+  )
 
 lazy val `st-material-ui-scalajs-react`: Project = project
-  .configure(common, setupST)
+  .configure(
+    common,
+    setupST(
+      iconsMaterialDir = file("st-material-ui-icons-scalajs-react/src/main/scala-3").getAbsoluteFile,
+      joyDir = file("st-joy-scalajs-react/src/main/scala-3").getAbsoluteFile
+    )
+  )
   .settings(
     stFlavour := Flavour.ScalajsReact,
     // seriously, let's keep it easy. the built-in hooks are a mouthful
@@ -75,71 +89,34 @@ lazy val `st-material-ui-scalajs-react`: Project = project
       "useState",
       "useSyncExternalStore",
       "useTransition"
-    ).map("react.mod." + _),
-    stImport := {
-      val old  = stImport.value
-      val from = (baseDirectory.value / s"src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
-      val to =
-        ((ThisBuild / baseDirectory).value / s"st-material-ui-icons-scalajs-react/src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
-
-      if (java.nio.file.Files.exists(from)) {
-        def deleteDirectory(directoryToBeDeleted: File): Unit = {
-          val allContents = directoryToBeDeleted.listFiles
-          if (allContents != null)
-            for (file <- allContents)
-              deleteDirectory(file)
-          directoryToBeDeleted.delete
-        }
-
-        if (java.nio.file.Files.exists(to)) {
-          deleteDirectory(to.toFile)
-        } else {
-          java.nio.file.Files.createDirectories(to.getParent)
-        }
-
-        java.nio.file.Files.move(from, to)
-      }
-
-      old
-    }
+    ).map("react.mod." + _)
   )
 
 lazy val `st-material-ui-icons-scalajs-react`: Project = project
   .configure(common)
   .dependsOn(`st-material-ui-scalajs-react`)
 
+lazy val `st-joy-scalajs-react`: Project = project
+  .configure(common)
+  .dependsOn(`st-material-ui-scalajs-react`)
+
 lazy val `st-material-ui-slinky`: Project = project
-  .configure(common, setupST)
+  .configure(
+    common,
+    setupST(
+      iconsMaterialDir = file("st-material-ui-icons-slinky/src/main/scala-3").getAbsoluteFile,
+      joyDir = file("st-joy-slinky/src/main/scala-3").getAbsoluteFile
+    )
+  )
   .settings(
-    stFlavour := Flavour.Slinky,
-    stImport := {
-      val old  = stImport.value
-      val from = (baseDirectory.value / s"src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
-      val to =
-        ((ThisBuild / baseDirectory).value / s"st-material-ui-icons-slinky/src/main/scala-3" / "com.olvind.mui/muiIconsMaterial").toPath
-
-      if (java.nio.file.Files.exists(from)) {
-        def deleteDirectory(directoryToBeDeleted: File): Unit = {
-          val allContents = directoryToBeDeleted.listFiles
-          if (allContents != null)
-            for (file <- allContents)
-              deleteDirectory(file)
-          directoryToBeDeleted.delete
-        }
-
-        if (java.nio.file.Files.exists(to)) {
-          deleteDirectory(to.toFile)
-        } else {
-          java.nio.file.Files.createDirectories(to.getParent)
-        }
-
-        java.nio.file.Files.move(from, to)
-      }
-      old
-    }
+    stFlavour := Flavour.Slinky
   )
 
 lazy val `st-material-ui-icons-slinky`: Project = project
+  .configure(common)
+  .dependsOn(`st-material-ui-slinky`)
+
+lazy val `st-joy-slinky`: Project = project
   .configure(common)
   .dependsOn(`st-material-ui-slinky`)
 
@@ -153,6 +130,8 @@ lazy val root = project
   .aggregate(
     `st-material-ui-slinky`,
     `st-material-ui-icons-slinky`,
+    `st-joy-scalajs-react`,
     `st-material-ui-scalajs-react`,
-    `st-material-ui-icons-scalajs-react`
+    `st-material-ui-icons-scalajs-react`,
+    `st-joy-scalajs-react`
   )
