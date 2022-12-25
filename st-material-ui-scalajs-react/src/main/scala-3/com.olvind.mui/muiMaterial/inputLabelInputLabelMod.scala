@@ -1285,4 +1285,6 @@ object inputLabelInputLabelMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
+  
+  trait InputLabelPropsSizeOverrides extends StObject
 }

@@ -37,7 +37,7 @@ val setupST: Project => Project = _.enablePlugins(ScalablyTypedConverterGenSourc
   Compile / npmDependencies ++= Seq(
     "@emotion/react" -> "11.10.5",
     "@emotion/styled" -> "11.10.5",
-    "@mui/material" -> "5.11.0",
+    "@mui/material" -> "5.11.1",
     "@mui/icons-material" -> "5.11.0",
     "@types/react" -> "18.0.26",
     "@types/react-dom" -> "18.0.9",

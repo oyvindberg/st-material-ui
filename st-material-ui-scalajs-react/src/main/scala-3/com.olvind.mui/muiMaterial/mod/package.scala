@@ -1507,6 +1507,8 @@ inline def experimentalExtendTheme(options: Unit, args: js.Object*): OmitThemepa
   */
 inline def experimentalStyled: CreateMUIStyled[Theme] = ^.asInstanceOf[js.Dynamic].selectDynamic("experimentalStyled").asInstanceOf[CreateMUIStyled[Theme]]
 
+inline def experimentalSx(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_sx")().asInstanceOf[Any]
+
 inline def fabClasses: FabClasses = ^.asInstanceOf[js.Dynamic].selectDynamic("fabClasses").asInstanceOf[FabClasses]
 
 inline def filledInputClasses: FilledInputClasses = ^.asInstanceOf[js.Dynamic].selectDynamic("filledInputClasses").asInstanceOf[FilledInputClasses]

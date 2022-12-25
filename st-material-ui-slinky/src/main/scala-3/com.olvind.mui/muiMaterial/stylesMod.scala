@@ -112,6 +112,8 @@ object stylesMod {
   @js.native
   val experimentalStyled: CreateMUIStyled[com.olvind.mui.muiMaterial.stylesCreateThemeMod.Theme] = js.native
   
+  inline def experimentalSx(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_sx")().asInstanceOf[Any]
+  
   inline def getContrastRatio(foreground: String, background: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getContrastRatio")(foreground.asInstanceOf[js.Any], background.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getLuminance(color: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLuminance")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
