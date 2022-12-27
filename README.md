@@ -26,17 +26,17 @@ It will probably not be back-ported to Scala 2.13 because the encoding relies on
 ```scala
 libraryDependencies ++= List(
     // scalajs-react
-    "com.olvind.st-material-ui" %%% "st-material-ui-scalajs-react" % "1.0.1",
+    "com.olvind.st-material-ui" %%% "st-material-ui-scalajs-react" % "<version>",
     // if you want icons (scalajs-react) Note that this is 70 megabytes compressed jar file
-    "com.olvind.st-material-ui" %%% "st-material-ui-icons-scalajs-react" % "1.0.1", 
+    "com.olvind.st-material-ui" %%% "st-material-ui-icons-scalajs-react" % "<version>", 
     // if you want joy ui 
-    "com.olvind.st-material-ui" %%% "st-joy-scalajs-react" % "1.0.1", 
+    "com.olvind.st-material-ui" %%% "st-joy-scalajs-react" % "<version>", 
     // slinky
-    "com.olvind.st-material-ui" %%% "st-material-ui-slinky" % "1.0.1",
+    "com.olvind.st-material-ui" %%% "st-material-ui-slinky" % "<version>",
     // if you want icons (slinky). Note that this is 70 megabytes compressed jar file
-    "com.olvind.st-material-ui" %%% "st-material-ui-icons-slinky" % "1.0.1", 
+    "com.olvind.st-material-ui" %%% "st-material-ui-icons-slinky" % "<version>", 
     // if you want joy ui 
-    "com.olvind.st-material-ui" %%% "st-joy-slinky" % "1.0.1", 
+    "com.olvind.st-material-ui" %%% "st-joy-slinky" % "<version>", 
 )
 ```
 
